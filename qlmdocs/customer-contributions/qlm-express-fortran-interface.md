@@ -14,4 +14,4 @@ Both of these VS projects are contained in the VS Solution qlm\_express\_fortran
 
 Licensee The licensee places the computer\_key\_file under the c:\programdata\ISV root and runs the application again. This time the computer\_key\_file is found and read, and provided the computer identity of the computer on which the application is being run matches that of the computer key then the application runs.
 
-* [qlm\_express.zip](https://support.soraco.co/hc/en-us/article\_attachments/200181275)2 MB [Download](https://support.soraco.co/hc/en-us/article\_attachments/200181275)
+[qlm\_express.zip](https://support.soraco.co/hc/en-us/article\_attachments/200181275)

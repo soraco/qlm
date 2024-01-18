@@ -8,4 +8,4 @@ To deploy this sample to your system so that all references resolve correctly, e
 
 &#x20;%userprofile%\My Documents\Quick License Manager\Samples\qlmpro\DotNet\Basic\VB.NET
 
-* [QlmVbControlSample.zip](https://support.soraco.co/hc/en-us/article\_attachments/200122429)40 KB [Download](https://support.soraco.co/hc/en-us/article\_attachments/200122429)
+[QlmVbControlSample.zip](https://support.soraco.co/hc/en-us/article\_attachments/200122429)

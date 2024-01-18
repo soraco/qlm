@@ -1,7 +1,7 @@
 # 👩🔬 Customer Contributions
 
-{% content-ref url="integration-with-woocommerce.md" %}
-[integration-with-woocommerce.md](integration-with-woocommerce.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="qlm-pro-.net-control-sample-in-vb.net.md" %}

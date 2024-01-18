@@ -475,7 +475,6 @@
   * [Integrate a "Check for Updates" feature with your software license protection process](blog/integrate-a-check-for-updates-feature-with-your-software-license-protection-process.md)
   * [Quick License Manager integrates with commerce provider FastSpring](blog/quick-license-manager-integrates-with-commerce-provider-fastspring.md)
 * [👩🔬 Customer Contributions](customer-contributions/README.md)
-  * [Integration with WooCommerce](customer-contributions/integration-with-woocommerce.md)
   * [QLM Pro .NET Control Sample in VB.NET](customer-contributions/qlm-pro-.net-control-sample-in-vb.net.md)
   * [QLM Express - Fortran Interface](customer-contributions/qlm-express-fortran-interface.md)
   * [Protecting a C++ Builder application](customer-contributions/protecting-a-c++-builder-application.md)
