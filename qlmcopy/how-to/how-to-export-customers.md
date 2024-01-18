@@ -1,0 +1,16 @@
+# How to export customers
+
+To export customers from the QLM Management console:
+
+| - Launch the QLM Management Console.                                                                                                                                                                                                                            |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| - Go to the Manage Customers tab.                                                                                                                                                                                                                               |
+| - Run a search of your choice to visualize the data you want to export. To export all customers, click the "show all" radio button.                                                                                                                             |
+| - Hide or show columns in the grid as you see fit. To hide a column, right mouse click on the column header and select hide. To view the list of available columns, right mouse click on the column and select "Column Chooser".                                |
+| - Reorder the column as you see fit by dragging the column header.                                                                                                                                                                                              |
+| - In the Status Bar, click the select all button. ![](https://support.soraco.co/hc/en-us/article\_attachments/115015195443/e8390eba9a2259e3c478955bcaa6723b5159e2d96b294c7c1d15f6c2890abdb7.png)                                                                |
+| - In the Status Bar, click the Print button. ![](https://support.soraco.co/hc/en-us/article\_attachments/115015195463/01f32f5fdc5ba140f56105d6c0c1580300f0b083fba016e5e58248d8b5ff224f.png)                                                                     |
+| - On the Preview page, customize the look of the report by clicking on the Customize button (2nd from the left). ![](https://support.soraco.co/hc/en-us/article\_attachments/115015195483/9a61132f5ddc2de8cea611a33bba4087b263ed57d8921b16589c59316492b299.png) |
+| - On the Preview page, click the Export Document button. ![](https://support.soraco.co/hc/en-us/article\_attachments/115015195503/b4eb57cd2a27ff8f7e87ff64ec4fe4635ce535e7660c868a20de1ee4c5246376.png)                                                         |
+| - Select XLSX or any other format of your choice.                                                                                                                                                                                                               |
+| - Save the file.                                                                                                                                                                                                                                                |
