@@ -1,0 +1,164 @@
+# Protect an MS-Access Application with Quick License Manager
+
+\[You can watch a video version of this guide [here](https://www.youtube.com/watch?v=VAkapOG7X1M)]
+
+Following is a step by step procedure to protect an MS-Access application. Note that the steps below assume you have a QLM License Server already setup.
+
+1\. Launch QLM
+
+2\. Create a product from the “Define Product” tab or use the Demo 1.0 product if you are evaluating QLM.&#x20;
+
+3\. Go to the "Protect your application tab":
+
+* Page 1: Select the product to protect and the License Server
+* Page 2: Select "VB6, VBA, ..."
+* Page 3: Leave the default settings or customize the look & feel if needed. By default, QLM will bind the license to the Computer Name. You can select the binding of your choice by setting the [QlmLicenseBinding](https://support.soraco.co/hc/en-us/articles/360001183583-QlmLicense-LicenseBinding) property located in the section "6. Qlm License Properties".
+* Page 4: Select the folder where your Access application is located and click Save
+* Page 5: Click Finish
+
+4\. In the folder where your MS-Access application is located, create a folder called 'Qlm' and copy the following files to the Qlm folder:
+
+* C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\\.net 4.0\QlmlicenseLib.dll
+* C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\\.net 4.0\QlmLicenseLib.tlb
+* C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\\.net 4.0\QlmCLRHost\_x64.dll
+* C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\\.net 4.0\QlmCLRHost\_x86.dll
+* &#x20;C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\\.net 4.0\QlmLicenseWizard.exe
+
+5\. Open your MS-Access application and click Alt-F11 to launch the VBA Editor.&#x20;
+
+6\. Click Tools / Add References and add the following references:
+
+* c:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.tlb
+* c:\Windows\Microsoft.NET\Framework\v4.0.30319\mscoree.tlb
+* QlmLicenseLib.tlb (this is not required but might be useful during development to enable the IDE to show all the properties and methods of the QLM classes)
+
+8\. Assuming your MS-Access application has a Form, add a Form\_Open event as follows:
+
+> Private Sub Form\_Open(Cancel As Integer)
+>
+> &#x20;   QlmCheckLicense  &#x20;
+>
+> End Sub
+
+9\. In the VBA editor, click Insert / Module and set the module name to CheckLicense.
+
+10\. Paste the following code in the CheckLicense module:
+
+&#x20;        Dim homeDir As String
+
+&#x20;        Dim binDir As String
+
+&#x20;        Dim lv As LicenseValidator
+
+&#x20;        Dim settingsFile As String
+
+> Function QlmCheckLicense() As Boolean
+>
+> &#x20;   '\
+> &#x20;   ' for debugging purposes / stepping through the code - remove the Stop when done.\
+> &#x20;   '\
+> &#x20;   Stop
+>
+> &#x20;   On Error GoTo PROC\_ERR
+>
+> &#x20;
+>
+> &#x20;   Set lv = New LicenseValidator
+>
+> &#x20;   homeDir = lv.GetHomeDir(CurrentProject.path)
+>
+> &#x20;   binDir = homeDir & "\Qlm"
+>
+> &#x20;
+>
+> &#x20;   ' Update the filename below with the one that you generated via the Protect Your App Wizard  &#x20;
+>
+> &#x20;   settingsFile = homeDir & "\Demo 1.0.lw.xml"
+>
+> \
+> &#x20;   lv.InitializeLicense homeDir,  settingsFile, binDir\
+> \
+> &#x20;   Dim needsActivation As Boolean\
+> &#x20;   Dim errorMsg As String
+>
+> &#x20;   Dim binding As ELicenseBinding\
+> &#x20;   binding = ELicenseBinding\_ComputerName
+>
+> &#x20;   If lv.ValidateLicenseAtStartupByBinding(binding, needsActivation, errorMsg) = False Then\
+> \
+> &#x20;      If LaunchWizard = 4 Then\
+> &#x20;           ExitApp\
+> &#x20;      End If\
+> \
+> &#x20;      If lv.ValidateLicenseAtStartupByBinding(binding, needsActivation, errorMsg) = False Then\
+> &#x20;           ExitApp\
+> &#x20;      End If\
+> &#x20;   End If
+>
+> &#x20;  Exit Function\
+> \
+> PROC\_ERR:\
+> &#x20;  MsgBox "Error: (" & Err.Number & ") " & Err.Description, vbCritical\
+> &#x20;  Stop\
+> &#x20;  ExitApp
+>
+> End Function
+>
+> Private Sub ExitApp()
+>
+> &#x20;   ' Before shipping your app, uncomment the Close statement in the ExitApp Sub\
+> &#x20;   ' During development, you may want to comment it out to avoid getting locked out of your app
+>
+> &#x20;   'DoCmd.Quit\
+> End Sub
+>
+> Public Function LaunchWizard() As Long\
+> &#x20;   Dim args As String\
+> \
+> &#x20;   args = args & " /settings " & """" & settingsFile & """"\
+> &#x20;   args = args & " /computerID " & lv.fOSMachineName\
+> \
+> &#x20;   Dim exitCode As Long\
+> &#x20;   Dim wizardExe As String\
+> &#x20;   wizardExe = binDir & "\QlmLicenseWizard.exe"\
+> &#x20;   If Dir(wizardExe) = "" Then\
+> &#x20;       wizardExe = "C:\Program Files\Soraco\QuickLicenseMgr\QlmLicenseWizard.exe"\
+> &#x20;   End If\
+> \
+> &#x20;   exitCode = lv.LicenseObject.LaunchProcess(wizardExe, args, True, True)\
+> \
+> &#x20;   LaunchWizard = exitCode
+>
+> End Function
+
+11\. In the VBA editor, click Insert "Class Module"
+
+12\. Set the Class Module Name to: LicenseValidator
+
+13\. Paste the content of the LicenseValidator.cls file (this file was generated by the Protect Your application wizard) into the LicenseValidator class module.
+
+This completes the integration. The next time you open your MS-Access form, the Form\_Open event should get triggered and perform the license validation.
+
+To generate a license key for testing purposes:
+
+* Go to the Manage Keys tab.
+* Click "Create Activation Key"
+* Select the Product (Demo 1.0 for trials) and click Ok.
+* Copy and Paste the generated Activation Key in the License Wizard launched when your MS-Access Application starts up and follow the steps in the wizard.&#x20;
+
+**IMPORTANT NOTES:**
+
+* During development, if a license is not valid, the MsAccess file will still open. When development is completed, uncomment the **Close** statement in the **ExitApp** Sub to make sure that your MsAccess file cannot be opened without a valid license key.
+* It is recommended to ship to your customer a compiled MsAccess file (ACCDE).
+* Finally, do not forget to password protect your VBA code to protect it. To protect your VBA code:
+  * In the VBA Editor, click Toos / "YourProject" Properties
+  * Go to the Protection tab
+  * Check "Lock project for viewing"
+  * Enter a password / confirm password
+  * Click OK
+
+**Restrictions**
+
+QLM does not support loading MsAccess apps from a network share using the late binding approach described in this article. The MsAccess files must be located in a local folder.
+
+If you need to support hosting your MsAccess files on a network share, you will need to use the early binding approach and register the QlmLicenseLib.dll when deploying your application.
