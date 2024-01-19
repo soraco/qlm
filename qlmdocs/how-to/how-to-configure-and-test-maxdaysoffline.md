@@ -4,7 +4,8 @@ MaxDaysOffline allows you to require your customers to go online every _x_ days 
 
 To test this feature without waiting a full day while being offline, add the following code to your application, **after** the license has been successfully validated:
 
-```
+{% code overflow="wrap" %}
+```csharp
 // Assuming lv is an instance of the LicenseValidator class
 
 lv.QlmLicenseObject.MaxDaysOffline = 0;
@@ -20,6 +21,7 @@ private void QlmLicenseObject_OfflinePeriodExceeded_Event(object sender, Offline
    MessageBox.Show(e.errorMessage); 
 }
 ```
+{% endcode %}
 
 &#x20;
 

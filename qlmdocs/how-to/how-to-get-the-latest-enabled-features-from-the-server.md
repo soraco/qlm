@@ -2,7 +2,8 @@
 
 The code below illustrates how to retrieve the latest features from the server and check if a specific feature is enabled.
 
-```
+{% code overflow="wrap" %}
+```csharp
 // Feature IDs of each feature as per the Define Products tab in QLM
 private const int FEATURE_STD = 1 << 0; 
 private const int FEATURE_PRO = 1 << 1;
@@ -33,3 +34,4 @@ if (licenseInfo != null)
  }
 }
 ```
+{% endcode %}

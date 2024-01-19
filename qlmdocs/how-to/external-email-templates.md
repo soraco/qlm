@@ -10,7 +10,7 @@ As of QLM v14, you can import external HTML Email Templates into QLM and then us
 
 In order to import your own HTML email template, you must first instruct QLM that the email template is external and should not be modified by QLM. To do so, you must add the following meta tags in the \<head> section of your email template:
 
-```
+```html
 <meta name="qlm-readonly" value="true"/> 
 <meta name="qlm-modifiedDate" value="2020-04-06 08:25:21">
 ```

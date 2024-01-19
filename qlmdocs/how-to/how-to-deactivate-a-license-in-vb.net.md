@@ -2,7 +2,8 @@
 
 The code below illustrates how to deactivate a license in VB.NET.
 
-```
+{% code overflow="wrap" %}
+```vbnet
 Private Sub ReleaseLicense()
 
     Dim lv As QLM.LicenseValidator
@@ -49,3 +50,4 @@ Private Sub ReleaseLicense()
    End If
 End Sub
 ```
+{% endcode %}

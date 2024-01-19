@@ -17,7 +17,8 @@ To protect a .NET Core app with QLM:
 * Add the LicenseValidator class your .NET Core project
 * When your application is loaded, call the LicenseValidator.ValidateLicenseAtStartup function as shown in the code below (this is similar to a regular .NET 4.x project)
 
-```
+{% code overflow="wrap" %}
+```csharp
 ELicenseBinding licenseBinding = ELicenseBinding.ComputerName;
 
 if (lv.ValidateLicenseAtStartup(licenseBinding, ref needsActivation, ref errorMsg) == false)
@@ -46,3 +47,4 @@ private int DisplayLicenseForm()
     return ret;
 }
 ```
+{% endcode %}

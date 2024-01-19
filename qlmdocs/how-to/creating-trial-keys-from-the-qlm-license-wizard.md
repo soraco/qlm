@@ -12,8 +12,6 @@ Additionally, the QLM Licence Wizard includes a **Try** button that can be used 
 
 Note that the Try button will not be visible if a key is already activated unless the QlmAllowMultipleTrialKeyRequests is set to true.
 
-&#x20;
-
 ### Generate a trial key without confirmation
 
 1\. To generate a trial key and activate it automatically after the user enters his contact information, configure the following properties in the "Protect Your Application" wizard (3rd tab in the QLM Management Console):
@@ -24,7 +22,7 @@ Note that the Try button will not be visible if a key is already activated unles
   * QlmEmailTrialKeyAfterUserRegistration: false
   * QlmGenerateTrialKeyAfterUserRegistration: true
   * QlmTrialKeyDuration: -1 (the duration is defined by the Server Property trialDuration)
-  * QlmTrialKeyFeatures: Select which features are enabled for the automatically generated trial key. Enter a semi comma-separated list of feature sets and their corresponding values.
+  * QlmTrialKeyFeatures: Select which features are enabled for the automatically generated trial key. Enter a semi-comma-separated list of feature sets and their corresponding values.
     * Example: 0:1;1:2;2:3;3:7
       * Enables feature 1 in feature set 0,
       * Enables feature 2 in feature set 1
@@ -47,7 +45,7 @@ To email a trial key after the user enters his contact information, configure th
   * QlmGenerateTrialKeyAfterUserRegistration: false
   * QlmTrialKeyDuration: 30
   * QlmTrialKeyEmailTemplate: the name of the email template to use when sending the email to the customer. Email templates can be created from the Manage Keys tab / Email Templates.
-  * QlmTrialKeyFeatures: Select which features are enabled for the automatically generated trial key. Enter a semi comma-separated list of feature sets and their corresponding values.
+  * QlmTrialKeyFeatures: Select which features are enabled for the automatically generated trial key. Enter a semi-comma-separated list of feature sets and their corresponding values.
     * Example: 0:1;1:2;2:3;3:7
       * Enables feature 1 in feature set 0,
       * Enables feature 2 in feature set 1
@@ -59,8 +57,8 @@ To email a trial key after the user enters his contact information, configure th
   * QlmUserRegistrationPhoneRequired: set to true to require the user to enter their telephone number
   * QlmUseTryButtonToCreateTrialKey: true
 * **6. QLM License Properties**
-  * QlmCustomerSiteUrl: A URL to your [QLM Customer Site](https://support.soraco.co/hc/en-us/articles/202932304-QlmCustomerSite-formerly-QlmAspLicenseSite-). Example: https://qlm3.net/qlmdemo/QlmCustomerSite
+  * QlmCustomerSiteUrl: A URL to your [QLM Customer Site](../qlm-license-server/qlmcustomersite-qlm-self-help.md). Example: https://qlm3.net/qlmdemo/QlmCustomerSite
 
-Note that the email is sent to the user from the QLM License Server. You must therefore configure the SMTP Server settings of the License Server to send emails. For more details about configuring the SMTP Server settings, check the "Configure the QLM License Server to send emails using SMTP" section in this [article](https://support.soraco.co/hc/en-us/articles/207894796-How-to-configure-QLM-to-send-mail-using-SMTP).
+Note that the email is sent to the user from the QLM License Server. You must therefore configure the SMTP Server settings of the License Server to send emails. For more details about configuring the SMTP Server settings, check the "Configure the QLM License Server to send emails using SMTP" section in this [article](how-to-use-smtp-to-send-emails.md).
 
 Note that this feature is dependent on the proper configuration of the QlmCustomerSite.

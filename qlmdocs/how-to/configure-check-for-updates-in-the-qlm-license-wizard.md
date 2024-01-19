@@ -25,4 +25,4 @@ Every time your release a new version of your application, do the following:
 * Go to the Manage Keys tab
 * When prompted to upload the products to the server, answer Yes
 
-Note that the QLM License Wizard displays the "check for updates" information when it is launched. If you'd like your application to automatically check for updates, you must explicitly call the required API such as [GetLatestVersion](https://support.soraco.co/hc/en-us/articles/207609923-QlmLicense-GetLatestVersion) or [GetLatestEligibleVersion](https://support.soraco.co/hc/en-us/articles/208630416-QlmLicense-GetLatestEligibleVersion).&#x20;
+Note that the QLM License Wizard displays the "check for updates" information when it is launched. If you'd like your application to automatically check for updates, you must explicitly call the required API such as [GetLatestVersion](../api-reference/qlmlicense/application-methods/getlatestversion.md) or [GetLatestEligibleVersion](../api-reference/qlmlicense/application-methods/getlatesteligibleversion.md).&#x20;

@@ -8,7 +8,7 @@ The UserData1 field in the main license keys table can be used to associate any 
 
 We recommend that you store data in a structured form such as in XML or Json so that you can easily store additional information in the future as your requirements evolve.
 
-There are 2 APIs available to set and get user data: [GetUserData](https://support.soraco.co/hc/en-us/articles/207609893-QlmLicense-GetUserData) and [SetUserData](https://support.soraco.co/hc/en-us/articles/207609833-QlmLicense-SetUserData)
+There are 2 APIs available to set and get user data: [GetUserData](../api-reference/qlmlicense/application-methods/getuserdata.md) and [SetUserData](../api-reference/qlmlicense/application-methods/setuserdata.md)
 
 Additionally, most of the QLM HTTP APIs allow passing the user data as via the  is\_userdata1 URL argument.
 
@@ -18,4 +18,4 @@ For license keys that allow multiple activations (number of activations > 1), yo
 
 We recommend that you store data in a structured form such as in XML or Json so that you can easily store additional information in the future as your requirements evolve.
 
-There are 2 APIs available to set and get user data: [GetUserDataFromActivationLog](https://support.soraco.co/hc/en-us/articles/207295126-QlmLicense-GetUserDataFromActivationLog) and [SetUserDataInActivationLog](https://support.soraco.co/hc/en-us/articles/207609823-QlmLicense-SetUserDataInActivationLog)
+There are 2 APIs available to set and get user data: [GetUserDataFromActivationLog](../api-reference/qlmlicense/application-methods/getuserdatafromactivationlog.md) and [SetUserDataInActivationLog](../api-reference/qlmlicense/application-methods/setuserdatainactivationlog.md)

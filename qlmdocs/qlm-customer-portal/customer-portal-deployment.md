@@ -1,10 +1,10 @@
-# QLM Customer Portal Deployment
+# Customer Portal Deployment
 
 The QLM Customer Portal requires user authentication to allow access to manage license keys. A user who logs in to the QLM Customer Portal can manage license keys associated with his/her email address.
 
 Additionally, if a user is the primary or secondary contact of an organization, this user can manage all license keys associated with the organization.
 
-Before enabling the QLM Customer Portal and providing your customers access to it, it is highly recommended to review the security measures listed in this [article](qlm-customer-portal-security-measures.md) to ensure that customers are not given access to license keys that do not belong to them.
+Before enabling the QLM Customer Portal and providing your customers access to it, it is highly recommended to review the security measures listed in this [article](customer-portal-security-measures.md) to ensure that customers are not given access to license keys that do not belong to them.
 
 There are 2 steps required to set up the QLM Customer Portal:
 

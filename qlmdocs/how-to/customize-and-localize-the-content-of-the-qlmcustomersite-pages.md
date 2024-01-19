@@ -18,23 +18,17 @@ QLM v12+: Set the server property customerSiteTitle.
 
 QLM v11-: Edit the relevant aspx.
 
-&#x20;
-
 #### Privacy Policy Customization
 
 To configure the privacy policy URL, set the customerSite/privacyPolicyUrl value to a URL that points to your Privacy Policy.
 
 To hide the privacy policy checkbox, clear the privacyPolicyUrl server property.&#x20;
 
-&#x20;
-
-#### Subscribe to Mail List Customization
+#### &#x20;Subscribe to Mail List Customization
 
 To hide the Subscribe To Mail List checkbox, edit the QlmCustomerSite web.config file and set showSubscribeToMailListCheckbox setting to False.
 
-### &#x20;
-
-### Advanced Pages customization
+### &#x20;Advanced Pages customization
 
 To customize the pages, you can edit the aspx pages located in QlmCustomerSite. Here are some basic rules to follow:
 
@@ -68,11 +62,11 @@ To turn off localization, set the customerSiteUseLocalizedCustomPages server pro
 
 For QLM 11, edit the applicationSettings / QlmCustomerSite.Properties.Settings of the QlmCustomerSite web.config file as follows:
 
-&#x20;    \<setting name="useLocalizedCaptions" serializeAs="String">
-
-&#x20;       \<value>False\</value>
-
-&#x20;     \</setting>
+```xml
+<setting name="useLocalizedCaptions" serializeAs="String">
+   <value>False</value>
+ </setting>
+```
 
 #### Multilingual Customization
 
@@ -84,17 +78,14 @@ Set the server property customerSiteUseLocalizedCustomPages to true (QLM v12).
 
 For QLM v11, edit the applicationSettings / QlmCustomerSite.Properties.Settings of the QlmCustomerSite web.config file as follows:
 
-&#x20;      \<setting name="useLocalizedCaptions" serializeAs="String">
-
-&#x20;       \<value>False\</value>
-
-&#x20;     \</setting>
-
-&#x20;     \<setting name="useLocalizedCustomPages" serializeAs="String">
-
-&#x20;       \<value>True\</value>
-
-&#x20;     \</setting>
+```xml
+<setting name="useLocalizedCaptions" serializeAs="String">
+<value>False</value>
+</setting>
+<setting name="useLocalizedCustomPages" serializeAs="String">
+<value>True</value>
+</setting>
+```
 
 #### Page Localization
 

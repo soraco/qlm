@@ -15,8 +15,8 @@ Activation by authorization code (AAC) is currently ideal for single activation 
 AAC is supported in 3 different ways:
 
 1. From the QLM License Wizard
-2. By calling the [QlmLicense.RequestAuthorizationCodeForActivation](https://support.soraco.co/hc/en-us/articles/360000491823) and [QlmLicense.ActivateLicenseByAuthorizationCode](https://support.soraco.co/hc/en-us/articles/360000491066)
-3. By calling the HTTP method [RequestAuthorizationCodeForActivationHttp](https://support.soraco.co/hc/en-us/articles/360000491863-RequestAuthorizationCodeForActivationHttp)and [ActivateLicenseByAuthorizationCodeHttp](https://support.soraco.co/hc/en-us/articles/360000491843-ActivateLicenseByAuthorizationCodeHttp)
+2. By calling the [QlmLicense.RequestAuthorizationCodeForActivation](../api-reference/qlmlicense/application-methods/requestauthorizationcodeforactivation.md) and [QlmLicense.ActivateLicenseByAuthorizationCode](../api-reference/qlmlicense/application-methods/activatelicensebyauthorizationcode.md)
+3. By calling the HTTP method [RequestAuthorizationCodeForActivationHttp](../api-reference/http-methods/requestauthorizationcodeforactivationhttp.md)and [ActivateLicenseByAuthorizationCodeHttp](../api-reference/http-methods/activatekeybyauthorizationcodehttp.md)
 
 **AAC using the QLM License Wizard**
 
@@ -28,7 +28,7 @@ To support AAC from the QLM License Wizard:
 * Save the wizard settings xml file and LicenseValidator class
 * Update your application to use these files
 
-You must then configure your QLM License Server to send emails. To do so, follow the instructions in the section "Configure the QLM License Server to send emails using SMTP" of this knowledge base [article](https://support.soraco.co/hc/en-us/articles/207894796-How-to-configure-QLM-to-send-mail-using-SMTP).
+You must then configure your QLM License Server to send emails. To do so, follow the instructions in the section "Configure the QLM License Server to send emails using SMTP" of this knowledge base [article](how-to-configure-qlm-to-send-mail-using-smtp.md).
 
 You can also send the Authorization Code by SMS message. To send the authorization code by SMS message, you must use a 3rd party SMS provider. QLM is integrated with [Twilio](https://www.twilio.com/) for sending SMS messages.
 
@@ -55,16 +55,12 @@ When the end user launches your application for the first time:
 * The QLM License Wizard prompts the user to enter a 6 digit code
 * Once the user receives the email/text, he/shen enters the 6 digit code and activates the license
 
-&#x20;
-
 **AAC using the QlmLicense API**
 
-* Call [QlmLicense.RequestAuthorizationCodeForActivation](https://support.soraco.co/hc/en-us/articles/360000491823)
-* Call [QlmLicense.ActivationLicenseByAuthorizationCode](https://support.soraco.co/hc/en-us/articles/360000491066)
+* Call [QlmLicense.RequestAuthorizationCodeForActivation](../api-reference/qlmlicense/application-methods/requestauthorizationcodeforactivation.md)
+* Call [QlmLicense.ActivateLicenseByAuthorizationCode](../api-reference/qlmlicense/application-methods/activatelicensebyauthorizationcode.md)
 
-&#x20;
+&#x20;**AAC using the HTTP API**
 
-**AAC using the HTTP API**
-
-* Call [RequestAuthorizationCodeForActivationHttp](https://support.soraco.co/hc/en-us/articles/360000491863)
-* Call [ActivateLicenseBAuthorizationCodeHttp](https://support.soraco.co/hc/en-us/articles/360000491843)
+* Call [RequestAuthorizationCodeForActivationHttp](../api-reference/http-methods/requestauthorizationcodeforactivationhttp.md)
+* Call [ActivateKeyByAuthorizationCodeHttp](../api-reference/http-methods/activatekeybyauthorizationcodehttp.md)

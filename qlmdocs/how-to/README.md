@@ -172,8 +172,8 @@
 [fastspring-hmac-validation.md](fastspring-hmac-validation.md)
 {% endcontent-ref %}
 
-{% content-ref url="qlm-customer-portal.md" %}
-[qlm-customer-portal.md](qlm-customer-portal.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-invoke-a-qlm-http-method-that-requires-strict-authentication.md" %}
@@ -220,8 +220,8 @@
 [how-to-deactivate-a-license-in-vb.net.md](how-to-deactivate-a-license-in-vb.net.md)
 {% endcontent-ref %}
 
-{% content-ref url=".net-6-.net-core-and-.net-standard-support.md" %}
-[.net-6-.net-core-and-.net-standard-support.md](.net-6-.net-core-and-.net-standard-support.md)
+{% content-ref url=".net-6-7-8-.net-core-and-.net-standard-support.md" %}
+[.net-6-7-8-.net-core-and-.net-standard-support.md](.net-6-7-8-.net-core-and-.net-standard-support.md)
 {% endcontent-ref %}
 
 {% content-ref url="qlm-agent-service.md" %}

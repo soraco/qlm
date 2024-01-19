@@ -1,8 +1,8 @@
 # How to send email notifications when an activation attempt is detected
 
-When an activation attempt is detected, QLM creates a record of that detection in the system. You can read more about activation attempts [here](https://support.soraco.co/hc/en-us/articles/360042944151).
+When an activation attempt is detected, QLM creates a record of that detection in the system. You can read more about activation attempts [here](fraud-detection-illegal-computers-and-activation-attempts.md).
 
-This article describes 2 approaches to deal with activation attempts:&#x20;
+This article describes 2 approaches to dealing with activation attempts:&#x20;
 
 * Send yourself (the vendor) an email notification when an activation attempt is detected
 * Send the customer a notification when an activation attempt is detected.
@@ -13,7 +13,7 @@ This article describes 2 approaches to deal with activation attempts:&#x20;
 
 * Launch the QLM Management Console&#x20;
 * Go to the Manage Keys tab
-* Click the Search drop down and select Edit searches
+* Click the Search drop-down and select Edit searches
 * Create a new search as follows (the search should already exist):
   * Name: Alert Activation Attempt
   * Table: Activation Attempts
@@ -32,7 +32,7 @@ This article describes 2 approaches to deal with activation attempts:&#x20;
   * Send Mail To: \<nothing selected>
   * CC: \<your email address>
   * Subject: Activation Attempts Report
-  * Emai Template: Vendor.ActivationAttemptsReport
+  * Email Template: Vendor.ActivationAttemptsReport
 
 With the setup above, you will receive a daily report of all detected activation attempts.
 
@@ -42,7 +42,7 @@ With the setup above, you will receive a daily report of all detected activation
 
 * Launch the QLM Management Console&#x20;
 * Go to the Manage Keys tab
-* Click the Search drop down and select Edit searches
+* Click the Search drop-down and select Edit searches
 * Create a new search as follows (the search should already exist)
   * Name: Alert Activation Attempt
   * Table: Activation Attempts
@@ -61,6 +61,6 @@ With the setup above, you will receive a daily report of all detected activation
   * Send Mail To: Customer (for testing purposes, you may want to set this after your tests are completed)
   * CC: \<your email address>
   * Subject: Activation Attempt
-  * Emai Template: Customer.ActivationAttempt
+  * Email Template: Customer.ActivationAttempt
 
 With the setup above, your customer will receive a daily report notification of activation attempts.

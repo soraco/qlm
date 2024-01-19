@@ -29,7 +29,8 @@ In your application, you must dynamically computer the hash and add it to the he
 
 #### C# Example of computing the hash in your application <a href="#h_01he1frdn5dms4bye3fqpv3c0v" id="h_01he1frdn5dms4bye3fqpv3c0v"></a>
 
-```
+{% code overflow="wrap" %}
+```csharp
 string url = "";
 
 string apiKey = "123456";
@@ -65,22 +66,27 @@ public static string CalcHMACSHA256Hash(string message, string sharedKey)
  return string.Join("", hash.ToList().Select(b => b.ToString("x2")).ToArray());
  }
 ```
+{% endcode %}
 
 #### Example using Curl to invoke an HTTP method <a href="#h_01he1frdn5xacmvj8m084xdmm3" id="h_01he1frdn5xacmvj8m084xdmm3"></a>
 
-You can use curl to test the authentication of http method. In the example below, we will use curl to invoke the RetrieveActivationKeyHttp method.
+You can use curl to test the authentication of the HTTP method. In the example below, we will use curl to invoke the RetrieveActivationKeyHttp method.
 
-Curl -H"Qlm-Authentication-Token:1c72d8e817623b87d9f804b0d6c28ee4e26d1a55fed564a9fa5c8099c40fbeb2" -H"Qlm-Timestamp:2020-07-16 13:15:00" "[http://localhost:55555/qlmservice.asmx/RetrieveActivationKeyHttp?is\_orderid=1234\&is\_userdata1=99999\&is\_user=ralph\&is\_pwd=123456\&is\_format=json](http://localhost:55555/qlmservice.asmx/RetrieveActivationKeyHttp?is\_orderid=1234\&is\_userdata1=99999\&is\_user=ralph\&is\_pwd=123456\&is\_format=json)"
+{% code overflow="wrap" %}
+```
+Curl -H"Qlm-Authentication-Token:1c72d8e817623b87d9f804b0d6c28ee4e26d1a55fed564a9fa5c8099c40fbeb2" -H"Qlm-Timestamp:2020-07-16 13:15:00" "
+http://localhost:55555/qlmservice.asmx/RetrieveActivationKeyHttp?is_orderid=1234&is_userdata1=99999&is_user=ralph&is_pwd=123456&is_format=json
+"
+```
+{% endcode %}
 
-&#x20;
-
-**Testing your hash value**
+#### **Testing your hash value**
 
 There are many online tools that you can use an online tool to test your hash value.
 
 For example, you can use this [tool](https://www.freeformatter.com/hmac-generator.html) as shown below:
 
-* Copy/pase your URL in the tool: [http://localhost:55555/qlmservice.asmx/RetrieveActivationKeyHttp?is\_orderid=1234\&is\_userdata1=99999\&is\_user=ralph\&is\_pwd=123456\&is\_format=json](http://localhost:55555/qlmservice.asmx/RetrieveActivationKeyHttp?is\_orderid=1234\&is\_userdata1=99999\&is\_user=ralph\&is\_pwd=123456\&is\_format=json)
+* Copy/paste your URL in the tool: [http://localhost:55555/qlmservice.asmx/RetrieveActivationKeyHttp?is\_orderid=1234\&is\_userdata1=99999\&is\_user=ralph\&is\_pwd=123456\&is\_format=json](http://localhost:55555/qlmservice.asmx/RetrieveActivationKeyHttp?is\_orderid=1234\&is\_userdata1=99999\&is\_user=ralph\&is\_pwd=123456\&is\_format=json)
 * Enter the API key (from Manage Keys / 3rd party extensions) in the Secret Key field
 * Select SHA 256
 * Click Computer HMAC

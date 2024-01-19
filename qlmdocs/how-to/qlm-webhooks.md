@@ -26,9 +26,7 @@ Events fall into two general categories:
 | customer\_deleted  | Event that occurs when a customer is deleted.   |
 | customer\_modified | Event that occurs when a customer is modified.  |
 
-### &#x20;
-
-### Configuring WebHooks
+### &#x20;Configuring WebHooks
 
 To configure your webhooks:
 
@@ -37,7 +35,7 @@ To configure your webhooks:
 * Click Sites and select your site
 * Go to the Server Properties tab
 * Locate the **webhook events** section (if you do not see this section and you are running QLM Enterprise v11, upgrade your DB schema from the General tab in the same editor, then close the editor and reopen it).
-* For each event, set the URL of the webhook that you wish to invoke. If you need to invoke more than one webhook per event, separate the URLs with a semi comma.
+* For each event, set the URL of the webhook that you wish to invoke. If you need to invoke more than one webhook per event, separate the URLs with a semi-comma.
 * Click Ok
 
 ### WebHooks Payload
@@ -48,11 +46,11 @@ To verify the authenticity of the request, the webhook request header includes a
 
 ### WebHooks Settings
 
-WebHooks settings allow you to control the behaviour of webhooks processing.
+WebHooks settings allow you to control the behavior of webhooks processing.
 
 #### Retry Mechanism
 
-If a webhook invocation fails, QLM adds the webhook call to a retry queue and will retry at a regular interval for a period of time, as specified in the webhooks settings.
+If a webhook invocation fails, QLM adds the webhook call to a retry queue and will retry at a regular interval for a period of time, as specified in the webhook settings.
 
 #### Logging
 
