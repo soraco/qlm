@@ -52,8 +52,8 @@
 [online-activation-with-basic-authentication-user-password.md](online-activation-with-basic-authentication-user-password.md)
 {% endcontent-ref %}
 
-{% content-ref url="../upgrade/qlm-v17-upgrade-procedure.md" %}
-[qlm-v17-upgrade-procedure.md](../upgrade/qlm-v17-upgrade-procedure.md)
+{% content-ref url="qlm-v17-upgrade-procedure.md" %}
+[qlm-v17-upgrade-procedure.md](qlm-v17-upgrade-procedure.md)
 {% endcontent-ref %}
 
 {% content-ref url="qlm-license-models.md" %}
