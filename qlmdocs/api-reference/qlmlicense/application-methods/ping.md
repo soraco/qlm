@@ -26,4 +26,4 @@ bool Ping(string webServiceUrl,
 
 ## Remarks
 
-It is recommended to use the new [PingEx](https://soraco.readme.io/reference/pingex) method which has a faster timeout.
+It is recommended to use the new [PingEx](pingex.md) method which has a faster timeout.

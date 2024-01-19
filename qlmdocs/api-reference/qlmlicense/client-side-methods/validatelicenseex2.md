@@ -28,9 +28,9 @@ string ValidateLicenseEx2 (string LicenseKey, string ComputerID,
 
 Prior to calling this function, you must:
 
-* Call [DefineProduct](https://soraco.readme.io/reference/defineproduct)
+* Call [DefineProduct](defineproduct.md)
 * Set the PublicKey property
 
 You can call this function for any type of license key. If the license key is not computer-bound, set the ComputerID to an empty string.
 
-After calling this function, call [GetStatus ](https://soraco.readme.io/reference/getstatus)to get the status of the call.
+After calling this function, call [GetStatus ](getstatus.md)to get the status of the call.

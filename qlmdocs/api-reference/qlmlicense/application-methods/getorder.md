@@ -44,7 +44,7 @@ DataRowCollection GetOrder (string webServiceUrl,
 
 ### Example
 
-```c#
+```csharp
 QlmLicense license = new QlmLicense ();
 license.DefineProduct(1, "Demo", 1, 0, "DemoKey", "{24EAA3C1-3DD7-40E0-AEA3-D20AA17A6005}");
 string response = string.Empty;

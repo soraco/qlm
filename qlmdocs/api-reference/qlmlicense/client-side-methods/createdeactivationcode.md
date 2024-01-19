@@ -31,7 +31,7 @@ You can then use the Deactivation code in 3 different contexts:
 
 * When deactivating a key from the QLM Management Console / Manage Keys / Deactivate
 * When deactivating a key from the QLM Portal / Release
-* When deactivating a key from the QLM Self Help. To enable the DVC in the QLM Self Help, you must set the [Server Property ](https://support.soraco.co/hc/en-us/articles/207920563)customerSite/showDeactivationVerificationCode to true.
+* When deactivating a key from the QLM Self Help. To enable the DVC in the QLM Self Help, you must set the [Server Property ](../../../qlm-license-server/server-properties.md)customerSite/showDeactivationVerificationCode to true.
 
 Note that a deactivation verification code expires in 1 day.
 

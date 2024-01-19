@@ -45,11 +45,11 @@ void ActivateLicense (string webServiceUrl, string activationKey,
 
 ### Remarks
 
-You must call [DefineProduct ](https://soraco.readme.io/reference/defineproduct)before calling this function.
+You must call [DefineProduct ](../client-side-methods/defineproduct.md)before calling this function.
 
 ### Example
 
-```c#
+```csharp
 private void ActivateLicense(string activationKey, ref string licenseMessage)
 { 
      string computerID = Environment.MachineName;

@@ -2,7 +2,7 @@
 
 ### Description
 
-Reads data stored in a cookie by the [StoreCookie ](https://soraco.readme.io/reference/storecookie)API.
+Reads data stored in a cookie by the [StoreCookie ](storecookie.md)API.
 
 ```csharp
 bool ReadCookie(string cookieName, int index, out string data)

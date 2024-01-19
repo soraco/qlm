@@ -20,20 +20,20 @@ Activates a license key over the internet, binds it to a specific user and retur
 
 ### Parameters
 
-| Parameter      |                                Type                               | Description                                                                            |
-| -------------- | :---------------------------------------------------------------: | -------------------------------------------------------------------------------------- |
-| webServiceUrl  |                               string                              | URL to the QLM License Server.                                                         |
-| activationKey  |                               string                              | Activation key                                                                         |
-| email          |                               string                              | Email address of user that owns the license                                            |
-| computerID     |                               string                              | The unique computer identifier                                                         |
-| computerName   |                               string                              | the name of the computer.                                                              |
-| qlmVersion     |                               string                              | the version of the QLM Engine to use                                                   |
-| userData1      |                               string                              | User data to associate with the license key                                            |
-| affiliateID    |                               string                              | ID of affiliate                                                                        |
-| computerType   | [EComputerType](https://soraco.readme.io/reference/ecomputertype) | the type of the computer being activated: Physical machine or virtual machine          |
-| privacyConsent |                                bool                               | A flag indicating whether the user consented to the privacy policy                     |
-| response       |                               string                              | XML fragment containing the result of the call. The Xml fragment schema is as follows: |
-|                |                                                                   |                                                                                        |
+| Parameter      |                    Type                    | Description                                                                            |
+| -------------- | :----------------------------------------: | -------------------------------------------------------------------------------------- |
+| webServiceUrl  |                   string                   | URL to the QLM License Server.                                                         |
+| activationKey  |                   string                   | Activation key                                                                         |
+| email          |                   string                   | Email address of user that owns the license                                            |
+| computerID     |                   string                   | The unique computer identifier                                                         |
+| computerName   |                   string                   | the name of the computer.                                                              |
+| qlmVersion     |                   string                   | the version of the QLM Engine to use                                                   |
+| userData1      |                   string                   | User data to associate with the license key                                            |
+| affiliateID    |                   string                   | ID of affiliate                                                                        |
+| computerType   | [EComputerType](../enums/ecomputertype.md) | the type of the computer being activated: Physical machine or virtual machine          |
+| privacyConsent |                    bool                    | A flag indicating whether the user consented to the privacy policy                     |
+| response       |                   string                   | XML fragment containing the result of the call. The Xml fragment schema is as follows: |
+|                |                                            |                                                                                        |
 
 ### Response XML format
 
@@ -58,11 +58,11 @@ Activates a license key over the internet, binds it to a specific user and retur
 
 ## Remarks
 
-You must call [DefineProduct ](https://soraco.readme.io/reference/defineproduct)before calling this function.
+You must call [DefineProduct ](../client-side-methods/defineproduct.md)before calling this function.
 
-Use [ParseResults ](https://soraco.readme.io/reference/parseresults)to interpret the results of the call and load the returned data into an [ILicenseInfo ](https://soraco.readme.io/reference/ilicenseinfo)object.
+Use [ParseResults ](../../iqlmcustomerinfo/methods/parseresults.md)to interpret the results of the call and load the returned data into an [ILicenseInfo ](../../ilicenseinfo/)object.
 
-```c#
+```csharp
 ILicenseInfo li = new LicenseInfo();
 string message = string.Empty;
 if (lv.QlmLicenseObject.ParseResults(response, ref li, ref message))

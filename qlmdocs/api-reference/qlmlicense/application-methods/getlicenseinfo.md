@@ -34,7 +34,7 @@ To parse the data returned in dataSet, check this [article](https://support.sora
 
 ### C# Example
 
-```c#
+```csharp
 ILicenseInfo li = license.GetLicenseInfo (webServiceUrl, "A2GM0-50K00-PYU3F-784HH-1U1V5T", 
                                            false, out dataSet out response);
 if (li != null)

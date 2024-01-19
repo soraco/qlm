@@ -24,16 +24,16 @@ Performs the following validations on the License Server
 
 ### Parameters
 
-| Parameter      |       Type       | Description                                                                                                                     |
-| -------------- | :--------------: | ------------------------------------------------------------------------------------------------------------------------------- |
-| webServiceUrl  |      string      | URL to the QLM License Server                                                                                                   |
-| activationKey  |      string      | the license key to activate                                                                                                     |
-| computerKey    |      string      | the computer bound key                                                                                                          |
-| computerID     |      string      | the unique computer identifier                                                                                                  |
-| computerName   |      string      | the name of the computer.                                                                                                       |
-| autoReactivate |       bool       | when true, if the license is not activated on the server, it will be automatically reactivated if licenses are still available. |
-| errorCode      | EServerErrorCode | returned error code                                                                                                             |
-| returnMsg      |      string      | returned error message                                                                                                          |
+| Parameter      |                       Type                       | Description                                                                                                                     |
+| -------------- | :----------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------- |
+| webServiceUrl  |                      string                      | URL to the QLM License Server                                                                                                   |
+| activationKey  |                      string                      | the license key to activate                                                                                                     |
+| computerKey    |                      string                      | the computer bound key                                                                                                          |
+| computerID     |                      string                      | the unique computer identifier                                                                                                  |
+| computerName   |                      string                      | the name of the computer.                                                                                                       |
+| autoReactivate |                       bool                       | when true, if the license is not activated on the server, it will be automatically reactivated if licenses are still available. |
+| errorCode      | [EServerErrorCode](../enums/eservererrorcode.md) | returned error code                                                                                                             |
+| returnMsg      |                      string                      | returned error message                                                                                                          |
 
 ### Return
 

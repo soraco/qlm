@@ -55,9 +55,9 @@ If the computer is not registered in the database, the system will try to activa
 
 For more details about the detection of illegal computers, refer to this article
 
-Use [ParseResults ](https://soraco.readme.io/reference/parseresults)to interpret the results of the call and load the returned data into an [ILicenseInfo ](https://soraco.readme.io/reference/ilicenseinfo)object.
+Use [ParseResults ](../../iqlmcustomerinfo/methods/parseresults.md)to interpret the results of the call and load the returned data into an [ILicenseInfo ](../../ilicenseinfo/)object.
 
-```c#
+```csharp
 ILicenseInfo li = new LicenseInfo();
 string message = string.Empty;
 if (lv.QlmLicenseObject.ParseResults(response, ref li, ref message))

@@ -10,11 +10,11 @@ bool ParseResults(string results, ref ILicenseInfo licenseInfo, ref string messa
 
 ### Arguments
 
-| Name         |                            Data Type                            | Description                                         |
-| ------------ | :-------------------------------------------------------------: | --------------------------------------------------- |
-| results      |                              string                             | XML response returned from any License Server call  |
-| licenseInfo  | [ILicenseInfo](https://soraco.readme.io/reference/ilicenseinfo) | object containing the result of the parse operation |
-| errorMessage |                              string                             | an error message if the operation fails.            |
+| Name         |              Data Type              | Description                                         |
+| ------------ | :---------------------------------: | --------------------------------------------------- |
+| results      |                string               | XML response returned from any License Server call  |
+| licenseInfo  | [ILicenseInfo](../../ilicenseinfo/) | object containing the result of the parse operation |
+| errorMessage |                string               | an error message if the operation fails.            |
 
 ### Return
 

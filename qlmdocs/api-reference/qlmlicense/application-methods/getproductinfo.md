@@ -21,6 +21,6 @@ Gets information about a product from the server.
 
 ### Return
 
-| Type                                                                  |                           |
-| --------------------------------------------------------------------- | ------------------------- |
-| [IQlmProductInfo](https://soraco.readme.io/reference/iqlmproductinfo) | details about the product |
+| Type                                                |                           |
+| --------------------------------------------------- | ------------------------- |
+| [IQlmProductInfo](../interfaces/iqlmproductinfo.md) | details about the product |

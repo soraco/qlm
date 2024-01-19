@@ -2,7 +2,7 @@
 
 ### Description
 
-Returns the last license validation status. See [ELicenseStatus ](https://soraco.readme.io/reference/elicensestatus)for possible values.
+Returns the last license validation status. See [ELicenseStatus ](../enums/elicensestatus.md)for possible values.
 
 ```csharp
 int GetStatus ()

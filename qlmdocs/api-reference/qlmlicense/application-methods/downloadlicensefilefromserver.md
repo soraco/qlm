@@ -9,8 +9,6 @@ Downloads a license file from the license server and stores it on the end user s
                                     string activationKey, 
                                     string computerID, 
                                     out string errorMessage)                                    
-
-
 ```
 
 ### Parameters
@@ -30,8 +28,8 @@ Downloads a license file from the license server and stores it on the end user s
 
 ### Remarks
 
-You must call [DefineProduct ](https://soraco.readme.io/reference/defineproduct)before calling this function.
+You must call [DefineProduct ](../client-side-methods/defineproduct.md)before calling this function.
 
-If the QlmLicense.[LicenseFilePath](https://soraco.readme.io/reference/qlmlicense-properties) property is set, the License File is stored on the end user system in the location specified by LicenseFilePath.
+If the QlmLicense.[LicenseFilePath](https://docs.soraco.co/docs/api-reference/.net-api/iqlmlicense/properties) property is set, the License File is stored on the end-user system in the location specified by LicenseFilePath.
 
 If the LicenseFilePath is not set, the license file is stored in the location specified by the QlmLicense.StoreKeysLocation property.

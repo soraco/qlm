@@ -19,9 +19,9 @@ ILicenseInfo ReadLicenseFile(string licenseFile, string computerID,
 
 ### Return
 
-|                            Data Type                            | Description                    |
-| :-------------------------------------------------------------: | ------------------------------ |
-| [ILicenseInfo](https://soraco.readme.io/reference/ilicenseinfo) | populated ILicenseInfo object. |
+|              Data Type              | Description                    |
+| :---------------------------------: | ------------------------------ |
+| [ILicenseInfo](../../ilicenseinfo/) | populated ILicenseInfo object. |
 
 ### Remarks
 

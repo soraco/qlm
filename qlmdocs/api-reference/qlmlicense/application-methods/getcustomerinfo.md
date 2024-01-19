@@ -17,12 +17,12 @@ IQlmCustomerInfo GetCustomerInfo (string webServiceUrl, string activationKey)
 
 ### Return
 
-| Type                                                                    | Description                                                                |
-| ----------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| [IQlmCustomerInfo](https://soraco.readme.io/reference/iqlmcustomerinfo) | detailed information about the customer associated with the activation key |
+| Type                                        | Description                                                                |
+| ------------------------------------------- | -------------------------------------------------------------------------- |
+| [IQlmCustomerInfo](../../iqlmcustomerinfo/) | detailed information about the customer associated with the activation key |
 
 ### Example
 
-```c#
+```csharp
 IQlmCustomerInfo customer = license.GetCustomerInfo (webServiceUrl, "A2GM0-50K00-PYU3F-784HH-1U1V5T");
 ```

@@ -8,8 +8,6 @@ Gets information about all the activations of a specific activation key
  ILicenseInfo[] GetActivatedSystems(string webServiceUrl, 
                                     string activationKey, 
                                     out string message)
-
-
 ```
 
 ### Parameters

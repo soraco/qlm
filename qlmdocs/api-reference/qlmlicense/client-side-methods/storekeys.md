@@ -17,11 +17,11 @@ void StoreKeys (string activationKey, string computerKey)
 
 ### Remarks
 
-To read keys, use the [ReadKeys ](https://soraco.readme.io/reference/readkeys)API. To clear the stored keys, use the [DeleteKeysEx ](https://soraco.readme.io/reference/deletekeysex)API.
+To read keys, use the [ReadKeys ](readkeys.md)API. To clear the stored keys, use the [DeleteKeysEx ](deletekeys.md)API.
 
 QLM tries to store the keys in two locations: one location at the user level and another folder at the machine level. The StoreKeysOptions property controls where the keys are stored.
 
-The [StoreKeysLocation ](https://soraco.readme.io/reference/estorekeysoptions)property controls whether keys are stored in the registry or on the file system.
+The [StoreKeysLocation ](../enums/estorekeysto.md)property controls whether keys are stored in the registry or on the file system.
 
 In the Registry, data is stored in:
 

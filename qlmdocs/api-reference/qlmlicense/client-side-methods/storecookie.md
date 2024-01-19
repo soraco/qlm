@@ -2,7 +2,7 @@
 
 ### Description
 
-Writes data into a QLM cookie. To read keys, use the [ReadCookie ](https://soraco.readme.io/reference/readcookie)API.
+Writes data into a QLM cookie. To read keys, use the [ReadCookie ](readcookie.md)API.
 
 ```csharp
 bool StoreCookie(string data, string cookieName, int index, 

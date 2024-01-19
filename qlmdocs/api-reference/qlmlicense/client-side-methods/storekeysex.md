@@ -22,7 +22,7 @@ void StoreKeysEx(string activationKey, string computerKey,
 
 ### Remarks
 
-To read keys, use the [ReadKeys ](https://soraco.readme.io/reference/readkeys)API. To clear the stored keys, use the [DeleteKeysEx ](https://soraco.readme.io/reference/deletekeysex)API.
+To read keys, use the [ReadKeys ](readkeys.md)API. To clear the stored keys, use the [DeleteKeysEx ](deletekeysex.md)API.
 
 QLM stores its data in two locations: one location at the user level and another location at the machine level. The StoreKeysOptions property controls where data is stored.
 

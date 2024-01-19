@@ -18,14 +18,14 @@ Validates a QLM license file by performing the following operations:
 
 ### Parameters
 
-| Parameter       |                                  Type                                 | Description                    |
-| --------------- | :-------------------------------------------------------------------: | ------------------------------ |
-| webServiceUrl   |                                 string                                | URL to the QLM License Server  |
-| licenseFileName |                                 string                                | path to the license file       |
-| activationKey   |                                 string                                | the activation key             |
-| computerID      |                                 string                                | the unique computer identifier |
-| licenseBinding  | [ELicenseBinding](https://soraco.readme.io/reference/elicensebinding) | the license binding to use     |
-| licenseInfo     |    [ILicenseInfo](https://soraco.readme.io/reference/ilicenseinfo)    | return licenseInfo object      |
+| Parameter       |                      Type                      | Description                    |
+| --------------- | :--------------------------------------------: | ------------------------------ |
+| webServiceUrl   |                     string                     | URL to the QLM License Server  |
+| licenseFileName |                     string                     | path to the license file       |
+| activationKey   |                     string                     | the activation key             |
+| computerID      |                     string                     | the unique computer identifier |
+| licenseBinding  | [ELicenseBinding](../enums/elicensebinding.md) | the license binding to use     |
+| licenseInfo     |       [ILicenseInfo](../../ilicenseinfo/)      | return licenseInfo object      |
 
 ### Return
 
@@ -64,10 +64,4 @@ if (ret == false)
     Environment.Exit(0);
   }
 }
-
-
-
-
-
-
 ```

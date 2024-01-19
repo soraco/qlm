@@ -30,7 +30,7 @@ To use a proxy server, you must set the UseProxyServer, ProxyUser, ProxyDomain a
 
 ### Example
 
-```c#
+```csharp
 QlmLicense license = new QlmLicense ();
 license.DefineProduct(1, "Demo", 1, 0, "DemoKey", "{24EAA3C1-3DD7-40E0-AEA3-D20AA17A6005}");
 IDashboardLicenseInfo di = license.GetDashboardLicenseInfo ("https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx", "AXXX", "UXXX", Environment.MachineName);

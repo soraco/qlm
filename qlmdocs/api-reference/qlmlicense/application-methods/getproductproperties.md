@@ -50,7 +50,7 @@ The return value is an XML fragment that contains all product properties and the
 
 ### Example
 
-```c#
+```csharp
 LicenseValidator lv = new LicenseValidator();
 
 string props = lv.QlmLicenseObject.GetProductProperties(string.Empty, "AXDJ0T0Z00AEIX8F8ZHE3J1G8P", out response);

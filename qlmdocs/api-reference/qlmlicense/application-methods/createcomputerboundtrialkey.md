@@ -13,8 +13,6 @@ Creates a trial activation key, then automatically activates it on the server si
                                     string affiliateID, 
                                     string userData1, 
                                     out string response)
-
-
 ```
 
 ### Parameters
@@ -51,7 +49,7 @@ Creates a trial activation key, then automatically activates it on the server si
 
 ### Remarks
 
-You must call [DefineProduct ](https://soraco.readme.io/reference/defineproduct)before calling this function.
+You must call [DefineProduct ](../client-side-methods/defineproduct.md)before calling this function.
 
 This function is useful if you want to create trial keys from within your application. The trial period is controlled by the \*\*trialDuration \*\*Server Property. Server Properties can be set from the Manage Keys / Sites / Server Properties page.
 
@@ -59,7 +57,7 @@ If you want to prevent calls to this function, set the \*\*enableCreateComputerB
 
 ### Example
 
-```c#
+```csharp
 QLM.LicenseValidator licenseValidator = new QLM.LicenseValidator();
 string response = string.Empty;
 string webServiceUrl = "https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx";

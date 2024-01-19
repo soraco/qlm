@@ -23,26 +23,26 @@ ILicenseInfo ValidateLicenseOnServerEx3 (string webServiceUrl, string activation
 
 ### Parameters
 
-| Parameter      |       Type       | Description                                                                                                                    |
-| -------------- | :--------------: | ------------------------------------------------------------------------------------------------------------------------------ |
-| webServiceUrl  |      string      | URL to the QLM License Server                                                                                                  |
-| activationKey  |      string      | the activation key                                                                                                             |
-| computerKey    |      string      | the computer bound key                                                                                                         |
-| computerID     |      string      | the unique computer identifier                                                                                                 |
-| computerName   |      string      | the name of the computer. If you pass an empty string, QLM will automatically extract the computer name of the current system. |
-| autoReactivate |       bool       | if true, this function will automatically try to reactivate the license if it's not registered on the server.                  |
-| errorCode      | EServerErrorCode | returned error code                                                                                                            |
-| returnMsg      |      string      | returned error message                                                                                                         |
+| Parameter      |                       Type                       | Description                                                                                                                    |
+| -------------- | :----------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------ |
+| webServiceUrl  |                      string                      | URL to the QLM License Server                                                                                                  |
+| activationKey  |                      string                      | the activation key                                                                                                             |
+| computerKey    |                      string                      | the computer bound key                                                                                                         |
+| computerID     |                      string                      | the unique computer identifier                                                                                                 |
+| computerName   |                      string                      | the name of the computer. If you pass an empty string, QLM will automatically extract the computer name of the current system. |
+| autoReactivate |                       bool                       | if true, this function will automatically try to reactivate the license if it's not registered on the server.                  |
+| errorCode      | [EServerErrorCode](../enums/eservererrorcode.md) | returned error code                                                                                                            |
+| returnMsg      |                      string                      | returned error message                                                                                                         |
 
 ### Return
 
-| Type                                                            | Description                                            |
-| --------------------------------------------------------------- | ------------------------------------------------------ |
-| [ILicenseInfo](https://soraco.readme.io/reference/ilicenseinfo) | details about the license including status information |
+| Type                                | Description                                            |
+| ----------------------------------- | ------------------------------------------------------ |
+| [ILicenseInfo](../../ilicenseinfo/) | details about the license including status information |
 
 ### Example
 
-```c#
+```csharp
 LicenseValidator lv = new LicenseValidator (settingsFile);
 
 bool result;

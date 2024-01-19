@@ -59,7 +59,7 @@ The return response is an XML fragment that contains details about the license. 
 
 ## Example C\#
 
-```c#
+```csharp
 LicenseValidator lv = new LicenseValidator();
 string computerID = "PCID123";
 string licenseFileXml = string.Empty;
@@ -76,7 +76,7 @@ if (lv.QlmLicenseObject.GetLicenseFile(string.Empty, "AXDJ0T0Z00AEIX8F8ZHE3J1G8P
 }
 ```
 
-```Text
+```csharp
 ' Assuming lv is an instance of the LicenseValidator class
 
 If lv.LicenseObject.GetLicenseFile("", lv.ActivationKey, "", "", xmlFile) Then

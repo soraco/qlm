@@ -10,21 +10,18 @@ Adds a new user.
                  bool updateIfExists, 
                  bool createUserAccount,
                  out
-                 string response);
-
-
-
+                 string response)
 ```
 
 ### Parameters
 
-| Parameter         |                                   Type                                  | Description                                                                              |
-| ----------------- | :---------------------------------------------------------------------: | ---------------------------------------------------------------------------------------- |
-| webServiceUrl     |                                  string                                 | URL to the QLM License Server                                                            |
-| customerInfo      | [IQlmCustomerInfo](https://soraco.readme.io/reference/iqlmcustomerinfo) | customer to add                                                                          |
-| updateIfExists    |                                   bool                                  | update the customer information if the customer already exists                           |
-| createUserAccount |                                   bool                                  | create a [QLM user account](https://support.soraco.co/hc/en-us/articles/14873226954772). |
-| response          |                                  string                                 | XML fragment containing the result of the call. The Xml fragment schema is as follows:   |
+| Parameter         |                     Type                    | Description                                                                              |
+| ----------------- | :-----------------------------------------: | ---------------------------------------------------------------------------------------- |
+| webServiceUrl     |                    string                   | URL to the QLM License Server                                                            |
+| customerInfo      | [IQlmCustomerInfo](../../iqlmcustomerinfo/) | customer to add                                                                          |
+| updateIfExists    |                     bool                    | update the customer information if the customer already exists                           |
+| createUserAccount |                     bool                    | create a [QLM user account](https://support.soraco.co/hc/en-us/articles/14873226954772). |
+| response          |                    string                   | XML fragment containing the result of the call. The Xml fragment schema is as follows:   |
 
 ### Return
 
@@ -52,7 +49,7 @@ Adds a new user.
 
 ## Remarks
 
-Use [ParseResults ](https://soraco.readme.io/reference/parseresults)to interpret the results of the call and load the returned data into an [ILicenseInfo ](https://soraco.readme.io/reference/ilicenseinfo)object.
+Use [ParseResults ](../../iqlmcustomerinfo/methods/parseresults.md)to interpret the results of the call and load the returned data into an [ILicenseInfo ](../../ilicenseinfo/)object.
 
 ```csharp
 QlmCustomerInfo ci = new QlmCustomerInfo();

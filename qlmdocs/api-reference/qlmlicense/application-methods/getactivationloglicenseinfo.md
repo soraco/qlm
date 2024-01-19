@@ -25,13 +25,13 @@ To parse the data returned in dataSet, check this [article](https://support.sora
 
 ### Return
 
-| Type                                                            | Description                                                                   |
-| --------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| [ILicenseInfo](https://soraco.readme.io/reference/ilicenseinfo) | detailed information about the activated license for the specified computerID |
+| Type                                | Description                                                                   |
+| ----------------------------------- | ----------------------------------------------------------------------------- |
+| [ILicenseInfo](../../ilicenseinfo/) | detailed information about the activated license for the specified computerID |
 
 ### C# Example
 
-```c#
+```csharp
 ILicenseInfo li = license.GetActivationLogLicenseInfo (webServiceUrl, 
                                                        "A2GM0-50K00-PYU3F-784HH-1U1V5T", 
                                                        "PC-001", 

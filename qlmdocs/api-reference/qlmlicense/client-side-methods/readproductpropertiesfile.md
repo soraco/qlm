@@ -18,9 +18,9 @@ IQlmProductProperties ReadProductProperties (string productPropertiesFileName,
 
 ### Return
 
-|                                     Data Type                                     | Description                                                          |
-| :-------------------------------------------------------------------------------: | -------------------------------------------------------------------- |
-| [IQlmProductProperties](https://soraco.readme.io/reference/iqlmproductproperties) | an object that contains a collection of IQlmProductProperty objects. |
+|                       Data Type                       | Description                                                          |
+| :---------------------------------------------------: | -------------------------------------------------------------------- |
+| [IQlmProductProperties](../../iqlmproductproperties/) | an object that contains a collection of IQlmProductProperty objects. |
 
 ### Remarks
 

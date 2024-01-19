@@ -56,7 +56,9 @@ Activates a license key over the internet, binds it to a specific user and retur
 
 ## Remarks
 
-You must call [DefineProduct ](https://soraco.readme.io/reference/defineproduct)before calling this function.
+You must call [DefineProduct ](../client-side-methods/defineproduct.md)before calling this function.
+
+Use [ParseResults ](../../iqlmcustomerinfo/methods/parseresults.md)to interpret the results of the call and load the returned data into an [ILicenseInfo ](../../ilicenseinfo/)object.
 
 This function can be used to activate a license when the Activation Key is not known. For example, you can use this function to activate a license based on an Order ID. To do so, you set the fieldName argument to "OrderID" and set the fieldValue argument to the value of the Order ID.
 
@@ -64,9 +66,7 @@ By default, the supported fields are: OrderID and ReceiptID.
 
 You can modify the list of supported fields by updating the activationByFieldAllowedFields setting in the QLM License Server's web.config file.
 
-Use [ParseResults ](https://soraco.readme.io/reference/parseresults)to interpret the results of the call and load the returned data into an [ILicenseInfo ](https://soraco.readme.io/reference/ilicenseinfo)object.
-
-```c#
+```csharp
 ILicenseInfo li = new LicenseInfo();
 string message = string.Empty;
 if (lv.QlmLicenseObject.ParseResults(response, ref li, ref message))

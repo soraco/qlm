@@ -24,7 +24,7 @@ string ValidateLicense (string LicenseKey)
 
 Prior to calling this function, you must:
 
-* Call [DefineProduct](https://soraco.readme.io/reference/defineproduct)
+* Call [DefineProduct](defineproduct.md)
 * Set the PublicKey property
 
-After calling this function, call [GetStatus ](https://soraco.readme.io/reference/getstatus)to get the status of the call.
+After calling this function, call [GetStatus ](getstatus.md)to get the status of the call.

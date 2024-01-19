@@ -22,14 +22,14 @@ Performs the following validations on the License Server:
 
 ### Parameters
 
-| Parameter     |       Type       | Description                    |
-| ------------- | :--------------: | ------------------------------ |
-| webServiceUrl |      string      | URL to the QLM License Server  |
-| activationKey |      string      | the license key to validate    |
-| computerKey   |      string      | the computer bound key         |
-| computerID    |      string      | the unique computer identifier |
-| errorCode     | EServerErrorCode | returned error code            |
-| returnMsg     |      string      | returned error message         |
+| Parameter     |                       Type                       | Description                    |
+| ------------- | :----------------------------------------------: | ------------------------------ |
+| webServiceUrl |                      string                      | URL to the QLM License Server  |
+| activationKey |                      string                      | the license key to validate    |
+| computerKey   |                      string                      | the computer bound key         |
+| computerID    |                      string                      | the unique computer identifier |
+| errorCode     | [EServerErrorCode](../enums/eservererrorcode.md) | returned error code            |
+| returnMsg     |                      string                      | returned error message         |
 
 ### Return
 

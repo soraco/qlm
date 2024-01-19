@@ -49,9 +49,9 @@ You can control how many times a user can release a license with the following S
 
 By default, you must set the CommunicationEncryptionKey before calling ReleaseLicense. The server property releaseLicenseUseAdminEncryptionKey can be used to configure the server to require the AdminEncryption to be set in order to call ReleaseLicense.
 
-Use [ParseResults ](https://soraco.readme.io/reference/parseresults)to interpret the results of the call and load the returned data into an [ILicenseInfo ](https://soraco.readme.io/reference/ilicenseinfo)object.
+Use [ParseResults ](../../iqlmcustomerinfo/methods/parseresults.md)to interpret the results of the call and load the returned data into an [ILicenseInfo ](../../ilicenseinfo/)object.
 
-```c#
+```csharp
 ILicenseInfo li = new LicenseInfo();
 string message = string.Empty;
 if (lv.QlmLicenseObject.ParseResults(response, ref li, ref message))
