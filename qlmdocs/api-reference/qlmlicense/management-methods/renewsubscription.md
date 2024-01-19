@@ -10,7 +10,7 @@ Note that to call this function, you must:
 
 * Set the AdminEncryptionKey
 
-```c#
+```csharp
 bool RenewSubscription (string webServiceUrl, string activationKey, 
                         DateTime expiryDate, out string errorMessage)
 ```

@@ -10,7 +10,7 @@ Note that to call this function, you must:
 * Set the AdminEncryptionKey
 * Call [DefineProduct](https://soraco.readme.io/reference/defineproduct)
 
-```c#
+```csharp
 void CreateActivationKeyWithExpiryDateEx2(string webServiceUrl, string email, 
                                           string features, int numSeats, 
                                           bool useMultipleActivationsKey, string qlmVersion, 

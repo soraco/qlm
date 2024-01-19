@@ -8,7 +8,7 @@ Note that to call this function, you must:
 
 * Set the AdminEncryptionKey
 
-```c#
+```csharp
 bool UpdateLicenseKey (string webServiceUrl, string currentKey, 
                        string newKey, out string response)
 ```

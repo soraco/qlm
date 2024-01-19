@@ -8,7 +8,7 @@ SetProductProperties should typically never be called from within your applicati
 
 If you must call SetProductProperties from within your application, we recommend that you do not set the QlmLicense.AdminEncryptionKey property in your application but rather set the Server Property setProductPropertiesUseAdminEncryptionKey property to false. You can set Server Properties from the QLM Management Console / Manage Keys / Sites / Server Properties / options.
 
-```c#
+```csharp
 bool SetProductProperties (string webServiceUrl, string activationKey, 
                            string propertiesXml, out string errorMessage)
 ```

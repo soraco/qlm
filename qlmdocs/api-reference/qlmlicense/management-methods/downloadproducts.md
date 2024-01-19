@@ -8,7 +8,7 @@ Note that to call this function, you must:
 
 * Set the AdminEncryptionKey
 
-```c#
+```csharp
 void DownloadProducts (string webServiceUrl, ref string dataSet, 
                        out string response)
 ```

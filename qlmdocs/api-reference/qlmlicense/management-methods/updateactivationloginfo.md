@@ -12,7 +12,7 @@ Note that to call this function, you must:
 
 * Set the AdminEncryptionKey
 
-```c#
+```csharp
 bool UpdateActivationLogInfo (string webServiceUrl, string activationKey, 
                               string computerID, string computerKey, 
                               string computerName, string licenseData, 

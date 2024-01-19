@@ -8,7 +8,7 @@ Note that to call this function, you must:
 
 * Set the AdminEncryptionKey
 
-```c#
+```csharp
 void DeleteLicense (string webServiceUrl, string activationKey, 
                     string computerID, bool multipleActivationsKey, 
                     bool historyTable, out string response)

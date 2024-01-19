@@ -8,7 +8,7 @@ Note that to call this function, you must:
 
 * Set the AdminEncryptionKey
 
-```c#
+```csharp
 bool UpdateOrderStatus (string webServiceUrl, string orderID, 
                         int orderStatus, out string response)
 ```

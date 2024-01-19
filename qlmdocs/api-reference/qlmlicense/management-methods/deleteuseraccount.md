@@ -8,7 +8,7 @@ Note that to call this function, you must:
 
 * Set the AdminEncryptionKey
 
-```c#
+```csharp
 void DeleteUserAccount(string webServiceUrl, string userAccountName, 
                        out string response)
 ```

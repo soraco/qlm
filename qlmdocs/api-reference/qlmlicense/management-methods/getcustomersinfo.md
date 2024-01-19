@@ -8,7 +8,7 @@ Note that to call this function, you must:
 
 * Set the AdminEncryptionKey
 
-```c#
+```csharp
 DataSet GetCustomersInfo (string webServiceUrl, string fieldName, 
                           string fieldOperator, string fieldValue, 
                           out string response)

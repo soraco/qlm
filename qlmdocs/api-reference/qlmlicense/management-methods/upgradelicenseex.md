@@ -16,7 +16,7 @@ Note that to call this function, you must:
 
 * Set the AdminEncryptionKey
 
-```c#
+```csharp
 bool UpgradeLicense (string webServiceUrl, string activationKey, 
                      int productID, int majorVersion, int minorVersion, 
                      string qlmVersion, string features, 

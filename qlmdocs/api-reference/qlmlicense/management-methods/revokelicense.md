@@ -10,7 +10,7 @@ Note that to call this function, you must:
 
 * Set the AdminEncryptionKey
 
-```c#
+```csharp
 bool RevokeLicense (string webServiceUrl, string activationKey, 
                     bool revoke, out string response)
 ```

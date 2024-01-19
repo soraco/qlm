@@ -10,7 +10,7 @@ Note that to call this function, you must:
 * Set the AdminEncryptionKey
 * Call [DefineProduct](https://soraco.readme.io/reference/defineproduct)
 
-```c#
+```csharp
 void CreateOrder(string webServiceUrl, string email, 
                  int features, int quantity, 
                  bool useMultipleActivationsKey, string qlmVersion, 

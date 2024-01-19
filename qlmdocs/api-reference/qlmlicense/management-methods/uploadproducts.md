@@ -8,7 +8,7 @@ Note that to call this function, you must:
 
 * Set the AdminEncryptionKey
 
-```c#
+```csharp
 void UploadProducts (string webServiceUrl, string productsXml, 
                      DateTime updatedUtcDate, out string response)
 ```

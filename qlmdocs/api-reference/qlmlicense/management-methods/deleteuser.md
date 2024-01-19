@@ -8,7 +8,7 @@ Note that to call this function, you must:
 
 * Set the AdminEncryptionKey
 
-```c#
+```csharp
 bool DeleteUser (string webServiceUrl, string email, out string response)
 ```
 

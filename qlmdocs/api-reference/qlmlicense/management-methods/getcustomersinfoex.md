@@ -8,7 +8,7 @@ Note that to call this function, you must:
 
 * Set the AdminEncryptionKey
 
-```c#
+```csharp
 IQlmCustomerInfo [] GetCustomersInfoEx (string webServiceUrl, string fieldName, 
                                         string fieldOperator, string fieldValue)
 ```

@@ -8,7 +8,7 @@ Note that to call this function, you must:
 
 * Set the AdminEncryptionKey
 
-```c#
+```csharp
 bool SetMaintenancePlanRenewalDate (string webServiceUrl, string activationKey, 
                                     DateTime maintenancePlanRenewalDate, 
                                     out string errorMessage)
