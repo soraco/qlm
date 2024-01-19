@@ -4,7 +4,7 @@
 
 Retrieves information about an Activation Key.
 
-```c#
+```csharp
   ILicenseInfo GetLicenseInfo (string webServiceUrl, 
                                string activationKey, 
                                bool historyTable, 

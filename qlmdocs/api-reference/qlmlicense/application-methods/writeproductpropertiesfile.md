@@ -4,7 +4,7 @@
 
 Gets the product properties from the License Server, validates the signature, and then writes them to a file on disk. The QlmLicense.DefaultWebServiceUrl must be set before calling this function.
 
-```c#
+```csharp
 bool WriteProductPropertiesFile(string activationKey, string licenseFile, 
                                 out string errorMessage)
 ```

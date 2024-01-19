@@ -4,7 +4,7 @@
 
 Gets an activation key given an OrderID.
 
-```c#
+```csharp
  string GetActivationKeyFromOrderID(string webServiceUrl, 
                                     string legacyKey, 
                                     out string response)

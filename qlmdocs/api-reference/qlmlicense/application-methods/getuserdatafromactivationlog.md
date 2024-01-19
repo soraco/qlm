@@ -4,7 +4,7 @@
 
 Gets the UserData1 field for a specific license key from the ActivationLog table. The ActivationLog table is used when a license key is of type MultipleActivationsKey and more than 1 seat is associated with the license key.
 
-```c#
+```csharp
 string GetUserDataFromActivationLog (string webServiceUrl, 
                                      string activationKey, 
                                      string computerID, 

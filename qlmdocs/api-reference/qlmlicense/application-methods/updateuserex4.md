@@ -4,7 +4,7 @@
 
 Updates the data of an existing user.
 
-```c#
+```csharp
  void UpdateUserEx4(string webServiceUrl, 
                     string previousEmail, 
                     IQlmCustomerInfo customerInfo, 

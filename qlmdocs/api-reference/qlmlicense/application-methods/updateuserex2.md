@@ -6,7 +6,7 @@ Updates the data of an existing user.
 
 To use a proxy server, you must set the UseProxyServer, ProxyUser, ProxyDomain and ProxyPassword properties prior to calling this function.
 
-```c#
+```csharp
   void UpdateUserEx(string webServiceUrl, 
                   string previousEmail, 
                   string customerName, 

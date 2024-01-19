@@ -4,7 +4,7 @@
 
 Activates a license key over the internet, binds it to a specific user and returns a computer bound license key.
 
-```c#
+```csharp
  void ActivateLicenseByField(string webServiceUrl,
                              string fieldName, 
                              string fieldValue,

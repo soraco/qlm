@@ -4,7 +4,7 @@
 
 Updates the privacy consent of a customer.
 
-```c#
+```csharp
  void UpdatePrivacyConsent(string webServiceUrl, 
                            string email, 
                            bool consent, 

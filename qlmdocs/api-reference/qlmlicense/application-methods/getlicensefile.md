@@ -8,7 +8,7 @@ To use a proxy server, you must set the UseProxyServer, ProxyUser, ProxyDomain a
 
 You must call DefineProduct before calling this function.
 
-```c#
+```csharp
  bool GetLicenseFile(string webServiceUrl, 
                      string activationKey, 
                      string computerKey, 

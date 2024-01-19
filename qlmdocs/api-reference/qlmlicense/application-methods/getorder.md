@@ -4,7 +4,7 @@
 
 Gets the details of an order.
 
-```c#
+```csharp
 DataRowCollection GetOrder (string webServiceUrl, 
                             string orderID, 
                             out string response)

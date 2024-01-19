@@ -4,7 +4,7 @@
 
 Checks if the current computer is properly registered in the QLM database.
 
-```c#
+```csharp
   void IsIllegalComputer (string webServiceUrl,
                           string activationKey, 
                           string computerKey, 

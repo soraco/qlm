@@ -8,7 +8,7 @@ Note that to call this function, you must:
 
 * Set the CommunicationEncryptionKey property
 
-```c#
+```csharp
  void GetActivationLog(string webServiceUrl, 
                        string activationLKey, 
                        ref string dataSet, 

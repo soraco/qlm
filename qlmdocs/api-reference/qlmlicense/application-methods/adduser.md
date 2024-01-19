@@ -4,7 +4,7 @@
 
 Adds a new user.
 
-```c#
+```csharp
 void AddUser(string webServiceUrl, 
              string customerName, 
              string customerEmail, 

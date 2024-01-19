@@ -4,7 +4,7 @@
 
 Gets the value of a server property.
 
-```c#
+```csharp
  string GetServerProperty (string webServiceUrl, 
                            string property, 
                            out string response)

@@ -8,7 +8,7 @@ To use a proxy server, you must set the UseProxyServer, ProxyUser, ProxyDomain a
 
 To retrieve a specific license key-related information, call GetDashboardLicenseInfo.
 
-```c#
+```csharp
 IDashboardInfo GetDashboardInfo (string webServiceUrl, 
                                  int recentOrders, 
                                  int upcomingRenewals)

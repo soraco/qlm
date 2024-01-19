@@ -4,7 +4,7 @@
 
 Gets the latest version of the specified.
 
-```c#
+```csharp
  string GetLatestVersion (string webServiceUrl, 
                                   int productID, 
                                   int majorVersion, 

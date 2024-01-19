@@ -4,7 +4,7 @@
 
 Gets information about all the activations of a specific activation key
 
-```c#
+```csharp
  ILicenseInfo[] GetActivatedSystems(string webServiceUrl, 
                                     string activationKey, 
                                     out string message)

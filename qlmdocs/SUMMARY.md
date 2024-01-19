@@ -559,7 +559,6 @@
         * [AddUserEx](api-reference/qlmlicense/application-methods/adduserex.md)
         * [AddUserEx2](api-reference/qlmlicense/application-methods/adduserex2.md)
         * [AddUserEx3](api-reference/qlmlicense/application-methods/adduserex3.md)
-        * [Description](api-reference/qlmlicense/application-methods/description.md)
         * [CreateComputerBoundTrialKey](api-reference/qlmlicense/application-methods/createcomputerboundtrialkey.md)
         * [DownloadLicenseFileFromServer](api-reference/qlmlicense/application-methods/downloadlicensefilefromserver.md)
         * [DownloadProductPropertiesFromServer](api-reference/qlmlicense/application-methods/downloadproductpropertiesfromserver.md)

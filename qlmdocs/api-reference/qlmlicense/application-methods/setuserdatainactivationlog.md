@@ -4,7 +4,7 @@
 
 Sets the user data field associated with an activation key and a computer ID. This method should be used for multiple activations keys.
 
-```c#
+```csharp
 bool SetUserDataInActivationLog (string webServiceUrl, string activationKey, 
                                  string computerID, string userData, 
                                  out string errorMessage)

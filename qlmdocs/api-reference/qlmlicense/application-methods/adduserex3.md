@@ -4,7 +4,7 @@
 
 Adds a new user.
 
-```c#
+```csharp
  bool AddUserEx3(string webServiceUrl, 
                  IQlmCustomerInfo customerInfo, 
                  bool updateIfExists, 

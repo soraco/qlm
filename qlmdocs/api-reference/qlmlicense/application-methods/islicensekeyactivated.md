@@ -4,7 +4,7 @@
 
 Checks if the provided license key has been activated on the specified system.
 
-```c#
+```csharp
    bool IsLicenseKeyActivated (string webServiceUrl, 
                                string activationKey, 
                                string computerID )

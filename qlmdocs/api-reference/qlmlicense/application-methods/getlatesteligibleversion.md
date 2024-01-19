@@ -6,7 +6,7 @@ Gets the latest version of the specified product that the user is eligible to. T
 
 A user is eligible to the latest version where the Maintenance Plan Renewal Date is greater than or equal to the product's release date. Note that if the maintenance plan is not enabled, then the latest version is returned based on the provided product ID, major version and minor version.
 
-```c#
+```csharp
  string GetLatestEligibleVersion (string webServiceUrl, 
                                   string activationKey, 
                                   string computerKey, 

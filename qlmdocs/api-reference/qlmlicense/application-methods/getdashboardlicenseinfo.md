@@ -6,7 +6,7 @@ Retrieves dashboard-type information related to the specified license key.
 
 To use a proxy server, you must set the UseProxyServer, ProxyUser, ProxyDomain and ProxyPassword properties prior to calling this function.
 
-```c#
+```csharp
  IDashboardLicenseInfo GetDashboardLicenseInfo (string webServiceUrl,
                                                 string activationKey, 
                                                 string computerKey,

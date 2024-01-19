@@ -4,7 +4,7 @@
 
 Gets information about a product from the server.
 
-```c#
+```csharp
  IQlmProductInfo GetProductInfo(string webServiceUrl, string productName, 
                                 int productID, int majorVersion, int minorVersion)
 ```

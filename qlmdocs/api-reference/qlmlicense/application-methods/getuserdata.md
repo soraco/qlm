@@ -4,7 +4,7 @@
 
 Gets the UserData1 field for a specific license key.
 
-```c#
+```csharp
 string GetUserData (string webServiceUrl, string activationKey, out string response)
 ```
 

@@ -4,7 +4,7 @@
 
 Pings the License Server and returns the UTC date on the server.
 
-```c#
+```csharp
 bool PingEx(string webServiceUrl, 
           out string response, 
           out DateTime serverDate)

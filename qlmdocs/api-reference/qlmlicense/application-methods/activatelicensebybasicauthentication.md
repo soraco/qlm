@@ -4,7 +4,7 @@
 
 Activates a license key with an user name and password.
 
-```c#
+```csharp
 void ActivateLicenseByBasicAuthentication(string webServiceUrl, string username, string password,
                                         string computerID, string computerName, 
                                         string qlmVersion, string userData1, 

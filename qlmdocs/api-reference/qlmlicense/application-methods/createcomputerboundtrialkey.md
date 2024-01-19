@@ -4,7 +4,7 @@
 
 Creates a trial activation key, then automatically activates it on the server side and returns the computer bound license key.
 
-```c#
+```csharp
  string CreateComputerBoundTrialKey(string webServiceUrl, 
                                     string computerID, 
                                     string computerName, 

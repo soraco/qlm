@@ -4,7 +4,7 @@
 
 Retrieves information about an activated Activation Key for multiple activations keys.
 
-```c#
+```csharp
  ILicenseInfo GetActivationLogLicenseInfo (string webServiceUrl, 
                                            string activationKey, 
                                            string computerID,

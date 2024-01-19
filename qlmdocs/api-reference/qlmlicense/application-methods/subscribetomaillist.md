@@ -4,7 +4,7 @@
 
 Subscribes or unsubscribes a user from the mailing list.
 
-```c#
+```csharp
  bool SubscribeToMailList (string webServiceUrl, 
                            string customerEmail, 
                            bool includeInMailList, 

@@ -4,7 +4,7 @@
 
 Initiates the process of activating a license by authorization code.
 
-```c#
+```csharp
 void RequestAuthorizationCodeForActivation(string webServiceUrl, 
                                            string email, 
                                            string mobile, 

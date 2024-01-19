@@ -4,7 +4,7 @@
 
 Updates the data of an existing user.
 
-```c#
+```csharp
   void UpdateUser(string webServiceUrl, 
                   string previousEmail, 
                   string customerName, 

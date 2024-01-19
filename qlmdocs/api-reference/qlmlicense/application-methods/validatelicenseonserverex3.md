@@ -13,7 +13,7 @@ Performs the following validations on the License Server:
 * Verifies whether the system has exceeded the MaxDaysOffline setting.
 * Returns whether the server has more up-to-date values for the SubscriptionExpiryDate, Features, and FloatingSeats.
 
-```c#
+```csharp
 ILicenseInfo ValidateLicenseOnServerEx3 (string webServiceUrl, string activationKey, 
                                          string computerKey, string computerID, 
                                          string computerName, bool autoReactivate, 

@@ -4,7 +4,7 @@
 
 Gets an activation key given the user data.
 
-```c#
+```csharp
   string GetActivationKeyFromUserData(string webServiceUrl,
                                       string userData,
                                       out string response)

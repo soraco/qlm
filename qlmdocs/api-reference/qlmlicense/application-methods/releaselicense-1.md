@@ -4,7 +4,7 @@
 
 Deactivates a license key on the License Server.
 
-```c#
+```csharp
 void ReleaseLicense (string webServiceUrl, 
                      string activationKey, 
                      string computerID,

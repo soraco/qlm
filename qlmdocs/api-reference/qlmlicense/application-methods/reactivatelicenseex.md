@@ -6,7 +6,7 @@ Reactivates a license to get the latest server-side values such as a new expiry 
 
 This function should be used to avoid the ActivationCount being incremented with every re-activation of the same system. The ActivationCount is used to detect [fraud attempts](https://support.soraco.co/hc/en-us/articles/211530743-How-does-QLM-protect-an-application-hosted-on-a-Virtual-Machine-VM-) when cloning virtual machines.
 
-```c#
+```csharp
 void ReactivateLicense (string webServiceUrl,
                         string activationKey, 
                         string computerID, string computerName,

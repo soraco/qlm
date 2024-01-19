@@ -4,7 +4,7 @@
 
 Gets the subscription expiry date associated with the license.
 
-```c#
+```csharp
 DateTime GetSubscriptionExpiryDate(string webServiceUrl, 
                                    string activationKey, string computerKey, 
                                    out string response)

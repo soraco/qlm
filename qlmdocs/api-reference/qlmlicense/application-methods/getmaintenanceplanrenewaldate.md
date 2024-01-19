@@ -4,7 +4,7 @@
 
 Gets the maintenance plan renewal date.
 
-```c#
+```csharp
   DateTime GetMaintenancePlanRenewalDate (string webServiceUrl, 
                                           string activationKey)
 ```

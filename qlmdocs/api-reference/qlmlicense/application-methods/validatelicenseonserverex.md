@@ -11,7 +11,7 @@ Performs the following validations on the License Server
 * Records the last time connection to the server was made in order to enforce the MaxDaysOffline setting.
 * Verifies whether the system has exceeded the MaxDaysOffline setting.
 
-```c#
+```csharp
  bool ValidateLicenseOnServerEx (string webServiceUrl, 
                                string activationKey, 
                                string computerKey, 

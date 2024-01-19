@@ -4,7 +4,7 @@
 
 Checks if the provided license key is valid.
 
-```c#
+```csharp
   bool IsLicenseKeyRevoked (string webServiceUrl, 
                             string activationKey )
 ```

@@ -4,7 +4,7 @@
 
 Gets the Product Properties associated to an Activation Key.
 
-```c#
+```csharp
 string GetProductProperties (string webServiceUrl,
                              string activationKey, 
                              out string response)

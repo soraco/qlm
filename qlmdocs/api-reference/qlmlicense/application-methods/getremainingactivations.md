@@ -4,7 +4,7 @@
 
 Determines how many activations are still available for the given activation key.
 
-```c#
+```csharp
 int GetRemainingActivations(string webServiceUrl, string activationKey )
 ```
 

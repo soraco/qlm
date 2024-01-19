@@ -4,7 +4,7 @@
 
 Gets the maintenance plan renewal date given a computer key.
 
-```c#
+```csharp
 DateTime GetMaintenancePlanRenewalDateByComputerKey (string webServiceUrl, 
                                                      string computerKey)
 ```

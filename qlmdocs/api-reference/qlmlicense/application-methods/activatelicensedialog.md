@@ -4,7 +4,7 @@
 
 Creates a form for the user to enter his contact information and the activation key. When submitted, the user is added to the database and his license is activated.
 
-```c#
+```csharp
 bool ActivateLicenseDialog(string webServiceUrl, 
                                   string computerID, 
                                   string userData1, 

@@ -4,7 +4,7 @@
 
 Retrieves information about the customer associated with the specified activation key.
 
-```c#
+```csharp
 IQlmCustomerInfo GetCustomerInfo (string webServiceUrl, string activationKey)
 ```
 
