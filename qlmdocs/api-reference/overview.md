@@ -10,19 +10,19 @@
 | Analytics API                    | API related to the QLM Analytics features in QLM Enterprise                                                        |
 | Cloud-based Floating License API | API used in your application for operations related to Cloud-based floating licenses.                              |
 | On-premise Floating License API  | API used in your application for operations related to on-premise floating licenses.                               |
-| HTTP Methods                     | API that can be invoked via a URL, typically used for integration with eCommerce providers.                        |
+| [HTTP Methods](http-methods/)    | API that can be invoked via a URL, typically used for integration with eCommerce providers.                        |
 
 ### QLM API Classes
 
-| Class                         | Description                                                                             |
-| ----------------------------- | --------------------------------------------------------------------------------------- |
-| IQlmLicense                   | This is the main licensing class that provides access to the core functionality of QLM. |
-| ILicenseInfo                  | Hold license information                                                                |
-| QlmHardware                   | Class to extract hardware information                                                   |
-| QlmCustomerInfo               | Holds customer information                                                              |
-| QlmAnalytics                  | Exposes all methods related to the Analytics feature                                    |
-| QlmCloudFloatingLicenseHelper | Helper class for cloud-based floating licenses                                          |
-| QlmFloatingLicenseHelper      | Helper class for on-premise floating licenses                                           |
-| QlmFloatingLicenseMgr         | Main class for on-premise floating licenses                                             |
-| QlmProductProperties          | Manages a collection of Product Properties                                              |
-| QlmProductProperty            | Main class for working with product properties                                          |
+| Class                                                             | Description                                                                             |
+| ----------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [IQlmLicense](qlmlicense/)                                        | This is the main licensing class that provides access to the core functionality of QLM. |
+| [ILicenseInfo](ilicenseinfo/)                                     | Hold license information                                                                |
+| [IQlmHardware](iqlmhardware/)                                     | Class to extract hardware information                                                   |
+| [IQlmCustomerInfo](iqlmcustomerinfo/)                             | Holds customer information                                                              |
+| [IQlmAnalytics](iqlmanalytics/)                                   | Exposes all methods related to the Analytics feature                                    |
+| [IQlmCloudFloatingLicenseHelper](iqlmcloudfloatinglicensehelper/) | Helper class for cloud-based floating licenses                                          |
+| [IQlmFloatingLicenseHelper](iqlmfloatinglicensehelper/)           | Helper class for on-premise floating licenses                                           |
+| [IQlmFloatingLicenseMgr](iqlmfloatinglicensemgr/)                 | Main class for on-premise floating licenses                                             |
+| [IQlmProductProperties](iqlmproductproperties/)                   | Manages a collection of Product Properties                                              |
+| [IQlmProductProperty](iqlmproductproperty/)                       | Main class for working with product properties                                          |
