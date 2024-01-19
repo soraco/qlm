@@ -746,7 +746,6 @@
         * [ValidateLicenseAtStartup](api-reference/.net-api/licensevalidator/methods/validatelicenseatstartup-1.md)
         * [ValidateLicenseAtStartup](api-reference/.net-api/licensevalidator/methods/validatelicenseatstartup-2.md)
   * [HTTP Methods](api-reference/http-methods/README.md)
-    * [Overview](api-reference/http-methods/overview.md)
     * [ActivateKey](api-reference/http-methods/activatekey.md)
     * [ActivateKeyByAuthorizationCodeHttp](api-reference/http-methods/activatekeybyauthorizationcodehttp.md)
     * [AnalyticsAddInstallHttp](api-reference/http-methods/analyticsaddinstallhttp.md)
