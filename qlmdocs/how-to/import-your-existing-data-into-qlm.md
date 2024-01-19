@@ -25,4 +25,5 @@ To avoid having to contact each one of your customers and provide them with thei
 * When you import your license data into QLM, store your current license key either in the LegacyKey (as of QLM 11.1.18306.1) or OrderID or the UserData QLM fields.
 * In the new version of your application that uses QLM, when your application starts up, look up your old license key and call QlmLicense.GetActivationKeyFromLegacyKey (as of QLM 11.1.18306.1) or QlmLicense.GetActivationKeyFromOrderID or QlmLicense.GetActivationKeyFromUserData to retrieve the new QLM Activation Key
 * Once you have retrieved the key, call QlmLicense.ActivateLicense to activate the license. If activation is successful, call QlmLicense.StoreKeys to store the new keys on the end user system.
-* [QlmImport.zip](https://support.soraco.co/hc/en-us/article\_attachments/360031032451)80 KB [Download](https://support.soraco.co/hc/en-us/article\_attachments/360031032451)
+
+{% file src="../.gitbook/assets/QlmImport.zip" %}

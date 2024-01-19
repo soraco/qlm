@@ -1,6 +1,6 @@
 # How to call CreateLicenseKeyEx2 from ASP?
 
-If you need to call CreateLicenseKeyEx2 (Ex3, Ex4, Ex5) from ASP, note that the LicenseType data type does not work expected in ASP.
+If you need to call CreateLicenseKeyEx2 (Ex3, Ex4, Ex5) from ASP, note that the LicenseType data type does not work as expected in ASP.
 
 For example, the following code will NOT work:
 

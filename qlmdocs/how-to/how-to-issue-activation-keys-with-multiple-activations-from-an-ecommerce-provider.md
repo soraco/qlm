@@ -12,9 +12,13 @@ In some cases, you may want to allow the user to activate each purchased copy on
 
 So the full URL would look like:
 
-[https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/GetActivationKey?is\_productid=1\&is\_majorversion=1\&is\_minorversion=0\&is\_usemultipleactivationskey=false\&is\_numberofactivationsperkey=2\&is\_vendor=fastspring](https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/GetActivationKey?is\_productid=1\&is\_majorversion=1\&is\_minorversion=0\&is\_usemultipleactivationskey=false\&is\_numberofactivationsperkey=2\&is\_vendor=fastspring)
+{% code overflow="wrap" %}
+```http
+https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/GetActivationKey?is_productid=1&is_majorversion=1&is_minorversion=0&is_usemultipleactivationskey=false&is_numberofactivationsperkey=2&is_vendor=fastspring
+```
+{% endcode %}
 
-&#x20;In the example above, if a customer purchases 3 licenses, they will receive 3 activation keys and each activation key can be activated on 2 systems.
+In the example above, if a customer purchases 3 licenses, they will receive 3 activation keys and each activation key can be activated on 2 systems.
 
 To send the customer a single activation key that can be activated on 6 systems, use:
 
@@ -32,8 +36,10 @@ To add a fixed number of activations to an order, use the is\_additionalactivati
 
 Example:
 
-[https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/GetActivationKey?is\_productid=1\&is\_majorversion=1\&is\_minorversion=0\&is\_additionalactivations=2\&is\_vendor=fastspring](https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/GetActivationKey?is\_productid=1\&is\_majorversion=1\&is\_minorversion=0\&is\_additionalactivations=2\&is\_vendor=fastspring)
+{% code overflow="wrap" %}
+```http
+https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/GetActivationKey?is_productid=1&is_majorversion=1&is_minorversion=0&is_additionalactivations=2&is_vendor=fastspring
+```
+{% endcode %}
 
-&#x20;
-
-Note that if you are using WooCommerce, is\_additionalactivations and is\_numberofactivationsperkey must be configured as **Custom Fields** in your product definition.
+Note that if you are using WooCommerce, is\_additionalactivations, and is\_numberofactivationsperkey must be configured as **Custom Fields** in your product definition.

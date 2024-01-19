@@ -1,6 +1,6 @@
 # How to define the user / password associated to an eCommerce provider
 
-When you integrate QLM with an eCommerce provider or if you want to invoke QLM's direct [HTTP methods](https://support.soraco.co/hc/en-us/sections/201730676-HTTP-Methods), it is highly recommended to protect access to these methods with a user/password.
+When you integrate QLM with an eCommerce provider or if you want to invoke QLM's direct [HTTP methods](../api-reference/http-methods/), it is highly recommended to protect access to these methods with a user/password.
 
 The first step is to define the user/password for the eCommerce provider that you will be using:
 

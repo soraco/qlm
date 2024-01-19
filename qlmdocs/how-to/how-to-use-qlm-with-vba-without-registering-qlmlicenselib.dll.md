@@ -28,16 +28,13 @@ Instead of instantiating a QlmLicense object, call GetQlmLicense to create an in
 
 Example:
 
-&#x20;        Dim lic As IQlmLicense\
-&#x20;        Set lic = GetQlmLicense()
-
-&#x20;   or if you want to use late binding:
-
+```vba
+Dim lic As IQlmLicense
+         Set lic = GetQlmLicense()
+    or if you want to use late binding:
 Dim lic As Object
-
 Set lic = GetQlmLicense ()
-
-&#x20;
+```
 
 The GetQlmLicense function is included in the LicenseValidator class. You can generate the Licensevalidator class from the QLM Management Console / Protect your application tab.
 

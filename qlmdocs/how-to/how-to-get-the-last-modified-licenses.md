@@ -6,6 +6,7 @@ QLM stores the last modified date in a field called "LastAccessedDate". To under
 
 <mark style="color:orange;">Important: This article uses the QLM Management API which should never be called from within your application.</mark>
 
+{% code overflow="wrap" %}
 ```csharp
 private void GetLastModifiedLicenses (DateTime lastDate)
 {
@@ -35,5 +36,6 @@ private void GetLastModifiedLicenses (DateTime lastDate)
     }
 }
 ```
+{% endcode %}
 
 ###

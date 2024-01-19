@@ -10,7 +10,7 @@ The first step in tracking sales is to define User Groups. A User Group can repr
 * Go to the Manage Keys tab
 * Click User Groups.&#x20;
 * Click Add and enter the name of your User Group in the User Group ID field.For example: Microsoft
-* If you would like members of a user group to manage their own customers and license keys, you can define the privileges of each user group. User Groups can manage their own license keys through the [QLM Portal.](https://support.soraco.co/hc/en-us/articles/204440894-What-is-the-QLM-Portal-)
+* If you would like members of a user group to manage their own customers and license keys, you can define the privileges of each user group. User Groups can manage their own license keys through the [QLM Portal.](../qlm-portal/)
 * Click Ok
 
 Now that the User Group is defined, you can associate a customer and/or a license key to the User Group.
@@ -33,7 +33,7 @@ Now that the User Group is defined, you can associate a customer and/or a licens
 
 **To associate a license to a User Group from an eCommerce Provider**
 
-* When invoking [GetActivationKey](https://support.soraco.co/hc/en-us/articles/207606673-GetActivationKey) or [GetActivationKeyWithExpiryDate](https://support.soraco.co/hc/en-us/articles/207606653-GetActivationKeyWithExpiryDate) from an eCommerce provider, you can associate the license to a User Group by setting the is\_affiliateid argument to the name of the affiliate.
+* When invoking [GetActivationKey](../api-reference/http-methods/getactivationkey.md) or [GetActivationKeyWithExpiryDate](../api-reference/http-methods/getactivationkeywithexpirydate.md) from an eCommerce provider, you can associate the license to a User Group by setting the is\_affiliateid argument to the name of the affiliate.
 
 **To view all licenses associated to a User Group:**
 

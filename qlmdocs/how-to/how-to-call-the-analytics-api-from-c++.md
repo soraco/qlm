@@ -1,23 +1,23 @@
 # How to call the Analytics API from C++
 
-Here's a quick example on how to call the Analytics API from C++:
+Here's a quick example of how to call the Analytics API from C++:
 
-&#x20;LicenseValidator  \*m\_lv = new LicenseValidator ();
-
+{% code overflow="wrap" %}
+```cpp
+ LicenseValidator  *m_lv = new LicenseValidator ();
+ 
 // Add the install (replace the hard code values with the values of your choice)
+CComBSTR bstrInstallID;
 
-CComBSTR bstrInstallID;\
-m\_lv->analytics->AddInstall(\_bstr\_t("1.0.0.0"), \_bstr\_t("2.0.0.0"), \_bstr\_t("MYPC"), \_bstr\_t("MYPC"),\
-\_bstr\_t(activationKey), \_bstr\_t(computerKey), VARIANT\_FALSE,\
-\_bstr\_t("MY\_PRODUCT"), 1, 0, \&bstrInstallID);
-
-&#x20;
-
+m_lv->analytics->AddInstall(_bstr_t("1.0.0.0"), _bstr_t("2.0.0.0"), _bstr_t("MYPC"), _bstr_t("MYPC"),
+_bstr_t(activationKey), _bstr_t(computerKey), VARIANT_FALSE,
+_bstr_t("MY_PRODUCT"), 1, 0, &bstrInstallID);
+ 
 // Record the returned bstrInstallID in the registry or in your application's configuration file
-
-&#x20;
-
+ 
 // When your application is uninstalled, call RemoveInstall
+CComBSTR bstrErrorMessage;
+m_lv->analytics->RemoveInstall(_bstr_t(bstrInstallID), &bstrErrorMessage);
+```
+{% endcode %}
 
-CComBSTR bstrErrorMessage;\
-m\_lv->analytics->RemoveInstall(\_bstr\_t(bstrInstallID), \&bstrErrorMessage);

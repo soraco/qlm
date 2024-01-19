@@ -4,7 +4,8 @@ The syntax for calling UpdateLicenseInfo and update the UserData with an XML fra
 
 Here's an example:
 
-```
+{% code overflow="wrap" %}
+```csharp
 // This is the user data we want to set
 string userData = "<Test>abc</Test><Data>mydata</Data>";
 
@@ -26,6 +27,7 @@ if (target.ParseResults(response, ref li, ref msg))
 
 }
 ```
+{% endcode %}
 
 &#x20;
 

@@ -6,13 +6,11 @@ Requirements: QLM Enterprise v11+
 
 ### Overview
 
-QLM Enterprise allows you to collect analytics about your application's usage. In the current release, QLM can collect and reports analytics about installations and usage of your software application.&#x20;
+QLM Enterprise allows you to collect analytics about your application's usage. In the current release, QLM can collect and report analytics about installations and usage of your software application.&#x20;
 
 You can enable analytics either by directly calling specific API methods from within your application or by setting the QlmEnableAnalytics property if you're using the QLM License Validator class.
 
 The granularity of the usage information is per day. If a user launches your application 5 times in a given day, QLM will report that the application was used on that day but will not report the number of times the application was used.
-
-&#x20;
 
 ### Enable Analytics via QlmEnableAnalytics&#x20;
 
@@ -24,13 +22,11 @@ To enable QLM to publish analytics information to the License Server:
 * Continue stepping through the wizard and generate the LicenseValidator class as well as the XML settings file.
 * Update your application to use the files generated above.
 
-&#x20;
-
 ![mceclip0.png](https://support.soraco.co/hc/article\_attachments/4408212034196)
 
 ### Enable Analytics by calling the API
 
-To collect data about your application's installs and uninstalls, QLM provides 3 methods: AddInstall, UpdateInstall and RemoveInstall.
+To collect data about your application's installs and uninstalls, QLM provides 3 methods: AddInstall, UpdateInstall, and RemoveInstall.
 
 AddInstall should be called during the installation of your application or the first time your application runs.
 
@@ -40,7 +36,7 @@ RemoveInstall should be called when your application is uninstalled.
 
 UpdateLastAccessedDate should be called every time your application runs and at least once per day.
 
-To view reports about your applications installations, start the QLM Application and click on the Analytics tab.
+To view reports about your application's installations, start the QLM Application and click on the Analytics tab.
 
 The Analytics tab displays two graphs and a table.
 
@@ -118,7 +114,7 @@ public bool RemoveInstall(string installID, out string errorMessage)\
 \
 **Description**\
 \
-Unregisters an application with the server. You should call this function when the user uninstalls your application.
+Unregister an application with the server. You should call this function when the user uninstalls your application.
 
 **Parameters**
 
@@ -158,7 +154,7 @@ To view analytics data from the QLM Management Console:
 
 * Launch the QLM Management Console
 * Go to the Analytics tab
-* On the top tool bar, you can select the License Model and the date range of the displayed data.
+* On the top toolbar, you can select the License Model and the date range of the displayed data.
 
 The different tabs display various graphical representations of the collected data whereas the actual data can be viewed in the Data View tab.&#x20;
 

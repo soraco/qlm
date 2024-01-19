@@ -6,7 +6,13 @@ If you would like to enable the maintenance plan when a purchase is made, add th
 
 Example:
 
-https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/GetActivationKey?is\_productid=1\&is\_majorversion=1\&is\_minorversion=0\&is\_vendor=fastspring\&is\_maintenance\_plan=1
+{% code overflow="wrap" %}
+```http
+https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/GetActivationKey?is_productid=1&is_majorversion=1&is_minorversion=0&is_vendor=fastspring&is_maintenance_plan=1
+```
+{% endcode %}
+
+
 
 The example above will enable the maintenance plan with a default duration of 1 year. The default can be changed from the QLM Management Console / Manage Keys / Sites / Server Properties / maintenancePlanPeriodInDays.
 
@@ -14,7 +20,11 @@ The example above will enable the maintenance plan with a default duration of 1 
 
 Example:
 
-https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/GetActivationKey?is\_productid=1\&is\_majorversion=1\&is\_minorversion=0\&is\_vendor=fastspring\&is\_maintenance\_plan=1\&is\_maintduration=60
+{% code overflow="wrap" %}
+```http
+https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/GetActivationKey?is_productid=1&is_majorversion=1&is_minorversion=0&is_vendor=fastspring&is_maintenance_plan=1&is_maintduration=60
+```
+{% endcode %}
 
 The example above will enable the maintenance plan with a duration of 60 days.
 

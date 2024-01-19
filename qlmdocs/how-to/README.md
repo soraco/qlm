@@ -400,12 +400,12 @@
 [how-to-configure-the-qlm-self-help-web-page.md](how-to-configure-the-qlm-self-help-web-page.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-follow-up-on-idle-trials-with-qlm-enterprise-1.md" %}
-[how-to-follow-up-on-idle-trials-with-qlm-enterprise-1.md](how-to-follow-up-on-idle-trials-with-qlm-enterprise-1.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-follow-up-on-idle-trials-with-qlm-enterprise-1.md" %}
-[how-to-follow-up-on-idle-trials-with-qlm-enterprise-1.md](how-to-follow-up-on-idle-trials-with-qlm-enterprise-1.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-create-a-trial-key-from-within-your-application.md" %}
@@ -552,8 +552,8 @@
 [how-to-extend-the-expiry-date-for-a-customer.md](how-to-extend-the-expiry-date-for-a-customer.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-do-i-use-the-qlm-c-api.md" %}
-[how-do-i-use-the-qlm-c-api.md](how-do-i-use-the-qlm-c-api.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-migrate-my-products-and-settings-to-another-machine.md" %}

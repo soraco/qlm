@@ -46,11 +46,9 @@ In your own application, create localized versions of all the customizable text.
 
 **How to localize the customizable properties of QLM License Wizard**
 
-To localize the QLM License Wizard, please refer to this [article](https://support.soraco.co/hc/en-us/articles/360024474812-QLM-License-Wizard-localization).
+To localize the QLM License Wizard, please refer to this [article](qlm-license-wizard-localization.md).
 
-Note that if you manually modify an xml file, you must digitally sign the xml file after modifications with the [QlmSignFile.exe](https://support.soraco.co/hc/en-us/articles/360021354692) utility.
-
-&#x20;
+Note that if you manually modify an xml file, you must digitally sign the xml file after modifications with the [QlmSignFile.exe](../faq/re-signing-the-xml-settings-file-after-modification.md) utility.
 
 **How to localize the QLM License Server**
 

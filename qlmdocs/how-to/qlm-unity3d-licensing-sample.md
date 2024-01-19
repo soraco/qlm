@@ -10,4 +10,4 @@ The sample is configured to use the QLM built-in Demo product and will connect t
 
 If you build the sample, you must run the generated exe in Windowed mode.
 
-* [QlmUnity3d.WindowsSample.zip](https://support.soraco.co/hc/en-us/article\_attachments/204247926)7 MB [Download](https://support.soraco.co/hc/en-us/article\_attachments/204247926)
+{% file src="../.gitbook/assets/QlmUnity3d.WindowsSample.zip" %}

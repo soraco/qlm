@@ -1,15 +1,17 @@
 # How to call ParseResultsEx from C++
 
-ParseResultsEx is a function used to parse most xml return values from the QLM web service.
+ParseResultsEx is a function used to parse most XML return values from the QLM web service.
 
-&#x20;
+&#x20;To call ParseResultsEx from C++:
 
-To call ParseResultsEx from C++:
-
-ILicenseInfoPtr li(\_\_uuidof(LicenseInfo));\
+{% code overflow="wrap" %}
+```cpp
+ILicenseInfoPtr li(__uuidof(LicenseInfo));
 CComBSTR bstrMessage;
-
-if (license->ParseResultsEx(\_bstr\_t(bstrResponse), li, \&bstrMessage) == VARIANT\_TRUE)\
-{\
-&#x20; // Access any of the pLicenseInfo properties\
+if (license->ParseResultsEx(_bstr_t(bstrResponse), li, &bstrMessage) == VARIANT_TRUE)
+{
+  // Access any of the pLicenseInfo properties
 }
+```
+{% endcode %}
+
