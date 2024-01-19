@@ -6,9 +6,11 @@ Registers an installation with the server. You should call this function once wh
 
 To invoke this method via a URL, append this function's name to the URL of the QLM License Server and add the required arguments.
 
+{% code overflow="wrap" %}
 ```http
 http://yourserver/yourvirtualdirectory/qlmservice.asmx/AnalyticsAddInstallHttp?is_swversion=1.0&is_osversion=Windows 7&...
 ```
+{% endcode %}
 
 ### Arguments
 

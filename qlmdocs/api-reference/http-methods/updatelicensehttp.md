@@ -20,9 +20,11 @@ Unlike the UpgradeLicense method which generates a new Activation Key, UpdateLic
 
 To invoke this method via a URL, append this function's name to the URL of the QLM License Server and add the required arguments.
 
+{% code overflow="wrap" %}
 ```http
-http://yourserver/yourvirtualdirectory/qlmservice.asmx/UpdateLicenseHttp?is_avkey=<activationKey>&is_productid=<productID>&is_majorversion=<majorVersion>&is_minorversion=<minorVersion>&is_vendor=<ecommerce-provider>&is_features=<features>&is_expduration=<duration>&is_expdate=<date>&is_pp=<product_properties>&is_userdata1=abc
+https://yourserver/yourvirtualdirectory/qlmservice.asmx/UpdateLicenseHttp?is_avkey=<activationKey>&is_productid=<productID>&is_majorversion=<majorVersion>&is_minorversion=<minorVersion>&is_vendor=<ecommerce-provider>&is_features=<features>&is_expduration=<duration>&is_expdate=<date>&is_pp=<product_properties>&is_userdata1=abc
 ```
+{% endcode %}
 
 ### Arguments
 
@@ -49,13 +51,19 @@ http://yourserver/yourvirtualdirectory/qlmservice.asmx/UpdateLicenseHttp?is_avke
 
 The syntax for setting a product property is:
 
+{% code overflow="wrap" %}
 ```xml
 &is_pp=<category>.<name>::value::expiryDate||<category>.<name>::value::expiryDate||...
 ```
+{% endcode %}
 
 ### Example
 
-\[block:html] { "html": "https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/UpdateLicenseHttp?is\_vendor=fastspring\&is\_productid=2\&is\_majorversion=1\&is\_minorversion=0\&is\_expduration=23\&is\_features=0:7\&is\_pp=quality.module\_qa::abc::2017-12-31||quality.module\_control::true||quality.module\_validation::76" } \[/block]
+{% code overflow="wrap" %}
+```http
+https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/UpdateLicenseHttp?is_vendor=fastspring&is_productid=2&is_majorversion=1&is_minorversion=0&is_expduration=23&is_features=0:7&is_pp=quality.module_qa::abc::2017-12-31||quality.module_control::true||quality.module_validation::76
+```
+{% endcode %}
 
 The expiry date is optional and available for QLM Enterprise customers. The expected expiry date format is: "yyyy-MM-dd HH:mm:ss".
 
@@ -63,8 +71,16 @@ In addition, for product properties of type integer, you can increment or decrem
 
 For example, in the URL below, the quality.module\_validation will be decremented by 2.
 
-\[block:html] { "html": "https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/UpdateLicenseHttp?is\_vendor=fastspring\&is\_productid=2\&is\_majorversion=1\&is\_minorversion=0\&is\_expduration=23\&is\_features=0:7\&is\_pp=quality.module\_validation::-2" } \[/block]
+{% code overflow="wrap" %}
+```http
+https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/UpdateLicenseHttp?is_vendor=fastspring&is_productid=2&is_majorversion=1&is_minorversion=0&is_expduration=23&is_features=0:7&is_pp=quality.module_validation::-2
+```
+{% endcode %}
 
 Note that due to URL encoding rules, the + sign should be replaced by %2B. For example, in the URL below, the quality.module\_validation will be incremented by 2.
 
-\[block:html] { "html": "https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/UpdateLicenseHttp?is\_vendor=fastspring\&is\_productid=2\&is\_majorversion=1\&is\_minorversion=0\&is\_expduration=23\&is\_features=0:7\&is\_pp=quality.module\_validation::%2B2" } \[/block]
+{% code overflow="wrap" %}
+```http
+https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/UpdateLicenseHttp?is_vendor=fastspring&is_productid=2&is_majorversion=1&is_minorversion=0&is_expduration=23&is_features=0:7&is_pp=quality.module_validation::%2B2
+```
+{% endcode %}

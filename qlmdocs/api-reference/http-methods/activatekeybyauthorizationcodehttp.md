@@ -19,15 +19,17 @@ On subsequent calls to ActivateKeyByAuthorizationCodeHttp, in addition to the pr
 
 To invoke this method via a URL, append this function's name to the URL of the QLM License Server and add the required arguments.
 
+{% code overflow="wrap" %}
 ```http
-http://yourserver/yourvirtualdirectory/qlmservice.asmx/ActivateKeyByAuthorizationCodeHttp?is_authcode=[authorization code]&is_pckey=[computer key]&is_pcid=[computer ID]&is_computer_name=[computer name]&is_qlmversion=[QLM Engine version]&is_email=[email of the customer associated to the key]&is_userdata1=[user data to associate to the key]&is_affiliateid=[affiliate to associate to the key]
+https://yourserver/yourvirtualdirectory/qlmservice.asmx/ActivateKeyByAuthorizationCodeHttp?is_authcode=[authorization code]&is_pckey=[computer key]&is_pcid=[computer ID]&is_computer_name=[computer name]&is_qlmversion=[QLM Engine version]&is_email=[email of the customer associated to the key]&is_userdata1=[user data to associate to the key]&is_affiliateid=[affiliate to associate to the key]
 ```
+{% endcode %}
 
 ### Arguments
 
 | Argument           | Description                                                                                                                                                                                                                                               |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| is\_authcode       | Authorization Code genered by calling [RequestAuthorizationCodeForActivationHttp](https://soraco.readme.io/reference/requestauthorizationcodeforactivationhttp)                                                                                           |
+| is\_authcode       | Authorization Code genered by calling [RequestAuthorizationCodeForActivationHttp](requestauthorizationcodeforactivationhttp.md)                                                                                                                           |
 | is\_majorversion   | The major version of the product being activated                                                                                                                                                                                                          |
 | is\_minorversion   | The minor version of the product being activated                                                                                                                                                                                                          |
 | is\_pckey          | If the key has been previously activated, the ValidateLicense method returns a computer key. This computer key should then be used in subsequent calls to ValidateLicense in the is\_pckey argument                                                       |

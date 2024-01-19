@@ -19,9 +19,11 @@ On subsequent calls to ValidateLicenseHttp, in addition to the previous argument
 
 To invoke this method via a URL, append this function's name to the URL of the QLM License Server and add the required arguments.
 
+{% code overflow="wrap" %}
 ```http
-http://yourserver/yourvirtualdirectory/qlmservice.asmx/ValidateLicenseHttp?is_avkey=<activationKey> &is_pckey=<computer key> &is_pcid=<computer ID> &is_computer_name=<computer name> &is_qlmversion=<QLM Engine version> &is_email=<email of the customer associated to the key> &is_userdata1=<user data to associate with the key> &is_affiliateid=<affiliate to associate to the key>&is_activate=true|false
+https://yourserver/yourvirtualdirectory/qlmservice.asmx/ValidateLicenseHttp?is_avkey=<activationKey> &is_pckey=<computer key> &is_pcid=<computer ID> &is_computer_name=<computer name> &is_qlmversion=<QLM Engine version> &is_email=<email of the customer associated to the key> &is_userdata1=<user data to associate with the key> &is_affiliateid=<affiliate to associate to the key>&is_activate=true|false
 ```
+{% endcode %}
 
 ### Arguments
 

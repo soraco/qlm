@@ -2,13 +2,15 @@
 
 ### Description
 
-Renews a subscription. When a subscription is renewed, each activated license is automatically reactivated on the server and a new computer bound key is generated with a new expiry date. When customers reactivate their license, they receive the new computer bound key with the new expiry date, thus extending their subscription period.
+Renews a subscription. When a subscription is renewed, each activated license is automatically reactivated on the server and a new computer-bound key is generated with a new expiry date. When customers reactivate their license, they receive the new computer-bound key with the new expiry date, thus extending their subscription period.
 
 To invoke this method via a URL, append this function's name to the URL of the QLM License Server and add the required arguments.
 
+{% code overflow="wrap" %}
 ```http
-http://yourserver/yourvirtualdirectory/qlmservice.asmx/RenewSubscriptionHttp?is_avkey=[activationKey]&is_vendor=[vendor name]&is_expdate=[date]&is_user=[user]&is_pwd=[pwd]
+https://yourserver/yourvirtualdirectory/qlmservice.asmx/RenewSubscriptionHttp?is_avkey=[activationKey]&is_vendor=[vendor name]&is_expdate=[date]&is_user=[user]&is_pwd=[pwd]
 ```
+{% endcode %}
 
 ### Arguments
 

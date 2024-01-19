@@ -6,9 +6,11 @@ Renews a maintenance plan for a given activation key. By default, the maintenanc
 
 To invoke this method via a URL, append this function's name to the URL of the QLM License Server and add the required arguments.
 
+{% code overflow="wrap" %}
 ```http
-http://yourserver/yourvirtualdirectory/qlmservice.asmx/RenewMaintenancePlan?is_avkey=[activationKey]&is_vendor=[eCommerce provider]&is_productid=[product id]
+https://yourserver/yourvirtualdirectory/qlmservice.asmx/RenewMaintenancePlan?is_avkey=[activationKey]&is_vendor=[eCommerce provider]&is_productid=[product id]
 ```
+{% endcode %}
 
 ### Required Arguments
 

@@ -2,7 +2,7 @@
 
 ### Description
 
-Upgrades a license by issuing a new license key and replacing the old one. You can upgrade the following data associated to a license:
+Upgrades a license by issuing a new license key and replacing the old one. You can upgrade the following data associated with a license:
 
 * Features associated with a license
 * The expiry date of the license
@@ -13,9 +13,11 @@ To call this function, you must set the enableUpgradeLicense server property to 
 
 To invoke this method via a URL, append this function's name to the URL of the QLM License Server and add the required arguments.
 
+{% code overflow="wrap" %}
 ```http
-http://yourserver/yourvirtualdirectory/qlmservice.asmx/UpgradeLicense?is_avkey=<activationKey>&is_productid=<productID>&is_majorversion=<majorVersion>&is_minorversion=<minorVersion>&is_vendor=digibuy&is_features=<features>&is_expduration=<duration>&is_expdate=<date>
+https://yourserver/yourvirtualdirectory/qlmservice.asmx/UpgradeLicense?is_avkey=<activationKey>&is_productid=<productID>&is_majorversion=<majorVersion>&is_minorversion=<minorVersion>&is_vendor=digibuy&is_features=<features>&is_expduration=<duration>&is_expdate=<date>
 ```
+{% endcode %}
 
 ### Arguments
 

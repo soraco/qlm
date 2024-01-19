@@ -6,13 +6,15 @@ Creates an activation key on the License Server.
 
 To call this function, you must set the enableGetActivationKey server property to true.
 
-You should never call this function from within the application. GetActivationKey should be called from systems that cannot be intercepted by your client such as your web site, your own server, your ecommerce provider. It is also highly recommended to enforce the user/pwd authentication when calling this function as described here.
+You should never call this function from within the application. GetActivationKey should be called from systems that cannot be intercepted by your client such as your website, your own server, your ecommerce provider. It is also highly recommended to enforce the user/pwd authentication when calling this function as described here.
 
 To invoke this method via a URL, append this function's name to the URL of the QLM License Server and add the required arguments.
 
+{% code overflow="wrap" %}
 ```http
-http://yourserver/yourvirtualdirectory/qlmservice.asmx/GetActivationKeyWithExpiryDate?is_productid=[productID]&is_majorversion=[majorVersion]&is_minorversion=[minorVersion]&is_vendor=[vendor]&is_expduration=[duration]&is_expdate=[date]
+https://yourserver/yourvirtualdirectory/qlmservice.asmx/GetActivationKeyWithExpiryDate?is_productid=[productID]&is_majorversion=[majorVersion]&is_minorversion=[minorVersion]&is_vendor=[vendor]&is_expduration=[duration]&is_expdate=[date]
 ```
+{% endcode %}
 
 ### Arguments
 
@@ -51,6 +53,6 @@ When calling GetActivationWithExpiryDate, an expiry date can be set by using the
 * Use the is\_expdate argument such as: \&is\_expdate=2015-03-01. The generated license will expire on the specified date.
 * Use the is\_expduration argument such as: \&is\_expduration=31.
 
-The useDurationToSetExpiryDate setting in the QLM License Server "Server Properties" determines the behavior of the is\_expduration argument. When useDurationToSetExpiryDate is true, an expiry date is computed by the License Server based on the order date plus the is\_expduration period. For example, if a user purchased a 30 days subscription of your product on January 1st and is\_expduration is set to 30, the license will be set to expire on January 31st.
+The useDurationToSetExpiryDate setting in the QLM License Server "Server Properties" determines the behavior of the is\_expduration argument. When useDurationToSetExpiryDate is true, an expiry date is computed by the License Server based on the order date plus the is\_expduration period. For example, if a user purchased a 30-day subscription of your product on January 1st and is\_expduration is set to 30, the license will be set to expire on January 31st.
 
 When useDurationToSetExpiryDate is set to false, the generated license key does not have a specific expiry date but rather a duration-based license key. This means that the license expiry date is determined the first time the application is executed. For example, if a user purchased a 30-day subscription of your product on January 1st, but then runs your product for the first time on January 15, the 30-day license will only start on January 15.

@@ -6,9 +6,11 @@ Updates the Last Accessed Date associated with a registered installation on the 
 
 To invoke this method via a URL, append this function's name to the URL of the QLM License Server and add the required arguments.
 
+{% code overflow="wrap" %}
 ```http
-http://yourserver/yourvirtualdirectory/qlmservice.asmx/AnalyticsUpdateLastAccessedDateHttp?is_installid=[Install ID]
+https://yourserver/yourvirtualdirectory/qlmservice.asmx/AnalyticsUpdateLastAccessedDateHttp?is_installid=[Install ID]
 ```
+{% endcode %}
 
 ### Arguments
 

@@ -6,13 +6,15 @@ Creates an activation key on the License Server.
 
 To call this function, you must set the enableGetActivationKey server property to true.
 
-You should never call this function from within the application. GetActivationKey should be called from systems that cannot be intercepted by your client such as your web site, your own server, your ecommerce provider. It is also highly recommended to enforce the user/pwd authentication when calling this function as described here.
+You should never call this function from within the application. GetActivationKey should be called from systems that cannot be intercepted by your client such as your website, your own server, your ecommerce provider. It is also highly recommended to enforce the user/pwd authentication when calling this function as described here.
 
 To invoke this method via a URL, append this function's name to the URL of the QLM License Server and add the required arguments.
 
+{% code overflow="wrap" %}
 ```http
-http://yourserver/yourvirtualdirectory/qlmservice.asmx/GetActivationKey?is_productid=[productID]&is_majorversion=[majorVersion]&is_minorversion=[minorVersion]&is_vendor=[vendor]
+https://yourserver/yourvirtualdirectory/qlmservice.asmx/GetActivationKey?is_productid=[productID]&is_majorversion=[majorVersion]&is_minorversion=[minorVersion]&is_vendor=[vendor]
 ```
+{% endcode %}
 
 ### Arguments
 

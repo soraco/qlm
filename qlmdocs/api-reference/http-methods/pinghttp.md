@@ -7,7 +7,7 @@ Pings the server and returns version and date information.
 To invoke this method via a URL, append this function's name to the URL of the QLM License Server and add the required arguments.
 
 ```http
-http://yourserver/yourvirtualdirectory/qlmservice.asmx/PingHttp
+https://yourserver/yourvirtualdirectory/qlmservice.asmx/PingHttp
 ```
 
 ### Return

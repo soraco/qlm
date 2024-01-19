@@ -6,9 +6,11 @@ Unregisters an application with the server. You should call this function when t
 
 To invoke this method via a URL, append this function's name to the URL of the QLM License Server and add the required arguments.
 
+{% code overflow="wrap" %}
 ```http
-http://yourserver/yourvirtualdirectory/qlmservice.asmx/AnalyticsRemoveInstallHttp?is_installid=[InstallID]
+https://yourserver/yourvirtualdirectory/qlmservice.asmx/AnalyticsRemoveInstallHttp?is_installid=[InstallID]
 ```
+{% endcode %}
 
 ### Arguments
 
