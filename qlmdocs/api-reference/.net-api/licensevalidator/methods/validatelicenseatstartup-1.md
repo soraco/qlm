@@ -4,7 +4,7 @@
 
 Validates a license
 
-```c#
+```csharp
 bool ValidateLicenseAtStartup(string computerID, ELicenseBinding licenseBinding, 
                               ref bool needsActivation, ref string returnMsg)
 ```

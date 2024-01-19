@@ -4,7 +4,7 @@
 
 Gets a unique identifier for a Terminal Server user. The identifier is of the form:
 
-```c#
+```csharp
 string GetTerminalServerUniqueIdentifier ()
 ```
 

@@ -4,7 +4,7 @@
 
 Gets the MAC addresses of all network cards found on the system.
 
-```c#
+```csharp
 string GetMACAddresses ()
 ```
 

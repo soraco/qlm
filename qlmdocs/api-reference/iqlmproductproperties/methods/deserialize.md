@@ -4,7 +4,7 @@
 
 Deserializes an XML fragment and populates the product properties
 
-```c#
+```csharp
 void Deserialize(string xmlContent)
 ```
 

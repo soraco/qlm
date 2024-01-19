@@ -4,7 +4,7 @@
 
 Parses the results returned by a call to AddUserEx2.
 
-```c#
+```csharp
 void ParseResults(string results, ref string message)
 ```
 

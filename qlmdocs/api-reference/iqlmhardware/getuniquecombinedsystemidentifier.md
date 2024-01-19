@@ -4,7 +4,7 @@
 
 Gets a unique system identifier that is a combination of different IDs based on the license-binding argument.
 
-```c#
+```csharp
 string GetUniqueCombinedSystemIdentifier(int licenseBinding)
 ```
 

@@ -8,7 +8,7 @@ If the function returns QlmActivationStatus.Activated or QlmActivationStatus.Alr
 
 Any other value would indicate an issue and you should abort the launch of your application.
 
-```c#
+```csharp
 QlmActivationStatus RegisterNode(out string message)
 ```
 

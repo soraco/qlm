@@ -4,7 +4,7 @@
 
 Gets the UUID (unique system identifier) stored in the BIOS.
 
-```c#
+```csharp
 string GetBiosUuid ()
 ```
 

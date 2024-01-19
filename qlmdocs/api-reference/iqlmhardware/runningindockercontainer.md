@@ -4,7 +4,7 @@
 
 Determines if the app is running in a Docker Container based on the environment variable QLM\_RUNNING\_IN\_DOCKER\_CONTAINER which should be set during image creation to True.
 
-```c#
+```csharp
 bool RunningInDockerContainer   ()
 ```
 

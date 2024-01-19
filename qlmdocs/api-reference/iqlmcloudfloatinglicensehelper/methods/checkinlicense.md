@@ -4,7 +4,7 @@
 
 Checks in a license to the license server. If the client is offline and the offline expiry period was not reached, no check-in occurs.
 
-```c#
+```csharp
 bool CheckinLicense(out string message);
 ```
 

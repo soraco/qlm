@@ -4,7 +4,7 @@
 
 After initializing the QlmFloatingLicenseHelper by calling the Init function, you must call the Load method to load the floating license database and validate the license.
 
-```c#
+```csharp
 bool Load(out bool reRegisterLicense, out bool reRegisterDb, 
           out bool isOffline, out bool wasOffline,
           out QlmActivationStatus activationStatus, out string errorMessage, 

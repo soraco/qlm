@@ -4,7 +4,7 @@
 
 Validates a license
 
-```c#
+```csharp
  virtual bool ValidateLicense(string activationKey, string computerKey, string computerID, 
                               ref bool needsActivation, ref string returnMsg)
 ```

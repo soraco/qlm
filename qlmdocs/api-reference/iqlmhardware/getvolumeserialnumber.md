@@ -4,7 +4,7 @@
 
 Gets the serial number of the specified volume.
 
-```c#
+```csharp
 string GetVolumeSerialNumber (string volume)
 ```
 

@@ -10,7 +10,7 @@ Note that to call this function, you must initialize the QlmAnalytics object wit
 * CommunicationEncryptionKey
 * GUID (persistence key)
 
-```c#
+```csharp
 bool UpdateInstall(string installID, string softwareVersion, 
                    string osVersion, string computerName, 
                    string computerID, string activationKey, 

@@ -4,7 +4,7 @@
 
 Gets the active directory domain to which the local computer is joined.
 
-```c#
+```csharp
 string GetActiveDirectoryComputerDomain ()
 ```
 

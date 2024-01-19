@@ -4,7 +4,7 @@
 
 Serializes the product properties into an XML fragment
 
-```c#
+```csharp
 string Serialize()
 ```
 

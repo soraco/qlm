@@ -4,7 +4,7 @@
 
 Determines if the process is running as a UWP application
 
-```c#
+```csharp
 bool IsRunningAsUwp   ()
 ```
 

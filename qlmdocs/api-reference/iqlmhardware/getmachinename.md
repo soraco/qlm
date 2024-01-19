@@ -4,7 +4,7 @@
 
 Gets the name of the computer
 
-```c#
+```csharp
 string GetMachineName ()
 ```
 

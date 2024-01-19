@@ -4,7 +4,7 @@
 
 Adds a new product property.
 
-```c#
+```csharp
 IQlmProductProperty AddProductProperty(string guid, string category, 
                                        string name, string type, 
                                        string help, string val)

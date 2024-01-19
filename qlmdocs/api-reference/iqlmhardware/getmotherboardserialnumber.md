@@ -4,7 +4,7 @@
 
 Gets the serial number of the motherboard.
 
-```c#
+```csharp
 string GetMotherBoardSerialNumber ()
 ```
 

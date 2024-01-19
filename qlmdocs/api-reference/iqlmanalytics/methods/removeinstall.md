@@ -10,7 +10,7 @@ Note that to call this function, you must initialize the QlmAnalytics object wit
 * CommunicationEncryptionKey
 * GUID (persistence key)
 
-```c#
+```csharp
 bool RemoveInstall(string installID, out string errorMessage)
 ```
 

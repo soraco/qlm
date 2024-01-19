@@ -4,7 +4,7 @@
 
 Determines if the current process is running on a virtual machine such as Microsoft Hyper-V or VMWare.
 
-```c#
+```csharp
 bool RunningOnVM   ()
 ```
 

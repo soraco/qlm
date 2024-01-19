@@ -4,7 +4,7 @@
 
 Initializes the floating license. You must call Init right after creating an instance of QlmFloatingLicenseHelper.
 
-```c#
+```csharp
 void Init(IQlmLicense license, string computerID, string nodeName, 
           string settingsXml, FloatingDbType dbType, string dbProvider)
 ```

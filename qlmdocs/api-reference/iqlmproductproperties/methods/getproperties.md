@@ -4,7 +4,7 @@
 
 Gets a product properties array.
 
-```c#
+```csharp
 IQlmProductProperty[] GetProperties()
 ```
 

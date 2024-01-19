@@ -4,7 +4,7 @@
 
 Gets the name of the currently logged-in user. This function is only available on Windows.
 
-```c#
+```csharp
 string GetLoggedInUser(out string errorMessage)
 ```
 

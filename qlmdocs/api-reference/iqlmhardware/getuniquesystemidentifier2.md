@@ -15,7 +15,7 @@ If you are currently using GetUniqueSystemIdentifier1 and would like to upgrade 
 * If the hardware identifier detected by GetUniqueSystemIdentifier2 is reliable and also deemed reliable by GetUniqueSystemIdentifier1, the same value will be extracted by GettUniqueSystemIdentifier2. The previously generated ComputerKey will therefore continue working as expected.
 * If the hardware identifier detected by GetUniqueSystemIdentifier1 is deemed unreliable by GetUniqueSystemIdentifier2, GetUniqueSystemIdentifier2 will fall back onto another identifier thus invalidating the Computer Key that was previously generated. A customer that encounters this issue will need to reactivate his/her license.
 
-```c#
+```csharp
 string GetUniqueSystemIdentifier2()
 ```
 

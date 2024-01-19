@@ -4,7 +4,7 @@
 
 Validates a license
 
-```c#
+```csharp
  virtual void DeleteAllKeys()
 ```
 

@@ -4,7 +4,7 @@
 
 Gets the product property given a category and a name.
 
-```c#
+```csharp
 IQlmProductProperty GetProperty(string category, string name)
 ```
 

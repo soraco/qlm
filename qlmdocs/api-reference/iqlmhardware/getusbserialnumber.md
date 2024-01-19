@@ -4,7 +4,7 @@
 
 Gets the serial number of a USB key from the path where the application is running.
 
-```c#
+```csharp
 string GetUSBSerialNumber ()
 ```
 

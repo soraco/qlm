@@ -13,7 +13,7 @@ Note that to call this function, you must initialize the QlmAnalytics object wit
 * CommunicationEncryptionKey
 * GUID (persistence key)
 
-```c#
+```csharp
  string ReadInstallID(out string errorMessage)
 ```
 

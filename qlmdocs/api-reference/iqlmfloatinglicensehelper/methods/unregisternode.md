@@ -4,7 +4,7 @@
 
 Releases a floating license. You should call this function when you exit your application.
 
-```c#
+```csharp
 bool UnregisterNode(out string message)
 ```
 

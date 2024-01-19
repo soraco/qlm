@@ -4,7 +4,7 @@
 
 Determines whether the current process is running on Citrix or Terminal Server
 
-```c#
+```csharp
 bool RunningOnTerminalServer   ()
 ```
 

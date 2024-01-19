@@ -4,7 +4,7 @@
 
 Configures the client for online mode.
 
-```c#
+```csharp
 bool GoOnline(bool testConnection, out string errorMessage
 ```
 

@@ -4,7 +4,7 @@
 
 Configures the client for offline mode. You must specify the period in minutes that the client will go offline. After this period, an event will be fired and your application can take any action as needed.
 
-```c#
+```csharp
 bool GoOffline(double period, out string errorMessage);
 ```
 

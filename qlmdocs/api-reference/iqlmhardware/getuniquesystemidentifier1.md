@@ -17,7 +17,7 @@ If the motherboard serial number is not reliable, it tries to get the following 
 * First MAC Address: MAC address of the first detected network card.
 * Computer Name: The BIOS name of the computer.
 
-```c#
+```csharp
 string GetUniqueSystemIdentifier1()
 ```
 

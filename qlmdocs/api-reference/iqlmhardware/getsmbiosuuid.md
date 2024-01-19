@@ -4,7 +4,7 @@
 
 Gets the System Management BIOS UUID. This ID is unique for virtual machines.
 
-```c#
+```csharp
 string GetSMBiosUUID ()
 ```
 

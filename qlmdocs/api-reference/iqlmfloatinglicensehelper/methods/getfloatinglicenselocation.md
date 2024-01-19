@@ -10,7 +10,7 @@ Subsequently, when your application starts up, you can call GetFloatingLicenseLo
 
 Note: this functionality requires a connection to the License Server. You should call the QlmLicense.PingEx method before calling [PublishFloatingLicenseLocation ](https://soraco.readme.io/reference/publishfloatinglicenselocation)to verify if you can connect to the License Server.
 
-```c#
+```csharp
 QlmActivationStatus GetFloatingLicenseLocation(string webServiceUrl,
                                                out string location,
                                                out string errorMessage)

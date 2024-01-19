@@ -4,7 +4,7 @@
 
 Gets the active directory domain based on the domain credentials under which the application is running
 
-```c#
+```csharp
 string GetActiveDirectoryAppDomain ()
 ```
 

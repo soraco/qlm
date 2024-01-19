@@ -4,7 +4,7 @@
 
 Adds a new product property.
 
-```c#
+```csharp
 bool ValidateSignature(string xmlValue, string publicKey, out string errorMessage)
 ```
 

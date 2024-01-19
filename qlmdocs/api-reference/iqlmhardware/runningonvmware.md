@@ -4,7 +4,7 @@
 
 Determines if the current process is running on a VMWare virtual machine.
 
-```c#
+```csharp
 bool RunningOnVMWare   ()
 ```
 

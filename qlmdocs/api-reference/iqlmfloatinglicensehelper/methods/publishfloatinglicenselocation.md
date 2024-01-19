@@ -4,7 +4,7 @@
 
 Checks out a license from the server. If the client is in offline mode and the offline expiry was not reached, no checkout is actually performed.
 
-```c#
+```csharp
 ILicenseInfo CheckoutLicense(out string message)
 ```
 

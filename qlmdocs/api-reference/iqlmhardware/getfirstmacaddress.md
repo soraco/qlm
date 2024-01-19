@@ -4,12 +4,8 @@
 
 Gets the MAC address of the first network card found on the system. Note that some computer systems have several network cards. This function returns the MAC address of the first card only. To get a list of all MAC addresses on a system, use the GetMACAddresses method.
 
-```c#
+```csharp
 string GetFirstMACAddress ()
-```
-
-```c++
-_bstr_t GetFirstMACAddress ()
 ```
 
 ### Return

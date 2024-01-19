@@ -4,7 +4,7 @@
 
 Validate the license stored in the floating license database (XML or DB) and extract the total number of floating seats and consumed seats. This function should be called after the floating license DB has been initialized and the license has been activated.
 
-```c#
+```csharp
 bool ValidateLicense(out bool reRegisterLicense, out bool reRegisterDb,
                      out QlmActivationStatus activationStatus, out string message)
 ```

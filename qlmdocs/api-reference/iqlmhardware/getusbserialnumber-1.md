@@ -4,7 +4,7 @@
 
 Gets the serial number of a USB key on the specified path. If the path does not point to a USB, an empty string is returned.
 
-```c#
+```csharp
 string GetUSBSerialNumber (string path)
 ```
 
