@@ -1,4 +1,4 @@
-# QlmLicense
+# IQlmLicense
 
 This is the main licensing class that provides access to the core functionality of QLM.
 
