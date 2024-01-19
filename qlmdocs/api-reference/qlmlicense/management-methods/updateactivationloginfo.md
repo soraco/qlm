@@ -21,7 +21,15 @@ bool UpdateActivationLogInfo (string webServiceUrl, string activationKey,
 
 ### Parameters
 
-\[block:parameters] { "data": { "h-0": "Parameter", "h-1": "Type", "h-2": "Description", "0-0": "webServiceUrl", "0-1": "string", "0-2": "URL to the QLM License Server.", "1-0": "activationKey", "1-1": "string", "1-2": "activation key to update", "2-0": "computerID", "2-1": "string", "2-2": "the ID the computer to update", "3-0": "computerKey", "3-1": "string", "3-2": "the computer key to update", "4-0": "computerName", "4-1": "string", "4-2": "the computer name to update", "5-0": "licenseData", "5-1": "string", "5-2": "XML fragment containing the fields to update. The XML fragment should be of the form: \n \n\\\<licenseArguments \nfield1=" 'value' \nfield2=" 'value' " \n\ \n \nwhere field1 is the name of a field in the LicenseKeys table. For fields of type date, you should use the following date/time format: yyyy-MM-dd HH:mm:ss \n \nExample: \n\\\<licenseArguments \nComputerName= " 'my pc' " \nUserData1=" 'my user data' " \n\\", "6-0": "response", "6-1": "string", "6-2": "XML fragment containing the result of the call" }, "cols": 3, "rows": 7, "align": \[ "left", "center", "left" ] } \[/block]
+| Parameter     | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| ------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| webServiceUrl | string | URL to the QLM License Server.                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| activationKey | string | activation key to update                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| computerID    | string | the ID the computer to update                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| computerKey   | string | the computer key to update                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| computerName  | string | the computer name to update                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| licenseData   | string | <p>XML fragment containing the fields to update. The XML fragment should be of the form:<br><br>&#x3C;licenseArguments<br>field1=" 'value'<br>field2=" 'value' "<br>&#x3C;/licenseArguments><br><br>where field1 is the name of a field in the LicenseKeys table. For fields of type date, you should use the following date/time format: yyyy-MM-dd HH:mm:ss<br><br>Example:<br>&#x3C;licenseArguments<br>ComputerName= " 'my pc' "<br>UserData1=" 'my user data' "<br>&#x3C;/licenseArguments></p> |
+| response      | string | XML fragment containing the result of the call                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 ### Return
 
@@ -51,9 +59,9 @@ bool UpdateActivationLogInfo (string webServiceUrl, string activationKey,
 
 ## Remarks
 
-Use [ParseResults ](https://soraco.readme.io/reference/parseresults)to interpret the results of the call and load the returned data into an [ILicenseInfo ](https://soraco.readme.io/reference/ilicenseinfo)object.
+Use [ParseResults ](../../iqlmcustomerinfo/methods/parseresults.md)to interpret the results of the call and load the returned data into an [ILicenseInfo ](../../ilicenseinfo/)object.
 
-```c#
+```csharp
 ILicenseInfo li = new LicenseInfo();
 string message = string.Empty;
 if (lv.QlmLicenseObject.ParseResults(response, ref li, ref message))
@@ -68,7 +76,7 @@ else
 
 #### Example
 
-```c#
+```csharp
 string userData = "Test&Go";  
 userData = SecurityElement.Escape(userData);
 

@@ -24,13 +24,17 @@ IQlmCustomerInfo [] GetCustomersInfoEx (string webServiceUrl, string fieldName,
 
 ### Example
 
-```c#
+{% tabs %}
+{% tab title="C#" %}
+```csharp
 IQlmCustomerInfo[] customers = license.GetCustomersInfo (webServiceUrl, 
                                                          "email", "=", 
                                                          "'customer@mail.com'");
 ```
+{% endtab %}
 
-```c++
+{% tab title="C++" %}
+```cpp
 // Get all the customer records
 
 SAFEARRAY * sa = qlmLicense->GetCustomersInfoEx (webServiceUrl _bstr_t(""),_bstr_t(""),_bstr_t(""));IQlmCustomerInfo *ci;
@@ -51,3 +55,8 @@ SafeArrayGetElement (sa, &i, &ci);
 
 SafeArrayDestroy (sa);
 ```
+{% endtab %}
+{% endtabs %}
+
+
+

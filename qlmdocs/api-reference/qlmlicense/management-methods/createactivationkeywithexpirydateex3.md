@@ -8,7 +8,7 @@ Note that to call this function, you must:
 
 * Enable the Server Property enableCreateActivationKey
 * Set the AdminEncryptionKey
-* Call [DefineProduct](https://soraco.readme.io/reference/defineproduct)
+* Call [DefineProduct](../client-side-methods/defineproduct.md)
 
 ```csharp
 void CreateActivationKeyWithExpiryDateEx3(string webServiceUrl, string email, 
@@ -62,9 +62,9 @@ void CreateActivationKeyWithExpiryDateEx3(string webServiceUrl, string email,
 
 ## Remarks
 
-Use [ParseResults ](https://soraco.readme.io/reference/parseresults)to interpret the results of the call and load the returned data into an [ILicenseInfo ](https://soraco.readme.io/reference/ilicenseinfo)object.
+Use [ParseResults ](../../iqlmcustomerinfo/methods/parseresults.md)to interpret the results of the call and load the returned data into an [ILicenseInfo ](../../ilicenseinfo/)object.
 
-```c#
+```csharp
 ILicenseInfo li = new LicenseInfo();
 string message = string.Empty;
 if (lv.QlmLicenseObject.ParseResults(response, ref li, ref message))

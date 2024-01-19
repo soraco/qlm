@@ -30,7 +30,7 @@ bool SetProductProperties (string webServiceUrl, string activationKey,
 
 ### Example
 
-```c#
+```csharp
 LicenseValidator lv = new LicenseValidator();
 
 string props = lv.QlmLicenseObject.GetProductProperties(string.Empty, "AXDJ0T0Z00AEIX8F8ZHE3J1G8P", out response);

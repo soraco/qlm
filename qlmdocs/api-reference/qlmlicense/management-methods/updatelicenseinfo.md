@@ -49,7 +49,7 @@ When updating license information of a multiple activations license key (Number 
 
 The ActivationLog table contains the following updatable fields: ComputerKey, ComputerName, ComputerID, ActivationDate, LastAccessedDate, ActivationCount
 
-Use [ParseResults ](https://soraco.readme.io/reference/parseresults)to interpret the results of the call and load the returned data into an [ILicenseInfo ](https://soraco.readme.io/reference/ilicenseinfo)object.
+Use [ParseResults ](../../iqlmcustomerinfo/methods/parseresults.md)to interpret the results of the call and load the returned data into an [ILicenseInfo ](../../ilicenseinfo/)object.
 
 #### Example: modify the number of licenses
 
@@ -82,7 +82,7 @@ else
 
 #### Example - how to escape characters
 
-```c#
+```csharp
 string userData = "Test&Go";  
 userData = SecurityElement.Escape(userData);
 

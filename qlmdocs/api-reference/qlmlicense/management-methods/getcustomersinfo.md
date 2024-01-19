@@ -44,11 +44,11 @@ DataSet GetCustomersInfo (string webServiceUrl, string fieldName,
 
 ## Remarks
 
-Use [ParseResults ](https://soraco.readme.io/reference/parseresults)to interpret the results of the call and load the returned data into an [ILicenseInfo ](https://soraco.readme.io/reference/ilicenseinfo)object.
+Use [ParseResults ](../../iqlmcustomerinfo/methods/parseresults.md)to interpret the results of the call and load the returned data into an [ILicenseInfo ](../../ilicenseinfo/)object.
 
 ### Example
 
-```c#
+```csharp
 DataSet ds = license.GetCustomersInfo (webServiceUrl, 
                                        "email", "=", "'customer@mail.com'", 
                                        out response);
