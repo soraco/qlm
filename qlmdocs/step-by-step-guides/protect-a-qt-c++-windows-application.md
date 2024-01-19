@@ -26,7 +26,8 @@ Following is a step-by-step procedure to protect a Qt C++ Windows app. Note that
 
 7\. Add the following to your main MainWindow class header file:
 
-> ```
+> {% code overflow="wrap" %}
+> ```cpp
 > namespace Qlm {
 > class LicenseValidator;
 > }
@@ -44,10 +45,12 @@ Following is a step-by-step procedure to protect a Qt C++ Windows app. Note that
 >     QString wizardSettingsFile;
 >     QString wizardExe;
 > ```
+> {% endcode %}
 
 8\. Add the following code to your MainWindow CPP file, in the constructor:&#x20;
 
-```
+{% code overflow="wrap" %}
+```cpp
 MainWindow::MainWindow(QWidget *parent):QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
@@ -67,10 +70,12 @@ MainWindow::MainWindow(QWidget *parent):QMainWindow(parent), ui(new Ui::MainWind
 
 }
 ```
+{% endcode %}
 
 9\. Add the following functions to your main class:
 
-```
+{% code overflow="wrap" %}
+```cpp
 bool MainWindow::checkFiles()
 {
     if(QFileInfo(wizardSettingsFile).exists() == false)
@@ -154,12 +159,13 @@ void MainWindow::displayMessage (QString msg)
     int ret = msgBox.exec();
 }
 ```
+{% endcode %}
 
 &#x20;This completes the integration. To generate a license key for testing purposes:
 
 * Go to the Manage Keys tab.
 * Click "Create Activation Key"
-* Select the Product (Demo 1.0 for trials) and click Ok.
+* Select the Product (Demo 1.0 for trials) and click OK.
 * Copy and Paste the generated Activation Key in the License Wizard launched when your application starts up and follow the steps in the wizard.
 
 The files that you need to distribute with your application are:
@@ -172,7 +178,7 @@ The files that you need to distribute with your application are:
 
 * Missing atlbase.h, strongname.h, metahost.h?
 
-For Qt6, when installing Visual Studio, select the **Individual components** tab, and under _SDKs, libraries, and frameworks_ make sure **Active Qt (**Visual C++ ATL Support**)** is selected.
+For Qt6, when installing Visual Studio, select the **Individual Components** tab, and under _SDKs, libraries, and frameworks_ make sure **Active Qt (**Visual C++ ATL Support**)** is selected.
 
 &#x20;
 

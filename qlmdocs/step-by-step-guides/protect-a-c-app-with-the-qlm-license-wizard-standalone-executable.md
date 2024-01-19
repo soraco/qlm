@@ -1,6 +1,6 @@
 # Protect a C# app with the QLM License Wizard standalone executable
 
-Following is a step by step procedure to protect a C# application by using the QLM License Wizard Standalone application. Note that the steps below assume you have a QLM License Server already setup.
+Following is a step-by-step procedure to protect a C# application by using the QLM License Wizard Standalone application. Note that the steps below assume you have a QLM License Server already setup.
 
 1\. Launch the QLM Management Console
 
@@ -27,7 +27,7 @@ The "Protect your application" should have generated a class file called License
   * Add the file LicenseValidator.cs to your project
   * Add the file Demo 1.0.lw.xml to your project and set the property "Copy to Output Directory" to "Copy if newer"
 * You will now need to update your application to add the license validation code.
-* Add the following statement your main module: using QlmLicenseLib
+* Add the following statement to your main module: using QlmLicenseLib
 * Define the following global variables:
 
 > &#x20;   static QLM.LicenseValidator lv;\
@@ -36,55 +36,48 @@ The "Protect your application" should have generated a class file called License
 
 * Copy and paste the code below into your application     &#x20;
 
-> static void ValidateLicense ()\
-> {\
-> &#x20;   System.Reflection.Assembly thisAssembly =                System.Reflection.Assembly.GetExecutingAssembly();\
-> &#x20;   string location = System.IO.Path.GetDirectoryName(thisAssembly.Location);
->
-> &#x20;   settingsFile = System.IO.Path.Combine(location, "Demo 1.0.lw.xml");\
-> &#x20;   wizardExec = System.IO.Path.Combine(location, "QlmLicenseWizard.exe");
->
-> &#x20;   lv = new QLM.LicenseValidator(settingsFile);
->
-> &#x20;   bool needsActivation = false;\
-> &#x20;   string errorMsg = string.Empty;
->
-> &#x20;   ELicenseBinding licenseBinding = ELicenseBinding.ComputerName;
->
-> &#x20;   if (lv.ValidateLicenseAtStartup(licenseBinding, ref needsActivation, ref errorMsg) == false)\
-> &#x20;   {\
-> &#x20;       int exitCode = DisplayLicenseForm();
->
-> &#x20;       if (exitCode == 4)\
-> &#x20;       {\
-> &#x20;           Environment.Exit(0);\
-> &#x20;       }
->
-> &#x20;       if (lv.ValidateLicenseAtStartup(licenseBinding, ref needsActivation, ref errorMsg) == false)\
-> &#x20;       {\
-> &#x20;           Environment.Exit(0);\
-> &#x20;       }\
-> &#x20;   }\
-> }
->
-> static private int DisplayLicenseForm()\
-> {\
-> &#x20;   string errorMessage;\
-> &#x20;   if (lv.QlmLicenseObject.ValidateSettingsFile(settingsFile, out errorMessage) == false)\
-> &#x20;   {\
-> &#x20;       Console.WriteLine(errorMessage);\
-> &#x20;       return 0;\
-> &#x20;   }
->
-> &#x20;   string args = String.Format("/settings \\"{0}\\"", settingsFile);
->
-> &#x20;   if (!System.IO.File.Exists (wizardExec))\
-> &#x20;   {\
-> &#x20;       wizardExec = @"C:\Program Files\Soraco\QuickLicenseMgr\QlmLicenseWizard.exe";\
-> &#x20;   }
->
-> &#x20;   return lv.QlmLicenseObject.LaunchProcess(wizardExec, args, true, true);\
-> }
+{% code overflow="wrap" %}
+```csharp
+static void ValidateLicense ()
+{
+    System.Reflection.Assembly thisAssembly =                System.Reflection.Assembly.GetExecutingAssembly();
+    string location = System.IO.Path.GetDirectoryName(thisAssembly.Location);
+    settingsFile = System.IO.Path.Combine(location, "Demo 1.0.lw.xml");
+    wizardExec = System.IO.Path.Combine(location, "QlmLicenseWizard.exe");
+    lv = new QLM.LicenseValidator(settingsFile);
+    bool needsActivation = false;
+    string errorMsg = string.Empty;
+    ELicenseBinding licenseBinding = ELicenseBinding.ComputerName;
+    if (lv.ValidateLicenseAtStartup(licenseBinding, ref needsActivation, ref errorMsg) == false)
+    {
+        int exitCode = DisplayLicenseForm();
+        if (exitCode == 4)
+        {
+            Environment.Exit(0);
+        }
+        if (lv.ValidateLicenseAtStartup(licenseBinding, ref needsActivation, ref errorMsg) == false)
+        {
+            Environment.Exit(0);
+        }
+    }
+}
+static private int DisplayLicenseForm()
+{
+    string errorMessage;
+    if (lv.QlmLicenseObject.ValidateSettingsFile(settingsFile, out errorMessage) == false)
+    {
+        Console.WriteLine(errorMessage);
+        return 0;
+    }
+    string args = String.Format("/settings \"{0}\"", settingsFile);
+    if (!System.IO.File.Exists (wizardExec))
+    {
+        wizardExec = @"C:\Program Files\Soraco\QuickLicenseMgr\QlmLicenseWizard.exe";
+    }
+    return lv.QlmLicenseObject.LaunchProcess(wizardExec, args, true, true);
+}
+```
+{% endcode %}
 
 Now in your application's startup code, call ValidateLicense().
 
@@ -94,5 +87,5 @@ To generate a license key for testing purposes:
 
 * Go to the Manage Keys tab.
 * Click "Create Activation Key"
-* Select the Product (Demo 1.0 for trials) and click Ok.
+* Select the Product (Demo 1.0 for trials) and click OK.
 * Copy and Paste the generated Activation Key in the License Wizard launched when your application starts up and follow the steps in the wizard.

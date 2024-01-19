@@ -1,6 +1,6 @@
 # Protect an ASP.NET application with QLM
 
-Following is a step by step procedure to protect an ASP.NET application with QLM. Note that the steps below assume you have a QLM License Server already setup. If you are evaluating QLM, you can use the "Demo License Server" that is available to you during the trial period.
+Following is a step-by-step procedure to protect an ASP.NET application with QLM. Note that the steps below assume you have a QLM License Server already setup. If you are evaluating QLM, you can use the "Demo License Server" that is available to you during the trial period.
 
 1\. Launch the QLM Management Console
 
@@ -21,133 +21,121 @@ Following is a step by step procedure to protect an ASP.NET application with QLM
 
 6\. In your main ASP.NET page, declare the following variables:
 
-> string computerID;\
-> string activationKey;\
-> string computerKey;
->
-> LicenseValidator lv = new LicenseValidator();
+```csharp
+string computerID;
+string activationKey;
+string computerKey;
+LicenseValidator lv = new LicenseValidator();
+```
 
-7\. When your ASP.NET page is loaded (in the Page\_Load event), call the LicenseValidator.ValidateLicenseAtStartup function as follows:
+> 7\. When your ASP.NET page is loaded (in the Page\_Load event), call the LicenseValidator.ValidateLicenseAtStartup function as follows:
 
-> protected void Page\_Load(object sender, EventArgs e)\
-> {\
-> &#x20;   computerID = Server.MachineName;
->
-> &#x20;   if (!Page.IsPostBack)\
-> &#x20;   {\
-> &#x20;       bool needsActivation = false;\
-> &#x20;       string returnMsg = string.Empty;
->
-> &#x20;       bool isValid = lv.ValidateLicenseAtStartup (ELicenseBinding.ComputerName, ref needsActivation, ref returnMsg);
->
-> &#x20;       txtActivationKey.Text = lv.ActivationKey;\
-> &#x20;       txtComputerName.Text = computerID;\
-> &#x20;       txtLicenseKey.Text = lv.ComputerKey;
->
-> &#x20;       //added condition to show/hide popup.\
-> &#x20;       if (isValid)\
-> &#x20;       {\
-> &#x20;           popup.Hide();
->
-> &#x20;           if (String.IsNullOrEmpty (returnMsg))\
-> &#x20;           {\
-> &#x20;               lblLicenseStatus.Text = String.Format("Your license is valid.");\
-> &#x20;           }\
-> &#x20;           else\
-> &#x20;           {\
-> &#x20;               lblLicenseStatus.Text = returnMsg;\
-> &#x20;           }\
-> &#x20;       }\
-> &#x20;       else\
-> &#x20;       {\
-> &#x20;           if (!String.IsNullOrEmpty (returnMsg))\
-> &#x20;           {\
-> &#x20;               lblLicenseStatus.Text = returnMsg;\
-> &#x20;           }\
-> &#x20;           else if (String.IsNullOrEmpty (lv.ActivationKey))\
-> &#x20;           {\
-> &#x20;               lblLicenseStatus.Text = "No license key was entered.";\
-> &#x20;           }\
-> &#x20;           popup.Show();\
-> &#x20;       }\
-> &#x20;   }\
+> {% code overflow="wrap" %}
+> ```csharp
+> protected void Page_Load(object sender, EventArgs e)
+> {
+>     computerID = Server.MachineName;
+>     if (!Page.IsPostBack)
+>     {
+>         bool needsActivation = false;
+>         string returnMsg = string.Empty;
+>         bool isValid = lv.ValidateLicenseAtStartup (ELicenseBinding.ComputerName, ref needsActivation, ref returnMsg);
+>         txtActivationKey.Text = lv.ActivationKey;
+>         txtComputerName.Text = computerID;
+>         txtLicenseKey.Text = lv.ComputerKey;
+>         //added condition to show/hide popup.
+>         if (isValid)
+>         {
+>             popup.Hide();
+>             if (String.IsNullOrEmpty (returnMsg))
+>             {
+>                 lblLicenseStatus.Text = String.Format("Your license is valid.");
+>             }
+>             else
+>             {
+>                 lblLicenseStatus.Text = returnMsg;
+>             }
+>         }
+>         else
+>         {
+>             if (!String.IsNullOrEmpty (returnMsg))
+>             {
+>                 lblLicenseStatus.Text = returnMsg;
+>             }
+>             else if (String.IsNullOrEmpty (lv.ActivationKey))
+>             {
+>                 lblLicenseStatus.Text = "No license key was entered.";
+>             }
+>             popup.Show();
+>         }
+>     }
 > }
+> ```
+> {% endcode %}
 >
 > &#x20;
 
 In the code above, if the license is valid, your application starts up. If the license is not valid, we display the form to prompt the user to enter an Activation Key and activate it.
 
-8\. When the activation form is displayed, the user must enter an activation key then click Activate. Add the following code in the activate click event:
+8\. When the activation form is displayed, the user must enter an activation key and then click Activate. Add the following code in the activate click event:
 
-> protected void btnActivate\_Click(object sender, EventArgs e)\
-> &#x20;   {\
-> &#x20;   activationKey = txtActivationKey.Text;\
-> &#x20;   computerKey = txtLicenseKey.Text;\
-> &#x20;   // The QLM API will be called here with the activationKey and the computerID as input\
-> &#x20;   string statusMessage;\
-> &#x20;   if (ActivateLicense (activationKey, computerID, out computerKey, out statusMessage))\
-> &#x20;   {        \
-> &#x20;       lblLicenseStatus.Text = txtMessage.Text = statusMessage;
->
-> &#x20;   }\
-> &#x20;   else\
-> &#x20;   {\
-> &#x20;       // Display an error message in the popup's txtMessage field with the content being statusMessage\
-> &#x20;       lblLicenseStatus.Text = txtMessage.Text = statusMessage;\
-> &#x20;   }\
-> }
->
-> private bool ActivateLicense (string \_activationKey, string \_computerID, out string computerKey, out string returnMessage)\
-> {\
-> &#x20;   bool ret = false;
->
-> &#x20;   returnMessage = string.Empty;\
-> &#x20;   computerKey = txtLicenseKey.Text;
->
-> &#x20;   String response = string.Empty;
->
-> &#x20;   String computerName = String.Empty;\
-> &#x20;   String userData = String.Empty;
->
-> &#x20;   txtMessage.Text = " ";
->
-> &#x20;   bool needsActivation = false;
->
-> &#x20;   ret = lv.ValidateLicense(\_activationKey, computerKey, ref \_computerID,                                 ELicenseBinding.ComputerName, ref needsActivation, ref returnMessage);
->
-> &#x20;   if (!ret)\
-> &#x20;   {\
-> &#x20;       if (needsActivation)\
-> &#x20;       {
->
-> &#x20;           lv.QlmLicenseObject.ActivateLicense(lv.QlmLicenseObject.DefaultWebServiceUrl, activationKey, computerID, computerName, lv.QlmLicenseObject.Version, userData, out response);
->
-> &#x20;           ILicenseInfo licenseInfo = new LicenseInfo();
->
-> &#x20;           returnMessage = string.Empty;
->
-> &#x20;           if (lv.QlmLicenseObject.ParseResults(response, ref licenseInfo, ref returnMessage))\
-> &#x20;           {\
-> &#x20;               ret = true;
->
-> &#x20;               txtLicenseKey.Text = licenseInfo.ComputerKey;\
-> &#x20;               lv.QlmLicenseObject.StoreKeys(activationKey, licenseInfo.ComputerKey);\
-> &#x20;               if (String.IsNullOrEmpty(returnMessage))\
-> &#x20;               {\
-> &#x20;                   returnMessage = String.Format("The license was successfully activated.");\
-> &#x20;               }\
-> &#x20;           }\
-> &#x20;       }       \
-> &#x20;   }\
-> &#x20;   else\
-> &#x20;   {\
-> &#x20;       returnMessage = String.Format("The license was already successfully activated.");\
-> &#x20;   }
->
-> &#x20;   return ret;\
-> }
->
-> &#x20; &#x20;
+{% code overflow="wrap" %}
+```csharp
+protected void btnActivate_Click(object sender, EventArgs e)
+    {
+    activationKey = txtActivationKey.Text;
+    computerKey = txtLicenseKey.Text;
+    // The QLM API will be called here with the activationKey and the computerID as input
+    string statusMessage;
+    if (ActivateLicense (activationKey, computerID, out computerKey, out statusMessage))
+    {        
+        lblLicenseStatus.Text = txtMessage.Text = statusMessage;
+    }
+    else
+    {
+        // Display an error message in the popup's txtMessage field with the content being statusMessage
+        lblLicenseStatus.Text = txtMessage.Text = statusMessage;
+    }
+}
+private bool ActivateLicense (string _activationKey, string _computerID, out string computerKey, out string returnMessage)
+{
+    bool ret = false;
+    returnMessage = string.Empty;
+    computerKey = txtLicenseKey.Text;
+    String response = string.Empty;
+    String computerName = String.Empty;
+    String userData = String.Empty;
+    txtMessage.Text = " ";
+    bool needsActivation = false;
+    ret = lv.ValidateLicense(_activationKey, computerKey, ref _computerID,                                 ELicenseBinding.ComputerName, ref needsActivation, ref returnMessage);
+    if (!ret)
+    {
+        if (needsActivation)
+        {
+            lv.QlmLicenseObject.ActivateLicense(lv.QlmLicenseObject.DefaultWebServiceUrl, activationKey, computerID, computerName, lv.QlmLicenseObject.Version, userData, out response);
+            ILicenseInfo licenseInfo = new LicenseInfo();
+            returnMessage = string.Empty;
+            if (lv.QlmLicenseObject.ParseResults(response, ref licenseInfo, ref returnMessage))
+            {
+                ret = true;
+                txtLicenseKey.Text = licenseInfo.ComputerKey;
+                lv.QlmLicenseObject.StoreKeys(activationKey, licenseInfo.ComputerKey);
+                if (String.IsNullOrEmpty(returnMessage))
+                {
+                    returnMessage = String.Format("The license was successfully activated.");
+                }
+            }
+        }       
+    }
+    else
+    {
+        returnMessage = String.Format("The license was already successfully activated.");
+    }
+    return ret;
+}
+   
+```
+{% endcode %}
 
 This completes the integration. The next time you open your ASP.NET application the Page\_Load event should get triggered and perform the license validation.&#x20;
 
@@ -155,5 +143,5 @@ To generate a license key for testing purposes:
 
 * Go to the Manage Keys tab.
 * Click "Create Activation Key"
-* Select the Product (Demo 1.0 for trials) and click Ok.
+* Select the Product (Demo 1.0 for trials) and click OK.
 * Copy and Paste the generated Activation Key in the Activation Control launched when your application starts up and follow the steps in the wizard.

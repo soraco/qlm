@@ -1,6 +1,6 @@
 # Protect an Embarcadero C++ Builder app with QLM
 
-This guide provides a step by step procedure to protect an Embarcadero C+ +Builder app. Note that the steps below assume you have a QLM License Server already setup.
+This guide provides a step-by-step procedure to protect an Embarcadero C+ +Builder app. Note that the steps below assume you have a QLM License Server already setup.
 
 1\. Launch the QLM Management Console
 
@@ -42,54 +42,44 @@ This guide provides a step by step procedure to protect an Embarcadero C+ +Build
 * _Declare the following function in the header file of your app's module:_
   * int \_\_fastcall DisplayLicenseForm();
 
-> &#x20;
+9\. Add the code similar to the code below where you want to perform the license validation. Modify the class name below (TAppForm) to match your own class.
 
-9\. Add the code similar to the code below where you want to perform the license validation. Mofify the class name below (TAppForm) to match your own class.
-
-_void \_\_fastcall TForm1::FormCreate(TObject \*Sender)_\
-_{_\
-&#x20;   _lv = new TLicenseValidator();_
-
-&#x20;   _bool needsActivation=false;_\
-&#x20;   _UnicodeString errorMsg=L"";_
-
-&#x20;   _// Example of getting a unique identifier_\
-&#x20;   _IQlmHardware \*qlmHardware = lv->CreateQlmHardwareObject();_\
-&#x20;   _UnicodeString computerID=qlmHardware->GetMachineName();_
-
-&#x20;   _ELicenseBinding licenseBinding=ELicenseBinding::ELicenseBinding\_ComputerName;_
-
-&#x20;   _settingsFile = ExtractFilePath(Application->ExeName) + L"Demo 1.0.lw.xml";_\
-&#x20;   _qlmWizard = ExtractFilePath(Application->ExeName) + L"QlmLicenseWizard.exe";_\
-&#x20;   _wizardArgs = L" \\/settings \\"" + settingsFile + "\\"";_
-
-&#x20;   _// If you use a LicenseBinding of type UserDefined, you must pass the computerID_\
-&#x20;   _// wizardArgs := '/settings "' + settingsFile + '" /computerID ' + computerID;_
-
-&#x20;   _bool licenseValid=lv->ValidateLicenseAtStartup(licenseBinding, needsActivation, errorMsg);_
-
-&#x20;   _if (needsActivation || (licenseValid==false))_\
-&#x20;   _{_\
-&#x20;       _DisplayLicenseForm();_
-
-&#x20;       _if (lv->ValidateLicenseAtStartup(licenseBinding, needsActivation, errorMsg) == false)_\
-&#x20;       _{_\
-&#x20;           _Application->Terminate();_\
-&#x20;       _}_\
-&#x20;   _}_
-
-_}_
-
-_int \_\_fastcall TForm1::DisplayLicenseForm()_
-
-_{_
-
-&#x20;   _CComBSTR pName(wcslen(qlmWizard.c\_str()));_\
-&#x20;   _wcscpy(pName.m\_str, qlmWizard.c\_str());_\
-&#x20;   _CComBSTR pArgs(wcslen(wizardArgs.c\_str()));_\
-&#x20;   _wcscpy(pArgs.m\_str, wizardArgs.c\_str());_\
-&#x20;   _return lv->QlmLicenseObject()->LaunchProcess(pName, pArgs, true, true);_\
-_}_
+{% code overflow="wrap" %}
+```cpp
+void __fastcall TForm1::FormCreate(TObject *Sender)
+{
+    lv = new TLicenseValidator();
+    bool needsActivation=false;
+    UnicodeString errorMsg=L"";
+    // Example of getting a unique identifier
+    IQlmHardware *qlmHardware = lv->CreateQlmHardwareObject();
+    UnicodeString computerID=qlmHardware->GetMachineName();
+    ELicenseBinding licenseBinding=ELicenseBinding::ELicenseBinding_ComputerName;
+    settingsFile = ExtractFilePath(Application->ExeName) + L"Demo 1.0.lw.xml";
+    qlmWizard = ExtractFilePath(Application->ExeName) + L"QlmLicenseWizard.exe";
+    wizardArgs = L" \/settings \"" + settingsFile + "\"";
+    // If you use a LicenseBinding of type UserDefined, you must pass the computerID
+    // wizardArgs := '/settings "' + settingsFile + '" /computerID ' + computerID;
+    bool licenseValid=lv->ValidateLicenseAtStartup(licenseBinding, needsActivation, errorMsg);
+    if (needsActivation || (licenseValid==false))
+    {
+        DisplayLicenseForm();
+        if (lv->ValidateLicenseAtStartup(licenseBinding, needsActivation, errorMsg) == false)
+        {
+            Application->Terminate();
+        }
+    }
+}
+int __fastcall TForm1::DisplayLicenseForm()
+{
+    CComBSTR pName(wcslen(qlmWizard.c_str()));
+    wcscpy(pName.m_str, qlmWizard.c_str());
+    CComBSTR pArgs(wcslen(wizardArgs.c_str()));
+    wcscpy(pArgs.m_str, wizardArgs.c_str());
+    return lv->QlmLicenseObject()->LaunchProcess(pName, pArgs, true, true);
+}
+```
+{% endcode %}
 
 This completes the integration. The next time you open your Delphi application the ValidateLicenseAtStartup method should get triggered and perform the license validation.&#x20;
 
@@ -97,7 +87,7 @@ To generate a license key for testing purposes:
 
 * Go to the Manage Keys tab.
 * Click "Create Activation Key"
-* Select the Product (Demo 1.0 for trials) and click Ok.
+* Select the Product (Demo 1.0 for trials) and click OK.
 * Copy and Paste the generated Activation Key in the License Wizard launched when your application starts up and follow the steps in the wizard.
 
 The files that you need to distribute with your application are:

@@ -2,7 +2,7 @@
 
 \[You can watch a video version of this guide [here](https://www.youtube.com/watch?v=gCgt1FkYojM) - Note that the instructions were updated after the video was recorded. Use the instructions below for the most up-to-date steps]
 
-Following is a step by step procedure to protect an Excel application. Note that the steps below assume you have a QLM License Server already setup. If you are evaluating QLM, you can use the "Demo License Server" that is available to you during the trial period.
+Following is a step-by-step procedure to protect an Excel application. Note that the steps below assume you have a QLM License Server already setup. If you are evaluating QLM, you can use the "Demo License Server" that is available to you during the trial period.
 
 Note that QLM protects the VBA code behind your Excel application. It does not protect the content of the cells in the Excel sheet. There are techniques to hide the Excel sheets in case macros are disabled. These techniques are outside the scope of QLM. You can view one of these techniques [here](https://support.soraco.co/hc/en-us/articles/115005573403-How-to-prevent-an-Excel-sheet-from-opening-if-macros-are-disabled).
 
@@ -35,91 +35,80 @@ Note that QLM protects the VBA code behind your Excel application. It does not p
 
 8\. Add the following code to your workbook (ThisWorkbook)
 
-> Dim lv As LicenseValidator
+{% code overflow="wrap" %}
+```vba
+Dim lv As LicenseValidator
+Dim settingsFile As String
+Dim homeDir As String
+Dim binDir As String
 
-> Dim settingsFile As String
 
-> Dim homeDir As String
-
-> Dim binDir As String
-
-\
-Private Sub Workbook\_Open()
-
+Private Sub Workbook_Open()
 CheckLicense
+End Sub
+Public Sub CheckLicense() 
+    '
+    ' for debugging purposes / stepping through the code - remove the Stop when done.
+    '
+    Stop
+
+    On Error GoTo PROC_ERR
+    Set lv = New LicenseValidator   
+
+    homeDir = lv.GetHomeDir(ThisWorkbook.path)
+    binDir = homeDir & "\Qlm"
+    ' Update the filename below with the one that you generated via the Protect Your App Wizard
+    settingsFile = homeDir & "\Demo 1.0.lw.xml"
+    
+    lv.InitializeLicense homeDir, settingsFile, binDir
+    Dim binding As ELicenseBinding
+    binding = ELicenseBinding_ComputerName
+
+    Dim needsActivation As Boolean
+    Dim errorMsg As String
+    If lv.ValidateLicenseAtStartupByBinding(binding, needsActivation, errorMsg) = False Then
+
+        Dim args As String
+
+        args = args & " /settings " & """" & settingsFile & """"
+        args = args & " /computerID " & lv.fOSMachineName
+
+        #If VBA7 Then
+            Dim exitCode As LongPtr
+        #Else
+            Dim exitCode As Long
+        #End If
+
+        Dim wizardExe As String
+        wizardExe = binDir & "\QlmLicenseWizard.exe"
+        If Dir(wizardExe) = "" Then
+            wizardExe = "C:\Program Files\Soraco\QuickLicenseMgr\QlmLicenseWizard.exe"
+        End If
+
+        exitCode = lv.LicenseObject.LaunchProcess(wizardExe, args, True, True)
+         
+        ' Validate the license again after activation, if it fails, exit the app
+        If lv.ValidateLicenseAtStartupByBinding(binding, needsActivation, errorMsg) = False Then
+            ExitApp
+        End If
+    End If
+
+    Exit Sub
+
+PROC_ERR:
+    MsgBox "Error: (" & Err.Number & ") " & Err.Description, vbCritical
+    Stop
+    ExitApp
 
 End Sub
-
-Public Sub CheckLicense()&#x20;
-
-&#x20;   '\
-&#x20;   ' for debugging purposes / stepping through the code - remove the Stop when done.\
-&#x20;   '\
-&#x20;   Stop\
-\
-&#x20;   On Error GoTo PROC\_ERR
-
-&#x20;   Set lv = New LicenseValidator   \
-\
-&#x20;   homeDir = lv.GetHomeDir(ThisWorkbook.path)
-
-&#x20;   binDir = homeDir & "\Qlm"
-
-&#x20;   ' Update the filename below with the one that you generated via the Protect Your App Wizard\
-&#x20;   settingsFile = homeDir & "\Demo 1.0.lw.xml"
-
-&#x20;   \
-&#x20;   lv.InitializeLicense homeDir, settingsFile, binDir
-
-&#x20;   Dim binding As ELicenseBinding\
-&#x20;   binding = ELicenseBinding\_ComputerName\
-\
-&#x20;   Dim needsActivation As Boolean\
-&#x20;   Dim errorMsg As String
-
-&#x20;   If lv.ValidateLicenseAtStartupByBinding(binding, needsActivation, errorMsg) = False Then\
-\
-&#x20;       Dim args As String\
-\
-&#x20;       args = args & " /settings " & """" & settingsFile & """"\
-&#x20;       args = args & " /computerID " & lv.fOSMachineName\
-\
-&#x20;       \#If VBA7 Then\
-&#x20;           Dim exitCode As LongPtr\
-&#x20;       \#Else\
-&#x20;           Dim exitCode As Long\
-&#x20;       \#End If\
-\
-&#x20;       Dim wizardExe As String\
-&#x20;       wizardExe = binDir & "\QlmLicenseWizard.exe"\
-&#x20;       If Dir(wizardExe) = "" Then\
-&#x20;           wizardExe = "C:\Program Files\Soraco\QuickLicenseMgr\QlmLicenseWizard.exe"\
-&#x20;       End If\
-\
-&#x20;       exitCode = lv.LicenseObject.LaunchProcess(wizardExe, args, True, True)\
-&#x20;        \
-&#x20;       ' Validate the license again after activation, if it fails, exit the app\
-&#x20;       If lv.ValidateLicenseAtStartupByBinding(binding, needsActivation, errorMsg) = False Then\
-&#x20;           ExitApp\
-&#x20;       End If\
-&#x20;   End If\
-\
-&#x20;   Exit Sub\
-\
-PROC\_ERR:\
-&#x20;   MsgBox "Error: (" & Err.Number & ") " & Err.Description, vbCritical\
-&#x20;   Stop\
-&#x20;   ExitApp\
-\
-End Sub
-
 Private Sub ExitApp()
+    ' Before shipping your app, uncomment the Close statement in the ExitApp Sub
+    ' During development, you may want to comment it out to avoid getting locked out of your app
 
-&#x20;   ' Before shipping your app, uncomment the Close statement in the ExitApp Sub\
-&#x20;   ' During development, you may want to comment it out to avoid getting locked out of your app\
-\
-&#x20;   'Me.Close savechanges:=False\
+    'Me.Close savechanges:=False
 End Sub
+```
+{% endcode %}
 
 9\. In the VBA editor, click Insert "Class Module"
 
@@ -133,13 +122,13 @@ To generate a license key for testing purposes:
 
 * Go to the Manage Keys tab.
 * Click "Create Activation Key"
-* Select the Product (Demo 1.0 for trials) and click Ok.
+* Select the Product (Demo 1.0 for trials) and click OK.
 * Copy and Paste the generated Activation Key in the License Wizard launched when your application starts up and follow the steps in the wizard.
 
 IMPORTANT NOTES:
 
 * During development, if a license is not valid, the Excel workbook will still open. When ready, uncomment the **Close** statement in the **ExitApp** Sub.
-* Do not forget to password protect your VBA code to protect it. To protect your VBA code:
+* Do not forget to password-protect your VBA code to protect it. To protect your VBA code:
   * In the VBA Editor, click Toos / VBAProject Properties
   * Go to the Protection tab
   * Check "Lock project for viewing"

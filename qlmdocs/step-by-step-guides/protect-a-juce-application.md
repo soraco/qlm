@@ -46,13 +46,13 @@ In your application, at startup, you must:
 
 *   Create an instance of the QlmLicense class:
 
-    ```
+    ```cpp
     std::unique_ptr<soraco::License> m_license; // in header file
     m_license.reset(new soraco::License()); // in cpp file
     ```
 *   Load the license file if it exists:
 
-    ```
+    ```cpp
     m_license->loadLicense(licenseFile,publicKey,m_computerId);
     ```
 
@@ -60,7 +60,7 @@ In your application, at startup, you must:
 
 *   To check if a license is valid, create a function called checkLicense and call it.
 
-    ```
+    ```cpp
     void MainComponent::checkLicense() 
     {
         juce::String validationResult = m_license->validationResult().result;

@@ -1,6 +1,6 @@
 # Protect a VB.NET App with the QLM License Wizard Standalone Exe
 
-Following is a step by step procedure to protect a VB.NET application by using the QLM License Wizard Standalone application. Note that the steps below assume you have a QLM License Server already setup.
+Following is a step-by-step procedure to protect a VB.NET application by using the QLM License Wizard Standalone application. Note that the steps below assume you have a QLM License Server already setup.
 
 1\. Launch the QLM Management Console
 
@@ -28,7 +28,7 @@ The "Protect your application" should have generated a class file called License
   * Add the file LicenseValidator.vb to your project
   * Add the file Demo 1.0.lw.xml to your project and set the property "Copy to Output Directory" to "Copy if newer"
 * You will now need to update your application to add the license validation code.
-* Add the following statement your main module: Imports QlmLicenseLib
+* Add the following statement to your main module: Imports QlmLicenseLib
 * Define the following global variables:
 
 > &#x20;   Dim lv As QLM.LicenseValidator\
@@ -37,72 +37,53 @@ The "Protect your application" should have generated a class file called License
 
 * Copy and paste the code below into your application     &#x20;
 
-> &#x20;Sub ValidateLicense()\
-> &#x20;   Dim thisAssembly As Reflection.Assembly\
-> &#x20;   thisAssembly = Reflection.Assembly.GetExecutingAssembly()
->
-> &#x20;   Dim location As String\
-> &#x20;   location = System.IO.Path.GetDirectoryName(thisAssembly.Location)
->
-> &#x20;   settingsFile = System.IO.Path.Combine(location, "Demo 1.0.lw.xml")
->
-> &#x20;   ' You must deploy the QlmLicenseWizard.exe to the same folder as your application and the QlmLicenseLib.dll\
-> &#x20;   wizardExec = System.IO.Path.Combine(location, "QlmLicenseWizard.exe")
->
-> &#x20;   lv = New QLM.LicenseValidator(settingsFile)
->
-> &#x20;   Dim needsActivation As Boolean = False\
-> &#x20;   Dim errorMessage As String = String.Empty\
-> &#x20;   Dim licenseValid As Boolean
->
-> &#x20;   Dim licenseBinding As ELicenseBinding\
-> &#x20;   licenseBinding = ELicenseBinding.ComputerName
->
-> &#x20;   licenseValid = lv.ValidateLicenseAtStartup(licenseBinding, needsActivation, errorMessage)
->
-> &#x20;   If needsActivation = True Or licenseValid = False Then\
-> &#x20;   Dim exitCode As Integer
->
-> &#x20;   exitCode = DisplayLicenseForm()
->
-> &#x20;   If exitCode = 4 Then\
-> &#x20;   Environment.Exit(0)\
-> &#x20;   End If
->
-> &#x20;   licenseValid = lv.ValidateLicenseAtStartup(licenseBinding, needsActivation, errorMessage)\
-> &#x20;   If licenseValid = False Then\
-> &#x20;   Environment.Exit(0)\
-> &#x20;   End If
->
-> &#x20;   End If
->
-> End Sub
->
-> Private Function DisplayLicenseForm() As Integer
->
-> &#x20;   Dim errorMessage As String\
-> &#x20;   errorMessage = String.Empty
->
-> \
-> &#x20;   If (lv.QlmLicenseObject.ValidateSettingsFile(settingsFile, errorMessage) = False) Then\
-> &#x20;   Console.WriteLine(errorMessage)\
-> &#x20;   Return 4\
-> &#x20;   End If
->
-> &#x20;   Dim args As String
->
-> \
-> &#x20;   args = String.Format("/settings ""{0}"" ", settingsFile)
->
-> &#x20;   If System.IO.File.Exists(wizardExec) = False Then
->
-> &#x20;   wizardExec = "C:\Program Files\Soraco\QuickLicenseMgr\QlmLicenseWizard.exe"
->
-> &#x20;   End If
->
-> &#x20;   Return lv.QlmLicenseObject.LaunchProcess(wizardExec, args, True, True)
->
-> End Function
+{% code overflow="wrap" %}
+```vbnet
+ Sub ValidateLicense()
+    Dim thisAssembly As Reflection.Assembly
+    thisAssembly = Reflection.Assembly.GetExecutingAssembly()
+    Dim location As String
+    location = System.IO.Path.GetDirectoryName(thisAssembly.Location)
+    settingsFile = System.IO.Path.Combine(location, "Demo 1.0.lw.xml")
+    ' You must deploy the QlmLicenseWizard.exe to the same folder as your application and the QlmLicenseLib.dll
+    wizardExec = System.IO.Path.Combine(location, "QlmLicenseWizard.exe")
+    lv = New QLM.LicenseValidator(settingsFile)
+    Dim needsActivation As Boolean = False
+    Dim errorMessage As String = String.Empty
+    Dim licenseValid As Boolean
+    Dim licenseBinding As ELicenseBinding
+    licenseBinding = ELicenseBinding.ComputerName
+    licenseValid = lv.ValidateLicenseAtStartup(licenseBinding, needsActivation, errorMessage)
+    If needsActivation = True Or licenseValid = False Then
+    Dim exitCode As Integer
+    exitCode = DisplayLicenseForm()
+    If exitCode = 4 Then
+    Environment.Exit(0)
+    End If
+    licenseValid = lv.ValidateLicenseAtStartup(licenseBinding, needsActivation, errorMessage)
+    If licenseValid = False Then
+    Environment.Exit(0)
+    End If
+    End If
+End Sub
+Private Function DisplayLicenseForm() As Integer
+    Dim errorMessage As String
+    errorMessage = String.Empty
+
+    If (lv.QlmLicenseObject.ValidateSettingsFile(settingsFile, errorMessage) = False) Then
+    Console.WriteLine(errorMessage)
+    Return 4
+    End If
+    Dim args As String
+
+    args = String.Format("/settings ""{0}"" ", settingsFile)
+    If System.IO.File.Exists(wizardExec) = False Then
+    wizardExec = "C:\Program Files\Soraco\QuickLicenseMgr\QlmLicenseWizard.exe"
+    End If
+    Return lv.QlmLicenseObject.LaunchProcess(wizardExec, args, True, True)
+End Function
+```
+{% endcode %}
 
 Now in your application's startup code, call ValidateLicense().
 

@@ -1,6 +1,6 @@
 # Protect an Embarcadero Delphi application with QLM
 
-This guide provides a step by step procedure to protect a Delphi app. Note that the steps below assume you have a QLM License Server already setup.
+This guide provides a step-by-step procedure to protect a Delphi app. Note that the steps below assume you have a QLM License Server already setup.
 
 1\. Launch the QLM Management Console
 
@@ -45,64 +45,51 @@ This guide provides a step by step procedure to protect a Delphi app. Note that 
 * _Declare the following functions:_
   * _function DisplayLicenseForm () : Integer;_
 
-> &#x20;
+> &#x20;9\. Add the code similar to the code below where you want to perform the license validation. Mofify the class name below (TAppForm) to match your own class.
 
-9\. Add the code similar to the code below where you want to perform the license validation. Mofify the class name below (TAppForm) to match your own class.
+{% code overflow="wrap" %}
+```pascal
+procedure TAppForm.FormCreate(Sender: TObject);
+Var
+needsActivation : Boolean;
+licenseValid : Boolean;
+errorMsg : String;
+exitCode : Integer;
+computerID : String;
+qlmHardware : IQlmHardware;
+licenseBinding : ELicenseBinding;
+begin
+lv:=TLicenseValidator.Create;
+needsActivation:=False;
+errorMsg:='';
+exitCode := 0;
 
-_procedure TAppForm.FormCreate(Sender: TObject);_\
-_Var_\
-_needsActivation : Boolean;_\
-_licenseValid : Boolean;_\
-_errorMsg : String;_\
-_exitCode : Integer;_\
-_computerID : String;_\
-_qlmHardware : IQlmHardware;_\
-_licenseBinding : ELicenseBinding;_
+// Example of getting a unique identifier
+qlmHardware := lv.CreateQlmHardwareObject ();
+computerID := qlmHardware.GetMachineName();
+licenseBinding := ELicenseBinding_ComputerName;
+settingsFile := ExtractFilePath (Application.ExeName) + 'Demo 1.0.lw.xml';
+qlmWizard := ExtractFilePath (Application.ExeName) + 'QlmLicenseWizard.exe';
 
-_begin_
-
-_lv:=TLicenseValidator.Create;_\
-_needsActivation:=False;_\
-_errorMsg:='';_\
-_exitCode := 0;_
-
-\
-_// Example of getting a unique identifier_\
-_qlmHardware := lv.CreateQlmHardwareObject ();_\
-_computerID := qlmHardware.GetMachineName();_
-
-_licenseBinding := ELicenseBinding\_ComputerName;_
-
-_settingsFile := ExtractFilePath (Application.ExeName) + 'Demo 1.0.lw.xml';_
-
-_qlmWizard := ExtractFilePath (Application.ExeName) + 'QlmLicenseWizard.exe';_
-
-\
-_wizardArgs := '/settings "' + settingsFile + '"';_
-
-_// If you use a LicenseBinding of type UserDefined, you must pass the computerID_\
-_// wizardArgs := '/settings "' + settingsFile + '" /computerID ' + computerID;_
-
-_licenseValid:=lv.ValidateLicenseAtStartup(licenseBinding, needsActivation, errorMsg);_
-
-_if needsActivation or (not licenseValid)_\
-_then_\
-_begin_
-
-_DisplayLicenseForm ();_
-
-_licenseValid:=lv.ValidateLicenseAtStartup(licenseBinding, needsActivation, errorMsg);_
-
-_if (not licenseValid) then_\
-_Application.Terminate;_
-
-_end_\
-_end;_
-
-_function TAppForm.DisplayLicenseForm() : Integer;_\
-_begin_\
-_Result:= lv.QlmLicenseObject.LaunchProcess (qlmWizard, wizardArgs, true, true);_\
-_end;_
+wizardArgs := '/settings "' + settingsFile + '"';
+// If you use a LicenseBinding of type UserDefined, you must pass the computerID
+// wizardArgs := '/settings "' + settingsFile + '" /computerID ' + computerID;
+licenseValid:=lv.ValidateLicenseAtStartup(licenseBinding, needsActivation, errorMsg);
+if needsActivation or (not licenseValid)
+then
+begin
+DisplayLicenseForm ();
+licenseValid:=lv.ValidateLicenseAtStartup(licenseBinding, needsActivation, errorMsg);
+if (not licenseValid) then
+Application.Terminate;
+end
+end;
+function TAppForm.DisplayLicenseForm() : Integer;
+begin
+Result:= lv.QlmLicenseObject.LaunchProcess (qlmWizard, wizardArgs, true, true);
+end;
+```
+{% endcode %}
 
 This completes the integration. The next time you open your Delphi application the ValidateLicenseAtStartup method should get triggered and perform the license validation.&#x20;
 
@@ -110,7 +97,7 @@ To generate a license key for testing purposes:
 
 * Go to the Manage Keys tab.
 * Click "Create Activation Key"
-* Select the Product (Demo 1.0 for trials) and click Ok.
+* Select the Product (Demo 1.0 for trials) and click OK.
 * Copy and Paste the generated Activation Key in the License Wizard launched when your application starts up and follow the steps in the wizard.
 
 The files that you need to distribute with your application are:

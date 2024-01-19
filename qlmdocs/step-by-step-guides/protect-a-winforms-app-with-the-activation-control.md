@@ -1,6 +1,6 @@
 # Protect a WinForms app with the Activation Control
 
-Following is a step by step procedure to protect a WinForms with the QLM Activation user control. Note that the steps below assume you have a QLM License Server already setup. If you are evaluating QLM, you can use the "Demo License Server" that is available to you during the trial period.
+Following is a step-by-step procedure to protect a WinForms with the QLM Activation user control. Note that the steps below assume you have a QLM License Server already setup. If you are evaluating QLM, you can use the "Demo License Server" that is available to you during the trial period.
 
 1\. Launch the QLM Management Console
 
@@ -30,23 +30,24 @@ Following is a step by step procedure to protect a WinForms with the QLM Activat
 * QlmCommunicationEncryptionKey
 * QlmWebserviceUrl
 
-9\. Assuming you have a Form that is launched when you application starts up, add the following code to the Load event of your main form:
+9\. Assuming you have a Form that is launched when your application starts up, add the following code to the Load event of your main form:
 
-> QLM.LicenseValidator lv = new QLM.LicenseValidator();
->
-> bool needsActivation = false;\
-> string errorMsg = string.Empty;
->
-> if (lv.ValidateLicenseAtStartup(Environment.MachineName, ref needsActivation, ref errorMsg) == false)\
-> {\
-> &#x20;   LicenseActivationFrm licenseFrm = new LicenseActivationFrm();\
-> &#x20;   licenseFrm.ShowDialog();
->
-> &#x20;   if (lv.ValidateLicenseAtStartup(Environment.MachineName, ref needsActivation, ref errorMsg) == false)\
-> &#x20;   {\
-> &#x20;       Environment.Exit(0);\
-> &#x20;   }\
-> }
+{% code overflow="wrap" %}
+```csharp
+QLM.LicenseValidator lv = new QLM.LicenseValidator();
+bool needsActivation = false;
+string errorMsg = string.Empty;
+if (lv.ValidateLicenseAtStartup(Environment.MachineName, ref needsActivation, ref errorMsg) == false)
+{
+    LicenseActivationFrm licenseFrm = new LicenseActivationFrm();
+    licenseFrm.ShowDialog();
+    if (lv.ValidateLicenseAtStartup(Environment.MachineName, ref needsActivation, ref errorMsg) == false)
+    {
+        Environment.Exit(0);
+    }
+}
+```
+{% endcode %}
 
 This completes the integration. The next time you open your WinForms application the Form\_Load event should get triggered and perform the license validation.&#x20;
 
@@ -54,5 +55,5 @@ To generate a license key for testing purposes:
 
 * Go to the Manage Keys tab.
 * Click "Create Activation Key"
-* Select the Product (Demo 1.0 for trials) and click Ok.
+* Select the Product (Demo 1.0 for trials) and click OK.
 * Copy and Paste the generated Activation Key in the Activation Control launched when your application starts up and follow the steps in the wizard.

@@ -2,7 +2,7 @@
 
 \[You can watch a video version of this guide [here](https://www.youtube.com/watch?v=OjRyNeWlZ98)]
 
-Following is a step by step procedure to protect a VB6 application. Note that the steps below assume you have a QLM License Server already setup.
+Following is a step-by-step procedure to protect a VB6 application. Note that the steps below assume you have a QLM License Server already setup.
 
 1\. Launch QLM
 
@@ -30,72 +30,77 @@ Following is a step by step procedure to protect a VB6 application. Note that th
 * c:\Windows\Microsoft.NET\Framework\v4.0.30319\mscoree.tlb
 * QlmLicenseLib.tlb
 
-6\. In your VB6 app's delcare the following global variables
+6\. In your VB6 app, declare the following global variables
 
-&#x20;       ' Global variables
+{% code overflow="wrap" %}
+```vba
+' Global variables
+Dim lv As LicenseValidator
+Dim homeDir As String
+Dim settingsFile As String
+```
+{% endcode %}
 
-&#x20;       Dim lv As LicenseValidator\
-&#x20;       Dim homeDir As String\
-&#x20;       Dim settingsFile As String
+
 
 7\. In your VB6 app's Form\_Load events add the following code:
 
-&#x20;    Private Sub Form\_Open()
+{% code overflow="wrap" %}
+```vba
+Private Sub Form_Open()
+    QlmCheckLicense   
+End Sub
+```
+{% endcode %}
 
-> &#x20;   QlmCheckLicense  &#x20;
->
-> End Sub
+
 
 8\. In your VBA code, add the code below:
 
-> Function QlmCheckLicense()
->
-> &#x20;   Dim trialCount As Integer\
-> &#x20;   Dim bValidKey As Boolean\
-> &#x20;   Dim needsActivation As Boolean\
-> &#x20;   Dim errorMsg As String\
-> \
-> &#x20;   homeDir = App.Path
->
-> &#x20;   settingsFile = homeDir & "\Demo 1.0.lw.xml"\
-> \
-> &#x20;   Set lv = New LicenseValidator\
-> &#x20;   lv.InitializeLicense (homeDir, settingsFile)\
-> \
-> &#x20;   If lv.ValidateLicenseAtStartup(Environ("computername"), needsActivation, errorMsg) = False Then\
-> \
-> &#x20;       If LaunchWizard = 4 Then\
-> &#x20;           Unload Me\
-> &#x20;       End If\
-> \
-> &#x20;       If lv.ValidateLicenseAtStartup(Environ("computername"), needsActivation, errorMsg) = False Then\
-> &#x20;           Unload Me\
-> &#x20;       End If\
-> &#x20;   End If
->
-> End Function
->
-> Private Function LaunchWizard() As Integer
->
-> &#x20;   Dim args As String\
-> \
-> &#x20;   args = args & " /settings " & """" & settingsFile & """"\
-> &#x20;   args = args & " /computerID " & lv.fOSMachineName
->
-> &#x20;   Dim exitCode As Long
->
-> &#x20;   Dim wizardExe As String\
-> &#x20;   wizardExe = homeDir & "\QlmLicenseWizard.exe"\
-> &#x20;   If Dir(wizardExe) = "" Then\
-> &#x20;       wizardExe = "C:\Program Files\Soraco\QuickLicenseMgr\QlmLicenseWizard.exe"\
-> &#x20;   End If\
-> &#x20; &#x20;
->
-> &#x20;   exitCode = lv.LicenseObject.LaunchProcess(wizardExe, args, True, True)\
-> &#x20;   LaunchWizard = exitCode\
-> \
-> \
-> End Function
+{% code overflow="wrap" %}
+```vba
+Function QlmCheckLicense()
+    Dim trialCount As Integer
+    Dim bValidKey As Boolean
+    Dim needsActivation As Boolean
+    Dim errorMsg As String
+
+    homeDir = App.Path
+    settingsFile = homeDir & "\Demo 1.0.lw.xml"
+
+    Set lv = New LicenseValidator
+    lv.InitializeLicense (homeDir, settingsFile)
+
+    If lv.ValidateLicenseAtStartup(Environ("computername"), needsActivation, errorMsg) = False Then
+
+        If LaunchWizard = 4 Then
+            Unload Me
+        End If
+
+        If lv.ValidateLicenseAtStartup(Environ("computername"), needsActivation, errorMsg) = False Then
+            Unload Me
+        End If
+    End If
+End Function
+Private Function LaunchWizard() As Integer
+    Dim args As String
+
+    args = args & " /settings " & """" & settingsFile & """"
+    args = args & " /computerID " & lv.fOSMachineName
+    Dim exitCode As Long
+    Dim wizardExe As String
+    wizardExe = homeDir & "\QlmLicenseWizard.exe"
+    If Dir(wizardExe) = "" Then
+        wizardExe = "C:\Program Files\Soraco\QuickLicenseMgr\QlmLicenseWizard.exe"
+    End If
+   
+    exitCode = lv.LicenseObject.LaunchProcess(wizardExe, args, True, True)
+    LaunchWizard = exitCode
+
+
+End Function
+```
+{% endcode %}
 
 9\. Add the LicenseValidator.cls class (created in step 3 above) to your project as follows:
 
@@ -111,5 +116,5 @@ To generate a license key for testing purposes:
 
 * Go to the Manage Keys tab.
 * Click "Create Activation Key"
-* Select the Product (Demo 1.0 for trials) and click Ok.
+* Select the Product (Demo 1.0 for trials) and click OK.
 * Copy and Paste the generated Activation Key in the License Wizard the steps in the wizard.

@@ -18,7 +18,9 @@ In QLM v14, the QLM License Wizard supports new settings that allow your custome
 | QlmFloatingLicenseCheckBoxVisible      | True                                                                                     |
 | QlmShowFloatingLicensePage             | True                                                                                     |
 
-#### &#x20;![](https://support.soraco.co/attachments/token/kl3aavzKZyDPCiF37xp4QwFpW/?name=inline-270194354.png)
+#### &#x20;
+
+<figure><img src="https://support.soraco.co/attachments/token/kl3aavzKZyDPCiF37xp4QwFpW/?name=inline-270194354.png" alt=""><figcaption></figcaption></figure>
 
 #### Required files and references
 
@@ -30,9 +32,10 @@ In order to protect your .NET application with QLM, you must:
 
 #### Initialization
 
-At application startup, you need to determine the type of license that needs to be managed in order to process a node locked license or a floating license. The code below performs this determination.
+At application startup, you need to determine the type of license that needs to be managed in order to process a node-locked license or a floating license. The code below performs this determination.
 
-```
+{% code overflow="wrap" %}
+```csharp
 private void ProcessLicense()
 {
  string returnMsg = string.Empty;
@@ -66,16 +69,17 @@ private void ProcessLicense()
   }
  }
 ```
+{% endcode %}
 
 If the license is a floating license, the code above calls ProcessFloatingLicense which takes care of initializing and connecting to the floating license database. The implementation of LaunchWizard referenced below can be found in the provided sample.
 
-```
+{% code overflow="wrap" %}
+```csharp
 private void ProcessFloatingLicense ()
 {
     QlmActivationStatus activationStatus;
 
-    bool licenseValid = fh.Load(out bool reRegisterLicense, out bool reRegisterDb, out bool isOffline, 
-                                out bool wasOffline, out activationStatus, out string errorMessage, out string offlineError);
+    bool licenseValid = fh.Load(out bool reRegisterLicense, out bool reRegisterDb, out bool isOffline, out bool wasOffline, out activationStatus, out string errorMessage, out string offlineError);
 
     if (licenseValid == false) 
     {
@@ -107,10 +111,12 @@ private void ProcessFloatingLicense ()
     SetLicenseStatus(licenseValid, isOffline);
  }
 ```
+{% endcode %}
 
 f the license is a node locked license, the code above calls ProcessNodeLockedLicense which takes care of activating the node locked license if it needs activation. The implementation of LaunchWizard referenced below can be found in the provided sample.
 
-```
+{% code overflow="wrap" %}
+```csharp
 private void ProcessNodeLockedLicense()
 {
    if (licenseStatus == false)
@@ -133,15 +139,16 @@ private void ProcessNodeLockedLicense()
  }
 
 ```
+{% endcode %}
 
 #### End-User Experience
 
-The  first time your user launches your application, the LicenseKind will be undetermined and the QLM License Wizard will be displayed.
+&#x20;The first time your user launches your application, the LicenseKind will be undetermined and the QLM License Wizard will be displayed.
 
 The Welcome page of the License Wizard contains a checkbox labeled, by default, "Floating License".
 
 If the user checks this checkbox, the wizard will display the pages required to activate a floating license.&#x20;
 
-If the user unchecks this checkbox, the wizard will display the pages required to activate a node locked license.&#x20;
+If the user unchecks this checkbox, the wizard will display the pages required to activate a node-locked license.&#x20;
 
 For floating licenses, once a license is activated and the floating license database is initialized on one system, all other nodes just need to connect to the floating license database without the need to activate a license.

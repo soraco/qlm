@@ -56,17 +56,17 @@ In your application, at startup, you must:
 
 *   Create an instance of the QlmLicense class:
 
-    ```
+    ```cpp
     license = new QlmLicense();    
     ```
 *   Load the license file if it exists:
 
-    ```
+    ```cpp
     license->loadLicense(licenseFile,publicKey,computerId);
     ```
 *   To activate a license, create a function called ValidateLicenseOnServer and call it:
 
-    ```
+    ```cpp
     bool MainWindow::ValidateLicenseOnServer ()
     {
         if (license->Ping (url))
