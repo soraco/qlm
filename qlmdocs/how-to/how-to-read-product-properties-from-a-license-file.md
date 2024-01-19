@@ -6,7 +6,8 @@ The code below shows how to extract the Product Properties from the license file
 
 Assuming lv is an instance of a LicenseValidator class, and that the license is bound to the computer name:
 
-```
+{% code overflow="wrap" %}
+```csharp
 string licenseFileXml;
 string computerID = Environment.MachineName;
 
@@ -28,3 +29,4 @@ if (lv.QlmLicenseObject.GetLicenseFile(string.Empty, lv.ActivationKey, string.Em
         }
 }
 ```
+{% endcode %}

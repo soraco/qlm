@@ -5,17 +5,18 @@ To retrieve license activation information for a specific Activation Key from th
 1. Single Activation Key
 2. Multiple Activations Key
 
-License Information for single activation license keys is stored in the QLM main License Keys table and can be readily retrieved by calling the [GetLicenseInfo](https://support.soraco.co/hc/en-us/articles/210597466-QlmLicense-GetLicenseInfo) method.
+License Information for single activation license keys is stored in the QLM main License Keys table and can be readily retrieved by calling the [GetLicenseInfo](../api-reference/qlmlicense/application-methods/getlicenseinfo.md) method.
 
 &#x20;
 
-For multiple activation license keys, license information is stored in a separate table called ActivationLog. You must therefore retrieve the information from this table by calling [GetActivationLog](https://support.soraco.co/hc/en-us/articles/360040197792-QlmLicense-GetActivationLog) and then retrieve the record from this table that corresponds to the client computer.
+For multiple activation license keys, license information is stored in a separate table called ActivationLog. You must therefore retrieve the information from this table by calling [GetActivationLog](../api-reference/qlmlicense/application-methods/getactivationlog.md) and then retrieve the record from this table that corresponds to the client computer.
 
 The code sample below illustrates how to retrieve the IP Address for a given activation. The lv
 
 &#x20;
 
-```
+{% code overflow="wrap" %}
+```csharp
 string ipAddress;
 
 // lv is an instance of the LicenseValidator class 
@@ -23,10 +24,12 @@ string ipAddress;
 
 GetLicenseInformation (Environment.MachineName, out ipAddress);
 ```
+{% endcode %}
 
 &#x20;
 
-```
+{% code overflow="wrap" %}
+```csharp
 private void GetLicenseInformation (string computerID, out string ipAddress)
 {
     ipAddress = string.Empty;
@@ -114,7 +117,8 @@ private void GetLicenseInfoFromActivationLog(string computerID, out string ipAdd
     }
 }
 ```
+{% endcode %}
 
 &#x20;
 
-As an alternative, you can also retrieve license information by calling the [GetLicenseFile](https://support.soraco.co/hc/en-us/articles/360014382991-QlmLicense-GetLicenseFile) method which returns a digitally signed XML file contained information about the license
+As an alternative, you can also retrieve license information by calling the [GetLicenseFile](../api-reference/qlmlicense/application-methods/getlicensefile.md) method which returns a digitally signed XML file contained information about the license

@@ -34,7 +34,8 @@ To completely switch from license key validation to license file validation, you
 
 Example:
 
-```
+{% code overflow="wrap" %}
+```csharp
 bool needsActivation = false;
 string errorMsg = string.Empty;
 ELicenseBinding licenseBinding = ELicenseBinding.ComputerName;
@@ -49,3 +50,4 @@ if (lv.QlmLicenseObject.ValidateLicenseFileContent (string.Empty, licenseFileCon
 
 }
 ```
+{% endcode %}

@@ -72,9 +72,11 @@ https://qlm3.net/qlmdemo/QlmCustomerSite/qlmregistrationform.aspx?is\_productnam
 
 #### Example 1:&#x20;
 
-```
+{% code overflow="wrap" %}
+```http
 https://qlm3.net/qlmdemo/QlmCustomerSite/qlmregistration.asmx/Register?is_productname=My Product&is_productid=1&is_majorversion=1&is_minorversion=0&is_expduration=10&is_emailfrom=support@soraco.co&is_emailsubject=Your Download of %ProductName%&is_confirmationmessage=Your License information was emailed to: %Email%&is_fullname=Tom Brad&is_email=tom.brad@soraco.co&is_company=Soraco&is_phone=123-123-1234&is_emailtemplate=MyEmailTemplate 
 ```
+{% endcode %}
 
 The following Variables can be used in the appropriate fields:&#x20;
 
@@ -88,13 +90,15 @@ The following Variables can be used in the appropriate fields:&#x20;
 \
 
 
-To simplify the management of these arguments, we recommend using the **is\_args** argument as described in this [article](https://support.soraco.co/hc/en-us/articles/211568803-How-to-hide-the-URL-arguments-of-the-QlmRegistrationForm-aspx-or-QlmRegistration-asmx-pages). Note that is\_args can be used for non-customer specific data such as the product id, major version, minor version, email template, etc. Customer-specific data such as full name, email, company and phone must be passed as URL arguments.
+To simplify the management of these arguments, we recommend using the **is\_args** argument as described in this [article](https://support.soraco.co/hc/en-us/articles/211568803-How-to-hide-the-URL-arguments-of-the-QlmRegistrationForm-aspx-or-QlmRegistration-asmx-pages). Note that is\_args can be used for non-customer-specific data such as the product ID, major version, minor version, email template, etc. Customer-specific data such as full name, email, company, and phone must be passed as URL arguments.
 
 #### Example 2 (using is\_args):
 
-```
+{% code overflow="wrap" %}
+```http
 https://qlm3.net/qlmdemo/QlmCustomerSite/qlmregistration.asmx/Register?is_args=demo_order&is_fullname=Tom Brad&is_email=tom.brad@soraco.co&is_company=Soraco&is_phone=123-123-1234
 ```
+{% endcode %}
 
 ### Email Configuration
 

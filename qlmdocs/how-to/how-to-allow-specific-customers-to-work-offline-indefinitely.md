@@ -2,9 +2,9 @@
 
 ### Overview
 
-The [MaxDaysOffline](https://support.soraco.co/hc/en-us/articles/360046068832) property allows you to configure how many days a customer can work offline and what action to take when the offline period is exceeded.
+The [MaxDaysOffline](../faq/maxdaysoffline.md) property allows you to configure how many days a customer can work offline and what action to take when the offline period is exceeded.
 
-In some cases, you may want to allow specific customers to work offline indefinitely while restricting other customers to work offline for the period specified in MaxDaysOffline.
+In some cases, you may want to allow specific customers to work offline indefinitely while restricting other customers to working offline for the period specified in MaxDaysOffline.
 
 This requirement can be addressed by defining a QLM feature that you would enable for specific customers. At the application level, you would first check if that feature is enabled and update the value of MaxDaysOffline accordingly.
 
@@ -24,7 +24,8 @@ At the application level, instead of calling ValidateLicenseAtStartup which will
 
 The code below replaces the standard code which calls ValidateLicenseAtStartup.
 
-```
+{% code overflow="wrap" %}
+```csharp
 
 // Add this code to your application's startup code
 if (ValidateLicense () == false)
@@ -82,3 +83,4 @@ private bool ValidateLicense()
     return ret;
 }
 ```
+{% endcode %}

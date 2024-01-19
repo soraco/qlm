@@ -4,7 +4,8 @@ When the MaxDaysOffline period is exceeded, QLM executes the action specified in
 
 If your application is developed in .NET, one of the possible actions is to fire an event. To fire an event when MaxDaysOffline is reached, you must create an event handler and register it as follows:
 
-```
+{% code overflow="wrap" %}
+```csharp
 private void RegisterEvent()
 {
     // Assuming lv is an instance of the LicenseValidator class
@@ -25,6 +26,7 @@ private void OnOfflinePeriodExceeded(object sender, OfflinePeriodExceeded_EventA
     MessageBox.Show(msg);
 }
 ```
+{% endcode %}
 
 &#x20;
 
@@ -32,7 +34,8 @@ By default, while the application is running, QLM will try to connect to the ser
 
 &#x20;
 
-```
+{% code overflow="wrap" %}
+```csharp
 private void MaxDaysOfflineTest()
 {
     // Assuming lv is an instance of the LicenseValidator class
@@ -50,3 +53,4 @@ private void MaxDaysOfflineTest()
     lv.QlmLicenseObject.SimulateNoConnectivity = true;
 }
 ```
+{% endcode %}

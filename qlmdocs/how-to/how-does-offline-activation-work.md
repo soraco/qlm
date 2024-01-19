@@ -50,7 +50,7 @@ To perform a manual activation from the QLM Portal follows the steps below:
 
 ### QLM Self Help
 
-The QLM Self Help page allows your customer to access a page on your web site and perform an offline activation without contacting you. For more details, check out the [QLM Self Help documentation](https://support.soraco.co/hc/en-us/articles/218069643-How-to-configure-the-QLM-Self-Help-web-page) or the [QlmCustomerSite documentation.](https://support.soraco.co/hc/en-us/articles/202932304-QlmAspLicenseSite)
+The QLM Self Help page allows your customer to access a page on your web site and perform an offline activation without contacting you. For more details, check out the [QLM Self Help documentation](how-to-configure-the-qlm-self-help-web-page.md) or the [QlmCustomerSite documentation.](../qlm-license-server/qlmcustomersite-qlm-self-help.md)
 
 ### QLM License Wizard
 
@@ -64,4 +64,4 @@ The DVC can be used in 3 different contexts:
 
 * When deactivating a key from the QLM Management Console / Manage Keys / Deactivate
 * When deactivating a key from the QLM Portal / Release
-* When deactivating a key from the QLM Self Help. To enable the DVC in the QLM Self Help, you must set the [Server Property](https://support.soraco.co/hc/en-us/articles/207920563) customerSite/showDeactivationVerificationCode to true.
+* When deactivating a key from the QLM Self Help. To enable the DVC in the QLM Self Help, you must set the [Server Property](../qlm-license-server/server-properties.md) customerSite/showDeactivationVerificationCode to true.

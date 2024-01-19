@@ -27,7 +27,7 @@ Therefore, when you create your Docker container image, you must set the QLM\_RU
 
 Example of a Dockerfile used to create an image:
 
-<pre><code>FROM mcr.microsoft.com/dotnet/framework/runtime
+<pre data-overflow="wrap"><code>FROM mcr.microsoft.com/dotnet/framework/runtime
 WORKDIR /app
 <strong>ENV QLM_RUNNING_IN_DOCKER_CONTAINER=true
 </strong>COPY ./publish .
@@ -38,7 +38,9 @@ The following API is also available to detect if your application is running in 
 
 Example:
 
-```
+{% code overflow="wrap" %}
+```csharp
 QlmHardware hw = new QlmHardware();
 bool isRunningInDockerContainer = hw.RunningInDockerContainer ();
 ```
+{% endcode %}

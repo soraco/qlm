@@ -4,9 +4,7 @@ Applies to: QLM Pro v17
 
 ***
 
-&#x20;
-
-Go to the [Google Cloud Platform Console](https://console.developers.google.com/) and sign in as an administrator.
+&#x20;Go to the [Google Cloud Platform Console](https://console.developers.google.com/) and sign in as an administrator.
 
 * From the main dashboard, click **Create Project**.
 
@@ -29,7 +27,7 @@ Go to the [Google Cloud Platform Console](https://console.developers.google.com/
 
 &#x20;
 
-* To create a an OAuth Client ID, select Credentials
+* To create an OAuth Client ID, select Credentials
 
 ![mceclip0.png](https://support.soraco.co/hc/article\_attachments/12910549317652)
 

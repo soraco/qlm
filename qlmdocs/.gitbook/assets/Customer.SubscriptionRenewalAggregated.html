@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Quick License Manager - Subscription Reminder</title>
+      <meta name="qlm-readonly" content="true"/>
+      <meta name="qlm-modifiedDate" content="2020-10-10 09:25:21">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="format-detection" content="telephone=no">
+      <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <style>
+	  .box
+		  {
+			  display:inline-block;
+			  padding:10px;		  
+			  margin-left:0px;
+			  margin-top:30px;
+			  font-size:15px;
+			  font-weight:bold;
+			  border:2px dashed #FF7936;
+			  border-radius:10px;
+			  color:#4A4A4A;
+			  background:#ffffff;
+			  text-align:left;
+			  
+		   }
+		.td1 {padding-left: 50px;padding-bottom:20px;font-size: 14px;}	
+		
+		.tableinfo {
+			border: 1px;
+			border-collapse:collapse;
+			align:left;			
+			border-spacing: 100px;
+		  }
+		  
+		  .tableinfo_products {
+			border: 0px;
+			border-collapse:collapse;
+			align:left;			
+			border-spacing: 100px;
+			margin-left:25px;			
+		  }
+		  .thinfo {
+			border: 1px;
+		  }
+		  .tdinfo {
+			border: 1px solid #095484;
+			text-align: left;
+			padding: 5px;
+		  }	  
+		  
+		 .table_data {width:100%; margin: 0 auto; font-family: sans-serif; color:#4A4A4A;border:10px;border-collapse:collapse;}         	
+		 .td_header{text-align:left;width:10.8pt;padding:0pt 5.4pt 0pt 5.4pt;background-color:#F9F9F9;border-top:1pt #CCCCCC solid;border-right:1pt #CCCCCC solid;border-bottom:1pt #CCCCCC solid;border-left:1pt #CCCCCC solid}
+		 .td_header_span{color:#000000;background-color:#F9F9F9;font-family:'Segoe UI';font-size:12pt;font-weight:normal;font-style:normal;}
+		 .td_row{width:10%;padding:0pt 5.4pt 0pt 5.4pt;background-color:#FFFFFF;border-top:1pt #CCCCCC solid;border-right:1pt #CCCCCC solid;border-bottom:1pt #CCCCCC solid;border-left:1pt #CCCCCC solid}
+		 .td_ak_row{width:15%;padding:0pt 5.4pt 0pt 5.4pt;background-color:#FFFFFF;border-top:1pt #CCCCCC solid;border-right:1pt #CCCCCC solid;border-bottom:1pt #CCCCCC solid;border-left:1pt #CCCCCC solid}
+		 .td_date_row{width:5%;padding:0pt 5.4pt 0pt 5.4pt;background-color:#FFFFFF;border-top:1pt #CCCCCC solid;border-right:1pt #CCCCCC solid;border-bottom:1pt #CCCCCC solid;border-left:1pt #CCCCCC solid}
+		 .td_num_row{width:3%;padding:0pt 5.4pt 0pt 5.4pt;background-color:#FFFFFF;border-top:1pt #CCCCCC solid;border-right:1pt #CCCCCC solid;border-bottom:1pt #CCCCCC solid;border-left:1pt #CCCCCC solid}
+		 .td_row_span{color:#000000;background-color:transparent;font-family:'Segoe UI';font-size:12pt;font-weight:normal;font-style:normal;}
+		 .td_header_products{text-align:left;padding:0pt 5.4pt 0pt 5.4pt;background-color:#F9F9F9;border-top:1pt #CCCCCC solid;border-right:1pt #CCCCCC solid;border-bottom:1pt #CCCCCC solid;border-left:1pt #CCCCCC solid}
+		 .qlm_table {;}
+		 
+		  
+		  
+	  </style>
+   </head>
+   <body style="padding:0; margin:0">
+      <table  style="width: 100%; background: #EEF0F6; font-family: sans-serif;">
+         <tr>
+            <td>
+               <table  style="width:100%; margin: 0 auto; font-family: sans-serif; color: #4A4A4A;">
+                  <tr>
+                     <td style="padding: 20px 30px;">
+                        <a href="https://soraco.co">
+                        <img src="https://soraco.co/wp-content/uploads/2017/08/soraco_logo_203x50-e1504188693396.png"
+                           width="117" alt="Logo"/>
+                        </a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="padding-top: 20px; padding-bottom: 20px; background: #ffffff; background-image: -webkit-linear-gradient(#ffffff 50%, #EEF0F6); background-image: linear-gradient(#ffffff 50%, #EEF0F6);">
+                        <table  style="width: 100%;">
+                           <tr>
+                              <td class="td1">
+                                 <div style="font-size: 14px;">Hi %FullName%,</div>
+                                 <br>
+                              </td>
+                              <td style="vertical-align:top; padding-left: 0px; text-align: left; padding-right: 10px; padding-top: 20px;" rowspan="4">
+                                 <img alt="QLM" src="https://soraco.co/wp-content/uploads/2020/04/qlm-logo.png"
+                                    width="90"/>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="td1">
+                                 <div style="font-size: 14px;">
+                                    <p>
+                                       Your QLM subscriptions expire on %SubscriptionExpiryDate%.
+                                    </p>
+                                    <p>If your payment method on file is still valid, your subscriptions will be automatically renewed on the due date. </p>
+									<p>If it is no longer valid, please update it from <a href="https://soraco.co/my-account"
+                                       style="color: #4A90E2; text-decoration: underline;"> your account</a> to avoid service interruption.</p>
+									
+									You can cancel your subscriptions at any time from								
+									<a href="https://soraco.co/my-account"
+                                       style="color: #4A90E2; text-decoration: underline;"> your account</a>.
+                                 </div>
+								   </td>
+									   </tr>                             
+                           
+                        </table>
+                     </td>
+                  </tr>
+				  <tr>
+                     <td style="background: #FCFCFC; padding: 20px;">
+                        <table>
+                           <tr>
+                              <td style="vertical-align: top;">
+                                 <img alt="Support" src="https://soraco.co/wp-content/uploads/2020/09/purchase_order.png"
+                                    width="43"/>
+                              </td>
+                              <td style="width: 100%; padding-left: 35px; padding-bottom: 20px;">
+                                 <div style="padding-bottom: 15px; font-size: 24px;">Order Details</div>
+                              </td>
+                           </tr>
+						   </table>						  
+						<table style="padding-left: 75px;" >
+						   <tr>
+							   <td>
+									<table class="tableinfo">
+										   <tr>
+											  <th class="tdinfo">Order ID</th>										  
+											  <td class="tdinfo">%OrderID%</td>
+											</tr>
+											
+											<tr>
+											  <th class="tdinfo">Subscription ID</th>										  
+											  <td class="tdinfo">%ReceiptID%</td>
+											</tr>
+											
+											<tr>
+											  <th class="tdinfo">Company</th>										  
+											  <td class="tdinfo">%OrganizationName%</td>
+											</tr>
+											
+											<tr>
+											  <th class="tdinfo">Email</th>
+											  <td class="tdinfo">%Email%</td>
+											</tr>
+											
+											<tr>
+											  <th class="tdinfo">FullName</th>										  
+											  <td class="tdinfo">%FullName%</td>
+											</tr>
+									</table>
+								</td>
+						   </tr>
+						   </table>
+						<table class="tableinfo_products">                      
+							   <tr>
+								  <td class="td1">
+									 <p class="qlm_table">***qlm_table_start***</p>                                 
+									 </br>
+									 <table class="table_data" style="border-collapse:collapse;">
+										<tr >
+										   <th class="td_header_products">Product</th>
+										   <th class="td_header_products">Features</th>
+										   <th class="td_header_products">Duration</th>
+										   <th class="td_header_products"># Licenses</th>
+										   <th class="td_header_products"># Floating</th>
+										</tr>
+										<tr>
+										   <td class="td_row">%ProductName%</td>
+										   <td class="td_num_row">%EnabledFeatures%</td>
+										   <td class="td_num_row">%SubscriptionDuration%</td>
+										   <td class="td_num_row">%NumLicenses%</td>
+										   <td class="td_num_row">%FloatingSeats%</td>
+										</tr>
+									 </table>
+								  </td>
+							   </tr>
+							   <tr>
+								  <td class="td1">
+								  </td>
+							   </tr>
+							</table>						
+                     </td>
+                  </tr>
+				  
+                  <tr>
+                     <td style="background: #ffffff; padding: 20px;">
+                        <table style="color: #4A4A4A;">
+                           
+                           <tr>
+                              <td style="vertical-align: top;">
+                                 <img alt="Support" src="https://soraco.co/wp-content/uploads/2020/04/user_headset.png"
+                                    width="43"/>
+                              </td>
+                              <td style="width: 100%; padding-left: 35px; padding-bottom: 20px;">
+                                 <div style="padding-bottom: 15px; font-size: 24px;">Support</div>
+                                 <div style="font-size: 14px; line-height: 1.6;">
+                                    <p>If you have any question about our product, please do not hesitate to
+                                       email us at <a href=mailto:support@soraco.co> support@soraco.co</a>. 
+                                    </p>
+                                 </div>
+                                 <div style="font-size: 14px; line-height: 1.6;">
+                                    <p>
+                                       We highly recommend visiting our
+                                       <a href="https://support.soraco.co"
+                                          style="color: #4A90E2; text-decoration: underline;" > Support Site</a> where you will find all our documentation as well as step by step guides to get you started.
+                                    </p>
+                                 </div>
+                              </td>
+                           </tr>
+                        </table>
+                        <div style="text-align: center;">
+                           <div style="font-size: 16px; font-weight: bold; text-align: center; padding-bottom: 20px;">Find Us Elsewhere:</div>
+                           <div style="text-align: center;"><a style="margin: 0 2px;" href="https://www.facebook.com/soracoinc/" target="_blank" rel="noopener"> <img src="https://images.macpaw.com/mail/fs_confirmation/facebook.png" alt="Facebook" width="34" /></a><a style="margin: 0 2px;" href="https://www.google.com/search?q=Soraco+Technologies&amp;ludocid=9324288377977510573#lrd=0x4cc919a9f405fee3:0x816686e0a8a71aad,3,5" target="_blank" rel="noopener"><img src="https://images.macpaw.com/mail/fs_confirmation/google.png" alt="Google" width="34" /></a><a style="margin: 0 2px;" href="https://www.linkedin.com/company/soraco-technologies" target="_blank" rel="noopener"><img src="https://soraco.co/wp-content/uploads/2020/04/linkedin.png" alt="linkedin" width="34" /></a><a style="margin: 0 2px;" href="https://twitter.com/soracoinc" target="_blank" rel="noopener"><img src="https://soraco.co/wp-content/uploads/2020/04/twitter.png" alt="twitter" width="34" /></a><a style="margin: 0 2px;" href="https://www.youtube.com/user/SoracoTechnologies" target="_blank" rel="noopener"><img src="https://soraco.co/wp-content/uploads/2020/04/youtube.png" alt="youtube" width="34" /> </a></div>
+                        </div>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td style="padding: 20px 0;">
+               <div style="font-size: 12px; color: #8c8c8c; line-height: 1.6; text-align: center;">This email was sent by Soraco Technologies. <br />3 Place Ville Marie suite 400, Montr&eacute;al, QC H3B 2E3 </div>
+               <div style="padding-top: 5px; text-align: center; font-size: 12px;"><a style="color: #4a90e2;" href="https://soraco.co/products/qlm/QlmPrivacyPolicy.pdf">Privacy Policy</a>   -    <a style="color: #4a90e2;" href="https://quicklicensemanager.com/soraco/qlm14/qlmservice.asmx/SubscribeToMailListHttp?is_email=%Email%&is_include=0&is_html=true">Unsubscribe</a>      </div>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

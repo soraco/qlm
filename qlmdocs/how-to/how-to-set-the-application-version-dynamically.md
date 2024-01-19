@@ -21,7 +21,8 @@ To set the Application Version when using the QLM License Wizard user control , 
 
 Example:&#x20;
 
-```
+{% code overflow="wrap" %}
+```csharp
 QlmLicenseWizard lw = new QlmLicenseWizard(true, false);
 
 if (lw.LoadSettings(settingsFile, out lwErrorMsg) == true)
@@ -32,6 +33,7 @@ if (lw.LoadSettings(settingsFile, out lwErrorMsg) == true)
     lw.ShowDialog();
 }
 ```
+{% endcode %}
 
 ### QLM License Object
 
@@ -39,8 +41,10 @@ To set the Application Version when using the QLM License object, set the QlmApp
 
 Example:&#x20;
 
-```
+{% code overflow="wrap" %}
+```csharp
 QLM.LicenseValidator lv = new QLM.LicenseValidator(settingsFile);
 
 lv.QlmLicenseObject.ApplicationVersion = "1.2";
 ```
+{% endcode %}

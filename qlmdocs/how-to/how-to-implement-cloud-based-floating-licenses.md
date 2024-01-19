@@ -6,7 +6,7 @@ Version: 15.0.21267.1
 
 ***
 
-\*\*\* Important: If you are using QLM v17, please refer to this [article](https://support.soraco.co/hc/en-us/articles/19140337385876) instead.\*\*\*
+\*\*\* Important: If you are using QLM v17, please refer to this [article](how-to-implement-cloud-floating-licenses-cfl-in-qlm-v17+.md) instead.\*\*\*
 
 ### Configuration <a href="#h_01hcg5hqsgf65f8v237zmq1dag" id="h_01hcg5hqsgf65f8v237zmq1dag"></a>
 

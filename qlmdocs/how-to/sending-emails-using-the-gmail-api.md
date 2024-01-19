@@ -17,7 +17,7 @@ QLM can send emails using 4 different methods:
 
 This article describes how to configure QLM to send emails using the Gmail API. The Gmail API is the preferred option when you use a Gmail account for sending emails using multi-factor authentication (MFA).
 
-QLM can send emails from the client side or from the server. The required Gmail configuration depends on which process is sending the email. There are 2 general use cases to consider:
+QLM can send emails from the client side or the server. The required Gmail configuration depends on which process is sending the email. There are 2 general use cases to consider:
 
 * Client-Side: Emails sent from within the QLM Management Console.
 * Server-Side: Emails sent by the QLM Agent Service (scheduled tasks) or by the QLM License Server (QLM Customer site, QLM Portal, etc.).
@@ -28,7 +28,7 @@ If you need to use your Gmail account to send Server-Side emails, you need to cr
 
 #### How to create a Gmail Service Account
 
-Creation of a Gmail Service account requires a Google Workspace (G Suite) account. Detailed instructions for creating a service account can be found [here](https://support.soraco.co/hc/en-us/articles/12909320655124).
+Creation of a Gmail Service account requires a Google Workspace (G Suite) account. Detailed instructions for creating a service account can be found [here](sending-emails-using-the-gmail-api.md#how-to-create-a-gmail-service-account).
 
 #### QLM Management Console Configuration
 
@@ -39,7 +39,7 @@ To configure the QLM Management Console to send emails using the Gmail API, foll
 * Click Options
 * Go to the Gmail API tab
 * Check the Use Gmail Service account option
-* Click Load Credentials file and select the JSON file generated when you created the Gmail Service account
+* Click the Load Credentials file and select the JSON file generated when you created the Gmail Service account
 * Enter the sender's email address
 * Click Test to verify that all the settings are correct
 * Click Ok
@@ -52,7 +52,7 @@ If you use Scheduled Tasks, you must configure each scheduled task to use the Gm
 
 #### How to create a Gmail OAuth Credentials
 
-Instructions for creating Gmail OAuth credentials can be found [here](https://support.soraco.co/hc/en-us/articles/12910626406420).
+Instructions for creating Gmail OAuth credentials can be found [here](sending-emails-using-the-gmail-api.md#how-to-create-a-gmail-oauth-credentials).
 
 #### QLM Management Console Configuration
 

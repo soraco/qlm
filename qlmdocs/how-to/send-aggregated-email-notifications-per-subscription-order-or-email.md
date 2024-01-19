@@ -2,7 +2,7 @@
 
 ### Overview
 
-When sending email notification reminders to your customers, you can configure the email to aggregate all licenses associated with a given subscription, order or customer.
+When sending email notification reminders to your customers, you can configure the email to aggregate all licenses associated with a given subscription, order, or customer.
 
 For example. a customer might have purchased a unique subscription for 3 of your products. To avoid sending the customer 3 email notifications, QLM can aggregate the information from the 3 products into a single email notification.
 
@@ -23,20 +23,20 @@ This feature is available in QLM Enterprise only as of QL Mv14.1.
 
 The email message of an aggregated email is comprised of 2 components:
 
-* Customer and order related information
+* Customer and order-related information
 * Product related information
 
-Customer and order related information is typically used in the top section of the email and would look like:
+Customer and order-related information is typically used in the top section of the email and would look like:
 
-```
+```html
 Hi %FullName%,
 
 This is a reminder for your subscription %ReceiptID%
 ```
 
-Product related information may contain multiple items and would look like:
+Product-related information may contain multiple items and would look like:
 
-```
+```html
 <p class="qlm_table">***qlm_table_start***</p> 
 
 <table class="table_data" style="border-collapse:collapse;">
@@ -59,4 +59,3 @@ Product related information may contain multiple items and would look like:
 
 An example email template is attached to this article.
 
-* [Customer.SubscriptionRenewalAggregated.html](https://support.soraco.co/hc/en-us/article\_attachments/360088064551)10 KB [Download](https://support.soraco.co/hc/en-us/article\_attachments/360088064551)

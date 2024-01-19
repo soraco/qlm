@@ -2,7 +2,7 @@
 
 ### Overview
 
-To simultaneously support node-locked and cloud-based floating licenses, you can use [QLM Features](https://support.soraco.co/hc/en-us/articles/360021106252) to identify if the license acquired by the customer should be a node locked license or a cloud-based floating license.
+To simultaneously support node-locked and cloud-based floating licenses, you can use [QLM Features](qlm-features.md) to identify if the license acquired by the customer should be a node locked license or a cloud-based floating license.
 
 The general steps to accomplish this are:
 
@@ -43,6 +43,6 @@ When creating a license key for a customer, enable or disable the CLOUD\_FLOATIN
 
 ### Application Implementation
 
-At the application level, after the license is validated, call [IsFeaturedEnabledEx ](https://support.soraco.co/hc/en-us/articles/207611713-QlmLicense-IsFeatureEnabledEx)to determine if the CLOUD\_FLOATING\_LICENSE  feature is enabled. If it is, you must check-out the license at application startup and check it back in when the application exits.
+At the application level, after the license is validated, call [IsFeaturedEnabledEx ](../api-reference/qlmlicense/client-side-methods/isfeatureenabledex.md)to determine if the CLOUD\_FLOATING\_LICENSE  feature is enabled. If it is, you must check-out the license at application startup and check it back in when the application exits.
 
 The sample %Public%\Documents\Quick License Manager\Samples\qlmpro\Windows\DotNet\C#\QlmProFloatingLicense should be used as a reference for implementing this model.

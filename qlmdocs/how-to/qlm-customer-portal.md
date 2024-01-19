@@ -2,7 +2,7 @@
 
 As of QLM v14.1, you can provide your customers access to a customer portal that allows them to manage their licenses and users. The QLM Customer Portal is only available to customers who purchased the QLM Portal.
 
-&#x20;You can view a demo of the Customer Portal [here](https://qlm3.net/qlmdemov16/QlmCustomerPortal/qlm-portal-app). Use the following credentials to login or login with a Facebook, Google or Azure account.
+&#x20;You can view a demo of the Customer Portal [here](https://qlm3.net/qlmdemov15/qlmcustomerportal/qlm-portal-app). Use the following credentials to login or login with a Facebook, Google or Azure account.
 
 User: qlmdemo
 

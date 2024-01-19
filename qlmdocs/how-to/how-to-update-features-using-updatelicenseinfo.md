@@ -4,7 +4,8 @@ In order to update the features of a license, you can call UpdateLicenseInfo as 
 
 _Note that for security reasons, updating a license should never be done from within the application as it requires setting the AdminEncryptionKey in your code._
 
-```
+{% code overflow="wrap" %}
+```csharp
 // Assuming lv is an instance of the LicenseValidator class
 string response;
 
@@ -29,5 +30,6 @@ if (lv.QlmLicenseObject.ParseResults(response, ref li, ref msg))
 else
 {
     // the update failed. Display msg to the end user
-}}
+}
 ```
+{% endcode %}

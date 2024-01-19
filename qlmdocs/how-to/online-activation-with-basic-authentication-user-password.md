@@ -107,4 +107,4 @@ When the end user launches your application for the first time:
 
 ### AAC using the QlmLicense API
 
-* Call QlmLicense.[ActivationLicenseByBasicAuthentication](https://soraco.readme.io/reference/activatelicensebybasicauthentication)
+* Call QlmLicense.[ActivateLicenseByBasicAuthentication](../api-reference/qlmlicense/application-methods/activatelicensebybasicauthentication.md)

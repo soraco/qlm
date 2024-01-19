@@ -54,58 +54,57 @@ To verify the authenticity of the request, you must:
 
 **Header**
 
-{\
-"content-length": "886",\
-"content-type": "application/json",\
-"x-qlm-signature": "9bef52ead927a132f96e15e4ef15cb2b20b8cca8eeb61779f015bad6adeb1c6b"\
+```json
+{
+"content-length": "886",
+"content-type": "application/json",
+"x-qlm-signature": "9bef52ead927a132f96e15e4ef15cb2b20b8cca8eeb61779f015bad6adeb1c6b"
 }
-
-&#x20;
+```
 
 **Content**
 
-{\
-"Name": "stWebHook",\
-"WebHookUserData": "my user data",\
-"LicenseInfo": {\
-"LicenseUpdatedOnServer": false,\
-"ActivationKey": "BNQ50D0500G3HJKM8P91111KIYQJIVSIQ6E9EAB",\
-"FullName": "John Smith",\
-"Country": "US",\
-"AffiliateID": "None",\
-"Email": "john@soraco.co",\
-"Duration": 30,\
-"ExpiryDate": "2021-05-29T23:59:59",\
-"UsesAdminEncryption": false,\
-"MaintenanceRenewalDate": "2022-04-29T23:59:59",\
-"Features": "STD,PRO,",\
-"OrderID": "SO-0009812",\
-"ReceiptID": "SO-0009813",\
-"SubscriptionID": "SO-0009813",\
-"LicenseModel": 2,\
-"ProductID": 1,\
-"MajorVersion": 1,\
-"MinorVersion": 0,\
-"NumLicenses": 1,\
-"FloatingSeats": 0,\
-"UserData": "My User Data",\
-"NewFeatures": "",\
-"NewFloatingSeats": -1,\
-"ComputerID": "",\
-"ComputerName": "",\
-"Comment": "My Comments",\
-"LegacyKey": "",\
-"AvailableLicenses": 1,\
-"OrderDate": "2021-04-29T16:39:49",\
-"ProductProperties": "",\
-"BundleID": "",\
-"ProductName": "Demo",\
-"MaxReleaseCount": -2,\
-"MaxReleasePeriodInDays": -2,\
-"OrganizationID": 6\
-}\
+```json
+{
+"Name": "stWebHook",
+"WebHookUserData": "my user data",
+"LicenseInfo": {
+"LicenseUpdatedOnServer": false,
+"ActivationKey": "BNQ50D0500G3HJKM8P91111KIYQJIVSIQ6E9EAB",
+"FullName": "John Smith",
+"Country": "US",
+"AffiliateID": "None",
+"Email": "john@soraco.co",
+"Duration": 30,
+"ExpiryDate": "2021-05-29T23:59:59",
+"UsesAdminEncryption": false,
+"MaintenanceRenewalDate": "2022-04-29T23:59:59",
+"Features": "STD,PRO,",
+"OrderID": "SO-0009812",
+"ReceiptID": "SO-0009813",
+"SubscriptionID": "SO-0009813",
+"LicenseModel": 2,
+"ProductID": 1,
+"MajorVersion": 1,
+"MinorVersion": 0,
+"NumLicenses": 1,
+"FloatingSeats": 0,
+"UserData": "My User Data",
+"NewFeatures": "",
+"NewFloatingSeats": -1,
+"ComputerID": "",
+"ComputerName": "",
+"Comment": "My Comments",
+"LegacyKey": "",
+"AvailableLicenses": 1,
+"OrderDate": "2021-04-29T16:39:49",
+"ProductProperties": "",
+"BundleID": "",
+"ProductName": "Demo",
+"MaxReleaseCount": -2,
+"MaxReleasePeriodInDays": -2,
+"OrganizationID": 6
 }
-
-
+```
 
 For testing purposes, you can configure the webhook to connect to [https://beeceptor.com/](https://beeceptor.com/)

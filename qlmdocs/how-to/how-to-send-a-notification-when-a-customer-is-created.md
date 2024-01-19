@@ -29,4 +29,4 @@ To send a notification when a new customer is created, follow the steps below:
   * Run Every: 1 hour (do not set a high frequency as this will add unnecessary load on the server)
   * Configure the other options as needed.
 
-Scheduled tasks are processed by the QLM Agent. Make sure that the [QLM Agent Service](https://support.soraco.co/hc/en-us/articles/360036304991) is properly configured and running.
+Scheduled tasks are processed by the QLM Agent. Make sure that the [QLM Agent Service](qlm-agent-service.md) is properly configured and running.

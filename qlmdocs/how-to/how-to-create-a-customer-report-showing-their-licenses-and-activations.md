@@ -1,10 +1,8 @@
 # How to create a customer report showing their licenses and activations
 
-The procedure below describes how to create a customer facing report that provides your customer a list of their license keys and the computers on which they are activated.
+The procedure below describes how to create a customer-facing report that provides your customer a list of their license keys and the computers on which they are activated.
 
-&#x20;
-
-### Customize the report fields
+&#x20;Customize the report fields
 
 The first step in creating the report is to select which fields will be included in the report. To do so:
 
