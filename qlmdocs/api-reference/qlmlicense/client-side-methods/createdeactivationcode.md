@@ -11,11 +11,11 @@ string CreateDeactivationCode(string activationKey, string computerID,
 
 ### Arguments
 
-| Name           |                               Data Type                               | Description                                                                                                                                                 |
-| -------------- | :-------------------------------------------------------------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| activationKey  |                                 string                                | the activation key to be deactivated                                                                                                                        |
-| computerID     |                                 string                                | the computerID of the computer being deactivated. This value can be empty if the LicenseBinding argument is set to a specific value.                        |
-| licenseBinding | [ELicenseBinding](https://soraco.readme.io/reference/elicensebinding) | the license binding value. The computerID will be calculated based on the license binding value. This parameter is not required if computerID is specified. |
+| Name           |                    Data Type                   | Description                                                                                                                                                 |
+| -------------- | :--------------------------------------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| activationKey  |                     string                     | the activation key to be deactivated                                                                                                                        |
+| computerID     |                     string                     | the computerID of the computer being deactivated. This value can be empty if the LicenseBinding argument is set to a specific value.                        |
+| licenseBinding | [ELicenseBinding](../enums/elicensebinding.md) | the license binding value. The computerID will be calculated based on the license binding value. This parameter is not required if computerID is specified. |
 
 ### Return
 
