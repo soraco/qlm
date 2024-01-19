@@ -4,7 +4,7 @@
 
 Validates the signature of a digitally signed XML fragment.
 
-```c#
+```csharp
 bool ValidateSignature(string xmlValue, string publicKey, out string errorMessage)
 ```
 

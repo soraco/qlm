@@ -4,12 +4,8 @@
 
 Creates a computer-bound license key.
 
-```c#
+```csharp
 string CreateLicenseKeyEx (ELicenseType licenseType, string machineID)
-```
-
-```c++
- _bstr_t CreateLicenseKeyEx (ELicenseType LicenseType, BSTR MachineID)
 ```
 
 ### Arguments

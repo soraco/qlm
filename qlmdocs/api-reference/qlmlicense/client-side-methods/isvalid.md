@@ -4,7 +4,7 @@
 
 Returns whether the current license key is a valid key.
 
-```c#
+```csharp
 bool IsValid ()
 ```
 

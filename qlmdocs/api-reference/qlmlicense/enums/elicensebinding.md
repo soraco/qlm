@@ -1,19 +1,3 @@
 # ELicenseBinding
 
-| Name                          |                 Description                 | Value |
-| ----------------------------- | :-----------------------------------------: | ----- |
-| None                          |                  Undefined                  | -1    |
-| ComputerName                  |    bind the license to the computer name    | 0     |
-| Generic                       |           do not bind the license           | 1     |
-| UserDefined                   |   bind the license to a user defined value  | 2     |
-| MacAddress                    |     bind the license to the MAC address     | 3     |
-| VolumeSerialNumber            |      bind the license to the volume SN      | 4     |
-| MotherboardSerialNumber       |    bind the license to the motherboard SN   | 5     |
-| ActiveDirectoryComputerDomain |  bind the license to the AD computer domain | 7     |
-| ActiveDirectoryAppDomain      |    bind the license to the AD App domain    | 7     |
-| SystemManagementBiosUuid      |      bind the license to the BIOS UUID      | 8     |
-| QlmUniqueSystemIdentifier1    |          Use QLM system binding v1          | 9     |
-| QlmUniqueSystemIdentifier2    |          Use QLM system binding v2          | 10    |
-| LoggedInUser                  | bind the license to the logged in user name | 11    |
-| USBKey                        |       bind the license to the usb key       | 12    |
-| DockerContainer               |   bind the license to the docker container  | 13    |
+<table><thead><tr><th width="249.33333333333331">Name</th><th width="422">Description</th><th>Value</th></tr></thead><tbody><tr><td>None</td><td>Undefined</td><td>-1</td></tr><tr><td>ComputerName</td><td>bind the license to the computer name</td><td>0</td></tr><tr><td>Generic</td><td>do not bind the license</td><td>1</td></tr><tr><td>UserDefined</td><td>bind the license to a user defined value</td><td>2</td></tr><tr><td>MacAddress</td><td>bind the license to the MAC address</td><td>3</td></tr><tr><td>VolumeSerialNumber</td><td>bind the license to the volume SN</td><td>4</td></tr><tr><td>MotherboardSerialNumber</td><td>bind the license to the motherboard SN</td><td>5</td></tr><tr><td>ActiveDirectoryComputerDomain</td><td>bind the license to the AD computer domain</td><td>7</td></tr><tr><td>ActiveDirectoryAppDomain</td><td>bind the license to the AD App domain</td><td>7</td></tr><tr><td>SystemManagementBiosUuid</td><td>bind the license to the BIOS UUID</td><td>8</td></tr><tr><td>QlmUniqueSystemIdentifier1</td><td>Use QLM system binding v1</td><td>9</td></tr><tr><td>QlmUniqueSystemIdentifier2</td><td>Use QLM system binding v2</td><td>10</td></tr><tr><td>LoggedInUser</td><td>bind the license to the logged in user name</td><td>11</td></tr><tr><td>USBKey</td><td>bind the license to the usb key</td><td>12</td></tr><tr><td>DockerContainer</td><td>bind the license to the docker container</td><td>13</td></tr></tbody></table>

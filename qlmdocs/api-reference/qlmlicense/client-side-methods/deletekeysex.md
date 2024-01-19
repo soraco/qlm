@@ -4,7 +4,7 @@
 
 Deletes license keys, proxy settings, and floating license settings stored on the end-user system with the StoreKeys API. To store keys, use the StoreKeys API. To read the stored keys, use the ReadKeys API.
 
-```c#
+```csharp
 void DeleteKeys (bool deleteActivationKey, bool deleteComputerKey, 
                  bool deleteProxySettings, bool deleteFloatingSettings, 
                  out string errorMessage)

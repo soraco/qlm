@@ -4,7 +4,7 @@
 
 Formats a license key by adding dashes to the key, based on the values of groupSize and maxGroupSize.
 
-```c#
+```csharp
 string FormatLicenseKeyEx (string licenseKey, int groupSize, int maxGroupSize)
 ```
 

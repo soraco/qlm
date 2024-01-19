@@ -1,9 +1,3 @@
 # ECommunicationProtocolType
 
-| Name    |                      Description                     | Value |
-| ------- | :--------------------------------------------------: | ----- |
-| Default |   The status of the license could not be determined  | 0     |
-| Ssl3    |    Secure Socket Layer (SSL) 3.0 security protocol   | 48    |
-| Tls     | Transport Layer Security (TLS) 1.0 security protocol | 192   |
-| Tls1    | Transport Layer Security (TLS) 1.1 security protocol | 768   |
-| Tls12   | Transport Layer Security (TLS) 1.2 security protocol | 3072  |
+<table><thead><tr><th width="144.33333333333331">Name</th><th width="420">Description</th><th>Value</th></tr></thead><tbody><tr><td>Default</td><td>The status of the license could not be determined</td><td>0</td></tr><tr><td>Ssl3</td><td>Secure Socket Layer (SSL) 3.0 security protocol</td><td>48</td></tr><tr><td>Tls</td><td>Transport Layer Security (TLS) 1.0 security protocol</td><td>192</td></tr><tr><td>Tls1</td><td>Transport Layer Security (TLS) 1.1 security protocol</td><td>768</td></tr><tr><td>Tls12</td><td>Transport Layer Security (TLS) 1.2 security protocol</td><td>3072</td></tr></tbody></table>

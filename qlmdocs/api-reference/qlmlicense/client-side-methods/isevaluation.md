@@ -4,7 +4,7 @@
 
 Returns whether the current license key is an evaluation key or a subscription key.
 
-```c#
+```csharp
 bool IsEvaluation ()
 ```
 

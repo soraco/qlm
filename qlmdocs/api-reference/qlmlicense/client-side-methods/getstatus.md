@@ -4,7 +4,7 @@
 
 Returns the last license validation status. See [ELicenseStatus ](https://soraco.readme.io/reference/elicensestatus)for possible values.
 
-```c#
+```csharp
 int GetStatus ()
 ```
 

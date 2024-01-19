@@ -4,7 +4,7 @@
 
 Validates that the QLM DLL is authentic and was not tampered with.
 
-```c#
+```csharp
 bool ValidateFile(ref string errorMsg);
 ```
 

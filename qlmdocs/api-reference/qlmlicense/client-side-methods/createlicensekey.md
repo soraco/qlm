@@ -4,12 +4,8 @@
 
 Creates a non-computer-bound license key.
 
-```c#
+```csharp
 string CreateLicenseKey (System.DateTime expiryDate, int expiryDuration)
-```
-
-```c++
- _bstr_t CreateLicenseKey (DATE ExpiryDate, int ExpiryDuration)
 ```
 
 ### Arguments

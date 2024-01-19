@@ -4,7 +4,7 @@
 
 Activates a license key over the internet.
 
-```c#
+```csharp
 void ActivateLicense (string webServiceUrl, string activationKey, 
                       string computerID, string computerName,
                       string qlmVersion, string userData1, out string response)

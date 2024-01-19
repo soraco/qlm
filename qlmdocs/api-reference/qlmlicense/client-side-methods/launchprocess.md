@@ -4,7 +4,7 @@
 
 Launches an external process.
 
-```c#
+```csharp
 int LaunchProcess(string exeFilename, string args, bool bWait, 
                   bool elevatedPrivileges)
 ```

@@ -4,7 +4,7 @@
 
 Creates a deactivation verification code.
 
-```c#
+```csharp
 string CreateDeactivationCode(string activationKey, string computerID, 
                               ELicenseBinding licenseBinding)
 ```

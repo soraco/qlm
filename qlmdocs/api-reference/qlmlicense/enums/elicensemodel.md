@@ -1,14 +1,3 @@
 # ELicenseModel
 
-| Name                   |          Description          | Value |
-| ---------------------- | :---------------------------: | ----- |
-| none                   |     The value was not set     | 0     |
-| permanent              |       Permanent License       | 1     |
-| permanent\_cloud       |    Permanent Cloud License    | 7     |
-| permanent\_floating    |   Permanent Floating License  | 4     |
-| subscription           |      Subscription License     | 3     |
-| subscription\_cloud    |   Subscription Cloud License  | 9     |
-| subscription\_floating | Subscription Floating License | 6     |
-| trial                  |         Trial License         | 2     |
-| trial\_cloud           |      Trial Cloud License      | 8     |
-| trial\_floating        |     Trial Floating License    | 5     |
+<table><thead><tr><th>Name</th><th>Description</th><th width="100">Value</th></tr></thead><tbody><tr><td>none</td><td>The value was not set</td><td>0</td></tr><tr><td>permanent</td><td>Permanent License</td><td>1</td></tr><tr><td>permanent_cloud</td><td>Permanent Cloud License</td><td>7</td></tr><tr><td>permanent_floating</td><td>Permanent Floating License</td><td>4</td></tr><tr><td>subscription</td><td>Subscription License</td><td>3</td></tr><tr><td>subscription_cloud</td><td>Subscription Cloud License</td><td>9</td></tr><tr><td>subscription_floating</td><td>Subscription Floating License</td><td>6</td></tr><tr><td>trial</td><td>Trial License</td><td>2</td></tr><tr><td>trial_cloud</td><td>Trial Cloud License</td><td>8</td></tr><tr><td>trial_floating</td><td>Trial Floating License</td><td>5</td></tr></tbody></table>

@@ -4,7 +4,7 @@
 
 Parses a product properties XML fragment and populates a [IQlmProductProperties ](https://soraco.readme.io/reference/iqlmproductproperties)object with the results.
 
-```c#
+```csharp
 IQlmProductProperties ParseProductProperties(string productPropertiesXml, 
                                              out string errorMessage)
 ```

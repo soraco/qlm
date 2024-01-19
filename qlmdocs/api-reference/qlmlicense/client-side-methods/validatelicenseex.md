@@ -4,7 +4,7 @@
 
 Validates a computer-bound license key.
 
-```c#
+```csharp
 string ValidateLicenseEx (string computeKey, string ComputerID)
 ```
 

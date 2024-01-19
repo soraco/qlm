@@ -4,7 +4,7 @@
 
 Reads the license keys stored on the end-user system with the StoreKeys API.
 
-```c#
+```csharp
 bool ReadKeys (ref string activationKey, ref string computerKey)
 ```
 

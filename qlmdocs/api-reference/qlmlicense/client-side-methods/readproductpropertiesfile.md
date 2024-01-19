@@ -4,7 +4,7 @@
 
 Reads a Product Properties file and validates its signature.
 
-```c#
+```csharp
 IQlmProductProperties ReadProductProperties (string productPropertiesFileName, 
                                              out string errorMessage)
 ```

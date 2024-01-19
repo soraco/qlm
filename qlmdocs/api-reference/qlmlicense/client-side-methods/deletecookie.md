@@ -4,7 +4,7 @@
 
 Deletes data stored in a cookie by the [StoreCookie ](https://soraco.readme.io/reference/storecookie)API.
 
-```c#
+```csharp
 bool DeleteCookie(string cookieName)
 ```
 

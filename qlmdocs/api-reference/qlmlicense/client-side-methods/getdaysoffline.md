@@ -4,7 +4,7 @@
 
 The GetDaysOffline method returns the number of days a system has been offline.
 
-```c#
+```csharp
 int GetDaysOffline()
 ```
 

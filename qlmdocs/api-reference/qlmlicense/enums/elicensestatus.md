@@ -1,17 +1,3 @@
 # ELicenseStatus
 
-| Name                         |                                  Description                                 | Value |
-| ---------------------------- | :--------------------------------------------------------------------------: | ----- |
-| EKeyNotFound                 |                             the key was not found                            | 0     |
-| EKeyNotSet                   |                        the status was not initialized                        | 1     |
-| EKeyPermanent                |                          the key is a permanent key                          | 2     |
-| EKeyDemo                     |                    the key is a trial or subscription key                    | 4     |
-| EKeyInvalid                  |                             the key is not valid                             | 8     |
-| EKeyProductInvalid           |     the product ID embedded in the key does not match the current product    | 16    |
-| EKeyVersionInvalid           |      the version embedded in the key does not match the current version      | 32    |
-| EKeyExpired                  |                              the key has expired                             | 64    |
-| EKeyTampered                 |                       the system date was tampered with                      | 128   |
-| EKeyMachineInvalid           | the machine identifier embedded in the key does not match the current system | 256   |
-| EKeyNeedsActivation          |                           the key needs activation                           | 512   |
-| EKeyExceededAllowedInstances |    the number of allowed instances on a Terminal Server has been exceeded    | 1024  |
-| EKeyRevoked                  |                              the key was revoked                             | 2048  |
+<table><thead><tr><th width="296">Name</th><th>Description</th><th width="100">Value</th></tr></thead><tbody><tr><td>EKeyNotFound</td><td>the key was not found</td><td>0</td></tr><tr><td>EKeyNotSet</td><td>the status was not initialized</td><td>1</td></tr><tr><td>EKeyPermanent</td><td>the key is a permanent key</td><td>2</td></tr><tr><td>EKeyDemo</td><td>the key is a trial or subscription key</td><td>4</td></tr><tr><td>EKeyInvalid</td><td>the key is not valid</td><td>8</td></tr><tr><td>EKeyProductInvalid</td><td>the product ID embedded in the key does not match the current product</td><td>16</td></tr><tr><td>EKeyVersionInvalid</td><td>the version embedded in the key does not match the current version</td><td>32</td></tr><tr><td>EKeyExpired</td><td>the key has expired</td><td>64</td></tr><tr><td>EKeyTampered</td><td>the system date was tampered with</td><td>128</td></tr><tr><td>EKeyMachineInvalid</td><td>the machine identifier embedded in the key does not match the current system</td><td>256</td></tr><tr><td>EKeyNeedsActivation</td><td>the key needs activation</td><td>512</td></tr><tr><td>EKeyExceededAllowedInstances</td><td>the number of allowed instances on a Terminal Server has been exceeded</td><td>1024</td></tr><tr><td>EKeyRevoked</td><td>the key was revoked</td><td>2048</td></tr></tbody></table>

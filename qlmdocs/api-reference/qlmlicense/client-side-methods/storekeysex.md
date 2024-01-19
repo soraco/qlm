@@ -4,7 +4,7 @@
 
 Stores license keys on the end user system.
 
-```c#
+```csharp
 void StoreKeysEx(string activationKey, string computerKey, 
                  out bool userLevelResult, out bool machineLevelResult, 
                  out string errorMessage)

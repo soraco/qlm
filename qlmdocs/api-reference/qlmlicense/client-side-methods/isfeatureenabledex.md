@@ -4,7 +4,7 @@
 
 Returns whether the specified feature is enabled in this license key.
 
-```c#
+```csharp
  bool IsFeatureEnabledEx (int featureSet, int feature)
 ```
 

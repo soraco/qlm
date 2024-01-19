@@ -4,7 +4,7 @@
 
 Validates a computer-bound license key.
 
-```c#
+```csharp
 string ValidateLicenseEx3 (string LicenseKey, ELicenseBinding licenseBinding,
                            bool skipWrites, bool skipExpiryValidation)
 ```

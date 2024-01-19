@@ -4,7 +4,7 @@
 
 Validates a license key.
 
-```c#
+```csharp
 string ValidateLicense (string LicenseKey)
 ```
 

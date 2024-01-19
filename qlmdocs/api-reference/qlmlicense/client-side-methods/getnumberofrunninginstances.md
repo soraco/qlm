@@ -4,7 +4,7 @@
 
 Get the number of running instances of a Windows application.
 
-```c#
+```csharp
  int GetNumberOfRunningInstances ()
 ```
 

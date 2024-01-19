@@ -4,16 +4,10 @@
 
 Creates a computer-bound license key that has an expiry date, a number of licenses, and a specific set of features that are enabled.
 
-```c#
+```csharp
 string CreateLicenseKeyEx4 (System.DateTime expiryDate, int expiryDuration, 
                             int numberOfLicenses, ELicenseType licenseType, 
                             string machineID, int[] Features)
-```
-
-```c++
-bstr_t CreateLicenseKeyEx4 (DATE expiryDate, int expiryDuration, 
-                            int numberOfLicenses, ELicenseType licenseType, 
-                            BSTR machineID,  SAFEARRAY *Features)
 ```
 
 ### Arguments

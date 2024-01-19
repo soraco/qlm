@@ -1,27 +1,3 @@
 # ELicenseType
 
-| Name                            |              Description             | Value |
-| ------------------------------- | :----------------------------------: | ----- |
-| Activation                      |        Generic Activation Key        | 'A'   |
-| ComputerName                    |  Computer Bound (computer name) Key  | 'C'   |
-| Evaluation                      |        Generic Evaluation Key        | 'E'   |
-| Generic                         |         Generic Permanent Key        | 'G'   |
-| PermanentCloudActivation        |    Permanent Cloud Activation Key    | 'R'   |
-| PermanentCloudComputerKey       |     Permanent Cloud Computer Key     | 'W'   |
-| PermanentComputerKey            |        Permanent Computer Key        | 'U'   |
-| PermanentFloatingActivation     |   Permanent Floating Activation Key  | 'K'   |
-| PermanentFloatingComputerKey    |    Permanent Floating Computer Key   | 'N'   |
-| SubscriptionActivation          |      Subscription Activation Key     | 'F'   |
-| SubscriptionCloudActivation     |   Subscription Cloud Activation Key  | 'T'   |
-| SubscriptionCloudComputerKey    |    Subscription Cloud Computer Key   | 'Y'   |
-| SubscriptionComputerKey         |       Subscription Computer Key      | 'J'   |
-| SubscriptionFloatingActivation  | Subscription Floating Activation Key | 'M'   |
-| SubscriptionFloatingComputerKey |  Subscription Floating Computer Key  | 'Q'   |
-| TrialActivation                 |         Trial Activation Key         | 'B'   |
-| TrialCloudActivation            |      Trial Cloud Activation Key      | 'S'   |
-| TrialCloudComputerKey           |       Trial Cloud Computer Key       | 'X'   |
-| TrialComputerKey                |          Trial Computer Key          | 'V'   |
-| TrialComputerName               |          Trial Computer Name         | 'D'   |
-| TrialFloatingActivation         |     Trial Floating Activation Key    | 'L'   |
-| TrialFloatingComputerKey        |      Trial Floating Computer Key     | 'P'   |
-| UserDefined                     |   Computer Bound (user-defined) Key  | 'U'   |
+<table><thead><tr><th>Name</th><th>Description</th><th width="100">Value</th></tr></thead><tbody><tr><td>Activation</td><td>Generic Activation Key</td><td>'A'</td></tr><tr><td>ComputerName</td><td>Computer Bound (computer name) Key</td><td>'C'</td></tr><tr><td>Evaluation</td><td>Generic Evaluation Key</td><td>'E'</td></tr><tr><td>Generic</td><td>Generic Permanent Key</td><td>'G'</td></tr><tr><td>PermanentCloudActivation</td><td>Permanent Cloud Activation Key</td><td>'R'</td></tr><tr><td>PermanentCloudComputerKey</td><td>Permanent Cloud Computer Key</td><td>'W'</td></tr><tr><td>PermanentComputerKey</td><td>Permanent Computer Key</td><td>'U'</td></tr><tr><td>PermanentFloatingActivation</td><td>Permanent Floating Activation Key</td><td>'K'</td></tr><tr><td>PermanentFloatingComputerKey</td><td>Permanent Floating Computer Key</td><td>'N'</td></tr><tr><td>SubscriptionActivation</td><td>Subscription Activation Key</td><td>'F'</td></tr><tr><td>SubscriptionCloudActivation</td><td>Subscription Cloud Activation Key</td><td>'T'</td></tr><tr><td>SubscriptionCloudComputerKey</td><td>Subscription Cloud Computer Key</td><td>'Y'</td></tr><tr><td>SubscriptionComputerKey</td><td>Subscription Computer Key</td><td>'J'</td></tr><tr><td>SubscriptionFloatingActivation</td><td>Subscription Floating Activation Key</td><td>'M'</td></tr><tr><td>SubscriptionFloatingComputerKey</td><td>Subscription Floating Computer Key</td><td>'Q'</td></tr><tr><td>TrialActivation</td><td>Trial Activation Key</td><td>'B'</td></tr><tr><td>TrialCloudActivation</td><td>Trial Cloud Activation Key</td><td>'S'</td></tr><tr><td>TrialCloudComputerKey</td><td>Trial Cloud Computer Key</td><td>'X'</td></tr><tr><td>TrialComputerKey</td><td>Trial Computer Key</td><td>'V'</td></tr><tr><td>TrialComputerName</td><td>Trial Computer Name</td><td>'D'</td></tr><tr><td>TrialFloatingActivation</td><td>Trial Floating Activation Key</td><td>'L'</td></tr><tr><td>TrialFloatingComputerKey</td><td>Trial Floating Computer Key</td><td>'P'</td></tr><tr><td>UserDefined</td><td>Computer Bound (user-defined) Key</td><td>'U'</td></tr></tbody></table>

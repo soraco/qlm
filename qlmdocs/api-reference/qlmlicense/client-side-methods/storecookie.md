@@ -4,7 +4,7 @@
 
 Writes data into a QLM cookie. To read keys, use the [ReadCookie ](https://soraco.readme.io/reference/readcookie)API.
 
-```c#
+```csharp
 bool StoreCookie(string data, string cookieName, int index, 
                  out bool userLevelResult, out bool machineLevelResult, 
                  out string errorMessage)

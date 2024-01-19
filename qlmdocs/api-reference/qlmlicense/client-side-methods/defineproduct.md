@@ -4,16 +4,10 @@
 
 The DefineProduct method initializes basic information required to validate license keys. You must call this function prior to calling any other function.
 
-```c#
+```csharp
 bool DefineProduct ( int ProductID, string ProductName, 
                     int MajorVersion, int MinorVersion, 
                     string EncryptionKey, string PersistenceKey )
-```
-
-```c++
-VARIANT_BOOL DefineProduct ( int ProductID, BSTR ProductName, 
-                            int MajorVersion, int MinorVersion,
-                            BSTR EncryptionKey, BSTR PersistenceKey )
 ```
 
 ### Arguments

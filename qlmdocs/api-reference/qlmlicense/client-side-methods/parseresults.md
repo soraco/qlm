@@ -4,7 +4,7 @@
 
 Parses the result of a License Server response.
 
-```c#
+```csharp
 bool ParseResults(string results, ref ILicenseInfo licenseInfo, ref string message)
 ```
 
