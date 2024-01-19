@@ -11,12 +11,12 @@ bool ValidateLicense(out bool reRegisterLicense, out bool reRegisterDb,
 
 ### Parameters
 
-| Parameter         |                                      Type                                     | Description                                                          |
-| ----------------- | :---------------------------------------------------------------------------: | -------------------------------------------------------------------- |
-| reRegisterLicense |                                      bool                                     | return flag indicating the license must be reactivated               |
-| reRegisterDb      |                                      bool                                     | return flag indicating the floating license DB must be re-registered |
-| activationStatus  | [QlmActivationStatus](https://soraco.readme.io/reference/qlmactivationstatus) | return flag indicating the current activation status                 |
-| message           |                                     string                                    | error message if there was an error during the operation             |
+| Parameter         |                          Type                          | Description                                                          |
+| ----------------- | :----------------------------------------------------: | -------------------------------------------------------------------- |
+| reRegisterLicense |                          bool                          | return flag indicating the license must be reactivated               |
+| reRegisterDb      |                          bool                          | return flag indicating the floating license DB must be re-registered |
+| activationStatus  | [QlmActivationStatus](../enums/qlmactivationstatus.md) | return flag indicating the current activation status                 |
+| message           |                         string                         | error message if there was an error during the operation             |
 
 ### Return
 

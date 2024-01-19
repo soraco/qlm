@@ -16,6 +16,6 @@ ILicenseInfo CheckoutLicense(out string message)
 
 ### Return
 
-| Type                         | Description                |
-| ---------------------------- | -------------------------- |
-| [ILicenseInfo](doc:overview) | License Information object |
+| Type                                | Description                |
+| ----------------------------------- | -------------------------- |
+| [ILicenseInfo](../../ilicenseinfo/) | License Information object |

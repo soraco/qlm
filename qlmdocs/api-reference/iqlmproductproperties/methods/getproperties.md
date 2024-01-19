@@ -10,6 +10,6 @@ IQlmProductProperty[] GetProperties()
 
 ### Return
 
-| Type                                     | Description                 |
-| ---------------------------------------- | --------------------------- |
-| [IQlmProductProperty](doc:overview-7)\[] | array of product properties |
+| Type                                                 | Description                 |
+| ---------------------------------------------------- | --------------------------- |
+| [IQlmProductProperty](../../iqlmproductproperty/)\[] | array of product properties |

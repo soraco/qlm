@@ -17,6 +17,6 @@ IQlmProductProperty GetProperty(string category, string name)
 
 ### Return
 
-| Type                                  | Description                                                              |
-| ------------------------------------- | ------------------------------------------------------------------------ |
-| [IQlmProductProperty](doc:overview-7) | the product property that corresponds to the specified category and name |
+| Type                                              | Description                                                              |
+| ------------------------------------------------- | ------------------------------------------------------------------------ |
+| [IQlmProductProperty](../../iqlmproductproperty/) | the product property that corresponds to the specified category and name |

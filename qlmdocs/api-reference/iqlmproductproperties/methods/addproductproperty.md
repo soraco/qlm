@@ -23,6 +23,6 @@ IQlmProductProperty AddProductProperty(string guid, string category,
 
 ### Return
 
-| Type                                  | Description                    |
-| ------------------------------------- | ------------------------------ |
-| [IQlmProductProperty](doc:overview-7) | Newly created product property |
+| Type                                              | Description                    |
+| ------------------------------------------------- | ------------------------------ |
+| [IQlmProductProperty](../../iqlmproductproperty/) | Newly created product property |

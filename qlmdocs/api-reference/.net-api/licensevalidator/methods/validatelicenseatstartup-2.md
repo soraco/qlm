@@ -43,4 +43,4 @@ If the local license validation succeeds, and if [server-side validation ](https
   * the features associated with the license were updated on the server
   * the number of seats associated with the license were updated on the server
 
-If the server-side validation fails, ValidateLicenseAtStartup returns false and sets the property [ServerErrorCode](https://soraco.readme.io/reference/eservererrorcode).
+If the server-side validation fails, ValidateLicenseAtStartup returns false and sets the property [ServerErrorCode](../../../qlmlicense/enums/eservererrorcode.md).

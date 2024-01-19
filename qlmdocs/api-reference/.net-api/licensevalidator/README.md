@@ -6,7 +6,7 @@ The main functionality of this class is to validate a license key locally or on 
 
 The LicenseValidator class can be initialized with your product information by loading the XML settings file generated from the QLM Management Console / Protect Your Application wizard.
 
-When your application starts up, you need to call [ValidateLicenseAtStartup ](https://soraco.readme.io/reference/validatelicenseatstartup-2)to determine if the user has a valid license. If the license is not valid, you then need to prompt the user to enter a license key and activate it.
+When your application starts up, you need to call [ValidateLicenseAtStartup ](methods/validatelicenseatstartup.md)to determine if the user has a valid license. If the license is not valid, you then need to prompt the user to enter a license key and activate it.
 
 The LicenseValidator class internally references a QlmLicense object which performs the actual license validation operations. You can access the underlying QlmLicense object by accessing the QlmLicenseObject property.
 

@@ -13,15 +13,15 @@ bool Load(out bool reRegisterLicense, out bool reRegisterDb,
 
 ### Parameters
 
-| Parameter         |                                      Type                                     | Description                                                            |
-| ----------------- | :---------------------------------------------------------------------------: | ---------------------------------------------------------------------- |
-| reRegisterLicense |                                      bool                                     | return flag indicating the license must be reactivated                 |
-| reRegisterDb      |                                      bool                                     | return flag indicating the floating license DB must be re-registered   |
-| isOffline         |                                      bool                                     | return flag indicating the system is offline                           |
-| wasOffline        |                                      bool                                     | return flag indicating the system was offline but is currently online  |
-| activationStatus  | [QlmActivationStatus](https://soraco.readme.io/reference/qlmactivationstatus) | return flag indicating the current activation status                   |
-| errorMessage      |                                     string                                    | return error message if there was an error during the validation       |
-| offlineError      |                                     string                                    | return error message if there was an error related to the offline mode |
+| Parameter         |                          Type                          | Description                                                            |
+| ----------------- | :----------------------------------------------------: | ---------------------------------------------------------------------- |
+| reRegisterLicense |                          bool                          | return flag indicating the license must be reactivated                 |
+| reRegisterDb      |                          bool                          | return flag indicating the floating license DB must be re-registered   |
+| isOffline         |                          bool                          | return flag indicating the system is offline                           |
+| wasOffline        |                          bool                          | return flag indicating the system was offline but is currently online  |
+| activationStatus  | [QlmActivationStatus](../enums/qlmactivationstatus.md) | return flag indicating the current activation status                   |
+| errorMessage      |                         string                         | return error message if there was an error during the validation       |
+| offlineError      |                         string                         | return error message if there was an error related to the offline mode |
 
 ### Return
 

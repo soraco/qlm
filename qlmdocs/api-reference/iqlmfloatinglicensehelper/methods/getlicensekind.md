@@ -24,6 +24,6 @@ ELicenseKind GetLicenseKind(bool licenseValid, string activationKey);
 
 ### Return
 
-| Type                                                                          | Description                      |
-| ----------------------------------------------------------------------------- | -------------------------------- |
-| [ELicenseKind](https://dash.readme.com/project/soraco/v1.0/refs/elicensekind) | status of the license activation |
+| Type                                     | Description                      |
+| ---------------------------------------- | -------------------------------- |
+| [ELicenseKind](../enums/elicensekind.md) | status of the license activation |

@@ -12,14 +12,14 @@ Validates a license
 
 ### Parameters
 
-| Parameter       |                  Type                  | Description                                                                                       |
-| --------------- | :------------------------------------: | ------------------------------------------------------------------------------------------------- |
-| activationKey   |                 string                 | the activation key                                                                                |
-| computerKey     |                 string                 | the computer bound key                                                                            |
-| computerID      |                 string                 | the unique computer identifier. The computerID is used when licenseBinding is set to UserDefined. |
-| licenseBinding  | [ELicenseBinding](ref:elicensebinding) | the license binding to use when validating the license                                            |
-| needsActivation |                  bool                  | returned flag indicating whether the license needs to be activated                                |
-| returnMsg       |                 string                 | message returned by the license validation operation                                              |
+| Parameter       |                               Type                              | Description                                                                                       |
+| --------------- | :-------------------------------------------------------------: | ------------------------------------------------------------------------------------------------- |
+| activationKey   |                              string                             | the activation key                                                                                |
+| computerKey     |                              string                             | the computer bound key                                                                            |
+| computerID      |                              string                             | the unique computer identifier. The computerID is used when licenseBinding is set to UserDefined. |
+| licenseBinding  | [ELicenseBinding](../../../qlmlicense/enums/elicensebinding.md) | the license binding to use when validating the license                                            |
+| needsActivation |                               bool                              | returned flag indicating whether the license needs to be activated                                |
+| returnMsg       |                              string                             | message returned by the license validation operation                                              |
 
 ### Return
 

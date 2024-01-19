@@ -11,11 +11,11 @@ bool ValidateLicenseAtStartup(ELicenseBinding licenseBinding,
 
 ### Parameters
 
-| Parameter       |                  Type                  | Description                                                        |
-| --------------- | :------------------------------------: | ------------------------------------------------------------------ |
-| licenseBinding  | [ELicenseBinding](ref:elicensebinding) | the license binding to use when validating the license             |
-| needsActivation |                  bool                  | returned flag indicating whether the license needs to be activated |
-| returnMsg       |                 string                 | message returned by the license validation operation               |
+| Parameter       |                               Type                              | Description                                                        |
+| --------------- | :-------------------------------------------------------------: | ------------------------------------------------------------------ |
+| licenseBinding  | [ELicenseBinding](../../../qlmlicense/enums/elicensebinding.md) | the license binding to use when validating the license             |
+| needsActivation |                               bool                              | returned flag indicating whether the license needs to be activated |
+| returnMsg       |                              string                             | message returned by the license validation operation               |
 
 ### Return
 
@@ -43,4 +43,4 @@ If the local license validation succeeds, and if [server-side validation ](https
   * the features associated with the license were updated on the server
   * the number of seats associated with the license were updated on the server
 
-If the server-side validation fails, ValidateLicenseAtStartup returns false and sets the property [ServerErrorCode](https://soraco.readme.io/reference/eservererrorcode).
+If the server-side validation fails, ValidateLicenseAtStartup returns false and sets the property [ServerErrorCode](../../../qlmlicense/enums/eservererrorcode.md).

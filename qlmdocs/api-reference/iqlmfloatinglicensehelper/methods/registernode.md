@@ -20,6 +20,6 @@ QlmActivationStatus RegisterNode(out string message)
 
 ### Return
 
-| Type                                                                          | Description              |
-| ----------------------------------------------------------------------------- | ------------------------ |
-| [QlmActivationStatus](https://soraco.readme.io/reference/qlmactivationstatus) | status of the activation |
+| Type                                                   | Description              |
+| ------------------------------------------------------ | ------------------------ |
+| [QlmActivationStatus](../enums/qlmactivationstatus.md) | status of the activation |

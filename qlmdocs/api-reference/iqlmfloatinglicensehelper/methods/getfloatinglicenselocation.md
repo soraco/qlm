@@ -26,6 +26,6 @@ QlmActivationStatus GetFloatingLicenseLocation(string webServiceUrl,
 
 ### Return
 
-| Type                                                                                        | Description                      |
-| ------------------------------------------------------------------------------------------- | -------------------------------- |
-| [QlmActivationStatus](https://dash.readme.com/project/soraco/v1.0/refs/qlmactivationstatus) | status of the license activation |
+| Type                                                   | Description                      |
+| ------------------------------------------------------ | -------------------------------- |
+| [QlmActivationStatus](../enums/qlmactivationstatus.md) | status of the license activation |
