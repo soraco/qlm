@@ -2,9 +2,9 @@
 
 If you need to load different versions of QlmLicenseLib.dll from the same process, you must create a .config file for the process and specify the location of each version of QlmLicenseLib.dll.
 
-The typical use-case is a plugin for a 3d party application. Since different plugin developers might use different versions of QLM, the application might need to load different versions of QLM.
+The typical use case is a plugin for a 3d party application. Since different plugin developers might use different versions of QLM, the application might need to load different versions of QLM.
 
-To do so, you must ensure that each version of QlmLicenseLib.dll is located in a separate directory and **that no version of QlmLicenseLib.dll is located in the same folder as the executable.**. Then, you must create or update the config file of the application's executable. The filename of the config file is the name of the executable suffixed with .config. For example, if the executable is called Act.exe, the config file would be called Act.exe.config.
+To do so, you must ensure that each version of QlmLicenseLib.dll is located in a separate directory and **that no version of QlmLicenseLib.dll is located in the same folder as the executable**. Then, you must create or update the config file of the application's executable. The filename of the config file is the name of the executable suffixed with .config. For example, if the executable is called Act.exe, the config file would be called Act.exe.config.
 
 Edit the config file and add or update the runtime section, by specifying the location of each version of QlmLicenseLib.dll as shown in the example below.
 

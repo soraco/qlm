@@ -16,11 +16,11 @@ Additionally, the following operations have a direct impact on the required serv
 * Number of client requests for validation
 * Number of client requests for information
 * Number of vendor requests from QLM Management Console
-* Number of vendor requests from QLM Portal
+* Number of vendor requests from the QLM Portal
 * Number of backup requests and frequency
-* Number of Scheduled Tasks and frequency
+* Number of Scheduled Tasks and Frequency
 
-Since there are too many factors at play, this article gives general recommendations in terms of the system's configuration in order to improve the response time from the server.
+Since there are too many factors at play, this article gives general recommendations in terms of the system's configuration to improve the response time from the server.
 
 ### Hardware configuration
 

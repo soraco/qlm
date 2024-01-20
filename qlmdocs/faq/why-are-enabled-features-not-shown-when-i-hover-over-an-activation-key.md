@@ -10,7 +10,7 @@ When an Activation Key is initially created without any feature enabled, no feat
 
 &#x20;
 
-If you edit the license and enable some features after the Activation Key is created, the Activation Key is not modified and hence, no features will be shown when you hover over the Activation Key. The "Enabled Features" column will however display the expected list of enabled features.
+If you edit the license and enable some features after the Activation Key is created, the Activation Key is not modified, and hence, no features will be shown when you hover over the Activation Key. The "Enabled Features" column will however display the expected list of enabled features.
 
 ![mceclip2.png](https://support.soraco.co/hc/article\_attachments/4411027005332/mceclip2.png)
 

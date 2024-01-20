@@ -10,6 +10,6 @@ To extend the expiry date of a license in the QLM Management Console, locate the
 
 ![mceclip0.png](https://support.soraco.co/hc/article\_attachments/360088269672/mceclip0.png)
 
-To extend the maintenance plan expiry date of a license in the QLM Management Console, locate the license in the Manage Keys tab, click Edit and update the and click Extend Expiry Date.&#x20;
+To extend the maintenance plan expiry date of a license in the QLM Management Console, locate the license in the Manage Keys tab, click Edit, and update the Maintenance Plan date.&#x20;
 
 ![mceclip1.png](https://support.soraco.co/hc/article\_attachments/360088269852/mceclip1.png)

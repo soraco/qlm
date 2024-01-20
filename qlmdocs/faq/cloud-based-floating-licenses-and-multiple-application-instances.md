@@ -16,7 +16,7 @@ To prevent this abuse, we recommend one of the following:&#x20;
 
 When you check out a floating license multiple times from the same computer, QLM increments an activation count that keeps track of the number of running instances.\
 &#x20;\
-When a license is checked-in, QLM decrements the activation count until it reaches 0. When it reaches 0, QLM deactivates the license from the server so that it can be activated on another computer.
+When a license is checked in, QLM decrements the activation count until it reaches 0. When it reaches 0, QLM deactivates the license from the server so that it can be activated on another computer.
 
 Activation Count value for single activation Keys:
 
