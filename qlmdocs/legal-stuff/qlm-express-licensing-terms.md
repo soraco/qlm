@@ -2,9 +2,9 @@
 
 Quick License Manager Express is sold on a per-developer seat basis (developer refers to developers or administrators). You need to purchase 1 copy of Quick License Manager Express for each system on which you install it. Each QLM Express license is bound to a single computer/single user.&#x20;
 
-You can distribute the Quick License Manager DLLs **royalty free** as long as your product does not compete directly or indirectly with Quick License Manager.&#x20;
+You can distribute the Quick License Manager DLLs **royalty-free** as long as your product does not compete directly or indirectly with Quick License Manager.&#x20;
 
-You can use your Quick License Manager Express licenses to protect **any number of applications**. There are no fees per license activation or per sale.&#x20;
+You can use your Quick License Manager Express license to protect **any number of applications**. There are no fees per license activation or per sale.&#x20;
 
 If you install the Quick License Manager DLL on a server for the purpose of generating or activating keys, you need to purchase an additional license for the server.
 

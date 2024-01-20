@@ -12,10 +12,10 @@
 [qlm-enterprise-licensing-terms.md](qlm-enterprise-licensing-terms.md)
 {% endcontent-ref %}
 
-{% content-ref url="qlm-document-protection.md" %}
-[qlm-document-protection.md](qlm-document-protection.md)
+{% content-ref url="qlm-document-protection-licensing-terms.md" %}
+[qlm-document-protection-licensing-terms.md](qlm-document-protection-licensing-terms.md)
 {% endcontent-ref %}
 
-{% content-ref url="qlm-sdk-protection-terms.md" %}
-[qlm-sdk-protection-terms.md](qlm-sdk-protection-terms.md)
+{% content-ref url="qlm-sdk-protection-licensing-terms.md" %}
+[qlm-sdk-protection-licensing-terms.md](qlm-sdk-protection-licensing-terms.md)
 {% endcontent-ref %}
