@@ -15,4 +15,4 @@ To use late binding, update your code as follows:
 
 Our recommendation is to use early binding during development because you get the benefit of intellisense and switch to late binding when you have completed development.
 
-* [vbaEnums.txt](https://support.soraco.co/hc/en-us/article\_attachments/206341686)1 KB [Download](https://support.soraco.co/hc/en-us/article\_attachments/206341686)
+{% file src="../.gitbook/assets/vbaEnums.txt" %}

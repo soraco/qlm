@@ -91,9 +91,9 @@ To determine if the user consented, you can check the exit code of the QLM Licen
 
 If you are not using the QLM License Wizard, you can use the QLM API to set the privacy consent:
 
-[QlmLicense.UpdatePrivacyConsent](https://support.soraco.co/hc/en-us/articles/360000486366-QlmLicense-UpdatePrivacyConsent)
+[QlmLicense.UpdatePrivacyConsent](../api-reference/qlmlicense/application-methods/updateprivacyconsent.md)
 
-[UpdatePrivacyConsentHttp](https://support.soraco.co/hc/en-us/articles/360000486406-UpdatePrivacyConsentHttp)
+[UpdatePrivacyConsentHttp](../api-reference/qlmlicense/application-methods/updateprivacyconsent.md)
 
 ### Consent request for trials
 

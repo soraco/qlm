@@ -8,7 +8,7 @@ On non-Windows platforms, QLM uses a combination of a REST API and a platform / 
 
 * On premise floating / concurrent licensing.
 * QLM License Wizard: the license wizard is a Windows executable that is only supported on Windows. A cross platform version of the wizard is in progress. It will be based on .NET Core.
-* The [Application API](https://support.soraco.co/hc/en-us/sections/201730736-License-Server-Application-API) and [Management API, ](https://support.soraco.co/hc/en-us/sections/201720373-License-Server-Management-API)which are .NET based, are not supported on non-Windows platforms. Instead, you can use [the REST like API](https://support.soraco.co/hc/en-us/sections/201730676-HTTP-Methods) to communicate with the License Server for operations such as activating a license key, validating a license key or deactivating a license key.
+* The [Application API](../api-reference/qlmlicense/application-methods/) and [Management API, ](../api-reference/qlmlicense/management-methods/)which are .NET based, are not supported on non-Windows platforms. Instead, you can use [the REST like API](../api-reference/http-methods/) to communicate with the License Server for operations such as activating a license key, validating a license key or deactivating a license key.
 * MaxDaysOffline: the ability to specify the maximum number of days a user can go without contacting the license server.
 * Predefined License Binding, i.e. only UserDefined license binding is supported.
 

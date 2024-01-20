@@ -218,7 +218,6 @@
   * [MaxDaysOffline](faq/maxdaysoffline.md)
   * [Which QLM features are available on each platform?](faq/which-qlm-features-are-available-on-each-platform.md)
   * [Which edition of QLM should I use?](faq/which-edition-of-qlm-should-i-use.md)
-  * [LicenseValidator class](faq/licensevalidator-class.md)
   * [How to check which features are enabled in your QLM license](faq/how-to-check-which-features-are-enabled-in-your-qlm-license.md)
   * [Product definition changes are not saved](faq/product-definition-changes-are-not-saved.md)
   * [How to initialize the QLM License Wizard programmatically](faq/how-to-initialize-the-qlm-license-wizard-programmatically.md)

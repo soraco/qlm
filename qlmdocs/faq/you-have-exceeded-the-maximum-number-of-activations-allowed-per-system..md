@@ -1,6 +1,6 @@
 # You have exceeded the maximum number of activations allowed per system.
 
-QLM can limit the number of activations on a given system. This is enforced with the following [Server Properties](https://support.soraco.co/hc/en-us/articles/207920563-Server-Properties):
+QLM can limit the number of activations on a given system. This is enforced with the following [Server Properties](../qlm-license-server/server-properties.md):
 
 * maxActivationsPerSystem
 * maxActivationsEnforcedOnVMsOnly

@@ -1,6 +1,6 @@
 # How to limit the number of deactivations
 
-QLM provides 3 [server properties](https://support.soraco.co/hc/en-us/articles/207920563-Server-Properties) that you can use to control the number of allowed deactivations.
+QLM provides 3 [server properties](../qlm-license-server/server-properties.md) that you can use to control the number of allowed deactivations.
 
 **maxReleaseCount**: The maximum number of times an end-user can release a license.
 

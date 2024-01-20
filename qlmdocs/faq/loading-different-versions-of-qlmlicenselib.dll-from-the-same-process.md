@@ -8,7 +8,7 @@ To do so, you must ensure that each version of QlmLicenseLib.dll is located in a
 
 Edit the config file and add or update the runtime section, by specifying the location of each version of QlmLicenseLib.dll as shown in the example below.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
 <startup> 

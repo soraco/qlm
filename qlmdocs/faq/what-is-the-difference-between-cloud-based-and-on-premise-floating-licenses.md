@@ -15,7 +15,7 @@ QLM offers 2 approaches for implementing floating licenses:
 
 With cloud-based floating licenses, the check-out operation is performed against the QLM License Server hosted in the cloud. To check-out a license, a user needs internet access. Similarly, to check-in a license, a user needs to connect to the QLM License Server. Cloud-based floating licenses are simple to implement but require that users have an internet connection when starting the application and when exiting it.
 
-For more details about implementing cloud-based floating licenses, [click here](https://support.soraco.co/hc/en-us/articles/200857300-Implement-cloud-based-floating-licenses-with-QLM-Pro).
+For more details about implementing cloud-based floating licenses, [click here](../how-to/how-to-implement-cloud-floating-licenses-cfl-in-qlm-v17+.md).
 
 ### On-premise floating licenses
 
@@ -23,4 +23,4 @@ With on-premise floating licenses, the check-out operation is performed against 
 
 QLM supports on-premise floating licenses on Windows only.
 
-For more details about implementing on-premise floating licenses, [click here](https://support.soraco.co/hc/en-us/articles/213333283).
+For more details about implementing on-premise floating licenses, [click here](../step-by-step-guides/how-to-implement-floating-licensing-with-qlm-enterprise.md).

@@ -1,12 +1,13 @@
 # How to read Product Properties from a data set
 
-To retrieve product properties from the server, you should typically call [QlmLicense.GetProductProperties](https://support.soraco.co/hc/en-us/articles/115000809763-QlmLicense-GetProductProperties).
+To retrieve product properties from the server, you should typically call [QlmLicense.GetProductProperties](../api-reference/qlmlicense/application-methods/getproductproperties.md).
 
-If you are already calling [QlmLicense.GetDataSet](https://support.soraco.co/hc/en-us/articles/207294096-QlmLicense-GetDataSet), you already have the product properties in the dataset. You can therefore read them as shown in the example below.
+If you are already calling [QlmLicense.GetDataSet](../api-reference/qlmlicense/management-methods/getdatasetex.md), you already have the product properties in the dataset. You can therefore read them as shown in the example below.
 
 &#x20;
 
-```
+{% code overflow="wrap" %}
+```csharp
 string dataSet = string.Empty;
 string response;
 
@@ -43,3 +44,4 @@ if (!String.IsNullOrEmpty(dataSet))
      }
  }
 ```
+{% endcode %}

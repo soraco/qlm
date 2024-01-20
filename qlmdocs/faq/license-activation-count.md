@@ -8,7 +8,7 @@ The Activation Count is a counter that is incremented every time a user activate
 
 An Activation Count greater than 1 does not necessarily indicate that the user has activated the license on more than one system. It typically means that the user clicked the Activate button multiple times from the same system.
 
-The Activation Count is used when enforcing the [server properties](https://support.soraco.co/hc/en-us/articles/207920563-Server-Properties) maxActivationsPerSystem and maxActivationsEnforcedOnVMsOnly properties in order to prevent a user from circumventing the license enforcement by cloning virtual machines.
+The Activation Count is used when enforcing the [server properties](../qlm-license-server/server-properties.md) maxActivationsPerSystem and maxActivationsEnforcedOnVMsOnly properties in order to prevent a user from circumventing the license enforcement by cloning virtual machines.
 
 Note that in QLM v16, activation from the QLM License Wizard do not increment the Activation Count.
 

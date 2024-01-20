@@ -19,7 +19,7 @@ When specifying the expiry date criteria of a license, you can configure two set
 
 If you configure both settings, the license will expire when either setting's criterion is met.
 
-If you configure a duration based expiry and select to expire the license x days after install, the actual expiry date is controlled by two [server properties](https://support.soraco.co/hc/en-us/articles/207920563-Server-Properties):&#x20;
+If you configure a duration based expiry and select to expire the license x days after install, the actual expiry date is controlled by two [server properties](../qlm-license-server/server-properties.md):&#x20;
 
 &#x20;
 

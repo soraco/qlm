@@ -4,7 +4,7 @@
 
 QLM v17 introduces new license models that can be used to easily identify the type of license based on the prefix of the license key.
 
-For more details, check this [article](https://support.soraco.co/hc/en-us/articles/13463481983380-QLM-License-Models).
+For more details, check this [article](../how-to/qlm-license-models.md).
 
 ### QLM v9 to v16
 
@@ -20,13 +20,14 @@ As of QLM Pro 9, a new property can be associated to a license called LicenseMod
 
 When you create the license key, you set the LicenseModel property. This can be done from the QLM Management console, from an API call or from an http method.
 
-When a license is activated via an API call (ActivateLicense), the returned xml fragment contains the license model property. After calling [ParseResults ](https://support.soraco.co/hc/en-us/articles/207611673-QlmLicense-ParseResults)on the xml fragment, you can access the license model via the ILicenseInfo.LicenseModel property.
+When a license is activated via an API call (ActivateLicense), the returned xml fragment contains the license model property. After calling [ParseResults ](../api-reference/iqlmcustomerinfo/methods/parseresults.md)on the xml fragment, you can access the license model via the ILicenseInfo.LicenseModel property.
 
 This approach works with QLM Pro and Enterprise.
 
 You can also retrieve the LicenseModel by invoking the GetLicenseInfo method as shown below:
 
-```
+{% code overflow="wrap" %}
+```csharp
 // Assuming lv is an instance of the LicenseValidator class
 string dataSet = string.Empty;
 string response = string.Empty;
@@ -39,6 +40,7 @@ if (licenseInfo != null)
     Console.WriteLine(licenseModel.ToString());
 }
 ```
+{% endcode %}
 
 **Feature Method**
 
@@ -46,6 +48,6 @@ Another approach consists of creating a feature for your product called TRIAL (o
 
 When you create a license key, enable or disable the TRIAL feature as required.
 
-After you validate a license key, call the [IsFeatureEnabledEx ](https://support.soraco.co/hc/en-us/articles/207611713-QlmLicense-IsFeatureEnabledEx)API to determine if the key is a trial.&#x20;
+After you validate a license key, call the [IsFeatureEnabledEx ](../api-reference/qlmlicense/client-side-methods/isfeatureenabledex.md)API to determine if the key is a trial.&#x20;
 
 This approach works with QLM Express, Pro and Enterprise.

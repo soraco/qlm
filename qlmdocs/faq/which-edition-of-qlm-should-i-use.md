@@ -8,7 +8,7 @@ QLM comes in 4 editions:
 
 &#x20;So which edition should you use to protect your application? The guide below lists the main features available in each edition. For a more detailed list of features, [review our full edition comparison](https://soraco.co/quick-license-manager/quick-license-manager-features/).
 
-To read about the main differences between the Express and Professional edition, read this [article](https://support.soraco.co/hc/en-us/articles/115000307106-What-s-the-difference-between-QLM-Express-and-QLM-Pro).
+To read about the main differences between the Express and Professional edition, read this [article](whats-the-difference-between-qlm-express-and-qlm-pro.md).
 
 You can find our prices [here](https://soraco.co/pricing).
 

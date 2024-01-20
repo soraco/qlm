@@ -1,0 +1,47 @@
+' QLM Enums required when using late binding
+Public Enum ELicenseStatus
+    ELicenseStatus_EKeyPermanent = 2
+    ELicenseStatus_EKeyDemo = 4
+    ELicenseStatus_EKeyInvalid = 8
+    ELicenseStatus_EKeyProductInvalid = 16
+    ELicenseStatus_EKeyVersionInvalid = 32
+    ELicenseStatus_EKeyExpired = 64
+    ELicenseStatus_EKeyTampered = 128
+    ELicenseStatus_EKeyMachineInvalid = 256
+    ELicenseStatus_EKeyNeedsActivation = 512
+    ELicenseStatus_EKeyExceededAllowedInstances = 1024
+    ELicenseStatus_EKeyRevoked = 2048
+End Enum
+
+Public Enum EStoreKeysTo
+    EStoreKeysTo_EFile = 0
+    EStoreKeysTo_ERegistry = 1
+End Enum
+    
+Public Enum ELicenseType
+    ELicenseType_PermanentGeneric = 71
+    ELicenseType_Generic = 71
+    ELicenseType_Evaluation = 69
+    ELicenseType_Activation = 65
+    ELicenseType_ComputerName = 67
+    ELicenseType_UserDefined = 85
+End Enum
+
+Public Enum EComputerType
+    EComputerType_none = 0
+    EComputerType_PC = 1
+    EComputerType_VM = 2
+End Enum
+
+Public Enum ELicenseModel
+    ELicenseModel_none = 0
+    ELicenseModel_permanent = 1
+    ELicenseModel_trial = 2
+    ELicenseModel_subscription = 3
+End Enum
+
+Public Enum EStoreKeysOptions
+    EStoreKeysOptions_EStoreKeysPerUser = 1
+    EStoreKeysOptions_EStoreKeysPerMachine = 2
+    EStoreKeysOptions_EStoreKeysPerUserAndMachine = 3
+End Enum

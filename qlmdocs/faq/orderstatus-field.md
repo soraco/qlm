@@ -15,7 +15,7 @@ The possible values of OrderStatus are:
 | EReleased         | 8          | Released           | the license was deactivated |
 | EArchived         | 16         | Archived           | the license was archived    |
 
-You can set the value of the OrderStatus when creating an activation key by calling [CreateActivationKeyWithExpiryDateEx6](https://support.soraco.co/hc/en-us/articles/115004116086-QlmLicense-CreateActivationKeyWithExpiryDateEx6) or directly by calling the [UpdateOrderStatus](https://support.soraco.co/hc/en-us/articles/207608463-QlmLicense-UpdateOrderStatus) method.
+You can set the value of the OrderStatus when creating an activation key by calling [CreateActivationKeyWithExpiryDateEx6](../api-reference/qlmlicense/management-methods/createactivationkeywithexpirydateex6.md) or directly by calling the [UpdateOrderStatus](../api-reference/qlmlicense/management-methods/updateorderstatus.md) method.
 
 ### Rules
 

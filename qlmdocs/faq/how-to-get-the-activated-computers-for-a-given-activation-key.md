@@ -8,76 +8,66 @@ _Note that in order to call the GetDataSetEx method, you must set the license.Ad
 
 **Single Activation Key Example**
 
-// make sure to strip out dashes from the activationKey&#x20;
-
-string activationKey = "AMTP0R0K00GHJ3K38N3Q1S17TX552TTFV3W8R8";\
-string dataSet = string.Empty;\
+{% code overflow="wrap" %}
+```csharp
+// make sure to strip out dashes from the activationKey 
+string activationKey = "AMTP0R0K00GHJ3K38N3Q1S17TX552TTFV3W8R8";
+string dataSet = string.Empty;
 string response = string.Empty;
 
-\
 license.GetDataSetEx(string.Empty, "qryLicenseInfo", "ActivationKey='" + activationKey + "'", ref dataSet, out response);
 
-\
-DataSet ds = new DataSet("NewDataSet");\
+DataSet ds = new DataSet("NewDataSet");
 XmlReader reader = new XmlTextReader(dataSet, XmlNodeType.Document, null);
-
-if (!String.IsNullOrEmpty(dataSet))\
-{\
-&#x20;   ds.ReadXml(reader);
-
-&#x20;   if (ds.Tables\[0].Rows.Count > 0)\
-&#x20;   {\
-&#x20;       DataRowCollection drc = ds.Tables\[0].Rows;
-
-&#x20;       if (drc != null)\
-&#x20;       {\
-&#x20;           foreach (DataRow dr in drc)\
-&#x20;           {\
-&#x20;               string computerKey = dr\["computerkey"].ToString();
-
-&#x20;               string computerName = dr\["computerName"].ToString();
-
-&#x20;               string computerID = dr\["computerID"].ToString();
-
-&#x20;           }\
-&#x20;       }\
-&#x20;   }\
+if (!String.IsNullOrEmpty(dataSet))
+{
+    ds.ReadXml(reader);
+    if (ds.Tables[0].Rows.Count > 0)
+    {
+        DataRowCollection drc = ds.Tables[0].Rows;
+        if (drc != null)
+        {
+            foreach (DataRow dr in drc)
+            {
+                string computerKey = dr["computerkey"].ToString();
+                string computerName = dr["computerName"].ToString();
+                string computerID = dr["computerID"].ToString();
+            }
+        }
+    }
 }
+```
+{% endcode %}
 
 **Multiple Activations Key Example**
 
-// make sure to strip out dashes from the activationKey&#x20;
-
-string activationKey = "AMTP0R0K00GHJ3K38N3Q1S17TX552TTFV3W8R8"; \
-string dataSet = string.Empty;\
+{% code overflow="wrap" %}
+```csharp
+// make sure to strip out dashes from the activationKey 
+string activationKey = "AMTP0R0K00GHJ3K38N3Q1S17TX552TTFV3W8R8"; 
+string dataSet = string.Empty;
 string response = string.Empty;
 
-\
 license.GetDataSetEx(string.Empty, "qryActivationLog", "ActivationKey='" + activationKey + "'", ref dataSet, out response);
 
-\
-DataSet ds = new DataSet("NewDataSet");\
+DataSet ds = new DataSet("NewDataSet");
 XmlReader reader = new XmlTextReader(dataSet, XmlNodeType.Document, null);
-
-if (!String.IsNullOrEmpty(dataSet))\
-{\
-&#x20;   ds.ReadXml(reader);
-
-&#x20;   if (ds.Tables\[0].Rows.Count > 0)\
-&#x20;   {\
-&#x20;       DataRowCollection drc = ds.Tables\[0].Rows;
-
-&#x20;       if (drc != null)\
-&#x20;       {\
-&#x20;           foreach (DataRow dr in drc)\
-&#x20;           {\
-&#x20;               string computerKey = dr\["computerkey"].ToString();
-
-&#x20;               string computerName = dr\["computerName"].ToString();
-
-&#x20;               string computerID = dr\["computerID"].ToString();
-
-&#x20;           }\
-&#x20;       }\
-&#x20;   }\
+if (!String.IsNullOrEmpty(dataSet))
+{
+    ds.ReadXml(reader);
+    if (ds.Tables[0].Rows.Count > 0)
+    {
+        DataRowCollection drc = ds.Tables[0].Rows;
+        if (drc != null)
+        {
+            foreach (DataRow dr in drc)
+            {
+                string computerKey = dr["computerkey"].ToString();
+                string computerName = dr["computerName"].ToString();
+                string computerID = dr["computerID"].ToString();
+            }
+        }
+    }
 }
+```
+{% endcode %}

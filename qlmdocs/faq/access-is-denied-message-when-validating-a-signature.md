@@ -11,4 +11,5 @@ You can also restore the permissions by running the QlmDiagnostics.exe tool atta
 * Download the zip file and extract it
 * Open a command prompt as Administator (Run As Administrator)
 * Type: QlmDiagnostics.exe /rsa
-* [QlmDiagnostics.zip](https://support.soraco.co/hc/en-us/article\_attachments/360001917246)5 KB [Download](https://support.soraco.co/hc/en-us/article\_attachments/360001917246)
+
+{% file src="../.gitbook/assets/QlmDiagnostics.zip" %}

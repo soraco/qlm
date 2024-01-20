@@ -6,7 +6,7 @@ By default, if a user upgrades to a new version of your application on the same 
 If you need to allow a customer to install different versions of your product on the same system and activate each separately, you must do the following:
 
 * When creating the new product version in the QLM Management Console / Define Products, do not check the "Use the same GUID as the base product". This will ensure that license information of the new version is stored in a different location than the previous version (see screenshot 1 below)
-* Set the [Server Property](https://support.soraco.co/hc/en-us/articles/207920563-Server-Properties) allowMultipleProductVersionsOnSameSystem to true (see screenshot 2 below)
+* Set the [Server Property](../qlm-license-server/server-properties.md) allowMultipleProductVersionsOnSameSystem to true (see screenshot 2 below)
 
 &#x20;
 

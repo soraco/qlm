@@ -18,4 +18,4 @@ When a license key has been successfully stored at the MACHINE level and DeleteK
 
 If you are using the QLM License Wizard, when launching the QLMLicenseWizard.exe from within your application, we recommend that you use the [QlmLicense.LaunchProcess](https://support.soraco.co/hc/en-us/articles/115004668486-QlmLicense-LaunchProcess) API and set the elevatedPrivileges argument to true.&#x20;
 
-The [QlmDeleteKeys.exe](https://support.soraco.co/hc/en-us/articles/203691130-Tool-to-delete-registered-license-keys-on-a-system) is a standalone tool that you can use and distribute to remove keys from a system.
+The [QlmDeleteKeys.exe](../how-to/tool-to-delete-registered-license-keys-on-a-system.md) is a standalone tool that you can use and distribute to remove keys from a system.

@@ -2,7 +2,7 @@
 
 You can use the QLM License Wizard in QLM Express to allow the end-user to activate a license or deactivate a license.
 
-The QLM License Wizard can be used as a [.NET WinForms control](https://support.soraco.co/hc/en-us/articles/115000230386-QLM-Wizard-NET-User-Control) or as a standalone Windows Executable. For more information about using the QLM License Wizard standalone executable, read this [article](https://support.soraco.co/hc/en-us/articles/206330266-Online-Activation-using-the-QLM-License-Wizard-Standalone-Application).
+The QLM License Wizard can be used as a [.NET WinForms control](../api-reference/license-wizard-user-control/) or as a standalone Windows Executable. For more information about using the QLM License Wizard standalone executable, read this [article](online-activation-using-the-qlm-license-wizard-standalone-application.md).
 
 The recommended settings to use the QLM License Wizard with QLM Express are found below. To configure these settings:
 

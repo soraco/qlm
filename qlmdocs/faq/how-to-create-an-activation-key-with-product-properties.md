@@ -2,7 +2,8 @@
 
 The code below illustrates how to create an activation key with product properties.
 
-```
+{% code overflow="wrap" %}
+```csharp
 private void CreateActivationKey ()
 {
  QlmProductProperties pps = new QlmProductProperties();
@@ -30,3 +31,4 @@ private void CreateActivationKey ()
  }
 }
 ```
+{% endcode %}

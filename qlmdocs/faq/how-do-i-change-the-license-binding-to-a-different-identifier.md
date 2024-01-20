@@ -2,17 +2,18 @@
 
 If you decide to modify the license binding of an application that has already been deployed to your customers, you can transition to a new license binding method as described below.
 
-Consider the use-case where you initially deployed your application with the license binding set to ELicenseBinding.ComputerName. A year after your product is deployed to customers, you wish to bind the license to QLM Unique System Identifier (ELicenseBinding.QlmUniqueSystemIdentifier2). If you simply change the license binding in the new version of your application, all the previously generated ComputerKeys will fail to validate. In order to transition customers to the new license binding, you must force a reactivation of the license using the new license binding. The high level steps are:
+Consider the use case where you initially deployed your application with the license binding set to ELicenseBinding.ComputerName. A year after your product is deployed to customers, you wish to bind the license to the QLM Unique System Identifier (ELicenseBinding.QlmUniqueSystemIdentifier2). If you simply change the license binding in the new version of your application, all the previously generated ComputerKeys will fail to validate. In order to transition customers to the new license binding, you must force a reactivation of the license using the new license binding. The high-level steps are:
 
 * When your application starts up, call ValidateLicenseAtStartup.
 * If the validation fails and the license is detected as non-valid, set the license binding to ELicenseBinding.ComputeName and try to validate the license again.
 * If the license validation is successful, you must:
   * Deactivate the license using the previous license binding
-  * Activation the license using the new license binding.
+  * Activate the license using the new license binding.
 
 Example code:
 
-```
+{% code overflow="wrap" %}
+```cpp
 private bool MigrateLicenseBinding ()
 {
     bool ret = false;
@@ -58,5 +59,6 @@ private bool MigrateLicenseBinding ()
 }
 
 ```
+{% endcode %}
 
 ![](https://support.soraco.co/hc/article\_attachments/14338487279636)

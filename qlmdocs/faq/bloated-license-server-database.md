@@ -6,7 +6,7 @@ The QLM License Server logs events that occur on the server. By default, it logs
 
 The fastest way to clear the event log is to run the following SQL commands on the server:
 
-```
+```sql
 -- To get the count
 SELECT COUNT(*) from EventLog
 

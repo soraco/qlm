@@ -12,7 +12,8 @@ If your application is a .NET Winforms application, you can simply use the QLM L
 
 If your application is not a .NET Winforms app, the code below illustrates how to initialize the QLM License Wizard. The example below is configured for the built-in Demo product and connects to the Demo License Server. You must update most settings to use your own product and your own License Server.
 
-```
+{% code overflow="wrap" %}
+```csharp
 QlmLicenseWizard lw = CreateWizard();
 lw.ShowDialog();
 
@@ -49,3 +50,4 @@ private void qlmWizardControl_QlmCancel()
 {
 }
 ```
+{% endcode %}

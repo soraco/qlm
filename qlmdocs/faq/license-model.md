@@ -16,7 +16,7 @@ When creating a license, it is recommended that you set the License Model to per
 
 If you have created a trial license key with expiry criteria, this trial license key cannot be converted into a permanent key simply by changing the License Model. QLM does not support converting a trial or subscription license to a permanent license.
 
-Settings the License Model may have an impact on the behavior of the system specifically in the context of the following [Server Properties](https://support.soraco.co/hc/en-us/articles/207920563-Server-Properties):
+Settings the License Model may have an impact on the behavior of the system specifically in the context of the following [Server Properties](../qlm-license-server/server-properties.md):
 
 * enforceMaxTrialsWhenActivating
 * numberOfTrialLicensesAllowedPerClient

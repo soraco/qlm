@@ -12,4 +12,4 @@ If you elect to use your own identifier, you need to adhere to the following req
 * The minimum length of the Computer ID is 1 character.
 * No spaces are allowed in the Computer ID.
 
-For more information about binding a license using your own unique identifier, [read this article](https://support.soraco.co/hc/en-us/articles/360018676892-How-to-bind-a-license-to-your-own-unique-identifier).
+For more information about binding a license using your own unique identifier, [read this article](how-to-bind-a-license-to-your-own-unique-identifier.md).

@@ -2,7 +2,7 @@
 
 ### Overview
 
-QLM can bind a license to a computer identifier such as a Computer Name, MAC address, Motherboard Serial Number, etc. For more details about all the supported unique identifiers, check out the [ELicenseBinding ](https://support.soraco.co/hc/en-us/articles/360001183583-QlmLicense-LicenseBinding)property.
+QLM can bind a license to a computer identifier such as a Computer Name, MAC address, Motherboard Serial Number, etc. For more details about all the supported unique identifiers, check out the [ELicenseBinding ](../api-reference/qlmlicense/enums/elicensebinding.md)property.
 
 If none of the out-of-the-box unique identifiers meet your requirements, you can use your own unique identifier to bind the license to.
 
@@ -22,7 +22,8 @@ To create your own Computer ID, you can use your own method of extracting a uniq
 
 For example, to bind the license to the ComputerName and the first VolumeSerialNumber:
 
-```
+{% code overflow="wrap" %}
+```csharp
 string GetUniqueIdentifier()
 {
     QlmHardware hw = new QlmHardware();
@@ -43,3 +44,4 @@ lv.ValidateLicenseAtStartup (GetUniqueIdentifier(), ...);
 string args = String.Format ("/settings \"{0}\" /computerID {1}", settingsXmlFile, GetUniqueIdentifier());
 lv.QlmLicenseObject.LaunchProcess ("QlmLicenseWizard.exe", args, true, true);
 ```
+{% endcode %}

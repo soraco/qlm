@@ -8,21 +8,28 @@ You can access the underlying QlmLicense object by calling the LicenseObject() m
 
 **Example:**
 
-Dim license As Object\
-Set license = lv.LicenseObject ()\
-\
-Dim userData as String\
-Dim response as String\
-userData = license.GetUserData("", activationKey, response)
+{% code overflow="wrap" %}
+```vba
+Dim license As Object
+Set license = lv.LicenseObject ()
 
-&#x20;
+Dim userData as String
+Dim response as String
+userData = license.GetUserData("", activationKey, response)
+```
+{% endcode %}
+
+
 
 If you need to create an uninitialized QlmLicense object, you can call the GetQlmLicense() method of the LicenseValidator class.&#x20;
 
 **Example:**
 
+{% code overflow="wrap" %}
+```vba
 Dim license As QlmLicense
-
 Set license = lv.GetQlmLicense
-
 license.DefineProduct (...)
+```
+{% endcode %}
+

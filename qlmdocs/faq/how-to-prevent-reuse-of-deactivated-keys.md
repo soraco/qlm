@@ -8,7 +8,8 @@ If you have implemented your own user interface for activation/deactivation, and
 * After you deactivate a license, call StoreDeactivateKey
 * Before you activate a license, call IsDeactivatedKey. If the key has been deactivated, display an error to the user.
 
-```
+{% code overflow="wrap" %}
+```csharp
 private void StoreDeactivatedKey(QlmLicense license, string computerKey)
 {
  try
@@ -58,3 +59,4 @@ private bool IsDeactivatedKey (QlmLicense license, string newkey)
  return false; 
  }
 ```
+{% endcode %}

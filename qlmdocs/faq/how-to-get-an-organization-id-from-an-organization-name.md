@@ -2,7 +2,8 @@
 
 The code below returns the Organization ID given an Organization Name.
 
-```
+{% code overflow="wrap" %}
+```csharp
 private long GetOrganizationID (string organizationName)
 {
  long orgID = -1;
@@ -40,3 +41,4 @@ private long GetOrganizationID (string organizationName)
  return orgID;
 }
 ```
+{% endcode %}

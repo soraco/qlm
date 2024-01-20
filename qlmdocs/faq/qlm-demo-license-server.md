@@ -4,17 +4,15 @@ For evaluation purposes, we host on our server a **Demo License Server** accessi
 
 All samples are preconfigured to connect and work with the **Demo License Server**.
 
-The only impact when using the Demo License Server is that you need to pretend your product is called “Demo 1.0” (or one of the built-in products). Once you purchase QLM and you setup your own License Server, the changes required to switch to the new License server are limited to configuration changes.
+The only impact when using the Demo License Server is that you need to pretend your product is called “Demo 1.0” (or one of the built-in products). Once you purchase QLM and you set up your own License Server, the changes required to switch to the new License server are limited to configuration changes.
 
 If you create a new product in the evaluation version of Quick License Manager, you will not be able to use our Demo License Server because the License Server will not contain a definition of your new product.&#x20;
 
-If you need to test with your own product, you must install the QLM License Server on your own system.
+If you need to test with your product, you must install the QLM License Server on your system.
 
 The setup program to install the QLM License Server can be found here: %Public%\Public Documents\Quick License Manager\DeployToServer\QlmLicenseServerSetup.exe
 
-[Read instructions ](https://support.soraco.co/hc/en-us/articles/202937924-How-to-install-the-QLM-License-Server)for installing the License Server.
-
-&#x20;
+[Read instructions ](../qlm-license-server/how-to-install-the-qlm-license-server.md)for installing the License Server.
 
 **Connection information to the Demo License Server:**
 

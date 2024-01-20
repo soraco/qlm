@@ -1,8 +1,8 @@
 # How to cleanup an orphaned QLM installation
 
-There are a couple tools that you can use to clean up an orphaned installation. The attached zip file contains both tools.
+There are a couple of tools that you can use to clean up an orphaned installation. The attached zip file contains both tools.
 
-1\. msicleaner.exe - run the exe - If it lists the QLM installation, click Remove to remove it. If it does not list the QLM installation or the remove fails, try the other tool.
+1\. msicleaner.exe - run the exe - If it lists the QLM installation, click Remove to remove it. If it does not list the QLM installation or the removal fails, try the other tool.
 
 &#x20;
 
@@ -20,10 +20,11 @@ There are a couple tools that you can use to clean up an orphaned installation. 
 
 <figure><img src="https://support.soraco.co/attachments/token/oEEZgo9I0Fjmt8upK8Yh5petK/?name=inline11961545.png" alt=""><figcaption></figcaption></figure>
 
-If the above fails, you will need to resort to directly editing the registry to cleanup the installation.
+If the above fails, you will need to resort to directly editing the registry to clean up the installation.
 
 &#x20;
 
-_Note:  We are not the author of these tools and take no responsibility in any issue that may arise in using them._
+_Note:  We are not the author of these tools and take no responsibility for any issue that may arise in using them._
 
-* [uninstallers.zip](https://support.soraco.co/hc/en-us/article\_attachments/115012880706)200 KB [Download](https://support.soraco.co/hc/en-us/article\_attachments/115012880706)
+{% file src="../.gitbook/assets/uninstallers.zip" %}
+
