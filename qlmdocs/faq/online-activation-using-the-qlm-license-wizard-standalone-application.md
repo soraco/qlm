@@ -14,7 +14,7 @@ The QLM License Wizard allows your users to:
 * Display a Privacy Policy page.
 * and much more
 
-The QlmLicenseWizard.exe can be used on any Windows Vista and higher system and requires that Microsoft .NET 4.52 or later be installed on the end-users system.
+The QlmLicenseWizard.exe can be used on any Windows 7 and higher system and requires that Microsoft .NET 4.62 or later be installed on the end-users system.
 
 To use the QlmLicenseWizard.exe application:
 
@@ -27,31 +27,25 @@ To use the QlmLicenseWizard.exe application:
 
 Once the user has activated his license from the QlmLicenseWizard process, the license key is automatically stored in a hidden location on the end-user system.
 
-_Example:_
+_Example_
 
+{% code overflow="wrap" %}
+```csharp
 LicenseValidator lv = new LicenseValidator ();
-
 if (lv.ValidateLicenseAtStartup(computerID, ref needsActivation, ref returnMsg) == false)
-
 {
+    // Launch the QlmLicenseWizard.exe process.
+   string settingsFiles = "Demo 1.0.lw.xml"; // you must specify the full path to the settings file
+   string args = String.Format("/settings \"{0}\"", settingsFile);
 
-&#x20;   // Launch the QlmLicenseWizard.exe process.
-
-&#x20;  string settingsFiles = "Demo 1.0.lw.xml"; // you must specify the full path to the settings file
-
-&#x20;  string args = String.Format("/settings \\"{0}\\"", settingsFile);\
-\
-&#x20;   lv.QlmLicenseObject.LaunchProcess(@"C:\Program Files\Soraco\QuickLicenseMgr\QlmLicenseWizard.exe", args, true, true);
-
-&#x20;   if (lv.ValidateLicenseAtStartup(computerID, ref needsActivation, ref returnMsg) == false)
-
-&#x20;   {
-
-&#x20;       // Exit the application
-
-&#x20;   }
-
+    lv.QlmLicenseObject.LaunchProcess(@"C:\Program Files\Soraco\QuickLicenseMgr\QlmLicenseWizard.exe", args, true, true);
+    if (lv.ValidateLicenseAtStartup(computerID, ref needsActivation, ref returnMsg) == false)
+    {
+        // Exit the application
+    }
 }
+```
+{% endcode %}
 
 The command-line arguments of QlmLicenseWizard.exe are:
 

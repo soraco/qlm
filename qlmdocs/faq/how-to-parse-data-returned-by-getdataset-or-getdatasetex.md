@@ -2,6 +2,7 @@
 
 The dataSet returned by GetDataSet or GetDataSetEx can be parsed as follows:
 
+{% code overflow="wrap" %}
 ```csharp
 string dataSet = string.Empty;            
 string response = string.Empty;
@@ -30,3 +31,4 @@ if (!String.IsNullOrEmpty (dataSet))
     }            
 }
 ```
+{% endcode %}

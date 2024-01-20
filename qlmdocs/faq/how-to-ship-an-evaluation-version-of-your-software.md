@@ -1,6 +1,6 @@
 # How to ship an evaluation version of your software
 
-There are 2 general approaches when issuing trial license keys to your customers. The first and recommended approach is to issue a different trial key for each customer. This enables you to track the customer and automate follow-ups with each customer that downloads your trial. For more details about this approach, check out this [article](https://support.soraco.co/hc/en-us/articles/206488803-How-to-generate-a-trial-key-for-your-application).
+There are 2 general approaches when issuing trial license keys to your customers. The first and recommended approach is to issue a different trial key for each customer. This enables you to track the customer and automate follow-ups with each customer that downloads your trial. For more details about this approach, check out this [article](../how-to/how-to-generate-a-trial-key-for-your-application.md).
 
 &#x20;The alternative approach is to embed a trial key that does not require activation in your application. The same trial key would be used by all customers. The steps below describe how to create the trial key and embed it in your application.
 

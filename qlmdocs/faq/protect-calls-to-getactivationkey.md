@@ -1,8 +1,8 @@
 # Protect calls to GetActivationKey
 
-The GetActivationKey http method is typically called from your server or eCommerce provider. This function should never be called from your application.
+The [GetActivationKey ](../api-reference/qlmlicense/application-methods/getactivationkeyfromlegacykey.md)HTTP method is typically called from your server or eCommerce provider. This function should never be called from your application.
 
-It is recommended to password protect this call and enforce the use of SSL when calling GetActivationKey.
+It is recommended to password-protect this call and enforce the use of SSL when calling GetActivationKey.
 
 To protect calls to GetActivationKey:
 

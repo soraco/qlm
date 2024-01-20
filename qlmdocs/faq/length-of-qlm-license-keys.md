@@ -19,8 +19,8 @@ Depending on what information is packed in the license key, the length of the li
 
 **Starting characters of QLM License Keys**
 
-<table data-header-hidden><thead><tr><th width="165"></th><th></th></tr></thead><tbody><tr><td><strong>Character</strong></td><td><strong>Description</strong></td></tr><tr><td>A</td><td>Permanent Activation Key</td></tr><tr><td>B</td><td>Trial or Subscription Activation Key</td></tr><tr><td>E</td><td>Evaluation key that does not need activation </td></tr><tr><td>C</td><td>Computer Key, bound to the computer name (obsolete)</td></tr><tr><td>U</td><td>Computer key, bound to a user defined identifier</td></tr><tr><td>V</td><td>Computer key, bound to a user defined identifier, with expiry criteria</td></tr><tr><td>G</td><td>A <a href="https://support.soraco.co/hc/en-us/articles/200754034-How-to-use-Generic-license-keys-">generic</a> license key</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="165"></th><th></th></tr></thead><tbody><tr><td><strong>Character</strong></td><td><strong>Description</strong></td></tr><tr><td>A</td><td>Permanent Activation Key</td></tr><tr><td>B</td><td>Trial or Subscription Activation Key</td></tr><tr><td>E</td><td>Evaluation key that does not need activation </td></tr><tr><td>C</td><td>Computer Key, bound to the computer name (obsolete)</td></tr><tr><td>U</td><td>Computer key, bound to a user defined identifier</td></tr><tr><td>V</td><td>Computer key, bound to a user defined identifier, with expiry criteria</td></tr><tr><td>G</td><td>A <a href="../how-to/how-to-use-generic-license-keys.md">generic</a> license key</td></tr></tbody></table>
 
 &#x20;
 
-[Read](https://support.soraco.co/hc/en-us/articles/215683603-License-Key-Types) about the definition of the different license key types.
+[Read](license-key-types.md) about the definition of the different license key types.

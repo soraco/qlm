@@ -3,13 +3,13 @@
 After the user enters a license key for the first time, the license key must be stored on the end user system for subsequent validation.\
 You can store the license keys with your application's configuration files, registry, database or anywhere else that fits your application's model.\
 \
-The QLM API includes 2 methods that can store and read back the keys: StoreKeys and ReadKeys.\
+The QLM API includes 2 methods that can store and read back the keys: [StoreKeys](../api-reference/qlmlicense/client-side-methods/storekeys.md) and [ReadKeys](../api-reference/qlmlicense/client-side-methods/readkeys.md).\
 \
 If you use the StoreKeys and ReadKeys API, or if you use the QLM .NET Users Control or the QLM License Wizard, the activation key and computer key are stored in a file or in the registry on the end user system.
 
 The QlmLicense.StoreKeysLocation property determines whether license information is stored on the file system or in the registry.
 
-By default QLM stores license information at the user level and at the machine level. The QlmLicense.StoreKeysOptions property controls this behavior and can be set to one of these values: EStoreKeysPerUser, EStoreKeysPerMachine, EStoreKeysPerUserAndMachine (default).
+By default QLM stores license information at the user level and at the machine level. The QlmLicense.[StoreKeysOptions ](../api-reference/qlmlicense/enums/estorekeysoptions.md)property controls this behavior and can be set to one of these values: EStoreKeysPerUser, EStoreKeysPerMachine, EStoreKeysPerUserAndMachine (default).
 
 **Storing keys on the file system**
 

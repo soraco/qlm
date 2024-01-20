@@ -27,4 +27,4 @@ A sample showing how to implement floating licenses is provided in the following
 
 %Public%\Documents\Quick License Manager\Samples\QLMEnterprise\DotNet\C#\QlmFloatingLicenseSample
 
-A step-by-step guide to implementing floating licenses in your application is available [here](https://support.soraco.co/hc/en-us/articles/213333283-How-to-implement-floating-licensing-with-QLM-Enterprise).
+A step-by-step guide to implementing floating licenses in your application is available [here](../step-by-step-guides/how-to-implement-floating-licensing-with-qlm-enterprise.md).

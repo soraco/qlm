@@ -1,10 +1,8 @@
 # Should I use the .NET 4.0 or the .NET 2.0 DLLs?
 
-QLM provides 2 sets of .NET DLLs: .NET 2 DLLs and .NET 4 DLLs.
+QLM provides several sets of .NET DLLs that are located in these folders
 
-The .NET 2 DLLs are located in this folder:
-
-C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\\.net 2.0
+C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\netx
 
 QlmControls.dll
 
@@ -12,17 +10,7 @@ QlmLicenseLib.dll
 
 QlmLicenseWizard.exe
 
-The .NET 4 DLLs are located in this folder:
 
-C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\\.net 4.0
-
-QlmControls.dll
-
-QlmLicenseLib.dll
-
-QlmLicenseWizard.exe
-
-&#x20;
 
 The following table shows which version of .NET is preinstalled on Windows and which QLM DLL to use in each case. You can find the full article [here](https://en.wikipedia.org/wiki/.NET\_Framework\_version\_history).
 
@@ -35,4 +23,4 @@ The following table shows which version of .NET is preinstalled on Windows and w
 
 &#x20;
 
-For example, if you install your application on a Windows 8.1 operating system, it is preferred to use the QLM .NET 4.0 DLLs. However, you can still use the .NET 2.0 DLLs on Windows 8.1 if you install .NET 2.0 (or 3.0 or 3.5) on the customers system.
+For example, if you install your application on a Windows 8.1 operating system, it is preferred to use the QLM .NET 4.0 DLLs. However, you can still use the .NET 2.0 DLLs on Windows 8.1 if you install .NET 2.0 (or 3.0 or 3.5) on the customer's system.

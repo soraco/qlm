@@ -49,4 +49,4 @@ When protecting a cross-platform app with License Files, in the event a  client 
 
 &#x20;4**. From the QLM API**
 
-You can also call the [ValidateLicenseHttp](https://support.soraco.co/hc/en-us/articles/207606753-ValidateLicenseHttp) method to download the QLM License file.
+You can also call the [ValidateLicenseHttp](../api-reference/http-methods/validatelicensehttp.md) method to download the QLM License file.

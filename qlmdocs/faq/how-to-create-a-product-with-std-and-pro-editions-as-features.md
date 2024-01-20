@@ -7,8 +7,7 @@ When you define such as product in QLM, you can define a single product with dif
 * Go to the Define Products tab
 * Click Add to add a new product and enter your product name, version, etc.
 * In the Feature section:
-*
-  * Click Add (on the right hand side) to add a new feature
+  * Click Add (on the right-hand side) to add a new feature
   * Set: Feature Set: 0
   * Set: Feature Name: STD
   * Click Add again
@@ -36,6 +35,6 @@ To determine if a feature is enabled, you need to:
 
 * Call DefineProduct to define your product (this is typically done by the generated LicenseValidator class)
 * Call ValidateLicense to ensure your license is valid (this is typically done by calling LicenseValidator.ValidateLicenseAtStartup).
-* Call [IsFeatureEnableEx](https://support.soraco.co/hc/en-us/articles/207611713-QlmLicense-IsFeatureEnabledEx) to determine if the feature is enabled.
+* Call [IsFeatureEnableEx](../api-reference/qlmlicense/client-side-methods/isfeatureenabledex.md) to determine if the feature is enabled.
 
-Note that features can also be enabled when generating a license key from your ecommerce provider as described [here](https://support.soraco.co/hc/en-us/articles/204160380-What-is-the-syntax-of-is-features).
+Note that features can also be enabled when generating a license key from your ecommerce provider as described [here](what-is-the-syntax-of-is\_features.md).

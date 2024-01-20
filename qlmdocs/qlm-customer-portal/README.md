@@ -1,4 +1,4 @@
-# QLM Customer Portal
+# ☁ QLM Customer Portal
 
 As of QLM v14.1, you can provide your customers access to a customer portal that allows them to manage their licenses and users. The QLM Customer Portal is only available to customers who purchased the QLM Portal.
 

@@ -2,7 +2,7 @@
 
 In order to debug an application that uses the QLM DLL, you need to have a valid license of QLM on the computer from which you are debugging. Evaluation licenses are able to debug applications as long as the license has not expired. Note that evaluation licenses cannot be used for development purposes after you purchased QLM.
 
-[Read ](https://support.soraco.co/hc/en-us/sections/201579136-Legal-stuff)QLM's licensing terms to determine how many QLM licenses you need to purchase.
+[Read ](../legal-stuff/)QLM's licensing terms to determine how many QLM licenses you need to purchase.
 
 Additionally, executing the same code outside the context of a debugger should work fine. QLM assumes that if you are executing code in the context of a debugger, you must be a developer and therefore, as per our EULA, you require a QLM license.\
 \

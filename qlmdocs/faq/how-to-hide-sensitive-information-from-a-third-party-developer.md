@@ -2,13 +2,13 @@
 
 ### Overview
 
-If you hired a third-party developer to implement the licensing component of your software, you may want to hide sensitive information from the developer to prevent the developer from potentially accessing your License Server and generating license keys without your consent.
+If you hire a third-party developer to implement the licensing component of your software, you may want to hide sensitive information from the developer to prevent the developer from potentially accessing your License Server and generating license keys without your consent.
 
-Note that as per [EULA, ](http://soraco.co/products/qlm/QlmLicense.pdf) a developer requires a QLM license in order to work on the integration of QLM with your product. The third-party can either purchase their own QLM license or you could purchase a yearly/monthly subscription for your developer.
+Note that as per [EULA, ](http://soraco.co/products/qlm/QlmLicense.pdf) a developer requires a QLM license to work on the integration of QLM with your product. The third party can either purchase their own QLM license or you could purchase a yearly/monthly subscription for your developer.
 
 ### Sensitive Information
 
-The important information that needs to be protected  is License Server information and Product Information.
+The important information that needs to be protected is License Server information and Product Information.
 
 #### License Server
 
@@ -18,7 +18,7 @@ In addition to SSL encryption, QLM uses a proprietary encryption mechanism to en
 
 #### Products
 
-Each product has a set of encryption keys that are used to encode and encrypt information in the process of creating the license key and to generate digitally signed license files. These encryption keys are found in the Encryption Keys tab when defining your product.
+Each product has a set of encryption keys that are used to encode and encrypt information in the process of creating the license key and generating digitally signed license files. These encryption keys are found in the Encryption Keys tab when defining your product.
 
 These encryption keys should never be divulged to the third-party developer.
 
@@ -26,15 +26,15 @@ These encryption keys should never be divulged to the third-party developer.
 
 ### License Server Protection
 
-We recommend that you never give your third-party developer access to your live License Server. Your developer should install a local QLM License Server that will be used for development purposes. The procedure to install a local QLM License Server can be found [here](https://support.soraco.co/hc/en-us/articles/202937924-How-to-install-the-QLM-License-Server).&#x20;
+We recommend that you never give your third-party developer access to your live License Server. Your developer should install a local QLM License Server that will be used for development purposes. The procedure to install a local QLM License Server can be found [here](../qlm-license-server/how-to-install-the-qlm-license-server.md).&#x20;
 
 By installing a local QLM License Server, your developer will not require knowledge of your live server's CommunicationEncryptionKey and AdminEncryptionKey.
 
 ### Product Protection
 
-In order to properly integrate QLM with your application, your developer needs to create a product that mimics the characteristics of your product but with a different set of encryption keys.
+To properly integrate QLM with your application, your developer needs to create a product that mimics the characteristics of your product but with a different set of encryption keys.
 
-Using the QLM Management Console installed on the developer's computer, he/she would therefore need to create a product that has the following identical attributes as your real product:
+Using the QLM Management Console installed on the developer's computer, he/she would therefore need to create a product that has the following identical attributes to your real product:
 
 * Product Name
 * Major version
@@ -61,7 +61,7 @@ QLM.LicenseValidator lv = new QLM.LicenseValidator(xmlSettingsFile);
 
 Once the developer completes the integration work, the developer will deliver two files related to licensing: (a) the XML Settings file and (b) the LicenseValidator class.
 
-The following important attributes the XML Settings file will need to be updated:
+The following important attributes in the XML Settings file will need to be updated:
 
 * EQlmCommunicationEncryptionKey (encrypted)
 * EQlmFloatingDbPassword (encrypted)
@@ -74,7 +74,7 @@ To update the XML Settings file, you must open the file in a text editor and upd
 
 For encrypted settings, you remove the E prefix from the attribute and write the non-encrypted value to the XML file. For example, to update EQlmCommunicationEncryptionKey , you would rename EQlmCommunicationEncryptionKey  to QlmCommunicationEncryptionKey and set the non-encrypted value.
 
-Finally, to deploy the file to your own environment so that you can edit the settings in the QLM Management Console / Protect Your Application wizard, you must copy the file to the following location:
+Finally, to deploy the file to your environment so that you can edit the settings in the QLM Management Console / Protect Your Application wizard, you must copy the file to the following location:
 
 %appdata%\Soraco\Quick License Manager\LicenseWizard\\\<GUID>
 

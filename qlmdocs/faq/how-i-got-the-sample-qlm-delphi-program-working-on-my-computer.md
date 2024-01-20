@@ -1,6 +1,6 @@
 # How I got the Sample QLM Delphi program working on my computer
 
-This article is now superseded by an improved article found [here](https://support.soraco.co/hc/en-us/articles/360000191503-How-to-protect-an-Embarcadero-Delphi-application-with-QLM).
+This article is now superseded by an improved article found [here](../step-by-step-guides/protect-an-embarcadero-delphi-application-with-qlm.md).
 
 \[This is a contribution from one of our customer]
 

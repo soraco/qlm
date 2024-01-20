@@ -14,10 +14,10 @@ At the day of the expiry of the license, you can extend the license by another p
 
 3\. From the API, by calling the RenewSubscription method.
 
-4\. Through our [eCommerce integration.](https://support.soraco.co/hc/en-us/articles/360048854711-Integrated-eCommerce-Providers)
+4\. Through our [eCommerce integration.](integrated-ecommerce-providers.md)
 
 Once the QLM server has the new subscription expiry date, the customer must contact the server to activate this new expiry date. This can be done in several ways:
 
-1\. By enabling [server-side validation](https://support.soraco.co/hc/en-us/articles/360025213372-When-does-a-QLM-protected-application-connect-to-the-License-Server-), your application connects to the server and reactivates the license automatically without any user input.&#x20;
+1\. By enabling [server-side validation](server-side-license-validation.md), your application connects to the server and reactivates the license automatically without any user input.&#x20;
 
 2\. The customer simply re-activates his license using the same registration form that was used to activate the license the first time (this could be the QLM License Wizard, the QLM .NET controls or the license registration form that you created).

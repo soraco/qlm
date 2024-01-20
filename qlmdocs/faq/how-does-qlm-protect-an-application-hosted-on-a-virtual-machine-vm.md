@@ -32,7 +32,7 @@ To decrement the Activation Count, locate the license in the QLM Management Cons
 
 Selecting the proper license binding is essential for protecting your application on a virtual machine. Many of the traditional unique computer identifiers are not well suited for virtual machines. For example, a hard disk serial number could remain the same when a virtual machine is cloned.
 
-QLM includes 2 [license bindings](https://support.soraco.co/hc/en-us/articles/360001183583-QlmLicense-LicenseBinding) that are well suited for virtual machines:
+QLM includes 2 [license bindings](../api-reference/qlmlicense/enums/elicensebinding.md) that are well suited for virtual machines:
 
 * SystemManagementBiosUuid: unique identifier of a virtual machine (UUID)
 * QlmUniqueSystemIdentifier1: QLM smart identifier (available as of QLM v11.1). This new license binding type automatically detects if the client system is a virtual machine and uses the UUID as a hardware identifier.

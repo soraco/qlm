@@ -4,13 +4,14 @@ description: How to update the ClientVersion / ApplicationVersion
 
 # How to update the ClientVersion / ApplicationVersion
 
-The ClientVersion property on the server side stores the specific version of your application that the customer is running. The ClientVersion is typically set upon activation of the license by setting the [ApplicationVersion](https://support.soraco.co/hc/en-us/articles/4402730051604-How-to-set-the-Application-Version-dynamically) property&#x20;
+The ClientVersion property on the server side stores the specific version of your application that the customer is running. The ClientVersion is typically set upon activation of the license by setting the [ApplicationVersion](../how-to/how-to-set-the-application-version-dynamically.md) property&#x20;
 
 To force the ClientVersion to be updated, you must trigger a reactivation of the license by calling ReactivateLicense.
 
-**C# Example:**
-
-```
+{% tabs %}
+{% tab title="C#" %}
+{% code overflow="wrap" %}
+```csharp
 string dataSet;
 string response;
 string clientVersion = "1.0.2";
@@ -22,10 +23,12 @@ if (li.ClientVersion != clientVersion)
     lv.QlmLicenseObject.ReactivateLicense (string.Empty, lv.ActivationKey, Environment.MachineName, out response);
 }
 ```
+{% endcode %}
+{% endtab %}
 
-**VB.NET Example**
-
-```
+{% tab title="VB.NET" %}
+{% code overflow="wrap" %}
+```vbnet
 Dim dataSet As String
 Dim response As String
 Dim clientVersion As String
@@ -42,3 +45,6 @@ If li.ClientVersion <> clientVersion Then
     lv.QlmLicenseObject.ReactivateLicense(String.Empty, lv.ActivationKey, Environment.MachineName, response)
 End If
 ```
+{% endcode %}
+{% endtab %}
+{% endtabs %}

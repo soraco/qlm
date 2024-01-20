@@ -2,7 +2,7 @@
 
 This article covers extending a subscription when the user does not have internet access (offline mode).
 
-For more details about how to implement subscription licensing with QLM, check [this article.](https://support.soraco.co/hc/en-us/articles/200754094-How-to-implement-software-subscription)
+For more details about how to implement subscription licensing with QLM, check [this article.](how-to-implement-software-subscription.md)
 
 To extend a subscription offline:
 

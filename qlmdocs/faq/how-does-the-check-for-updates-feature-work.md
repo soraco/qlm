@@ -22,4 +22,4 @@ Example using GetLatestVersionHttp:
 
 [https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx](https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx)/GetLatestVersionHttp?is\_productid=1\&is\_majorversion=1\&is\_minorversion=0
 
-If you are using the QLM Maintenance Plan feature, you can use the [GetLatestEligibleVersion](https://support.soraco.co/hc/en-us/articles/208630416-QlmLicense-GetLatestEligibleVersion) function to get the latest version a given customer is entitled to, based on their Maintenance Plan Expiry Date.
+If you are using the QLM Maintenance Plan feature, you can use the [GetLatestEligibleVersion](../api-reference/qlmlicense/application-methods/getlatesteligibleversion.md) function to get the latest version a given customer is entitled to, based on their Maintenance Plan Expiry Date.

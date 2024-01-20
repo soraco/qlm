@@ -27,9 +27,9 @@ To generate license keys with QLM Professional, click on the **Manage Keys** tab
 
 The simplest way to integrate QLM Pro into your application is to use the QLM .NET Wizard Control or the QLM License Wizard standalone application.
 
-The QLM .NET License Wizard User Control provides a ready-to-go license activation form. If your application is developed in .NET WinForm or WPF, check out this [tutorial](https://support.soraco.co/hc/en-us/articles/210759346-Protect-a-WinForms-app-with-the-QLM-License-Wizard) for a step by step instructions on how to integrate using the QLM .NET Control.
+The QLM .NET License Wizard User Control provides a ready-to-go license activation form. If your application is developed in .NET WinForm or WPF, check out this [tutorial](../step-by-step-guides/protect-a-winforms-app-with-the-qlm-license-wizard.md) for a step by step instructions on how to integrate using the QLM .NET Control.
 
-If your application is not a .NET Windows application, you can use the QLM License Wizard standalone application to manage the license activation process. For a tutorial on how to use the QLM License Wizard, [click here](http://www.youtube.com/watch?v=FlBFux30IlM).
+If your application is not a .NET Windows application, you can use the QLM License Wizard standalone application to manage the license activation process. For a tutorial on how to use the QLM License Wizard, [click here](https://youtu.be/XLbqLO2CSlk).
 
 Of course, you can always create your own license registration form and use our extensive API to manage license validation and activation.
 

@@ -31,4 +31,4 @@ QLM supports .NET 2.0 and .NET 4.0.  There are 2 versions of the QlmLicenseLib.d
 
 We recommend you use the .NET 4.0 version as it has become the standard with Windows 10.
 
-* [register.bat](https://support.soraco.co/hc/en-us/article\_attachments/201493974)510 Bytes [Download](https://support.soraco.co/hc/en-us/article\_attachments/201493974)
+{% file src="../.gitbook/assets/register.bat" %}

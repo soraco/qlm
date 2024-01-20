@@ -45,7 +45,7 @@ When creating an email template in QLM, you can use the following variables:
 * Zip
 * City
 * Notes
-* AuthorizationCode (when using activation by autorization code)
+* AuthorizationCode (when using activation by authorization code)
 
 &#x20;
 
@@ -66,9 +66,9 @@ _Soraco Technologies_
 
 The following advanced variables are also available:
 
-%LicenseFile%: Add the xml license file as an attachment to the email. This variable can be placed anywhere in the body of the email.
+%LicenseFile%: Add the XML license file as an attachment to the email. This variable can be placed anywhere in the body of the email.
 
-%Properties%: Add the product properties xml file as an attachment to the email. This variable can be placed anywhere in the body of the email.
+%Properties%: Add the product properties XML file as an attachment to the email. This variable can be placed anywhere in the body of the email.
 
 As of QLM v11.1, you can also display individual **Product Properties** in an email template.
 
@@ -76,6 +76,6 @@ The syntax for displaying the value of a product property is: %Properties.catego
 
 #### Troubleshooting
 
-If a variable is not getting replaced as expected, the most common reason is that HTML formatting tags are interfering with the variable name. When parsing an email template to replace variables, QLM looks for variables enclosed with the % delimiter. HTML formatting tags might inadvertently be inserted in the variable name so that a variable such as %ActivationKey% may actually appear in the HTML document as %\<strong>ActivationKey\</strong>%.
+If a variable is not getting replaced as expected, the most common reason is that HTML formatting tags are interfering with the variable name. When parsing an email template to replace variables, QLM looks for variables enclosed with the % delimiter. HTML formatting tags might inadvertently be inserted in the variable name so that a variable such as %ActivationKey% may appear in the HTML document as %\<strong>ActivationKey\</strong>%.
 
-To determine if this is the issue, you can view the raw html by opening the email template directly with a text editor. Email Templates are stored in %appdata%\Soraco\Quick License Manager\EmailTemplates.\<SiteName>. If you detect that the variable has been clobbered with html tags, simply fix the variable directly in the text editor and save the file.
+To determine if this is the issue, you can view the raw HTML by opening the email template directly with a text editor. Email Templates are stored in %appdata%\Soraco\Quick License Manager\EmailTemplates.\<SiteName>. If you detect that the variable has been clobbered with HTML tags, simply fix the variable directly in the text editor and save the file.
