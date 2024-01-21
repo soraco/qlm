@@ -473,7 +473,7 @@
   * [QLM Document Protection](legal-stuff/qlm-document-protection.md)
   * [QLM SDK Protection Terms](legal-stuff/qlm-sdk-protection-terms.md)
 * [📹 Video Tutorials](video-tutorials.md)
-* * [🔊 Announcements](announcements/README.md)
+* [🔊 Announcements](announcements/README.md)
   * [What's new in QLM v17 and upgrade procedure](announcements/whats-new-in-qlm-v17-and-upgrade-procedure.md)
   * [What's new in QLM v16 and Upgrade Procedure](announcements/whats-new-in-qlm-v16-and-upgrade-procedure.md)
   * [What's new in QLM v15 and Upgrade Procedure](announcements/whats-new-in-qlm-v15-and-upgrade-procedure.md)
