@@ -6,7 +6,7 @@
 
 * Completely redesigned workflow.
 * Includes Check for Updates to notify your customer of the latest eligible version based on the maintenance plan.
-* New user registration page that can automatically generate a trial key or email the user a trial key.
+* A new user registration page that can automatically generate a trial key or email the user a trial key.
 * Download and launch your setup from within the wizard.
 * Offline Activation via a QR code scanned from a mobile device.
 * Offline Deactivation via a QR code scanned from a mobile device.
@@ -19,13 +19,13 @@
 
 **QLM Pro**
 
-* Create your own custom [Product Properties](https://support.soraco.co/hc/en-us/articles/115000785306) and set them when issuing a license key.
+* Create your own custom [Product Properties](../how-to/product-properties.md) and set them when issuing a license key.
 * Simplified search in the QLM Management Console with the new \<Common Fields> tag that searches across multiple common fields.
 * LicenseValidator class now includes code to publish Analytics to the License Server.
 * LicenseValidator class now includes code to retrieve custom Product Properties from the License Server.
 * New APIs: ReadCookie and StoreCookie allow you to store custom data in the same location as the QLM license keys.
 * New option to duplicate a License Server profile in Manage Keys / Sites
-* Integration with ConfuserEx obuscator
+* Integration with ConfuserEx Obuscator
 * Added support for specifying how many days a system can continue running without contacting the License Server (MaxDaysOffline, OfflinePeriodExceededAction).
 * All QLM License Server methods now return an error code. The possible error codes are defined in the enum EServerErrorCode. The LicenseInfo object contains a new property called ServerErrorCode which will be populated after calling ParseResults.
 
@@ -34,7 +34,7 @@
 * Protection of Electron / Javascript apps
 * Introduced the concept of product bundles. A bundle is a collection of products that can be installed on the same system. Users can manage license keys associated to a bundle by specifying the /bundle argument to the QLMLicenseWizard.exe or setting the QlmBundleFile property of the wizard control. A bundle file can be created from the Define Products page.
 * When checking out a floating license node for offline usage, you can now specify the duration of the check-out up to a maximum value.
-* Added support for protecting cross platform Qt C++ applications.
+* Added support for protecting cross-platform Qt C++ applications.
 * New APIs: ReadInstallID, WriteInstallID, UpdateLastAccessedDate
 * Added the following Analytics charts:
   * Conversion Flow
@@ -42,7 +42,7 @@
   * Installs per Day
   * Last Accessed per day
   * Actual Usage per customer
-  * Average usager by all customers
+  * Average usage by all customers
   * Products
   * Product Versions
   * Operating Systems
@@ -76,22 +76,22 @@
 * Added the ability to specify the maximum amount of subscription keys that can be created by a Portal user.
 * Added support for attaching "Product Properties" to an email.
 * Added the ability to generate the license file or product properties file from the Portal.
-* Added 2 new User Group properties to enable the privilege of settings Features and Product Properties in the Portal.
+* Added 2 new User Group properties to enable the privilege of setting Features and Product Properties in the Portal.
 
 **Upgrade Procedure**
 
-To uprade to QLM v10, you must first install the QLM Management Console on your client system by running the qlmsetup10.exe. To determine if you are eligible to a v10 upgrade, you may contact us or click the About tab / Check for updates. You can download QLM v10 from our [web site](https://soraco.co/quick-license-manager/qlm-downloads/).
+To upgrade to QLM v10, you must first install the QLM Management Console on your client system by running the qlmsetup10.exe. To determine if you are eligible for a v10 upgrade, you may contact us or click the About tab / Check for updates.&#x20;
 
 **QLM License Server Upgrade**
 
-If we are hosting your QLM License Server, contact us to upgrade the License Server. If you are hosting your own License server, there are 2 ways to upgrade: in-place or in parallel. In-place upgrade will replace your existing server with the new one while the parallel upgrade allows you to run both servers in parallel until you are ready to switch. If you are upgrading from QLM v7+, the in-place upgrade is safe. If you are upgrading from earlier versions, we recommend the parallel upgrade.
+If we are hosting your QLM License Server, contact us to upgrade the License Server. If you are hosting your License server, there are 2 ways to upgrade: in-place or in parallel. An in-place upgrade will replace your existing server with the new one while the parallel upgrade allows you to run both servers in parallel until you are ready to switch. If you are upgrading from QLM v7+, the in-place upgrade is safe. If you are upgrading from earlier versions, we recommend the parallel upgrade.
 
 **In-Place Upgrade**
 
 1. Update the DLLs on your web server with the DLLs located in %Public%\Documents\Quick License Manager\DeployToServer\QlmWebService\bin
 2. If you have not executed the sql2005.aspnet.sql script when you created your QLM 5.x DB, this script is now required. The script is located in%Public%\Documents\Quick License Manager\DeployToServer\QlmWebService\Db\sql2005.aspnet.sql. This step is not required if you were running QLM v7+.
-3. Ensure the Application Pool associated to the QLM License Server is set to use .NET 4.0.
-4. Once the License Server is updated, start the QLM Management Console, go to Sites and click on Upgrade Database Schema.
+3. Ensure the Application Pool associated with the QLM License Server is set to use .NET 4.0.
+4. Once the License Server is updated, start the QLM Management Console, go to Sites, and click on Upgrade Database Schema.
 5. If you are using our eCommerce integration, do the following:
    * Go to the Manage Keys tab
    * Click on the Commerce Providers item in the toolbar
@@ -106,7 +106,7 @@ To upgrade the QLM License Server, we recommend that you create a new virtual di
 1. Create a new folder called qlm10 on your web server in the same parent folder as your existing QLM License Server.
 2. Copy the files located in %Public%\Documents\Quick License Manager\DeployToServer\QlmWebService to qlm10
 3. If you have not executed the sql2005.aspnet.sql script when you created your QLM 5.x DB, this script is now required. The script is located in%Public%\Documents\Quick License Manager\DeployToServer\QlmWebService\Db\sql2005.aspnet.sql. This step is not required if you were running QLM v7+.
-4. Copy the following web.config settings from your exising QLM License Server web.config file to the new one:
+4. Copy the following web.config settings from your existing QLM License Server web.config file to the new one:
    1. connectionStrings&#x20;
    2. communicationEncryptionKey
    3. adminEncryptionKey
@@ -154,12 +154,12 @@ To upgrade the QLM License Server, we recommend that you create a new virtual di
 
 To upgrade your source code to QLM v10:
 
-* If you are using the QLM License Wizard, be it the .NET Control or the standalone executable, you will need to customize the look & feel of the control and regenerate the settings xml file. Note that as of QLM v9, only one settings file is required. The UI Settings xml file is no longer required since all settings are stored in a single file.
-* You may want to upgrade your LicenseValidator class to the new version. The new version contains additional code to optionally perform server side validation. It also supports a seamless reactivation process for subscriptions. The new LicenseValidator class is currently available for C# VB.NET, VBA and C++.
-* If you have implemented floating licences, it is recommended that you review the new QLM Enterprise sample and follow the same approach as the new sample.&#x20;
+* If you are using the QLM License Wizard, be it the .NET Control or the standalone executable, you will need to customize the look & feel of the control and regenerate the settings XML file. Note that as of QLM v9, only one settings file is required. The UI Settings XML file is no longer required since all settings are stored in a single file.
+* You may want to upgrade your LicenseValidator class to the new version. The new version contains additional code to optionally perform server-side validation. It also supports a seamless reactivation process for subscriptions. The new LicenseValidator class is currently available for C# VB.NET, VBA, and C++.
+* If you have implemented floating licenses, it is recommended that you review the new QLM Enterprise sample and follow the same approach as the new sample.&#x20;
 
 &#x20;
 
 **IMPORTANT -** QLM Engine Version
 
-If you are upgrading from QLM v4 or earlier and you have issued license keys with QLM Engine version 4.0.00, 3.0.00, 2.4.11 or 2.4.07, we highly recommend that you upgrade your customers license keys to use QLM Engine version 5.0.00.
+If you are upgrading from QLM v4 or earlier and you have issued license keys with QLM Engine version 4.0.00, 3.0.00, 2.4.11, or 2.4.07, we highly recommend that you upgrade your customer's license keys to use QLM Engine version 5.0.00.

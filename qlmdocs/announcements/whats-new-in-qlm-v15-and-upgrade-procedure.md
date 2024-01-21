@@ -2,22 +2,22 @@
 
 ## **What's new in QLM v15**
 
-QLM v15 was released on April 30, 2021. Note that our major releases are not loaded with a massive amount of new features. Features are added gradually throughout the year and released when they are ready. To learn more about our release process, [click here](https://support.soraco.co/hc/en-us/articles/207989373-Iterative-Releases).
+QLM v15 was released on April 30, 2021. Note that our major releases are not loaded with a massive amount of new features. Features are added gradually throughout the year and released when they are ready. To learn more about our release process, [click here](../blog/iterative-releases.md).
 
 ### QLM License Wizard
 
-* [The wizard can now activate a license by email using 3rd party authentication providers such as Google, Facebook and Azure AD](https://support.soraco.co/hc/en-us/articles/360059484572).
+* [The wizard can now activate a license by email using 3rd party authentication providers such as Google, Facebook and Azure AD](../how-to/qlm-license-wizard-activation-by-email-using-3rd-party-authentication.md).
 * Activation by email is now supported for multiple activation license keys.
 * Activation via a QR code can now download the license file to the mobile device.
-* [In Check for Updates, the setup package can now be downloaded from Google Drive or One Drive.](https://support.soraco.co/hc/en-us/articles/360059545432)
+* [In Check for Updates, the setup package can now be downloaded from Google Drive or One Drive.](../how-to/qlm-license-wizard-download-latest-version-from-a-cloud-drive.md)
 * New dark colour theme for the QLM License wizard. To use this theme, copy the settings from the Demo Enterprise product.
 
 ![mceclip1.png](https://support.soraco.co/hc/article\_attachments/360094052611/mceclip1.png)
 
 ### &#x20;Cross-Platform
 
-* [Added support for JUCE C++.](https://support.soraco.co/hc/en-us/articles/360059949352)
-* [Added support for Qt C++ 6.x.](https://support.soraco.co/hc/en-us/articles/360059948632)
+* [Added support for JUCE C++.](../step-by-step-guides/protect-a-juce-application.md)
+* [Added support for Qt C++ 6.x.](../step-by-step-guides/protect-a-qt-c++-cross-platform-application.md)
 
 ### QLM Management Console&#x20;
 
@@ -28,21 +28,21 @@ QLM v15 was released on April 30, 2021. Note that our major releases are not loa
 
 ### Scheduled Tasks
 
-* [Scheduled tasks can now involve webhook URLs.](https://support.soraco.co/hc/en-us/articles/360060160132) Available in QLM Enterprise only.
+* [Scheduled tasks can now involve webhook URLs.](../how-to/how-to-automatically-invoke-a-webhook-using-scheduled-tasks.md) Available in QLM Enterprise only.
 * A "Run Now" button allows running the task within 60 seconds.
 
 ### QLM Customer Site
 
-* You can now configure a custom URL to detect disposable email accounts and reject them. To enable this feature, you must set server property disposableEmailDetectorUrl to the URL of a service that detects disposable emails. Example: [https://disposable.debounce.io](https://disposable.debounce.io/)
-* You can now provide server properties as arguments to the QLM Trial Registration Form by using the is\_pp command-line argument. Details of the syntax are described [here](https://support.soraco.co/hc/en-us/articles/115000785306-How-to-use-Product-Properties).
+* You can now configure a custom URL to detect disposable email accounts and reject them. To enable this feature, you must set the server property disposableEmailDetectorUrl to the URL of a service that detects disposable emails. Example: [https://disposable.debounce.io](https://disposable.debounce.io/)
+* You can now provide server properties as arguments to the QLM Trial Registration Form by using the is\_pp command-line argument. Details of the syntax are described [here](../how-to/product-properties.md).
 
 ### Miscellaneous updates
 
-* For multiple activation license keys, you can now associate a user to an activation.
-* A new Organization level setting called 'AllowOrganizationUsersToAcquireLicenses' determines if a user that belongs to an organization is allowed to activate a license using an email address.
+* For multiple activation license keys, you can now associate a user with an activation.
+* A new Organization level setting called 'AllowOrganizationUsersToAcquireLicenses' determines if a user who belongs to an organization is allowed to activate a license using an email address.
 * Server Properties of type password are now encrypted at rest.
-* New [Server Properties](https://support.soraco.co/hc/en-us/articles/207920563):
-  * options/allowActivatingOlderVersion: Allow users to activate a license of a product version smaller than the original one. For example, if a customer purchases Version 2.0, setting this property to true will allow the user to activating their license for Version 1.0.
+* New [Server Properties](../qlm-license-server/server-properties.md):
+  * options/allowActivatingOlderVersion: Allow users to activate a license of a product version smaller than the original one. For example, if a customer purchases Version 2.0, setting this property to true will allow the user to activate their license for Version 1.0.
   * authentication/authentication\_wizard\_facebookAppId
   * authentication/authentication\_wizard\_facebookAppSecret
   * authentication/authentication\_wizard\_facebookOAuthRedirectURI
@@ -55,7 +55,7 @@ QLM v15 was released on April 30, 2021. Note that our major releases are not loa
   * customerSite/disposableEmailDetectorUrl&#x20;
 * Bug fixes.
 
-As of QLM v14, we no longer support new installations with MS-Access as a database engine. If you are currently using MS-Access, you can continue using it and can safely upgrade to QLM v15. You should however consider migrating to SQL Server. You can use the QLM Backup/Restore functionality to migrate your data from MS-Access to SQL Server as described in this [article](https://support.soraco.co/hc/en-us/articles/202795740-How-to-migrate-a-QLM-License-Server-to-another-server).
+As of QLM v14, we no longer support new installations with MS-Access as a database engine. If you are currently using MS-Access, you can continue using it and can safely upgrade to QLM v15. You should however consider migrating to SQL Server. You can use the QLM Backup/Restore functionality to migrate your data from MS-Access to SQL Server as described in this [article](../qlm-license-server/how-to-migrate-a-qlm-license-server-to-another-server.md).
 
 ### Upgrade Procedure
 
@@ -111,7 +111,7 @@ If you installed QLM by running the QlmLicenseServerSetup.exe, you can simply re
 To upgrade your source code to QLM v15:
 
 * If you are upgrading from QLMv9 or earlier and if you are using the QLM License Wizard, be it the .NET Control or the standalone executable, you will need to customize the look & feel of the control and regenerate the settings XML file. Note that as of QLM v9, only one settings file is required. The UI Settings XML file is no longer required since all settings are stored in a single file.
-* If you have implemented floating licences, it is recommended that you review the new QLM Enterprise [sample](https://support.soraco.co/hc/en-us/articles/360041959372-How-to-support-floating-and-node-locked-licences-in-the-same-app) and follow the same approach as the new sample.&#x20;
+* If you have implemented floating licences, it is recommended that you review the new QLM Enterprise [sample](../step-by-step-guides/how-to-support-floating-and-node-locked-licences-in-the-same-app.md) and follow the same approach as the new sample.&#x20;
 
 **IMPORTANT -** QLM Engine Version
 

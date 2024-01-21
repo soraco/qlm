@@ -6,7 +6,7 @@
 * First version of our Analytics feature for QLM Enterprise. Monitor who installs your software, when they uninstall it, what version they are running, what OS, etc.
 * User Interface improvements
 
-Is this all? This is just a start. We will be gradually adding many more features to QLM v7. For more details about our development process, read this [article](http://soracoinc.com/Blog/tabid/102/EntryId/7/Iterative-Releases.aspx).
+Is this all? This is just a start. We will be gradually adding many more features to QLM v7. For more details about our development process, read this [article](../blog/iterative-releases.md).
 
 &#x20;**Upgrade Procedure:**
 

@@ -2,11 +2,11 @@
 
 ## **What's new in QLM v14**
 
-QLM v14 was released on May 2, 2020. Some of the features listed below may occur in a minor update following the initial v14 release.Note that our major releases are not loaded with a massive amount of new features. Features are added gradually throughout the year and released when they are ready. To learn more about our release process, [click here](https://support.soraco.co/hc/en-us/articles/207989373-Iterative-Releases).
+QLM v14 was released on May 2, 2020. Some of the features listed below may occur in a minor update following the initial v14 release. Note that our major releases are not loaded with a massive amount of new features. Features are added gradually throughout the year and released when they are ready. To learn more about our release process, [click here](../blog/iterative-releases.md).
 
 ### QLM License Wizard
 
-* The wizard can now allow the end-user to select whether to activate a node-locked license or a floating license. For more details, review the [new sample application.](https://support.soraco.co/hc/en-us/articles/360041959372-How-to-support-floating-and-node-locked-licences-in-the-same-app)
+* The wizard can now allow the end-user to select whether to activate a node-locked license or a floating license. For more details, review the [new sample application.](../step-by-step-guides/how-to-support-floating-and-node-locked-licences-in-the-same-app.md)
 * The wizard can now automatically download a digitally signed license file when a license is activated online.&#x20;
 * The wizard can now automatically download a digitally signed product properties file when a license is activated online.&#x20;
 
@@ -16,7 +16,7 @@ QLM v14 was released on May 2, 2020. Some of the features listed below may occur
 
 ### QLM Customer Portal (post-release June 2020)
 
-* Brand new Customer Portal allows your customers to manage their licenses from your web site.
+* Brand new Customer Portal allows your customers to manage their licenses from your website.
 
 ### &#x20;Cross-Platform
 
@@ -25,11 +25,11 @@ QLM v14 was released on May 2, 2020. Some of the features listed below may occur
 ### Email Notifications
 
 * Improved built-in email templates.
-* Improved process of importing [external email templates.](https://support.soraco.co/hc/en-us/articles/360042354172)
-* Receive a daily email report of all [illegal computers.](https://support.soraco.co/hc/en-us/articles/360042507012)
-* Receive a daily email report of all [failed activations.](https://support.soraco.co/hc/en-us/articles/360042507692)
-* Send your customer (and yourself) an email notification when we detect an [illegal computer.](https://support.soraco.co/hc/en-us/articles/360042507012)
-* Send your customer (and yourself) an email notification when an [activation attempt](https://support.soraco.co/hc/en-us/articles/360042507692) fails.
+* Improved process of importing [external email templates.](../how-to/external-email-templates.md)
+* Receive a daily email report of all [illegal computers.](../how-to/how-to-send-email-notifications-when-an-illegal-computer-is-detected.md)
+* Receive a daily email report of all [failed activations.](../how-to/how-to-send-email-notifications-when-an-activation-attempt-is-detected.md)
+* Send your customer (and yourself) an email notification when we detect an [illegal computer.](../how-to/how-to-send-email-notifications-when-an-illegal-computer-is-detected.md)
+* Send your customer (and yourself) an email notification when an [activation attempt](../how-to/how-to-send-email-notifications-when-an-activation-attempt-is-detected.md) fails.
 * New option to skip sending emails if there's no data to send. This option is configurable from Manage Keys / Options.
 
 ### Floating Licenses
@@ -38,7 +38,7 @@ QLM v14 was released on May 2, 2020. Some of the features listed below may occur
 
 ### QLM Management Console&#x20;
 
-* Added an option to exclude revoked, expired and trial licenses when performing searches.
+* Added an option to exclude revoked, expired, and trial licenses when performing searches.
 * Added date range filter to Illegal Computers.
 * Added date range filter to Activation Attempts.
 * The Protect Your application wizard now allows copying settings from another product.
@@ -49,7 +49,7 @@ QLM v14 was released on May 2, 2020. Some of the features listed below may occur
 * Http method ReleaseLicenseHttp can now require a verification code (is\_deactivation\_code).
 * Http method GetActivationKey now accepts a legacy key argument (is\_legacykey).
 * All HTTP methods now support the is\_locale argument that can set the language of the messages returned by the server. Example: \&is\_locale=fr
-* New [Server Properties](https://support.soraco.co/hc/en-us/articles/207920563):
+* New [Server Properties](../qlm-license-server/server-properties.md):
   * releaseLicenseRequiresVerificationCode: Specify whether a deactivation verification code is required when calling ReleaseLicenseHttp.
   * errorMessageEmailNotFound. When requesting license keys to be sent by email from the QLM Self Help page, if the specified email is not found in the system, you can now customize the error message displayed to the user.
   * maxReleaseCountAbsolute: Determines whether the value of maxReleaseCount is absolute or proportional to the number of licenses.
@@ -69,7 +69,7 @@ QLM v14 was released on May 2, 2020. Some of the features listed below may occur
 * A new version of the ReleaseLicense API with an additional argument to instruct the server to skip logging the deactivation. This should be used when implementing cloud-based floating licenses to avoid bloating of the database.
 * Bug fixes.
 
-As of QLM v14, we will no longer support new installations with MS-Access as a database engine. If you are currently using MS-Access, you can continue using it and can safely upgrade to QLM v14. You should however consider migrating to SQL Server. You can use the QLM Backup/Restore functionality to migrate your data from MS-Access to SQL Server as described in this [article](https://support.soraco.co/hc/en-us/articles/202795740-How-to-migrate-a-QLM-License-Server-to-another-server).
+As of QLM v14, we will no longer support new installations with MS-Access as a database engine. If you are currently using MS-Access, you can continue using it and can safely upgrade to QLM v14. You should however consider migrating to SQL Server. You can use the QLM Backup/Restore functionality to migrate your data from MS-Access to SQL Server as described in this [article](../qlm-license-server/how-to-migrate-a-qlm-license-server-to-another-server.md).
 
 **Upgrade Procedure**
 
@@ -145,7 +145,7 @@ To upgrade the QLM License Server, we recommend that you create a new virtual di
 To upgrade your source code to QLM v14:
 
 * If you are upgrading from QLMv9 or earlier and if you are using the QLM License Wizard, be it the .NET Control or the standalone executable, you will need to customize the look & feel of the control and regenerate the settings XML file. Note that as of QLM v9, only one settings file is required. The UI Settings XML file is no longer required since all settings are stored in a single file.
-* If you have implemented floating licences, it is recommended that you review the new QLM Enterprise [sample](https://support.soraco.co/hc/en-us/articles/360041959372-How-to-support-floating-and-node-locked-licences-in-the-same-app) and follow the same approach as the new sample.&#x20;
+* If you have implemented floating licenses, it is recommended that you review the new QLM Enterprise [sample](../step-by-step-guides/how-to-support-floating-and-node-locked-licences-in-the-same-app.md) and follow the same approach as the new sample.&#x20;
 
 **IMPORTANT -** QLM Engine Version
 
