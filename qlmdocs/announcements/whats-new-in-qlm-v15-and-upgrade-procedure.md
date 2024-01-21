@@ -9,7 +9,7 @@ QLM v15 was released on April 30, 2021. Note that our major releases are not loa
 * [The wizard can now activate a license by email using 3rd party authentication providers such as Google, Facebook and Azure AD](../how-to/qlm-license-wizard-activation-by-email-using-3rd-party-authentication.md).
 * Activation by email is now supported for multiple activation license keys.
 * Activation via a QR code can now download the license file to the mobile device.
-* [In Check for Updates, the setup package can now be downloaded from Google Drive or One Drive.](../how-to/qlm-license-wizard-download-latest-version-from-a-cloud-drive.md)
+* [In Check for Updates, the setup package can now be downloaded from Google Drive or One Drive.](../license-wizard/qlm-license-wizard-download-latest-version-from-a-cloud-drive.md)
 * New dark colour theme for the QLM License wizard. To use this theme, copy the settings from the Demo Enterprise product.
 
 ![mceclip1.png](https://support.soraco.co/hc/article\_attachments/360094052611/mceclip1.png)
@@ -111,7 +111,7 @@ If you installed QLM by running the QlmLicenseServerSetup.exe, you can simply re
 To upgrade your source code to QLM v15:
 
 * If you are upgrading from QLMv9 or earlier and if you are using the QLM License Wizard, be it the .NET Control or the standalone executable, you will need to customize the look & feel of the control and regenerate the settings XML file. Note that as of QLM v9, only one settings file is required. The UI Settings XML file is no longer required since all settings are stored in a single file.
-* If you have implemented floating licences, it is recommended that you review the new QLM Enterprise [sample](../step-by-step-guides/how-to-support-floating-and-node-locked-licences-in-the-same-app.md) and follow the same approach as the new sample.&#x20;
+* If you have implemented floating licences, it is recommended that you review the new QLM Enterprise [sample](../floating-licenses/how-to-support-floating-and-node-locked-licences-in-the-same-app.md) and follow the same approach as the new sample.&#x20;
 
 **IMPORTANT -** QLM Engine Version
 

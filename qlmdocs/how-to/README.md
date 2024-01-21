@@ -32,8 +32,8 @@
 [how-to-add-license-file-validation.md](how-to-add-license-file-validation.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-create-a-customer-report-showing-their-licenses-and-activations.md" %}
-[how-to-create-a-customer-report-showing-their-licenses-and-activations.md](how-to-create-a-customer-report-showing-their-licenses-and-activations.md)
+{% content-ref url="../management-console/how-to-create-a-customer-report-showing-their-licenses-and-activations.md" %}
+[how-to-create-a-customer-report-showing-their-licenses-and-activations.md](../management-console/how-to-create-a-customer-report-showing-their-licenses-and-activations.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-allow-specific-customers-to-work-offline-indefinitely.md" %}
@@ -60,12 +60,12 @@
 [qlm-license-models.md](../fundamental-concepts/qlm-license-models.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-create-a-gmail-oauth-client-id.md" %}
-[how-to-create-a-gmail-oauth-client-id.md](how-to-create-a-gmail-oauth-client-id.md)
+{% content-ref url="../email-framework/how-to-create-a-gmail-oauth-client-id.md" %}
+[how-to-create-a-gmail-oauth-client-id.md](../email-framework/how-to-create-a-gmail-oauth-client-id.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-create-a-gmail-service-account.md" %}
-[how-to-create-a-gmail-service-account.md](how-to-create-a-gmail-service-account.md)
+{% content-ref url="../email-framework/how-to-create-a-gmail-service-account.md" %}
+[how-to-create-a-gmail-service-account.md](../email-framework/how-to-create-a-gmail-service-account.md)
 {% endcontent-ref %}
 
 {% content-ref url="sending-emails-using-the-gmail-api.md" %}
@@ -76,12 +76,12 @@
 [how-to-implement-a-pay-per-use-model-with-qlm.md](how-to-implement-a-pay-per-use-model-with-qlm.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-restrict-trial-requests.md" %}
-[how-to-restrict-trial-requests.md](how-to-restrict-trial-requests.md)
+{% content-ref url="../self-help-customer-site/how-to-restrict-trial-requests.md" %}
+[how-to-restrict-trial-requests.md](../self-help-customer-site/how-to-restrict-trial-requests.md)
 {% endcontent-ref %}
 
-{% content-ref url="cloud-based-floating-licenses-check-out-for-offline-usage.md" %}
-[cloud-based-floating-licenses-check-out-for-offline-usage.md](cloud-based-floating-licenses-check-out-for-offline-usage.md)
+{% content-ref url="../floating-licenses/cloud-based-floating-licenses-check-out-for-offline-usage.md" %}
+[cloud-based-floating-licenses-check-out-for-offline-usage.md](../floating-licenses/cloud-based-floating-licenses-check-out-for-offline-usage.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-use-the-http-api-to-create-a-license-for-a-customer.md" %}
@@ -148,8 +148,8 @@
 [how-to-automatically-invoke-a-webhook-using-scheduled-tasks.md](how-to-automatically-invoke-a-webhook-using-scheduled-tasks.md)
 {% endcontent-ref %}
 
-{% content-ref url="qlm-license-wizard-download-latest-version-from-a-cloud-drive.md" %}
-[qlm-license-wizard-download-latest-version-from-a-cloud-drive.md](qlm-license-wizard-download-latest-version-from-a-cloud-drive.md)
+{% content-ref url="../license-wizard/qlm-license-wizard-download-latest-version-from-a-cloud-drive.md" %}
+[qlm-license-wizard-download-latest-version-from-a-cloud-drive.md](../license-wizard/qlm-license-wizard-download-latest-version-from-a-cloud-drive.md)
 {% endcontent-ref %}
 
 {% content-ref url="qlm-license-wizard-activation-by-email-using-3rd-party-authentication.md" %}
@@ -188,8 +188,8 @@
 [how-to-configure-and-test-maxdaysoffline.md](how-to-configure-and-test-maxdaysoffline.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-send-email-notifications-when-an-activation-attempt-is-detected.md" %}
-[how-to-send-email-notifications-when-an-activation-attempt-is-detected.md](how-to-send-email-notifications-when-an-activation-attempt-is-detected.md)
+{% content-ref url="../qlm-agent/how-to-send-email-notifications-when-an-activation-attempt-is-detected.md" %}
+[how-to-send-email-notifications-when-an-activation-attempt-is-detected.md](../qlm-agent/how-to-send-email-notifications-when-an-activation-attempt-is-detected.md)
 {% endcontent-ref %}
 
 {% content-ref url="fraud-detection-illegal-computers-and-activation-attempts.md" %}

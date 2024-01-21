@@ -6,7 +6,7 @@ QLM v14 was released on May 2, 2020. Some of the features listed below may occur
 
 ### QLM License Wizard
 
-* The wizard can now allow the end-user to select whether to activate a node-locked license or a floating license. For more details, review the [new sample application.](../step-by-step-guides/how-to-support-floating-and-node-locked-licences-in-the-same-app.md)
+* The wizard can now allow the end-user to select whether to activate a node-locked license or a floating license. For more details, review the [new sample application.](../floating-licenses/how-to-support-floating-and-node-locked-licences-in-the-same-app.md)
 * The wizard can now automatically download a digitally signed license file when a license is activated online.&#x20;
 * The wizard can now automatically download a digitally signed product properties file when a license is activated online.&#x20;
 
@@ -27,9 +27,9 @@ QLM v14 was released on May 2, 2020. Some of the features listed below may occur
 * Improved built-in email templates.
 * Improved process of importing [external email templates.](../how-to/external-email-templates.md)
 * Receive a daily email report of all [illegal computers.](../how-to/how-to-send-email-notifications-when-an-illegal-computer-is-detected.md)
-* Receive a daily email report of all [failed activations.](../how-to/how-to-send-email-notifications-when-an-activation-attempt-is-detected.md)
+* Receive a daily email report of all [failed activations.](../qlm-agent/how-to-send-email-notifications-when-an-activation-attempt-is-detected.md)
 * Send your customer (and yourself) an email notification when we detect an [illegal computer.](../how-to/how-to-send-email-notifications-when-an-illegal-computer-is-detected.md)
-* Send your customer (and yourself) an email notification when an [activation attempt](../how-to/how-to-send-email-notifications-when-an-activation-attempt-is-detected.md) fails.
+* Send your customer (and yourself) an email notification when an [activation attempt](../qlm-agent/how-to-send-email-notifications-when-an-activation-attempt-is-detected.md) fails.
 * New option to skip sending emails if there's no data to send. This option is configurable from Manage Keys / Options.
 
 ### Floating Licenses
@@ -145,7 +145,7 @@ To upgrade the QLM License Server, we recommend that you create a new virtual di
 To upgrade your source code to QLM v14:
 
 * If you are upgrading from QLMv9 or earlier and if you are using the QLM License Wizard, be it the .NET Control or the standalone executable, you will need to customize the look & feel of the control and regenerate the settings XML file. Note that as of QLM v9, only one settings file is required. The UI Settings XML file is no longer required since all settings are stored in a single file.
-* If you have implemented floating licenses, it is recommended that you review the new QLM Enterprise [sample](../step-by-step-guides/how-to-support-floating-and-node-locked-licences-in-the-same-app.md) and follow the same approach as the new sample.&#x20;
+* If you have implemented floating licenses, it is recommended that you review the new QLM Enterprise [sample](../floating-licenses/how-to-support-floating-and-node-locked-licences-in-the-same-app.md) and follow the same approach as the new sample.&#x20;
 
 **IMPORTANT -** QLM Engine Version
 

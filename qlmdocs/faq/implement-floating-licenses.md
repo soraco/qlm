@@ -27,4 +27,4 @@ A sample showing how to implement floating licenses is provided in the following
 
 %Public%\Documents\Quick License Manager\Samples\QLMEnterprise\DotNet\C#\QlmFloatingLicenseSample
 
-A step-by-step guide to implementing floating licenses in your application is available [here](../step-by-step-guides/how-to-implement-floating-licensing-with-qlm-enterprise.md).
+A step-by-step guide to implementing floating licenses in your application is available [here](../floating-licenses/how-to-implement-floating-licensing-with-qlm-enterprise.md).

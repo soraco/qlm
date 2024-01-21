@@ -8,8 +8,8 @@
 [protect-a-qt-c++-cross-platform-application.md](protect-a-qt-c++-cross-platform-application.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-support-floating-and-node-locked-licences-in-the-same-app.md" %}
-[how-to-support-floating-and-node-locked-licences-in-the-same-app.md](how-to-support-floating-and-node-locked-licences-in-the-same-app.md)
+{% content-ref url="../floating-licenses/how-to-support-floating-and-node-locked-licences-in-the-same-app.md" %}
+[how-to-support-floating-and-node-locked-licences-in-the-same-app.md](../floating-licenses/how-to-support-floating-and-node-locked-licences-in-the-same-app.md)
 {% endcontent-ref %}
 
 {% content-ref url="protect-a-.net-core-console-app.md" %}
@@ -80,8 +80,8 @@
 [protect-an-executable-without-code-changes.md](protect-an-executable-without-code-changes.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-implement-floating-licensing-with-qlm-enterprise.md" %}
-[how-to-implement-floating-licensing-with-qlm-enterprise.md](how-to-implement-floating-licensing-with-qlm-enterprise.md)
+{% content-ref url="../floating-licenses/how-to-implement-floating-licensing-with-qlm-enterprise.md" %}
+[how-to-implement-floating-licensing-with-qlm-enterprise.md](../floating-licenses/how-to-implement-floating-licensing-with-qlm-enterprise.md)
 {% endcontent-ref %}
 
 {% content-ref url="protect-a-pdf-file-with-qlm.md" %}

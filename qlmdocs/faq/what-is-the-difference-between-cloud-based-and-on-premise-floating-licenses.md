@@ -23,4 +23,4 @@ With on-premise floating licenses, the check-out operation is performed against 
 
 QLM supports on-premise floating licenses on Windows only.
 
-For more details about implementing on-premise floating licenses, [click here](../step-by-step-guides/how-to-implement-floating-licensing-with-qlm-enterprise.md).
+For more details about implementing on-premise floating licenses, [click here](../floating-licenses/how-to-implement-floating-licensing-with-qlm-enterprise.md).
