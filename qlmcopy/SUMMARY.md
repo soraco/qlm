@@ -1,9 +1,9 @@
 # Table of contents
 
 * [Quick License Manager](README.md)
-* [👣 Step by Step Guides](step-by-step-guides/README.md)
-  * [Protect a JUCE application](step-by-step-guides/protect-a-juce-application.md)
+* [👣 Step by Step Guides](step-by-step-guides/README.md)  
   * [Protect a Qt C++ Cross Platform Application](step-by-step-guides/protect-a-qt-c++-cross-platform-application.md)
+  * [Protect a JUCE application](step-by-step-guides/protect-a-juce-application.md)
   * [How to support floating and node locked licences in the same app](step-by-step-guides/how-to-support-floating-and-node-locked-licences-in-the-same-app.md)
   * [Protect a .NET Core Console App](step-by-step-guides/protect-a-.net-core-console-app.md)
   * [Protect a Qt C++ Windows application](step-by-step-guides/protect-a-qt-c++-windows-application.md)
