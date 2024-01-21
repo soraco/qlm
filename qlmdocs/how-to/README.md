@@ -44,8 +44,8 @@
 [how-to-use-getdatasetex-to-retrieve-customer-information.md](how-to-use-getdatasetex-to-retrieve-customer-information.md)
 {% endcontent-ref %}
 
-{% content-ref url="qlm-customer-user-account.md" %}
-[qlm-customer-user-account.md](qlm-customer-user-account.md)
+{% content-ref url="../fundamental-concepts/qlm-customer-user-account.md" %}
+[qlm-customer-user-account.md](../fundamental-concepts/qlm-customer-user-account.md)
 {% endcontent-ref %}
 
 {% content-ref url="online-activation-with-basic-authentication-user-password.md" %}
@@ -56,8 +56,8 @@
 [qlm-v17-upgrade-procedure.md](qlm-v17-upgrade-procedure.md)
 {% endcontent-ref %}
 
-{% content-ref url="qlm-license-models.md" %}
-[qlm-license-models.md](qlm-license-models.md)
+{% content-ref url="../fundamental-concepts/qlm-license-models.md" %}
+[qlm-license-models.md](../fundamental-concepts/qlm-license-models.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-create-a-gmail-oauth-client-id.md" %}

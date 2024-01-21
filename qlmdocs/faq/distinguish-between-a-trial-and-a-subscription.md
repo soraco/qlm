@@ -4,7 +4,7 @@
 
 QLM v17 introduces new license models that can be used to easily identify the type of license based on the prefix of the license key.
 
-For more details, check this [article](../how-to/qlm-license-models.md).
+For more details, check this [article](../fundamental-concepts/qlm-license-models.md).
 
 ### QLM v9 to v16
 
