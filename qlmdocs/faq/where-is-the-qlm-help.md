@@ -7,4 +7,4 @@ To access the QLM help and documentation:
 
 The QLM help includes our user guide and API Reference for all editions and add-ons of QLM.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
