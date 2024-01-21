@@ -75,7 +75,3 @@ Password: qlmweb30!
 ![](https://support.soraco.co/hc/article\_attachments/360000535666/mceclip1.png)
 
 &#x20;
-
-*
-* [Facebook](https://www.facebook.com/share.php?title=What+is+the+QLM+Portal%3F\&u=https%3A%2F%2Fsupport.soraco.co%2Fhc%2Fen-us%2Farticles%2F204440894-What-is-the-QLM-Portal)
-* &#x20;
