@@ -2,7 +2,7 @@
 
 QLM provides a framework for sending emails to your customers.
 
-### ![](<../../.gitbook/assets/image (15).png>)Send Emails
+### ![](<../../../.gitbook/assets/image (15).png>)Send Emails
 
 To send a personalized email to a set of customers:
 
@@ -29,12 +29,12 @@ For example, your message could read:\
 `Tom`\
 
 
-### ![](<../../.gitbook/assets/image (16).png>)Templates&#x20;
+### ![](<../../../.gitbook/assets/image (16).png>)Templates&#x20;
 
 Templates allow you to create common email content that can be readily used when sending manual or automated emails to your customers. Automated emails can be configured from the Scheduled Tasks option.\
 
 
-![](<../../.gitbook/assets/image (17).png>)Aggregated Emails
+![](<../../../.gitbook/assets/image (17).png>)Aggregated Emails
 
 
 
