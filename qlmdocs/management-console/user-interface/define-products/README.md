@@ -55,6 +55,6 @@ If you change the RSA Keys of an existing product, license files, settings files
 
 It is recommended to create a new product version when updating the encryption keys to minimize the impact on existing customers.
 
-For more details about updating encryption keys, refer to this [article](../../how-to/how-to-release-a-new-version-of-your-product-with-new-encryption-keys.md).
+For more details about updating encryption keys, refer to this [article](../../../how-to/how-to-release-a-new-version-of-your-product-with-new-encryption-keys.md).
 
 \
