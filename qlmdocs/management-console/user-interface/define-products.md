@@ -1,9 +1,9 @@
 # Define Products
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+A QLM license key embeds information about your product such as the product ID, version, expiry date, and features.
 
-A QLM license key is associated with a particular product as identified by its name and version in the Define Products tab.\
-To add a product, click on the Add button and enter the product information.\
+To add a product, click on the Add button and enter the product information.
+
 The full set of properties is divided into four tabs, _Product Information_, _Latest Version_, _Keys,_ and _Vendor_.\
 
 
@@ -11,11 +11,10 @@ The full set of properties is divided into four tabs, _Product Information_, _La
 
 _Product name_: Enter the base name of your product without versioning.\
 \
-_Major version, Minor version:_ This pair of numbers, both of which can have at most two digits, specify a particular generation and release of the product for licensing. Taken together, the name and the two version fields constitute a unique handle by which this product will be identified in QLM.\
-\
-_Encryption key_: Enter an encryption key to encrypt the license key. An encryption key is like a password. A license key can only be decrypted with this password. The ! character is not allowed in the encryption key. Encryption keys are no longer used as of QLM 5. A PKI algorithm is now employed for encrypting the license key. Each time you define a product in QLM, a key pair is created for it. Typically a different key pair is used for each product. You will use the private key in the pair to generate license keys. The public key is used to decrypt license keys. It must be included in your code and set before licenses can be validated.\
-\
-_Product ID:_ This field is automatically generated when the database record for the product is stored, and remains permanently associated with it from then on.\
+_Product ID:_ This field is automatically generated when the database record for the product is stored and remains permanently associated with it from then on.
+
+_Major version, Minor version:_ This pair of numbers, both of which can have at most two digits, specify a particular generation and release of the product for licensing. Taken together, the name and the two version fields constitute a unique handle by which this product will be identified in QLM.
+
 \
 _Release Date_: The Release Date is used in conjunction with the Maintenance Plan feature to determine upgrade entitlement. Provided the Maintenance Plan Renewal Date is greater than the Release Date, the customer is entitled to the upgrade.\
 \
@@ -34,11 +33,28 @@ _URL to latest version_: Enter a URL to the latest version of your software for 
 \
 _Notes about the latest version_: The notes you enter in this text box can be retrieved for display to the user along with other information about the update.
 
-### Keys
+### Encryption Keys
 
-QLM uses asymmetric encryption to encrypt license keys. The algorithm requires that a pair of encryption keys, one public and one private, be predefined. QLM generates such a pair for you automatically when your product is created. By default, the same key pair is used across all versions of the same product.\
+#### License Key Encryption
+
+QLM uses asymmetric encryption to encrypt the license key. Asymmetric encryption uses a private key to encrypt the license and a public key to decrypt it. You only need to include the public key in your source code. The private/public key pair is automatically generated and is by default the same for all versions of the same product. In your code, right after calling the DefineProduct method, you must set the PublicKey property to the value defined below.
+
+_New_: Click this button to generate a new key pair at any time.&#x20;
+
+If you change the encryption keys of an existing product, license keys that have already been created for that product will no longer be valid.
+
+It is recommended to create a new product version when updating the encryption keys to minimize the impact on existing customers.
+
+#### License File Encryption (RSA)
+
+QLM can protect apps on non-Windows devices such as Mac, Android, Linux, etc. When storing license data on these platforms, QLM uses RSA asymmetric encryption to encrypt data on the server side (QLM License Server) and decrypt it on the client side. Your app uses the Public Key below to decrypt the data sent by the server.
+
+_New_: Click this button to generate a new key pair at any time.&#x20;
+
+If you change the RSA Keys of an existing product, license files, settings files, and product properties files that have already been signed with the current RSA keys will no longer be valid.
+
+It is recommended to create a new product version when updating the encryption keys to minimize the impact on existing customers.
+
+For more details about updating encryption keys, refer to this [article](../../how-to/how-to-release-a-new-version-of-your-product-with-new-encryption-keys.md).
+
 \
-_Public key_: You will need this value in order to validate a license in your program code.\
-_Private key_: This value is used for generating licenses. For the security of your licensing process, it is recommended not to generate licenses in the protected software itself, but to use an external mechanism for that purpose.\
-_New_: Click this button to generate a new key pair at any time. Remember, however, that your software must be updated to use the new public key value.\
-_Unmask:_ Check this box to view the actual text of your private key rather a string of asterisks.

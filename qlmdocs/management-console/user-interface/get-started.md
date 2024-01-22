@@ -1,12 +1,8 @@
 # Get Started
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-
-The first of the QLM Console’s eight major functional areas is accessed with Get Started at the left-hand end of the Console’s main ribbon bar. Two Console features with which you will quickly become familiar are the Dashboard, which is the starting point of each session, and the Getting Started Wizard, an optional but handy tool for helping you set up product licensing under QLM. Both of these are found in the Getting Started control group, along with information pages detailing each of the three levels of QLM: Express, Professional, and Enterprise. The single button in the Tutorials control group provides a link to online information resources with detailed information on selected topics.
-
 ### Dashboard
 
-The Metro-style tiles that make up the Dashboard are organized by default into three columns. A row in any column contains either one full-width or two half-width tiles. (If the window height is sufficiently reduced, doubled columns or tripled columns may be seen.) The organization of the Dashboard can be customized by dragging individual tiles from one column to another, or into an empty location to create a new column. As you drag a tile to locations in other columns, the tiles already there move aside as necessary to indicate where the new arrival will lodge. The default layout of Dashboard tiles in three columns.
+The Metro-style tiles that make up the Dashboard are organized by default into three columns. A row in any column contains either one full-width or two half-width tiles. (If the window height is sufficiently reduced, doubled columns or tripled columns may be seen.) The organization of the Dashboard can be customized by dragging individual tiles from one column to another, or into an empty location to create a new column. As you drag a tile to locations in other columns, the tiles already there move aside as necessary to indicate where the new arrival will lodge. The default layout of Dashboard tiles is in three columns.
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
