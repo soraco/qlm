@@ -8,14 +8,7 @@ The table presents a high-level overview of the features. The implementation of 
 | ---------------------------------------- | -------------------------- | -------------- |
 | Define Products                          | ✔                          |                |
 | Protect Your Application Wizard          |  ✔                         |                |
-| Create Activation Key                    |  ✔                         |  ✔             |
-| Activate a license                       |  ✔                         |  ✔             |
-| Deactivate a license                     |  ✔                         |  ✔             |
-| Edit a license                           |  ✔                         |  ✔             |
-| Delete a license                         |  ✔                         |  ✔             |
-| Extend Expiry Date                       |  ✔                         |  ✔             |
-| Upgrade a license                        |  ✔                         |                |
-| Export data                              |  ✔                         |  ✔             |
+| Manage Keys                    |  ✔                         |  ✔             |
 | View Illegal Computers                   |  ✔                         |                |
 | View Activation Attempts                 |  ✔                         |                |
 | Define Email Templates                   |  ✔                         |                |
