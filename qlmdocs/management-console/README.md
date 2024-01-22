@@ -4,23 +4,4 @@ The QLM Management Console is a desktop application that runs on your workstatio
 
 The table presents a high-level overview of the features. The implementation of some features may differ between the QLM Management Console and the QLM Portal. This table is intended as a general guideline.
 
-| **Feature**                              |   |
-| ---------------------------------------- | - |
-| Define Products                          | ✔ |
-| Protect Your Application Wizard          | ✔ |
-| Manage Keys                              | ✔ |
-| View Illegal Computers                   | ✔ |
-| View Activation Attempts                 | ✔ |
-| Define Email Templates                   | ✔ |
-| Send Emails                              | ✔ |
-| Send Batch Emails                        | ✔ |
-| View the Event Log                       | ✔ |
-| Create and Manage Scheduled Tasks        | ✔ |
-| Create and Manage Backups                | ✔ |
-| Create and Manage QLM Portal Users       | ✔ |
-| Create and Manage QLM Portal User Groups | ✔ |
-| View Analytics (QLM Enterprise)          | ✔ |
-| Create and Manage 3rd party extensions   | ✔ |
-| Create Portal User Accounts              | ✔ |
-| Create User Groups                       | ✔ |
-| Create and Manage Searches               | ✔ |
+<table data-full-width="false"><thead><tr><th>Feature</th><th></th></tr></thead><tbody><tr><td>Define Products</td><td>✔</td></tr><tr><td>Protect Your Application Wizard</td><td>✔</td></tr><tr><td>Manage Keys</td><td>✔</td></tr><tr><td>View Illegal Computers</td><td>✔</td></tr><tr><td>View Activation Attempts</td><td>✔</td></tr><tr><td>Define Email Templates</td><td>✔</td></tr><tr><td>Send Emails</td><td>✔</td></tr><tr><td>Send Batch Emails</td><td>✔</td></tr><tr><td>View the Event Log</td><td>✔</td></tr><tr><td>Create and Manage Scheduled Tasks</td><td>✔</td></tr><tr><td>Create and Manage Backups</td><td>✔</td></tr><tr><td>Create and Manage QLM Portal Users</td><td>✔</td></tr><tr><td>Create and Manage QLM Portal User Groups</td><td>✔</td></tr><tr><td>View Analytics (QLM Enterprise)</td><td>✔</td></tr><tr><td>Create and Manage 3rd party extensions</td><td>✔</td></tr><tr><td>Create Portal User Accounts</td><td>✔</td></tr><tr><td>Create User Groups</td><td>✔</td></tr><tr><td>Create and Manage Searches</td><td>✔</td></tr></tbody></table>
