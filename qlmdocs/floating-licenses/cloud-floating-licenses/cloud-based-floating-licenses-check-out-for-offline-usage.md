@@ -24,6 +24,6 @@ Additionally, when a customer is online, the QLM timer contacts the server at re
 
 Additional References:
 
-[How to implement cloud-based floating licenses](../how-to/how-to-implement-cloud-based-floating-licenses.md)
+[How to implement cloud-based floating licenses](how-to-implement-cloud-based-floating-licenses.md)
 
-[IQlmCloudFloatingLicenseHelper](../api-reference/iqlmcloudfloatinglicensehelper/)
+[IQlmCloudFloatingLicenseHelper](../../api-reference/iqlmcloudfloatinglicensehelper/)

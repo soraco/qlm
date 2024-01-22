@@ -20,8 +20,8 @@
 [how-to-bind-a-license-to-a-usb-key-dongle.md](how-to-bind-a-license-to-a-usb-key-dongle.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-implement-cloud-floating-licenses-cfl-in-qlm-v17+.md" %}
-[how-to-implement-cloud-floating-licenses-cfl-in-qlm-v17+.md](how-to-implement-cloud-floating-licenses-cfl-in-qlm-v17+.md)
+{% content-ref url="../floating-licenses/cloud-floating-licenses/how-to-implement-cloud-floating-licenses-cfl-in-qlm-v17+.md" %}
+[how-to-implement-cloud-floating-licenses-cfl-in-qlm-v17+.md](../floating-licenses/cloud-floating-licenses/how-to-implement-cloud-floating-licenses-cfl-in-qlm-v17+.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-release-a-new-version-of-your-product-with-new-encryption-keys.md" %}
@@ -80,8 +80,8 @@
 [how-to-restrict-trial-requests.md](../self-help-customer-site/how-to-restrict-trial-requests.md)
 {% endcontent-ref %}
 
-{% content-ref url="../floating-licenses/cloud-based-floating-licenses-check-out-for-offline-usage.md" %}
-[cloud-based-floating-licenses-check-out-for-offline-usage.md](../floating-licenses/cloud-based-floating-licenses-check-out-for-offline-usage.md)
+{% content-ref url="../floating-licenses/cloud-floating-licenses/cloud-based-floating-licenses-check-out-for-offline-usage.md" %}
+[cloud-based-floating-licenses-check-out-for-offline-usage.md](../floating-licenses/cloud-floating-licenses/cloud-based-floating-licenses-check-out-for-offline-usage.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-use-the-http-api-to-create-a-license-for-a-customer.md" %}
@@ -108,8 +108,8 @@
 [how-to-send-a-notification-when-a-customer-is-created.md](how-to-send-a-notification-when-a-customer-is-created.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-implement-cloud-based-floating-licenses-for-cross-platform-applications.md" %}
-[how-to-implement-cloud-based-floating-licenses-for-cross-platform-applications.md](how-to-implement-cloud-based-floating-licenses-for-cross-platform-applications.md)
+{% content-ref url="../floating-licenses/cloud-floating-licenses/how-to-implement-cloud-based-floating-licenses-for-cross-platform-applications.md" %}
+[how-to-implement-cloud-based-floating-licenses-for-cross-platform-applications.md](../floating-licenses/cloud-floating-licenses/how-to-implement-cloud-based-floating-licenses-for-cross-platform-applications.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-bind-a-license-to-a-docker-container.md" %}
@@ -124,16 +124,16 @@
 [how-to-update-features-using-updatelicenseinfo.md](how-to-update-features-using-updatelicenseinfo.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-simultaneously-support-node-locked-and-cloud-based-floating-licenses.md" %}
-[how-to-simultaneously-support-node-locked-and-cloud-based-floating-licenses.md](how-to-simultaneously-support-node-locked-and-cloud-based-floating-licenses.md)
+{% content-ref url="../floating-licenses/on-premise-floating-licenses/how-to-simultaneously-support-node-locked-and-cloud-based-floating-licenses.md" %}
+[how-to-simultaneously-support-node-locked-and-cloud-based-floating-licenses.md](../floating-licenses/on-premise-floating-licenses/how-to-simultaneously-support-node-locked-and-cloud-based-floating-licenses.md)
 {% endcontent-ref %}
 
 {% content-ref url="sending-emails-using-the-microsoft-graph-api.md" %}
 [sending-emails-using-the-microsoft-graph-api.md](sending-emails-using-the-microsoft-graph-api.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-implement-cloud-based-floating-licenses.md" %}
-[how-to-implement-cloud-based-floating-licenses.md](how-to-implement-cloud-based-floating-licenses.md)
+{% content-ref url="../floating-licenses/cloud-floating-licenses/how-to-implement-cloud-based-floating-licenses.md" %}
+[how-to-implement-cloud-based-floating-licenses.md](../floating-licenses/cloud-floating-licenses/how-to-implement-cloud-based-floating-licenses.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-set-the-application-version-dynamically.md" %}

@@ -7,11 +7,11 @@ QLM Pro supports cloud-based floating licenses. Note that your application must 
 The steps to implement cloud-based floating licenses with QLM Pro are:
 
 1. In the QLM Management Console, create an Activation Key and set the "Number of Activations per Key" to the required number of floating licenses.
-2. At application startup, call [ReadKeys](../api-reference/qlmlicense/client-side-methods/readkeys.md) to retrieve the Activation Key and the Computer Key.
+2. At application startup, call [ReadKeys](../../api-reference/qlmlicense/client-side-methods/readkeys.md) to retrieve the Activation Key and the Computer Key.
 3. If both values are empty, launch the QLM License Wizard to allow the user to enter an activation key and activate it.
-4. If ReadKeys retrieves an Activation Key and not a Computer Key, call [ActivateLicense](../api-reference/qlmlicense/application-methods/activatelicense.md) to activate the license key and check out the license.
-5. If ReadKeys retrieves an Activation Key and a Computer Key, the license is already checked out and does not need to be activated. You should still however call [ValidateLicenseEx](../api-reference/qlmlicense/client-side-methods/validatelicenseex.md) with the Computer Key to make sure that the license is valid.
-6. When your application exits, call [DeleteKeysEx](../api-reference/qlmlicense/client-side-methods/deletekeysex.md) (false, true, false, false, out errorMessage) then call [ReleaseLicense](../api-reference/qlmlicense/application-methods/releaselicense.md) while ensuring to set the **logRelease** argument to false.
+4. If ReadKeys retrieves an Activation Key and not a Computer Key, call [ActivateLicense](../../api-reference/qlmlicense/application-methods/activatelicense.md) to activate the license key and check out the license.
+5. If ReadKeys retrieves an Activation Key and a Computer Key, the license is already checked out and does not need to be activated. You should still however call [ValidateLicenseEx](../../api-reference/qlmlicense/client-side-methods/validatelicenseex.md) with the Computer Key to make sure that the license is valid.
+6. When your application exits, call [DeleteKeysEx](../../api-reference/qlmlicense/client-side-methods/deletekeysex.md) (false, true, false, false, out errorMessage) then call [ReleaseLicense](../../api-reference/qlmlicense/application-methods/releaselicense.md) while ensuring to set the **logRelease** argument to false.
 
 Note that this process requires an internet connection at the time the application starts up and when it exits.
 
@@ -22,5 +22,5 @@ You can find a sample that demonstrates this capability here:\
 
 Additional resources:
 
-[What is the difference between cloud-based and on-premise floating licenses?](what-is-the-difference-between-cloud-based-and-on-premise-floating-licenses.md)\
+[What is the difference between cloud-based and on-premise floating licenses?](../../faq/what-is-the-difference-between-cloud-based-and-on-premise-floating-licenses.md)\
 [Cloud-based floating licenses and multiple application instances](cloud-based-floating-licenses-and-multiple-application-instances.md)
