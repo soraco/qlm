@@ -13,6 +13,7 @@ Updates an existing license by modifying one or more of the following attributes
 * UserData
 * Affiliate ID
 * Revocation state
+* Max Release Count and Max Release Period
 
 To call this function, you must set the enableUpgradeLicense server property to true.
 
@@ -34,10 +35,12 @@ https://yourserver/yourvirtualdirectory/qlmservice.asmx/UpdateLicenseHttp?is_avk
 | is\_avkey        | the current activation key                                                                                                                                                                                        |
 | is\_expdate      | date at which the license will expire                                                                                                                                                                             |
 | is\_expduration  | expiry duration of the license key                                                                                                                                                                                |
-| is\_features     | semi comma separated list of feature sets and their corresponding values. Example: is\_features=0:3;1:1. This means that in feature set 0, features 1 + 2 are enabled and in feature set 1, feature 1 is enabled. |
+| is\_features     | semi-comma separated list of feature sets and their corresponding values. Example: is\_features=0:3;1:1. This means that in feature set 0, features 1 + 2 are enabled and in feature set 1, feature 1 is enabled. |
 | is\_licensemodel | trial \| subscription \| permanent                                                                                                                                                                                |
 | is\_productid    | ID of the product                                                                                                                                                                                                 |
 | is\_majorversion | new major version of the product                                                                                                                                                                                  |
+| is\_maxreleasecount | value of the MaxReleaseCount property                                                                                                                                                                          |
+| is\_maxreleaseperiod | value of the MaxReleasePeriodInDays property                                                                                                                                                                  |
 | is\_minorversion | new minor version of the product                                                                                                                                                                                  |
 | is\_pp           | product properties to set                                                                                                                                                                                         |
 | is\_pwd          | password as defined in the eCommerce Providers section in QLM (Manage Keys / Tools / 3rd Party Extensions or Manage Keys / Tools / eCommerce Providers)                                                           |
