@@ -4,16 +4,16 @@
 
 Updates an existing license by modifying one or more of the following attributes:
 
-* Features associated with a license
+* The features associated with a license
 * The expiry date of the license
-* Duration of the license
-* Major and Minor versions of the product
-* Product Properties
-* Quantity
-* UserData
-* Affiliate ID
-* Revocation state
-* Max Release Count and Max Release Period
+* The duration of the license
+* The major and minor versions of the product
+* The Product Properties
+* The quantity
+* Ther UserData
+* The Affiliate ID
+* The revocation state
+* The values of Max Release Count and Max Release Period
 
 To call this function, you must set the enableUpgradeLicense server property to true.
 
@@ -39,8 +39,8 @@ http://yourserver/yourvirtualdirectory/qlmservice.asmx/UpdateLicenseHttp?is_avke
 | is\_licensemodel     | trial \| subscription \| permanent                                                                                                                                                                                |
 | is\_productid        | ID of the product                                                                                                                                                                                                 |
 | is\_majorversion     | new major version of the product                                                                                                                                                                                  |
-| is\_maxreleasecount  | value of the Max Release Count property                                                                                                                                                                           |
-| is\_maxreleaseperiod | value of the Max Release Period In Days property                                                                                                                                                                  |
+| is\_maxreleasecount  | value of the MaxReleaseCount property                                                                                                                                                                             |
+| is\_maxreleaseperiod | value of the MaxReleasePeriodInDays property                                                                                                                                                                      |
 | is\_minorversion     | new minor version of the product                                                                                                                                                                                  |
 | is\_pp               | product properties to set                                                                                                                                                                                         |
 | is\_pwd              | password as defined in the eCommerce Providers section in QLM (Manage Keys / Tools / 3rd Party Extensions or Manage Keys / Tools / eCommerce Providers)                                                           |
