@@ -10,9 +10,11 @@ You should never call this function from within the application. GetActivationKe
 
 To invoke this method via a URL, append this function's name to the URL of the QLM License Server and add the required arguments.
 
+{% code overflow="wrap" %}
 ```http
 http://yourserver/yourvirtualdirectory/qlmservice.asmx/GetActivationKeyWithExpiryDate?is_productid=[productID]&is_majorversion=[majorVersion]&is_minorversion=[minorVersion]&is_vendor=[vendor]&is_expduration=[duration]&is_expdate=[date]
 ```
+{% endcode %}
 
 ### Arguments
 

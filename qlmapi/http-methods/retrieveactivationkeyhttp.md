@@ -12,9 +12,11 @@ Additionally, for security reasons, you should not call this API from within you
 
 To invoke this method via a URL, append this function's name to the URL of the QLM License Server and add the required arguments.
 
+{% code overflow="wrap" %}
 ```http
 http://yourserver/yourvirtualdirectory/qlmservice.asmx/RetrieveActivationKeyHttp?is_vendor=[vendor]>&is_userdata1=[userData]&is_orderid=[orderID]&is_user=[user]&is_pwd=[pwd]&is_format=[json|xml]
 ```
+{% endcode %}
 
 ### Arguments
 

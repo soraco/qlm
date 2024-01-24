@@ -6,9 +6,11 @@ Renews a subscription. When a subscription is renewed, each activated license is
 
 To invoke this method via a URL, append this function's name to the URL of the QLM License Server and add the required arguments.
 
+{% code overflow="wrap" %}
 ```http
 http://yourserver/yourvirtualdirectory/qlmservice.asmx/RenewSubscriptionHttp?is_avkey=[activationKey]&is_vendor=[vendor name]&is_expdate=[date]&is_user=[user]&is_pwd=[pwd]
 ```
+{% endcode %}
 
 ### Arguments
 

@@ -8,9 +8,11 @@ If the server identifies a license key that corresponds to the user, an Authoriz
 
 To invoke this method via a URL, append this function's name to the URL of the QLM License Server and add the required arguments.
 
+{% code overflow="wrap" %}
 ```http
 http://yourserver/yourvirtualdirectory/qlmservice.asmx/RequestAuthorizationCodeForActivationHttp?is_email=[email address]&is_pcid=[computer ID]&is_productid=[product id]&is_majorversion=[major version]&is_minorverson=[minor version]
 ```
+{% endcode %}
 
 ### Arguments
 

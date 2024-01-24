@@ -6,9 +6,11 @@ Enables the maintenance plan for a given activation key.
 
 To invoke this method via a URL, append this function's name to the URL of the QLM License Server and add the required arguments.
 
+{% code overflow="wrap" %}
 ```http
 http://yourserver/yourvirtualdirectory/qlmservice.asmx/EnableMaintenancePlan?is_avkey=[activationKey]&is_maintplan=1&is_vendor=[vendor]&is_mainduration=[duration]
 ```
+{% endcode %}
 
 ### Arguments
 

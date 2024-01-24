@@ -8,9 +8,11 @@ To call this function, you must set the enableRevokeLicense server property to t
 
 To invoke this method via a URL, append this function's name to the URL of the QLM License Server and add the required arguments.
 
+{% code overflow="wrap" %}
 ```http
 http://yourserver/yourvirtualdirectory/qlmservice.asmx/RevokeLicenseHttp?is_avkey=<activationKey>&is_vendor=<eCommerce provider>
 ```
+{% endcode %}
 
 ### Arguments
 
