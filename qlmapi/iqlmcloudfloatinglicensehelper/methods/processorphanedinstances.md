@@ -13,3 +13,7 @@ void ProcessOrphanedInstances(int numRunningInstances);
 | Parameter           | Type | Description                                                            |
 | ------------------- | :--: | ---------------------------------------------------------------------- |
 | numRunningInstances |  int | Number of running instances of your application on the client computer |
+
+### Remarks
+
+You can use the [GetNumberOfRunningInstances](../../iqlmlicense/client-side-methods/getnumberofrunninginstances.md) to retrieve the number of running instances of your application.
