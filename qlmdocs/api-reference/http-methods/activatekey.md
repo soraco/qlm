@@ -32,4 +32,9 @@ https://yourserver/yourvirtualdirectory/qlmservice.asmx/ActivateKey?is_avkey=[ac
 
 #### Example
 
-[https://qlm3.net/qlmdemo/qlmlicenseserver/qlmservice.asmx/ActivateKey?is\_avkey=ABCD-EFGH-IJKL\&is\_pcid=123456\&is\_productid=1\&is\_majorversion=1\&is\_minorversion=0\&is\_vendor=regnow](https://qlm3.net/qlmdemo/qlmlicenseserver/qlmservice.asmx/ActivateKey?is\_avkey=ABCD-EFGH-IJKL\&is\_pcid=123456\&is\_productid=1\&is\_majorversion=1\&is\_minorversion=0\&is\_vendor=regnow)
+{% code overflow="wrap" %}
+```http
+https://qlm3.net/qlmdemo/qlmlicenseserver/qlmservice.asmx/ActivateKey?is_avkey=ABCD-EFGH-IJKL&is_pcid=123456&is_productid=1&is_majorversion=1&is_minorversion=0&is_vendor=regnow
+```
+{% endcode %}
+

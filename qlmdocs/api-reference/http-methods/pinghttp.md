@@ -12,6 +12,7 @@ https://yourserver/yourvirtualdirectory/qlmservice.asmx/PingHttp
 
 ### Return
 
+{% code overflow="wrap" %}
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <QuickLicenseManager>
@@ -21,3 +22,4 @@ https://yourserver/yourvirtualdirectory/qlmservice.asmx/PingHttp
 <serverDate date = "2015-08-05T15:53:16Z" />  <!-- this is obsolete but is returned for backward compatibility -->
 </QuickLicenseManager>
 ```
+{% endcode %}

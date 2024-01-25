@@ -53,6 +53,7 @@ These arguments are optional but recommended.
 
 ### Example Output
 
+{% code overflow="wrap" %}
 ```xml
 <QuickLicenseManager>
 <creationDateUtc>2023-10-29 13:14:26</creationDateUtc>
@@ -98,3 +99,4 @@ These arguments are optional but recommended.
 </Signature>
 </QuickLicenseManager>
 ```
+{% endcode %}

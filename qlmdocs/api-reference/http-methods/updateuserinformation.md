@@ -46,7 +46,15 @@ Additionally, if the is\_avkey argument is added to the URL and specifies an Act
 
 Note: To update an existing account with a new email address, you must add the previous email address as an additional argument to the URL (as of QLM v14.1.21031.2).
 
-Example: [http://yourserver/yourvirtualdirectory/qlmservice.asmx/UpdateUserInformation?is\_vendor=fastspring\&is\_user=user\_name\&is\_pwd=user\_pwd\&is\_previousemail=\[tom@soraco.co\](mailto:tom@soraco.co)](http://yourserver/yourvirtualdirectory/qlmservice.asmx/UpdateUserInformation?is\_vendor=fastspring\&is\_user=user\_name\&is\_pwd=user\_pwd\&is\_previousemail=\[tom@soraco.co]\(mailto:tom@soraco.co\))
+Example:&#x20;
+
+{% code overflow="wrap" %}
+```http
+https://yourserver/yourvirtualdirectory/qlmservice.asmx/UpdateUserInformation?is_vendor=fastspring&is_user=user_name&is_pwd=user_pwd&is_previousemail=tom@soraco.co
+```
+{% endcode %}
+
+
 
 | Vendor             | Email           | Name                           | Company               | Address1           | Address2           | City           | State           | Zip               | Country                | Phone           |
 | ------------------ | --------------- | ------------------------------ | --------------------- | ------------------ | ------------------ | -------------- | --------------- | ----------------- | ---------------------- | --------------- |
