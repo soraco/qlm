@@ -2,7 +2,7 @@
 
 ## **QLM Customer Site**
 
-The QLM Customer site is a collection of web pages that you can integrate to your site to automate some processes and provide self-help to your customers.
+The QLM Customer site is a collection of web pages that you can integrate into your site to automate some processes and provide self-help to your customers.
 
 QlmRegistrationForm.aspx is a registration form that collects user information and generates a trial key for a given product.
 
