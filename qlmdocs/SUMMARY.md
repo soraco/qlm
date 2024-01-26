@@ -65,6 +65,7 @@
       * [QLM Portal](management-console/user-interface/manage-license-keys/qlm-portal.md)
       * [Scheduled Tasks](management-console/user-interface/manage-license-keys/scheduled-tasks.md)
       * [Server Event Log](management-console/user-interface/manage-license-keys/server-event-log.md)
+      * [Global Search](management-console/user-interface/manage-license-keys/global-search.md)
     * [Manage Customers](management-console/user-interface/manage-customers.md)
     * [Backup](management-console/user-interface/backup.md)
     * [Generate Keys](management-console/user-interface/generate-keys.md)
