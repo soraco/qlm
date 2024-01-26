@@ -31,3 +31,7 @@ Each panel in the Global Search window is dockable and can be repositioned to me
 
 To discard the saved layout, click "Reset layout" then close and reopen the Global Search window.
 
+<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+
+
+
