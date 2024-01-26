@@ -13,6 +13,43 @@ QLM v18 will be released on January 26, 2024. Note that our major releases are n
 | As of QLM v18, QLM will be sold exclusively on a subscription basis. Customers who have purchased a perpetual license with a maintenance plan can continue to use QLM as before and upgrade to newer versions as long as the maintenance plan remains active. All new purchases, version uprades, or edition upgrades will be offered on a subscription basis only. |
 | As of QLM v18, all QLM Extensions (e-commerce extensions) will be sold separately as add-ons. Customers who purchased QLM v17 or earlier can continue to use QLM Extensions at no additional cost.                                                                                                                                                                  |
 
+### .NET Support
+
+* The QlmLicenseLib.dll is now available for .NET2, .NET4, .NET6, NET7 and .NET8.
+* The QlmControls.dll is now available for .NET2, .NET4, .NET6-Windows, .NET7-Windows and .NET8-Windows.
+
+### New Requirements
+
+* The minimum requirement for .NET 4 is .NET 4.62.
+* The QLM Management Console now requires .NET 8.
+* The QLM Management Console and the QLM Portal now reference DevExpress 23.2.3.
+
+### Documentation
+
+The QLM Documentation has moved to: [https://docs.soraco.co](https://docs.soraco.co)
+
+### QLM Enterprise New Features
+
+* QLM Management Console: When creating license keys, you can now define templates for different settings combinations. This is useful to speed up the creation of predefined configurations of products, features, product properties, etc.
+* QLM Management Console: A new Global Search feature performs a deep search looking for relationships between licenses and reports results found in multiple QLM tables.
+* The Java client-side library now supports reading Product Properties files.
+* On-premise floating licenses - allow different nodes to run different versions of the application.
+
+### QLM Customer Site New Features
+
+* All self-help pages are now responsive and adapt to difference device form factors. This may impact how your Self-Help pages are displayed on your site. We recommend that you review and adapt your site accordingly.
+* In addition to debounce.io, QLM now supports the following spam verifiers: https://api.zerobounce.net/v2/validate, https://verifymail.io/api
+* On the offline activation page, you can now hide the products dropdown list when the product is specified on the command line.
+* Two new server properties, disallowedIPAddressMessage, and disallowedEmailMessage, allow you to customize the message displayed to the user when their IP address is blocked or their email is banned.
+* You can now block trial registration by country. This feature requires the geolocation service provided by https://api.ipstack.com
+
+### QLM Professional New Features
+
+* You can now block license activation by country. This feature requires the geolocation service provided by http://api.ipstack.com
+* Bulk Edit - Added support for setting the following properties: MaxReleaseCount, MaxReleasePeriod, ActivationCount, UserData, and Comment. Additionally, you can now disable the Maintenance Plan for a batch of licenses.
+* New skins are now available with light and dark modes. You can access the new skins from Settings / Options / Display. We recommend trying out the WXI / Sharpness skin.
+* A new generic extension called QlmAuthenticationProvider was added to enable the use of the QLM HTTP API without the need for an ecommerce provider. The QlmAuthenticationProvider returns responses as XML fragments.
+
 ### Upgrade Procedure
 
 To upgrade to QLM v18, you must first install the QLM Management Console on your client system by running the qlmsetup17.exe. To determine if you are eligible for a v18 upgrade, you may contact us or click the About tab.&#x20;
