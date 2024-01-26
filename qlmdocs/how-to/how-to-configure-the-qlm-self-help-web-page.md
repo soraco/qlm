@@ -1,4 +1,4 @@
-# How to configure the QLM Self Help web page
+# Overview
 
 The [QLM Self Help page](https://soraco.co/quick-license-manager/selfhelp/) is a web form that you can include on your web site to provide your customers with self help for managing their license keys. The QLM Self Help page allows your users to:
 
@@ -7,27 +7,7 @@ The [QLM Self Help page](https://soraco.co/quick-license-manager/selfhelp/) is a
 * Get information about a license such as which computers have currently activated the license
 * Send a registered customer their license keys by email
 
-&#x20;The QLM Self Help page is found in the QlmCustomerSite (formerly QlmAspLicenseSite) web application. For details about the QlmCustomerSite web application and installation instructions, refer to this [article](../qlm-license-server/qlmcustomersite-qlm-self-help.md).
-
-The article below focuses on customizing the Self Help page. To customize the Self Help page, edit the default.aspx file located in the QlmCustomerSite folder in the editor of your choice.
-
-&#x20;
-
-**License Activation**&#x20;
-
-To customize the "License Activation" button, simply update the "Activate a License" URL to point to your own server.
-
-**License Deactivation**&#x20;
-
-To customize the "License Activation" button, simply update the "Deactivate a License" URL to point to your own server.
-
-**License Information**
-
-To customize the "License Activation" button, simply update the "Get License Information" URL to point to your own server.
-
-**Email License Keys**
-
-To customize the "Email License Keys" button, simply update the "Get License Information" URL to point to your own server. If you want to be cc'ed or bcc'ed, add the is\_ccemail or is\_bccemail arguments.
+&#x20;The QLM Self-Help page is found in the QlmCustomerSite (formerly QlmAspLicenseSite) web application. For details about the QlmCustomerSite web application and installation instructions, refer to this [article](../qlm-license-server/qlmcustomersite-qlm-self-help.md).
 
 &#x20;
 
