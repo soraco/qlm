@@ -2,6 +2,7 @@
 
 * [Quick License Manager](README.md)
 * [🔊 Announcements](announcements/README.md)
+  * [What's new in QLM v18 and upgrade procedure](announcements/whats-new-in-qlm-v17-and-upgrade-procedure-1.md)
   * [What's new in QLM v17 and upgrade procedure](announcements/whats-new-in-qlm-v17-and-upgrade-procedure.md)
   * [What's new in QLM v16 and Upgrade Procedure](announcements/whats-new-in-qlm-v16-and-upgrade-procedure.md)
   * [What's new in QLM v15 and Upgrade Procedure](announcements/whats-new-in-qlm-v15-and-upgrade-procedure.md)
@@ -12,8 +13,7 @@
   * [What's new in QLM v9 and Upgrade Procedure](announcements/whats-new-in-qlm-v9-and-upgrade-procedure.md)
   * [What's new in QLM v8 and Upgrade Procedure](announcements/whats-new-in-qlm-v8-and-upgrade-procedure.md)
   * [What's new in QLM v7?](announcements/whats-new-in-qlm-v7.md)
-  * [What's new in QLM v7 and Upgrade Procedure](announcements/whats-new-in-qlm-v7-and-upgrade-procedure.md)
-  * [What's new in QLM v18 and upgrade procedure](announcements/whats-new-in-qlm-v17-and-upgrade-procedure-1.md)
+  * [What's new in QLM v7 and Upgrade Procedure](announcements/whats-new-in-qlm-v7-and-upgrade-procedure.md)  
 * [🉑 Fundamental Concepts](fundamental-concepts/README.md)
   * [License Key Fields Definitions](faq/license-key-fields-definitions.md)
   * [License Key Types](faq/license-key-types.md)
