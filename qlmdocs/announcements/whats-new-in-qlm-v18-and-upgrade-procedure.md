@@ -45,6 +45,8 @@ The QLM Documentation has moved to: [https://docs.soraco.co](https://docs.soraco
 
 ### QLM Professional New Features
 
+* Searches are now automatically uploaded to the server after they are modified in the Searches editor. Note that searches are shared by all QLM Management Console users.
+* A scheduled task status icon is now displayed in the QLM Management Console title bar and displays errors that occurred when processing scheduled tasks.
 * You can now block license activation by country. This feature requires the geolocation service provided by http://api.ipstack.com
 * Bulk Edit - Added support for setting the following properties: MaxReleaseCount, MaxReleasePeriod, ActivationCount, UserData, and Comment. Additionally, you can now disable the Maintenance Plan for a batch of licenses.
 * New skins are now available with light and dark modes. You can access the new skins from Settings / Options / Display. We recommend trying out the WXI / Sharpness skin.
@@ -52,7 +54,7 @@ The QLM Documentation has moved to: [https://docs.soraco.co](https://docs.soraco
 
 ### Upgrade Procedure
 
-To upgrade to QLM v18, you must first install the QLM Management Console on your client system by running the qlmsetup17.exe. To determine if you are eligible for a v18 upgrade, you may contact us or click the About tab.&#x20;
+To upgrade to QLM v18, you must first install the QLM Management Console on your client system by running the qlmsetup17.exe. To determine if you are eligible for a v18 upgrade, you may contact us or click the About tab.
 
 If we are hosting your QLM License Server, contact us to upgrade the License Server. If you are hosting your own License Server, you can upgrade the License Server as described in the next sections.
 
@@ -79,7 +81,7 @@ After the server is installed, you must perform a DB Schema upgrade:
    * Go to the Manage Keys tab
    * Click on the Commerce Providers item in the toolbar
    * Select the eCommerce provider you are using
-   * Modify the Dll field and replace the existing value with QlmWebService.dll&#x20;
+   * Modify the Dll field and replace the existing value with QlmWebService.dll
    * Ensure that the eCommerce Provider that you are using is enabled.
 
 **QLM Portal Upgrade**
@@ -111,4 +113,4 @@ After the server is installed, you must perform a DB Schema upgrade:
 To upgrade your source code to QLM v18:
 
 * If you are upgrading from QLMv9 or earlier and if you are using the QLM License Wizard, be it the .NET Control or the standalone executable, you will need to customize the look & feel of the control and regenerate the settings XML file. Note that as of QLM v9, only one settings file is required. The UI Settings XML file is no longer required since all settings are stored in a single file.
-* If you have implemented floating licenses, it is recommended that you review the new QLM Enterprise [sample ](https://docs.soraco.co/docs/step-by-step-guides/how-to-support-floating-and-node-locked-licences-in-the-same-app)and follow the same approach as the new sample.&#x20;
+* If you have implemented floating licenses, it is recommended that you review the new QLM Enterprise [sample ](https://docs.soraco.co/docs/step-by-step-guides/how-to-support-floating-and-node-locked-licences-in-the-same-app)and follow the same approach as the new sample.
