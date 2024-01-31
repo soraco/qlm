@@ -28,8 +28,8 @@ Following is a step-by-step procedure to protect an MS-Access application. Note 
 
 6\. Click Tools / Add References and add the following references:
 
-* c:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.tlb
-* c:\Windows\Microsoft.NET\Framework\v4.0.30319\mscoree.tlb
+* c:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.tlb
+* c:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscoree.tlb
 * QlmLicenseLib.tlb (this is not required but might be useful during development to enable the IDE to show all the properties and methods of the QLM classes)
 
 8\. Assuming your MS-Access application has a Form, add a Form\_Open event as follows:
