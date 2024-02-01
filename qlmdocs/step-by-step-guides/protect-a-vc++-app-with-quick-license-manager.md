@@ -129,3 +129,4 @@ If you run into compilation issues after adding the LicenseValidator class to yo
 * include _io.h_ in LicenseValidator.h
 * Define _UNICODE_ in the pre-processor args (in VS project properties).
 * Add 'version.lib' to Additional Dependencies (in VS project properties).
+* If the \<strongname.h> file is missing, download and install the [.NET 4.8 Developer Pack.](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
