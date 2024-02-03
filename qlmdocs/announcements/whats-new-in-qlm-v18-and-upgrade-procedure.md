@@ -8,10 +8,11 @@ QLM v18 will be released on January 26, 2024. Note that our major releases are n
 
 ### Important Changes in v18 <a href="#h_01h95qq4d75t05j62drs5q0gz6" id="h_01h95qq4d75t05j62drs5q0gz6"></a>
 
-| The QLM Customer Site pages were redesigned to be responsive to different device form factors. This may impact how your Self-Help pages are displayed on your site. We recommend that you review and adapt your site accordingly.                                                                                                                                   |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| As of QLM v18, QLM will be sold exclusively on a subscription basis. Customers who have purchased a perpetual license with a maintenance plan can continue to use QLM as before and upgrade to newer versions as long as the maintenance plan remains active. All new purchases, version uprades, or edition upgrades will be offered on a subscription basis only. |
-| As of QLM v18, all QLM Extensions (e-commerce extensions) will be sold separately as add-ons. Customers who purchased QLM v17 or earlier can continue to use QLM Extensions at no additional cost.                                                                                                                                                                  |
+The QLM Customer Site pages were redesigned to be responsive to different device form factors. This may impact how your Self-Help pages are displayed on your site. We recommend that you review and adapt your site accordingly after the upgrade.
+
+As of QLM v18, QLM will be sold exclusively on a subscription basis. Customers who have purchased a perpetual license with a maintenance plan can continue to use QLM as before and upgrade to newer versions as long as the maintenance plan remains active. All new purchases, version upgrades without an active maintenance plan, or edition upgrades will be offered on a subscription basis only.
+
+As of QLM v18, all QLM Extensions (e-commerce extensions) will be sold separately as add-ons. Customers who purchased QLM v17 or earlier can continue to use QLM Extensions at no additional cost.
 
 ### .NET Support
 
