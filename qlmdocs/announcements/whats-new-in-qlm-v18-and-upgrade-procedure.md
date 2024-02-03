@@ -2,7 +2,7 @@
 
 ## What's new in QLM v18
 
-QLM v18 will be released on January 26, 2024. Note that our major releases are not loaded with a massive amount of new features. Features are added gradually throughout the year and released when they are ready. To learn more about our release process, [click here](https://docs.soraco.co/docs/blog/iterative-releases).
+QLM v18 was released on January 26, 2024. Note that our major releases are not loaded with a massive amount of new features. Features are added gradually throughout the year and released when they are ready. To learn more about our release process, [click here](https://docs.soraco.co/docs/blog/iterative-releases).
 
 \-> [Latest Version Release Notes](https://soraco.co/products/qlm/ReleaseNotes.html)
 
