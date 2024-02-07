@@ -17,13 +17,15 @@ Note that this process requires an internet connection at the time the applicati
 
 For example, if a user with a laptop starts up the application before leaving the office while he has an internet connection, a license is checked out and acquired by his laptop. He then closes his laptop without closing the application and leaves the office. The checked-out license remains checked out by his laptop. He then travels and uses the application as expected. If he closes the application and reopens it while no internet connection is available, the license remains checked out by his laptop and he can use the application at will. Upon his return to the office, when he closes the application, his license is checked in and is returned to the pool of licenses available to other users.
 
+You can find samples that demonstrate this capability in the folders below:
+
 | Language | Folder                                                                                            |
 | -------- | ------------------------------------------------------------------------------------------------- |
 | C#       | %Public%\Documents\Quick License Manager\Samples\qlmpro\Windows\DotNet\C#\QlmProFloatingLicense   |
 | Delphi   | %Public%\Documents\Quick License Manager\Samples\qlmpro\Windows\Delphi\CloudFloatingLicenseSample |
 | VC++     | %Public%\Documents\Quick License Manager\Samples\qlmpro\Windows\C++\QlmCloudFloatingLicenseSample |
 
-You can find a sample that demonstrates this capability here:\
+\
 Additional resources:
 
 [What is the difference between cloud-based and on-premise floating licenses?](../../faq/what-is-the-difference-between-cloud-based-and-on-premise-floating-licenses.md)\
