@@ -47,11 +47,13 @@ The QLM Documentation has moved to: [https://docs.soraco.co](https://docs.soraco
 ### QLM Professional New Features
 
 * Searches are now automatically uploaded to the server after they are modified in the Searches editor. Note that searches are shared by all QLM Management Console users.
-* A scheduled task status icon is now displayed in the QLM Management Console title bar and displays errors that occurred when processing scheduled tasks.
+* A Scheduled Task status icon is now displayed in the QLM Management Console title bar and displays errors that occurred when processing scheduled tasks.
+* An Event Log status icon is now displayed in the QLM Management Console title bar and displays errors that were logged in the Windows Event Log.
+* A Backup status icon is now displayed in the QLM Management Console title bar and displays errors that occurred when performing backups.
 * You can now block license activation by country. This feature requires the geolocation service provided by http://api.ipstack.com
 * Bulk Edit - Added support for setting the following properties: MaxReleaseCount, MaxReleasePeriod, ActivationCount, UserData, and Comment. Additionally, you can now disable the Maintenance Plan for a batch of licenses.
 * New skins are now available with light and dark modes. You can access the new skins from Settings / Options / Display. We recommend trying out the WXI / Sharpness skin.
-* A new generic extension called QlmAuthenticationProvider was added to enable the use of the QLM HTTP API without the need for an ecommerce provider. The QlmAuthenticationProvider returns responses as XML fragments.
+* A new generic extension called QlmAuthenticationProvider was added to enable the use of the QLM HTTP API without the need for an e-commerce provider. The QlmAuthenticationProvider returns responses as XML fragments.
 
 ### Upgrade Procedure
 
