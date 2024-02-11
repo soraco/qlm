@@ -19,8 +19,8 @@ The QLM License Server must be installed in the cloud so that it is accessible t
 
 The system requirements for the QLM License Server are:
 
-* Windows 2012 R2 server or higher (x86 or x64).
-* ASP.NET Framework 4.5
+* Windows 2012 R2 server or higher.
+* ASP.NET Framework 4.62
 * Microsoft SQL Server Database (any edition including the free SQL Server Express)
 * Full Trust for .NET assemblies.
 
@@ -28,7 +28,7 @@ _Before installing the QLM License Server, make sure the above components are in
 
 The License Server can be installed in 2 ways: (a) by running the provided setup program QlmLicenseServerSetup.exe or (b) by executing the installation steps manually.
 
-If you are hosting your own web site,  then procedure **\[1]** below is recommended. If your site is hosted at an ISP, then you may need to use procedure **\[2]**.
+If you are hosting your own website,  then the procedure **\[1]** below is recommended. If your site is hosted at an ISP, then you may need to use the procedure **\[2]**.
 
 ## Automated installation of the web service <a href="#h_01hfsapyns07hcs8z4xp1b84cs" id="h_01hfsapyns07hcs8z4xp1b84cs"></a>
 
@@ -97,8 +97,8 @@ QLM Professional and Enterprise store license keys as well as customer-related i
 * Go to the Deployment tab (formerly Database Connection tab) and enter all the fields on this tab as follows:
   * DB Server Hostname or IP: Your SQL server name (including the instance name). Example: SQLEXPRESS\MYDBSERVER
   * Database Name: qlm or any other name you have entered earlier in the process when you created the database
-  * User Name: name of the sql admin user you specified earlier in the process\
-    User Password: password of the sql admin user you specified earlier in the process
+  * User Name: name of the SQL admin user you specified earlier in the process\
+    User Password: password of the SQL admin user you specified earlier in the process
   * Set the URL to the QLM Customer Portal API
   * Set the URL to the QLM Customer Portal App
 * Click **Update config files**
@@ -134,10 +134,10 @@ The QlmCustomerSite must be configured as an IIS Application. It can share the s
 
 * Database connection string (refer to the Configure the Database section in the Help)
 * Default QLM Engine Version (defaultQlmVersion).
-* SQL Syntax(sqlsyntax). Select "sql" or "msaccess" (without the double quotes).
+* SQL Syntax(sqlsyntax). Select "sql" (without the double quotes).
 * Communication Encryption Key (communicationEncryptionKey). The communication encryption key is used to encrypt data transferred between QLM and the QLM Web service. This key is like a password that protects your data. You should use a value that is hard to guess and at least 8 characters long.
 * Admin Encryption Key (adminEncryptionKey). The admin encryption key is used to encrypt data transferred between QLM and the QLM Web service. This key is like a password that protects your data. You should use a value that is hard to guess and at least 8 characters long.
-* webServiceUrl: this is the Url to your QLM License Server. Example: [https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx](https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx)
+* webServiceUrl: this is the URL to your QLM License Server. Example: [https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx](https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx)
 
 ### Configure the QlmPortal <a href="#h_01hfsapyntrdqytcn7cptnbftf" id="h_01hfsapyntrdqytcn7cptnbftf"></a>
 
@@ -147,10 +147,10 @@ The QlmPortal must be configured as an IIS Application. It can share the same Ap
 
 * Database connection string (refer to the Configure the Database section in the Help)
 * Default QLM Engine Version (defaultQlmVersion).
-* SQL Syntax(sqlsyntax). Select "sql" or "msaccess" (without the double quotes).
+* SQL Syntax(sqlsyntax). Select "sql"  (without the double quotes).
 * Communication Encryption Key (communicationEncryptionKey). The communication encryption key is used to encrypt data transferred between QLM and the QLM Web service. This key is like a password that protects your data. You should use a value that is hard to guess and at least 8 characters long.
 * Admin Encryption Key (adminEncryptionKey). The admin encryption key is used to encrypt data transferred between QLM and the QLM Web service. This key is like a password that protects your data. You should use a value that is hard to guess and at least 8 characters long.
-* webServiceUrl: this is the Url to your QLM License Server. Example: [https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx](https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx)
+* webServiceUrl: this is the URL to your QLM License Server. Example: [https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx](https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx)
 
 ### Configure the QlmCustomerPortal <a href="#h_01hfsapynvhktepa4vxyrzkbne" id="h_01hfsapynvhktepa4vxyrzkbne"></a>
 
@@ -167,10 +167,10 @@ Customize the following settings in the web.config file located in the QlmCustom
 
 * Database connection string (refer to the Configure the Database section in the Help)
 * Default QLM Engine Version (defaultQlmVersion).
-* SQL Syntax(sqlsyntax). Select "sql" or "msaccess" (without the double quotes).
+* SQL Syntax(sqlsyntax). Select "sql" (without the double quotes).
 * Communication Encryption Key (communicationEncryptionKey). The communication encryption key is used to encrypt data transferred between QLM and the QLM Web service. This key is like a password that protects your data. You should use a value that is hard to guess and at least 8 characters long.
 * Admin Encryption Key (adminEncryptionKey). The admin encryption key is used to encrypt data transferred between QLM and the QLM Web service. This key is like a password that protects your data. You should use a value that is hard to guess and at least 8 characters long.
-* webServiceUrl: this is the Url to your QLM License Server. Example: [https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx](https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmxx)
+* webServiceUrl: this is the URL to your QLM License Server. Example: [https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx](https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmxx)
 * AllowedOrigins should be set to your primary domain. For example, if the URL to the qlm-portal-app is: [https://qlm3.net/company/qlm-portal-app](https://qlm3.net.com/company/qlm-portal-app,) set AllowedOrigins to [https://qlm3.net](https://qlm3.net.com/)
 
 #### QlmCustomerPortal/qlm-portal-api Configuration <a href="#h_01hfsapynv8z7rjnqcemd2hgvf" id="h_01hfsapynv8z7rjnqcemd2hgvf"></a>
