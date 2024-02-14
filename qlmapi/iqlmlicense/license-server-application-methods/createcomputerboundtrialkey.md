@@ -13,8 +13,6 @@ Creates a trial activation key, then automatically activates it on the server si
                                     string affiliateID, 
                                     string userData1, 
                                     out string response)
-
-
 ```
 
 ### Parameters
@@ -59,6 +57,7 @@ If you want to prevent calls to this function, set the \*\*enableCreateComputerB
 
 ### Example
 
+{% code overflow="wrap" %}
 ```c#
 QLM.LicenseValidator licenseValidator = new QLM.LicenseValidator();
 string response = string.Empty;
@@ -85,3 +84,4 @@ if (String.IsNullOrEmpty(activationKey) && String.IsNullOrEmpty(computerKey))
 
 }
 ```
+{% endcode %}

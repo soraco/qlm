@@ -22,8 +22,6 @@ void AddUser(string webServiceUrl,
              string customerNotes, 
              bool includeInMailList, 
              out string response)
-
-
 ```
 
 ### Parameters

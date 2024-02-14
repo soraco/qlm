@@ -10,9 +10,6 @@ Adds a new user.
                  bool updateIfExists, 
                  out
                  string response);
-
-
-
 ```
 
 ### Parameters

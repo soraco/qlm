@@ -4,14 +4,14 @@
 
 Downloads a license file from the license server and stores it on the end user system.
 
+{% code overflow="wrap" %}
 ```csharp
  bool DownloadLicenseFileFromServer(string webServiceUrl, 
                                     string activationKey, 
                                     string computerID, 
-                                    out string errorMessage)                                    
-
-
+                                    out string errorMessage)
 ```
+{% endcode %}
 
 ### Parameters
 

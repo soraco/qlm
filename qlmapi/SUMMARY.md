@@ -56,7 +56,6 @@
     * [AddUserEx](iqlmlicense/license-server-application-methods/adduserex.md)
     * [AddUserEx2](iqlmlicense/license-server-application-methods/adduserex2.md)
     * [AddUserEx3](iqlmlicense/license-server-application-methods/adduserex3.md)
-    * [Description](iqlmlicense/license-server-application-methods/description.md)
     * [CreateComputerBoundTrialKey](iqlmlicense/license-server-application-methods/createcomputerboundtrialkey.md)
     * [DownloadLicenseFileFromServer](iqlmlicense/license-server-application-methods/downloadlicensefilefromserver.md)
     * [DownloadProductPropertiesFromServer](iqlmlicense/license-server-application-methods/downloadproductpropertiesfromserver.md)

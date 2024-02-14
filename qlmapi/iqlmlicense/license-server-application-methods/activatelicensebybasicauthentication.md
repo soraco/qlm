@@ -4,6 +4,7 @@
 
 Activates a license key with an user name and password.
 
+{% code overflow="wrap" %}
 ```c#
 void ActivateLicenseByBasicAuthentication(string webServiceUrl, string username, string password,
                                         string computerID, string computerName, 
@@ -11,6 +12,7 @@ void ActivateLicenseByBasicAuthentication(string webServiceUrl, string username,
                                         string affiliateID, bool incrementActivationCount,
                                         out string response)
 ```
+{% endcode %}
 
 ### Parameters
 

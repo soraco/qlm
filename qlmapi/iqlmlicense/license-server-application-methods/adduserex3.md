@@ -11,9 +11,6 @@ Adds a new user.
                  bool createUserAccount,
                  out
                  string response);
-
-
-
 ```
 
 ### Parameters

@@ -49,15 +49,15 @@ You must call [DefineProduct ](https://soraco.readme.io/reference/defineproduct)
 
 ### Example
 
+{% code overflow="wrap" %}
 ```c#
-private void ActivateLicense(string activationKey, ref string licenseMessage)
+private void ActivateLicense(string activationKey, ref string message)
 { 
      string computerID = Environment.MachineName;
      bool needsActivation = false;
-     string returnMsg = string.Empty;
 
 
-     if (lv.ValidateLicense (activationKey, string.Empty, ref computerID, ELicenseBinding.ComputerName, ref needsActivation, ref returnMsg) == false)
+     if (lv.ValidateLicense (activationKey, string.Empty, ref computerID, ELicenseBinding.ComputerName, ref needsActivation, ref message) == false)
      {
 
          if (lv.WrongProductVersion || lv.EvaluationExpired || needsActivation )
@@ -75,3 +75,4 @@ private void ActivateLicense(string activationKey, ref string licenseMessage)
       }
 }
 ```
+{% endcode %}

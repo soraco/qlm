@@ -24,8 +24,6 @@ void AddUserEx(string webServiceUrl,
              string affiliateID,
              bool updateIfExists 
              out string response)
-
-
 ```
 
 ### Parameters
