@@ -10,6 +10,7 @@ Note that to call this function, you must:
 * Set the AdminEncryptionKey
 * Call [DefineProduct](../client-side-methods/defineproduct.md)
 
+{% code overflow="wrap" %}
 ```csharp
 void CreateActivationKeyWithExpiryDateEx9(string webServiceUrl, string email,
                                           int[] features, int numKeysToCreate, 
@@ -23,6 +24,7 @@ void CreateActivationKeyWithExpiryDateEx9(string webServiceUrl, string email,
                                           string productProperties, string orderID, 
                                           out string response)
 ```
+{% endcode %}
 
 ### Parameters
 

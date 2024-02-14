@@ -8,9 +8,11 @@ Note that to call this function, you must:
 
 * Set the AdminEncryptionKey
 
+{% code overflow="wrap" %}
 ```csharp
 IQlmOrganizationInfo UpdateOrganization(string webServiceUrl, int orgID, string orgName)
 ```
+{% endcode %}
 
 ### Parameters
 

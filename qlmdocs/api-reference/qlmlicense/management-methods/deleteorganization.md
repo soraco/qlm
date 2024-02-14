@@ -8,9 +8,11 @@ Note that to call this function, you must:
 
 * Set the AdminEncryptionKey
 
+{% code overflow="wrap" %}
 ```csharp
 bool DeleteOrganization(string webServiceUrl, IQlmOrganizationInfo orgInfo, out string response)
 ```
+{% endcode %}
 
 ### Parameters
 

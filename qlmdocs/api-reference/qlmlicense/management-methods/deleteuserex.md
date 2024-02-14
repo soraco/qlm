@@ -8,9 +8,11 @@ Note that to call this function, you must:
 
 * Set the AdminEncryptionKey
 
+{% code overflow="wrap" %}
 ```csharp
 bool DeleteUserEx (string webServiceUrl, string email, bool deleteUserAccount, out string response)
 ```
+{% endcode %}
 
 ### Parameters
 
