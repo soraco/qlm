@@ -28,7 +28,7 @@ If you need to use your Gmail account to send Server-Side emails, you need to cr
 
 #### How to create a Gmail Service Account
 
-Creation of a Gmail Service account requires a Google Workspace (G Suite) account. Detailed instructions for creating a service account can be found [here](sending-emails-using-the-gmail-api.md#how-to-create-a-gmail-service-account).
+Creation of a Gmail Service account requires a Google Workspace (G Suite) account. Detailed instructions for creating a service account can be found [here](./#how-to-create-a-gmail-service-account).
 
 #### QLM Management Console Configuration
 
@@ -52,7 +52,7 @@ If you use Scheduled Tasks, you must configure each scheduled task to use the Gm
 
 #### How to create a Gmail OAuth Credentials
 
-Instructions for creating Gmail OAuth credentials can be found [here](sending-emails-using-the-gmail-api.md#how-to-create-a-gmail-oauth-credentials).
+Instructions for creating Gmail OAuth credentials can be found [here](./#how-to-create-a-gmail-oauth-credentials).
 
 #### QLM Management Console Configuration
 

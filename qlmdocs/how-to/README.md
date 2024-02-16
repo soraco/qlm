@@ -60,16 +60,16 @@
 [qlm-license-models.md](../fundamental-concepts/qlm-license-models.md)
 {% endcontent-ref %}
 
-{% content-ref url="../email-framework/how-to-create-a-gmail-oauth-client-id.md" %}
-[how-to-create-a-gmail-oauth-client-id.md](../email-framework/how-to-create-a-gmail-oauth-client-id.md)
+{% content-ref url="../email-framework/sending-emails-using-the-gmail-api/how-to-create-a-gmail-oauth-client-id.md" %}
+[how-to-create-a-gmail-oauth-client-id.md](../email-framework/sending-emails-using-the-gmail-api/how-to-create-a-gmail-oauth-client-id.md)
 {% endcontent-ref %}
 
-{% content-ref url="../email-framework/how-to-create-a-gmail-service-account.md" %}
-[how-to-create-a-gmail-service-account.md](../email-framework/how-to-create-a-gmail-service-account.md)
+{% content-ref url="../email-framework/sending-emails-using-the-gmail-api/how-to-create-a-gmail-service-account.md" %}
+[how-to-create-a-gmail-service-account.md](../email-framework/sending-emails-using-the-gmail-api/how-to-create-a-gmail-service-account.md)
 {% endcontent-ref %}
 
-{% content-ref url="sending-emails-using-the-gmail-api.md" %}
-[sending-emails-using-the-gmail-api.md](sending-emails-using-the-gmail-api.md)
+{% content-ref url="../email-framework/sending-emails-using-the-gmail-api/" %}
+[sending-emails-using-the-gmail-api](../email-framework/sending-emails-using-the-gmail-api/)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-implement-a-pay-per-use-model-with-qlm.md" %}
