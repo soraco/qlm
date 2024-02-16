@@ -1,4 +1,4 @@
-# QLM License Models
+# License Model v17+
 
 Applies to: QLM Pro, Enterprise
 
@@ -30,7 +30,7 @@ QLM now supports 9 different license models:
 
 ### QLM Engine Version
 
-To configure QLM to generate license keys with the new prefixes, you must set the QLM Engine to version 6.0.00 (EV6). Note that QLM Engine Version is sometimes abbreviated as QLM Version in various settings in the QLM Management Console or the QLM Portal.
+To configure QLM to generate license keys with the new prefixes, you must set the QLM Engine to version 6.0.00 (EV6). Note that the QLM Engine Version is sometimes abbreviated as QLM Version in various settings in the QLM Management Console or the QLM Portal.
 
 For new customers, i.e. customers who did not issue license keys prior to QLM v17, EV6 should already be the default. The default engine version is configurable at two levels:
 
@@ -71,7 +71,7 @@ Additionally, you must set the QlmVersion property in the Protect Your Applicati
 
 We recommend that you set the QlmVersion to 6.0.00 for new versions of your application that you deploy with the QLM v17 binaries.
 
-**Important:** When programmatically creating a QlmLicense object, the QLM Engine Version is now set to 6.0.00 by default. To force the QLM Engine Version to 5.0.00, you must explicitly set the QlmLicense.Version property to 5.0.00. This is required before calling any QLM API that creates license keys or modifies licenses keys such as subscription renewals, license upgrades, license updates and license activation. If you are using the LicenseValidator class, you can either regenerate the LicenseValidator class or simply set the QlmLicense.Version property in the LicenseValidator constructor.
+**Important:** When programmatically creating a QlmLicense object, the QLM Engine Version is now set to 6.0.00 by default. To force the QLM Engine Version to 5.0.00, you must explicitly set the QlmLicense.Version property to 5.0.00. This is required before calling any QLM API that creates license keys or modifies license keys such as subscription renewals, license upgrades, license updates and license activation. If you are using the LicenseValidator class, you can either regenerate the LicenseValidator class or simply set the QlmLicense.Version property in the LicenseValidator constructor.
 
 &#x20;
 

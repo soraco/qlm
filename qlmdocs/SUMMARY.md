@@ -20,7 +20,7 @@
   * [Length of QLM license keys](faq/length-of-qlm-license-keys.md)
   * [OrderStatus field](faq/orderstatus-field.md)
   * [License Model](faq/license-model-1.md)
-  * [License Models v17+](fundamental-concepts/qlm-license-models.md)
+  * [License Model v17+](fundamental-concepts/qlm-license-models.md)
   * [Computer Identifier (ComputerID) requirements](faq/computer-identifier-computerid-requirements.md)
   * [QLM Features](how-to/qlm-features.md)
   * [Organizations](how-to/organizations.md)
