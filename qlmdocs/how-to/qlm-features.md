@@ -1,6 +1,6 @@
-# QLM Features
+# Product Features
 
-Features are on/off toggles that can be embedded in a license key. Features are ideal for add-on modules that your customers may optionally purchase.
+Product Features are on/off toggles that can be embedded in a license key. Features are ideal for add-on modules that your customers may optionally purchase.
 
 To define features, click on Define Products, select a product, and add your features.
 

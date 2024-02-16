@@ -22,7 +22,7 @@
   * [License Model](faq/license-model-1.md)
   * [License Model v17+](fundamental-concepts/qlm-license-models.md)
   * [Computer Identifier (ComputerID) requirements](faq/computer-identifier-computerid-requirements.md)
-  * [QLM Features](how-to/qlm-features.md)
+  * [Product Features](how-to/qlm-features.md)
   * [Organizations](how-to/organizations.md)
   * [CommunicationEncryptionKey and AdminEncryptionKey](faq/communicationencryptionkey-and-adminencryptionkey.md)
   * [Definition of the macros that can be used in searches](faq/definition-of-the-macros-that-can-be-used-in-searches.md)
