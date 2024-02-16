@@ -8,8 +8,8 @@
 [how-do-i-transfer-qlm-to-another-machine.md](how-do-i-transfer-qlm-to-another-machine.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-does-offline-activation-work.md" %}
-[how-does-offline-activation-work.md](how-does-offline-activation-work.md)
+{% content-ref url="../fundamental-concepts/how-does-offline-activation-work.md" %}
+[how-does-offline-activation-work.md](../fundamental-concepts/how-does-offline-activation-work.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-read-product-properties-from-a-license-file.md" %}

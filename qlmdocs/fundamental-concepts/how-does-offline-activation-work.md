@@ -1,4 +1,4 @@
-# How does offline activation work?
+# Offline activation
 
 If you are using QLM Pro or Enterprise, your customers are typically activating their license online.
 
@@ -50,7 +50,7 @@ To perform a manual activation from the QLM Portal follows the steps below:
 
 ### QLM Self Help
 
-The QLM Self Help page allows your customer to access a page on your web site and perform an offline activation without contacting you. For more details, check out the [QLM Self Help documentation](how-to-configure-the-qlm-self-help-web-page.md) or the [QlmCustomerSite documentation.](../qlm-license-server/qlmcustomersite-qlm-self-help.md)
+The QLM Self Help page allows your customer to access a page on your web site and perform an offline activation without contacting you. For more details, check out the [QLM Self Help documentation](../how-to/how-to-configure-the-qlm-self-help-web-page.md) or the [QlmCustomerSite documentation.](../qlm-license-server/qlmcustomersite-qlm-self-help.md)
 
 ### QLM License Wizard
 
