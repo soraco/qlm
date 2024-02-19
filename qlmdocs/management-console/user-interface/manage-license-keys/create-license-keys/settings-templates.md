@@ -4,7 +4,7 @@
 
 Settings Templates are predefined settings that can be stored and recalled when creating an Activation Key from the QLM Management Console.
 
-QLM Pro allows you to create a single setting template whereas QLM Enterprise allows you to create an unlimited amount of settings templates.&#x20;
+QLM Pro allows you to create a single settings template whereas QLM Enterprise allows you to create an unlimited amount of settings templates.&#x20;
 
 Settings Templates are stored on the License Server and automatically available to any QLM Management Console user that is connected to the same License Server.
 
