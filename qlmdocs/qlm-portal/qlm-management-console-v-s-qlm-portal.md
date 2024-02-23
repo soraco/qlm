@@ -12,6 +12,7 @@ The table presents a high-level overview of the features. The implementation of 
 | Activate a license                       |  ✔                     |  ✔         |
 | Deactivate a license                     |  ✔                     |  ✔         |
 | Edit a license                           |  ✔                     |  ✔         |
+| Bulk Edits                               |  ✔                     |            |
 | Delete a license                         |  ✔                     |  ✔         |
 | Extend Expiry Date                       |  ✔                     |  ✔         |
 | Upgrade a license                        |  ✔                     |            |
