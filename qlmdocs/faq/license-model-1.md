@@ -18,4 +18,4 @@ The License Model is typically used for logically grouping licenses. It is also 
 Additional articles:
 
 * [How to limit the number of trial license keys a customer can use](../how-to/how-to-limit-the-number-of-trial-license-keys-a-customer-can-use.md)
-* [How to follow up on idle trials with QLM Enterprise](../how-to/how-to-follow-up-on-idle-trials-with-qlm-enterprise.md)
+* [How to follow up on idle trials with QLM Enterprise](../email-framework/email-notifications/how-to-follow-up-on-idle-trials-with-qlm-enterprise.md)

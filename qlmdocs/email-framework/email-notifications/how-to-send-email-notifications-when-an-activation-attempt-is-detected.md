@@ -1,6 +1,6 @@
 # How to send email notifications when an activation attempt is detected
 
-When an activation attempt is detected, QLM creates a record of that detection in the system. You can read more about activation attempts [here](../how-to/fraud-detection-illegal-computers-and-activation-attempts.md).
+When an activation attempt is detected, QLM creates a record of that detection in the system. You can read more about activation attempts [here](../../how-to/fraud-detection-illegal-computers-and-activation-attempts.md).
 
 This article describes 2 approaches to dealing with activation attempts:&#x20;
 

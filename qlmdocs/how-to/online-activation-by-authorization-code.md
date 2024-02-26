@@ -28,7 +28,7 @@ To support AAC from the QLM License Wizard:
 * Save the wizard settings xml file and LicenseValidator class
 * Update your application to use these files
 
-You must then configure your QLM License Server to send emails. To do so, follow the instructions in the section "Configure the QLM License Server to send emails using SMTP" of this knowledge base [article](how-to-configure-qlm-to-send-mail-using-smtp.md).
+You must then configure your QLM License Server to send emails. To do so, follow the instructions in the section "Configure the QLM License Server to send emails using SMTP" of this knowledge base [article](../email-framework/configuration/how-to-configure-qlm-to-send-mail-using-smtp.md).
 
 You can also send the Authorization Code by SMS message. To send the authorization code by SMS message, you must use a 3rd party SMS provider. QLM is integrated with [Twilio](https://www.twilio.com/) for sending SMS messages.
 

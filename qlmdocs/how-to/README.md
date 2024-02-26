@@ -1,4 +1,4 @@
-# ℹ How To
+# ℹ️ How To
 
 {% content-ref url="how-to-generate-a-trial-key-from-your-web-site.md" %}
 [how-to-generate-a-trial-key-from-your-web-site.md](how-to-generate-a-trial-key-from-your-web-site.md)
@@ -60,16 +60,16 @@
 [qlm-license-models.md](../fundamental-concepts/qlm-license-models.md)
 {% endcontent-ref %}
 
-{% content-ref url="../email-framework/sending-emails-using-the-gmail-api/how-to-create-a-gmail-oauth-client-id.md" %}
-[how-to-create-a-gmail-oauth-client-id.md](../email-framework/sending-emails-using-the-gmail-api/how-to-create-a-gmail-oauth-client-id.md)
+{% content-ref url="../email-framework/configuration/sending-emails-using-the-gmail-api/how-to-create-a-gmail-oauth-client-id.md" %}
+[how-to-create-a-gmail-oauth-client-id.md](../email-framework/configuration/sending-emails-using-the-gmail-api/how-to-create-a-gmail-oauth-client-id.md)
 {% endcontent-ref %}
 
-{% content-ref url="../email-framework/sending-emails-using-the-gmail-api/how-to-create-a-gmail-service-account.md" %}
-[how-to-create-a-gmail-service-account.md](../email-framework/sending-emails-using-the-gmail-api/how-to-create-a-gmail-service-account.md)
+{% content-ref url="../email-framework/configuration/sending-emails-using-the-gmail-api/how-to-create-a-gmail-service-account.md" %}
+[how-to-create-a-gmail-service-account.md](../email-framework/configuration/sending-emails-using-the-gmail-api/how-to-create-a-gmail-service-account.md)
 {% endcontent-ref %}
 
-{% content-ref url="../email-framework/sending-emails-using-the-gmail-api/" %}
-[sending-emails-using-the-gmail-api](../email-framework/sending-emails-using-the-gmail-api/)
+{% content-ref url="../email-framework/configuration/sending-emails-using-the-gmail-api/" %}
+[sending-emails-using-the-gmail-api](../email-framework/configuration/sending-emails-using-the-gmail-api/)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-implement-a-pay-per-use-model-with-qlm.md" %}
@@ -88,12 +88,12 @@
 [how-to-use-the-http-api-to-create-a-license-for-a-customer.md](how-to-use-the-http-api-to-create-a-license-for-a-customer.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-receive-an-email-report-of-failed-trial-requests-using-scheduled-tasks.md" %}
-[how-to-receive-an-email-report-of-failed-trial-requests-using-scheduled-tasks.md](how-to-receive-an-email-report-of-failed-trial-requests-using-scheduled-tasks.md)
+{% content-ref url="../email-framework/email-notifications/how-to-receive-an-email-report-of-failed-trial-requests-using-scheduled-tasks.md" %}
+[how-to-receive-an-email-report-of-failed-trial-requests-using-scheduled-tasks.md](../email-framework/email-notifications/how-to-receive-an-email-report-of-failed-trial-requests-using-scheduled-tasks.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-create-email-drip-campaigns-in-qlm.md" %}
-[how-to-create-email-drip-campaigns-in-qlm.md](how-to-create-email-drip-campaigns-in-qlm.md)
+{% content-ref url="../email-framework/email-notifications/how-to-create-email-drip-campaigns-in-qlm.md" %}
+[how-to-create-email-drip-campaigns-in-qlm.md](../email-framework/email-notifications/how-to-create-email-drip-campaigns-in-qlm.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-block-computers-from-activating-a-license.md" %}
@@ -104,8 +104,8 @@
 [how-to-assign-a-specific-set-of-computers-to-an-activation-key.md](how-to-assign-a-specific-set-of-computers-to-an-activation-key.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-send-a-notification-when-a-customer-is-created.md" %}
-[how-to-send-a-notification-when-a-customer-is-created.md](how-to-send-a-notification-when-a-customer-is-created.md)
+{% content-ref url="../email-framework/email-notifications/how-to-send-a-notification-when-a-customer-is-created.md" %}
+[how-to-send-a-notification-when-a-customer-is-created.md](../email-framework/email-notifications/how-to-send-a-notification-when-a-customer-is-created.md)
 {% endcontent-ref %}
 
 {% content-ref url="../floating-licenses/cloud-floating-licenses/how-to-implement-cloud-based-floating-licenses-for-cross-platform-applications.md" %}
@@ -128,8 +128,8 @@
 [how-to-simultaneously-support-node-locked-and-cloud-based-floating-licenses.md](../floating-licenses/on-premise-floating-licenses/how-to-simultaneously-support-node-locked-and-cloud-based-floating-licenses.md)
 {% endcontent-ref %}
 
-{% content-ref url="sending-emails-using-the-microsoft-graph-api.md" %}
-[sending-emails-using-the-microsoft-graph-api.md](sending-emails-using-the-microsoft-graph-api.md)
+{% content-ref url="../email-framework/configuration/sending-emails-using-the-microsoft-graph-api.md" %}
+[sending-emails-using-the-microsoft-graph-api.md](../email-framework/configuration/sending-emails-using-the-microsoft-graph-api.md)
 {% endcontent-ref %}
 
 {% content-ref url="../floating-licenses/cloud-floating-licenses/how-to-implement-cloud-based-floating-licenses.md" %}
@@ -160,8 +160,8 @@
 [how-to-fire-an-event-when-maxdaysoffline-is-reached.md](how-to-fire-an-event-when-maxdaysoffline-is-reached.md)
 {% endcontent-ref %}
 
-{% content-ref url="send-aggregated-email-notifications-per-subscription-order-or-email.md" %}
-[send-aggregated-email-notifications-per-subscription-order-or-email.md](send-aggregated-email-notifications-per-subscription-order-or-email.md)
+{% content-ref url="../email-framework/email-notifications/send-aggregated-email-notifications-per-subscription-order-or-email.md" %}
+[send-aggregated-email-notifications-per-subscription-order-or-email.md](../email-framework/email-notifications/send-aggregated-email-notifications-per-subscription-order-or-email.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-retrieve-activation-information-from-the-license-server.md" %}
@@ -188,20 +188,20 @@
 [how-to-configure-and-test-maxdaysoffline.md](how-to-configure-and-test-maxdaysoffline.md)
 {% endcontent-ref %}
 
-{% content-ref url="../qlm-agent/how-to-send-email-notifications-when-an-activation-attempt-is-detected.md" %}
-[how-to-send-email-notifications-when-an-activation-attempt-is-detected.md](../qlm-agent/how-to-send-email-notifications-when-an-activation-attempt-is-detected.md)
+{% content-ref url="../email-framework/email-notifications/how-to-send-email-notifications-when-an-activation-attempt-is-detected.md" %}
+[how-to-send-email-notifications-when-an-activation-attempt-is-detected.md](../email-framework/email-notifications/how-to-send-email-notifications-when-an-activation-attempt-is-detected.md)
 {% endcontent-ref %}
 
 {% content-ref url="fraud-detection-illegal-computers-and-activation-attempts.md" %}
 [fraud-detection-illegal-computers-and-activation-attempts.md](fraud-detection-illegal-computers-and-activation-attempts.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-send-email-notifications-when-an-illegal-computer-is-detected.md" %}
-[how-to-send-email-notifications-when-an-illegal-computer-is-detected.md](how-to-send-email-notifications-when-an-illegal-computer-is-detected.md)
+{% content-ref url="../email-framework/email-notifications/how-to-send-email-notifications-when-an-illegal-computer-is-detected.md" %}
+[how-to-send-email-notifications-when-an-illegal-computer-is-detected.md](../email-framework/email-notifications/how-to-send-email-notifications-when-an-illegal-computer-is-detected.md)
 {% endcontent-ref %}
 
-{% content-ref url="external-email-templates.md" %}
-[external-email-templates.md](external-email-templates.md)
+{% content-ref url="../email-framework/email-templates/external-email-templates.md" %}
+[external-email-templates.md](../email-framework/email-templates/external-email-templates.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-parse-a-feature-string-and-determine-the-enabled-feature.md" %}
@@ -228,8 +228,8 @@
 [qlm-agent-service.md](qlm-agent-service.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-create-email-templates-with-your-own-editor-and-upload-them-to-the-server.md" %}
-[how-to-create-email-templates-with-your-own-editor-and-upload-them-to-the-server.md](how-to-create-email-templates-with-your-own-editor-and-upload-them-to-the-server.md)
+{% content-ref url="../email-framework/email-templates/how-to-create-email-templates-with-your-own-editor-and-upload-them-to-the-server.md" %}
+[how-to-create-email-templates-with-your-own-editor-and-upload-them-to-the-server.md](../email-framework/email-templates/how-to-create-email-templates-with-your-own-editor-and-upload-them-to-the-server.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-send-your-customer-an-analytics-usage-report.md" %}
@@ -244,8 +244,8 @@
 [how-to-upgrade-a-license-from-the-qlm-management-console.md](how-to-upgrade-a-license-from-the-qlm-management-console.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-automatically-send-the-vendor-an-email-when-a-customer-activates-a-license.md" %}
-[how-to-automatically-send-the-vendor-an-email-when-a-customer-activates-a-license.md](how-to-automatically-send-the-vendor-an-email-when-a-customer-activates-a-license.md)
+{% content-ref url="../email-framework/email-notifications/how-to-automatically-send-the-vendor-an-email-when-a-customer-activates-a-license.md" %}
+[how-to-automatically-send-the-vendor-an-email-when-a-customer-activates-a-license.md](../email-framework/email-notifications/how-to-automatically-send-the-vendor-an-email-when-a-customer-activates-a-license.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-protect-javascript-code.md" %}
@@ -272,8 +272,8 @@
 [how-to-activate-a-license.md](how-to-activate-a-license.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-email-a-monthly-analytics-report.md" %}
-[how-to-email-a-monthly-analytics-report.md](how-to-email-a-monthly-analytics-report.md)
+{% content-ref url="../email-framework/email-notifications/how-to-email-a-monthly-analytics-report.md" %}
+[how-to-email-a-monthly-analytics-report.md](../email-framework/email-notifications/how-to-email-a-monthly-analytics-report.md)
 {% endcontent-ref %}
 
 {% content-ref url="qlm-license-wizard-localization.md" %}
@@ -336,12 +336,12 @@
 [creating-trial-keys-from-the-qlm-license-wizard.md](creating-trial-keys-from-the-qlm-license-wizard.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-send-yourself-a-weekly-report-of-upcoming-renewals.md" %}
-[how-to-send-yourself-a-weekly-report-of-upcoming-renewals.md](how-to-send-yourself-a-weekly-report-of-upcoming-renewals.md)
+{% content-ref url="../email-framework/email-notifications/how-to-send-yourself-a-weekly-report-of-upcoming-renewals.md" %}
+[how-to-send-yourself-a-weekly-report-of-upcoming-renewals.md](../email-framework/email-notifications/how-to-send-yourself-a-weekly-report-of-upcoming-renewals.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-automatically-send-an-email-when-a-new-license-is-created.md" %}
-[how-to-automatically-send-an-email-when-a-new-license-is-created.md](how-to-automatically-send-an-email-when-a-new-license-is-created.md)
+{% content-ref url="../email-framework/email-notifications/how-to-automatically-send-an-email-when-a-new-license-is-created.md" %}
+[how-to-automatically-send-an-email-when-a-new-license-is-created.md](../email-framework/email-notifications/how-to-automatically-send-an-email-when-a-new-license-is-created.md)
 {% endcontent-ref %}
 
 {% content-ref url="product-bundles.md" %}
@@ -460,16 +460,16 @@
 [how-to-create-a-search-that-shows-non-active-licenses.md](how-to-create-a-search-that-shows-non-active-licenses.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-configure-qlm-to-send-mail-using-smtp.md" %}
-[how-to-configure-qlm-to-send-mail-using-smtp.md](how-to-configure-qlm-to-send-mail-using-smtp.md)
+{% content-ref url="../email-framework/configuration/how-to-configure-qlm-to-send-mail-using-smtp.md" %}
+[how-to-configure-qlm-to-send-mail-using-smtp.md](../email-framework/configuration/how-to-configure-qlm-to-send-mail-using-smtp.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-deactivate-a-license-on-a-mobile-device.md" %}
 [how-to-deactivate-a-license-on-a-mobile-device.md](how-to-deactivate-a-license-on-a-mobile-device.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-use-smtp-to-send-emails.md" %}
-[how-to-use-smtp-to-send-emails.md](how-to-use-smtp-to-send-emails.md)
+{% content-ref url="../email-framework/configuration/how-to-use-smtp-to-send-emails.md" %}
+[how-to-use-smtp-to-send-emails.md](../email-framework/configuration/how-to-use-smtp-to-send-emails.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-determine-which-qlm-dll-is-loaded.md" %}
@@ -500,8 +500,8 @@
 [how-to-email-customers-their-license-key-interactively-from-the-qlm-management-console.md](how-to-email-customers-their-license-key-interactively-from-the-qlm-management-console.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-send-yourself-a-weekly-report-of-orders.md" %}
-[how-to-send-yourself-a-weekly-report-of-orders.md](how-to-send-yourself-a-weekly-report-of-orders.md)
+{% content-ref url="../email-framework/email-notifications/how-to-send-yourself-a-weekly-report-of-orders.md" %}
+[how-to-send-yourself-a-weekly-report-of-orders.md](../email-framework/email-notifications/how-to-send-yourself-a-weekly-report-of-orders.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-register-qlmlicenselib.dll-for-non-.net-applications-running-on-windows.md" %}
@@ -520,8 +520,8 @@
 [how-to-extend-a-license-subscription-from-a-url.md](how-to-extend-a-license-subscription-from-a-url.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-automatically-email-customers-when-the-subscription-is-about-to-expire-using-scheduled-tasks.md" %}
-[how-to-automatically-email-customers-when-the-subscription-is-about-to-expire-using-scheduled-tasks.md](how-to-automatically-email-customers-when-the-subscription-is-about-to-expire-using-scheduled-tasks.md)
+{% content-ref url="../email-framework/email-notifications/how-to-automatically-email-customers-when-the-subscription-is-about-to-expire-using-scheduled-tasks.md" %}
+[how-to-automatically-email-customers-when-the-subscription-is-about-to-expire-using-scheduled-tasks.md](../email-framework/email-notifications/how-to-automatically-email-customers-when-the-subscription-is-about-to-expire-using-scheduled-tasks.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-define-the-user-password-associated-to-an-ecommerce-provider.md" %}
@@ -588,8 +588,8 @@
 [how-to-validate-if-a-license-was-revoked-on-the-server.md](how-to-validate-if-a-license-was-revoked-on-the-server.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to-automatically-email-customers-their-license-key-using-scheduled-tasks.md" %}
-[how-to-automatically-email-customers-their-license-key-using-scheduled-tasks.md](how-to-automatically-email-customers-their-license-key-using-scheduled-tasks.md)
+{% content-ref url="../email-framework/email-notifications/how-to-automatically-email-customers-their-license-key-using-scheduled-tasks.md" %}
+[how-to-automatically-email-customers-their-license-key-using-scheduled-tasks.md](../email-framework/email-notifications/how-to-automatically-email-customers-their-license-key-using-scheduled-tasks.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-use-generic-license-keys.md" %}

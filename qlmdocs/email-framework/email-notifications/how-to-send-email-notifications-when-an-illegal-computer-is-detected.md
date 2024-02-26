@@ -1,6 +1,6 @@
 # How to send email notifications when an illegal computer is detected
 
-When an illegal computer is detected, QLM creates a record of that detection in the system. You can read more about illegal computers [here](fraud-detection-illegal-computers-and-activation-attempts.md).
+When an illegal computer is detected, QLM creates a record of that detection in the system. You can read more about illegal computers [here](../../how-to/fraud-detection-illegal-computers-and-activation-attempts.md).
 
 This article describes 2 approaches to deal with illegal computers:&#x20;
 

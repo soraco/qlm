@@ -2,7 +2,7 @@
 
 If you provide a trial version of your application, wouldn't it be nice to know which trials have gone idle and send an automated email to the potential customer to see what's going on?
 
-Well, you can with QLM Enterprise 9.2.16330.1+. This article describes how to configure QLM to accomplish just that. It is assumed that you are already using the QLM Enterprise API to register a customer installation as described in this [article.](qlm-enterprise-analytics.md)&#x20;
+Well, you can with QLM Enterprise 9.2.16330.1+. This article describes how to configure QLM to accomplish just that. It is assumed that you are already using the QLM Enterprise API to register a customer installation as described in this [article.](../../how-to/qlm-enterprise-analytics.md)&#x20;
 
 **Create a custom search**
 

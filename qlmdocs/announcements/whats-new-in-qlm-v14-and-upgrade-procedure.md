@@ -25,11 +25,11 @@ QLM v14 was released on May 2, 2020. Some of the features listed below may occur
 ### Email Notifications
 
 * Improved built-in email templates.
-* Improved process of importing [external email templates.](../how-to/external-email-templates.md)
-* Receive a daily email report of all [illegal computers.](../how-to/how-to-send-email-notifications-when-an-illegal-computer-is-detected.md)
-* Receive a daily email report of all [failed activations.](../qlm-agent/how-to-send-email-notifications-when-an-activation-attempt-is-detected.md)
-* Send your customer (and yourself) an email notification when we detect an [illegal computer.](../how-to/how-to-send-email-notifications-when-an-illegal-computer-is-detected.md)
-* Send your customer (and yourself) an email notification when an [activation attempt](../qlm-agent/how-to-send-email-notifications-when-an-activation-attempt-is-detected.md) fails.
+* Improved process of importing [external email templates.](../email-framework/email-templates/external-email-templates.md)
+* Receive a daily email report of all [illegal computers.](../email-framework/email-notifications/how-to-send-email-notifications-when-an-illegal-computer-is-detected.md)
+* Receive a daily email report of all [failed activations.](../email-framework/email-notifications/how-to-send-email-notifications-when-an-activation-attempt-is-detected.md)
+* Send your customer (and yourself) an email notification when we detect an [illegal computer.](../email-framework/email-notifications/how-to-send-email-notifications-when-an-illegal-computer-is-detected.md)
+* Send your customer (and yourself) an email notification when an [activation attempt](../email-framework/email-notifications/how-to-send-email-notifications-when-an-activation-attempt-is-detected.md) fails.
 * New option to skip sending emails if there's no data to send. This option is configurable from Manage Keys / Options.
 
 ### Floating Licenses

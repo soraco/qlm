@@ -59,6 +59,6 @@ To email a trial key after the user enters his contact information, configure th
 * **6. QLM License Properties**
   * QlmCustomerSiteUrl: A URL to your [QLM Customer Site](../qlm-license-server/qlmcustomersite-qlm-self-help.md). Example: https://qlm3.net/qlmdemo/QlmCustomerSite
 
-Note that the email is sent to the user from the QLM License Server. You must therefore configure the SMTP Server settings of the License Server to send emails. For more details about configuring the SMTP Server settings, check the "Configure the QLM License Server to send emails using SMTP" section in this [article](how-to-use-smtp-to-send-emails.md).
+Note that the email is sent to the user from the QLM License Server. You must therefore configure the SMTP Server settings of the License Server to send emails. For more details about configuring the SMTP Server settings, check the "Configure the QLM License Server to send emails using SMTP" section in this [article](../email-framework/configuration/how-to-use-smtp-to-send-emails.md).
 
 Note that this feature is dependent on the proper configuration of the QlmCustomerSite.

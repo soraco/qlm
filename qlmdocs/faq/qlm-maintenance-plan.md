@@ -1,4 +1,4 @@
-# QLM Maintenance Plan
+# Maintenance Plan
 
 #### Overview
 
@@ -55,7 +55,7 @@ For an existing activation key, click on Manage Keys / Licenses / Edit then spec
 
 #### Maintenance Plan Email Notification
 
-To remind customers to renew the maintenance plan, you can schedule a task that will send your customers a reminder email prior to the expiry of the maintenance plan. For more details, check this [article](../how-to/how-to-automatically-email-customers-when-the-subscription-is-about-to-expire-using-scheduled-tasks.md).
+To remind customers to renew the maintenance plan, you can schedule a task that will send your customers a reminder email prior to the expiry of the maintenance plan. For more details, check this [article](../email-framework/email-notifications/how-to-automatically-email-customers-when-the-subscription-is-about-to-expire-using-scheduled-tasks.md).
 
 #### Place an order to renew a maintenance plan
 
