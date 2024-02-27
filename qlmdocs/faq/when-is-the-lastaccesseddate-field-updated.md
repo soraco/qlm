@@ -8,6 +8,7 @@ Despite its name, this field is not updated whenever a record is accessed. A mor
 * When the license is activated.
 * When the license is released (deactivated).
 * When the license is updated/upgraded.
+* When the license expiry date is extended.
 * When the license is revoked.
 
 As of QLM v15, any change to license information by editing a license in the QLM Management Console, in the QLM Portal or by calling the [UpdateLicenseInfo](../api-reference/qlmlicense/management-methods/updatelicenseinfo.md) API will update the LastAccessedDate. Additionally, extending the expiry date of a license automatically updates the Computer Key of the activated licenses and hence updates the LAD.
