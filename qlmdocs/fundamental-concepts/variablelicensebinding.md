@@ -30,3 +30,11 @@ Next, you must associate a different license binding method with each feature.
 
 <figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
+### Creating an Activation Key
+
+When creating an Activation Key for a customer, select the corresponding feature to enforce the required license binding.
+
+<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+
+
+
