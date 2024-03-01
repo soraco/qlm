@@ -1,0 +1,9 @@
+# License Binding
+
+QLM uses license binding to lock a license to a specified fingerprint. Licenses can be bound to machine identifiers, user identifiers, or site-wide identifiers such as an Active Directory domain.
+
+Below is the list of currently supported identifiers. To create your own unique fingerprint based on a combination of identifiers, you can use the "UserDefined" license binding and then create your own fingerprint and provide it to QLM. The QlmHardware class has APIs to retrieve any of the identifiers listed below.
+
+
+
+<table><thead><tr><th width="249.33333333333331">Name</th><th width="422">Description</th><th>Value</th></tr></thead><tbody><tr><td>None</td><td>Undefined</td><td>-1</td></tr><tr><td>ComputerName</td><td>bind the license to the computer name</td><td>0</td></tr><tr><td>UserDefined</td><td>bind the license to a user defined value</td><td>2</td></tr><tr><td>MacAddress</td><td>bind the license to the MAC address</td><td>3</td></tr><tr><td>VolumeSerialNumber</td><td>bind the license to the volume SN</td><td>4</td></tr><tr><td>MotherboardSerialNumber</td><td>bind the license to the motherboard SN</td><td>5</td></tr><tr><td>ActiveDirectoryComputerDomain</td><td>bind the license to the AD computer domain</td><td>7</td></tr><tr><td>ActiveDirectoryAppDomain</td><td>bind the license to the AD App domain</td><td>7</td></tr><tr><td>SystemManagementBiosUuid</td><td>bind the license to the BIOS UUID</td><td>8</td></tr><tr><td>QlmUniqueSystemIdentifier1</td><td>Use QLM system binding v1</td><td>9</td></tr><tr><td>QlmUniqueSystemIdentifier2</td><td>Use QLM system binding v2</td><td>10</td></tr><tr><td>LoggedInUser</td><td>bind the license to the logged in user name</td><td>11</td></tr><tr><td>USBKey</td><td>bind the license to the usb key</td><td>12</td></tr><tr><td>DockerContainer</td><td>bind the license to the docker container</td><td>13</td></tr></tbody></table>

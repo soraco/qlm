@@ -22,6 +22,8 @@
   * [License Model](faq/license-model-1.md)
   * [License Model v17+](fundamental-concepts/qlm-license-models.md)
   * [Computer Identifier (ComputerID) requirements](faq/computer-identifier-computerid-requirements.md)
+  * [License Binding](fundamental-concepts/elicensebinding.md)
+  * [Variable License Binding](fundamental-concepts/elicensebinding-1.md)
   * [Product Features](how-to/qlm-features.md)
   * [Product Properties](how-to/product-properties.md)
   * [CommunicationEncryptionKey and AdminEncryptionKey](faq/communicationencryptionkey-and-adminencryptionkey.md)
