@@ -65,6 +65,7 @@ licenseData += String.Format(@" AvailableLicenses='{0}'", availableLicenses);
 licenseData += String.Format(@"> </licenseArguments>");
 
 string response;
+// Make sure that the AdminEncryptionKey is set when calling the Management API
 lv.QlmLicenseObject.AdminEncryptionKey = "{B6163D99-F46A-4580-BB42-BF276A507A14}";
 lv.QlmLicenseObject.UpdateLicenseInfo(string.Empty, lv.ActivationKey, licenseData, out response);
 
@@ -77,6 +78,33 @@ if (lv.QlmLicenseObject.ParseResults(response, ref li, ref message))
 else
 {
   // error
+}
+```
+
+#### Example - update the customer associated with a license
+
+```csharp
+//Modify the user associated with the license
+string customerEmail = "support@soraco.co";
+
+string licenseData = String.Format(@"<licenseArguments ");
+licenseData += String.Format(@" Email='{0}'", customerEmail);            
+licenseData += String.Format(@"> </licenseArguments>");
+
+string response;
+// Make sure that the AdminEncryptionKey is set when calling the Management API
+lv.QlmLicenseObject.AdminEncryptionKey = "{B6163D99-F46A-4580-BB42-BF276A507A14}";
+lv.QlmLicenseObject.UpdateLicenseInfo(string.Empty, lv.ActivationKey, licenseData, out response);
+
+ILicenseInfo li = new LicenseInfo();
+string message = string.Empty;
+if (lv.QlmLicenseObject.ParseResults(response, ref li, ref message))
+{
+    // success
+}
+else
+{
+    // error
 }
 ```
 
