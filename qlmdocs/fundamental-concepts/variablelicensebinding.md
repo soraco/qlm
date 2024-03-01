@@ -23,11 +23,10 @@ Next, you must associate a different license binding method with each feature.
 * Go to the Protect Your Application tab
 * Step to the "Customize Look & Feel / Behavior" page
 * Go to the License Properties section
+* Set the QlmLicenseBinding property to "PerFeature"
 * Click the dropdown box next to QlmLicenseBindingPerFeature and configure the mapping as required
 * Complete the wizard and generate the XML/Source code files.
 * Update your application to use the newly generated files
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
-
-*
+<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
