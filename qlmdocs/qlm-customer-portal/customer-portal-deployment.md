@@ -101,6 +101,13 @@ With a text editor, open the QlmCustomerPortal/qlm-portal-app/assets/appsettings
 
 * Set the apiEndpoint to the URL of the QLM Customer Portal API site and append /api to the URL. Example: [https://quicklicensemanager.com/qlm/qlmcustomerportal/qlm-portal-api/api](https://quick/)
 
+#### Additional Configuration
+
+With a text editor, open the QlmCustomerPortal/qlm-portal-app/index.html file:
+
+* Set the \<base> tag to the path of the customer portal app (excluding the domain)
+* &#x20;Example: \<base>/qlm/qlmcustomerportal/qlm-portal-app/>
+
 #### Manual Installation
 
 Instructions for manually deploying the QLM License Server components, including the QLM Customer Portal, can be found [here](../qlm-license-server/how-to-install-the-qlm-license-server.md).
