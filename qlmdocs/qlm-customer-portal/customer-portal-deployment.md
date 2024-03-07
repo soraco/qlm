@@ -106,7 +106,7 @@ With a text editor, open the QlmCustomerPortal/qlm-portal-app/assets/appsettings
 With a text editor, open the QlmCustomerPortal/qlm-portal-app/index.html file:
 
 * Set the \<base> tag to the path of the customer portal app (excluding the domain)
-* &#x20;Example: \<base>/qlm/qlmcustomerportal/qlm-portal-app/>
+* &#x20;Example: \<base>/qlm/qlmcustomerportal/qlm-portal-app/\</base>
 
 #### Manual Installation
 
