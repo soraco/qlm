@@ -93,8 +93,8 @@ With a text editor, open the QlmCustomerPortal/qlm-portal-app/assets/appsettings
 * Set the googleLoginKey field to the ClientID acquired above.
 * Set the facebookLoginKey field to the App ID acquired above.
 * Set the azureAuth / clientId field to the ClientID acquired above.
-* Set the resetPasswordUrl to the QlmCustomerSite reset password page
-* Set the updatePasswordUrl to the QlmCustomerSite udpate udpate page
+* Set the resetPasswordUrl to the QlmCustomerSite reset password page.
+* Set the updatePasswordUrl to the QlmCustomerSite udpate udpate page.
 * Save the file.
 
 Example:
