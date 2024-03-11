@@ -8,21 +8,19 @@ Deactivates a license key on the License Server.
 void ReleaseLicense (string webServiceUrl, 
                      string activationKey, 
                      string computerID,
-                     string computerKey, 
-                     bool logRelease, 
+                     string computerKey
                      out string response)
 ```
 
 ### Parameters
 
-| Parameter     |    Type    | Description                                                                                                                                                                                                   |
-| ------------- | :--------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| webServiceUrl |   string   | URL to the QLM License Server                                                                                                                                                                                 |
-| activationKey |   string   | the license key to deactivate                                                                                                                                                                                 |
-| computerID    |   string   | the unique computer identifier                                                                                                                                                                                |
-| computerKey   |   string   | the computer key being released                                                                                                                                                                               |
-| logRelease    |    long    | flag that determines whether the release will be logged in the history table. If you are using cloud based floating licenses, you should set this argument to false to prevent bloating of the history table. |
-| response      | out string | XML fragment containing the result of the call.                                                                                                                                                               |
+| Parameter     |    Type    | Description                                     |
+| ------------- | :--------: | ----------------------------------------------- |
+| webServiceUrl |   string   | URL to the QLM License Server                   |
+| activationKey |   string   | the license key to deactivate                   |
+| computerID    |   string   | the unique computer identifier                  |
+| computerKey   |   string   | the computer key being released                 |
+| response      | out string | XML fragment containing the result of the call. |
 
 ### Response XML format
 
