@@ -10,6 +10,8 @@ void ReleaseLicense (string webServiceUrl,
                      string computerID,
                      string computerKey, 
                      bool logRelease, 
+                     bool useActivationCount, 
+                     bool adminMode, 
                      out string response)
 ```
 
