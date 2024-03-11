@@ -14,8 +14,8 @@ The code below shows how to create a new unique computer identifier.
 
 {% code overflow="wrap" %}
 ```csharp
- private string GetComputerID ()
- {
+private string GetComputerID ()
+{
      QlmHardware hw = new QlmHardware();
      string computerID = hw.GetUniqueSystemIdentifier2();
                  
@@ -27,8 +27,8 @@ The code below shows how to create a new unique computer identifier.
      }
 
      return computerID;     
- }
- private string GetUniqueVMIdentifier ()
+}
+private string GetUniqueVMIdentifier ()
 {
     string qlm_uuid = string.Empty;
 
