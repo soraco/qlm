@@ -463,6 +463,7 @@
   * [How to get information about a license key](faq/how-to-get-information-about-a-license-key.md)
   * [How to create a product with STD and PRO editions as features](faq/how-to-create-a-product-with-std-and-pro-editions-as-features.md)
   * [How does QLM protect an application hosted on a Virtual Machine (VM)?](faq/how-does-qlm-protect-an-application-hosted-on-a-virtual-machine-vm.md)
+  * [How to tighten binding to a virtual machine](faq/how-to-tighten-binding-to-a-virtual-machine.md)
   * [What happens to QLM license keys when a user upgrades to Windows 10](faq/what-happens-to-qlm-license-keys-when-a-user-upgrades-to-windows-10.md)
   * [Microsoft .NET Framework Client 4.0 could not be installed.](faq/microsoft-.net-framework-client-4.0-could-not-be-installed..md)
   * [Getting Started with Quick License Manager Enterprise](faq/getting-started-with-quick-license-manager-enterprise.md)
