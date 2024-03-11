@@ -62,7 +62,7 @@ private void VerifyLicense()
 
     ELicenseBinding licenseBinding = ELicenseBinding.UserDefined;  
 
-    if (lv.ValidateLicenseAtStartup(computerID, ref needsActivation, ref errorMsg) == false)
+    if (lv.ValidateLicenseAtStartup(GetComputerID(), ref needsActivation, ref errorMsg) == false)
     {
         int exitCode = DisplayLicenseForm();
 
@@ -87,7 +87,7 @@ private int DisplayLicenseForm()
         return 0; 
     }
 
-    string args = String.Format("/settings \"{0}\" /computerID \"{1}\"", settingsFile, computerID);
+    string args = String.Format("/settings \"{0}\" /computerID \"{1}\"", settingsFile, GetComputerID());
     
     int ret = lv.QlmLicenseObject.LaunchProcess(wizardExe, args, true, true);
 
