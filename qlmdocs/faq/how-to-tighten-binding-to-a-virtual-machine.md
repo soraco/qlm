@@ -28,21 +28,26 @@ The code below shows how to create a new unique computer identifier.
 
      return computerID;     
  }
- private string GetComputerID ()
- {
-     QlmHardware hw = new QlmHardware();
-     string computerID = hw.GetUniqueSystemIdentifier2();
-                 
-     string qlm_uuid = GetUniqueVMIdentifier();
+ private string GetUniqueVMIdentifier ()
+{
+    string qlm_uuid = string.Empty;
 
-     if (!String.IsNullOrEmpty(qlm_uuid))
-     {
-         computerID += "::" + qlm_uuid;
-     }
+    QlmHardware hw = new QlmHardware ();
+    if (hw.RunningOnVM())
+    {
+        if (lv.QlmLicenseObject.ReadCookie("qlm_uuid", 0, out qlm_uuid) == false)
+        {
+            qlm_uuid = Guid.NewGuid().ToString();
+            bool userLevelResult;
+            bool machineLevelResult;
+            string errorMessage;
 
-     return computerID;
-     
- }
+            lv.QlmLicenseObject.StoreCookie(qlm_uuid, "qlm_uuid", 0, out userLevelResult, out machineLevelResult, out errorMessage);
+        }
+    }
+
+    return qlm_uuid;
+} 
 ```
 {% endcode %}
 
