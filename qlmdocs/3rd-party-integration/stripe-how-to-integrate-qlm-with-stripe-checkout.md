@@ -67,14 +67,15 @@ where
 * Create a new product of type "Recurring products" and set the required fields.
 * In the Metadata section of the product, add the following entries:
 
-| is\_productid     | 1            |
-| ----------------- | ------------ |
-| is\_majorversion  | 1            |
-| is\_minorversion  | 0            |
-| is\_licensemodel  | subscription |
-| is\_vendor        | stripe       |
-| is\_emailtemplate | 1. New Order |
-| is\_features      | 0:1          |
+| is\_productid               | 1                                        |
+| --------------------------- | ---------------------------------------- |
+| is\_majorversion            | 1                                        |
+| is\_minorversion            | 0                                        |
+| is\_licensemodel            | subscription                             |
+| is\_vendor                  | stripe                                   |
+| is\_emailtemplate           | \<Email template to use for a new order> |
+| is\_renewal\_emailtemplate  | \<Email template to use for a renewal>   |
+| is\_features                | 0:1                                      |
 
 where
 
