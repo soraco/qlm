@@ -380,6 +380,7 @@
   * [How to protect an Android App developed in Xamarin with QLM](faq/how-to-protect-an-android-app-developed-in-xamarin-with-qlm.md)
   * [How to protect an Android App with QLM Enterprise](faq/how-to-protect-an-android-app-with-qlm-enterprise.md)
   * [How to protect a cross platform Qt application with QLM Enterprise](faq/how-to-protect-a-cross-platform-qt-application-with-qlm-enterprise.md)
+  * [How to configure the QLM License Wizard to allow Offline Activation only](how-to/how-to-configure-the-qlm-license-wizard-to-allow-offline-activation-only.md)
   * [How to automatically invoke a webhook using Scheduled Tasks](how-to/how-to-automatically-invoke-a-webhook-using-scheduled-tasks.md)
 * [❔ FAQ](faq/README.md)
   * [How do I change the license binding to a different identifier?](faq/how-do-i-change-the-license-binding-to-a-different-identifier.md)
