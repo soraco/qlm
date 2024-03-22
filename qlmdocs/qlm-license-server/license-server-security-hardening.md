@@ -36,18 +36,18 @@ The QLM .NET API uses a proprietary encryption mechanism to encrypt data over th
 
 #### Blocking IP Addresses
 
-You can block a list of IP addresses from communicating with the License Server by configuring a list of blocked IP addresses in the [QLM Server Properties / options.](https://support.soraco.co/hc/en-us/articles/207920563#options)
+You can block a list of IP addresses from communicating with the License Server by configuring a list of blocked IP addresses in the [QLM Server Properties / options.](server-properties.md)
 
 #### Blocking Computer IDs
 
 You can block a specific computer from activating a license at two levels:
 
-* Global List of blocked computer ID defined in [QLM Server Properties / options.](https://support.soraco.co/hc/en-us/articles/207920563#options)
+* Global List of blocked computer ID defined in [QLM Server Properties / options.](server-properties.md)
 * List of denied computers defined per Activation Key.
 
 #### HTTP Methods
 
-QLM provides a series of HTTP methods that can be invoked from a URL. These methods can be individually enabled by in the **security** section of the [Server Properties](https://support.soraco.co/hc/en-us/articles/207920563#SecuritySettings).
+QLM provides a series of HTTP methods that can be invoked from a URL. These methods can be individually enabled by in the **security** section of the [Server Properties](server-properties.md).
 
 #### Allowed IP Addresses for HTTP Methods
 
