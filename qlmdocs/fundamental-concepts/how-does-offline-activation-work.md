@@ -2,7 +2,7 @@
 
 If you are using QLM Pro or Enterprise, your customers are typically activating their license online.
 
-However, some customers may not have internet access. For these customers, you can perform a manual activation of their license.
+However, some customers may not have internet access. For these customers, you can perform an offline activation of their license.
 
 There are 4 ways to perform offline activation:
 
