@@ -2,7 +2,7 @@
 
 ### QlmRegistration.asmx  <a href="#h_01hdm5wzxvd26qzx28grcvv5dk" id="h_01hdm5wzxvd26qzx28grcvv5dk"></a>
 
-A web service page that takes user information from the command line, generates a trial key for a given product and emails it to the user.
+QlmRegistration.asmx is a web service method that takes user information from the command line, generates a trial key for a given product and emails it to the user.
 
 Refer to this [article](https://support.soraco.co/hc/en-us/articles/211568803-How-to-hide-the-URL-arguments-of-the-QlmRegistrationForm-aspx-or-QlmRegistration-asmx-pages) for instructions to hide the URL arguments.
 
