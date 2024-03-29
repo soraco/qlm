@@ -57,7 +57,7 @@ To email a trial key after the user enters his contact information, configure th
   * QlmUserRegistrationPhoneRequired: set to true to require the user to enter their telephone number
   * QlmUseTryButtonToCreateTrialKey: true
 * **6. QLM License Properties**
-  * QlmCustomerSiteUrl: A URL to your [QLM Customer Site](../qlm-license-server/qlmcustomersite-qlm-self-help.md). Example: https://qlm3.net/qlmdemo/QlmCustomerSite
+  * QlmCustomerSiteUrl: A URL to your [QLM Customer Site](../self-help-customer-site/qlmcustomersite-qlm-self-help/). Example: https://qlm3.net/qlmdemo/QlmCustomerSite
 
 Note that the email is sent to the user from the QLM License Server. You must therefore configure the SMTP Server settings of the License Server to send emails. For more details about configuring the SMTP Server settings, check the "Configure the QLM License Server to send emails using SMTP" section in this [article](../email-framework/configuration/how-to-use-smtp-to-send-emails.md).
 

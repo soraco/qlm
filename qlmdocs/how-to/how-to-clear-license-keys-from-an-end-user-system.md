@@ -23,7 +23,7 @@ To clear the key using the API, make sure that before calling the ReleaseLicense
 
 The QlmCustomerSite is a web site that contains a collection of useful web pages that you can expose to your customers. The QlmReleaseLicense.aspx web page is a self-serve page that allows your customers to deactivate their license.
 
-For more details, refer to this [article](../qlm-license-server/qlmcustomersite-qlm-self-help.md).
+For more details, refer to this [article](../self-help-customer-site/qlmcustomersite-qlm-self-help/).
 
 #### **From the QLM License Wizard deactivate button.**
 

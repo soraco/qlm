@@ -10,9 +10,9 @@ To reserve licenses for specific users in an organization, an administrator (you
 For example, assuming that you have configured the [QlmLicense.LicenseBinding](../api-reference/qlmlicense/enums/elicensebinding.md) to ComputerName, the administrator would need to:
 
 * Get the Computer Name of each system.
-* Activate the license for that computer either from the [QlmCustomerSite (QLM Self Help)](../qlm-license-server/qlmcustomersite-qlm-self-help.md) or from the [QLM Customer Portal.](../qlm-customer-portal/)
+* Activate the license for that computer either from the [QlmCustomerSite (QLM Self Help)](../self-help-customer-site/qlmcustomersite-qlm-self-help/) or from the [QLM Customer Portal.](../qlm-customer-portal/)
 
-Once licenses are assigned, the Administrator could re-assign these licenses by deactivating a license for a specific user and activating it for another. Deactivating a license can be performed from the [QlmCustomerSite (QLM Self Help)](../qlm-license-server/qlmcustomersite-qlm-self-help.md) or the [QLM Customer Portal](../qlm-customer-portal/)
+Once licenses are assigned, the Administrator could re-assign these licenses by deactivating a license for a specific user and activating it for another. Deactivating a license can be performed from the [QlmCustomerSite (QLM Self Help)](../self-help-customer-site/qlmcustomersite-qlm-self-help/) or the [QLM Customer Portal](../qlm-customer-portal/)
 
 When allowing deactivations from the QLM Self-Help or the QLM Customer Portal, it is recommended that you implement:
 
