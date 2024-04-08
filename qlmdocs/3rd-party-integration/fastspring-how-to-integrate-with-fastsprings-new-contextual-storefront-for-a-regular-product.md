@@ -5,8 +5,9 @@ FastSpring's Contextual StoreFront uses webhooks to send order information to ex
 ### **Step 1 - Adding a webhook**
 
 * Login to the FP storefront
-* On the toolbar, click Integration
+* Expand the Developer Tools section
 * Click Webhooks
+* Go to the Configuration tab
 * Click "Add Webhook"
 * Set the Title to "QLM"
 * Set "Get webhooks from:" Live and Test Orders
