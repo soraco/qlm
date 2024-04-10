@@ -42,9 +42,16 @@ To configure the QLM Management Console to send emails using the Gmail API, foll
 * Click the Load Credentials file and select the JSON file generated when you created the Gmail Service account
 * Enter the sender's email address
 * Click Test to verify that all the settings are correct
+* Click the ![](<../../../.gitbook/assets/image (27).png>)Apply these settings on the server button
 * Click Ok
 
 ![mceclip0.png](https://support.soraco.co/hc/article\_attachments/12909477519892)
+
+To instruct the QLM License Server to use Gmail to send emails from the QLM Portal or the QLM Self Help, you must set the options/emailProvider server property to "Gmail API".
+
+<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+
+
 
 If you use Scheduled Tasks, you must configure each scheduled task to use the Gmail API to send emails.
 
