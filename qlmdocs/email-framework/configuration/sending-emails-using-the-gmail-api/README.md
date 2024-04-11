@@ -28,7 +28,7 @@ If you need to use your Gmail account to send Server-Side emails, you need to cr
 
 #### How to create a Gmail Service Account
 
-Creation of a Gmail Service account requires a Google Workspace (G Suite) account. Detailed instructions for creating a service account can be found [here](./#how-to-create-a-gmail-service-account).
+Creation of a Gmail Service account requires a Google Workspace (G Suite) account. Detailed instructions for creating a service account can be found [here](how-to-create-a-gmail-oauth-client-id.md).
 
 #### QLM Management Console Configuration
 
