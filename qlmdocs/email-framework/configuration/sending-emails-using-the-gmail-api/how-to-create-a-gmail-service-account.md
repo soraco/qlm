@@ -4,9 +4,9 @@ Applies to: QLM Pro v17
 
 ***
 
-A Gmail Service account is required when sending emails from the QLM License Server, the QLM Portal or the QLM Self Help. To create a Gmail service account you must have a Google Workspace (G Suite) account.
+A Gmail Service account is required when sending emails from the QLM License Server, the QLM Portal, or the QLM Self Help.&#x20;
 
-
+To create a Gmail service account you must have a Google Workspace (G Suite) account.
 
 Go to the [Google Cloud Platform Console](https://console.developers.google.com/) and sign in as an administrator.
 
