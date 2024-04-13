@@ -41,11 +41,11 @@ ASP.NET 4 App
 
 ***
 
-ASP.NET 6 App, .NET 6 All Platforms
+ASP.NET 6/7/8 App
 
 | **Files to distribute**            | **Target Folder**                 |
 | ---------------------------------- | --------------------------------- |
-| redistrib\net6.0\QlmLicenseLib.dll | <p>&#x3C;application></p><p> </p> |
+| redistrib\netx.0\QlmLicenseLib.dll | <p>&#x3C;application></p><p> </p> |
 
 ***
 
