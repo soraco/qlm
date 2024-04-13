@@ -10,11 +10,11 @@ Notes:&#x20;
 
 .NET 4 Desktop App
 
-| **Files to distribute**                                                                  | **Target Folder** |
-| ---------------------------------------------------------------------------------------- | ----------------- |
-| redistrib\net4.0\QlmLicenseLib.dll                                                       | \<application>    |
-| redistrib\net4.0\QlmControls.dll (required if you are using the QLM .NET Control)        | \<application>    |
-| redistrib\net4.0\QlmLicenseWizard.exe (required if you are using the QLM License Wizard) | \<application>    |
+| Files to distribute                                                                      | Target Folder  |
+| ---------------------------------------------------------------------------------------- | -------------- |
+| redistrib\net4.0\QlmLicenseLib.dll                                                       | \<application> |
+| redistrib\net4.0\QlmControls.dll (required if you are using the QLM .NET Control)        | \<application> |
+| redistrib\net4.0\QlmLicenseWizard.exe (required if you are using the QLM License Wizard) | \<application> |
 
 &#x20;
 
