@@ -5,7 +5,7 @@ The table below describes which QLM DLLs should be distributed with your applica
 Notes:&#x20;
 
 * We no longer recommend using the .NET 2.0 binaries since .NET 4.0 has become the most common version of the .NET Framework on end-user systems.
-* The .NET 6/7/8 binaries should only be used if you are building a .NET 6/7/8 application. Do NOT use .NET 6 for non-.NET applications like VBA, Delphi, C++, etc.
+* The .NET 6/7/8 binaries should only be used if you are building a .NET 6/7/8 application. Do NOT use .NET 6 for non .NET applications like VBA, Delphi, C++, etc.
 * NuGet packages are available online.
 
 .NET 4 Desktop App
@@ -20,7 +20,7 @@ Notes:&#x20;
 
 ASP.NET 4 App
 
-| **Files to distribute**            | **Target Folder**                 |
+| Files to distribute                | Target Folder                     |
 | ---------------------------------- | --------------------------------- |
 | redistrib\net4.0\QlmLicenseLib.dll | <p>&#x3C;application></p><p> </p> |
 
@@ -28,14 +28,14 @@ ASP.NET 4 App
 
 .NET 6/7/8 Windows Desktop App
 
-| **Files to distribute**                                      | **Target Folder** |
-| ------------------------------------------------------------ | ----------------- |
-| redistrib\net6.0-windows\QlmLicenseLib.dll                   | \<application>    |
-| redistrib\net6.0-windows\QlmLicenseWizard.exe                | \<application>    |
-| redistrib\net6.0-windows\QlmLicenseWizard.dll                | \<application>    |
-| redistrib\net6.0-windows\QlmLicenseWizard.deps.json          | \<application>    |
-| redistrib\net6.0-windows\QlmLicenseWizard.runtimeconfig.json | \<application>    |
-| redistrib\net6.0-windows\runtimes\\\*                        | \<application>    |
+| Files to distribute                                          | Target Folder  |
+| ------------------------------------------------------------ | -------------- |
+| redistrib\net6.0-windows\QlmLicenseLib.dll                   | \<application> |
+| redistrib\net6.0-windows\QlmLicenseWizard.exe                | \<application> |
+| redistrib\net6.0-windows\QlmLicenseWizard.dll                | \<application> |
+| redistrib\net6.0-windows\QlmLicenseWizard.deps.json          | \<application> |
+| redistrib\net6.0-windows\QlmLicenseWizard.runtimeconfig.json | \<application> |
+| redistrib\net6.0-windows\runtimes\\\*                        | \<application> |
 
 &#x20;
 
@@ -49,7 +49,7 @@ ASP.NET 6 App, .NET 6 All Platforms
 
 .NET Core App
 
-| **Files to distribute**             | **Target Folder**                 |
+| Files to distribute                 | Target Folder                     |
 | ----------------------------------- | --------------------------------- |
 | redistrib\netcore\QlmLicenseLib.dll | <p>&#x3C;application></p><p> </p> |
 
@@ -57,7 +57,7 @@ ASP.NET 6 App, .NET 6 All Platforms
 
 .NET Std App
 
-| **Files to distribute**            | **Target Folder**                 |
+| Files to distribute                | Target Folder                     |
 | ---------------------------------- | --------------------------------- |
 | redistrib\netstd\QlmLicenseLib.dll | <p>&#x3C;application></p><p> </p> |
 
@@ -65,7 +65,7 @@ ASP.NET 6 App, .NET 6 All Platforms
 
 Excel, MS-Access, VB6, VBA
 
-| **Files to distribute**                                                                   | **Target Folder**                 |
+| Files to distribute                                                                       | Target Folder                     |
 | ----------------------------------------------------------------------------------------- | --------------------------------- |
 | redistrib\net4.0\QlmLicenseLib.dll                                                        | <p>&#x3C;application></p><p> </p> |
 | <p>redistrib\net4.0\QlmCLRHost_x64.dll</p><p>(required if not using DLL registration)</p> | \<application>                    |
@@ -76,7 +76,7 @@ Excel, MS-Access, VB6, VBA
 
 Office Add-ins
 
-| **Files to distribute**                                                                  | **Target Folder**                 |
+| Files to distribute                                                                      | Target Folder                     |
 | ---------------------------------------------------------------------------------------- | --------------------------------- |
 | redistrib\net4.0\QlmLicenseLib.dll                                                       | <p>&#x3C;application></p><p> </p> |
 | redistrib\net4.0\QlmLicenseWizard.exe (required if you are using the QLM License Wizard) | \<application>                    |
@@ -85,17 +85,17 @@ Office Add-ins
 
 C++
 
-| **Files to distribute**                                                                  | **Target Folder** |
-| ---------------------------------------------------------------------------------------- | ----------------- |
-| redistrib\net4.0\QlmLicenseLib.dll                                                       | \<application>    |
-| redistrib\net4.0\QlmLicenseLib.dll.manifest                                              | \<application>    |
-| redistrib\net4.0\QlmLicenseWizard.exe (required if you are using the QLM License Wizard) | \<application>    |
+| Files to distribute                                                                      | Target Folder  |
+| ---------------------------------------------------------------------------------------- | -------------- |
+| redistrib\net4.0\QlmLicenseLib.dll                                                       | \<application> |
+| redistrib\net4.0\QlmLicenseLib.dll.manifest                                              | \<application> |
+| redistrib\net4.0\QlmLicenseWizard.exe (required if you are using the QLM License Wizard) | \<application> |
 
 &#x20;
 
 Delphi Apps
 
-| **Files to distribute**                                                                  | **Target Folder**                 |
+| Files to distribute                                                                      | Target Folder                     |
 | ---------------------------------------------------------------------------------------- | --------------------------------- |
 | redistrib\net4.0\QlmLicenseLib.dll                                                       | <p>&#x3C;application></p><p> </p> |
 | redistrib\net4.0\QlmLicenseWizard.exe (required if you are using the QLM License Wizard) | \<application>                    |
