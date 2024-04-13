@@ -10,7 +10,7 @@ Notes:&#x20;
 
 ***
 
-.NET 4 Desktop App
+.NET 4 App
 
 | Files to distribute                                                                             | Target Folder  |
 | ----------------------------------------------------------------------------------------------- | -------------- |
@@ -28,16 +28,16 @@ ASP.NET 4 App
 
 ***
 
-.NET 6/7/8 Windows Desktop App
+.NET 6/7/8 App
 
 | Files to distribute                                          | Target Folder  |
 | ------------------------------------------------------------ | -------------- |
-| redistrib\net6.0-windows\QlmLicenseLib.dll                   | \<application> |
-| redistrib\net6.0-windows\QlmLicenseWizard.exe                | \<application> |
-| redistrib\net6.0-windows\QlmLicenseWizard.dll                | \<application> |
-| redistrib\net6.0-windows\QlmLicenseWizard.deps.json          | \<application> |
-| redistrib\net6.0-windows\QlmLicenseWizard.runtimeconfig.json | \<application> |
-| redistrib\net6.0-windows\runtimes\\\*                        | \<application> |
+| redistrib\netx.0-windows\QlmLicenseLib.dll                   | \<application> |
+| redistrib\netx.0-windows\QlmLicenseWizard.exe                | \<application> |
+| redistrib\netx.0-windows\QlmLicenseWizard.dll                | \<application> |
+| redistrib\netx.0-windows\QlmLicenseWizard.deps.json          | \<application> |
+| redistrib\netx.0-windows\QlmLicenseWizard.runtimeconfig.json | \<application> |
+| redistrib\netx.0-windows\runtimes\\\*                        | \<application> |
 
 ***
 
