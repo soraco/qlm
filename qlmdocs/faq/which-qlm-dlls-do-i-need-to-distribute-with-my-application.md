@@ -18,6 +18,8 @@ Notes:&#x20;
 
 &#x20;
 
+***
+
 ASP.NET 4 App
 
 | Files to distribute                | Target Folder                     |
@@ -25,6 +27,8 @@ ASP.NET 4 App
 | redistrib\net4.0\QlmLicenseLib.dll | <p>&#x3C;application></p><p> </p> |
 
 &#x20;
+
+***
 
 .NET 6/7/8 Windows Desktop App
 
@@ -39,6 +43,8 @@ ASP.NET 4 App
 
 &#x20;
 
+***
+
 ASP.NET 6 App, .NET 6 All Platforms
 
 | **Files to distribute**            | **Target Folder**                 |
@@ -49,6 +55,8 @@ ASP.NET 6 App, .NET 6 All Platforms
 
 .NET Core App
 
+***
+
 | Files to distribute                 | Target Folder                     |
 | ----------------------------------- | --------------------------------- |
 | redistrib\netcore\QlmLicenseLib.dll | <p>&#x3C;application></p><p> </p> |
@@ -57,6 +65,8 @@ ASP.NET 6 App, .NET 6 All Platforms
 
 .NET Std App
 
+***
+
 | Files to distribute                | Target Folder                     |
 | ---------------------------------- | --------------------------------- |
 | redistrib\netstd\QlmLicenseLib.dll | <p>&#x3C;application></p><p> </p> |
@@ -64,6 +74,8 @@ ASP.NET 6 App, .NET 6 All Platforms
 &#x20;
 
 Excel, MS-Access, VB6, VBA
+
+***
 
 | Files to distribute                                                                       | Target Folder                     |
 | ----------------------------------------------------------------------------------------- | --------------------------------- |
@@ -74,6 +86,8 @@ Excel, MS-Access, VB6, VBA
 
 &#x20;
 
+***
+
 Office Add-ins
 
 | Files to distribute                                                                      | Target Folder                     |
@@ -82,6 +96,8 @@ Office Add-ins
 | redistrib\net4.0\QlmLicenseWizard.exe (required if you are using the QLM License Wizard) | \<application>                    |
 
 &#x20;
+
+***
 
 C++
 
@@ -92,6 +108,8 @@ C++
 | redistrib\net4.0\QlmLicenseWizard.exe (required if you are using the QLM License Wizard) | \<application> |
 
 &#x20;
+
+***
 
 Delphi Apps
 
