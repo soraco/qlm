@@ -103,6 +103,8 @@ Delphi Apps
 | redistrib\net4.0\QlmLicenseLib.dll                                                                     | <p>&#x3C;application></p><p> </p> |
 | <p>redistrib\net4.0\QlmLicenseWizard.exe </p><p>(required if you are using the QLM License Wizard)</p> | \<application>                    |
 
+***
+
 #### **Notes**
 
 #### What is the difference between "QlmLicenseLib.dll" and "QlmLicenseLibNotEmbedded\QlmLicenseLib.dll"
