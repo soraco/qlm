@@ -89,3 +89,5 @@ To generate a license key for testing purposes:
 * Click "Create Activation Key"
 * Select the Product (Demo 1.0 for trials) and click OK.
 * Copy and Paste the generated Activation Key in the License Wizard launched when your application starts up and follow the steps in the wizard.
+
+For information about which files need to be deployed with your application, refer to this [article](https://docs.soraco.co/docs/faq/which-qlm-dlls-do-i-need-to-distribute-with-my-application).
