@@ -22,10 +22,12 @@ The "Protect your application" should have generated a class file called License
   * A reference to QlmLicenseLib.dll
   * A new file called LicenseValidator.cs
   * A new file called Demo 1.0.lw.xml
+  * Copy&#x20;
 * If the Visual Studio integration did not work, do the following:
-  * Add a reference to C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\\.net 4.0\QlmLicenseLib.dll
+  * Add a reference to C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\net?.0\QlmLicenseLib.dll
   * Add the file LicenseValidator.cs to your project
   * Add the file Demo 1.0.lw.xml to your project and set the property "Copy to Output Directory" to "Copy if newer"
+  * Copy C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\net?.0\QlmLicenseWizard.exe to your bin folder.
 * You will now need to update your application to add the license validation code.
 * Add the following statement to your main module: using QlmLicenseLib
 * Define the following global variables:
