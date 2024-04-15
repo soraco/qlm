@@ -14,7 +14,7 @@ Following is a step-by-step procedure to protect a VC++ app (unmanaged C++). Not
 * Page 4a: Select the folder where your VC++ source code is located and click Save
 * Page 4b: Click Update Visual Studio Project and locate your \*.vcxproj file. If this step fails, you can ignore the error and do the following to update your Visual Studio project:
   * Add LicenseValidator.cpp and LicenseValidator.h to your project
-  * Copy QlmLicenseLib.dll, QlmLicenseLib.dll.manifest and QlmLicenseWizard.exe to your bin folder from where your application runs. These files can be found in: C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\\.net 4.0
+  * Copy QlmLicenseLib.dll, QlmLicenseLib.dll.manifest and QlmLicenseWizard.exe to your bin folder from where your application runs. These files can be found in: C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\net?.0
 * Copy the generated XML file (YourProduct.lw.xml) to your bin folder from where your application runs.
 * Page 5: Click Finish
 
