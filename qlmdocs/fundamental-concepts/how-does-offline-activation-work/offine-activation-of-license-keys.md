@@ -1,8 +1,6 @@
-# Offline activation
+# Offine Activation of License Keys
 
-If you are using QLM Pro or Enterprise, your customers are typically activating their license online.
-
-However, some customers may not have internet access. For these customers, you can perform an offline activation of their license.
+### Overview
 
 There are 4 ways to perform offline activation:
 
@@ -50,7 +48,7 @@ To perform a manual activation from the QLM Portal follows the steps below:
 
 ### QLM Self Help
 
-The QLM Self Help page allows your customer to access a page on your web site and perform an offline activation without contacting you. For more details, check out the [QLM Self Help documentation](../how-to/how-to-configure-the-qlm-self-help-web-page.md) or the [QlmCustomerSite documentation.](../self-help-customer-site/qlmcustomersite-qlm-self-help/)
+The QLM Self Help page allows your customer to access a page on your web site and perform an offline activation without contacting you. For more details, check out the [QLM Self Help documentation](../../how-to/how-to-configure-the-qlm-self-help-web-page.md) or the [QlmCustomerSite documentation.](../../self-help-customer-site/qlmcustomersite-qlm-self-help/)
 
 ### QLM License Wizard
 
@@ -64,4 +62,4 @@ The DVC can be used in 3 different contexts:
 
 * When deactivating a key from the QLM Management Console / Manage Keys / Deactivate
 * When deactivating a key from the QLM Portal / Release
-* When deactivating a key from the QLM Self Help. To enable the DVC in the QLM Self Help, you must set the [Server Property](../qlm-license-server/server-properties.md) customerSite/showDeactivationVerificationCode to true.
+* When deactivating a key from the QLM Self Help. To enable the DVC in the QLM Self Help, you must set the [Server Property](../../qlm-license-server/server-properties.md) customerSite/showDeactivationVerificationCode to true.

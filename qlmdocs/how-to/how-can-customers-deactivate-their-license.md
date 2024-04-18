@@ -13,7 +13,7 @@ If the computer on which the license is currently activated is functional and on
 
 If the computer on which the license is currently activated is functional but offline, a customer can deactivate a license in one of the following ways:
 
-* Using the QLM License Wizard / Offline Deactivate option as described in the Offline Deactivation Code of [this article](../fundamental-concepts/how-does-offline-activation-work.md).
+* Using the QLM License Wizard / Offline Deactivate option as described in the Offline Deactivation Code of [this article](../fundamental-concepts/how-does-offline-activation-work/).
 * Using a combination of the QLM API [CreateDeactivationCode](../api-reference/qlmlicense/client-side-methods/createdeactivationcode.md) with the [QLM Self Help](how-to-configure-the-qlm-self-help-web-page.md) portal / Deactivate option.
 * Using the [QLM Customer Portal](../qlm-customer-portal/)
 
