@@ -8,8 +8,8 @@
 [how-do-i-transfer-qlm-to-another-machine.md](how-do-i-transfer-qlm-to-another-machine.md)
 {% endcontent-ref %}
 
-{% content-ref url="../fundamental-concepts/how-does-offline-activation-work/" %}
-[how-does-offline-activation-work](../fundamental-concepts/how-does-offline-activation-work/)
+{% content-ref url="../fundamental-concepts/how-does-offline-activation-work.md" %}
+[how-does-offline-activation-work.md](../fundamental-concepts/how-does-offline-activation-work.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-read-product-properties-from-a-license-file.md" %}
@@ -48,8 +48,8 @@
 [qlm-customer-user-account.md](../fundamental-concepts/qlm-customer-user-account.md)
 {% endcontent-ref %}
 
-{% content-ref url="online-activation-with-basic-authentication-user-password.md" %}
-[online-activation-with-basic-authentication-user-password.md](online-activation-with-basic-authentication-user-password.md)
+{% content-ref url="../fundamental-concepts/how-does-online-activation-work/online-activation-with-basic-authentication-user-password.md" %}
+[online-activation-with-basic-authentication-user-password.md](../fundamental-concepts/how-does-online-activation-work/online-activation-with-basic-authentication-user-password.md)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}

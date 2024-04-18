@@ -15,13 +15,13 @@ The Deactivation Verification Code (DVC) resolves this issue by generating a uni
 * If the user selects the QR Code option, deactivation is completed by scanning the QR code with a smartphone.
 * If the user rejects the QR Code option, a Deactivation Verification window is displayed with a Verification Code. The customer then needs to access the QLM Self-Help page to deactivate the license.
 
-Note that the QLM's Deactivation Verification Code feature is optional. You can enable it by setting the [Server Property](../../qlm-license-server/server-properties.md) customerSite/showDeactivationVerificationCode to true. If you disable the DVC, customers can deactivate a license without the DVC.&#x20;
+Note that the QLM's Deactivation Verification Code feature is optional. You can enable it by setting the [Server Property](../qlm-license-server/server-properties.md) customerSite/showDeactivationVerificationCode to true. If you disable the DVC, customers can deactivate a license without the DVC.&#x20;
 
 The DVC can be used in 3 different contexts:
 
 * When deactivating a key from the QLM Management Console / Manage Keys / Deactivate
 * When deactivating a key from the QLM Portal / Release
-* When deactivating a key from the QLM Self-Help. To enable the DVC in the QLM Self Help, you must set the [Server Property](../../qlm-license-server/server-properties.md) customerSite/showDeactivationVerificationCode to true.
+* When deactivating a key from the QLM Self-Help. To enable the DVC in the QLM Self Help, you must set the [Server Property](../qlm-license-server/server-properties.md) customerSite/showDeactivationVerificationCode to true.
 
 ### Workflow Screenshots
 
