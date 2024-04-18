@@ -10,6 +10,8 @@ QLM v18 was released on January 26, 2024. Note that our major releases are not l
 
 The QLM Customer Site pages were redesigned to be responsive to different device form factors. This may impact how your Self-Help pages are displayed on your site. We recommend that you review and adapt your site accordingly after the upgrade.
 
+After upgrading your application to QLM v18, you must regenerate the XML Settings file for your products from the Protect Your Application wizard (3rd tab in QLM).
+
 As of QLM v18, QLM will be sold exclusively on a subscription basis. Customers who have purchased a perpetual license with a maintenance plan can continue to use QLM as before and upgrade to newer versions as long as the maintenance plan remains active. All new purchases, version upgrades without an active maintenance plan, or edition upgrades will be offered on a subscription basis only.
 
 As of QLM v18, all QLM Extensions (e-commerce extensions) will be sold separately as add-ons. Customers who purchased QLM v17 or earlier can continue to use QLM Extensions at no additional cost.
