@@ -49,7 +49,7 @@ The first step in selling your product via WooCommerce is to define your product
 
 Next, we will add some custom fields. If you do not see the "Custom Fields" section, click the "Screen Options" drop-down on the top right-hand side of the Product page and make sure the "Custom Fields" checkbox is selected. If you do not see a "Custom Fields" checkbox, make sure "Virtual" is not checked.
 
-n the **Add New Custom Field** section:
+In the **Add New Custom Field** section:
 
 * Set the Product ID
   * Click **Enter new**
