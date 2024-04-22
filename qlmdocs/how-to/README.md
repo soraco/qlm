@@ -168,8 +168,8 @@
 [how-to-retrieve-activation-information-from-the-license-server.md](how-to-retrieve-activation-information-from-the-license-server.md)
 {% endcontent-ref %}
 
-{% content-ref url="fastspring-hmac-validation.md" %}
-[fastspring-hmac-validation.md](fastspring-hmac-validation.md)
+{% content-ref url="../3rd-party-integration/fastspring/fastspring-hmac-validation.md" %}
+[fastspring-hmac-validation.md](../3rd-party-integration/fastspring/fastspring-hmac-validation.md)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}
