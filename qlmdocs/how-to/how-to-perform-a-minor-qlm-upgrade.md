@@ -20,4 +20,4 @@ To upgrade the client:
 
 ### Server Upgrade
 
-Once the client is upgraded,&#x20;
+Once the client is upgraded, follow the instructions in this [article ](https://docs.soraco.co/docs/qlm-license-server/how-to-perform-a-minor-upgrade-of-the-qlm-license-server)to upgrade the server.
