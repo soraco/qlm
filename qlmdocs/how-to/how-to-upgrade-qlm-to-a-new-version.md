@@ -1,10 +1,10 @@
-# How to perform a minor QLM upgrade
+# How to upgrade QLM to a new version
 
 ### Overview
 
-When upgrading to a new QLM minor version, you must upgrade the client (QLM Management Console) and the server (QLM License Server). If your server is hosted by Soraco, please contact us before upgrading the client.
+When upgrading to a new QLM version, you must upgrade the client (QLM Management Console) and the server (QLM License Server). If your server is hosted by Soraco, please contact us before upgrading the client.
 
-Minor upgrades are backward compatible unless otherwise specified in the Release Notes associated with the specific version.
+Upgrades are backward compatible unless otherwise specified in the Release Notes associated with the version that you are upgrading to.
 
 ### Client Upgrade
 
