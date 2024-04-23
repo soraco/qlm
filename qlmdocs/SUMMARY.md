@@ -294,6 +294,7 @@
   * [Protect an Embarcadero C++ Builder app with QLM](step-by-step-guides/protect-an-embarcadero-c++-builder-app-with-qlm.md)
   * [Protect a Qt C++ Windows application](step-by-step-guides/protect-a-qt-c++-windows-application.md)
   * [Protect a Qt C++ Cross Platform Application](step-by-step-guides/protect-a-qt-c++-cross-platform-application.md)
+  * [Protect a Linux C++ Application](step-by-step-guides/protect-a-linux-c++-application.md)
   * [Protect a JUCE application](step-by-step-guides/protect-a-juce-application.md)
   * [Protect an Embarcadero Delphi application with QLM](step-by-step-guides/protect-an-embarcadero-delphi-application-with-qlm.md)
   * [Protect a PHP application with QLM Enterprise](step-by-step-guides/protect-a-php-application-with-qlm-enterprise.md)
