@@ -304,6 +304,7 @@
   * [Protect a PDF file with QLM](step-by-step-guides/protect-a-pdf-file-with-qlm.md)
 * [ℹ️ How To](how-to/README.md)
   * [How do I transfer QLM to another machine?](how-to/how-do-i-transfer-qlm-to-another-machine.md)
+  * [How to perform a minor QLM upgrade](how-to/how-to-perform-a-minor-qlm-upgrade.md)
   * [How to read product properties from a license file](how-to/how-to-read-product-properties-from-a-license-file.md)
   * [How to bind a license to a USB key (dongle)](how-to/how-to-bind-a-license-to-a-usb-key-dongle.md)
   * [How to release a new version of your product with new encryption keys](how-to/how-to-release-a-new-version-of-your-product-with-new-encryption-keys.md)

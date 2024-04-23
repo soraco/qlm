@@ -5,11 +5,17 @@ When we release minor updates of a specific version of QLM, you typically need t
 Before you proceed:
 
 * Make a backup of your database
-* Make a backup of all the QLM related files on the server
+* Make a backup of all the QLM-related files on the server
 
-### QLM License Server Upgrade
+There are two ways to upgrade the server: (1) using the installer or (2) by manually copying binary files.
 
-The simplest way to upgrade the QLM License Server is to copy the binary files from the new installation to your server.
+### 1. QLM License Server Upgrade using the installer
+
+If you performed the initial installation of the QLM License Server using the QlmLicenseServerSetup.exe installer, you can simply re-run the new installer to upgrade the License Server to the new version
+
+### 2. QLM License Server Manual Upgrade
+
+You can also upgrade the server by copying the binary files from the new installation to your server.
 
 Once you have upgraded the QLM Management Console to the latest version, locate the latest License Server binary files as shown below and copy them to the bin folder on your web server where you installed the QLM License Server.&#x20;
 
