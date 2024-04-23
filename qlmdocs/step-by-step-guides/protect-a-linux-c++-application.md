@@ -14,7 +14,7 @@ Following is a step-by-step procedure to protect a Linux C++ app. Note that the 
 * Page 2: Select "Other Languages"
 * Page 2: Select "Linux C++"
 * Page 3: Leave the default settings
-* Page 4: Select the folder where your want to generate the C++ source code and click Save
+* Page 4: Select the folder where you want to generate the C++ source code and click Save
 * Page 5: Click Finish
 
 4. Add the generated files to your project (source and include folders)
@@ -37,5 +37,6 @@ To generate a license key for testing purposes:
 
 * Go to the Manage Keys tab.
 * Click "Create Activation Key"
-* Select the Product (Demo 1.0 for trials) and click Ok.
-* Copy and Paste the generated Activation Key in the License Wizard launched when your application starts up and follow the steps in the wizard.
+* Select the Product (Demo 1.0 for trials) and click OK.
+* Use the generated Activation Key to activate the license from within your application.
+
