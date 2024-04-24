@@ -11,7 +11,13 @@ There are two ways to upgrade the server: (1) using the installer or (2) by manu
 
 ### 1. QLM License Server Upgrade using the installer
 
-If you performed the initial installation of the QLM License Server using the QlmLicenseServerSetup.exe installer, you can simply re-run the new installer to upgrade the License Server to the new version
+If you performed the initial installation of the QLM License Server using the QlmLicenseServerSetup.exe installer, you can simply re-run the new installer to upgrade the License Server to the new version.
+
+The QlmLicenseServerSetup.exe is located in the following folder, on the system where you installed the new version of the QLM Management Console:
+
+```
+%Public%\Documents\Quick License Manager\DeployToServer\QlmLicenseServerSetup.exe
+```
 
 ### 2. QLM License Server Manual Upgrade
 
