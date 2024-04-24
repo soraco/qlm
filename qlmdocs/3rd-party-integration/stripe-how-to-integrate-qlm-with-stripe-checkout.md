@@ -1,6 +1,6 @@
 # Stripe - How to integrate QLM with Stripe Checkout
 
-If you are using Stripe Checkout as an eCommerce provider, QLM integrates seamlessly with Stripe Checkout's ordering system.&#x20;
+If you use Stripe Checkout as an eCommerce provider, QLM integrates seamlessly with Stripe Checkout's ordering system.&#x20;
 
 To have Stripe invoke QLM during an order, do the following in the Stripe Control Panel: &#x20;
 
@@ -42,52 +42,58 @@ Example: https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/QlmWebHookHan
 * Create a new product of type "One-time purchase products" and set the required fields.
 * In the Metadata section of the product, add the following entries:
 
-| is\_productid     | 1            |
-| ----------------- | ------------ |
-| is\_majorversion  | 1            |
-| is\_minorversion  | 0            |
-| is\_licensemodel  | permanent    |
-| is\_vendor        | stripe       |
-| is\_emailtemplate | 1. New Order |
-| is\_features      | 0:1          |
+| is\_productid                | 1             |
+| ---------------------------- | ------------- |
+| is\_majorversion             | 1             |
+| is\_minorversion             | 0             |
+| is\_licensemodel             | permanent     |
+| is\_vendor                   | stripe        |
+| is\_emailtemplate            | 1. New Order  |
+| is\_features                 | 0:1           |
+| is\_send\_mail (as of v18.1) | true \| false |
 
 where
 
 * is\_productid = your product id as defined in QLM
 * is\_majorversion = your product's major version as defined in QLM
 * is\_minorversion = your product's minor version as defined in QLM
-* is\_features = semi comma-separated list of feature sets and their corresponding values. Example: is\_features=0:3;1:1. This means that in feature set 0, features 1 + 2 are enabled and in feature set 1, feature 1 is enabled.
+* is\_features = semi-comma-separated list of feature sets and their corresponding values. Example: is\_features=0:3;1:1. This means that in feature set 0, features 1 + 2 are enabled and in feature set 1, feature 1 is enabled.
 * is\_user = As defined in Manage Keys / 3rd Party Extensions
 * is\_pwd = As defined in Manage Keys / 3rd Party Extensions
 * is\_emailtemplate = email template to use when sending the email to the user. Email templates can be created from the QLM Management Console / Manage Keys / Email Templates
 * is\_licensemodel = permanent | trial | subscription&#x20;
+* is\_send\_mail: instructs QLM to send an email after processing the order
 
 ### Subscription Products
 
 * Create a new product of type "Recurring products" and set the required fields.
 * In the Metadata section of the product, add the following entries:
 
-| is\_productid               | 1                                        |
-| --------------------------- | ---------------------------------------- |
-| is\_majorversion            | 1                                        |
-| is\_minorversion            | 0                                        |
-| is\_licensemodel            | subscription                             |
-| is\_vendor                  | stripe                                   |
-| is\_emailtemplate           | \<Email template to use for a new order> |
-| is\_renewal\_emailtemplate  | \<Email template to use for a renewal>   |
-| is\_features                | 0:1                                      |
+| is\_productid                          | 1                                        |
+| -------------------------------------- | ---------------------------------------- |
+| is\_majorversion                       | 1                                        |
+| is\_minorversion                       | 0                                        |
+| is\_licensemodel                       | subscription                             |
+| is\_vendor                             | stripe                                   |
+| is\_emailtemplate                      | \<Email template to use for a new order> |
+| is\_renewal\_emailtemplate             | \<Email template to use for a renewal>   |
+| is\_features                           | 0:1                                      |
+| is\_send\_mail ( as of v18.1)          | true \| false                            |
+| is\_send\_renewal\_mail ( as of v18.1) | true \| false                            |
 
 where
 
 * is\_productid = your product id as defined in QLM
 * is\_majorversion = your product's major version as defined in QLM
 * is\_minorversion = your product's minor version as defined in QLM
-* is\_features = semi comma-separated list of feature sets and their corresponding values. Example: is\_features=0:3;1:1. This means that in feature set 0, features 1 + 2 are enabled and in feature set 1, feature 1 is enabled.
+* is\_features = semi-comma-separated list of feature sets and their corresponding values. Example: is\_features=0:3;1:1. This means that in feature set 0, features 1 + 2 are enabled and in feature set 1, feature 1 is enabled.
 * is\_user = As defined in Manage Keys / 3rd Party Extensions
 * is\_pwd = As defined in Manage Keys / 3rd Party Extensions
 * is\_emailtemplate = email template to use when sending the initial order email to the user. Email templates can be created from the QLM Management Console / Manage Keys / Email Templates
 * is\_renewal\_emailtemplate = email template to use when sending the renewal email to the user
 * is\_licensemodel = permanent | trial | subscription&#x20;
+* is\_send\_mail: instructs QLM to send an email after processing the initial order
+* is\_send\_renewal\_mail: instructs QLM to send an email after processing the renewal
 
 ### Enable Stripe Checkout&#x20;
 
