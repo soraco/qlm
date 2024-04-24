@@ -518,7 +518,7 @@
   * [How to hide sensitive information from a third-party developer](faq/how-to-hide-sensitive-information-from-a-third-party-developer.md)
   * [How to update the ClientVersion / ApplicationVersion](faq/how-to-update-the-clientversion-applicationversion.md)
 * [⁉️ Troubleshooting](troubleshooting/README.md)
-  * [Troubleshoot issues with the QLM WordPress plugin](faq/troubleshoot-issues-with-the-qlm-wordpress-plugin.md)
+  * [Troubleshoot issues with the QLM WordPress / WooCommerce plugin](faq/troubleshoot-issues-with-the-qlm-wordpress-plugin.md)
   * [How to Diagnose ReadKeys issues](faq/how-to-diagnose-readkeys-issues.md)
   * [How to diagnose "The license key is invalid" message](faq/how-to-diagnose-the-license-key-is-invalid-message.md)
   * [Could not load file or assembly 'DevExpress.XtraWizard.v10.2, Version=10.2.3.0](faq/could-not-load-file-or-assembly-devexpress.xtrawizard.v10.2-version-10.2.3.0.md)

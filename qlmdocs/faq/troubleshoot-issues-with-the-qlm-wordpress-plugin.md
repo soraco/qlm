@@ -1,6 +1,6 @@
-# Troubleshoot issues with the QLM WordPress plugin
+# Troubleshoot issues with the QLM WordPress / WooCommerce plugin
 
-To troubleshoot issues with the QLM WordPress plugin, follow the steps below:
+To troubleshoot issues with the QLM WordPress / WooCommerce plugin, follow the steps below:
 
 * Upgrade to the latest version of the QLM WooCommerce plugin
 * In your QLM Settings in WordPress, enable logging as per the screenshot below
@@ -9,7 +9,5 @@ To troubleshoot issues with the QLM WordPress plugin, follow the steps below:
 * Send is a copy of the logs
 
 <figure><img src="https://support.soraco.co/hc/article_attachments/360079371932/mceclip1.png" alt=""><figcaption></figcaption></figure>
-
-&#x20;
 
 <figure><img src="https://support.soraco.co/hc/article_attachments/360079371812/mceclip0.png" alt=""><figcaption></figcaption></figure>
