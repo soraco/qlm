@@ -62,7 +62,7 @@ After the minor upgrade is completed, make sure you update the database schema a
 * Select your site
 * Click **Upgrade DB Schema**&#x20;
 
-### QLM Customer Site Upgrade
+### QLM Customer Site Manual Upgrade
 
 * Copy all the files in %Public%\Documents\DeployToServer\QlmCustomerSite to the corresponding folder on your License Server **except** the ones listed below:
   * %Public%\Documents\DeployToServer\QlmCustomerSite\web.config
@@ -70,7 +70,7 @@ After the minor upgrade is completed, make sure you update the database schema a
   * %Public%\Documents\DeployToServer\QlmCustomerSite\index.html
   * %Public%\Documents\DeployToServer\QlmCustomerSite\default.aspx
 
-### QLM Portal Upgrade
+### QLM Portal Manual Upgrade
 
 * On your server, make a backup of the QlmPortal\web.config file to web.config.bak
 * On your server, delete all the files in the QLM Portal folder except the backed up web.config.bak file
@@ -81,3 +81,20 @@ After the minor upgrade is completed, make sure you update the database schema a
   * adminEncryptionKey
   * sqlSyntax
   * webServiceUrl
+
+### QLM Customer Portal Manual Upgrade
+
+* On your server, make a backup of the following files:
+  * QlmCustomerPortal/qlm-portal-app/assets/appsettings.json
+  * QlmCustomerPortal/qlm-portal-app/index.html
+  * QlmCustomerPortal/qlm-portal-api/web.config
+* On your server, delete all the files in the QLM Customer Portal folder&#x20;
+* Copy all the files from %Public%\Documents\DeployToServer\QlmCustomerPortal" to the corresponding folder on your server
+* On your server, edit the new QlmCustomerPortal/qlm-portal-api/web.config file and update at a minimum the following settings based on the backed-up file:
+  * communicationEncryptionKey
+  * adminEncryptionKey
+  * webServiceUrl
+  * AllowedOrigins
+  * connectionStrings
+* On your server, replace the new QlmCustomerPortal/qlm-portal-app/assets/appsettings.json with the backed-up file.
+* On your server, edit the new QlmCustomerPortal/qlm-portal-app/index.html  and update the \<base> entry based on the backed-up file
