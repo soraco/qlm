@@ -1,10 +1,10 @@
-# Customize and localize the content of the QlmCustomerSite pages
+# Customization and localization
 
 ### Customize the Customer Site pages
 
 #### Logo customization&#x20;
 
-QLM v12+: Set the server property customerSiteLogo.
+QLM v12+: Set the server property customerSiteLogo to a valid URL pointing to an image of your logo.
 
 QLM v11-: Simply replace the logo.png file located in QlmCustomerSite/images.
 
