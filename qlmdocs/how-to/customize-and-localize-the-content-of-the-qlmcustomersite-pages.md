@@ -4,7 +4,7 @@
 
 #### Logo customization&#x20;
 
-QLM v12+: Set the server property customerSiteLogo to a valid URL (https) pointing to an image of your logo.
+QLM v12+: Set the server property **customerSiteLogo** to a valid URL pointing to an image of your logo.&#x20;
 
 QLM v11-: Simply replace the logo.png file located in QlmCustomerSite/images.
 
