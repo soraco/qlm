@@ -64,3 +64,67 @@ else
   // The operation failed
 }
 ```
+
+## Example
+
+```csharp
+private void CreateKey ()
+{
+    // You need to set the AminEncryptionKey to call the Management API
+    // You should never call the Management API from within your application
+    lv.QlmLicenseObject.AdminEncryptionKey = "{B6163D99-F46A-4580-BB42-BF276A507A14}";
+
+    int[] features = new int[4];
+    features[0] = 1; // Enable the STD feature
+    features[1] = 0;
+    features[2] = 0;
+    features[3] = 0;
+
+    int numKeysToCreate = 1;
+    int numSeats = 1;
+    int numFloatingSeats = 0;
+    bool useMultipleActivationsKey = true;
+    string qlmVersion = "6.0.00";
+    string vendor = string.Empty;
+    string userData1 = string.Empty;
+    string affiliateID = string.Empty;
+    DateTime expiryDate = DateTime.UtcNow;
+
+    int expiryDuration = -1;
+    DateTime maintenancePlanExpiryDate = DateTime.MinValue;
+
+    bool generic = false;
+    QlmLicenseLib.ELicenseModel licenseModel = ELicenseModel.subscription;
+
+    string comment = string.Empty;
+    EOrderStatus orderStatus = EOrderStatus.ENone;
+    string productProperties = string.Empty;
+    string orderID = string.Empty;
+
+    string response;
+
+    lv.QlmLicenseObject.CreateActivationKeyWithExpiryDateEx9(string.Empty, "tom@soraco.co",
+                                  features, numKeysToCreate,
+                                  numSeats, numFloatingSeats,
+                                  useMultipleActivationsKey, qlmVersion,
+                                  vendor, userData1,
+                                  affiliateID, expiryDate,
+                                  expiryDuration, maintenancePlanExpiryDate,
+                                  generic, licenseModel,
+                                  comment, orderStatus,
+                                  productProperties, orderID,
+                                  out response);
+
+    ILicenseInfo li = new LicenseInfo();
+    string message = string.Empty;
+    if (lv.QlmLicenseObject.ParseResults(response, ref li, ref message))
+    {
+        // The operation  was successful	
+    }
+    else
+    {
+        // The operation failed
+    }
+
+}
+```
