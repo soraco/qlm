@@ -67,9 +67,12 @@ else
 
 ## Example
 
+{% code overflow="wrap" %}
 ```csharp
 private void CreateKey ()
 {
+    // lv is an instance of the LicenseValidator class
+    
     // You need to set the AminEncryptionKey to call the Management API
     // You should never call the Management API from within your application
     lv.QlmLicenseObject.AdminEncryptionKey = "{B6163D99-F46A-4580-BB42-BF276A507A14}";
@@ -103,7 +106,8 @@ private void CreateKey ()
 
     string response;
 
-    lv.QlmLicenseObject.CreateActivationKeyWithExpiryDateEx9(string.Empty, "tom@soraco.co",
+    lv.QlmLicenseObject.CreateActivationKeyWithExpiryDateEx9(string.Empty, 
+                                  "tom@soraco.co",
                                   features, numKeysToCreate,
                                   numSeats, numFloatingSeats,
                                   useMultipleActivationsKey, qlmVersion,
@@ -128,3 +132,4 @@ private void CreateKey ()
 
 }
 ```
+{% endcode %}
