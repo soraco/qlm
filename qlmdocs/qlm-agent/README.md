@@ -1,4 +1,4 @@
-# 🗜 QLM Agent
+# 🗜️ QLM Agent
 
 The QLM Agent is a process that runs in the background, either as a Windows Service (QLM Agent Service) or as an application in the Windows system tray (QLM System Tray Agent).
 
@@ -10,4 +10,4 @@ You can also launch the QLM System Tray Agent from the QLM installation folder: 
 
 If you configure QLM to use the QLM System Tray Agent instead of the QLM Agent Service, the user must be logged in to process scheduled tasks and backup jobs.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -324,8 +324,8 @@
 [sharing-license-information-on-a-given-system.md](sharing-license-information-on-a-given-system.md)
 {% endcontent-ref %}
 
-{% content-ref url="online-activation-by-authorization-code.md" %}
-[online-activation-by-authorization-code.md](online-activation-by-authorization-code.md)
+{% content-ref url="../fundamental-concepts/how-does-online-activation-work/online-activation-by-authorization-code.md" %}
+[online-activation-by-authorization-code.md](../fundamental-concepts/how-does-online-activation-work/online-activation-by-authorization-code.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-automate-license-activation-for-a-corporate-customer.md" %}

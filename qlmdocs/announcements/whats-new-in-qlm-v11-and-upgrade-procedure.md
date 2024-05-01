@@ -27,7 +27,7 @@ With QLM Pro v11, your customers no longer need to deal with license keys. The Q
 * An email or SMS message (requires a Twilio account) is automatically sent to the user with a 6-digit code
 * The user enters the 6-digit code in the wizard and voila, the license is activated.
 
-Activation by authorization code is currently ideal for single activation keys since only a single email address can be associated with a license. A solution will be implemented for multiple activation keys in a future update. For more details, [click here](../how-to/online-activation-by-authorization-code.md).
+Activation by authorization code is currently ideal for single activation keys since only a single email address can be associated with a license. A solution will be implemented for multiple activation keys in a future update. For more details, [click here](../fundamental-concepts/how-does-online-activation-work/online-activation-by-authorization-code.md).
 
 &#x20;
 
