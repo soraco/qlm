@@ -16,7 +16,7 @@ To configure these settings:
 * Click 3rd party extensions
 * Select a 3rd party extension&#x20;
   * Set a user and password
-  * Set an API Key
+  * Set an API Key (like a password, specify a string of characters)
   * Click Ok
 
 In your application, you must dynamically computer the hash and add it to the header of the request as per the instructions below:
