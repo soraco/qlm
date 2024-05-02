@@ -6,7 +6,7 @@ Retrieves an activation key given an Order ID or User Data.
 
 To call this function, you must set the enableRetrieveActivationKeyHttp server property to true.
 
-RetrieveActivationKeyHttp requires QLM's [strict authentication ](https://support.soraco.co/hc/en-us/articles/360045904672-How-to-invoke-a-QLM-HTTP-Method-that-requires-strict-authentication)and should only be used when the communication with the server is over https.
+RetrieveActivationKeyHttp requires QLM's [strict authentication ](https://docs.soraco.co/docs/how-to/how-to-invoke-a-qlm-http-method-that-requires-strict-authentication#h\_01he1frdn4av3gjgxjtrr3e8qk)and should only be used when the communication with the server is over https.
 
 Additionally, for security reasons, you should not call this API from within your application. It should only be called from a system that the end-user does not have access to, such as your server.
 
