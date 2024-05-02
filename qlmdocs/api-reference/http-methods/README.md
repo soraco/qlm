@@ -18,7 +18,10 @@ The HTTP methods are not quite as extensive as the .NET API but cover essential 
 * Activating a license ([ValidateLicenseHttp](validatelicensehttp.md))
 * Checking if a license was revoked ([ValidateLicenseHttp](validatelicensehttp.md))
 * Deactivating a license ([ReleaseLicenseHttp](releaselicensehttp.md))
+* Renewing a subscription ([RenewSubscriptionHttp](renewsubscriptionhttp.md)).
+* Renewing a maintenance plan ([RenewMaintenancePlan](renewmaintenanceplan.md))
 * Publishing Analytics ([AnalyticsAddInstallHttp](analyticsaddinstallhttp.md), AnalyticsRemoveInstallHttp, [AnalyticsUpdateInstallHttp](analyticsupdateinstallhttp.md), [AnalyticsUpdateLastAccessedDateHttp](analyticsupdatelastaccesseddatehttp.md))
 * Getting the latest version ([GetLatestVersionHttp](getlatestversionhttp.md))
+* etc.
 
 Note that all other methods exposed by the QLM License Server cannot be called directly via SOAP. In order to communicate with the QLM License Server, you need to use the QLM .NET API methods that are exposed via the QLMLicenseLib.dll.
