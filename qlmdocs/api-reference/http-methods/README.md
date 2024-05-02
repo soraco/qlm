@@ -9,8 +9,7 @@ There are several options you can use to restrict access to HTTP methods:
 * Each HTTP method can be disabled by setting a server property (see the \*\*security \*\*section of server properties)
 * You can require a [user/password ](https://support.soraco.co/hc/en-us/articles/201702694-How-to-define-the-user-password-associated-to-an-eCommerce-provider)to call an HTTP method.
 * You can restrict access to some HTTP methods by IP address (v16.1+) by configuring the server properties httpAdminMethods and httpAdminMethodsAllowedIPAddresses.
-
-Some HTTP methods, such as [RetrieveActivationKeyHttp](retrieveactivationkeyhttp.md), require the user of [QLM strict authentication](https://support.soraco.co/hc/en-us/articles/360045904672-How-to-invoke-a-QLM-HTTP-Method-that-requires-strict-authentication).
+* You can enforce [QLM strict authentication](https://support.soraco.co/hc/en-us/articles/360045904672-How-to-invoke-a-QLM-HTTP-Method-that-requires-strict-authentication) for some HTTP methods by configuring the server property **strictAuthenticationHttpMethods**. By default, strict authentication is enabled for [RetrieveActivationKeyHttp](retrieveactivationkeyhttp.md).
 
 The HTTP methods are not quite as extensive as the .NET API but cover essential functionality such as:
 
