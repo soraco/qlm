@@ -30,7 +30,7 @@ http://localhost/QlmLicenseServer/qlmservice.asmx/GetActivationKeyWithExpiryDate
 
 #### Check if a license exists, given  an order ID
 
-To create a license key,  you must use the [ ](../api-reference/http-methods/getactivationkeywithexpirydate.md)[RetrieveActivationKeyHttp](../api-reference/http-methods/retrieveactivationkeyhttp.md) method.
+To check if a license key exists,  you must use the [ ](../api-reference/http-methods/getactivationkeywithexpirydate.md)[RetrieveActivationKeyHttp](../api-reference/http-methods/retrieveactivationkeyhttp.md) method.
 
 Example:
 
