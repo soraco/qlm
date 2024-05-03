@@ -322,7 +322,7 @@
   * [Upgrading Product Properties](how-to/upgrading-product-properties.md)
   * [How to fire an event when MaxDaysOffline is reached](how-to/how-to-fire-an-event-when-maxdaysoffline-is-reached.md)
   * [How to retrieve activation information from the License Server](how-to/how-to-retrieve-activation-information-from-the-license-server.md)
-  * [How to invoke a QLM HTTP Method that requires strict authentication](how-to/how-to-invoke-a-qlm-http-method-that-requires-strict-authentication.md)
+  * [QLM strict authentication for HTTP Methods](how-to/how-to-invoke-a-qlm-http-method-that-requires-strict-authentication.md)
   * [How to configure and test MaxDaysOffline](how-to/how-to-configure-and-test-maxdaysoffline.md)
   * [Fraud Detection - Illegal Computers and Activation Attempts](how-to/fraud-detection-illegal-computers-and-activation-attempts.md)
   * [How to parse a feature string and determine the enabled feature](how-to/how-to-parse-a-feature-string-and-determine-the-enabled-feature.md)

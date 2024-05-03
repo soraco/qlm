@@ -1,6 +1,12 @@
-# How to invoke a QLM HTTP Method that requires strict authentication
+# QLM strict authentication for HTTP Methods
 
-Some QLM HTTP APIs require strict authentication in order to be invoked from a client. To invoke these APIs, follow the steps below:
+### Overview
+
+QLM HTTP methods typically use basic authentication (user/password) to validate the authenticity of a request. You can enhance the security of these methods by enabling strict authentication for some methods. Strict authentication requires that a client computes a hash of a given payload (including a secret key) and sends the hash value in the HTTP headers. When the server receives the request, it verifies that the hash is valid before authorizing it.
+
+By default, the [RetrieveActivationKeyHttp ](../api-reference/http-methods/retrieveactivationkeyhttp.md)method requires strict authentication. You can configure which HTTP method requires strict authentication by setting the server properly "security/strictAuthenticationHttpMethods".&#x20;
+
+To invoke HTTP methods that require strict authentication, follow the steps below:
 
 #### Configure Authentication Settings <a href="#h_01he1frdn4av3gjgxjtrr3e8qk" id="h_01he1frdn4av3gjgxjtrr3e8qk"></a>
 
