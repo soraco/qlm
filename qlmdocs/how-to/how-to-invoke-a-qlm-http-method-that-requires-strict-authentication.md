@@ -6,7 +6,7 @@ QLM HTTP methods typically use basic authentication (user/password) to validate 
 
 By default, the [RetrieveActivationKeyHttp ](../api-reference/http-methods/retrieveactivationkeyhttp.md)method requires strict authentication. You can configure which HTTP method requires strict authentication by setting the server properly "security/strictAuthenticationHttpMethods".&#x20;
 
-To invoke HTTP methods that require strict authentication, follow the steps below:
+The following sections detail how to invoke HTTP methods that require strict authentication.
 
 #### Configure Authentication Settings <a href="#h_01he1frdn4av3gjgxjtrr3e8qk" id="h_01he1frdn4av3gjgxjtrr3e8qk"></a>
 
