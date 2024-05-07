@@ -180,7 +180,7 @@
   * [License Server Performance Tips](faq/license-server-performance-tips.md)
   * [How to configure the License Server on a system where TLS 1.0 is disabled](faq/how-to-configure-the-license-server-on-a-system-where-tls-1.0-is-disabled.md)
   * [IIS on Windows 10](faq/iis-on-windows-10.md)
-  * [How to perform a minor upgrade of the QLM License Server](qlm-license-server/how-to-perform-a-minor-upgrade-of-the-qlm-license-server.md)
+  * [How to upgrade the QLM License Server](qlm-license-server/how-to-perform-a-minor-upgrade-of-the-qlm-license-server.md)
   * [How to perform a DB schema upgrade](qlm-license-server/how-to-perform-a-db-schema-upgrade.md)
 * [⛑️ Self Help (Customer Site)](self-help-customer-site/README.md)
   * [Overview](how-to/how-to-configure-the-qlm-self-help-web-page.md)

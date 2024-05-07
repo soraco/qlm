@@ -30,7 +30,7 @@ The License Server can be installed in 2 ways: (a) by running the provided setup
 
 If you are hosting your own website,  then the procedure **\[1]** below is recommended. If your site is hosted at an ISP, then you may need to use the procedure **\[2]**.
 
-## Automated installation of the web service <a href="#h_01hfsapyns07hcs8z4xp1b84cs" id="h_01hfsapyns07hcs8z4xp1b84cs"></a>
+## Automated installation <a href="#h_01hfsapyns07hcs8z4xp1b84cs" id="h_01hfsapyns07hcs8z4xp1b84cs"></a>
 
 ### License Server Installation <a href="#h_01hfsavyrrkx81vw6pm4scfmb2" id="h_01hfsavyrrkx81vw6pm4scfmb2"></a>
 
@@ -63,7 +63,7 @@ To configure the QLM Management Console to connect to your QLM License Server:
 * If you get an error saying that no products were found, click the **Upload products to License Server** button.
 * Then click on Test again to confirm that all tests pass.
 
-## Manual installation of the License Server <a href="#h_01hfsapynsq9vt6yv22srqq2mp" id="h_01hfsapynsq9vt6yv22srqq2mp"></a>
+## Manual installation <a href="#h_01hfsapynsq9vt6yv22srqq2mp" id="h_01hfsapynsq9vt6yv22srqq2mp"></a>
 
 ### Configuring the Database <a href="#h_01hfsapynshtqsn5teenx8e6sh" id="h_01hfsapynshtqsn5teenx8e6sh"></a>
 

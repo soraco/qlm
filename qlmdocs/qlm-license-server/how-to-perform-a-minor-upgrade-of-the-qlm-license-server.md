@@ -1,6 +1,6 @@
-# How to perform a minor upgrade of the QLM License Server
+# How to upgrade the QLM License Server
 
-When we release minor updates of a specific version of QLM, you typically need to update the QLM Management Console as well as the QLM License Server.
+When we release updates of a specific version of QLM, you typically need to update the QLM Management Console as well as the QLM License Server.
 
 Before you proceed:
 
