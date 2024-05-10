@@ -11,5 +11,6 @@ If you are using QLM Pro or Enterprise and need to migrate your license server t
 * Create a SQL Server backup of the existing database from the SQL Server Management Studio.
 * Create a SQL login user (with the same password) identical to the one used by QLM on the previous server.&#x20;
 * On the new server, restore the backup over the existing database created during the installation of the QLM License Server.
+* Finally, you must upgrade the database schema described in this [article](how-to-perform-a-db-schema-upgrade.md).
 
 &#x20;
