@@ -51,6 +51,7 @@
   * [Customer User Account](fundamental-concepts/qlm-customer-user-account.md)
   * [Server Error Codes (EServerErrorCode)](faq/server-error-codes-eservererrorcode.md)
   * [.NET 6/7/8, .NET Core and .NET Standard Support](how-to/.net-6-7-8-.net-core-and-.net-standard-support.md)
+  * [QLM Timer](fundamental-concepts/qlm-timer.md)
 * [↗️ Management Console](management-console/README.md)
   * [User Interface](management-console/user-interface/README.md)
     * [Get Started](management-console/user-interface/get-started.md)
