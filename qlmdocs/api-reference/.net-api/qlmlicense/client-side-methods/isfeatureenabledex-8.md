@@ -1,13 +1,13 @@
-# IsLicenseModelAPermanentLicense
+# IsLicenseModelASubscriptionLicense
 
 ### Description
 
-Returns whether the provided license model is a permanent license
+Returns whether the provided license model is a subscription
 
 This API requires the use of QLM Engine version 6.0.00 or higher.
 
 ```csharp
- bool IsLicenseModelAPermanentLicense(ELicenseModel licenseModel)
+ bool IsLicenseModelASubscriptionLicense(ELicenseModel licenseModel)
 ```
 
 ### Arguments
@@ -18,6 +18,6 @@ This API requires the use of QLM Engine version 6.0.00 or higher.
 
 ### Return
 
-| Data Type | Description                                      |
-| :-------: | ------------------------------------------------ |
-|    bool   | true if the license model is a permanent license |
+| Data Type | Description                                 |
+| :-------: | ------------------------------------------- |
+|    bool   | true if the license model is a subscription |

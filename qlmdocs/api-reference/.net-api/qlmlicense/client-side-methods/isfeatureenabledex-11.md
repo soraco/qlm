@@ -1,24 +1,23 @@
-# IsLicenseTypeATrialLicense
+# IsLicenseModelAFloatingLicense
 
 ### Description
 
-Returns whether the provided license type is a trial&#x20;
+Returns whether the provided license model is an on-premise floating license
 
 This API requires the use of QLM Engine version 6.0.00 or higher.
 
 ```csharp
- bool IsLicenseTypeATrialLicense(ELicenseType licenseType)
+ bool IsLicenseModelAFloatingLicense(ELicenseModel licenseModel)
 ```
 
 ### Arguments
 
-| Name        |               Data Type               | Description            |
-| ----------- | :-----------------------------------: | ---------------------- |
-| licenseType | <pre><code>ELicenseType
-</code></pre> | license type to verify |
+| Name         |   Data Type   | Description             |
+| ------------ | :-----------: | ----------------------- |
+| licenseModel | ELicenseModel | license model to verify |
 
 ### Return
 
-| Data Type | Description                         |
-| :-------: | ----------------------------------- |
-|    bool   | true if the license type is a trial |
+| Data Type | Description                                                 |
+| :-------: | ----------------------------------------------------------- |
+|    bool   | true if the license model is an on-premise floating license |

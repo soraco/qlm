@@ -1,23 +1,22 @@
-# IsLicenseKeyATrialLicense
+# IsFeatureEnabledEx
 
 ### Description
 
-Returns whether the provided license key is a trial.&#x20;
-
-This API requires the use of QLM Engine version 6.0.00 or higher.
+Returns whether the specified feature is enabled in this license key.
 
 ```csharp
- bool IsLicenseKeyATrialLicense(string licenseKey)
+ bool IsFeatureEnabledEx (int featureSet, int feature)
 ```
 
 ### Arguments
 
-| Name       | Data Type | Description           |
-| ---------- | :-------: | --------------------- |
-| licenseKey |  string   | license key to verify |
+| Name       | Data Type | Description                                                     |
+| ---------- | :-------: | --------------------------------------------------------------- |
+| featureSet |    int    | id of the feature set. QLM supports four feature sets (0 to 3). |
+| featureID  |    int    | id of the feature to be checked.                                |
 
 ### Return
 
-| Data Type | Description                          |
-| :-------: | ------------------------------------ |
-|    bool   | true if the license model is a trial |
+| Data Type | Description                    |
+| :-------: | ------------------------------ |
+|    bool   | true if the feature is enabled |

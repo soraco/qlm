@@ -43,6 +43,6 @@ When creating a license key for a customer, enable or disable the CLOUD\_FLOATIN
 
 ### Application Implementation
 
-At the application level, after the license is validated, call [IsFeaturedEnabledEx ](../../api-reference/qlmlicense/client-side-methods/isfeatureenabledex.md)to determine if the CLOUD\_FLOATING\_LICENSE  feature is enabled. If it is, you must check-out the license at application startup and check it back in when the application exits.
+At the application level, after the license is validated, call [IsFeaturedEnabledEx ](../../api-reference/.net-api/qlmlicense/client-side-methods/isfeatureenabledex-1.md)to determine if the CLOUD\_FLOATING\_LICENSE  feature is enabled. If it is, you must check-out the license at application startup and check it back in when the application exits.
 
 The sample %Public%\Documents\Quick License Manager\Samples\qlmpro\Windows\DotNet\C#\QlmProFloatingLicense should be used as a reference for implementing this model.

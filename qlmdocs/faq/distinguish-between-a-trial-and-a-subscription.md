@@ -48,6 +48,6 @@ Another approach consists of creating a feature for your product called TRIAL (o
 
 When you create a license key, enable or disable the TRIAL feature as required.
 
-After you validate a license key, call the [IsFeatureEnabledEx ](../api-reference/qlmlicense/client-side-methods/isfeatureenabledex.md)API to determine if the key is a trial.&#x20;
+After you validate a license key, call the [IsFeatureEnabledEx ](../api-reference/.net-api/qlmlicense/client-side-methods/isfeatureenabledex-1.md)API to determine if the key is a trial.&#x20;
 
 This approach works with QLM Express, Pro and Enterprise.

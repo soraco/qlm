@@ -1,6 +1,6 @@
 # How to parse a feature string and determine the enabled feature
 
-The most common way of determining if a feature is enabled is by calling the [QlmLicense.IsFeatureEnabledEx](../api-reference/qlmlicense/client-side-methods/isfeatureenabledex.md) API.&#x20;
+The most common way of determining if a feature is enabled is by calling the [QlmLicense.IsFeatureEnabledEx](../api-reference/.net-api/qlmlicense/client-side-methods/isfeatureenabledex-1.md) API.&#x20;
 
 However, if you have retrieved the feature value from the server's DB as a string, you can use the code below to parse the feature string and determine if a specific feature is enabled.
 

@@ -35,6 +35,6 @@ To determine if a feature is enabled, you need to:
 
 * Call DefineProduct to define your product (this is typically done by the generated LicenseValidator class)
 * Call ValidateLicense to ensure your license is valid (this is typically done by calling LicenseValidator.ValidateLicenseAtStartup).
-* Call [IsFeatureEnableEx](../api-reference/qlmlicense/client-side-methods/isfeatureenabledex.md) to determine if the feature is enabled.
+* Call [IsFeatureEnableEx](../api-reference/.net-api/qlmlicense/client-side-methods/isfeatureenabledex-1.md) to determine if the feature is enabled.
 
 Note that features can also be enabled when generating a license key from your ecommerce provider as described [here](what-is-the-syntax-of-is\_features.md).

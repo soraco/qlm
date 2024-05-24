@@ -1,13 +1,13 @@
-# IsLicenseTypeASubscriptionLicense
+# IsLicenseTypeATrialLicense
 
 ### Description
 
-Returns whether the provided license type is a subscription
+Returns whether the provided license type is a trial&#x20;
 
 This API requires the use of QLM Engine version 6.0.00 or higher.
 
 ```csharp
- bool IsLicenseTypeASubscriptionLicense(ELicenseType licenseType)
+ bool IsLicenseTypeATrialLicense(ELicenseType licenseType)
 ```
 
 ### Arguments
@@ -19,6 +19,6 @@ This API requires the use of QLM Engine version 6.0.00 or higher.
 
 ### Return
 
-| Data Type | Description                                |
-| :-------: | ------------------------------------------ |
-|    bool   | true if the license type is a subscription |
+| Data Type | Description                         |
+| :-------: | ----------------------------------- |
+|    bool   | true if the license type is a trial |

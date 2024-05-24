@@ -1,13 +1,13 @@
-# IsLicenseKeyAFloatingLicense
+# IsLicenseKeyACloudLicense
 
 ### Description
 
-Returns whether the provided license key is an on-premise floating license&#x20;
+Returns whether the provided license key is a cloud floating license&#x20;
 
 This API requires the use of QLM Engine version 6.0.00 or higher.
 
 ```csharp
- bool IsLicenseKeyAFloatingLicense(string licenseKey)
+ bool IsLicenseKeyACloudLicense(string licenseKey)
 ```
 
 ### Arguments
@@ -18,6 +18,6 @@ This API requires the use of QLM Engine version 6.0.00 or higher.
 
 ### Return
 
-| Data Type | Description                                                  |
-| :-------: | ------------------------------------------------------------ |
-|    bool   | true if the license model is an on-premise floating license  |
+| Data Type | Description                                            |
+| :-------: | ------------------------------------------------------ |
+|    bool   | true if the license model is a cloud floating license  |
