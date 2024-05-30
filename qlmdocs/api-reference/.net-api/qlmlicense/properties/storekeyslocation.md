@@ -6,7 +6,7 @@ The QLM API includes 2 methods that can store and read back the keys: StoreKeys 
 \
 The possible values for this property are:\
 \
-**EFile:** stores the license key in a file on the end user system (the file can be stored at the user level, at the machine level or both depending on the value of the [StoreKeysOptions](https://support.soraco.co/hc/en-us/articles/207296716-QlmLicense-StoreKeysOptions) property).\
+**EFile:** stores the license key in a file on the end user system (the file can be stored at the user level, at the machine level or both depending on the value of the [StoreKeysOptions](storekeysoptions.md) property).\
 \
 **ERegistry:** stores the license key in the registry on the end user system.
 
