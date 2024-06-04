@@ -34,7 +34,7 @@ To associate a license to a User Group:
 
 #### Define privileges of QLM Portal Users
 
-If you want to allow a reseller to manage their own customers and license keys, you  must define a User Account for the reseller and associate the User Account to a User Group. You define privileges of the user account at the user group level. For more details about this topic, [click here](../qlm-portal/role-based-access-control-rbac.md).
+If you want to allow resellers to manage their customers and license keys, you must define a User Account for the reseller and associate the User Account with a User Group. You define the privileges of the user account at the user group level. For more details about this topic, [click here](../qlm-portal/role-based-access-control-rbac.md).
 
 
 
