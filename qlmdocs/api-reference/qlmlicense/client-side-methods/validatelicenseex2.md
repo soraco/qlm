@@ -34,3 +34,61 @@ Prior to calling this function, you must:
 You can call this function for any type of license key. If the license key is not computer-bound, set the ComputerID to an empty string.
 
 After calling this function, call [GetStatus ](getstatus.md)to get the status of the call.
+
+### Example
+
+{% code overflow="wrap" %}
+```csharp
+string returnMsg = license.ValidateLicenseExe(licenseKey, computerID, false, false);
+bool ret = false;
+bool needsActivation = true;
+
+int nStatus = (int)license.GetStatus();
+
+if (IsTrue(nStatus, (int)ELicenseStatus.EKeyInvalid) ||
+    IsTrue(nStatus, (int)ELicenseStatus.EKeyProductInvalid) ||
+    IsTrue(nStatus, (int)ELicenseStatus.EKeyMachineInvalid) ||
+    IsTrue(nStatus, (int)ELicenseStatus.EKeyExceededAllowedInstances) ||
+    IsTrue(nStatus, (int)ELicenseStatus.EKeyTampered))
+{
+    // the key is invalid
+    ret = false;
+}
+else if (IsTrue(nStatus, (int)ELicenseStatus.EKeyVersionInvalid))
+{
+    // wrongProductVersion
+    ret = false;
+}
+else if (IsTrue(nStatus, (int)ELicenseStatus.EKeyDemo))
+{
+    // The key has an expiry date
+
+    if (IsTrue(nStatus, (int)ELicenseStatus.EKeyExpired))
+    {
+        // the key has expired
+        ret = false;        
+    }
+    else
+    {
+        // the key is still valid
+        ret = true;
+        // call license.DaysLeft to get the remaining days
+    }
+}
+else if (IsTrue(nStatus, (int)ELicenseStatus.EKeyPermanent))
+{
+    // the key is valid and permanent
+    ret = true;
+}
+
+if (ret == true)
+{
+
+    if (license.IsActivationLicense (license.LicenseType))
+    {
+        needsActivation = true;
+        ret = false;
+    }                
+}
+```
+{% endcode %}
