@@ -16,9 +16,9 @@ string ValidateLicense (string LicenseKey)
 
 ### Return
 
-| Data Type | Description                                                                                    |
-| :-------: | ---------------------------------------------------------------------------------------------- |
-|   string  | Error message if ValidateLicense fails to validate or if the license is an evaluation license. |
+| Data Type | Description                                                                                                                            |
+| :-------: | -------------------------------------------------------------------------------------------------------------------------------------- |
+|   string  | A message indicating the result of the validation. Do not parse this message. Use GetStatus to get the exact status of the validation. |
 
 ### Remarks
 

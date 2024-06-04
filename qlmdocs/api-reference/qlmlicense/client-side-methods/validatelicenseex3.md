@@ -20,9 +20,9 @@ string ValidateLicenseEx3 (string LicenseKey, ELicenseBinding licenseBinding,
 
 ### Return
 
-| Data Type | Description                       |
-| :-------: | --------------------------------- |
-|   string  | Error message if validation fails |
+| Data Type | Description                                                                                                                            |
+| :-------: | -------------------------------------------------------------------------------------------------------------------------------------- |
+|   string  | A message indicating the result of the validation. Do not parse this message. Use GetStatus to get the exact status of the validation. |
 
 ### Remarks
 
