@@ -67,7 +67,7 @@ else if (IsTrue(nStatus, (int)ELicenseStatus.EKeyDemo))
     }
     else
     {
-        // the demo key is still valid
+        // the key is still valid
         ret = true;
         // call license.DaysLeft to get the remaining days
     }
