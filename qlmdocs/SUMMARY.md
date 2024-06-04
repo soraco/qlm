@@ -48,6 +48,7 @@
   * [History log](faq/qlm-history-log.md)
   * [WebHooks](how-to/qlm-webhooks.md)
   * [Analytics](how-to/qlm-enterprise-analytics.md)
+  * [User Groups](fundamental-concepts/user-groups.md)
   * [Product Bundles](how-to/product-bundles.md)
   * [Customer User Account](fundamental-concepts/qlm-customer-user-account.md)
   * [Server Error Codes (EServerErrorCode)](faq/server-error-codes-eservererrorcode.md)
