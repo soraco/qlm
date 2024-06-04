@@ -21,6 +21,10 @@ To define a user group:
   * Set the Email of the user group (optional)
   * Leave the default values for all other fields and click OK.
 
+<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+
+
+
 To associate a license to a User Group:
 
 * Go to the Manage Keys tab
@@ -31,4 +35,8 @@ To associate a license to a User Group:
 #### Define privileges of QLM Portal Users
 
 If you want to allow a reseller to manage their own customers and license keys, you  must define a User Account for the reseller and associate the User Account to a User Group. You define privileges of the user account at the user group level. For more details about this topic, [click here](../qlm-portal/role-based-access-control-rbac.md).
+
+
+
+<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
