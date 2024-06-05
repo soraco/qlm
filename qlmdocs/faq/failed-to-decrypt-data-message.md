@@ -8,12 +8,16 @@ QLM encrypts data when communicating between the client and the web service. Dat
 
 Note that if you are using SSL, data is additionally encrypted by the SSL layer.
 
-If you get the mentioned error, verify that te communicationEncryptionKey and adminEncryptionKey are  the same in the following locations:
+If you get the mentioned error, verify that te communicationEncryptionKey and adminEncryptionKey are the same in the following locations:
 
-1. Web server config file: web.config
+1. Web server config file:&#x20;
+   1. QlmLicenseServer\web.config
+   2. QlmPortal\web.config
+   3. QlmCustomerSite\web.config
+   4. QlmCustomerPortal\qlm-portal-api\web.config
 2. In the QLM Management Console
    1. In QLM v4: QLM Console / Tools / Options : CommunicationEncryptionKey
-   2. In QLM v5+: QLM Console / Manage Keys / Sites /  Encryption Keys: CommunicationEncryptionKey / AdminEncryptionKey&#x20;
+   2. In QLM v5+: QLM Console / Manage Keys / Sites / Encryption Keys: CommunicationEncryptionKey / AdminEncryptionKey
 3. In any of the QLM .NET User Controls, the QlmCommunicationEncryptionKey property
 4. In the constructor of LicenseValidator class
 5. Any time you instantiate a QlmLicense object.
