@@ -1,11 +1,11 @@
 # How to restore the factory settings of the QLM License Wizard
 
-If you customized the settings of the QLM License Wizard in the Protect Your Application wizard and would like to revert back to the default factory setttings, follow the steps below:
+If you customized the settings of the QLM License Wizard in the Protect Your Application wizard and would like to revert to the default factory settings, follow the steps below:
 
 **Option 1: Revert all properties to factory settings**
 
 * Go to the folder: %appdata%\Soraco\Quick License Manager\LicenseWizard
-* In that folder, locate the xml settings file that corresponds to your product
+* In that folder, locate the XML settings file that corresponds to your product
 * Delete that file
 * Launch the QLM Management Console
 * Go to the Protect Your Application wizard

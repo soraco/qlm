@@ -15,7 +15,7 @@ Example: QlmLicenseWizard.exe /settings "my product 1.0.lw.xml" /appversion 2.1.
 
 ### Publish the latest version of your application to the License server
 
-Every time your release a new version of your application, do the following:
+Every time you release a new version of your application, do the following:
 
 * Go to the Define Products tab
 * Select your product

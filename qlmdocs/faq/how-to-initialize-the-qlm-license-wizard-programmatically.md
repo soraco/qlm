@@ -1,6 +1,6 @@
 # How to initialize the QLM License Wizard programmatically
 
-The QLM License Wizard is typically initialize by loading the xml settings file generated from the QLM Management Console / Protect Your application wizard.
+The QLM License Wizard is typically initialized by loading the XML settings file generated from the QLM Management Console / Protect Your Application wizard.
 
 If you'd rather initialize the License Wizard programmatically, you can do so as described below.
 
@@ -8,7 +8,7 @@ If you'd rather initialize the License Wizard programmatically, you can do so as
 
 If your application is a .NET Winforms application, you can simply use the QLM License Wizard .NET User Control and set its properties in the Visual Studio IDE.
 
-### Other apps
+### Other Apps
 
 If your application is not a .NET Winforms app, the code below illustrates how to initialize the QLM License Wizard. The example below is configured for the built-in Demo product and connects to the Demo License Server. You must update most settings to use your own product and your own License Server.
 

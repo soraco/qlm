@@ -1,6 +1,6 @@
 # Online Activation using the QLM License Wizard Standalone Application
 
-QLM provides a standalone application (QlmLicenseWizard.exe) that you can invoke from your application to simplify the process of online activation. When using QlmLicenseWizard.exe, there is almost no need to write any code to implement online activation. This method is ideal for non .NET applications that cannot use the QLM .NET User Control. Samples are provided for C++, MS-Access, Excel and others.
+QLM provides a standalone application (QlmLicenseWizard.exe) that you can invoke from your application to simplify the process of online activation. When using QlmLicenseWizard.exe, there is almost no need to write any code to implement online activation. This method is ideal for non-.NET applications that cannot use the QLM .NET User Control. Samples are provided for C++, MS-Access, Excel and others.
 
 The QLM License Wizard allows your users to:
 
@@ -14,7 +14,7 @@ The QLM License Wizard allows your users to:
 * Display a Privacy Policy page.
 * and much more
 
-The QlmLicenseWizard.exe can be used on any Windows 7 and higher system and requires that Microsoft .NET 4.62 or later be installed on the end-users system.
+The QlmLicenseWizard.exe can be used on any Windows 7 and higher system and requires that Microsoft .NET 4.62 or later be installed on the end-user system.
 
 To use the QlmLicenseWizard.exe application:
 

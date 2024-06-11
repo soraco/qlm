@@ -16,7 +16,7 @@ To display your EULA:
 
 &#x20;
 
-Additional, QLM can simply display a link to your EULA in the QLM License Wizard. To include a link to your EULA, set the following properties:
+Additionally, QLM can simply display a link to your EULA in the QLM License Wizard. To include a link to your EULA, set the following properties:
 
 * QlmEULACaption
 * QlmEULAUrl

@@ -4,7 +4,7 @@ The QLM License Wizard can use an email address instead of an Activation Key for
 
 QLM supports 4 different ways to validate an email address when it is entered by the customer in the QLM License Wizard:
 
-* An email or SMS message is sent to the end-user with a 6 digit code that can be used to complete the activation. This is the default option.
+* An email or SMS message is sent to the end-user with a 6-digit code that can be used to complete the activation. This is the default option.
 * Authentication with Google (available as of QLM v15).
 * Authentication with Facebook (available as of QLM v15).
 * Authentication with Microsoft Azure AD (available as of QLM v15).

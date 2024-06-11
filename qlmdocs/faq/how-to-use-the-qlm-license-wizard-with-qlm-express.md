@@ -7,14 +7,14 @@ The QLM License Wizard can be used as a [.NET WinForms control](../api-reference
 The recommended settings to use the QLM License Wizard with QLM Express are found below. To configure these settings:
 
 * Launch the QLM Management Console
-* Go to the the "Protect your application" wizard then click Next
+* Go to the "Protect your application" wizard then click Next
 * Select the Product and the License Server
   * Select your product
   * Select the DEMO License Server
 * Select the type of application to protect
   *
     * Select the programming language of your application
-* Customize the Look & Feel and behavior of the QLM License Wizard by setting the properties as shown in the table below.
+* Customize the Look & Feel and behaviour of the QLM License Wizard by setting the properties as shown in the table below.
 
 | **Section**         | **Property**                           | **Value** |
 | ------------------- | -------------------------------------- | --------- |
