@@ -43,7 +43,7 @@ This search displays licences that have been revoked
 
 ### Licenses that do not have a maintenance plan
 
-This search displays licences that have been revoked
+This search displays licences that have do not have a maintenance plan.
 
 * Go to the Manage Keys tab
 * Click the "search" dropdown and click Edit Searches
@@ -56,7 +56,7 @@ This search displays licences that have been revoked
 
 ### Licenses that have expired
 
-This search displays licences that have been revoked
+This search displays licences that have expired.
 
 * Go to the Manage Keys tab
 * Click the "search" dropdown and click Edit Searches
