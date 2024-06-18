@@ -13,10 +13,11 @@ This search displays all licences that have never been activated.
 * Set the Table to: \<Default>
 * Set the SQL field to: ActivationDate is null and ReleaseDate is null
 * Click OK
+* In the right-hand panel, locate the newly created search and click it to display the data.
 
 ### Licenses that are not activated&#x20;
 
-This search displays licences that are not currently activated. This includes never-activated licenses and licenses that were activated in the past but are currently deactivated.&#x20;
+This search displays licences that are not currently activated. This includes never-activated licenses and licenses that were previously activated but are presently deactivated.&#x20;
 
 * Go to the Manage Keys tab
 * Click the "search" dropdown and click Edit Searches
@@ -25,6 +26,7 @@ This search displays licences that are not currently activated. This includes ne
 * Set the Table to: \<Default>
 * Set the SQL field to: ActivationDate is null&#x20;
 * Click OK
+* In the right-hand panel, locate the newly created search and click it to display the data.
 
 ### Licenses that are revoked&#x20;
 
@@ -37,6 +39,7 @@ This search displays licences that have been revoked
 * Set the Table to: \<Default>
 * Set the SQL field to: Disabled = 1
 * Click OK
+* In the right-hand panel, locate the newly created search and click it to display the data.
 
 ### Licenses that do not have a maintenance plan
 
@@ -49,6 +52,7 @@ This search displays licences that have been revoked
 * Set the Table to: \<Default>
 * Set the SQL field to: MaintenanceRenewalDate is null
 * Click OK
+* In the right-hand panel, locate the newly created search and click it to display the data.
 
 ### Licenses that have expired
 
@@ -61,6 +65,7 @@ This search displays licences that have been revoked
 * Set the Table to: \<Default>
 * Set the SQL field to: SubscriptionExpiryDate < \[today\_start-1]
 * Click OK
+* In the right-hand panel, locate the newly created search and click it to display the data.
 
 
 
