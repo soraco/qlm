@@ -402,6 +402,7 @@
   * [How to configure the QLM License Wizard to allow Offline Activation only](how-to/how-to-configure-the-qlm-license-wizard-to-allow-offline-activation-only.md)
   * [HTTP API examples](how-to/http-api-examples.md)
   * [How to load an existing XML Settings file in the Protect Your App wizard](how-to/how-to-load-an-existing-xml-settings-file-in-the-protect-your-app-wizard.md)
+* [Common Searches](common-searches.md)
 * [❔ FAQ](faq/README.md)
   * [How do I change the license binding to a different identifier?](faq/how-do-i-change-the-license-binding-to-a-different-identifier.md)
   * [How to reserve licenses for a list of users](faq/how-to-reserve-licenses-for-a-list-of-users.md)
