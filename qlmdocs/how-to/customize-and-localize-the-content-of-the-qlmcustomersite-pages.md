@@ -28,6 +28,18 @@ To hide the privacy policy checkbox, clear the privacyPolicyUrl server property.
 
 To hide the Subscribe To Mail List checkbox, edit the QlmCustomerSite web.config file and set showSubscribeToMailListCheckbox setting to False.
 
+#### Exclude product from Offline Activation Page
+
+To exclude a product from the product list displayed on the Offline Activation Page:
+
+* Launch the QLM Management Console
+* Go to the Define Products tab
+* Select the required product
+* Go to the Advanced tab
+* Uncheck the "Include On Customer Site" option
+
+####
+
 ### &#x20;Advanced Pages customization
 
 To customize the pages, you can edit the aspx pages located in QlmCustomerSite. Here are some basic rules to follow:
