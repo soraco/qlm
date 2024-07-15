@@ -10,7 +10,7 @@ To invoke this method via a URL, append this function's name to the URL of the Q
 
 {% code overflow="wrap" %}
 ```http
-https://yourserver/yourvirtualdirectory/qlmservice.asmx/RevokeLicenseHttp?is_avkey=<activationKey>&is_vendor=<eCommerce provider>
+https://yourserver/yourvirtualdirectory/qlmservice.asmx/RevokeLicenseHttp?is_avkey=<activationKey>&is_vendor=<eCommerce provider>&is_revoke=true
 ```
 {% endcode %}
 
