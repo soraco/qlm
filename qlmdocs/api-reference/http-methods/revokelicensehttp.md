@@ -20,5 +20,6 @@ https://yourserver/yourvirtualdirectory/qlmservice.asmx/RevokeLicenseHttp?is_avk
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | is\_avkey  | activation key to revoke                                                                                                                                |
 | is\_pwd    | password as defined in the eCommerce Providers section in QLM (Manage Keys / Tools / 3rd Party Extensions or Manage Keys / Tools / eCommerce Providers) |
+| is\_revoke | <p>specify whether to revoke or un-revoke a license.<br>Set the value to true to revoke.<br>Set the value to false to un-revoke it.</p>                 |
 | is\_user   | username as defined in the eCommerce Providers section in QLM (Manage Keys / Tools / 3rd Party Extensions or Manage Keys / Tools / eCommerce Providers) |
 | is\_vendor | one of the supported vendors                                                                                                                            |
