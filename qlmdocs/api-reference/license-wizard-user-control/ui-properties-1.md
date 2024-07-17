@@ -16,5 +16,9 @@
 | QlmResultSuccessImage24                      | Image to display when an operation results in success (24x24).                        |
 | QlmResultSuccessImage48                      | Image to display when an operation results in success (48x48).                        |
 | QlmResultWarningImage24                      | Image to display when an operation results in a warning (24x24).                      |
-| QlmProductImage                              | Sets the image displayed to the left of the product name.                             |
+| QlmResultWarningImage48                      | Image to display when an operation results in a warning (48x48).                      |
+| QlmUserRegistrationPageTitleImage            | Image displayed next to the title of the User Registration page (32x32).              |
+| QlmWelcomePageActivateImage                  | Image displayed next in the Activate button on the Welcome page (24x24).              |
+| QlmWelcomePageDeactivateImage                | Image displayed next in the Deactivate button on the Welcome page (24x24).            |
+| QlmWelcomePageTitleImage                     | Image displayed next to the title of the Welcome page (32x32).                        |
 | QlmWizardLogo                                | Logo displayed in the bottom left-hand corner. The expected size is 90x60 pixels.     |
