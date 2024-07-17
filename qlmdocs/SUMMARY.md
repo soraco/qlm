@@ -882,6 +882,7 @@
     * [ValidateLicenseHttp](api-reference/http-methods/validatelicensehttp.md)
   * [License Wizard User Control](api-reference/license-wizard-user-control/README.md)
     * [UI Properties](api-reference/license-wizard-user-control/ui-properties.md)
+    * [Image Properties](api-reference/license-wizard-user-control/ui-properties-1.md)
     * [Behavior Properties](api-reference/license-wizard-user-control/behavior-properties.md)
     * [User Registration Properties](api-reference/license-wizard-user-control/user-registration-properties.md)
     * [License Properties](api-reference/license-wizard-user-control/license-properties.md)
