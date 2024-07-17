@@ -886,7 +886,7 @@
     * [Behavior Properties](api-reference/license-wizard-user-control/behavior-properties.md)
     * [User Registration Properties](api-reference/license-wizard-user-control/user-registration-properties.md)
     * [License Properties](api-reference/license-wizard-user-control/license-properties.md)
-    * [Floating License Properties](api-reference/license-wizard-user-control/floating-license-properties.md)
+    * [On-premise Floating License Properties](api-reference/license-wizard-user-control/floating-license-properties.md)
     * [Events](api-reference/license-wizard-user-control/events.md)
   * [Activation User Control](api-reference/activation-user-control/README.md)
     * [Properties](api-reference/activation-user-control/properties.md)
