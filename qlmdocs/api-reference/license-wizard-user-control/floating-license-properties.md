@@ -1,16 +1,3 @@
-# Floating License Properties
+# On-premise Floating License Properties
 
-| Name                                   | Description                                                |
-| -------------------------------------- | ---------------------------------------------------------- |
-| QlmFloatingDbPassword                  | Password to the floating license database.                 |
-| QlmFloatingLicenseCaptionFont          | Font of the Floating License caption.                      |
-| QlmFloatingLicenseCaptionForeColor     | Foreground color of the Floating License caption.          |
-| QlmFloatingLicenseCheckBoxCaption      | Caption of the floating license checkbox.                  |
-| QlmFloatingLicenseCheckBoxDefaultState | Default state of the floating license checkbox.            |
-| QlmFloatingLicenseCheckBoxVisible      | Visibility of the floating license checkbox.               |
-| QlmFloatingLicenseDbFormat             | Format of the QLM Floating License database.               |
-| QlmFloatingLicenseFilename             | Default filename of the XML floating license file.         |
-| QlmFloatingLicenseMaxOfflineDuration   | Maximum duration of an offline floating license, in hours. |
-| QlmFloatingLicensePageCaption          | Caption of the Floating License Page.                      |
-| QlmFloatingLicensePageCaption2         | Caption2 of the Floating License Page                      |
-| QlmShowFloatingLicensePage             | Show or hide the Floating License DB selection page.       |
+<table data-full-width="true"><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>QlmFloatingDbPassword</td><td>Password to the floating license database.</td></tr><tr><td>QlmFloatingLicenseCaptionFont</td><td>Font of the Floating License caption.</td></tr><tr><td>QlmFloatingLicenseCaptionForeColor</td><td>Foreground color of the Floating License caption.</td></tr><tr><td>QlmFloatingLicenseCheckBoxCaption</td><td>Caption of the floating license checkbox.</td></tr><tr><td>QlmFloatingLicenseCheckBoxDefaultState</td><td>Default state of the floating license checkbox.</td></tr><tr><td>QlmFloatingLicenseCheckBoxVisible</td><td>Visibility of the floating license checkbox.</td></tr><tr><td>QlmFloatingLicenseDbFormat</td><td>Format of the QLM Floating License database.</td></tr><tr><td>QlmFloatingLicenseFilename</td><td>Default filename of the XML floating license file.</td></tr><tr><td>QlmFloatingLicenseMaxOfflineDuration</td><td>Maximum duration of an offline floating license, in hours.</td></tr><tr><td>QlmFloatingLicensePageCaption</td><td>Caption of the Floating License Page.</td></tr><tr><td>QlmFloatingLicensePageCaption2</td><td>Caption2 of the Floating License Page</td></tr><tr><td>QlmShowFloatingLicensePage</td><td>Show or hide the Floating License DB selection page.</td></tr></tbody></table>
