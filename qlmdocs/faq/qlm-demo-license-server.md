@@ -6,7 +6,7 @@ All samples are preconfigured to connect and work with the **Demo License Server
 
 The only impact when using the Demo License Server is that you need to pretend your product is called “Demo 1.0” (or one of the built-in products). Once you purchase QLM and you set up your own License Server, the changes required to switch to the new License server are limited to configuration changes.
 
-**Note that license keys created on the Demo License Server are deleted every 30 days.**&#x20;
+**Note that license keys created on the Demo License Server are regularly deleted.**&#x20;
 
 If you create a new product in the evaluation version of Quick License Manager, you will not be able to use our Demo License Server because the License Server will not contain a definition of your new product.&#x20;
 
