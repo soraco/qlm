@@ -2,6 +2,8 @@
 
 QLM can schedule and perform backups of your database to your local computer. No special software is required on the server side to perform the backup or restore.
 
+Note that if you have access to the SQL Server where your database is hosted, it is recommended to create backups directly in SQL Server. The QLM Backup option was designed for customers who are not able to use SQL Server backup because they do not have direct access to SQL Server.
+
 Below are the steps required to create a backup job:
 
 * Click on the Backup tab.
