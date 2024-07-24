@@ -2,6 +2,8 @@
 
 QLM can schedule and perform backups of your database to your local computer. No special software is required on the server side to perform the backup or the restore. The backup process stores each table in an XML file on your local system. The location of the backup folder can be configured from the QLM Management Console / Manage Keys / Options / Paths / Backup Path.
 
+Note that if you have access to the SQL Server where your database is hosted, it is recommended to create backups directly in SQL Server. The QLM Backup option was designed for customers who cannot use SQL Server backup because they do not have direct access to SQL Server.
+
 Below are the steps required to create a backup job:
 
 * Launch the QLM Management Console
