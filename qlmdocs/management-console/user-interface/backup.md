@@ -2,7 +2,9 @@
 
 QLM can schedule and perform backups of your database to your local computer. No special software is required on the server side to perform the backup or restore.
 
-Note that if you have access to the SQL Server where your database is hosted, it is recommended to create backups directly in SQL Server. The QLM Backup option was designed for customers who are not able to use SQL Server backup because they do not have direct access to SQL Server.
+Note that if you have access to the SQL Server where your database is hosted, it is recommended to create backups directly in SQL Server. The QLM Backup option was designed for customers who cannot use SQL Server backup because they do not have direct access to SQL Server.
+
+Additionally, if Soraco is hosting your QLM License Server, you should not create your own backups since Soraco already backs up your data. Creating your own backup creates an unnecessary load on the server. If Soraco detects that you are creating your own backups, we will disable our backups.
 
 Below are the steps required to create a backup job:
 
