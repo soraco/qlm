@@ -815,6 +815,7 @@
         * [CheckinLicense](api-reference/iqlmcloudfloatinglicensehelper/methods/checkinlicense.md)
         * [CheckoutLicense](api-reference/iqlmcloudfloatinglicensehelper/methods/checkoutlicense.md)
         * [DeactivateAllExpiredLicenses](api-reference/iqlmcloudfloatinglicensehelper/methods/deactivateallexpiredlicenses.md)
+        * [GetOfflineInformation](api-reference/.net-api/iqlmcloudfloatinglicensehelper/methods/getofflineinformation.md)
         * [GoOffline](api-reference/iqlmcloudfloatinglicensehelper/methods/gooffline.md)
         * [GoOnline](api-reference/iqlmcloudfloatinglicensehelper/methods/goonline.md)
         * [ProcessOrphanedInstances](api-reference/iqlmcloudfloatinglicensehelper/methods/processorphanedinstances.md)
