@@ -24,9 +24,9 @@ Retrieves information about an Activation Key.
 
 ### Return
 
-| Type         | Description                   |
-| ------------ | ----------------------------- |
-| ILicenseInfo | information about the license |
+| Type                                | Description                   |
+| ----------------------------------- | ----------------------------- |
+| [ILicenseInfo](../../ilicenseinfo/) | information about the license |
 
 ## Remarks
 
