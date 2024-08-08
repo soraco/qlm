@@ -2,6 +2,10 @@
 
 IQlmFloatingLicenseHelper is an interface that exposes the methods and properties of the QlmFloatingLicenseHelper class for managing on-premise floating licenses.
 
+* [Enums](enums/)
+* [Properties](properties.md)
+* [Methods](methods/)
+
 ***
 
 ## Edition

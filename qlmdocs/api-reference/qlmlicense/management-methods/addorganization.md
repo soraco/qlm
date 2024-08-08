@@ -16,11 +16,11 @@ bool AddOrganization(string webServiceUrl, IQlmOrganizationInfo orgInfo, out str
 
 ### Parameters
 
-| Parameter     |                                 Type                                 | Description                                     |
-| ------------- | :------------------------------------------------------------------: | ----------------------------------------------- |
-| webServiceUrl |                                string                                | URL to the QLM License Server.                  |
-| orgInfo       | [IQlmOrganizationInfo](../../iqlmcustomerinfo/iqlmorganizationinfo/) | Organization information                        |
-| response      |                                string                                | XML fragment containing the result of the call. |
+| Parameter     |                             Type                             | Description                                     |
+| ------------- | :----------------------------------------------------------: | ----------------------------------------------- |
+| webServiceUrl |                            string                            | URL to the QLM License Server.                  |
+| orgInfo       | [IQlmOrganizationInfo](../../.net-api/iqlmorganizationinfo/) | Organization information                        |
+| response      |                            string                            | XML fragment containing the result of the call. |
 
 ### Return
 

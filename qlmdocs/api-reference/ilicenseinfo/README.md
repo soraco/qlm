@@ -4,6 +4,9 @@ ILicenseInfo is an interface used to present results returned from the server in
 
 The members listed below will be populated based on the XML fragment returned by the server. Depending on the QLM API that is invoked, members of ILicenseInfo might therefore not be set if they are not present in the XML fragment returned by the server.
 
+* [Methods](methods/)
+* [Properties](properties.md)
+
 ***
 
 ## Edition

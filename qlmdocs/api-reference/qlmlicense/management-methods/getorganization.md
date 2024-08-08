@@ -24,9 +24,9 @@ IQlmOrganizationInfo UpdateOrganization(string webServiceUrl, int orgID, string 
 
 ### Return
 
-| Type                                                                 | Description              |
-| -------------------------------------------------------------------- | ------------------------ |
-| [IQlmOrganizationInfo](../../iqlmcustomerinfo/iqlmorganizationinfo/) | Organization information |
+| Type                                                         | Description              |
+| ------------------------------------------------------------ | ------------------------ |
+| [IQlmOrganizationInfo](../../.net-api/iqlmorganizationinfo/) | Organization information |
 
 ### Remarks
 

@@ -2,6 +2,8 @@
 
 IQlmProductProperty is an interface used to present a product property in a structured format.
 
+* [Properties](properties.md)
+
 ***
 
 ## Edition
