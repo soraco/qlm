@@ -1,6 +1,8 @@
 # What is the QLM Yearly Maintenance Plan
 
-_NOTE: This article does not apply to monthly subscription licenses._
+_NOTE 1: This article does not apply to subscription licenses._
+
+_NOTE 2: As of QLM v18, all QLM products are only sold on a subscription basis._
 
 When you purchase QLM Express, Pro, or Enterprise, you have the option to purchase a yearly maintenance plan. What is the yearly maintenance plan?
 
