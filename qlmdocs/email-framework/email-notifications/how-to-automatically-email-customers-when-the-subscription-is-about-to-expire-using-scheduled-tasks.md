@@ -26,8 +26,8 @@ Note that the same steps can be used to email customers whose maintenance plan e
 * Set the Schedule Run every to: 1 Day&#x20;
 * In the Email tab, check Enable Email Notifications
 * Check "Send to customer"
-* If you would like to send your self the email, enter your email in the Cc field.
+* If you would like to send yourself the email, enter your email in the Cc or Bcc field.
 * Enter a Subject for the email
-* select the Outlook Profile and the Email account to use
+* Select an Email Profile and an Email Account. For more information about configuring Email Profiles, [click here.](https://docs.soraco.co/docs/email-framework/configuration)
 * Select an Email template (you can create an email template from the ribbon bar Mail / Templates). For example, select "2. Subscription Expiry"
 * If you would also like to get a popup alert for new orders, click on the Alert tab, enable it and enter text for the Alert.
