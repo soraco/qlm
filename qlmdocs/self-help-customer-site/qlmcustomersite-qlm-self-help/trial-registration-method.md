@@ -16,17 +16,21 @@ https://qlm3.net/qlmdemo/QlmCustomerSite/qlmregistration.asmx/Register?is_produc
 ```
 {% endcode %}
 
-&#x20;Contact information can be sent as URL arguments or as part of the POST data. When integrating with a third party, the web.config thirdPartyRegistrationFields setting defines the mapping between the incoming fields and the QLM fields. To enable third-party integration such as MailChimp, you must set the useThirdPartyRegistrationFields setting to true in the web.config file.
+&#x20;Contact information can be sent as URL arguments or as part of the POST data. When integrating with a third party, the web.config file _thirdPartyRegistrationFields_ setting defines the mapping between the incoming fields and the QLM fields. To enable third-party integration such as MailChimp, you must set the useThirdPartyRegistrationFields setting to true in the web.config file.
 
 When invoking the QlmRegistration.asmx directly from your own site, you can use the following arguments in the URL to specify the customer's contact information:
 
-| **Argument** | **Description**                   |
-| ------------ | --------------------------------- |
-| is\_fullname | Full name of the customer.        |
-| is\_email    | Email of the customer             |
-| is\_phone    | Telephone number of the customer. |
-| is\_company  | Company name of the customer.     |
-| is\_country  | Country of the customer.          |
+| **Contact Information**  |                                                                                                                                                                           |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| is\_fullname             | Full name of the customer.                                                                                                                                                |
+| is\_email                | Email of the customer                                                                                                                                                     |
+| is\_phone                | Telephone number of the customer.                                                                                                                                         |
+| is\_company              | Company name of the customer.                                                                                                                                             |
+| is\_country              | Country of the customer.                                                                                                                                                  |
+| **Additonal Properties** |                                                                                                                                                                           |
+| is\_confirmationmessage  | The message that is displayed to the user upon successful registration. Variables are allowed.                                                                            |
+| is\_emailtemplate        | Name of the email template to use when sending an email to the customer. Email templates can be created from the QLM Management Console / Manage Keys / Email Templates.  |
+| is\_sendmail             | By default, an email will be sent to the customer with the content of the is\_emailtemplate. Set the is\_sendmail argument to false to instruct QLM to not send an email. |
 
 **Registration Form Rules**
 
