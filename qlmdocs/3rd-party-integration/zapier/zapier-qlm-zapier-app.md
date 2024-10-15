@@ -4,11 +4,11 @@ The [QLM Zapier App](https://zapier.com/developer/invite/54262/598e90faca24fb4e7
 
 The following example uses the QLM Zapier App to send an email to the user when a license is created in QLM.
 
-* Login to your zapier account
+* Login to your Zapier account
 * Click Make a Zap
 * In Choose a Trigger App, locate and select "Quick License Manager"
 * Click Save + Continue
-* In the QLM License Server Url field, enter the URL to your QLM License Server. Example: https://quicklicensemanager.com/qlmdemo/QlmLicenseServer/qlmservice.asmx
+* In the QLM License Server Url field, enter the URL to your QLM License Server. Example: https://qlm3.net/qlmdemo/QlmLicenseServer/qlmservice.asmx
 * In the QLM License Server Url Arguments field, enter: \&is\_user=tom\&is\_pwd=xyz\&is\_period=15
 
 &#x20;        The is\_user, is\_pwd arguments must match the values configured in the QLM Management Console / Manage Keys / eCommerce Providers
