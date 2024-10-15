@@ -119,7 +119,7 @@ Example:
 
 With a text editor, open the QlmCustomerPortal/qlm-portal-app/assets/appsettings.json file:
 
-* Set the apiEndpoint to the URL of the QLM Customer Portal API site and append /api to the URL. Example: [https://quicklicensemanager.com/qlm/qlmcustomerportal/qlm-portal-api/api](https://quick/)
+* Set the apiEndpoint to the URL of the QLM Customer Portal API site and append /api to the URL. Example: [https://qlm3.net/qlm/qlmcustomerportal/qlm-portal-api/api](https://qlm3.net/qlm/qlmcustomerportal/qlm-portal-api/api)
 
 #### Additional Configuration
 
