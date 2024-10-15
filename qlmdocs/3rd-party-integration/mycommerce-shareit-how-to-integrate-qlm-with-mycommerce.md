@@ -125,7 +125,8 @@ To configure a product as a maintenance plan:
 2. Click **Products** / **Manage Products** / **Edit**
 3. Select the maintenance plan product to configure
 4. In the **Delivery** panel, click **Edit**
-5. Set the "Key generate via a URL" value to (update the URL to point to your own QLM License Server and set the user/pwd values to the values specified in the previous step): [https://quicklicensemanager.com/qlmdemo/qlmLicenseServer/qlmservice.asmx/RenewMaintenancePlan?is\_vendor=shareit\&is\_user=xxx\&is\_pwd=yyy\&is\_productid=1\&is\_majorversion=1\&is\_minorversion=0](https://quicklicensemanager.com/qlmdemo/qlmLicenseServer/qlmservice.asmx/RenewMaintenancePlan?is\_vendor=shareit\&is\_user=xxx\&is\_pwd=yyy\&is\_productid=1\&is\_majorversion=1\&is\_minorversion=0)
+5. Set the "Key generate via a URL" value to (update the URL to point to your own QLM License Server and set the user/pwd values to the values specified in the previous step):  \
+   [https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/RenewMaintenancePlan?is\_vendor=shareit\&is\_user=xxx\&is\_pwd=yyy\&is\_productid=1\&is\_majorversion=1\&is\_minorversion=0](https://quicklicensemanager.com/qlmdemo/qlmLicenseServer/qlmservice.asmx/RenewMaintenancePlan?is\_vendor=shareit\&is\_user=xxx\&is\_pwd=yyy\&is\_productid=1\&is\_majorversion=1\&is\_minorversion=0)
 6. Click **Save**
 
 To display the maintenance plan product alongside your current product:
