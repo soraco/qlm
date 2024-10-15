@@ -35,4 +35,4 @@ The syntax for setting a product property is:
 
 Example:
 
-[https://quicklicensemanager.com/qlmdemo/QlmLicenseServer/qlmservice.asmx/RenewSubscriptionHttp?is\_vendor=fastspring\&is\_expduration=23\&is\_pp=quality.module\_qa::2017-12-31||quality.module\_control::true](https://quicklicensemanager.com/qlmdemo/QlmLicenseServer/qlmservice.asmx/RenewSubscriptionHttp?is\_vendor=fastspring\&is\_expduration=23\&is\_pp=quality.module\_qa::abc::2017-12-31||quality.module\_control::true)
+[https://qlm3.net/qlmdemo/QlmLicenseServer/qlmservice.asmx/RenewSubscriptionHttp?is\_vendor=fastspring\&is\_expduration=23\&is\_pp=quality.module\_qa::2017-12-31||quality.module\_control::true](https://qlm3.net/qlmdemo/QlmLicenseServer/qlmservice.asmx/RenewSubscriptionHttp?is\_vendor=fastspring\&is\_expduration=23\&is\_pp=quality.module\_qa::2017-12-31||quality.module\_control::true)
