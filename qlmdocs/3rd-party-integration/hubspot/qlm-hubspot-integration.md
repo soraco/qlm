@@ -160,5 +160,5 @@ Once the above steps are completed, if you load a specific contact in HubSpot, t
 
 ### Limitations
 
-Due to constraints on the amount of time HubSpot imposes on returning data from QLM, QLM returns a maximum of 50 records from the License Server. Hence, if a customer has more than 50 different licenses associated with his or her account, the first 50 licenses are returned, ordered by Product Name and Order Date.
+Due to constraints on the amount of time HubSpot imposes on returning data from QLM, QLM returns a maximum of 50 records from the License Server. Hence, if a customer has more than 50 different licenses associated with his or her account, the first 50 licenses are returned, sorted by Order Date, in descending order.
 
