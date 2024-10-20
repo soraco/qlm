@@ -157,3 +157,8 @@ The QLM HubSpot integration is sold as a separate product that requires a specia
 Once the above steps are completed, if you load a specific contact in HubSpot, the QLM CRM Card is displayed with details about the licenses associated with the contact.
 
 ![mceclip0.png](https://support.soraco.co/hc/article\_attachments/360096913852)
+
+### Limitations
+
+Due to constraints on the amount of time HubSpot imposes on returning data from QLM, QLM returns a maximum of 50 records from the License Server. Hence, if a customer has more than 50 different licenses associated with his or her account, the first 50 licenses are returned, ordered by Product Name and Order Date.
+
