@@ -1,34 +1,32 @@
 # QLM v12+ Azure Integration
 
-You can host the QLM License Server on a Windows Azure portal. The procedure outlined in this section will show you how to build a QLM Azure deployment package, how to create the database on the Azure Portal and finally how to connect the QLM Management Console to the Azure-hosted QLM License Server.
+inYou can host the QLM License Server on a Windows Azure portal. The procedure outlined in this section will show you how to build a QLM Azure deployment package, how to create the database on the Azure Portal and finally how to connect the QLM Management Console to the Azure-hosted QLM License Server.
 
 ### 1. Database Creation
 
 To create the QLM database on the Azure portal:
 
-| <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>Go to the Windows Azure Portal.</li></ul></td></tr><tr><td><ul><li>Select <strong>SQL Databases.</strong></li></ul></td></tr><tr><td><ul><li>Click Create<strong>.</strong></li></ul></td></tr><tr><td><ul><li>Pick the Subscription, and Resource Group server of your choice.</li></ul></td></tr><tr><td><ul><li>Set the database name to: qlm</li></ul></td></tr><tr><td><ul><li>Select an existing Server or create a New Server</li></ul></td></tr><tr><td><ul><li>Select whether you want to use a SQL Elastic pool</li></ul></td></tr><tr><td><ul><li>Select the workload Environment: Development | Production</li></ul></td></tr><tr><td><ul><li>Select the Compute + Storage base on your requirements</li></ul></td></tr><tr><td>Select your backup storage redundacy</td></tr><tr><td><ul><li>Click Review + <strong>Create</strong></li></ul></td></tr></tbody></table> | <img src="../.gitbook/assets/image (34).png" alt="" data-size="original"> |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+<table data-header-hidden><thead><tr><th></th><th data-hidden></th></tr></thead><tbody><tr><td><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>Go to the Windows Azure Portal.</li></ul></td></tr><tr><td><ul><li>Select <strong>SQL Databases.</strong></li></ul></td></tr><tr><td><ul><li>Click Create<strong>.</strong></li></ul></td></tr><tr><td><ul><li>Pick the Subscription, and Resource Group server of your choice.</li></ul></td></tr><tr><td><ul><li>Set the database name to: qlm</li></ul></td></tr><tr><td><ul><li>Select an existing Server or create a New Server</li></ul></td></tr><tr><td><ul><li>Select whether you want to use a SQL Elastic pool</li></ul></td></tr><tr><td><ul><li>Select the workload Environment: Development | Production</li></ul></td></tr><tr><td><ul><li>Select the Compute + Storage base on your requirements</li></ul></td></tr><tr><td>Select your backup storage redundacy</td></tr><tr><td><ul><li>Click Review + <strong>Create</strong></li></ul></td></tr></tbody></table></td><td></td></tr></tbody></table>
+
+<figure><img src="../.gitbook/assets/Azure-CreateDB.png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Server settings
 
-If you selected to create a new SQL database server on the previous step, you need to configure a user account on the SQL Server.
+If you selected to create a new SQL database server in the previous step, you need to configure a user account on the SQL Server.
 
-| <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>In the Server name field, enter a name of your choice. Example: qlm-server</li></ul></td></tr><tr><td><ul><li>Select a Location</li></ul></td></tr><tr><td><ul><li>Set the Authentication method to "SQL Authentication" or "both SQL and Entra Authentication"</li></ul></td></tr><tr><td><ul><li>In the Server admin login field, enter a name of your choice. Example: qlm_admin</li></ul></td></tr><tr><td><ul><li>In the password and confirm password fields, enter a new password. IMPORTANT: Use a password that contains a combination of lower case, upper case, digits and special characters.</li></ul></td></tr><tr><td><ul><li>Click Ok</li></ul></td></tr></tbody></table> | <img src="../.gitbook/assets/image (35).png" alt="" data-size="original"> |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+<table data-header-hidden><thead><tr><th></th><th data-hidden></th></tr></thead><tbody><tr><td><table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><ul><li>In the Server name field, enter a name of your choice. Example: qlm-server</li></ul></td></tr><tr><td><ul><li>Select a Location</li></ul></td></tr><tr><td><ul><li>Set the Authentication method to "SQL Authentication" or "both SQL and Entra Authentication"</li></ul></td></tr><tr><td><ul><li>In the Server admin login field, enter a name of your choice. Example: qlm_admin</li></ul></td></tr><tr><td><ul><li>In the password and confirm password fields, enter a new password. IMPORTANT: Use a password that contains a combination of lower case, upper case, digits and special characters.</li></ul></td></tr><tr><td><ul><li>Click Ok</li></ul></td></tr></tbody></table></td><td></td></tr></tbody></table>
+
+<figure><img src="../.gitbook/assets/Azure-CreateDBServer.png" alt=""><figcaption></figcaption></figure>
 
 ### Networking
 
 * Set the Connectivity Method to **Public endpoint.**
-* **Set the Connection Policy to Default**
-* **Set the Minimum TLS as needed**
-
-### Configure the firewall
-
-* Select the database in the Azure Portal
-* Click Set server firewall
-* Set the "Minimum TLS Version" to 1.0. This is required as the default OLEDB drivers that are available on Azure App Services do not currently support TLS 1.2 and there does not seem to be a way to update these drivers.
 * Set the **Allow Azure services and resources to access this server** property to **Yes.**&#x20;
 * Set the **Add current IP address** property to **Yes.**&#x20;
+* **Set the Connection Policy to Default**
+* Set the "Minimum TLS Version" to 1.0. This is required as the default OLEDB drivers that are available on Azure App Services do not currently support TLS 1.2 and there does not seem to be a way to update these drivers.
+
+<figure><img src="../.gitbook/assets/Azure-Networking.png" alt=""><figcaption></figcaption></figure>
 
 ### Configure the database
 
