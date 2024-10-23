@@ -1,11 +1,7 @@
 # QLM HubSpot Integration
 
-_The QLM HubSpot App is available on demand only as of QLM v15.0.21149.1._\
+_The QLM HubSpot App is an add-on that must be purchased separately._\
 \
-_Contact us if you are interested in evaluating our Beta version. Note that a special license key is required to use the HubSpot integration._
-
-***
-
 The QLM HubSpot App allows you to view license information associated with a customer directly from within HubSpot as a CRM Card.
 
 &#x20;
@@ -160,5 +156,5 @@ Once the above steps are completed, if you load a specific contact in HubSpot, t
 
 ### Limitations
 
-Due to constraints on the amount of time HubSpot imposes on returning data from QLM, QLM returns a maximum of 50 records from the License Server. Hence, if a customer has more than 50 different licenses associated with his or her account, the first 50 licenses are returned, sorted by Order Date, in descending order.
+Due to constraints on the time HubSpot imposes on returning data from QLM, QLM returns the first 50 records from the License Server by default. Hence, if a customer has more than 50 different licenses associated with his or her account, the first 50 licenses are returned, sorted by Order Date, in descending order. To increase this value, set the server property options/maxRecordsToFetchPerCustomer.
 
