@@ -8,13 +8,12 @@ QLM v18 was released on January 26, 2024. Note that our major releases are not l
 
 ### Important Changes in v18 <a href="#h_01h95qq4d75t05j62drs5q0gz6" id="h_01h95qq4d75t05j62drs5q0gz6"></a>
 
-The QLM Customer Site pages were redesigned to be responsive to different device form factors. This may impact how your Self-Help pages are displayed on your site. We recommend that you review and adapt your site accordingly after the upgrade.
-
-After upgrading your application to QLM v18, you must regenerate the XML Settings file for your products from the Protect Your Application wizard (3rd tab in QLM).
-
-As of QLM v18, QLM will be sold exclusively on a subscription basis. Customers who have purchased a perpetual license with a maintenance plan can continue to use QLM as before and upgrade to newer versions as long as the maintenance plan remains active. All new purchases, version upgrades without an active maintenance plan, or edition upgrades will be offered on a subscription basis only.
-
-As of QLM v18, all QLM Extensions (e-commerce extensions) will be sold separately as add-ons. Customers who purchased QLM v17 or earlier can continue to use QLM Extensions at no additional cost.
+* If you are hosting your own License Server, before upgrading to this version, you MUST ensure that the QLM database login user has the db\_securityadmin role. You can use the following command to add it (change qlm\_user as needed): EXEC sp\_addrolemember N'db\_securityadmin', N'qlm\_user'
+* The function QlmLicense.ActivateLicenseDialog was removed from QlmLicenseLib.dll (.NET 4) because it forced QlmLicenseLib.dll to depend on System.Windows.Forms. If you are using this function, you will need to reference QlmControls.dll in addition to QlmLicenseLib.dll.
+* The QLM Customer Site pages were redesigned to be responsive to different device form factors. This may impact how your Self-Help pages are displayed on your site. We recommend that you review and adapt your site accordingly after the upgrade.
+* After upgrading your application to QLM v18, you must regenerate the XML Settings file for your products from the Protect Your Application wizard (3rd tab in QLM).
+* As of QLM v18, QLM will be sold exclusively on a subscription basis. Customers who have purchased a perpetual license with a maintenance plan can continue to use QLM as before and upgrade to newer versions as long as the maintenance plan remains active. All new purchases, version upgrades without an active maintenance plan, or edition upgrades only will be offered on a subscription basis.
+* As of QLM v18, all QLM Extensions (e-commerce extensions) will be sold separately as add-ons. Customers who purchased QLM v17 or earlier can continue to use QLM Extensions at no additional cost.
 
 ### .NET Support
 
