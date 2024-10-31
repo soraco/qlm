@@ -12,7 +12,7 @@ This article walks you through the steps required to add floating licensing to y
 
 ### Creation of the database
 
-To create the floating license SQL Server database, simply execute the sql.floatingdb.createdb.sql script located in the Db folder. In the script, you may want to update the path of the database to a location of your choice. A SQL Server login user called "qlmfloating\_user" is automatically created by the sql script above. The password of the "qlmfloating\_user" user can be configured in the **Protect Your Application** wizard (3rd tab in the QLM Management Console) by setting the QlmFloatingDbPassword property. You should also set the QlmFloatingLicenseDbFormat property to the desired value.&#x20;
+To create the floating license SQL Server database, simply execute the sql.floatingdb.createdb.sql script located in the C:\Program Files\Soraco\QuickLicenseMgr\redistrib\FloatingLicenses folder. In the script, you may want to update the path of the database to a location of your choice. A SQL Server login user called "qlmfloating\_user" is automatically created by the sql script above. The password of the "qlmfloating\_user" user can be configured in the **Protect Your Application** wizard (3rd tab in the QLM Management Console) by setting the QlmFloatingDbPassword property. You should also set the QlmFloatingLicenseDbFormat property to the desired value.&#x20;
 
 ### Database Registration
 
