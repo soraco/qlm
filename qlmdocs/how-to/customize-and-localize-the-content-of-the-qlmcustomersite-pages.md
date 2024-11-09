@@ -40,7 +40,7 @@ To exclude a product from the product list displayed on the Offline Activation P
 
 #### Register button action
 
-To modify the destination URL of the register button, set the server property: customerSite/registerButtonDoneUrl .
+To modify the destination URL of the register button after registration is completed, set the server property: customerSite/registerButtonDoneUrl .
 
 ### &#x20;Advanced Pages customization
 
