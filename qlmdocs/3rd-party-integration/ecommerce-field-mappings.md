@@ -2,21 +2,21 @@
 
 ## License Fields Mapping
 
-| **Vendor**           | **OrderID**     | **Quantity** |
-| -------------------- | --------------- | ------------ |
-| Regnow               | order\_id       | quantity     |
-| Avangate             | REFNO           | QUANTITY     |
-| Chargify             | Email           | quantity     |
-| Cleverbridge         | PURCHASE\_ID    | QUANTITY     |
-| Fastspring           | email           | quantity     |
-| Paymotion            | email           | orderNumber  |
-| Paypal               | payer\_email    | txn\_id      |
-| Bluesnap             | email           | order\_id    |
-| Regnow               | email           | quantity     |
-| Shareit / MyCommerce | EMAIL           | QUANTITY     |
-| Shopify              | email           | quantity     |
-| Stripe               | email           | quantity     |
-| WooCommerce          | Customer\_Email | is\_quantity |
+| **Vendor**           | **OrderID**  | **Quantity** |
+| -------------------- | ------------ | ------------ |
+| Avangate             | REFNO        | QUANTITY     |
+| Bluesnap             | order\_id    | quantity     |
+| Chargify             | orderid      | quantity     |
+| Cleverbridge         | PURCHASE\_ID | QUANTITY     |
+| Fastspring           | reference    | quantity     |
+| Magento              | OrderId      | quantity     |
+| Paymotion            | orderNumber  | quantity     |
+| Paypal               | txn\_id      | quantity     |
+| Regnow               | order\_id    | quantity     |
+| Shareit / MyCommerce | PURCHASE\_ID | QUANTITY     |
+| Shopify              | orderNumber  | quantity     |
+| Stripe               | orderNumber  | quantity     |
+| WooCommerce          | OrderId      | quantity     |
 
 ## Customer Fields Mapping
 
