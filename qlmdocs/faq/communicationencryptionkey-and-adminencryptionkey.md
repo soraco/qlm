@@ -12,7 +12,7 @@ The QLM License Server API is divided into two groups: the **QLM Application API
 
 ## Communication Encryption Key
 
-The QLM Application API is protected with an encryption key called CommunicationEncryptionKey. Before calling any QLM Application API, you must set the QlmLicense.CommunicationEncryptionKey property. If you are using the QLM License Wizard or are initializing the QlmLicense object from the XML settings file generated from the Protect Your Application wizard, the CommunicationEnryptionKey is stored in the settings XML file (encrypted).
+The QLM Application API is protected with an encryption key called CommunicationEncryptionKey. Before calling any QLM Application API, you must set the QlmLicense.CommunicationEncryptionKey property. If you are using the QLM License Wizard or are initializing the QlmLicense object from the XML settings file generated from the Protect Your Application wizard, the CommunicationEnryptionKey is stored in the XML settings file (encrypted).
 
 
 
