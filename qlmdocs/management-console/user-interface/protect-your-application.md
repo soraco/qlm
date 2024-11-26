@@ -23,6 +23,6 @@ For more details about the QLM .NET Controls, refer to the API Reference.\
 For WPF applications, you can host the QLM Windows Forms Controls in WPF as described in this [article](http://keyvan.io/host-windows-forms-controls-in-wpf).\
 \
 If you are developing a web-based **ASP.NET** application, the above .NET controls cannot be used. A sample program is available that shows how to capture and activate a license key. The sample is located here:\
-_%Public%\\_Documents\Quick License Manager\Samples\qlmpro\Windows\DotNet\C#\QlmAspDotNetSample
+&#xNAN;_%Public%\\_&#x44;ocuments\Quick License Manager\Samples\qlmpro\Windows\DotNet\C#\QlmAspDotNetSample
 
 In addition to the .NET Controls that are required for capturing and activating a license key, the **Protect your application** wizard generates a helper class that you need to add to your application. The helper class has a method called **ValidateLicenseAtStartup.** You should call this method when your application is launched. For more details about this method, refer to the API reference section.

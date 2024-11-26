@@ -54,7 +54,7 @@ Variables should be enclosed with a % sign. For example:
 _Hi %FullName%,_
 
 _Thank you for your Plug and Browse purchase._\
-_Your %ProductName% activation key is: %ActivationKey%_
+&#xNAN;_&#x59;our %ProductName% activation key is: %ActivationKey%_
 
 _Regards_
 

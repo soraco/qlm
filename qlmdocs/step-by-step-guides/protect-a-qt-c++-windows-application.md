@@ -178,11 +178,11 @@ The files that you need to distribute with your application are:
 
 * Missing atlbase.h, strongname.h, metahost.h?
 
-For Qt6, when installing Visual Studio, select the **Individual Components** tab, and under _SDKs, libraries, and frameworks_ make sure **Active Qt (**Visual C++ ATL Support**)** is selected.
+For Qt6, when installing Visual Studio, select the **Individual Components** tab, and under _SDKs, libraries, and frameworks_ make sure **Active Qt (**&#x56;isual C++ ATL Suppor&#x74;**)** is selected.
 
 &#x20;
 
-![](https://support.soraco.co/hc/article\_attachments/18520500653076)
+![](https://support.soraco.co/hc/article_attachments/18520500653076)
 
 &#x20;
 

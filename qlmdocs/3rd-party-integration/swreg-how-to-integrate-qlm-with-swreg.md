@@ -14,7 +14,7 @@ To have SWREG invoke QLM during an order, do the following in the SWREG Control 
 
 When invoking the SWREG order form from your web site, add the following argument to the SWREG URL:
 
-\&t=pid%3d_\<productID>_%26mj%3d_\<majorVersion>_%26mn%3d_\<minorVersion>_%26vn%3d_SWREG_%26fe%3d_\<features> %26ur%3d\<user> %26pw%3d\<password> \&x=1_
+\&t=pid%3&#x64;_\<productID>_%26mj%3&#x64;_\<majorVersion>_%26mn%3&#x64;_\<minorVersion>_%26vn%3&#x64;_&#x53;WREG_%26fe%3&#x64;_\<features> %26ur%3d\<user> %26pw%3d\<password> \&x=1_
 
 where,
 

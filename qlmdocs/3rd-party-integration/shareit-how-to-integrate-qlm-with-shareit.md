@@ -7,7 +7,7 @@ If you are using ShareIt as an e-commerce provider, QLM can be used to issue lic
 * Create or edit your product in ShareIt's Control Panel
 * Ask ShareIt personnel to set your product's **Key Generator URL** to the following URL:
 
-> **http://yourserver/yourvirtualdirectory/qlmservice.asmx/GetActivationKey?\&is\_vendor=**ShareIt**\&is\_productid=**\<productid>**\&is\_majorversion=**\<majorversion>**\&is\_minorversion=**\<minorversion>**\&is\_qlmversion=**\<qlmversion>**\&is\_pwd=**\<pwd>**\&is\_user=**\<username>**\&is\_features=**\<features>
+> **http://yourserver/yourvirtualdirectory/qlmservice.asmx/GetActivationKey?\&is\_vendor=**&#x53;hareI&#x74;**\&is\_productid=**\<productid>**\&is\_majorversion=**\<majorversion>**\&is\_minorversion=**\<minorversion>**\&is\_qlmversion=**\<qlmversion>**\&is\_pwd=**\<pwd>**\&is\_user=**\<username>**\&is\_features=**\<features>
 >
 > Where:
 >
