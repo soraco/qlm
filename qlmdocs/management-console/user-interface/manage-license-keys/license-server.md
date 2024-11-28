@@ -1,6 +1,6 @@
 # License Server
 
-The options in this control group pertain to the QLM License server, which acts as an interface between a client system and the QLM database. Although you will typically have a single License Server, the QLM Console can manage a list of License Server profiles, each with its own server address along with data such as the type of database engine on the server, the encryption keys for communicating with the License Server and so on. Until you set up your own License Server, and during your QLM trial period, you can use the Default License Server provided by Soraco. Note that the Default License Server does not allow you to upload your own products and can only manage keys for the built-in Demo product that ships with the trial version of QLM.
+The options in this control group pertain to the QLM License server, which acts as an interface between a client system and the QLM database. Although you will typically have a single License Server, the QLM Console can manage a list of License Server profiles, each with its own server address along with data such as the type of database engine on the server, the encryption keys for communicating with the License Server and so on. Until you set up your own License Server, and during your QLM trial period, you can use the DEMO License Server provided by Soraco. Note that the DEMO License Server does not allow you to upload your own products and can only manage keys for the built-in Demo product that ships with the trial version of QLM.
 
 ### ![](<../../../.gitbook/assets/image (19).png>)Sites
 
@@ -36,9 +36,33 @@ Click this button to open the License Server Settings dialog window, which lets 
 
 * **Communication/Admin Encryption Key**: Communication between a client and the QLM License Server is protected via an encryption mechanism that prevents hackers from directly calling your License Server. This is critical due to the fact that the License Server is typically configured to allow anonymous connections.
 
+#### Authentication
+
+The QLM Customer Portal can use 3rd party authentication to allow users to login to the portal. In order to enable 3rd party authentication, you must configure a Client ID for each supported authentication provider.
+
+#### Deployment
+
+The deployment tab configures all the Set the properties below if you are manually uploading the QLM License Server to your server. If you are using the QlmLicenseServerSetup.exe to deploy the QLM License Server, you do not need to set these properties.
+
+* Config files
+
+After setting the properties of your server, database, etc. click the Update Confilg Files button to update all the config files located in %Public%\Documents\Quick License Manager\DeployToServer&#x20;
+
+* Azure Deployment
+
+After setting the properties of your server, database, etc. click the Create Azure Package button to create zip files for each Azure App Service to deploy to your Azure server.
+
+#### License Keys
+
+The license keys tab allows you to activate your QLM Portal licenses.
+
 #### Advanced
 
 * Errors detected in the QLM License Server are stored in the QLM database. You can specify the verbosity of the logs by setting the LoggingLevel property. If you increase the L**oggingLevel** to Verbose or Informational to diagnose a specific issue, remember to set it back to Warning to avoid bloating of your QLM database.
+
+Server Properties
+
+Server Properties are settings that allow you to customize the behavior of the License Server. For more details about server properties, [click here](../../../qlm-license-server/server-properties.md).
 
 
 
