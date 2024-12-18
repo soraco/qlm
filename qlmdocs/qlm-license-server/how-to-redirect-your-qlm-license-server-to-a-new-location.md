@@ -2,7 +2,7 @@
 
 If you need to relocate your QLM License Server to a new location, you can use the IIS HTTP Redirect feature to redirect all requests to a new server.&#x20;
 
-Note that IIS HTTP Redirect cannot handle URL arguments. Therefore, if you are using the QLM HTTP Methods, you cannot use IIS HTTP Redirect to redirect to a new location. You must use the URLRewrite approach.
+Note that IIS HTTP Redirect cannot handle URL arguments. Therefore, if you are using the QLM HTTP Methods or you are using one of the QLM 3rd party extensions (ecommerce), you cannot use IIS HTTP Redirect to redirect to a new location. You must use the [URLRewrite ](how-to-redirect-the-qlm-license-server-using-url-rewrite.md)approach.
 
 For detailed instructions on how to enable and configure IIS HTTP Redirect, check this [article](http://www.iis.net/configreference/system.webserver/httpredirect).
 
