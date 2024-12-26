@@ -2,7 +2,8 @@
 
 * [Quick License Manager](README.md)
 * [🔊 Announcements](announcements/README.md)
-  * [What's new in QLM v18 and upgrade procedure](announcements/whats-new-in-qlm-v18-and-upgrade-procedure.md)
+  * [What's new in QLM v19 and upgrade procedure](announcements/whats-new-in-qlm-v18-and-upgrade-procedure.md)
+  * [What's new in QLM v18 and upgrade procedure](announcements/whats-new-in-qlm-v18-and-upgrade-procedure-1.md)
   * [What's new in QLM v17 and upgrade procedure](announcements/whats-new-in-qlm-v17-and-upgrade-procedure.md)
   * [What's new in QLM v16 and Upgrade Procedure](announcements/whats-new-in-qlm-v16-and-upgrade-procedure.md)
   * [What's new in QLM v15 and Upgrade Procedure](announcements/whats-new-in-qlm-v15-and-upgrade-procedure.md)
@@ -496,7 +497,7 @@
   * [PHP Sample to generate a license key](faq/php-sample-to-generate-a-license-key.md)
   * [How to get customer information for a license key?](faq/how-to-get-customer-information-for-a-license-key.md)
   * [How I got the Sample QLM Delphi program working on my computer](faq/how-i-got-the-sample-qlm-delphi-program-working-on-my-computer.md)
-  * [What is the syntax of is\_features](faq/what-is-the-syntax-of-is\_features.md)
+  * [What is the syntax of is\_features](faq/what-is-the-syntax-of-is_features.md)
   * [All orders search does not show any records](faq/all-orders-search-does-not-show-any-records.md)
   * [Should I use the .NET 4.0 or the .NET 2.0 DLLs?](faq/should-i-use-the-.net-4.0-or-the-.net-2.0-dlls.md)
   * [Which QLM DLLs do I need to distribute with my application](faq/which-qlm-dlls-do-i-need-to-distribute-with-my-application.md)

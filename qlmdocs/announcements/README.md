@@ -1,9 +1,7 @@
 # 🔊 Announcements
 
-
-
-{% content-ref url="whats-new-in-qlm-v18-and-upgrade-procedure.md" %}
-[whats-new-in-qlm-v18-and-upgrade-procedure.md](whats-new-in-qlm-v18-and-upgrade-procedure.md)
+{% content-ref url="whats-new-in-qlm-v18-and-upgrade-procedure-1.md" %}
+[whats-new-in-qlm-v18-and-upgrade-procedure-1.md](whats-new-in-qlm-v18-and-upgrade-procedure-1.md)
 {% endcontent-ref %}
 
 {% content-ref url="whats-new-in-qlm-v17-and-upgrade-procedure.md" %}
