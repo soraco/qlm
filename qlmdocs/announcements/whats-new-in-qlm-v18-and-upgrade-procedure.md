@@ -1,26 +1,30 @@
-# What's new in QLM v19 and upgrade procedure
+# What's new in QLM v18 and upgrade procedure
 
-## What's new in QLM v19
+## What's new in QLM v18
 
-QLM v19 is planned for release on January 15, 2025. Note that our major releases are not loaded with a massive amount of new features. Features are added gradually throughout the year and released when they are ready. To learn more about our release process, [click here](https://docs.soraco.co/docs/blog/iterative-releases).
+QLM v18 was released on January 26, 2024. Note that our major releases are not loaded with a massive amount of new features. Features are added gradually throughout the year and released when they are ready. To learn more about our release process, [click here](https://docs.soraco.co/docs/blog/iterative-releases).
 
--> [Latest Version Release Notes](https://soraco.co/products/qlm/ReleaseNotes.html)
+\-> [Latest Version Release Notes](https://soraco.co/products/qlm/ReleaseNotes.html)
 
-### Important Changes in v19 <a href="#h_01h95qq4d75t05j62drs5q0gz6" id="h_01h95qq4d75t05j62drs5q0gz6"></a>
+### Important Changes in v18 <a href="#h_01h95qq4d75t05j62drs5q0gz6" id="h_01h95qq4d75t05j62drs5q0gz6"></a>
 
 * If you are hosting your own License Server, before upgrading to this version, you MUST ensure that the QLM database login user has the db\_securityadmin role. You can use the following command to add it (change qlm\_user as needed): EXEC sp\_addrolemember N'db\_securityadmin', N'qlm\_user'
 * The function QlmLicense.ActivateLicenseDialog was removed from QlmLicenseLib.dll (.NET 4) because it forced QlmLicenseLib.dll to depend on System.Windows.Forms. If you are using this function, you will need to reference QlmControls.dll in addition to QlmLicenseLib.dll.
+* The QLM Customer Site pages were redesigned to be responsive to different device form factors. This may impact how your Self-Help pages are displayed on your site. We recommend that you review and adapt your site accordingly after the upgrade.
+* After upgrading your application to QLM v18, you must regenerate the XML Settings file for your products from the Protect Your Application wizard (3rd tab in QLM).
+* As of QLM v18, QLM will be sold exclusively on a subscription basis. Customers who have purchased a perpetual license with a maintenance plan can continue to use QLM as before and upgrade to newer versions as long as the maintenance plan remains active. All new purchases, version upgrades without an active maintenance plan, or edition upgrades only will be offered on a subscription basis.
+* As of QLM v18, all QLM Extensions (e-commerce extensions) will be sold separately as add-ons. Customers who purchased QLM v17 or earlier can continue to use QLM Extensions at no additional cost.
 
 ### .NET Support
 
-* The QlmLicenseLib.dll is now available for .NET2, .NET4, .NET6, NET7, .NET8 and .NET9.
-* The QlmControls.dll is now available for .NET2, .NET4, .NET6-Windows, .NET7-Windows, .NET8-Windows and .NET9-Windows.
+* The QlmLicenseLib.dll is now available for .NET2, .NET4, .NET6, NET7 and .NET8.
+* The QlmControls.dll is now available for .NET2, .NET4, .NET6-Windows, .NET7-Windows and .NET8-Windows.
 
 ### New Requirements
 
 * The minimum requirement for .NET 4 is .NET 4.62.
-* The QLM Management Console now requires .NET 9.
-* The QLM Management Console and the QLM Portal now reference DevExpress 24.2.3.
+* The QLM Management Console now requires .NET 8.
+* The QLM Management Console and the QLM Portal now reference DevExpress 23.2.3.
 
 ### Documentation
 
@@ -28,26 +32,33 @@ The QLM Documentation has moved to: [https://docs.soraco.co](https://docs.soraco
 
 ### QLM Enterprise New Features
 
-* Product Properties: 3 new product properties data type are now available: IP Address, IP Subnet and CSV.
-* Product Properties: a new feature allows you to enforce that a specific product property has a specified value during activation. For example, you could define a new Product Property of type 'IP Address' and specify that this property should be enforced during activation.
-* Java protection: added support for license file signed using SHA256 instead of SHA1.
-* New Server Property: security/whiteListedIPAddresses: specifies a list of IP addresses that are allowed to request trial registrations regardless of the restrictions imposed by customerSite / preventRegistrationFromExistingIPAddress
+* QLM Management Console: When creating license keys, you can now define templates for different settings combinations. This is useful to speed up the creation of predefined configurations of products, features, product properties, etc.
+* QLM Management Console: A new Global Search feature performs a deep search looking for relationships between licenses and reports results found in multiple QLM tables.
+* The Java client-side library now supports reading Product Properties files.
+* On-premise floating licenses - allow different nodes to run different versions of the application.
 
 ### QLM Customer Site New Features
 
-* New Server Property: customerSite / preventRegistrationFromExistingIPAddress. This feature checks if the IP address of the user requesting a trial matches an IP address in the system and aborts the trial request if a match is found.
-*
+* All self-help pages are now responsive and adapt to difference device form factors. This may impact how your Self-Help pages are displayed on your site. We recommend that you review and adapt your site accordingly.
+* In addition to debounce.io, QLM now supports the following spam verifiers: https://api.zerobounce.net/v2/validate, https://verifymail.io/api
+* On the offline activation page, you can now hide the products dropdown list when the product is specified on the command line.
+* Two new server properties, disallowedIPAddressMessage, and disallowedEmailMessage, allow you to customize the message displayed to the user when their IP address is blocked or their email is banned.
+* You can now block trial registration by country. This feature requires the geolocation service provided by https://api.ipstack.com
 
 ### QLM Professional New Features
 
-* When activating a license by email address (activation using Basic Authentication), QLM can now pick the Activation Key based on the Allowed/Denied Computer IDs.
-* The following editors in the QLM Management Console now support saving multiple layouts (in the status bar): Activation Attempts, Illegal Computers, Event Viewer, and Audit Trail
-
-
+* Searches are now automatically uploaded to the server after they are modified in the Searches editor. Note that searches are shared by all QLM Management Console users.
+* A Scheduled Task status icon is now displayed in the QLM Management Console title bar and displays errors that occurred when processing scheduled tasks.
+* An Event Log status icon is now displayed in the QLM Management Console title bar and displays errors that were logged in the Windows Event Log.
+* A Backup status icon is now displayed in the QLM Management Console title bar and displays errors that occurred when performing backups.
+* You can now block license activation by country. This feature requires the geolocation service provided by http://api.ipstack.com
+* Bulk Edit - Added support for setting the following properties: MaxReleaseCount, MaxReleasePeriod, ActivationCount, UserData, and Comment. Additionally, you can now disable the Maintenance Plan for a batch of licenses.
+* New skins are now available with light and dark modes. You can access the new skins from Settings / Options / Display. We recommend trying out the WXI / Sharpness skin.
+* A new generic extension called QlmAuthenticationProvider was added to enable the use of the QLM HTTP API without the need for an e-commerce provider. The QlmAuthenticationProvider returns responses as XML fragments.
 
 ### Upgrade Procedure
 
-To upgrade to QLM v19, you must first install the QLM Management Console on your client system by running the qlmsetup19.exe. To determine if you are eligible for a v19 upgrade, you may contact us or click the About tab.
+To upgrade to QLM v18, you must first install the QLM Management Console on your client system by running the qlmsetup17.exe. To determine if you are eligible for a v18 upgrade, you may contact us or click the About tab.
 
 If we are hosting your QLM License Server, contact us to upgrade the License Server. If you are hosting your own License Server, you can upgrade the License Server as described in the next sections.
 
@@ -103,7 +114,7 @@ After the server is installed, you must perform a DB Schema upgrade:
 
 #### Source Code
 
-To upgrade your source code to QLM v19:
+To upgrade your source code to QLM v18:
 
 * If you are upgrading from QLMv9 or earlier and if you are using the QLM License Wizard, be it the .NET Control or the standalone executable, you will need to customize the look & feel of the control and regenerate the settings XML file. Note that as of QLM v9, only one settings file is required. The UI Settings XML file is no longer required since all settings are stored in a single file.
 * If you have implemented floating licenses, it is recommended that you review the new QLM Enterprise [sample ](https://docs.soraco.co/docs/step-by-step-guides/how-to-support-floating-and-node-locked-licences-in-the-same-app)and follow the same approach as the new sample.
