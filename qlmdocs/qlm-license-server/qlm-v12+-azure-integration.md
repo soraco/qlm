@@ -1,6 +1,6 @@
 # QLM v12+ Azure Integration
 
-inYou can host the QLM License Server on a Windows Azure portal. The procedure outlined in this section will show you how to build a QLM Azure deployment package, how to create the database on the Azure Portal and finally how to connect the QLM Management Console to the Azure-hosted QLM License Server.
+The QLM License Server can be hosted on a Windows Azure portal. The procedure outlined in this section will show you how to build a QLM Azure deployment package, how to create the database on the Azure Portal and finally how to connect the QLM Management Console to the Azure-hosted QLM License Server.
 
 ### 1. Database Creation
 
@@ -54,7 +54,7 @@ Now that the database is created, we need to create a user account, tables and s
 * Click App Services to view the newly created App Service
 * Locate and note the URL to access the App Service in Azure. The URL will look like: [https://qlmlicenseserver.azurewebsites.net](https://qlmlicenseserver.azurewebsites.net/)
 
-![mceclip0.png](https://support.soraco.co/hc/article\_attachments/360033553931/mceclip0.png)
+![mceclip0.png](https://support.soraco.co/hc/article_attachments/360033553931/mceclip0.png)
 
 ### Create the QlmCustomerSite App Service
 
@@ -146,7 +146,7 @@ Now that all App Services have been created, you need to create and deploy the Q
 * Click "Create Azure Package"
 * 4 zip files will be created. You will upload these zip files to your server in the next step.
 
-![mceclip1.png](https://support.soraco.co/hc/article\_attachments/360033553971/mceclip1.png)
+![mceclip1.png](https://support.soraco.co/hc/article_attachments/360033553971/mceclip1.png)
 
 <figure><img src="../.gitbook/assets/QlmAzureDeployment.png" alt=""><figcaption></figcaption></figure>
 
@@ -165,7 +165,7 @@ Now that all App Services have been created, you need to create and deploy the Q
 * Click the Test button to verify the connection to the server.
 * If this is a new installation of the server, click "Upload your products to the License Server".
 
-![mceclip3.png](https://support.soraco.co/hc/article\_attachments/360033554592/mceclip3.png)
+![mceclip3.png](https://support.soraco.co/hc/article_attachments/360033554592/mceclip3.png)
 
 #### Deploy the QlmCustomerSite App Service
 
@@ -199,7 +199,7 @@ Is it recommended to set the Default Document of the QLM Portal to QlmPortal.asp
 
 &#x20;
 
-![](https://support.soraco.co/hc/article\_attachments/360023092531/mceclip9.png)
+![](https://support.soraco.co/hc/article_attachments/360023092531/mceclip9.png)
 
 #### &#x20;
 
@@ -244,6 +244,6 @@ To upgrade your QLM License Server to a new version, install the latest version 
 
 1. If you get a connection error as shown below, try changing the SQL Administrator password to a more complex password that contains lower case, upper case, digits and special characters. Example: Coraso2313!2313!
 
-![mceclip0.png](https://support.soraco.co/hc/article\_attachments/4407398909844/mceclip0.png)
+![mceclip0.png](https://support.soraco.co/hc/article_attachments/4407398909844/mceclip0.png)
 
-* [QLM v12+ Azure Integration – Soraco Technologies.pdf](https://support.soraco.co/hc/en-us/article\_attachments/11056029767572)1 MB [Download](https://support.soraco.co/hc/en-us/article\_attachments/11056029767572)
+* [QLM v12+ Azure Integration – Soraco Technologies.pdf](https://support.soraco.co/hc/en-us/article_attachments/11056029767572)1 MB [Download](https://support.soraco.co/hc/en-us/article_attachments/11056029767572)
