@@ -30,15 +30,15 @@ Additionally, the StoreKeysLocation property controls whether data is stored on 
 
 #### EFile / Data on the file system
 
-If you are running XP, the folders are:
-
-* C:\Documents and Settings\<your account name>\Application Data\IsolatedStorage\*
-* C:\Documents and Settings\All Users\Application Data\IsolatedStorage
-
 On Windows 7 or higher, the folders are:
 
 * C:\ProgramData\IsolatedStorage
 * C:\Users\tom\AppData\Local\IsolatedStorage
+
+If you are running XP, the folders are:
+
+* C:\Documents and Settings\<your account name>\Application Data\IsolatedStorage\*
+* C:\Documents and Settings\All Users\Application Data\IsolatedStorage
 
 **Example on Windows 7 or higher:**\
 C:\ProgramData\IsolatedStorage\1zy03lmk.jql\epxur3qn.na0\StrongName.gziza0ait44cgjtqq2fgdpi3yp0idvio\AssemFiles
@@ -63,10 +63,10 @@ On a 64-bit OS, QLM will write license information to:
 
 #### EFileCommonData
 
-When selecting this option, license keys are stored in C:\ProgramData\<CommonDataFolder>>CommonDataFileName>
+When selecting this option, license keys are stored in C:\ProgramData\\\<CommonDataFolder>\\\<CommonDataFileName>
 
 where :
 
-CommonDataFolder = Product Name or the value configured in the Protect Your App wizard
+CommonDataFolder = Product Name (by default) or the value configured in the Protect Your App wizard
 
 CommonDataFileName = license.txt or the value configured in the Protect Your App wizard
