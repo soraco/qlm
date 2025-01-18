@@ -36,7 +36,8 @@ The QLM Documentation has moved to: [https://docs.soraco.co](https://docs.soraco
 ### QLM Customer Site New Features
 
 * New Server Property: customerSite / preventRegistrationFromExistingIPAddress. This feature checks if the IP address of the user requesting a trial matches an IP address in the system and aborts the trial request if a match is found.
-*
+
+
 
 ### QLM Professional New Features
 
