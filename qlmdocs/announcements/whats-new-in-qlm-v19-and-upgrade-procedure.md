@@ -2,7 +2,7 @@
 
 ## What's new in QLM v19
 
-QLM v19 is planned for release on January 15, 2025. Note that our major releases are not loaded with a massive amount of new features. Features are added gradually throughout the year and released when they are ready. To learn more about our release process, [click here](https://docs.soraco.co/docs/blog/iterative-releases).
+QLM v19 was released on January 15, 2025. Note that our major releases are not loaded with a massive amount of new features. Features are added gradually throughout the year and released when they are ready. To learn more about our release process, [click here](https://docs.soraco.co/docs/blog/iterative-releases).
 
 -> [Latest Version Release Notes](https://soraco.co/products/qlm/ReleaseNotes.html)
 
