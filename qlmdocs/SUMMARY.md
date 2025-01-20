@@ -28,7 +28,7 @@
   * [Product Features](how-to/qlm-features.md)
   * [Product Properties](how-to/product-properties.md)
     * [Data Types](fundamental-concepts/product-properties/data-types.md)
-    * [Enforce ProductProperties](fundamental-concepts/product-properties/enforce-productproperties.md)
+    * [Enforce Product Properties](fundamental-concepts/product-properties/enforce-product-properties.md)
   * [CommunicationEncryptionKey and AdminEncryptionKey](faq/communicationencryptionkey-and-adminencryptionkey.md)
   * [Search macros](faq/definition-of-the-macros-that-can-be-used-in-searches.md)
   * [Differences between QLM Express and QLM Pro](faq/whats-the-difference-between-qlm-express-and-qlm-pro.md)

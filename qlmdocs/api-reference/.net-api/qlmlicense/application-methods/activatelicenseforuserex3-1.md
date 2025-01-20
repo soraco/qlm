@@ -22,22 +22,22 @@ void ActivateLicenseForUserEx4(string webServiceUrl,
 
 ### Parameters
 
-| Parameter                |                             Type                            | Description                                                                                                                               |
-| ------------------------ | :---------------------------------------------------------: | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| webServiceUrl            |                            string                           | URL to the QLM License Server.                                                                                                            |
-| activationKey            |                            string                           | Activation key                                                                                                                            |
-| email                    |                            string                           | Email address of user that owns the license                                                                                               |
-| computerID               |                            string                           | The unique computer identifier                                                                                                            |
-| computerName             |                            string                           | the name of the computer.                                                                                                                 |
-| qlmVersion               |                            string                           | the version of the QLM Engine to use                                                                                                      |
-| userData1                |                            string                           | User data to associate with the license key                                                                                               |
-| affiliateID              |                            string                           | ID of affiliate                                                                                                                           |
-| computerType             | [EComputerType](../../../qlmlicense/enums/ecomputertype.md) | the type of the computer being activated: Physical machine or virtual machine                                                             |
-| privacyConsent           |                             bool                            | A flag indicating whether the user consented to the privacy policy                                                                        |
-| incrementActivationCount |                             bool                            | A flag indicating whether the Activation Count should be incremented on the server                                                        |
-| enforceProductProperties |                            string                           | [string ](../../../../fundamental-concepts/product-properties/enforce-productproperties.md)specifying the product properties to enforce.  |
-| response                 |                            string                           | XML fragment containing the result of the call. The Xml fragment schema is as follows:                                                    |
-|                          |                                                             |                                                                                                                                           |
+| Parameter                |                             Type                            | Description                                                                                                                                |
+| ------------------------ | :---------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| webServiceUrl            |                            string                           | URL to the QLM License Server.                                                                                                             |
+| activationKey            |                            string                           | Activation key                                                                                                                             |
+| email                    |                            string                           | Email address of user that owns the license                                                                                                |
+| computerID               |                            string                           | The unique computer identifier                                                                                                             |
+| computerName             |                            string                           | the name of the computer.                                                                                                                  |
+| qlmVersion               |                            string                           | the version of the QLM Engine to use                                                                                                       |
+| userData1                |                            string                           | User data to associate with the license key                                                                                                |
+| affiliateID              |                            string                           | ID of affiliate                                                                                                                            |
+| computerType             | [EComputerType](../../../qlmlicense/enums/ecomputertype.md) | the type of the computer being activated: Physical machine or virtual machine                                                              |
+| privacyConsent           |                             bool                            | A flag indicating whether the user consented to the privacy policy                                                                         |
+| incrementActivationCount |                             bool                            | A flag indicating whether the Activation Count should be incremented on the server                                                         |
+| enforceProductProperties |                            string                           | [string ](../../../../fundamental-concepts/product-properties/enforce-product-properties.md)specifying the product properties to enforce.  |
+| response                 |                            string                           | XML fragment containing the result of the call. The Xml fragment schema is as follows:                                                     |
+|                          |                                                             |                                                                                                                                            |
 
 ### Response XML format
 
