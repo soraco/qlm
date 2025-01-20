@@ -1,12 +1,16 @@
 # Enforce ProductProperties
 
-QLM can enforce that product properties are set to the expected value when a license is activated. To set a product property during activation, you must use the ActivateLicenseForUserEx4 API and set the enforceProductProperties argument to the value of the product properties to enforce.
+QLM can enforce that product properties are set to the expected value when a license is activated.&#x20;
+
+To enforce product properties when using the QLM License Wizard, you must set the QlmEnforcedProductProperties property to the value of the product properties to enforce.
+
+To enforce product properties when using the QLM API, you must use the [ActivateLicenseForUserEx4 ](../../api-reference/.net-api/qlmlicense/application-methods/activatelicenseforuserex3-1.md)API and set the enforceProductProperties argument to the value of the product properties to enforce.
 
 The syntax for setting product properties is:
 
-is\_pp=\<category>.\<name>::value::expiryDate||\<category>.\<name>::value::expiryDate||...
+\<category>.\<name>::value||\<category>.\<name>::value||...
 
-The following table describes how product properties are enforced,depending on the property data type:
+The following table describes how product properties are enforced, depending on the property data type:
 
 | Data Type |                                                                                                                                                                                                                                                                                                                |
 | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
