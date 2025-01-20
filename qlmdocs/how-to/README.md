@@ -372,8 +372,8 @@
 [how-to-add-the-qlm-.net-controls-to-the-visual-studio-toolbox.md](how-to-add-the-qlm-.net-controls-to-the-visual-studio-toolbox.md)
 {% endcontent-ref %}
 
-{% content-ref url="../fundamental-concepts/product-properties/" %}
-[product-properties](../fundamental-concepts/product-properties/)
+{% content-ref url="product-properties.md" %}
+[product-properties.md](product-properties.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-create-keys-in-bulk.md" %}

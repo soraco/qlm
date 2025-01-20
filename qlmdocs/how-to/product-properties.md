@@ -68,15 +68,15 @@ To modify product properties from the QLM Management Console:
 
 #### Using the QLM API to Get/Set Product Properties
 
-You can query the product properties associated with a given Activation Key from within your application with the [QlmLicense.GetProductProperties](../../api-reference/qlmlicense/application-methods/getproductproperties.md) function.
+You can query the product properties associated with a given Activation Key from within your application with the [QlmLicense.GetProductProperties](../api-reference/qlmlicense/application-methods/getproductproperties.md) function.
 
-Setting product properties should not typically be done from within your application. It should be done from your server. To set product properties, use the [QlmLicense.SetProductProperties](../../api-reference/qlmlicense/management-methods/setproductproperties.md) function.
+Setting product properties should not typically be done from within your application. It should be done from your server. To set product properties, use the [QlmLicense.SetProductProperties](../api-reference/qlmlicense/management-methods/setproductproperties.md) function.
 
 Both API reference pages above include an example that shows how to use GetProductProperties and SetProductProperties.
 
 #### Setting Product Properties from the GetActivationKey/GetActivationKeyWithExpiryDate/RenewSubscriptionHttp HTTP methods
 
-When creating activation keys from an eCommerce provider using the [GetActivationKey](../../api-reference/http-methods/getactivationkey.md)/[GetActivationKeyWithExpiryDate](../../api-reference/http-methods/getactivationkeywithexpirydate.md) methods or when renewing a subscription using the [RenewSubscriptionHttp](../../api-reference/http-methods/renewsubscriptionhttp.md) method, you can set product properties using the URL command-line argument.
+When creating activation keys from an eCommerce provider using the [GetActivationKey](../api-reference/http-methods/getactivationkey.md)/[GetActivationKeyWithExpiryDate](../api-reference/http-methods/getactivationkeywithexpirydate.md) methods or when renewing a subscription using the [RenewSubscriptionHttp](../api-reference/http-methods/renewsubscriptionhttp.md) method, you can set product properties using the URL command-line argument.
 
 The syntax for setting a product property is:
 
@@ -145,8 +145,8 @@ As of QLM v11.0.18147.1, your customer can also generate the Product Properties 
 
 Additionally, to operate in offline mode, you could store the Product Properties in a file on the customer's system and read them from the file when the user is offline by using the following APIs:\
 \
-[QlmLicense.ReadProductPropertiesFile](../../api-reference/qlmlicense/client-side-methods/readproductpropertiesfile.md)\
-[QlmLicense.WriteProductPropertiesFile](../../api-reference/qlmlicense/application-methods/writeproductpropertiesfile.md)
+[QlmLicense.ReadProductPropertiesFile](../api-reference/qlmlicense/client-side-methods/readproductpropertiesfile.md)\
+[QlmLicense.WriteProductPropertiesFile](../api-reference/qlmlicense/application-methods/writeproductpropertiesfile.md)
 
 ### Generate a Product Properties File from the QLM Portal
 

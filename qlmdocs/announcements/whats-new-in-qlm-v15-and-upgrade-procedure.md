@@ -34,7 +34,7 @@ QLM v15 was released on April 30, 2021. Note that our major releases are not loa
 ### QLM Customer Site
 
 * You can now configure a custom URL to detect disposable email accounts and reject them. To enable this feature, you must set the server property disposableEmailDetectorUrl to the URL of a service that detects disposable emails. Example: [https://disposable.debounce.io](https://disposable.debounce.io/)
-* You can now provide server properties as arguments to the QLM Trial Registration Form by using the is\_pp command-line argument. Details of the syntax are described [here](../fundamental-concepts/product-properties/).
+* You can now provide server properties as arguments to the QLM Trial Registration Form by using the is\_pp command-line argument. Details of the syntax are described [here](../how-to/product-properties.md).
 
 ### Miscellaneous updates
 

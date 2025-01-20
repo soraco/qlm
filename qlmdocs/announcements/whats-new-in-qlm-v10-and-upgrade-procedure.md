@@ -19,7 +19,7 @@
 
 **QLM Pro**
 
-* Create your own custom [Product Properties](../fundamental-concepts/product-properties/) and set them when issuing a license key.
+* Create your own custom [Product Properties](../how-to/product-properties.md) and set them when issuing a license key.
 * Simplified search in the QLM Management Console with the new \<Common Fields> tag that searches across multiple common fields.
 * LicenseValidator class now includes code to publish Analytics to the License Server.
 * LicenseValidator class now includes code to retrieve custom Product Properties from the License Server.
