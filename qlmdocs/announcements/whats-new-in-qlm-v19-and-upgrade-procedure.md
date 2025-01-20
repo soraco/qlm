@@ -28,7 +28,7 @@ The QLM Documentation has moved to: [https://docs.soraco.co](https://docs.soraco
 
 ### QLM Enterprise New Features
 
-* Product Properties: 3 new product properties data type are now available: IP Address, IP Subnet and CSV.
+* Product Properties: 3 new product properties data types are now available: IP Address, IP Subnet and CSV.
 * Product Properties: a new feature allows you to enforce that a specific product property has a specified value during activation. For example, you could define a new Product Property of type 'IP Address' and specify that this property should be enforced during activation.
 * Java protection: added support for license file signed using SHA256 instead of SHA1.
 * New Server Property: security/whiteListedIPAddresses: specifies a list of IP addresses that are allowed to request trial registrations regardless of the restrictions imposed by customerSite / preventRegistrationFromExistingIPAddress
@@ -48,13 +48,13 @@ The QLM Documentation has moved to: [https://docs.soraco.co](https://docs.soraco
 
 ### Upgrade Procedure
 
-To upgrade to QLM v19, you must first install the QLM Management Console on your client system by running the qlmsetup19.exe. To determine if you are eligible for a v19 upgrade, you may contact us or click the About tab.
+To upgrade to QLM v19, you must first install the QLM Management Console on your client system by running qlmsetup19.exe. To determine if you are eligible for a v19 upgrade, you may contact us or click the About tab.
 
 If we are hosting your QLM License Server, contact us to upgrade the License Server. If you are hosting your own License Server, you can upgrade the License Server as described in the next sections.
 
 #### Automated Upgrade
 
-If you installed QLM by running the QlmLicenseServerSetup.exe, you can simply re-run the latest QlmLicenseServerSetup.exe to upgrade your installation. You should always back up your database and site before upgrading. To back up your site, simply make a copy of your Qlm License Server folders.
+If you installed QLM by running the QlmLicenseServerSetup.exe, you can simply re-run the latest QlmLicenseServerSetup.exe to upgrade your installation. You should always back up your database and site before upgrading. To back up your site, simply make a copy of your Qlm License Server folders. To back up your database, perform a SQL Server back up of the database.
 
 After the server is installed, you must perform a DB Schema upgrade:
 
@@ -75,7 +75,7 @@ After the server is installed, you must perform a DB Schema upgrade:
    * Go to the Manage Keys tab
    * Click on the Commerce Providers item in the toolbar
    * Select the eCommerce provider you are using
-   * Modify the Dll field and replace the existing value with QlmWebService.dll
+   * Modify the DLL field and replace the existing value with QlmWebService.dll
    * Ensure that the eCommerce Provider that you are using is enabled.
 
 **QLM Portal Upgrade**
