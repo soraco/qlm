@@ -12,7 +12,7 @@ QLM v15 was released on April 30, 2021. Note that our major releases are not loa
 * [In Check for Updates, the setup package can now be downloaded from Google Drive or One Drive.](../license-wizard/qlm-license-wizard-download-latest-version-from-a-cloud-drive.md)
 * New dark colour theme for the QLM License wizard. To use this theme, copy the settings from the Demo Enterprise product.
 
-![mceclip1.png](https://support.soraco.co/hc/article\_attachments/360094052611/mceclip1.png)
+![mceclip1.png](https://support.soraco.co/hc/article_attachments/360094052611/mceclip1.png)
 
 ### &#x20;Cross-Platform
 
@@ -34,7 +34,7 @@ QLM v15 was released on April 30, 2021. Note that our major releases are not loa
 ### QLM Customer Site
 
 * You can now configure a custom URL to detect disposable email accounts and reject them. To enable this feature, you must set the server property disposableEmailDetectorUrl to the URL of a service that detects disposable emails. Example: [https://disposable.debounce.io](https://disposable.debounce.io/)
-* You can now provide server properties as arguments to the QLM Trial Registration Form by using the is\_pp command-line argument. Details of the syntax are described [here](../how-to/product-properties.md).
+* You can now provide server properties as arguments to the QLM Trial Registration Form by using the is\_pp command-line argument. Details of the syntax are described [here](../fundamental-concepts/product-properties/).
 
 ### Miscellaneous updates
 

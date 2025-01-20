@@ -20,4 +20,4 @@ You can generate license keys with embedded features in several ways:
 
 To verify if a feature is enabled in your code, use the [IsFeatureEnabledEx](../api-reference/.net-api/qlmlicense/client-side-methods/isfeatureenabledex-1.md) API. The sample located in %Public%\Documents\Quick License Manager\Samples\qlmpro\Windows\DotNet\C#\QlmWizardExeSample demonstrates how to verify if a feature is enabled in your code.
 
-For more advanced capabilities, you may want to check out QLM's [Product Properties](product-properties.md).&#x20;
+For more advanced capabilities, you may want to check out QLM's [Product Properties](../fundamental-concepts/product-properties/).&#x20;

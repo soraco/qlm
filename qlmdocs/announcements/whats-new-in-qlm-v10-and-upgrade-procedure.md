@@ -12,14 +12,14 @@
 * Offline Deactivation via a QR code scanned from a mobile device.
 * Automatically publishes Analytics Data to the License Server
 
-| ![Wizard-Welcome.png](https://support.soraco.co/hc/article\_attachments/115009061966/Wizard-Welcome.png)                 | ![Wizard-ActivationMethod.png](https://support.soraco.co/hc/article\_attachments/115009061986/Wizard-ActivationMethod.png)                   |
-| ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Wizard-ActivateOnline.png](https://support.soraco.co/hc/article\_attachments/115009062006/Wizard-ActivateOnline.png)   | ![Wizard-DeActivate.png](https://support.soraco.co/hc/article\_attachments/115009191943/Wizard-DeActivate.png)                               |
-| ![Wizard-ActivateOffline.png](https://support.soraco.co/hc/article\_attachments/115009191963/Wizard-ActivateOffline.png) | ![Wizard-ActivateOfflineWithQRCode.png](https://support.soraco.co/hc/article\_attachments/115009062066/Wizard-ActivateOfflineWithQRCode.png) |
+| ![Wizard-Welcome.png](https://support.soraco.co/hc/article_attachments/115009061966/Wizard-Welcome.png)                 | ![Wizard-ActivationMethod.png](https://support.soraco.co/hc/article_attachments/115009061986/Wizard-ActivationMethod.png)                   |
+| ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Wizard-ActivateOnline.png](https://support.soraco.co/hc/article_attachments/115009062006/Wizard-ActivateOnline.png)   | ![Wizard-DeActivate.png](https://support.soraco.co/hc/article_attachments/115009191943/Wizard-DeActivate.png)                               |
+| ![Wizard-ActivateOffline.png](https://support.soraco.co/hc/article_attachments/115009191963/Wizard-ActivateOffline.png) | ![Wizard-ActivateOfflineWithQRCode.png](https://support.soraco.co/hc/article_attachments/115009062066/Wizard-ActivateOfflineWithQRCode.png) |
 
 **QLM Pro**
 
-* Create your own custom [Product Properties](../how-to/product-properties.md) and set them when issuing a license key.
+* Create your own custom [Product Properties](../fundamental-concepts/product-properties/) and set them when issuing a license key.
 * Simplified search in the QLM Management Console with the new \<Common Fields> tag that searches across multiple common fields.
 * LicenseValidator class now includes code to publish Analytics to the License Server.
 * LicenseValidator class now includes code to retrieve custom Product Properties from the License Server.
@@ -47,11 +47,11 @@
   * Product Versions
   * Operating Systems
 
-| ![Analytics-Dashboard.png](https://support.soraco.co/hc/article\_attachments/115009192863/Analytics-Dashboard.png) |
-| ------------------------------------------------------------------------------------------------------------------ |
-| ![Analytics-Installs.png](https://support.soraco.co/hc/article\_attachments/115009193163/Analytics-Installs.png)   |
-| ![Analytics-Usage.png](https://support.soraco.co/hc/article\_attachments/115009063026/Analytics-Usage.png)         |
-| ![Analytics-Platforms.png](https://support.soraco.co/hc/article\_attachments/115009063166/Analytics-Platforms.png) |
+| ![Analytics-Dashboard.png](https://support.soraco.co/hc/article_attachments/115009192863/Analytics-Dashboard.png) |
+| ----------------------------------------------------------------------------------------------------------------- |
+| ![Analytics-Installs.png](https://support.soraco.co/hc/article_attachments/115009193163/Analytics-Installs.png)   |
+| ![Analytics-Usage.png](https://support.soraco.co/hc/article_attachments/115009063026/Analytics-Usage.png)         |
+| ![Analytics-Platforms.png](https://support.soraco.co/hc/article_attachments/115009063166/Analytics-Platforms.png) |
 
 &#x20;
 

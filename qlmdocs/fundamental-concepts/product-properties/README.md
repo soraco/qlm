@@ -68,15 +68,15 @@ To modify product properties from the QLM Management Console:
 
 #### Using the QLM API to Get/Set Product Properties
 
-You can query the product properties associated with a given Activation Key from within your application with the [QlmLicense.GetProductProperties](../api-reference/qlmlicense/application-methods/getproductproperties.md) function.
+You can query the product properties associated with a given Activation Key from within your application with the [QlmLicense.GetProductProperties](../../api-reference/qlmlicense/application-methods/getproductproperties.md) function.
 
-Setting product properties should not typically be done from within your application. It should be done from your server. To set product properties, use the [QlmLicense.SetProductProperties](../api-reference/qlmlicense/management-methods/setproductproperties.md) function.
+Setting product properties should not typically be done from within your application. It should be done from your server. To set product properties, use the [QlmLicense.SetProductProperties](../../api-reference/qlmlicense/management-methods/setproductproperties.md) function.
 
 Both API reference pages above include an example that shows how to use GetProductProperties and SetProductProperties.
 
 #### Setting Product Properties from the GetActivationKey/GetActivationKeyWithExpiryDate/RenewSubscriptionHttp HTTP methods
 
-When creating activation keys from an eCommerce provider using the [GetActivationKey](../api-reference/http-methods/getactivationkey.md)/[GetActivationKeyWithExpiryDate](../api-reference/http-methods/getactivationkeywithexpirydate.md) methods or when renewing a subscription using the [RenewSubscriptionHttp](../api-reference/http-methods/renewsubscriptionhttp.md) method, you can set product properties using the URL command-line argument.
+When creating activation keys from an eCommerce provider using the [GetActivationKey](../../api-reference/http-methods/getactivationkey.md)/[GetActivationKeyWithExpiryDate](../../api-reference/http-methods/getactivationkeywithexpirydate.md) methods or when renewing a subscription using the [RenewSubscriptionHttp](../../api-reference/http-methods/renewsubscriptionhttp.md) method, you can set product properties using the URL command-line argument.
 
 The syntax for setting a product property is:
 
@@ -127,7 +127,7 @@ If the end-user is not connected to the internet, you will need to send the cust
   * Click Ok
   * A license file should be generated in the location selected above. Send this file to your customer and ask them to save it in the folder that your application expects.
 
-![](https://support.soraco.co/hc/article\_attachments/115016902426/mceclip1.png)
+![](https://support.soraco.co/hc/article_attachments/115016902426/mceclip1.png)
 
 As of QLM v11.0.18147.1, your customer can also generate the Product Properties file or a complete license file (for cross-platform apps) from the QLM Offline Activation page:
 
@@ -139,14 +139,14 @@ As of QLM v11.0.18147.1, your customer can also generate the Product Properties 
 * Click Activate
 * A Product Properties file or a license file will be generated and downloaded to the end-user system. Ask the customer to save this file in the folder where your application expects it.
 
-![](https://support.soraco.co/hc/article\_attachments/115016901546/mceclip0.png)
+![](https://support.soraco.co/hc/article_attachments/115016901546/mceclip0.png)
 
 &#x20;
 
 Additionally, to operate in offline mode, you could store the Product Properties in a file on the customer's system and read them from the file when the user is offline by using the following APIs:\
 \
-[QlmLicense.ReadProductPropertiesFile](../api-reference/qlmlicense/client-side-methods/readproductpropertiesfile.md)\
-[QlmLicense.WriteProductPropertiesFile](../api-reference/qlmlicense/application-methods/writeproductpropertiesfile.md)
+[QlmLicense.ReadProductPropertiesFile](../../api-reference/qlmlicense/client-side-methods/readproductpropertiesfile.md)\
+[QlmLicense.WriteProductPropertiesFile](../../api-reference/qlmlicense/application-methods/writeproductpropertiesfile.md)
 
 ### Generate a Product Properties File from the QLM Portal
 
@@ -178,10 +178,10 @@ If you modify the definition of your product properties, existing licenses will 
 
 You can also force a specific license to pick up the new product properties definition by editing the license and refreshing its Product Properties as shown below.
 
-![mceclip0.png](https://support.soraco.co/hc/article\_attachments/360073112072/mceclip0.png)
+![mceclip0.png](https://support.soraco.co/hc/article_attachments/360073112072/mceclip0.png)
 
 Additionally, you can perform a full scan of all licenses and upgrade all product properties of all licenses from Manage Keys / Sites / Advanced / Upgrade Product Properties.&#x20;
 
-![mceclip1.png](https://support.soraco.co/hc/article\_attachments/360073377271/mceclip1.png)
+![mceclip1.png](https://support.soraco.co/hc/article_attachments/360073377271/mceclip1.png)
 
 &#x20;

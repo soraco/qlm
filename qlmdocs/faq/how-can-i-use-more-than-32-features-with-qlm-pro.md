@@ -3,7 +3,7 @@
 QLM Express and QLM Pro can embed up to 32 features in the license key.\
 This allows you to enable specific features in your code based on the license key.
 
-If you require more than 32 features, or if you require to associate any other data to your license, you can do so with QLM Pro with the UserData field or with QLM's [Product Properties](../how-to/product-properties.md) available with QLM v10+. This article focuses on the User Data approach.
+If you require more than 32 features, or if you require to associate any other data to your license, you can do so with QLM Pro with the UserData field or with QLM's [Product Properties](../fundamental-concepts/product-properties/) available with QLM v10+. This article focuses on the User Data approach.
 
 The QLM Pro database contains a field called UserData that you can use to write any data relevant to your application, such as features.
 
