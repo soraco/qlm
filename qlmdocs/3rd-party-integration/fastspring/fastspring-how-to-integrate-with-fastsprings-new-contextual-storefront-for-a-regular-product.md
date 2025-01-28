@@ -70,3 +70,7 @@ If you want to provide an option to sell a yearly maintenance plan associated wi
     * Key: webhook\_action
     * Value: RenewMaintenancePlan
 * Click Save
+
+Important Note:
+
+If you use one of the available QLM options to create additional activations such that the number of allowed activations does not match the quantity of licenses purchased in FastSpring, you must add the following argument to the WebHook URL (in Step 1 of this article): \&is\_allow\_quantity\_mismatch=true
