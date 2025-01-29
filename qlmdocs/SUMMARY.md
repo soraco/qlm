@@ -187,6 +187,7 @@
   * [IIS on Windows 10](faq/iis-on-windows-10.md)
   * [How to upgrade the QLM License Server](qlm-license-server/how-to-perform-a-minor-upgrade-of-the-qlm-license-server.md)
   * [How to perform a DB schema upgrade](qlm-license-server/how-to-perform-a-db-schema-upgrade.md)
+  * [Customizable Server Messages](qlm-license-server/customizable-server-messages.md)
 * [⛑️ Self Help (Customer Site)](self-help-customer-site/README.md)
   * [Overview](how-to/how-to-configure-the-qlm-self-help-web-page.md)
   * [Configuration](self-help-customer-site/qlmcustomersite-qlm-self-help/README.md)
