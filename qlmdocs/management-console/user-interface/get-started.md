@@ -4,7 +4,7 @@
 
 The Metro-style tiles that make up the Dashboard are organized by default into three columns. A row in any column contains either one full-width or two half-width tiles. (If the window height is sufficiently reduced, doubled columns or tripled columns may be seen.) The organization of the Dashboard can be customized by dragging individual tiles from one column to another, or into an empty location to create a new column. As you drag a tile to locations in other columns, the tiles already there move aside as necessary to indicate where the new arrival will lodge. The default layout of Dashboard tiles is in three columns.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### System Information
 
@@ -24,7 +24,7 @@ The Getting Started Wizard helps you find the best path into QLM for a particula
 
 **Programming language:** .NET 2.0 and higher languages are directly supported by QLM, as are Visual Basic 6.0, C++, Excel, and Access. Other languages can also make use of the QLM API if they are capable of interfacing with .NET assemblies, COM objects (ActiveX), or native DLLs.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Application type:** The wizard offers “Standalone Windows application”, “Web App”, and “Windows Service” as configured choices. If your application does not fall into one of these categories (“Other”), contact us for advice specific to your situation.
 

@@ -10,4 +10,4 @@ You can also launch the QLM System Tray Agent from the QLM installation folder: 
 
 If you configure QLM to use the QLM System Tray Agent instead of the QLM Agent Service, the user must be logged in to process scheduled tasks and backup jobs.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

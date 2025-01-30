@@ -26,6 +26,6 @@ To restore a backup job, follow the steps outlined below:
 * Select the tables to restore. Note that data in the target tables will be deleted.
 * Click on the Restore button or Restore to DR site button.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 QLM provides basic feedback as to whether the primary site and the DR sites are synchronized by comparing the number of records in the LicenseKeys table on both sites. The first time you click on the Backup tab, a comparison between both sites is automatically triggered. You can request to compare two sites at any time by clicking on the Compare Now or Compare All buttons.
