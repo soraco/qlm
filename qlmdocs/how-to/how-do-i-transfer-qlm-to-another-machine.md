@@ -1,5 +1,11 @@
 # How do I transfer QLM to another machine?
 
+### Transfer **Limitations** <a href="#h_01hbdvpw4mq4mt0y92r3svvn16" id="h_01hbdvpw4mq4mt0y92r3svvn16"></a>
+
+Note that as per our [EULA](http://soraco.co/products/qlm/QlmLicense.pdf) you are limited to transferring a license 4 times per year. The relevant section in the EULA is included below.
+
+<figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
+
 ### QLM Pro /  Enterprise Users 5.2 or later <a href="#h_01hbdvpw4mt71a334hca07cczv" id="h_01hbdvpw4mt71a334hca07cczv"></a>
 
 It is highly recommended that you back up your QLM License Server before migrating your products to a new client system.
@@ -35,12 +41,6 @@ Make sure you NEVER  "**upload products** to the License Server" from the new sy
 * Add your site
 * Click "Download your products from the License Server"
 * Click Ok
-
-#### **Limitations** <a href="#h_01hbdvpw4mq4mt0y92r3svvn16" id="h_01hbdvpw4mq4mt0y92r3svvn16"></a>
-
-Note that as per our [EULA](http://soraco.co/products/qlm/QlmLicense.pdf) you are limited to transferring a license 4 times per year. The relevant section in the EULA is included below.
-
-![](https://support.soraco.co/attachments/token/aUcubhviFxr0dtJwAdCzkG8A6/?name=inline-1029670197.png)
 
 ### QLM Express Users 5.2 or later <a href="#h_01hbdvpw4mhwvc7evhxrckpq0p" id="h_01hbdvpw4mhwvc7evhxrckpq0p"></a>
 
