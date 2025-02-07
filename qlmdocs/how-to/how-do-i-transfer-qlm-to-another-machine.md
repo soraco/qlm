@@ -44,10 +44,13 @@ Note that as per our [EULA](http://soraco.co/products/qlm/QlmLicense.pdf) you ar
 
 ### QLM Express Users 5.2 or later <a href="#h_01hbdvpw4mhwvc7evhxrckpq0p" id="h_01hbdvpw4mhwvc7evhxrckpq0p"></a>
 
-To transfer the definition of your product to another machine:
+To transfer QLM to another machine:
 
-* Make a backup of the products.xml file. This file is located in:
-
-C:\Users\\\[your user name]\AppData\Roaming\Soraco\Quick License Manager
-
-After installing QLM on the new system, copy the backed-up products.xml file to the new system in the appropriate folder as described above.
+* Make a backup of the following folder, **including subfolders**, on the current system:
+  * %appdata%\Soraco\Quick License Manager
+  * %localappdata%\Soraco\_Technologies\_Inc\IsQuickLicenseMgr\*\_StrongName\_\<xxx>\w.x.y.z\user.config
+* Uninstall QLM from the current system in order to deactivate the license
+* Copy the backed-up files from the old system to the corresponding location on the new system.
+* Install QLM on the new system
+* Launch QLM&#x20;
+* Step through the QLM License Wizard to activate your license
