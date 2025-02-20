@@ -32,19 +32,21 @@ The QLM Documentation has moved to: [https://docs.soraco.co](https://docs.soraco
 * Product Properties: a new feature allows you to enforce that a specific product property has a specified value during activation. For example, you could define a new Product Property of type 'IP Address' and specify that this property should be enforced during activation.
 * Java protection: added support for license file signed using SHA256 instead of SHA1.
 * New Server Property: security/whiteListedIPAddresses: specifies a list of IP addresses that are allowed to request trial registrations regardless of the restrictions imposed by customerSite / preventRegistrationFromExistingIPAddress
+* Changes to 3rd party extensions settings are now logged in the Audit Trail.
 
 ### QLM Customer Site New Features
 
 * New Server Property: customerSite / preventRegistrationFromExistingIPAddress. This feature checks if the IP address of the user requesting a trial matches an IP address in the system and aborts the trial request if a match is found.
-
-
+* New server properties allow hiding some fields on the trial registration form: registrationPage\_showFullName, registrationPage\_showCompany, registrationPage\_showPhone, registrationPage\_showCountry
 
 ### QLM Professional New Features
 
 * When activating a license by email address (activation using Basic Authentication), QLM can now pick the Activation Key based on the Allowed/Denied Computer IDs.
 * The following editors in the QLM Management Console now support saving multiple layouts (in the status bar): Activation Attempts, Illegal Computers, Event Viewer, and Audit Trail
 
+### QLM License Server New Features
 
+* You can now enforce a specific version of TLS for the QLM License Server by setting a property in the web.config.
 
 ### Upgrade Procedure
 
