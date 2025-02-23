@@ -8,7 +8,23 @@ QLM provides a set of tools to harden the security of your License Server. This 
 
 The QLM License Server needs to be accessed by your customers over HTTPS. At the firewall level, you should only enable the HTTPS protocol and open up the required port to connect over HTTP (443).
 
-In addition, you should consider disabling SSL and TLS / TLS 1.1.
+In addition, you should consider disabling SSL and TLS / TLS 1.1. To disable SSL and TLS for the QLM application, you add the following entry in the License Server's web.config file, in the \<QlmWebService.Properties.Settings> section:
+
+```xml
+<setting name="securityProtocol" serializeAs="String">
+      <value>3072</value>
+</setting>      
+```
+
+| Protocol | Value |
+| -------- | ----- |
+| SSL3     | 48    |
+| TLS      | 192   |
+| TLS 1.1  | 768   |
+| TLS 1.2  | 3072  |
+| TLS 1.3  | 12288 |
+
+Values can OR'ed together. For example, to enable support for TLS 1.1  and TLS 1.2, you would set the value to 768 + 3072 = 3849
 
 ### Operating System Security
 
