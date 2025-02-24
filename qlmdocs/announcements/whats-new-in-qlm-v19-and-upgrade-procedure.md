@@ -44,10 +44,6 @@ The QLM Documentation has moved to: [https://docs.soraco.co](https://docs.soraco
 * When activating a license by email address (activation using Basic Authentication), QLM can now pick the Activation Key based on the Allowed/Denied Computer IDs.
 * The following editors in the QLM Management Console now support saving multiple layouts (in the status bar): Activation Attempts, Illegal Computers, Event Viewer, and Audit Trail
 
-### QLM License Server New Features
-
-* You can now enforce a specific version of TLS for the QLM License Server by setting a property in the web.config.
-
 ### Upgrade Procedure
 
 To upgrade to QLM v19, you must first install the QLM Management Console on your client system by running qlmsetup19.exe. To determine if you are eligible for a v19 upgrade, you may contact us or click the About tab.
