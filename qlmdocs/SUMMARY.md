@@ -410,6 +410,7 @@
   * [Common Searches](how-to/common-searches.md)
   * [How to add the QLM User Controls to the Visual Studio Toolbox](how-to/how-to-add-the-qlm-user-controls-to-the-visual-studio-toolbox.md)
   * [How to filter data by feature](how-to/how-to-filter-data-by-feature.md)
+  * [How to enable TLS 1.2 on legacy systems](how-to/how-to-enable-tls-1.2-on-legacy-systems.md)
 * [❔ FAQ](faq/README.md)
   * [How do I change the license binding to a different identifier?](faq/how-do-i-change-the-license-binding-to-a-different-identifier.md)
   * [How to reserve licenses for a list of users](faq/how-to-reserve-licenses-for-a-list-of-users.md)
