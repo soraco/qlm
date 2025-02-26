@@ -27,10 +27,8 @@ Once the Activation Key is generated, you can provide it to the customer. When t
 
 Alternatively, you can activate the license on behalf of the customer and provide them with the Generic License Key. When activating a license, you can set any value for the Computer ID field.
 
-
-
 ### **Important**
 
-**Beware, Generic Keys are dangerous.** A Generic Key is not bound to a customer nor a computer. Anyone who gets access to a Generic Key will be able to run your application on any computer and potentially forever if the key does not have an expiry date.
+As of QLM v17, Generic Keys are disabled by default. To enable generic license keys on the client side, you must set the QlmLicense.AllowGenericKeys to true. To enable generic license keys on the server side, you must set the "security/AllowGenericKeys" server property to true.
 
-As of QLM v17, Generic Keys are disabled by default.&#x20;
+**Beware, Generic Keys are dangerous.** A Generic Key is not bound to a customer nor a computer. Anyone who gets access to a Generic Key will be able to run your application on any computer and potentially forever if the key does not have an expiry date.
