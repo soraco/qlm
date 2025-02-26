@@ -11,14 +11,18 @@ This can impact you at two levels:
 
 ### Older versions of QLM
 
-If you are using QLM version prior to v11, connection to the QLM License Server will most likely fail. If it does, you will need to update your computer's registry as follows:
+If you are using QLM version prior to v11, connection to the QLM License Server will most likely fail.&#x20;
 
-* Launch regedit
-* Go to: HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft.NETFramework\v4.0.30319
-* Add a new DWORD (32 bit) value named `SchUseStrongCrypto` and set its value to `1`.
-* Go to: HKEY\_LOCAL\_MACHINE\SOFTWARE\Wow6432Node\Microsoft.NETFramework\v4.0.30319
-* Add a new DWORD (32 bit) value named `SchUseStrongCrypto` and set its value to `1`.
-* Reboot your computer
+Your options are:
+
+1. Upgrade to the latest version of QLM (if you did not purchase a maintenance plan, you will need to purchase a subscription to the latest version of QLM).
+2. Update your computer's registry as follows:
+   1. Launch regedit
+   2. Go to: HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft.NETFramework\v4.0.30319
+   3. Add a new DWORD (32 bit) value named `SchUseStrongCrypto` and set its value to `1`.
+   4. Go to: HKEY\_LOCAL\_MACHINE\SOFTWARE\Wow6432Node\Microsoft.NETFramework\v4.0.30319
+   5. Add a new DWORD (32 bit) value named `SchUseStrongCrypto` and set its value to `1`.
+   6. Reboot your computer
 
 ### Apps running .NET Framework version 4.5
 
