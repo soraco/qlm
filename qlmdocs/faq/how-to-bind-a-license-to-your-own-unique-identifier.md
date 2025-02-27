@@ -4,7 +4,7 @@
 
 QLM can bind a license to a computer identifier such as a Computer Name, MAC address, Motherboard Serial Number, etc. For more details about all the supported unique identifiers, check out the [ELicenseBinding ](../api-reference/qlmlicense/enums/elicensebinding.md)property.
 
-If none of the out-of-the-box unique identifiers meet your requirements, you can use your own unique identifier to bind the license to.
+If none of the out-of-the-box unique identifiers meet your requirements, you can use your own unique identifier to bind the license to. The [QlmHardware ](../api-reference/iqlmhardware/)class provides functions to extract several system identifiers that can be combined together.
 
 ### Configuration
 
