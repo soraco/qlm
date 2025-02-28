@@ -28,7 +28,7 @@ If you need to use your Gmail account to send Server-Side emails, you need to cr
 
 #### How to create a Gmail Service Account
 
-Creation of a Gmail Service account requires a Google Workspace (G Suite) account. Detailed instructions for creating a service account can be found [here](./#how-to-create-a-gmail-service-account).
+Creation of a Gmail Service account requires a Google Workspace (G Suite) account. Detailed instructions for creating a service account can be found [here](how-to-create-a-gmail-service-account.md).
 
 #### QLM Management Console Configuration
 
@@ -45,7 +45,7 @@ To configure the QLM Management Console to send emails using the Gmail API, foll
 * Click the ![](<../../../.gitbook/assets/image (27).png>)Apply these settings on the server button
 * Click Ok
 
-![mceclip0.png](https://support.soraco.co/hc/article\_attachments/12909477519892)
+![mceclip0.png](https://support.soraco.co/hc/article_attachments/12909477519892)
 
 To instruct the QLM License Server to use Gmail to send emails from the QLM Portal or the QLM Self Help, you must set the options/emailProvider server property to "Gmail API".
 
