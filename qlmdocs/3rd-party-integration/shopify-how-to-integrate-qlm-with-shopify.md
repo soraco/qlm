@@ -61,7 +61,7 @@ To map your Shopify product to a QLM product, you must identify your Shopify Pro
 * In the browser's address bar, the last component of the URL is your Product ID
 * Note your Product ID as you will use it in the next step
 
-![mceclip0.png](https://support.soraco.co/hc/article\_attachments/13577379874196)
+![mceclip0.png](https://support.soraco.co/hc/article_attachments/13577379874196)
 
 #### &#x20;
 
@@ -79,11 +79,11 @@ Next, you will create a QLM Custom Server property that maps your Shopify produc
 * For more information about the supported arguments, refer to this[ article](https://support.soraco.co/hc/en-us/articles/207606653-GetActivationKeyWithExpiryDate).
 * Click Ok
 
-![mceclip1.png](https://support.soraco.co/hc/article\_attachments/13577404839828)
+![mceclip1.png](https://support.soraco.co/hc/article_attachments/13577404839828)
 
 ### Placing a test order
 
-With the steps above completed, place a test order. When the order is placed, the following will occur:
+With the steps above completed, [place a test order](https://help.shopify.com/en/manual/checkout-settings/test-orders). When the order is placed, the following will occur:
 
 * A new user will be automatically added to the QLM database based on the information collected during the ordering process.
 * An activation key will be created in the QLM database and associated with the user.
@@ -125,7 +125,7 @@ To map your Shopify product to a QLM product, you must identify your Shopify Pro
 * In the browser's address bar, the last component of the URL is your Product ID
 * Note your Product ID as you will use it in the next step
 
-![mceclip2.png](https://support.soraco.co/hc/article\_attachments/13577432781588)
+![mceclip2.png](https://support.soraco.co/hc/article_attachments/13577432781588)
 
 #### &#x20;
 
@@ -143,7 +143,7 @@ Next, you will create a QLM Server property that maps your Shopify product to a 
 * For more information about the supported arguments, refer to this[ article](https://support.soraco.co/hc/en-us/articles/207606653-GetActivationKeyWithExpiryDate).
 * Click Ok
 
-![mceclip3.png](https://support.soraco.co/hc/article\_attachments/13577441413396)
+![mceclip3.png](https://support.soraco.co/hc/article_attachments/13577441413396)
 
 &#x20;
 
@@ -162,11 +162,11 @@ If your product includes options that customers can optionally purchase, you can
 * In the browser's address bar, the last component of the URL is your VariantID
 * Note your Variant ID as you will use it in the next step
 
-![mceclip4.png](https://support.soraco.co/hc/article\_attachments/13577435166612)
+![mceclip4.png](https://support.soraco.co/hc/article_attachments/13577435166612)
 
 &#x20;
 
-![mceclip5.png](https://support.soraco.co/hc/article\_attachments/13577435894676)
+![mceclip5.png](https://support.soraco.co/hc/article_attachments/13577435894676)
 
 &#x20;
 
@@ -184,7 +184,7 @@ Next, you will create a QLM Server property that maps your Shopify variant to QL
 * For more information about the syntax of the features argument, refer to this[ article](https://support.soraco.co/hc/en-us/articles/204160380-What-is-the-syntax-of-is-features).
 * Click Ok
 
-![mceclip6.png](https://support.soraco.co/hc/article\_attachments/13577443667476)
+![mceclip6.png](https://support.soraco.co/hc/article_attachments/13577443667476)
 
 &#x20;
 
@@ -204,6 +204,6 @@ To locate the Shopify Shared Key:
 * Set the Shared Key to the value above
 * Click OK
 
-![mceclip7.png](https://support.soraco.co/hc/article\_attachments/13577437378452)
+![mceclip7.png](https://support.soraco.co/hc/article_attachments/13577437378452)
 
-![mceclip8.png](https://support.soraco.co/hc/article\_attachments/13577445177492)
+![mceclip8.png](https://support.soraco.co/hc/article_attachments/13577445177492)
