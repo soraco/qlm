@@ -530,6 +530,7 @@
   * [Registration-Free Activation of QlmLicenseLib.dll](faq/registration-free-activation-of-qlmlicenselib.dll.md)
   * [How to hide sensitive information from a third-party developer](faq/how-to-hide-sensitive-information-from-a-third-party-developer.md)
   * [How to update the ClientVersion / ApplicationVersion](faq/how-to-update-the-clientversion-applicationversion.md)
+  * [How to change the name of your product](faq/how-to-change-the-name-of-your-product.md)
 * [⁉️ Troubleshooting](troubleshooting/README.md)
   * [Troubleshoot issues with the QLM WordPress / WooCommerce plugin](faq/troubleshoot-issues-with-the-qlm-wordpress-plugin.md)
   * [How to Diagnose ReadKeys issues](faq/how-to-diagnose-readkeys-issues.md)
