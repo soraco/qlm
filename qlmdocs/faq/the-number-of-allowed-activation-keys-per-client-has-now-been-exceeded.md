@@ -8,3 +8,14 @@ Once the number of trials per client has been reached, you have 2 options to all
 
 1. Increase the value of **numberOfTrialLicensesAllowedPerClient**&#x20;
 2. Deactivate some of the activated licenses
+
+To deactivate some of the activated licenses:
+
+* Launch the QLM Management Console
+* Go to the Manage Keys tab
+* Search for all licenses that match the client's Computer ID as shown in the screenshot below
+* For each found license, you must either delete the license or deactivate it.
+
+
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

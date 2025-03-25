@@ -25,7 +25,7 @@ In the QLM Management Console, you can filter licenses based on the value of the
   * Value: 0:7
   * Click "search"
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Filtering data locally in the grid
 
