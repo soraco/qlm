@@ -1,4 +1,4 @@
-# QLM WebHooks
+# WebHooks
 
 With QLM Enterprise v11, QLM can invoke external webhooks when certain events occur.
 
@@ -14,6 +14,7 @@ Events fall into two general categories:
 | license\_activated | Event that occurs when a license is activated.    |
 | license\_created   | Event that occurs when a license is created.      |
 | license\_deleted   | Event that occurs when a license is deleted.      |
+| license\_modified  | Event that occurs when a license is modified.     |
 | license\_released  | Event that occurs when a license is deactivated.  |
 
 &#x20;
