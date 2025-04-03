@@ -4,10 +4,12 @@ To use QLM with non .NET applications running on Windows, you must register the 
 
 *   **Generate a type library to be referenced by your code**
 
-    regasm /tlb "\<path>\QlmLicenseLib.dll"
+    C:\Windows\Microsoft.NET\Framework64\v4.0.30319\regasm.exe /tlb "\<path>\QlmLicenseLib.dll"
 *   **Register the QlmLicenseLib.dll as a COM object**
 
-    regasm /codebase "\<path>\QlmLicenseLib.dll"
+    C:\Windows\Microsoft.NET\Framework64\v4.0.30319\regasm.exe /codebase "\<path>\QlmLicenseLib.dll"
+
+The variable \<path> above should be set to the location where you are deploying the QlmLicenseLib.dll file.
 
 A register.bat file is attached to this article. In this batch file, update the "dllPath" variable to point to the location of the QlmLicenseLib.dll.
 
@@ -25,4 +27,4 @@ The 32 bit version of regasm is located in this folder: %windir%\Microsoft.NET\F
 
 The 64 bit version of regasm is located in this folder: %windir%\Microsoft.NET\Framework64
 
-* [register.bat](https://support.soraco.co/hc/en-us/article\_attachments/360015046532)740 Bytes [Download](https://support.soraco.co/hc/en-us/article\_attachments/360015046532)
+* [register.bat](https://support.soraco.co/hc/en-us/article_attachments/360015046532)740 Bytes [Download](https://support.soraco.co/hc/en-us/article_attachments/360015046532)
