@@ -1,4 +1,4 @@
-# QLM Enterprise Analytics
+# Analytics
 
 Requirements: QLM Enterprise v11+
 
@@ -12,6 +12,24 @@ You can enable analytics either by directly calling specific API methods from wi
 
 The granularity of the usage information is per day. If a user launches your application 5 times in a given day, QLM will report that the application was used on that day but will not report the number of times the application was used.
 
+Analytics collects the following information from a client system:
+
+* Days Used
+* Days Installed
+* Idle Days
+* Last Accessed Date
+* Activation Key
+* Computer ID
+* Computer Name
+* Product Information
+* Application Version
+* Installation Date
+* Uninstallation Date
+* Activation Date
+* IP Address
+* Operating System
+* Custom Data (3 fields)
+
 ### Enable Analytics via QlmEnableAnalytics&#x20;
 
 To enable QLM to publish analytics information to the License Server:
@@ -22,7 +40,7 @@ To enable QLM to publish analytics information to the License Server:
 * Continue stepping through the wizard and generate the LicenseValidator class as well as the XML settings file.
 * Update your application to use the files generated above.
 
-![mceclip0.png](https://support.soraco.co/hc/article\_attachments/4408212034196)
+![mceclip0.png](https://support.soraco.co/hc/article_attachments/4408212034196)
 
 ### Enable Analytics by calling the API
 
@@ -162,6 +180,6 @@ To export the data for further analysis in tools such as Excel, click the Export
 
 &#x20;
 
-![mceclip1.png](https://support.soraco.co/hc/article\_attachments/4408217615508)
+![mceclip1.png](https://support.soraco.co/hc/article_attachments/4408217615508)
 
-![mceclip2.png](https://support.soraco.co/hc/article\_attachments/4408212560020)
+![mceclip2.png](https://support.soraco.co/hc/article_attachments/4408212560020)
