@@ -8,11 +8,14 @@ Connectivity issues between a client and the QLM License Server can be due to se
 
 * A firewall is blocking outbound connections to the QLM License Server.
 * The client uses a proxy server that requires authentication in order to connect to the internet.
+* The URL to the License Server is incorrect or the DNS name used in the URL does not resolve.
+* The URL to the License Server uses https and the server certificate is invalid or expired.
+* The QLM License Server is blocking the IP address of the client
 
 Troubleshooting steps:
 
 * Open any browser on the end user system and paste the URL to the QLM License Server.
-  * If the URL does not return any result, you should ask the customer's IT team to diagnose the isuse.
+  * If the URL does not return any result, you should ask the customer's IT team to diagnose the issue.
   * If the URL resolves properly, the issue could be a firewall rule that blocks applications (except the browser) from connecting to the internet. The issue could also be that the browser is configured to use a proxy server. If this is the case, you need to configure QLM to use a proxy server as well. If you are using any of the QLM .NET controls or the QLM License Wizard, all that is required is to set the Proxy Server properties to the correct values. If you are using your own activation form, you can use the QLM API to set the proxy server settings.
 
 The QlmNetworkTester tool can be used to test network connectivity to the QLM License Server.&#x20;
