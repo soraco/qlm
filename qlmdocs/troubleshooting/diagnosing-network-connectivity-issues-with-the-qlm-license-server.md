@@ -1,6 +1,6 @@
 # Diagnosing network connectivity issues with the QLM License Server
 
-I**mportant Note:** _Diagnosing network connectivity issues from a client's computer is beyond the scope of the technical support provided by Soraco._
+I**mportant Note:** _Diagnosing network connectivity issues between a client's computer and the QLM License Server is beyond the scope of the technical support provided by Soraco._
 
 The QLM API used by your application communicates with the License Server over http (port 80) or https (port 443). On most systems, these ports are open for outbound communication.
 
