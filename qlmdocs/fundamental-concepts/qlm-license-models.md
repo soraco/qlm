@@ -23,7 +23,7 @@ QLM now supports 9 different license models:
 | subscription\_cloud    | A cloud-based floating subscription license. | T                         | Y                       |
 | subscription\_floating | An on-premise floating subscription license. | M                         | Q                       |
 | permanent              | A node locked permanent license.             | A                         | U                       |
-| permanent\_cloud       | A cloud-based permanent trial license.       | R                         | W                       |
+| permanent\_cloud       | A cloud-based floating permanent license.    | R                         | W                       |
 | permanent\_floating    | An on-premise floating permanent license.    | K                         | N                       |
 
 &#x20;
@@ -39,9 +39,9 @@ For new customers, i.e. customers who did not issue license keys prior to QLM v1
 
 &#x20;
 
-![mceclip0.png](https://support.soraco.co/hc/article\_attachments/13471009368852)
+![mceclip0.png](https://support.soraco.co/hc/article_attachments/13471009368852)
 
-![mceclip1.png](https://support.soraco.co/hc/article\_attachments/13471054448660)
+![mceclip1.png](https://support.soraco.co/hc/article_attachments/13471054448660)
 
 &#x20;
 
@@ -55,11 +55,11 @@ Note that the QLM v17 libraries can properly validate license keys created with 
 
 &#x20;
 
-![mceclip2.png](https://support.soraco.co/hc/article\_attachments/13471410015124)
+![mceclip2.png](https://support.soraco.co/hc/article_attachments/13471410015124)
 
-![mceclip3.png](https://support.soraco.co/hc/article\_attachments/13471512845204)
+![mceclip3.png](https://support.soraco.co/hc/article_attachments/13471512845204)
 
-![mceclip5.png](https://support.soraco.co/hc/article\_attachments/13472017558676)
+![mceclip5.png](https://support.soraco.co/hc/article_attachments/13472017558676)
 
 &#x20;
 
@@ -75,7 +75,7 @@ We recommend that you set the QlmVersion to 6.0.00 for new versions of your appl
 
 &#x20;
 
-![mceclip7.png](https://support.soraco.co/hc/article\_attachments/13474243565716)
+![mceclip7.png](https://support.soraco.co/hc/article_attachments/13474243565716)
 
 ### E-Commerce Configuration
 
@@ -84,11 +84,11 @@ We recommend that you set the QlmVersion to 6.0.00 for new versions of your appl
 * Go to the QLM Plugin / Settings
 * Set the Engine Version to: 6.0.00
 
-![](https://support.soraco.co/hc/article\_attachments/13922181243028)
+![](https://support.soraco.co/hc/article_attachments/13922181243028)
 
 You can also set the engine version at the product level by creating a custom field called is\_qlmversion and setting its value to 6.0.00.
 
-![](https://support.soraco.co/hc/article\_attachments/13922128594708)
+![](https://support.soraco.co/hc/article_attachments/13922128594708)
 
 #### All other e-commerce providers
 
