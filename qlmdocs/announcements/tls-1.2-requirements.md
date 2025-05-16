@@ -47,6 +47,13 @@ The QLM Disaster Recovery Server is already configured to reject TLS 1/1.1 reque
 
 If you do not know the URL to your QLM Disaster Recovery Server, please contact our support team at support@soraco.co
 
+You should test, at a minimum, the following operations:
+
+* License Activation
+* Server-Side License Validation (if you are using this feature)
+
+If you are using the QLM License Wizard, you will need to regenerate the XML Settings file that is used as input to the wizard. The XML Settings file can be generated from the Protect Your Application wizard. To configure the XML Settings file to connect to the Disaster Recovery Server, you must set the QlmLicenseServerUrl property to the URL of the Disaster Recovery Server.
+
 
 
 
