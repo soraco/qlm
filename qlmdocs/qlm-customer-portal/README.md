@@ -4,13 +4,10 @@ As of QLM v14.1, you can provide your customers access to a customer portal that
 
 &#x20;You can view a demo of the Customer Portal [here](https://qlm3.net/qlmdemov15/qlmcustomerportal/qlm-portal-app). Use the following credentials to login or login with a Facebook, Google or Azure account.
 
-User: qlmdemo
-
-Password: qlmweb30!
+* User: qlmdemo
+* Password: qlmweb30!
 
 &#x20;The QLM Customer Portal is only available to customers who purchased the QLM Portal. You can create up to 100 Customer User Accounts. To create additional Customer User Accounts, you need to [purchase Customer User Account ](https://soraco.co/product/qlm-customer-user-account-sub/)batches.
-
-
 
 ### Login
 
