@@ -1,12 +1,16 @@
-# ☁ QLM Customer Portal
+# ☁️ QLM Customer Portal
 
-As of QLM v14.1, you can provide your customers access to a customer portal that allows them to manage their licenses and users. The QLM Customer Portal is only available to customers who purchased the QLM Portal.
+As of QLM v14.1, you can provide your customers access to a customer portal that allows them to manage their licenses and users.
 
 &#x20;You can view a demo of the Customer Portal [here](https://qlm3.net/qlmdemov15/qlmcustomerportal/qlm-portal-app). Use the following credentials to login or login with a Facebook, Google or Azure account.
 
 User: qlmdemo
 
 Password: qlmweb30!
+
+&#x20;The QLM Customer Portal is only available to customers who purchased the QLM Portal. You can create up to 100 Customer User Accounts. To create additional Customer User Accounts, you need to [purchase Customer User Account ](https://soraco.co/product/qlm-customer-user-account-sub/)batches.
+
+
 
 ### Login
 
@@ -17,7 +21,7 @@ A customer can log in to the QLM Customer Portal using one of 4 methods:
 * A Google account that has the same email address as a QLM customer
 * An Azure AD account that has the same email address as a QLM customer
 
-![mceclip5.png](https://support.soraco.co/hc/article\_attachments/360062698691/mceclip5.png)
+![mceclip5.png](https://support.soraco.co/hc/article_attachments/360062698691/mceclip5.png)
 
 ### Organizations and license access
 
@@ -25,7 +29,7 @@ If the user that logs in is the primary or secondary contact of an organization,
 
 If the user that logs in is not the primary or secondary contact of an organization or does not belong to an organization, the user can manage all license keys associated with his/her email.
 
-![mceclip4.png](https://support.soraco.co/hc/article\_attachments/360062698671/mceclip4.png)
+![mceclip4.png](https://support.soraco.co/hc/article_attachments/360062698671/mceclip4.png)
 
 ### License Management
 
@@ -35,7 +39,7 @@ A user that logs in can perform the following operation on licenses:
 * Deactivate a key
 * View release notes and download the latest eligible update
 
-![mceclip0.png](https://support.soraco.co/hc/article\_attachments/360062698571/mceclip0.png)
+![mceclip0.png](https://support.soraco.co/hc/article_attachments/360062698571/mceclip0.png)
 
 ### User Management
 
@@ -49,7 +53,7 @@ If the user that logs in is not the primary or secondary contact of an organizat
 
 * Edit a user
 
-![mceclip3.png](https://support.soraco.co/hc/article\_attachments/360062522892/mceclip3.png)
+![mceclip3.png](https://support.soraco.co/hc/article_attachments/360062522892/mceclip3.png)
 
 ### Additional Resources
 
