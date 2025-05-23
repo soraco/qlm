@@ -20,12 +20,23 @@ Your options are:
 2. Update your computer's registry as follows:
    1. Launch regedit
    2. Go to: HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.30319
-   3. Add a new DWORD (32 bit) value named `SchUseStrongCrypto` and set its value to `1`.
+   3. Add a new DWORD (32 bit) value named SchUseStrongCrypto and set its value to `1`.
    4. Go to: HKEY\_LOCAL\_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.30319
-   5. Add a new DWORD (32 bit) value named `SchUseStrongCrypto` and set its value to `1`.
+   5. Add a new DWORD (32 bit) value named SchUseStrongCrypto and set its value to `1`.
    6. Reboot your computer
 
 ### Apps running .NET Framework version 4.52
+
+#### Without Code Changes
+
+If you cannot change your code, you can modify the registry on the customer's computer to add support for TLS 1.2. To do, you must some registry entries on the customer's computer and then reboot it.
+
+To create the registry entries, you can run the following command in a Windows Command Prompt running with Administrative Privileges (Run As Administrator):
+
+* reg add "HKLM\SOFTWARE\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG\_DWORD /d 1 /f
+* reg add "HKLM\SOFTWARE\Wow6432Node\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG\_DWORD /d 1 /f
+
+#### With Code Changes
 
 If your application is using a .NET Framework 4.52 , you can explicitly add the following line of code to your application (C#) to enable support for TLS 1.2:
 
