@@ -29,12 +29,13 @@ Your options are:
 
 #### Without Code Changes
 
-If you cannot change your code, you can modify the registry on the customer's computer to add support for TLS 1.2. To do, you must some registry entries on the customer's computer and then reboot it.
+If you cannot change your code, you can modify the registry on the customer's computer to add support for TLS 1.2.&#x20;
 
 To create the registry entries, you can run the following command in a Windows Command Prompt running with Administrative Privileges (Run As Administrator):
 
 * reg add "HKLM\SOFTWARE\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG\_DWORD /d 1 /f
 * reg add "HKLM\SOFTWARE\Wow6432Node\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG\_DWORD /d 1 /f
+* Reboot the computer
 
 #### With Code Changes
 
