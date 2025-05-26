@@ -4,7 +4,7 @@
 
 QLM v18 was released on January 26, 2024. Note that our major releases are not loaded with a massive amount of new features. Features are added gradually throughout the year and released when they are ready. To learn more about our release process, [click here](https://docs.soraco.co/docs/blog/iterative-releases).
 
-\-> [Latest Version Release Notes](https://soraco.co/products/qlm/ReleaseNotes.html)
+-> [Latest Version Release Notes](https://soraco.co/products/qlm/ReleaseNotes.html)
 
 ### Important Changes in v18 <a href="#h_01h95qq4d75t05j62drs5q0gz6" id="h_01h95qq4d75t05j62drs5q0gz6"></a>
 
@@ -23,7 +23,7 @@ QLM v18 was released on January 26, 2024. Note that our major releases are not l
 ### New Requirements
 
 * The minimum requirement for .NET 4 is .NET 4.62.
-* The QLM Management Console now requires .NET 8.
+* The QLM Management Console now requires .NET 8 (requires Windows 10 or higher).
 * The QLM Management Console and the QLM Portal now reference DevExpress 23.2.3.
 
 ### Documentation

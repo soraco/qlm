@@ -19,7 +19,7 @@ QLM v19 was released on January 15, 2025. Note that our major releases are not l
 ### New Requirements
 
 * The minimum requirement for .NET 4 is .NET 4.62.
-* The QLM Management Console now requires .NET 9.
+* The QLM Management Console now requires .NET 9 (requires Windows 10 or higher).
 * The QLM Management Console and the QLM Portal now reference DevExpress 24.2.3.
 
 ### Documentation
