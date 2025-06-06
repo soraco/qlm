@@ -8,9 +8,9 @@ This can impact you at two levels:
 
 * If you are using an older version of the QLM Management Console prior to QLM v11
 * If your application is using .NET Framework 4.52 and your QLM License Server is hosted by Soraco Technologies.
-* If your application is using .NET Framework < 4.52 and your QLM License Server is hosted&#x20;
+* If your application is using .NET Framework < 4.52 and your QLM License Server is hosted by Soraco Technologies.
 
-### Older versions of the QLM Mangement Console
+### Older versions of the QLM Management Console
 
 If you are using a QLM version prior to v11, connection to the QLM License Server will most likely fail.&#x20;
 
