@@ -672,7 +672,7 @@
         * [ActivateLicenseForUserEx](api-reference/qlmlicense/application-methods/activatelicenseforuserex.md)
         * [ActivateLicenseForUserEx2](api-reference/qlmlicense/application-methods/activatelicenseforuserex2.md)
         * [ActivateLicenseForUserEx3](api-reference/qlmlicense/application-methods/activatelicenseforuserex3.md)
-        * [ActivateLicenseForUserEx4](api-reference/.net-api/qlmlicense/application-methods/activatelicenseforuserex4.md)
+        * [ActivateLicenseForUserEx4](api-reference/.net-api/qlmlicense/application-methods/activatelicenseforuserex3-1.md)
         * [AddUser](api-reference/qlmlicense/application-methods/adduser.md)
         * [AddUserEx](api-reference/qlmlicense/application-methods/adduserex.md)
         * [AddUserEx2](api-reference/qlmlicense/application-methods/adduserex2.md)

@@ -4,7 +4,7 @@ QLM can enforce that product properties are set to the expected value when a lic
 
 To enforce product properties when using the QLM License Wizard, you must set the QlmEnforcedProductProperties property to the value of the product properties to enforce.
 
-To enforce product properties when using the QLM API, you must use the [ActivateLicenseForUserEx4 ](../../api-reference/.net-api/qlmlicense/application-methods/activatelicenseforuserex4.md)API and set the enforceProductProperties argument to the value of the product properties to enforce.
+To enforce product properties when using the QLM API, you must use the [ActivateLicenseForUserEx4 ](../../api-reference/.net-api/qlmlicense/application-methods/activatelicenseforuserex3-1.md)API and set the enforceProductProperties argument to the value of the product properties to enforce.
 
 The syntax for setting product properties is:
 

@@ -10,9 +10,11 @@ When a user starts the application and checks out a floating license, the licens
 
 If an application crashes before the license is checked in, the Activation Count is not decremented which results in an "orphaned" license. To address this use case, you should call the [ProcessOrphanedInstances ](../api-reference/iqlmcloudfloatinglicensehelper/methods/processorphanedinstances.md)API from within your application to synchronize the number of running instances of your application with the value of the ActivationCount stored on the server.
 
-Activations from the QLM License Wizard can now be configured to increment the Activation Count. A new property called QlmIncrementActivationCount controls the behavior of the QLM License Wizard when a license is activated from within the wizard. The recommended setting is "NonCloudLicenses". This value increments the activation count when the license key is not a cloud-based floating license.
+If you use the QLM API to activate a license, you can specify if the activation process should increment the activation count by setting the incrementActivationCount argument in [ActivateLicenseForUserEx4](../api-reference/.net-api/qlmlicense/application-methods/activatelicenseforuserex3-1.md).
 
-![](https://support.soraco.co/hc/article\_attachments/14226671835284)
+Activations from the QLM License Wizard can be configured to increment the Activation Count. A new property called QlmIncrementActivationCount controls the behavior of the QLM License Wizard when a license is activated from within the wizard. The recommended setting is "NonCloudLicenses". This value increments the activation count when the license key is not a cloud-based floating license.
+
+![](https://support.soraco.co/hc/article_attachments/14226671835284)
 
 QLM v16 or earlier
 
