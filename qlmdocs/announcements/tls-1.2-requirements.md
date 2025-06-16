@@ -26,7 +26,7 @@ Your options are:
 
 ### Your application
 
-1. If your application was built using QLM v11.1.18192.2 or later, you are not impacted by this change.
+1. If your application was built using QLM v11.1.18192.2 or later, you are not impacted by this change. To identify which version of QLM your application uses, check the version of QlmLicenseLib.dll that is deployed with your application.
 2. If your application was built with QLM 6.2 or higher, you will need to apply one of the patches below to enable your application to connect to the License Server
    1.  Without Code Changes
 
