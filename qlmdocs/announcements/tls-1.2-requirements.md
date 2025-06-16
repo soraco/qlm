@@ -26,7 +26,7 @@ If you are using QLM < 6.2 , connection to the QLM License Server will fail. You
 ### Your application
 
 1. If your application was built using QLM v11.1.18192.2 or later, you are not impacted by this change. To identify which version of QLM your application uses, check the version of QlmLicenseLib.dll that is deployed with your application.
-2. If your application was built with QLM 6.2 or higher, you will need to apply one of the patches below to enable your application to connect to the License Server
+2. If your application was built using QLM ≥ 6.2 or < 11.1.18192.2, you will need to apply one of the patches below to enable your application to connect to the License Server
    1.  Without Code Changes
 
        If you cannot change your code, you can modify the registry on the customer's computer to add support for TLS 1.2.&#x20;
