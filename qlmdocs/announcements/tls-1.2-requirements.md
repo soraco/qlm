@@ -11,18 +11,17 @@ This can impact you at two levels:
 
 ### QLM Management Console
 
-If you are using QLM < 11.1.18192.2, connection to the QLM License Server will fail.&#x20;
+If you are using QLM < 11.1.18192.2 and ≥ 6.2, connection to the QLM License Server will fail.&#x20;
 
 Your options are:
 
 1. Upgrade to the latest version of QLM (if you did not purchase a maintenance plan, you will need to purchase a subscription to the latest version of QLM).
-2. Update your computer's registry as follows:
-   1. Launch regedit
-   2. Go to: HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.30319
-   3. Add a new DWORD (32 bit) value named SchUseStrongCrypto and set its value to `1`.
-   4. Go to: HKEY\_LOCAL\_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.30319
-   5. Add a new DWORD (32 bit) value named SchUseStrongCrypto and set its value to `1`.
-   6. Reboot your computer
+2. Update your computer's registry to enable support for TLS 1.2.  To create the registry entries, you can run the following command in a Windows Command Prompt running with Administrative Privileges (Run As Administrator):
+   1. reg add "HKLM\SOFTWARE\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG\_DWORD /d 1 /f
+   2. reg add "HKLM\SOFTWARE\Wow6432Node\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG\_DWORD /d 1 /f
+   3. Reboot the computer
+
+If you are using QLM < 6.2 , connection to the QLM License Server will fail. You will need to upgrade to a more recent version of QLM.
 
 ### Your application
 
