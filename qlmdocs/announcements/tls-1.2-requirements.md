@@ -11,7 +11,7 @@ This can impact you at two levels:
 
 ### QLM Management Console
 
-If you are using QLM < 11.1.18192.2 and ≥ 6.2, connection to the QLM License Server will fail.&#x20;
+If you are using QLM ≥ 6.2 and < 11.1.18192.2, connection to the QLM License Server will fail.&#x20;
 
 Your options are:
 
