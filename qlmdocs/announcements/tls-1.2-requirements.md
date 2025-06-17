@@ -41,7 +41,7 @@ To identify which version of QLM your application uses, check the version of Qlm
           You can explicitly add the following line of code to your application (C#) to enable support for TLS 1.2:
 
           ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-3. If your application was built using QLM ≥ 11.1.18192.2, you are not impacted by this change. How to test your application&#x20;
+3. If your application was built using QLM ≥ 11.1.18192.2, you are not impacted by this change.&#x20;
 
 #### How to test your application
 
