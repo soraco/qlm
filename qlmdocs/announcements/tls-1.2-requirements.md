@@ -18,27 +18,30 @@ This can impact you at two levels:
     * reg add "HKLM\SOFTWARE\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG\_DWORD /d 1 /f
     * reg add "HKLM\SOFTWARE\Wow6432Node\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG\_DWORD /d 1 /f
     * Reboot the computer
+* If you are using QLM ≥ 11.1.18192.2, you are not impacted by this change.
 
 ### Your application
 
-1. If your application was built with QLM 6.1 or earlier, you will need to upgrade your application to a more recent version of QLM.
-2. If your application was built using QLM ≥ 6.2 and < 11.1.18192.2, you will need to apply one of the patches below to enable your application to connect to the License Server
-   1.  Without Code Changes
+To identify which version of QLM your application uses, check the version of QlmLicenseLib.dll that is deployed with your application.
 
-       If you cannot change your code, you can modify the registry on the customer's computer to add support for TLS 1.2.&#x20;
+1. If your application was built with QLM < 6.2, you will need to upgrade your application to a more recent version of QLM.
+2. If your application was built using QLM ≥ 6.2 and < 11.1.18192.2, your options are:
+   1. Upgrade to the latest version of QLM (if you did not purchase a maintenance plan, you will need to purchase a subscription to the latest version of QLM).
+   2. Apply one of the patches below to enable your application to connect to the License Server:
+      1.  Without Code Changes
 
-       1. To create the registry entries, you can run the following command in a Windows Command Prompt running with Administrative Privileges (Run As Administrator):
-       2. reg add "HKLM\SOFTWARE\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG\_DWORD /d 1 /f
-       3. reg add "HKLM\SOFTWARE\Wow6432Node\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG\_DWORD /d 1 /f
-       4. Reboot the computer
-   2.  With Code Changes (for .net apps only)
+          You can modify the registry on the customer's computer to add support for TLS 1.2.&#x20;
 
-       You can explicitly add the following line of code to your application (C#) to enable support for TLS 1.2:
+          1. To create the registry entries, you can run the following command in a Windows Command Prompt running with Administrative Privileges (Run As Administrator):
+          2. reg add "HKLM\SOFTWARE\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG\_DWORD /d 1 /f
+          3. reg add "HKLM\SOFTWARE\Wow6432Node\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG\_DWORD /d 1 /f
+          4. Reboot the computer
+      2.  With Code Changes (for .net apps only)
 
-       ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-3. If your application was built using QLM v11.1.18192.2 or later, you are not impacted by this change. To identify which version of QLM your application uses, check the version of QlmLicenseLib.dll that is deployed with your application.
+          You can explicitly add the following line of code to your application (C#) to enable support for TLS 1.2:
 
-### How to test your application&#x20;
+          ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+3. If your application was built using QLM ≥ 11.1.18192.2, you are not impacted by this change. How to test your application&#x20;
 
 To test whether your application will work with a server that has TLS 1/1.1 disabled, you can connect your application to the QLM Disaster Recovery Server. When you subscribed to the QLM License Server Hosting service, you were provided with a URL to your QLM Disaster Recovery Server.&#x20;
 
