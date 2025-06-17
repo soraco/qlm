@@ -11,21 +11,17 @@ This can impact you at two levels:
 
 ### QLM Management Console
 
-If you are using QLM ≥ 6.2 and < 11.1.18192.2, the QLM Management Console will fail to connect to the QLM License Server.&#x20;
-
-Your options are:
-
-1. Upgrade to the latest version of QLM (if you did not purchase a maintenance plan, you will need to purchase a subscription to the latest version of QLM).
-2. Update your computer's registry to enable support for TLS 1.2.  To create the registry entries, you can run the following command in a Windows Command Prompt running with Administrative Privileges (Run As Administrator):
-   1. reg add "HKLM\SOFTWARE\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG\_DWORD /d 1 /f
-   2. reg add "HKLM\SOFTWARE\Wow6432Node\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG\_DWORD /d 1 /f
-   3. Reboot the computer
-
-If you are using QLM < 6.2 , connection to the QLM License Server will fail. You will need to upgrade to a more recent version of QLM.
+* If you are using QLM < 6.2 , connection to the QLM License Server will fail. You will need to upgrade to a more recent version of QLM.
+* If you are using QLM ≥ 6.2 and < 11.1.18192.2, the QLM Management Console will fail to connect to the QLM License Server. Your options are:
+  * Upgrade to the latest version of QLM (if you did not purchase a maintenance plan, you will need to purchase a subscription to the latest version of QLM).
+  * Update your computer's registry to enable support for TLS 1.2.  To create the registry entries, you can run the following command in a Windows Command Prompt running with Administrative Privileges (Run As Administrator):
+    * reg add "HKLM\SOFTWARE\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG\_DWORD /d 1 /f
+    * reg add "HKLM\SOFTWARE\Wow6432Node\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG\_DWORD /d 1 /f
+    * Reboot the computer
 
 ### Your application
 
-1. If your application was built using QLM v11.1.18192.2 or later, you are not impacted by this change. To identify which version of QLM your application uses, check the version of QlmLicenseLib.dll that is deployed with your application.
+1. If your application was built with QLM 6.1 or earlier, you will need to upgrade your application to a more recent version of QLM.
 2. If your application was built using QLM ≥ 6.2 and < 11.1.18192.2, you will need to apply one of the patches below to enable your application to connect to the License Server
    1.  Without Code Changes
 
@@ -40,7 +36,7 @@ If you are using QLM < 6.2 , connection to the QLM License Server will fail. You
        You can explicitly add the following line of code to your application (C#) to enable support for TLS 1.2:
 
        ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-3. If your application was built with QLM 6.1 or earlier, you will need to upgrade your application to a more recent version of QLM.
+3. If your application was built using QLM v11.1.18192.2 or later, you are not impacted by this change. To identify which version of QLM your application uses, check the version of QlmLicenseLib.dll that is deployed with your application.
 
 ### How to test your application&#x20;
 
