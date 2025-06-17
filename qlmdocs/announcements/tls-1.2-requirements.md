@@ -24,7 +24,7 @@ This can impact you at two levels:
 
 To identify which version of QLM your application uses, check the version of QlmLicenseLib.dll that is deployed with your application.
 
-1. If your application was built with QLM < 6.2, you will need to upgrade your application to a more recent version of QLM.
+1. If your application was built with QLM < 6.2, you will need to upgrade your application to a more recent version of QLM (if you did not purchase a maintenance plan, you will need to purchase a subscription to the latest version of QLM).
 2. If your application was built using QLM ≥ 6.2 and < 11.1.18192.2, your options are:
    1. Upgrade to the latest version of QLM (if you did not purchase a maintenance plan, you will need to purchase a subscription to the latest version of QLM).
    2. Apply one of the patches below to enable your application to connect to the License Server:
@@ -42,6 +42,8 @@ To identify which version of QLM your application uses, check the version of Qlm
 
           ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 3. If your application was built using QLM ≥ 11.1.18192.2, you are not impacted by this change. How to test your application&#x20;
+
+#### How to test your application
 
 To test whether your application will work with a server that has TLS 1/1.1 disabled, you can connect your application to the QLM Disaster Recovery Server. When you subscribed to the QLM License Server Hosting service, you were provided with a URL to your QLM Disaster Recovery Server.&#x20;
 
