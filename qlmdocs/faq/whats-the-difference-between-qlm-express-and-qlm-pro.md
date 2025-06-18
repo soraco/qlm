@@ -1,4 +1,4 @@
-# What's the difference between QLM Express and QLM Pro
+# Differences between QLM Express and QLM Pro
 
 One of the fundamental differences between QLM Express and QLM Pro is that Express does not work with a License Server. License Keys created in QLM Express are therefore not stored in a database nor tracked.
 
@@ -14,16 +14,20 @@ The workflow for QLM Express is the following:
 
 With QLM Pro, the process described above is fully automated and requires no manual procedure.
 
-Since QLM Express does not work with a License Server, there are several limitations that you should be aware of:
+Since QLM Express does not work with a License Server, there are several limitations that you should be aware of. The following is a list of some of the features thare nt available in QLM Express:
 
+* You need to track your customers and License Keys in Excel (or a similar tool).
+* You can only protect Windows desktop applications. You cannot protect Java, JavaScript, Mac OS/X, iOS, Android, or any other mobile device.
 * When transferring a license to another computer, there's no way to determine if the user is no longer using your application on the original system.
 * There is no way to revoke a license.
-* You cannot integrate QLM Express with an e-commerce provider
-* Scheduled Tasks are not&#x20;
+* Scheduled Tasks
 * Email framework
 * Webhooks
-* You need to track your customers and License Keys in Excel (or a similar tool).
-* You can only protect Windows applications. You cannot protect Java, Javascript, Mac OS/X, iOS, Android, or any other mobile device.
+* Product Properties&#x20;
+* Audit Trail&#x20;
+* 3rd party integration  (such as e-commerce providers)
+
+
 
 For a detailed side-by-side comparison, [click here](https://soraco.co/quick-license-manager/quick-license-manager-features/).
 
