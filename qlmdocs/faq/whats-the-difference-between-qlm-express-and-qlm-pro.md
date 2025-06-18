@@ -14,7 +14,7 @@ The workflow for QLM Express is the following:
 
 With QLM Pro, the process described above is fully automated and requires no manual procedure.
 
-Since QLM Express does not work with a License Server, there are several limitations that you should be aware of. The following is a list of some of the features thare nt available in QLM Express:
+Since QLM Express does not work with a License Server, there are several limitations that you should be aware of. The following is a list of some of the features that are not available in QLM Express:
 
 * You need to track your customers and License Keys in Excel (or a similar tool).
 * You can only protect Windows desktop applications. You cannot protect Java, JavaScript, Mac OS/X, iOS, Android, or any other mobile device.
