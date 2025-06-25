@@ -10,8 +10,9 @@ Note that to call this function, you must:
 
 ```csharp
 void DeleteLicense (string webServiceUrl, string activationKey, 
-                    string computerID, bool multipleActivationsKey, 
-                    bool historyTable, out string response)
+                    string computerID, string computerKey, 
+                    bool multipleActivationsKey, bool historyTable, 
+                    out string response)
 ```
 
 ### Parameters
@@ -21,6 +22,7 @@ void DeleteLicense (string webServiceUrl, string activationKey,
 | webServiceUrl          | string | URL to the QLM License Server.                                                                                                                |
 | activationKey          | string | the license key to delete                                                                                                                     |
 | computerID             | string | the computer ID to delete. The computerID is optional if multipleActivationsKey is false.                                                     |
+| computerKey            | string | the computerKey being deleted                                                                                                                 |
 | multipleActivationsKey |  bool  | set to true if this key is a multiple activations key. The Delete operates then on the ActivationLog table. The computerID must be specified. |
 | historyTable           |  bool  | set to true if you want to delete licenses from the history table where all released licenses are backed up.                                  |
 | response               | string | XML fragment containing the result of the call.                                                                                               |
