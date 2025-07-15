@@ -7,9 +7,25 @@ The SQL script will update the compatibility level if it does not meet our miniu
 ```sql
 -- Update the db name (qlm_db) below as needed
 
+DECLARE @DatabaseName NVARCHAR(128) = 'qlm_db';
+DECLARE @CurrentLevel INT;
+
+SELECT @CurrentLevel = compatibility_level
+FROM sys.databases
+WHERE name = @DatabaseName;
+
+IF @CurrentLevel IS NULL
+BEGIN
+    PRINT 'Database not found.';
+    RETURN;
+END
+
 IF @CurrentLevel < 130
 BEGIN
-    ALTER DATABASE [qlm_db] SET COMPATIBILITY_LEVEL = 130;
+    DECLARE @Sql NVARCHAR(MAX) = 
+        'ALTER DATABASE [' + @DatabaseName + '] SET COMPATIBILITY_LEVEL = 130;';
+    
+    EXEC sp_executesql @Sql;
     PRINT 'Compatibility level updated to 130.';
 END
 ELSE
