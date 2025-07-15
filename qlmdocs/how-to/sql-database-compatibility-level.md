@@ -2,7 +2,7 @@
 
 As of QLM 19.1, QLM requires that the database compatibility level be 130 or higher.
 
-The SQL script will update the compatibility level if it does not meet our miniumum requirement:
+The SQL script will update the compatibility level if it does not meet our minimum requirement:
 
 ```sql
 -- Update the db name (qlm_db) below as needed
