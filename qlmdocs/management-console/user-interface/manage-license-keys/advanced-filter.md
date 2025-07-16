@@ -17,6 +17,4 @@ Below is a description of the options available to customize your search:
 
 
 
-
-
-![](../../../.gitbook/assets/2025-07-16_10-43-03.png)&#x20;
+<figure><img src="../../../.gitbook/assets/2025-07-16_10-43-03 (1).png" alt=""><figcaption></figcaption></figure>
