@@ -67,6 +67,7 @@
       * [Create License Keys](management-console/user-interface/manage-license-keys/create-license-keys/README.md)
         * [Settings Templates](management-console/user-interface/manage-license-keys/create-license-keys/settings-templates.md)
       * [Activate License Keys](management-console/user-interface/manage-license-keys/activate-license-keys.md)
+      * [Advanced Filter](management-console/user-interface/manage-license-keys/advanced-filter.md)
       * [Export License Keys](management-console/user-interface/manage-license-keys/export-license-keys.md)
       * [Fraud Detection](management-console/user-interface/manage-license-keys/fraud-detection/README.md)
         * [Illegal Computers](management-console/user-interface/manage-license-keys/fraud-detection/illegal-computers.md)
