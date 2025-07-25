@@ -95,11 +95,11 @@ Note that if you are not using 2-Step authentication, you might need to configur
 * In the "Connected Apps & Sites" section, locate the "Allow less secure apps" option
 * Set this option to ON.
 
-&#x20;
 
-![](https://support.soraco.co/hc/article_attachments/115016520143/mceclip0.png) ![](https://support.soraco.co/hc/article_attachments/115016520163/mceclip1.png)
 
-&#x20;
+<figure><img src="../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;&#x20;
 
 #### SMTP Settings for Gmail - Option 2:
 
