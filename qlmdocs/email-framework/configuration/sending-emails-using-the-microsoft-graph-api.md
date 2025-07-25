@@ -8,11 +8,12 @@ Version: 15.0.21274.1
 
 ### Overview
 
-QLM can now send emails using 3 different methods:
+QLM can send emails using 4 different methods:
 
 * Microsoft Outlook (from the client only)
 * SMTP server (from the client and the server)
 * Microsoft Graph API (from the client and the server).
+* Gmail API (from the client and the server).
 
 This article describes how to configure QLM to send emails using the Microsoft Graph API (MGA). The MGA is the preferred option when you use Azure / Office 365 accounts for sending emails using multi-factor authentication (MFA).
 
@@ -40,7 +41,7 @@ To allow an application such as QLM to send emails via MGA, you must create an A
 * Expand the Mail section and select "Mail.Send" then click Add permissions
 * In the Configured Permissions section, click "Grant admin consent for xxx"
 
-![mceclip0.png](https://support.soraco.co/hc/article\_attachments/4407768960660)
+![mceclip0.png](https://support.soraco.co/hc/article_attachments/4407768960660)
 
 ### QLM Management Console Configuration
 
@@ -55,7 +56,7 @@ To configure the QLM Management Console to send emails using MGA, follow the ste
 * Click Test to verify that all the settings are correct
 * Click Ok
 
-![mceclip1.png](https://support.soraco.co/hc/article\_attachments/4407763530644)
+![mceclip1.png](https://support.soraco.co/hc/article_attachments/4407763530644)
 
 If you use Scheduled Tasks, you must configure each scheduled task to use the Microsoft Graph API to send emails.
 
@@ -73,4 +74,4 @@ To configure the QLM Customer Site and the QLM Portal to send emails using MGA, 
 * Then in the "options" section, locate the emailProvider property and set its value to "Microsoft Graph API"
 * Click Ok
 
-![mceclip0.png](https://support.soraco.co/hc/article\_attachments/4407853380244)
+![mceclip0.png](https://support.soraco.co/hc/article_attachments/4407853380244)

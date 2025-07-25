@@ -115,7 +115,7 @@
 * [📧 Email Framework](email-framework/README.md)
   * [Configuration](email-framework/configuration/README.md)
     * [How to use SMTP to send emails](email-framework/configuration/how-to-use-smtp-to-send-emails.md)
-    * [How to configure QLM to send mail using SMTP](email-framework/configuration/how-to-configure-qlm-to-send-mail-using-smtp.md)
+    * [Sending emails using SMTP](email-framework/configuration/how-to-configure-qlm-to-send-mail-using-smtp.md)
     * [Sending emails using the Microsoft Graph API](email-framework/configuration/sending-emails-using-the-microsoft-graph-api.md)
     * [Sending emails using the Gmail API](email-framework/configuration/sending-emails-using-the-gmail-api/README.md)
       * [How to create a Gmail OAuth Client ID](email-framework/configuration/sending-emails-using-the-gmail-api/how-to-create-a-gmail-oauth-client-id.md)

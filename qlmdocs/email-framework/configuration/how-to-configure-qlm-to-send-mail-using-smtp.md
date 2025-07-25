@@ -1,23 +1,37 @@
-# How to configure QLM to send mail using SMTP
+# Sending emails using SMTP
 
-QLM sends emails from two different locations: (a) from the QLM Management console and (b) from the License Server. You can independently configure the SMTP Server settings for QLM Management console and for the License Server.&#x20;
+Overview
+
+QLM can send emails using 4 different methods:
+
+* Microsoft Outlook (from the client only)
+* SMTP server (from the client and the server)
+* Microsoft Graph API (from the client and the server).
+* Gmail API (from the client and the server).
+
+This article describes how to configure QLM to send emails using SMTP.
 
 ### Configure the QLM Management Console to send emails using SMTP
 
-By default, the QLM Management Console will use Outlook (if installed) to send emails. To configure QLM to use SMTP to send emails.
+To configure the QLM Management Console to send emails via SMTP:
 
 * Launch the QLM Management Console
 * Go to the Manage Keys tab
-* In the Tools ribbon section, click Options
+* Click Options in the Tools section
 * Go to the SMTP Server tab
-* Check the **Use SMTP instead of Outlook** option
-* Enter all the information about your SMTP server
-* Click the Test button to send a test email and confirm that the test was successful
+* Enable SMTP
+* Enter the proper values for all the fields
+* Click the Test button to send a test email.
+* To apply the same settings to the License Server, click the ![](<../../.gitbook/assets/image (54).png>) button or check the box "Server Settings"
 * Click Ok
+
+Once SMTP setup, it will be displayed as an option in any QLM component that can send emails.
 
 &#x20;
 
 ### Configure the QLM License Server to send emails using SMTP
+
+To configure the QLM License Server to use a different SMTP Server than the QLM Management Console:
 
 * Launch the QLM Management Console
 * Go to the Manage Keys tab
@@ -83,7 +97,7 @@ Note that if you are not using 2-Step authentication, you might need to configur
 
 &#x20;
 
-![](https://support.soraco.co/hc/article\_attachments/115016520143/mceclip0.png) ![](https://support.soraco.co/hc/article\_attachments/115016520163/mceclip1.png)
+![](https://support.soraco.co/hc/article_attachments/115016520143/mceclip0.png) ![](https://support.soraco.co/hc/article_attachments/115016520163/mceclip1.png)
 
 &#x20;
 
