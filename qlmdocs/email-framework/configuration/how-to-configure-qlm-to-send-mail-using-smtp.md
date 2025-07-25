@@ -95,9 +95,9 @@ Note that if you are not using 2-Step authentication, you might need to configur
 * In the "Connected Apps & Sites" section, locate the "Allow less secure apps" option
 * Set this option to ON.
 
+<div align="left"><figure><img src="../../.gitbook/assets/image.png" alt="" width="239"><figcaption></figcaption></figure></div>
 
-
-<figure><img src="../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+<div align="left"><figure><img src="../../.gitbook/assets/image (55).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
 &#x20;&#x20;
 
