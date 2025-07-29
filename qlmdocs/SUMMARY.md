@@ -584,7 +584,7 @@
         * [EServerErrorCode](api-reference/qlmlicense/enums/eservererrorcode.md)
         * [EStoreKeysOptions](api-reference/qlmlicense/enums/estorekeysoptions.md)
         * [EStoreKeysTo](api-reference/qlmlicense/enums/estorekeysto.md)
-        * [ExtendedLicenseInformation](api-reference/.net-api/qlmlicense/enums/estorekeysto-1.md)
+        * [ExtendedLicenseInformation](api-reference/.net-api/qlmlicense/enums/extendedlicenseinformation.md)
       * [Properties](api-reference/qlmlicense/properties.md)
         * [DateTamperingGracePeriod](api-reference/.net-api/qlmlicense/properties/datetamperinggraceperiod.md)
         * [ELicenseStatus](api-reference/.net-api/qlmlicense/properties/elicensestatus.md)
