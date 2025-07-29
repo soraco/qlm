@@ -20,7 +20,7 @@ Retrieves information about an Activation Key.
 | ------------- | :------------------------------------------------------------------: | -------------------------------------------------------------- |
 | webServiceUrl |                                string                                | URL to the QLM License Server                                  |
 | activationKey |                                string                                | the license key to activate                                    |
-| computerID    |                                string                                | cComputer uUnique identifier                                   |
+| computerID    |                                string                                | computer unique identifier                                     |
 | historyTable  |                                 bool                                 | search for the activation key in the history table             |
 | exLicenseInfo | [ExtendedLicenseInformation](../enums/extendedlicenseinformation.md) | specifies the level of information to retrieve from the server |
 | dataSet       |                              out string                              | data set returned by the server                                |
