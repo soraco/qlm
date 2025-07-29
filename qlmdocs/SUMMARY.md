@@ -695,6 +695,7 @@
         * [GetLatestVersion](api-reference/qlmlicense/application-methods/getlatestversion.md)
         * [GetLicenseFile](api-reference/qlmlicense/application-methods/getlicensefile.md)
         * [GetLicenseInfo](api-reference/qlmlicense/application-methods/getlicenseinfo.md)
+        * [GetLicenseInfoEx](api-reference/.net-api/qlmlicense/application-methods/getlicenseinfoex.md)
         * [GetMaintenancePlanRenewalDate](api-reference/qlmlicense/application-methods/getmaintenanceplanrenewaldate.md)
         * [GetMaintenancePlanRenewalDateByComputerKey](api-reference/qlmlicense/application-methods/getmaintenanceplanrenewaldatebycomputerkey.md)
         * [GetOrder](api-reference/qlmlicense/application-methods/getorder.md)
