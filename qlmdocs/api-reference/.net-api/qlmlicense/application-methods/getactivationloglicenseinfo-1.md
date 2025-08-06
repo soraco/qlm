@@ -42,5 +42,6 @@ ILicenseInfo li = license.GetActivationLogLicenseInfo(webServiceUrl, "A2GM0-50K0
 if (li != null)
 {
     string clientVersion = li.ClientVersion;
+    int activationCount = li.ActivationCount;
 }
 ```
