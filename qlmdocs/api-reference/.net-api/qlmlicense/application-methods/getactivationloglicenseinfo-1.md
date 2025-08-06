@@ -1,13 +1,10 @@
----
-coverY: 0
----
-
 # GetActivationLogLicenseInfo
 
 ### Description
 
-Retrieves information about an Activation Key.
+Retrieves information about the activation of a multiple activations license key, for a specific computer.
 
+{% code overflow="wrap" %}
 ```csharp
   ILicenseInfo GetActivationLogLicenseInfo(string webServiceUrl, 
                                  string activationKey, 
@@ -15,6 +12,7 @@ Retrieves information about an Activation Key.
                                  out string dataSet, 
                                  out string response)
 ```
+{% endcode %}
 
 ### Parameters
 
