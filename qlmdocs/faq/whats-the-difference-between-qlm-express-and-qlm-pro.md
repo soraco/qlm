@@ -26,6 +26,7 @@ Since QLM Express does not work with a License Server, there are several limitat
 * Product Properties&#x20;
 * Audit Trail&#x20;
 * 3rd party integration  (such as e-commerce providers)
+* Any API that connects to the license server will fail if you have a QLM Expess license.
 
 
 
