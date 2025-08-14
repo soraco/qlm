@@ -21,5 +21,5 @@ IncludeInMailList <> 0
 
 Finally, to configure a customer to not receive email notifications, edit the customer information and uncheck the "Mail List" field.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Customer Information</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Customer Information</p></figcaption></figure>
 
