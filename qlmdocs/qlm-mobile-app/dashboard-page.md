@@ -9,5 +9,5 @@ The list of searches displayed on the dashboard can be augmented with your searc
 * Click the Search menu item
 * Click Custom Searches
 * Expand the searches
-* Click the Add to dashborad checkbox next to each search that you would like to add to the dashboard.
+* Click the _Add to dashboard_ checkbox next to each search that you would like to add to the dashboard.
 

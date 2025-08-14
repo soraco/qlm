@@ -24,7 +24,7 @@ The Getting Started Wizard helps you find the best path into QLM for a particula
 
 **Programming language:** .NET 2.0 and higher languages are directly supported by QLM, as are Visual Basic 6.0, C++, Excel, and Access. Other languages can also make use of the QLM API if they are capable of interfacing with .NET assemblies, COM objects (ActiveX), or native DLLs.
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Application type:** The wizard offers “Standalone Windows application”, “Web App”, and “Windows Service” as configured choices. If your application does not fall into one of these categories (“Other”), contact us for advice specific to your situation.
 

@@ -1,5 +1,7 @@
 # Settings Page
 
+### License Server Configuration
+
 To connect your QLM Mobile App to your QLM License Server, you must configure the URL to the QLM License Server as well at the encryption keys used to communicate with the License Server.
 
 To do so, access the settings page and set the corresponding fields.
@@ -19,8 +21,18 @@ The user would then simply launch the QLM Mobile App, click Settings then Retrie
 
 
 
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+
+
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
+### Appearance
 
+The QLM Mobile App supports 3 color themes and 3 font sizes. Select that ones that suit your needs.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+### Display Configuration
+
+Recent Days specifies the criteria for the built-in dashboard shortcut _Recent Days_.
+
+Maximum Orders: _Not currently implemented._
