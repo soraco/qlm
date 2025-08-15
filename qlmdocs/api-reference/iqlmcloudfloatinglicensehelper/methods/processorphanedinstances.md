@@ -13,3 +13,9 @@ void ProcessOrphanedInstances(int numRunningInstances);
 | Parameter           | Type | Description                                                            |
 | ------------------- | :--: | ---------------------------------------------------------------------- |
 | numRunningInstances |  int | Number of running instances of your application on the client computer |
+
+### Remarks
+
+The number of running instances can be calculated by calling QlmLicense.[GetNumberOfRunningInstances](../../qlmlicense/client-side-methods/getnumberofrunninginstances.md) which counts the number of processes currently running on the system with the same process name.
+
+ProcessOrphanedInstances only processes orphans associated with the current system.
