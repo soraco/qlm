@@ -474,7 +474,7 @@
   * [How to determine the version of the License Server](faq/how-to-determine-the-version-of-the-license-server.md)
   * [Access is denied message when validating a signature](faq/access-is-denied-message-when-validating-a-signature.md)
   * [QLM v11 GDPR Support](faq/qlm-v11-gdpr-support.md)
-  * [How to create a QlmLicense object in VB6 or VBA](faq/how-to-create-a-qlmlicense-object-in-vb6-or-vba.md)
+  * [Using QlmLicense object in VB6 or VBA](faq/how-to-create-a-qlmlicense-object-in-vb6-or-vba.md)
   * [Error: Invalid column name 'xxx' in the QLM Management Console](faq/error-invalid-column-name-xxx-in-the-qlm-management-console.md)
   * [QLM License Wizard cannot read a settings file when located on a mapped drive](faq/qlm-license-wizard-cannot-read-a-settings-file-when-located-on-a-mapped-drive.md)
   * [QLM Portal - Remember User Name / Password](faq/qlm-portal-remember-user-name-password.md)
