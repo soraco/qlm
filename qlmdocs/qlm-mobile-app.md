@@ -5,7 +5,7 @@ icon: mobile
 
 # QLM Mobile App
 
-We’re thrilled to announce the launch of the QLM Mobile App — now available for download from the Apple App Store!   The QLM Mobile App brings the power of the QLM Portal to your mobile device, allowing you to manage license keys, view customer details, and stay connected with your licensing operations — wherever you are.  &#x20;
+We’re thrilled to announce the launch of the QLM Mobile App — now available for download from the [Apple App Store](https://apps.apple.com/us/app/quick-license-manager/id6749921604)!   The QLM Mobile App brings the power of the QLM Portal to your mobile device, allowing you to manage license keys, view customer details, and stay connected with your licensing operations — wherever you are.  &#x20;
 
 At the time of this release, and subject to change, the QLM Mobile App is available with your QLM Portal subscription. Each licensed QLM Portal user is entitled to install and use the QLM Mobile App on his/her phone.&#x20;
 
