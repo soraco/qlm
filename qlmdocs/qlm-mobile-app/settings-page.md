@@ -33,6 +33,6 @@ The QLM Mobile App supports 3 color themes and 3 font sizes. Select that ones th
 
 ### Display Configuration
 
-Recent Days specifies the criteria for the built-in dashboard shortcut _Recent Days_.
+Recent Days specifies the criteria for the built-in dashboard shortcuts _Recent Orders and Recent Activity_.
 
 Maximum Orders: _Not currently implemented._
