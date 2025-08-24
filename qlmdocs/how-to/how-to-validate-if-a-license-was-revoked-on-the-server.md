@@ -14,7 +14,8 @@ To revoke a license, locate the license in the Manage Keys tab, click on the Edi
 ```csharp
 public bool VerifyLicenseOnServer ()
 {
-bool ret = false;string webServiceUrl = "https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx";
+bool ret = false;
+string webServiceUrl = "https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx";
 
 string response;
 string qlmVersion = "6.0.00";
@@ -54,7 +55,8 @@ return ret;
 
 {% tab title="VB.NET" %}
 <pre class="language-vbnet" data-overflow="wrap"><code class="lang-vbnet"><strong>Public Function VerifyLicenseOnServer() As Boolean
-</strong>Dim ret As Boolean = FalseDim webServiceUrl As String = "https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx"
+</strong>Dim ret As Boolean = False
+Dim webServiceUrl As String = "https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx"
 Dim response As String = String.Empty
 Dim qlmVersion As String = "6.0.00"
 Dim storedActivationKey As String = String.Empty
