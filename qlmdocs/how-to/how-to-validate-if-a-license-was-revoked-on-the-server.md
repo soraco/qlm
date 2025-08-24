@@ -10,13 +10,11 @@ To revoke a license, locate the license in the Manage Keys tab, click on the Edi
 
 {% tabs %}
 {% tab title="C#" %}
-public bool VerifyLicenseOnServer ()\
-{\
-bool ret = false;
-
 {% code overflow="wrap" %}
 ```csharp
-string webServiceUrl = "https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx";
+public bool VerifyLicenseOnServer ()
+{
+bool ret = false;string webServiceUrl = "https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx";
 
 string response;
 string qlmVersion = "6.0.00";
@@ -49,10 +47,9 @@ if (!String.IsNullOrEmpty(storedActivationKey))
     }            
 }
 return ret;
+}
 ```
 {% endcode %}
-
-}
 {% endtab %}
 
 {% tab title="VB.NET" %}
@@ -87,46 +84,3 @@ Return ret
 End Function
 {% endtab %}
 {% endtabs %}
-
-{% code overflow="wrap" %}
-```csharp
-public bool VerifyLicenseOnServer ()
-{
-    bool ret = false;
-
-    string webServiceUrl = "https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx";
-
-    string response;
-    string qlmVersion = "6.0.00";
-    string storedActivationKey = string.Empty;
-    string storedComputerKey = string.Empty;
-    string computerID = System.Environment.MachineName;
-    string computerName = System.Environment.MachineName;
-
-
-    QLM.LicenseValidator lv = new QLM.LicenseValidator();
-    lv.QlmLicense.ReadKeys(ref storedActivationKey, ref storedComputerKey);
-
-    if (!String.IsNullOrEmpty(storedActivationKey))
-    {
-
-        if (lv.QlmLicense.IsLicenseKeyRevoked(webServiceUrl, storedActivationKey))
-        {
-            MessageBox.Show(String.Format ("License key {0} was revoked.", storedActivationKey));
-        }
-        else if (lv.QlmLicense.IsIllegalComputer(webServiceUrl, storedActivationKey, storedComputerKey, computerID, computerName, qlmVersion, out response))
-        {
-            ILicenseInfo li = new LicenseInfo();
-            string message = string.Empty;
-            lv.QlmLicense.ParseResults(response, ref li, ref message);
-            MessageBox.Show("Illegal Computer License: " + message);
-        }
-        else
-        {
-            ret = true;
-        }            
-    }
-    return ret;
-}
-```
-{% endcode %}
