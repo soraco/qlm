@@ -10,7 +10,15 @@ Note that the same steps can be used to email customers whose maintenance plan e
 * Click on the Search drop-down and select Edit Searches
 * Click on Add to add a new search
 * Set the Name to: Expiring Subscriptions (or any name you wish)
-* Set the SQL field to: SubscriptionExpiryDate > \[today\_start] And SubscriptionExpiryDate < \[today\_start+30]
+* Set the SQL field to:
+
+{% code overflow="wrap" %}
+```sql
+((SubscriptionExpiryDate > [today_start] and SubscriptionExpiryDate <[today_start+1]) OR (SubscriptionExpiryDate > [today_start+7] and SubscriptionExpiryDate <[today_start+8])) And IncludeInMailList<> 0 and Disabled=0 And LicenseModel='subscription'
+```
+{% endcode %}
+
+* The clause above sends returns subscriptions that expire in the next day and 7 days from today.
 * Since a subscription can be associated with multiple license keys, to ensure that a customer receives a single email for a given subscription, go to the Advanced tab and set the following fields:
   * Distinct Field: **ReceiptID** (this is the internal name of the SubscriptionID)
   * Unique ID Field: **LicenseID**&#x20;
