@@ -9,8 +9,8 @@ You can find the definition of an "Illegal Computer" in the QLM online help.
 To revoke a license, locate the license in the Manage Keys tab, click on the Edit button and check the "Disabled" checkbox.
 
 {% code overflow="wrap" %}
-```csharp
-public bool VerifyLicenseOnServer ()
+```vbnet
+public bool VerifyLicenseOnServer1 ()
 {
     bool ret = false;
 
