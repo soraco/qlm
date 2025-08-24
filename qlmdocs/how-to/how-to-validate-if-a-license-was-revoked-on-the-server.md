@@ -8,9 +8,89 @@ You can find the definition of an "Illegal Computer" in the QLM online help.
 
 To revoke a license, locate the license in the Manage Keys tab, click on the Edit button and check the "Disabled" checkbox.
 
+{% tabs %}
+{% tab title="C#" %}
+public bool VerifyLicenseOnServer ()\
+{\
+bool ret = false;
+
 {% code overflow="wrap" %}
-```vbnet
-public bool VerifyLicenseOnServer1 ()
+```csharp
+string webServiceUrl = "https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx";
+
+string response;
+string qlmVersion = "6.0.00";
+string storedActivationKey = string.Empty;
+string storedComputerKey = string.Empty;
+string computerID = System.Environment.MachineName;
+string computerName = System.Environment.MachineName;
+
+
+QLM.LicenseValidator lv = new QLM.LicenseValidator();
+lv.QlmLicense.ReadKeys(ref storedActivationKey, ref storedComputerKey);
+
+if (!String.IsNullOrEmpty(storedActivationKey))
+{
+
+    if (lv.QlmLicense.IsLicenseKeyRevoked(webServiceUrl, storedActivationKey))
+    {
+        MessageBox.Show(String.Format ("License key {0} was revoked.", storedActivationKey));
+    }
+    else if (lv.QlmLicense.IsIllegalComputer(webServiceUrl, storedActivationKey, storedComputerKey, computerID, computerName, qlmVersion, out response))
+    {
+        ILicenseInfo li = new LicenseInfo();
+        string message = string.Empty;
+        lv.QlmLicense.ParseResults(response, ref li, ref message);
+        MessageBox.Show("Illegal Computer License: " + message);
+    }
+    else
+    {
+        ret = true;
+    }            
+}
+return ret;
+```
+{% endcode %}
+
+}
+{% endtab %}
+
+{% tab title="VB.NET" %}
+<pre class="language-vbnet" data-overflow="wrap"><code class="lang-vbnet"><strong>Public Function VerifyLicenseOnServer() As Boolean
+</strong>Dim ret As Boolean = FalseDim webServiceUrl As String = "https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx"
+Dim response As String = String.Empty
+Dim qlmVersion As String = "6.0.00"
+Dim storedActivationKey As String = String.Empty
+Dim storedComputerKey As String = String.Empty
+Dim computerID As String = Environment.MachineName
+Dim computerName As String = Environment.MachineName
+
+Dim lv As New QLM.LicenseValidator()
+lv.QlmLicenseObject.ReadKeys(storedActivationKey, storedComputerKey)
+
+If Not String.IsNullOrEmpty(storedActivationKey) Then
+    If lv.QlmLicenseObject.IsLicenseKeyRevoked(webServiceUrl, storedActivationKey) Then
+        MessageBox.Show(String.Format("License key {0} was revoked.", storedActivationKey))
+    ElseIf lv.QlmLicenseObject.IsIllegalComputer(webServiceUrl, storedActivationKey, storedComputerKey, computerID, computerName, qlmVersion, response) Then
+        Dim li As ILicenseInfo = New LicenseInfo()
+        Dim message As String = String.Empty
+        lv.QlmLicenseObject.ParseResults(response, li, message)
+        MessageBox.Show("Illegal Computer License: " &#x26; message)
+    Else
+        ret = True
+    End If
+End If
+
+Return ret
+</code></pre>
+
+End Function
+{% endtab %}
+{% endtabs %}
+
+{% code overflow="wrap" %}
+```csharp
+public bool VerifyLicenseOnServer ()
 {
     bool ret = false;
 
