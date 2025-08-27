@@ -15,9 +15,11 @@ To generate the QR code in the QLM Management Console:
 * Click Generate QR Code
 * Copy the QR code to the clipboard and send it by email to the user of your choice.
 
-
-
 The user would then simply launch the QLM Mobile App, click Settings then Retrieve Settings from QR code. This will configure the app to connect to your License Server.
+
+One of the benefits of using the QR code is to hide sensitive information from the QLM Mobile App user. When you uncheck the User Group property _Access Server Encryption Keys_, the Communication Encryption Key and Admin Encryption Keys fields will be hidden in the QLM Mobile App. This ensures that users of the App do not have access to sensitive encryption keys.
+
+Note that in addition to scanning a QR Code, the QLM Mobile App can read a QR code from local photos.
 
 
 
