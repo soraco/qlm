@@ -4,7 +4,7 @@ The QLM Mobile App can execute two types of searches: Server Searches that you d
 
 ### Server Searches
 
-To run Server Searches, click the Server Searches tab, then select any search of your choice. You can add a shortcut to any search to the dashboard by checking the _Add to dashboard_ checkbox.
+To run Server Searches, click the Search button, go to the Server Searches tab, and select any search of your choice. You can add a dashboard shortcut to any search by checking the _Add to dashboard_ checkbox.
 
 The list of server searches displayed in the QLM Mobile App depends on the User Group that the logged in user belongs to.
 
@@ -12,7 +12,7 @@ The list of server searches displayed in the QLM Mobile App depends on the User 
 
 Local searches are created in the mobile app and can be stored on your device.
 
-To create a Local Searche:
+To create a Local Search:
 
 * Click the Local Searches tab
 * Click New Search
@@ -22,5 +22,5 @@ To create a Local Searche:
 * Enter a value in the Value field, for example: @soraco.co
 * Click Search to run the search.
 * The result will display all licenses associated with the email @soraco.co
-* After the results are displayed, click the back arrow button (bottom left) to retur to the serach definition
+* After the results are displayed, click the back arrow button (bottom left) to return to the search definition
 * To create a dashboard shortcut for this search, check the _Add to dashboard_ option.
