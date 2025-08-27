@@ -25,3 +25,5 @@ Following is a summary of the operations that can be performed in the app:
 The QLM Mobile App requires the same credentials as the QLM Portal to login. These credentials are defined in the QLM Management Console / Manage Keys / User Accounts.
 
 Similarly to the QLM Portal, the QLM Mobile App uses Role Based Access Control to determine which features are available in the Mobile App. These features are defined at the User Group level in the QLM Management Console / Manage Keys / User Groups.
+
+_Since the QLM Mobile App requires and uses the CommunicationEncryptionKey and AdminEncryptionKeys to communicate with the QLM License Server, we do not recommend that you provide it to your customers or resellers._&#x20;
