@@ -2,6 +2,7 @@
 
 * [Quick License Manager](README.md)
 * [🔊 Announcements](announcements/README.md)
+  * [QLM Mobile App](announcements/qlm-mobile-app.md)
   * [What's new in QLM v19 and upgrade procedure](announcements/whats-new-in-qlm-v19-and-upgrade-procedure.md)
   * [TLS 1.2 Requirements](announcements/tls-1.2-requirements.md)
   * [What's new in QLM v18 and upgrade procedure](announcements/whats-new-in-qlm-v18-and-upgrade-procedure.md)

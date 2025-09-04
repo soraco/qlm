@@ -6,4 +6,4 @@ To create a customer, click the _Create_ button.
 
 To edit or delete a customer, click the customer and then select Edit or Delete.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
