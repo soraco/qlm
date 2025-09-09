@@ -18,6 +18,7 @@ Make sure you NEVER  "**upload products** to the License Server" from the new sy
   * Locate the entries productsFile, queriesFile and emailTemplatesFolder
   * If the path is hardcoded for a specific user, update the path based on the new system's path
   * For example, if your user account on the old system was called "tom" if you see a path that looks like: "c:\users\tom\AppData\Roaming\Soraco\Quick License Manager\\..." and your new user account is "tommy", you should update the path to be "c:\users\tommy\AppData\Roaming\Soraco\Quick License Manager\\..."
+* Deactivate or uninstall QLM from the old system
 * Install QLM on the new system
 * Launch QLM&#x20;
 * Step through the QLM License Wizard to activate your license
@@ -34,8 +35,6 @@ Make sure you NEVER  "**upload products** to the License Server" from the new sy
 * Add your site
 * Click "Download your products from the License Server"
 * Click Ok
-
-&#x20;
 
 #### **Limitations** <a href="#h_01hbdvpw4mq4mt0y92r3svvn16" id="h_01hbdvpw4mq4mt0y92r3svvn16"></a>
 
