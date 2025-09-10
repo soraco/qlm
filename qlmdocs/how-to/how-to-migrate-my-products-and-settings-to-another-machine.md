@@ -8,6 +8,8 @@ _IMPORTANT:_
 
 Make sure you NEVER  "**upload products** to the License Server" from the new system until it has the new product definitions. If you are presented with a prompt to upload your products to the server, answer **NO or Cancel**.
 
+<figure><img src="../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+
 #### If the computer on which QLM is already installed is operational: <a href="#h_01hbdw63payjcgqfwth2fztaq0" id="h_01hbdw63payjcgqfwth2fztaq0"></a>
 
 * Make a backup of the following folder, **including subfolders**, on the old system:
