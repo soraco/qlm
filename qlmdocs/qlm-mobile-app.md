@@ -11,6 +11,8 @@ The QLM Mobile App brings the power of the QLM Portal to your mobile device, all
 
 At the time of this release, and subject to change, the QLM Mobile App is available with your QLM Portal subscription. Each licensed QLM Portal user is entitled to install and use the QLM Mobile App on his/her phone.&#x20;
 
+Watch a video tutorial [here](https://www.youtube.com/watch?v=khdCg0mUSys).
+
 #### Platform Availability
 
 * iOS
