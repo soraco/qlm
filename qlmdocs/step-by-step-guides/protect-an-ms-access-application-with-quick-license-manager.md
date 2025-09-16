@@ -135,13 +135,13 @@ To generate a license key for testing purposes:
 **IMPORTANT NOTES:**
 
 * During development, if a license is not valid, the MsAccess file will still open. When development is completed, uncomment the **Close** statement in the **ExitApp** Sub to make sure that your MsAccess file cannot be opened without a valid license key.
-* It is recommended to ship to your customer a compiled MsAccess file (ACCDE).
-* Finally, do not forget to password-protect your VBA code to protect it. To protect your VBA code:
+* Do not forget to password-protect your VBA code to protect it. To protect your VBA code:
   * In the VBA Editor, click Toos / "YourProject" Properties
   * Go to the Protection tab
   * Check "Lock project for viewing"
   * Enter a password / confirm password
   * Click OK
+* Finally, it is recommended to ship to your customer a compiled MS Access file (ACCDE).
 
 **Restrictions**
 
