@@ -24,7 +24,7 @@ Note that QLM protects the VBA code behind your Excel application. It does not p
 * C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\\.net 4.0\QlmLicenseLib.tlb
 * C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\\.net 4.0\QlmCLRHost\_x64.dll
 * C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\\.net 4.0\QlmCLRHost\_x86.dll
-* C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\\.net 4.0\QlmlicenseWizard.exe
+* C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\\.net 4.0\QlmLicenseWizard.exe
 
 6\. Open your Excel application and click Alt-F11 to launch the VBA Editor.&#x20;
 
