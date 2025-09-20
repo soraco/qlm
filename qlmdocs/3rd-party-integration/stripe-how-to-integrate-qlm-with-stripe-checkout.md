@@ -117,7 +117,7 @@ Once Stripe Checkout is enabled, enter **your** web site domain name in the Doma
 
 * In the Stripe dashboard, go to Products
 * Select your product
-* In the Prices section, for a given price, click "..." then select "Get Checkout code snippet". If you do not have a Price item, add one.&#x20;
+* In the Pricing section, for a given price, click "..." then select "Get Checkout code snippet". If you do not have a Price item, add one.&#x20;
 * In the Checkout snippet generator window, update the Success URL and Cancel URL to point to valid URLs
 * Copy the generated code and save it in a file on your desktop then publish it to your web site
 
