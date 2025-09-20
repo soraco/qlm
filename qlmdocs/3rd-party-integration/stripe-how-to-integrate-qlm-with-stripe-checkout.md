@@ -8,18 +8,18 @@ To have Stripe invoke QLM during an order, do the following in the Stripe Contro
 
 * Login to Stripe.com and go to your Dashboard
 * Click the Settings icon (gear) on the top right&#x20;
-* Click the Developers item&#x20;
-* Expand the Developers section at the bottom of your browser
+* Click the Developers item and ensure that Workbench is ON
+* Expand the Developers section at the bottom of your browser (click the ^ button)
 * Click Webhooks
 * Click "Add destination"
 * Select "Events from" Your account
 * Select an API Version
-* In the "Events to send" drop-down, select the following items:
+* In the "Events" section, select the following items:
   * For regular products
     * checkout.session.completed
   * For subscription products
     * customer.subscription.deleted
-      * invoice.payment\_succeeded
+    * invoice.payment\_succeeded
 * Click "Continue"
 * Enter a destination name such as: QLM
 *   In the Endpoint URL field, enter the URL to your QLM License Server and append the following to the URL: /QlmWebHookHandler?is\_vendor=stripe\&is\_user=\<user>\&is\_pwd=\<pwd>
