@@ -27,6 +27,17 @@ Example: https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/QlmWebHookHan
     * invoice.payment\_succeeded
 * Click "Add endpoint"
 
+### Get Your Stripe Secret Key
+
+QLM requires the Stripe Secret Key to connunicate with Stripe. To get the Stripe Secret Key:
+
+* Login to Stripe.com and go to your Dashboard
+* Click the Settings icon (gear) on the top right&#x20;
+* Click the Developers item&#x20;
+* Expand the Developers section at the bottom of your browser
+* In the Overview section, click "Manage API Keys"
+* Get the Secret Key&#x20;
+
 ### &#x20;Enable Stripe in QLM&#x20;
 
 * Launch the QLM Management Console
@@ -34,7 +45,7 @@ Example: https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/QlmWebHookHan
 * Click 3rd party extensions
 * Select Stripe
 * Check the "Enabled" checkbox
-* Set the API Key to the value of the Stripe secret key (Stripe dashboard / Developers / API keys / Standard keys / Secret key)
+* Set the API Key to the value of the Stripe Secret Key&#x20;
 * Click Ok
 
 ### Regular Products
