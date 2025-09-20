@@ -12,7 +12,7 @@ Activation by authorization code works as follows:
 
 If the license is not directly associated with the email address of the user, QLM looks up the organization associated with the specified email address and uses license keys associated with the organization. This option is configurable as shown in the screenshot below.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

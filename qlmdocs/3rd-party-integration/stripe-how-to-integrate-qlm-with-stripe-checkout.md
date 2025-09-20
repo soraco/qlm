@@ -64,9 +64,9 @@ where
 * is\_licensemodel = permanent | trial | subscription&#x20;
 * is\_send\_mail: instructs QLM to send an email after processing the order
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Subscription Products
 
@@ -117,16 +117,13 @@ Once Stripe Checkout is enabled, enter **your** web site domain name in the Doma
 
 * In the Stripe dashboard, go to Products
 * Select your product
-* In the Prices section, for a given price, click "..." then select "Get Checkout code snippet". If you do not have a Price item, add one.
-
-![mceclip2.png](https://support.soraco.co/hc/article_attachments/360065254151/mceclip2.png)
-
-&#x20;
-
+* In the Prices section, for a given price, click "..." then select "Get Checkout code snippet". If you do not have a Price item, add one.&#x20;
 * In the Checkout snippet generator window, update the Success URL and Cancel URL to point to valid URLs
 * Copy the generated code and save it in a file on your desktop then publish it to your web site
 
-![mceclip3.png](https://support.soraco.co/hc/article_attachments/360065254171/mceclip3.png)
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Testing an order
 
