@@ -35,7 +35,7 @@ To have Stripe invoke QLM during an order, do the following in the Stripe Contro
 
 ### Get Your Stripe Secret Key
 
-QLM requires the Stripe Secret Key to connunicate with Stripe. To get the Stripe Secret Key:
+QLM requires the Stripe Secret Key to communicate with Stripe. To get the Stripe Secret Key:
 
 * Login to Stripe.com and go to your Dashboard
 * Click the Settings icon (gear) on the top right&#x20;
