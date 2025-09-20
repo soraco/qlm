@@ -64,6 +64,10 @@ where
 * is\_licensemodel = permanent | trial | subscription&#x20;
 * is\_send\_mail: instructs QLM to send an email after processing the order
 
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
 ### Subscription Products
 
 * Create a new product of type "Recurring products" and set the required fields.
@@ -103,11 +107,11 @@ To enable Stripe Checkout:
 * Click "Checkout settings"
 * Click "Enable client-only integration
 
-![mceclip0.png](https://support.soraco.co/hc/article\_attachments/360065073492/mceclip0.png)
+![mceclip0.png](https://support.soraco.co/hc/article_attachments/360065073492/mceclip0.png)
 
 Once Stripe Checkout is enabled, enter **your** web site domain name in the Domains field:
 
-![mceclip1.png](https://support.soraco.co/hc/article\_attachments/360065254111/mceclip1.png)
+![mceclip1.png](https://support.soraco.co/hc/article_attachments/360065254111/mceclip1.png)
 
 ### Create the Stripe Checkout button
 
@@ -115,14 +119,14 @@ Once Stripe Checkout is enabled, enter **your** web site domain name in the Doma
 * Select your product
 * In the Prices section, for a given price, click "..." then select "Get Checkout code snippet". If you do not have a Price item, add one.
 
-![mceclip2.png](https://support.soraco.co/hc/article\_attachments/360065254151/mceclip2.png)
+![mceclip2.png](https://support.soraco.co/hc/article_attachments/360065254151/mceclip2.png)
 
 &#x20;
 
 * In the Checkout snippet generator window, update the Success URL and Cancel URL to point to valid URLs
 * Copy the generated code and save it in a file on your desktop then publish it to your web site
 
-![mceclip3.png](https://support.soraco.co/hc/article\_attachments/360065254171/mceclip3.png)
+![mceclip3.png](https://support.soraco.co/hc/article_attachments/360065254171/mceclip3.png)
 
 ### Testing an order
 

@@ -13,5 +13,5 @@ If you have an existing XML settings file for a given product and you would like
 
 Note that you can also manually edit an XML Settings file and re-digitally sign it as described in this [article](https://docs.soraco.co/docs/faq/re-signing-the-xml-settings-file-after-modification).
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

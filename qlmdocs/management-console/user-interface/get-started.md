@@ -4,7 +4,7 @@
 
 The Metro-style tiles that make up the Dashboard are organized by default into three columns. A row in any column contains either one full-width or two half-width tiles. (If the window height is sufficiently reduced, doubled columns or tripled columns may be seen.) The organization of the Dashboard can be customized by dragging individual tiles from one column to another, or into an empty location to create a new column. As you drag a tile to locations in other columns, the tiles already there move aside as necessary to indicate where the new arrival will lodge. The default layout of Dashboard tiles is in three columns.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### System Information
 

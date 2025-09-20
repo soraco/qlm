@@ -1,6 +1,6 @@
 # QLM Mobile App
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 We’re thrilled to announce the launch of the QLM Mobile App — now available for download from the [Apple App Store](https://apps.apple.com/us/app/quick-license-manager/id6749921604) and the [Google Play Store](https://play.google.com/store/apps/details?id=com.soraco.qlmmobileapp).
 
