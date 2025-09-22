@@ -58,7 +58,7 @@ The QLM Documentation has moved to: [https://docs.soraco.co](https://docs.soraco
 
 ### Upgrade Procedure
 
-To upgrade to QLM v18, you must first install the QLM Management Console on your client system by running the qlmsetup17.exe. To determine if you are eligible for a v18 upgrade, you may contact us or click the About tab.
+To upgrade to QLM v18, you must first install the QLM Management Console on your client system by running the qlmsetup18.exe. To determine if you are eligible for a v18 upgrade, you may contact us or click the About tab.
 
 If we are hosting your QLM License Server, contact us to upgrade the License Server. If you are hosting your own License Server, you can upgrade the License Server as described in the next sections.
 
