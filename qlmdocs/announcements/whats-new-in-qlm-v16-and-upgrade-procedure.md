@@ -16,7 +16,7 @@ The QLM NuGet packages have been updated to support in a single NuGet package th
 
 &#x20;
 
-![mceclip0.png](https://support.soraco.co/hc/article\_attachments/8124312786708/mceclip0.png)
+![mceclip0.png](https://support.soraco.co/hc/article_attachments/8124312786708/mceclip0.png)
 
 ### QLM Management Console
 
@@ -85,7 +85,7 @@ As of QLM v14, we no longer support new installations with MS-Access as a databa
 
 ## Upgrade Procedure
 
-To upgrade to QLM v16, you must first install the QLM Management Console on your client system by running the qlmsetup15.exe. To determine if you are eligible for a v16 upgrade, you may contact us or click the About tab.&#x20;
+To upgrade to QLM v16, you must first install the QLM Management Console on your client system by running the qlmsetup16.exe. To determine if you are eligible for a v16 upgrade, you may contact us or click the About tab.&#x20;
 
 If we are hosting your QLM License Server, contact us to upgrade the License Server. If you are hosting your own License Server, you can upgrade the License Server as described in the next sections.
 
