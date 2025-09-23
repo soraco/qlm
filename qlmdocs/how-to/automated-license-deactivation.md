@@ -41,7 +41,9 @@ To use the QLM API to deactivate licenses, you must first get the list of comput
 string computerID = Environment.MachineName;
 
 string errorMessage;
-ILicenseInfo[] liList = lv.QlmLicenseObject.GetActivatedSystems(string.Empty, lv.ActivationKey, out errorMessage);
+ILicenseInfo[] liList = lv.QlmLicenseObject.GetActivatedSystems(string.Empty,
+                                                                lv.ActivationKey, 
+                                                                out errorMessage);
 
 if (liList != null)
 {
@@ -49,7 +51,9 @@ if (liList != null)
     {
         if (String.Compare(li.ComputerID, computerID, true) != 0)
         {
-            // If you want to deactivate the first computer in the list
+            // The code below deactivate the first computer in the list
+            // If you want to allow the user to select which computer to deactivate
+            // you will need to create your own UI to display the list
             string deactivateComputerID = lvi.Text;
             string response;                    
             lv.QlmLicenseObject.ReleaseLicense(
@@ -62,7 +66,9 @@ if (liList != null)
             
             if (license.ParseResults(response, ref li, ref message))
             { 
-                // The deactivation was successful
+                // The deactivation was successful, get out of the loop
+                break;
+                
             }
             else
             {
