@@ -4,7 +4,7 @@
 
 The Soraco QLM License Server that we host to activate your QLM licenses will soon no longer accept connections from client computers that do not support TLS 1.2 or higher. Additionally, if your own License Server is hosted by Soraco Technologies, your server will no longer accept connections from client computers that do not support TLS 1.2 or higher.
 
-The official cut off date will be announced soon.
+This updated was initially planned for June 2025 but was postponed to January 1, 2026 to allow some customers additional time to update their applications.
 
 This can impact you at two levels:
 
