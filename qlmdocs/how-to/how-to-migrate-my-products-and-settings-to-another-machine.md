@@ -34,7 +34,8 @@ Make sure you NEVER  "**upload products** to the License Server" from the new sy
 * Launch QLM&#x20;
 * Step through the QLM License Wizard to activate your license
 * Go to the Manage Keys tab and click Sites
-* Add your site
+* Add your site, then configure the License Server URL and the encryption keys
+* Click the Test button to make sure your configuration is correct
 * Click "Download your products from the License Server"
 * Click Ok
 
