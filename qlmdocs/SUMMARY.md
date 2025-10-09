@@ -74,6 +74,7 @@
         * [Illegal Computers](management-console/user-interface/manage-license-keys/fraud-detection/illegal-computers.md)
       * [Mail](management-console/user-interface/manage-license-keys/mail.md)
       * [License Server](management-console/user-interface/manage-license-keys/license-server.md)
+      * [Audit Trail](management-console/user-interface/manage-license-keys/audit-trail.md)
       * [Tools](management-console/user-interface/manage-license-keys/tools.md)
       * [QLM Portal](management-console/user-interface/manage-license-keys/qlm-portal.md)
       * [Scheduled Tasks](management-console/user-interface/manage-license-keys/scheduled-tasks.md)
