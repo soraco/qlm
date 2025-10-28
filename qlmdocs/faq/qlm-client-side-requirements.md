@@ -1,6 +1,6 @@
 # QLM client side requirements
 
-### QLM API Requirements <a href="#h_01hetn8d9qh06qs2g88yx3bdms" id="h_01hetn8d9qh06qs2g88yx3bdms"></a>
+### QLM API Requirements (v19) <a href="#h_01hetn8d9qh06qs2g88yx3bdms" id="h_01hetn8d9qh06qs2g88yx3bdms"></a>
 
 * .NET API for Windows (QlmLicenseLib.dll)
   * .NET Framework 2.0 (no longer supported)
