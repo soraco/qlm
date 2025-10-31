@@ -10,9 +10,7 @@ The code below shows how to check which features are enabled in an ILicenseInfo 
 ```csharp
 ILicenseInfo li = lv.QlmLicenseObject.GetLicenseInfo(string.Empty, lv.ActivationKey, false, out string ds, out string response);
 
-string features = li.Features;
-
-int[] enabledFeatures = lv.QlmLicenseObject.ConvertFeaturesToArray(features);
+int[] enabledFeatures = lv.QlmLicenseObject.ConvertFeaturesToArray(li.Features);
 
 if ((enabledFeatures[0] & 1) != 0)
 {
@@ -44,7 +42,7 @@ if ((ak.m_str != nullptr) && (ak.Length() > 0))
 	ILicenseInfo* li = m_lv->license->GetLicenseInfo(_T(""), _bstr_t(ak), 			
 				VARIANT_FALSE, &bstrDataSet, &bstrResponse);
 
-	SAFEARRAY* enabledFeatures = m_lv->license->ConvertFeaturesToArray			(li->Features);
+	SAFEARRAY* enabledFeatures = m_lv->license->ConvertFeaturesToArray (li->Features);
 
 	long* pFeatures = nullptr;
 	HRESULT hr = SafeArrayAccessData(enabledFeatures, (void**)&pFeatures);
