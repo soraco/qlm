@@ -1,22 +1,22 @@
 # Method 2: IPN
 
-## IPN Configuration
+### IPN Configuration
 
 * Login in to your 2checkout  system
 * Expand the Integrations node and select Webhooks & API
 * Go to the IPN Settings tab
 * Click "Add IPN URL"
 * Set the URL to:&#x20;
-* > [https://qlm4.net/qlmdemo/qlmlicenseserver/qlmservice.asmx/QlmWebHookHandler?is\_vendor=avangate\&is\_user=tom\&is\_pwd=xyz  > ](https://qlm4.net/qlmdemo/qlmlicenseserver/qlmservice.asmx/QlmWebHookHandler?is_vendor=avangate\&is_user=tom\&is_pwd=xyz)
+* > [https://yourserver/qlmlicenseserver/qlmservice.asmx/QlmWebHookHandler?is\_vendor=avangate\&is\_user=tom\&is\_pwd=xyz  > ](https://qlm4.net/qlmdemo/qlmlicenseserver/qlmservice.asmx/QlmWebHookHandler?is_vendor=avangate\&is_user=tom\&is_pwd=xyz)
 * You should update the URL above to point to your server and update the user/password to match the user/password that you specified when you enabled the 2checkout/Avangate extension in the QLM Management Console.
 * On the IPN Settings tab,:
   * Take not of the Secret Key. You will need it later on.
   * In the Triggers section, make sure that the following option is selected: Authorized and approved orders (sent after electronic delivery)
   * In the Response Tags section, make sure the following fields are selected:
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-## 2Checkout product configuration
+### 2Checkout product configuration
 
 * Create your product in 2Checkout
 
@@ -31,7 +31,7 @@ To map your 2Checkout product to a QLM product, you must identify your 2Checkout
 * The ID of the product is typically the first column  of the table listing your products
 * Note your Product ID as you will use it in the next step
 
-#### Create a QLM Server Property
+### Create a QLM Server Property
 
 Next, you will create a QLM Custom Server property that maps your 2Checkout product to a QLM product.
 
@@ -44,3 +44,27 @@ Next, you will create a QLM Custom Server property that maps your 2Checkout prod
 * Set the value of the property to (modify the values to correspond to your own product): \&is\_productid=1\&is\_majorversion=1\&is\_minorversion=0\&is\_productname=MyProduct\&is\_emailtemplate=1. New Order\&is\_licensemodel=subscription
 * For more information about the supported arguments, refer to this[ article](https://support.soraco.co/hc/en-us/articles/207606653-GetActivationKeyWithExpiryDate).
 * Click Ok
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+### Place a test order
+
+To place a test order:
+
+* Click on the Products menu item then select your product.
+* Click on the Information tab.
+* Click on "Get buy links for this product"
+* Scroll down the page and click on "Place a test order"
+* Fill in the order form and submit the order
+* A license key will be automatically and emailed to the customer
+
+Tips: Credit Card: 4111111111111111, CVV2: 123
+
+Name: John Doe
+
+### Subscription Renewal
+
+If the initial order was for a subscription product, the license key created during the initial purchase will have the expiry date that corresponds to the subscription expiry date.
+
+When the renewal is triggered from 2Checkout, QLM automatically updates the expiry date of the license based on the renewal expiry date.
+
