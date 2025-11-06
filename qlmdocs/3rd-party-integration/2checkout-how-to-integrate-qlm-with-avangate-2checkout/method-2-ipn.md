@@ -33,6 +33,17 @@ To map your 2Checkout product to a QLM product, you must identify your 2Checkout
 * The ID of the product is typically the first column  of the table listing your products
 * Note your Product ID as you will use it in the next step
 
+### Enabling 2Checkout/Avangate in QLM
+
+* Launch the QLM Management Console
+* Go to the Manage Keys tab
+* Click **3rd Party Extensions**
+* Click Avangate
+* Check the "Enabled" checkbox
+* Set a user/password (of your choice)
+* Set the Shared Key field to the Secret Password noted above.
+* Click Ok
+
 ### Create a QLM Server Property
 
 Next, you will create a QLM Custom Server property that maps your 2Checkout product to a QLM product.
