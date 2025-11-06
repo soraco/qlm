@@ -12,7 +12,7 @@ Integration with 2Checkout is also possible though 2Checkout IPN system. This me
 * > [https://yourserver/qlmlicenseserver/qlmservice.asmx/QlmWebHookHandler?is\_vendor=avangate\&is\_user=tom\&is\_pwd=xyz  > ](https://qlm4.net/qlmdemo/qlmlicenseserver/qlmservice.asmx/QlmWebHookHandler?is_vendor=avangate\&is_user=tom\&is_pwd=xyz)
 * You should update the URL above to point to your server and update the user/password to match the user/password that you specified when you enabled the 2checkout/Avangate extension in the QLM Management Console.
 * On the IPN Settings tab,:
-  * Take not of the Secret Key. You will need it later on.
+  * Take note of the Secret Key. You will need it later on.
   * In the Triggers section, make sure that the following option is selected: Authorized and approved orders (sent after electronic delivery)
   * In the Response Tags section, make sure the following fields are selected:
 
