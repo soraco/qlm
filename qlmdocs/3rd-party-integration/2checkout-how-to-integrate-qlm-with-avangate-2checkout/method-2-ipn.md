@@ -44,6 +44,8 @@ To map your 2Checkout product to a QLM product, you must identify your 2Checkout
 * Set the Shared Key field to the Secret Password noted above.
 * Click Ok
 
+<figure><img src="../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+
 ### Create a QLM Server Property
 
 Next, you will create a QLM Custom Server property that maps your 2Checkout product to a QLM product.
