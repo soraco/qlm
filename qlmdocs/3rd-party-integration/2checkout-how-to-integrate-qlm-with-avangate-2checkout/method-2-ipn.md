@@ -1,5 +1,7 @@
 # Method 2: IPN
 
+\[This method is supported as of QLM 19.1.25310.1]
+
 ### IPN Configuration
 
 * Login in to your 2checkout  system
