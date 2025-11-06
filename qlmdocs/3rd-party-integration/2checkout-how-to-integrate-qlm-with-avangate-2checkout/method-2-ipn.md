@@ -1,6 +1,6 @@
 # Method 2: IPN
 
-\[This method is supported as of QLM 19.1.25310.1]
+Integration with 2Checkout is also possible though 2Checkout IPN system. This method is suitable for regular and subscription products. It is supported as of QLM 19.1.25310.1.
 
 ### IPN Configuration
 
