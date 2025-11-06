@@ -1,8 +1,4 @@
-# 2Checkout - How to integrate QLM with Avangate / 2checkout
-
-### Overview
-
-If you are using Avangate / 2checkout as an eCommerce provider, QLM integrates seamlessly with the 2Checkout ordering system. After completing the steps below, when a customer purchases your product from 2checkout, 2checkout will automatically get a license key from the QLM License Server and then update the QLM database with the license and customer information.&#x20;
+# Method 1: Electronic Delivery
 
 ### Configuration
 
@@ -66,7 +62,7 @@ Tips: Credit Card: 4111111111111111, CVV2: 123
 
 Name: John Doe
 
-[https://knowledgecenter.2checkout.com/Documentation/09Test\_ordering\_system/01Test\_payment\_methods](https://knowledgecenter.2checkout.com/Documentation/09Test\_ordering\_system/01Test\_payment\_methods)
+[https://knowledgecenter.2checkout.com/Documentation/09Test\_ordering\_system/01Test\_payment\_methods](https://knowledgecenter.2checkout.com/Documentation/09Test_ordering_system/01Test_payment_methods)
 
 &#x20;
 
