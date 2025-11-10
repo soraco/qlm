@@ -56,8 +56,9 @@ Next, you will create a QLM Custom Server property that maps your 2Checkout prod
 * Go to the Server Properties tab
 * Click the + sign on the right-hand side to add a new custom server property
 * Set the property name to: pid\_<2Checkout Product ID>. For example, if your 2Checkout Product ID is 8019770900775, set the name to: pid\_8019770900775
-* Set the value of the property to (modify the values to correspond to your own product): \&is\_productid=1\&is\_majorversion=1\&is\_minorversion=0\&is\_productname=MyProduct\&is\_emailtemplate=1. New Order\&is\_licensemodel=subscription
-* For more information about the supported arguments, refer to this[ article](https://support.soraco.co/hc/en-us/articles/207606653-GetActivationKeyWithExpiryDate).
+* Set the value of the property to (modify the values to correspond to your own product): \&is\_productid=1\&is\_majorversion=1\&is\_minorversion=0\&is\_productname=MyProduct\&is\_emailtemplate=Customer.NewOrder\&is\_licensemodel=subscription
+* For more information about the supported arguments for an initial order, refer to this[ article](../../api-reference/http-methods/getactivationkeywithexpirydate.md).
+* To send a different email message for a subscription renewal, add the following argument to the server property: \&is\_emailtemplate\_renew=\<Renewal Email Template> (replace the email template name as needed).
 * Click Ok
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
