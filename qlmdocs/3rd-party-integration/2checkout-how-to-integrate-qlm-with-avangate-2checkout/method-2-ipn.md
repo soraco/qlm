@@ -74,7 +74,7 @@ To place a test order:
 * Fill in the order form and submit the order
 * A license key will be automatically and emailed to the customer
 
-Tips: Credit Card: 4111111111111111, CVV2: 123
+Tips: Credit Card: 4111111111111111, CVV: 123
 
 Name: John Doe
 
