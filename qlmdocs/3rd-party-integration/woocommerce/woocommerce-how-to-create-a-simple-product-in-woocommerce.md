@@ -1,5 +1,7 @@
 # WooCommerce - How to create a simple product in WooCommerce
 
+### Installation
+
 To integrate QLM with WooCommerce, you must first download the QLM WooCommerce plugin:
 
 * Go to wordpress.org
@@ -9,6 +11,8 @@ To integrate QLM with WooCommerce, you must first download the QLM WooCommerce p
 * Click the Download button and install the plugin
 
 Once the plugin is installed, a new entry called QLM will be created in your WordPress left-hand panel section. &#x20;
+
+### WooCommerce Configuration
 
 The first step in selling your product via WooCommerce is to define your product in WordPress.
 
@@ -70,6 +74,8 @@ In the **Add New Custom Field** section:
 
 Finally, click the **Update** button on the top right to commit all your changes to the product.
 
+### QLM Configuration
+
 &#x20;In the QLM Management Console, you must now enable the WooCommerce Extension as described [here](https://support.soraco.co/hc/en-us/articles/360022014832-How-to-enable-a-3rd-party-extension-e-commerce-provider-).
 
 &#x20;In WordPress, locate the QLM item in the WordPress left-hand panel and click it.
@@ -90,6 +96,8 @@ In the Settings for the API section, enter the following information:
 * Finally, enter the footer of the email
 * Click Update
 
+### Testing
+
 &#x20;To place a test order:
 
 * In the WordPress left panel, click Products
@@ -109,3 +117,14 @@ In the Settings for the API section, enter the following information:
 &#x20;When the QLM plugin sends an email to the customer, it uses the wp\_mail WordPress API. This API will automatically set the "from" address to wordpress@yourdomain.com.
 
 If you would like to change this default "from" email address, follow the instructions in this [article](http://www.butlerblog.com/2011/07/08/change-wordpress-email-from-address-without-a-plugin/).
+
+### Advanced Features
+
+When creating a license key, you can automatically set the QLM userData1 field during the ordering process. To do so, you will need to add items to your cart using a URL such as the one below:
+
+\
+[https://yourserver/?add-to-cart=ProductID\&is\_userdata1=1234](https://yourserver/?add-to-cart=\&is_userdata1=1234)\
+&#x20;\
+Replace Product ID with the WooCommerce ID of your product (if you hover over the product name in WordPress, you will see the Product ID)\
+&#x20;\
+&#x20;
