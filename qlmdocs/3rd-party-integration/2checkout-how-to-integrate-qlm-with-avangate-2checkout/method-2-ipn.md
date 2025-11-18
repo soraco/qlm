@@ -16,11 +16,14 @@ Integration with 2Checkout is also possible though 2Checkout IPN system. This me
   * In the Triggers section, make sure that the following option is selected: Authorized and approved orders (sent after electronic delivery)
   * In the Response Tags section, make sure the following fields are selected:
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
 
 ### 2Checkout product configuration
 
 * Create your product in 2Checkout
+* On the Fulfillment tab, select the following option:
+
+<figure><img src="../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
 
 #### Mapping your 2Checkout product to the QLM product
 
@@ -84,3 +87,16 @@ If the initial order was for a subscription product, the license key created dur
 
 When the renewal is triggered from 2Checkout, QLM automatically updates the expiry date of the license based on the renewal expiry date.
 
+### IDN Response
+
+When an order is placed with 2Checkout, you have the option of automatically fulfilling the order after payment is received or waiting for a confirmation from QLM that license keys were properly created and sent before flagging the order as fulfilled.
+
+The steps described above will flag the order as fulfilled as soon as payment is received regardless of the success of the QLM process.
+
+To wait for conformation from QLM in order to flag the order as fulfilled:
+
+* For each product definition in 2Checkout, set the Fulfillment option to "Fulfillment made by you".  Do not check the option "Start subscription after fulfillment". If you do so, 2checkout does not send expiry date information to QLM and hence the license keys will not be created properly (see screenshot below).\
+
+* When creating the QLM custom server property, add the following argument to each property that is configured to receive an IDN response: \&is\_sendresponse=true
+
+<figure><img src="../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
