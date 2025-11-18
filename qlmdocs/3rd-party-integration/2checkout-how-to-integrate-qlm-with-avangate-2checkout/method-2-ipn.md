@@ -93,7 +93,7 @@ When an order is placed with 2Checkout, you have the option of automatically ful
 
 The steps described above will flag the order as fulfilled as soon as payment is received regardless of the success of the QLM process.
 
-To wait for conformation from QLM in order to flag the order as fulfilled:
+To wait for conformation from QLM in order to flag the order as fulfilled you must configure the 2Checkout [IDN Response ](https://verifone.cloud/docs/2checkout/API-Integration/Webhooks/API-Message-Services/Instant-Delivery-Notification-%28IDN%29)feature as follows :
 
 * For each product definition in 2Checkout, set the Fulfillment option to "Fulfillment made by you".  Do not check the option "Start subscription after fulfillment". If you do so, 2checkout does not send expiry date information to QLM and hence the license keys will not be created properly (see screenshot below).\
 
