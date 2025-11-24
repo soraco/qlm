@@ -11,14 +11,14 @@ If you are using QLM Pro or Enterprise and need to migrate your license server t
   * Click Add to add a new profile
   * Enter the URL of the new profile along with the encryption keys
   * Test the profile and make sure all tests pass
-* Create a SQL Server backup of the existing database from the SQL Server Management Studio.
-* Create a SQL login user (with the same password) identical to the one used by QLM on the previous server.&#x20;
+* On the old server, create a SQL Server backup of the existing database from the SQL Server Management Studio.
+* On the new server, create a SQL login user (with the same password) identical to the one used by QLM on the previous server.&#x20;
 * On the new server, restore the backup over the existing database created during the installation of the QLM License Server.
 * Finally, you must upgrade the database schema as described in this [article](how-to-perform-a-db-schema-upgrade.md).
 
 ### Additional Considerations
 
-If the new License Server URL is different from the old one and you have existing customers pointing to the old server, you will need to setup a redirect to redirect existing customers to the new server.
+If the new License Server URL is different from the old one and you have existing customers pointing to the old server, you will need to setup a _redirect_ to redirect existing customers to the new server.
 
 ### Soraco Migration Service
 
