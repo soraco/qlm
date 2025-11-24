@@ -5,6 +5,7 @@
 If you are using QLM Pro or Enterprise and need to migrate your license server to a new server, follow the procedure below.
 
 * Install the QLM License Server on the new server, along with a new QLM database. For details on how to install the QLM License Server, check this [article](https://support.soraco.co/hc/en-us/articles/202937924-How-to-install-the-QLM-License-Server).
+* Configure the new server with the same communicationEncryptionKey and adminEncryptionKey as the old server.
 * Configure a new profile in the QLM Management Console to connect to the new License Server
   * From the Manage Keys tab, click Sites
   * Click Add to add a new profile
