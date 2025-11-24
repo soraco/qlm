@@ -32,6 +32,7 @@ The server where you will be hosting the QLM License Server must be preconfigure
 * IIS must be configured as described [here](https://docs.soraco.co/docs/qlm-license-server/iis-features-on-windows-server-2012-or-higher)
 * A connection to your new server should be enabled via RDP or AnyDesk.
 * A connection to the old server should be enabled via RDP or AnyDesk.
+* **Note that our migration service does not cover setting up a redirect.**
 
 
 
