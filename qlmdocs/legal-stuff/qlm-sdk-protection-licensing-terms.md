@@ -16,6 +16,6 @@ The QLM SDK Protection license is a site license that can be used on an unlimite
 
 If your product is not a standalone application and is executed by your end-user in the context of a debugger, it is considered an SDK.
 
-[**Pricing**](https://soracostore.onfastspring.com/qlm-sdk)
+[**Pricing**](https://soraco.co/product/qlm-sdk-sub)
 
-The QLM SDK Protection is a subscription license. You can find the pricing [here](https://soraco.co/pricing).
+The QLM SDK Protection is a subscription license. You can find the pricing [here](https://soraco.co/product/qlm-sdk-sub).
