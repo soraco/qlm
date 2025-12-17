@@ -14,7 +14,7 @@ This guide provides a step-by-step procedure to protect a Delphi app. Note that 
 * Page 4: Select the folder where your project source code is located and click Save.
 * Page 5: Click Finish
 
-5\. Open your Delphi project in RAD Studio
+4\. Open your Delphi project in RAD Studio
 
 5\. Copy the following files to your project's folder:
 
@@ -45,7 +45,7 @@ This guide provides a step-by-step procedure to protect a Delphi app. Note that 
 * _Declare the following functions:_
   * _function DisplayLicenseForm () : Integer;_
 
-> &#x20;9\. Add the code similar to the code below where you want to perform the license validation. Mofify the class name below (TAppForm) to match your own class.
+> &#x20;9\. Add code similar to the code below where you want to perform the license validation. Mofify the class name below (TAppForm) to match your own class.
 
 {% code overflow="wrap" %}
 ```pascal
