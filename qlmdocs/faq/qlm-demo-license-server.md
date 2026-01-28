@@ -18,7 +18,7 @@ The setup program to install the QLM License Server can be found here: %Public%\
 
 **Connection information to the Demo License Server:**
 
-License Server URL: [https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx](https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx)
+License Server URL: [https://qlm4.net/qlmdemo/qlmLicenseServer/qlmservice.asmx](https://qlm4.net/qlmdemo/qlmLicenseServer/qlmservice.asmx)
 
 Database Engine: SQL Server
 
@@ -33,7 +33,7 @@ To configure the QLM Management Console to connect to the Demo License server:
 * Launch the QLM Management Console
 * Go to the Manage Keys tab
 * Click Sites and select the Demo site
-* Set the URL to: [https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx](https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx)
+* Set the URL to: [https://qlm4.net/qlmdemo/qlmLicenseServer/qlmservice.asmx](https://qlm4.net/qlmdemo/qlmLicenseServer/qlmservice.asmx)
 * Go to the Encryption Keys tab.
 * Set the Communication Encryption Key to: {B6163D99-F46A-4580-BB42-BF276A507A14}
 * Set Administration Encryption Key to: {B6163D99-F46A-4580-BB42-BF276A507A14}
