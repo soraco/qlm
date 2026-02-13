@@ -4,9 +4,9 @@
 
 Managing your license keys and customers is typically performed by using the **QLM Management Console** which is a Windows-based desktop application. The QLM Management Console communicates with the QLM License server to retrieve and update license keys.
 
-The **QLM Portal** is an add-on to QLM that needs to be [purchased](https://soraco.co/product/qlm-portal) separately. It provides a web-based interface for managing license keys. For more details about the licensing terms of the QLM Portal, [click here.](https://support.soraco.co/hc/en-us/articles/203059944-QLM-Portal-Licensing-Terms)&#x20;
+The **QLM Portal** is an add-on to QLM that needs to be [purchased](https://soraco.co/product/qlm-portal-sub/) separately. It provides a web-based interface for managing license keys. For more details about the licensing terms of the QLM Portal, [click here.](https://support.soraco.co/hc/en-us/articles/203059944-QLM-Portal-Licensing-Terms)&#x20;
 
-The QLM Portal provides access to the most common operations an administrator or a reseller is likely to need when managing customers' license keys. It does not include all the features available in the QLM Management Console (the desktop application that is included with a QLM Pro or Enterprise license). For more details about the differences between the Portal and the QLM Management Console, [click here](../faq/difference-between-the-license-expiry-date-and-the-maintenance-plan-expiry-date.md).
+The QLM Portal provides access to the most common operations an administrator or a reseller is likely to need when managing customers' license keys. It does not include all the features available in the QLM Management Console (the desktop application that is included with a QLM Pro or Enterprise license). For more details about the differences between the Portal and the QLM Management Console, [click here](https://docs.soraco.co/docs/qlm-portal/qlm-management-console-v-s-qlm-portal).
 
 The QLM Portal requires user authentication and uses role-based access control. This enables you to control which features your administrator has access to.
 
@@ -43,35 +43,35 @@ Operations that can be controlled by the QLM Portal:
 
 &#x20;You can view a demo of the new QLM Portal on the page below:
 
-[https://qlm3.net/qlmdemo/QlmPortal/QlmPortal.aspx](https://qlm3.net/qlmdemo/QlmPortal/QlmPortal.aspx)
+[https://qlm4.net/qlmdemo/QlmPortal/QlmPortal.aspx](https://qlm4.net/qlmdemo/QlmPortal/QlmPortal.aspx)
 
 User: qlmdemo\
 Password: qlmweb30!
 
 ### &#x20;Screenshots
 
-![](https://support.soraco.co/hc/article\_attachments/115016637223/mceclip0.png)
+![](https://support.soraco.co/hc/article_attachments/115016637223/mceclip0.png)
 
 &#x20;
 
-![](https://support.soraco.co/hc/article\_attachments/115016451726/mceclip1.png)
+![](https://support.soraco.co/hc/article_attachments/115016451726/mceclip1.png)
 
-![](https://support.soraco.co/hc/article\_attachments/115016451746/mceclip2.png)
+![](https://support.soraco.co/hc/article_attachments/115016451746/mceclip2.png)
 
-![](https://support.soraco.co/hc/article\_attachments/115016637243/mceclip3.png)
+![](https://support.soraco.co/hc/article_attachments/115016637243/mceclip3.png)
 
-![](https://support.soraco.co/hc/article\_attachments/115016637263/mceclip4.png)
+![](https://support.soraco.co/hc/article_attachments/115016637263/mceclip4.png)
 
-![](https://support.soraco.co/hc/article\_attachments/115016451766/mceclip5.png)
-
-&#x20;
+![](https://support.soraco.co/hc/article_attachments/115016451766/mceclip5.png)
 
 &#x20;
 
-![](https://support.soraco.co/hc/article\_attachments/360000530643/mceclip0.png)
+&#x20;
+
+![](https://support.soraco.co/hc/article_attachments/360000530643/mceclip0.png)
 
 &#x20;
 
-![](https://support.soraco.co/hc/article\_attachments/360000535666/mceclip1.png)
+![](https://support.soraco.co/hc/article_attachments/360000535666/mceclip1.png)
 
 &#x20;
