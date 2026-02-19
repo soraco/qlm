@@ -70,3 +70,7 @@ where :
 CommonDataFolder = Product Name (by default) or the value configured in the Protect Your App wizard
 
 CommonDataFileName = license.txt or the value configured in the Protect Your App wizard
+
+The exact path of CommonDataFolder is determined by calling Environment.SpecialFolder.CommonApplicationData. If that path does not exist, QLM tries to use Environment.SpecialFolder.UserProfile.
+
+Note that the default location of CommonDataFolder can be overwritten by specifying the QlmLicense.StoreKeysCommonDataFolder property. If this property is set to a rooted path, QLM uses the value as is. If this property is set to a non rooted path, QLM appends the value of QlmLicense.StoreKeysCommonDataFolder to the calculated CommonDataFolder path.
