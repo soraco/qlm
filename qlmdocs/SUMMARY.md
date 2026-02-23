@@ -140,6 +140,7 @@
     * [How to receive an email report of failed trial requests using Scheduled Tasks](email-framework/email-notifications/how-to-receive-an-email-report-of-failed-trial-requests-using-scheduled-tasks.md)
     * [How to automatically send the vendor an email when a customer activates a license](email-framework/email-notifications/how-to-automatically-send-the-vendor-an-email-when-a-customer-activates-a-license.md)
     * [How to send email notifications when an activation attempt is detected](email-framework/email-notifications/how-to-send-email-notifications-when-an-activation-attempt-is-detected.md)
+    * [How to automatically send email if a license was not activated after x days](email-framework/email-notifications/how-to-automatically-send-email-if-a-license-was-not-activated-after-x-days.md)
     * [How to email a monthly analytics report](email-framework/email-notifications/how-to-email-a-monthly-analytics-report.md)
   * [How to email customers their license key interactively from the QLM Management Console](how-to/how-to-email-customers-their-license-key-interactively-from-the-qlm-management-console.md)
   * [Third-Party Email Verifiers](email-framework/third-party-email-verifiers/README.md)
