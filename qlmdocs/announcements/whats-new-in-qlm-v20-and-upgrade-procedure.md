@@ -126,7 +126,7 @@ You must then update the QlmLicenseServer\web.config (note that the syste.webser
 
 **Important**: when redirecting from an old License server to a v20 license server, the old license server and the v20 license server must use the same Application Pool.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
 
 #### PayPal Integration
 
