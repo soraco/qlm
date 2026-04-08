@@ -6,11 +6,13 @@ QLM v20 is planned for release on April 12, 2026.  **The documentation below is 
 
 ### Important Changes in v20 <a href="#h_01h95qq4d75t05j62drs5q0gz6" id="h_01h95qq4d75t05j62drs5q0gz6"></a>
 
-* The QLM License server (and all related server components) has been upgraded from .NET Framework 4.6 to .NET Core 10. This is a major change that impacts the URLs to communicate with the License Server. If you are hosting your License Server, please check the upgrade instructions below.
+* The QLM License server, and all related server components, have been upgraded from .NET Framework 4.6 to .NET Core 10. This is a major change that impacts the URLs to communicate with the License Server. If you are hosting your License Server, please check the upgrade instructions below.
 * The QLM Portal has been completely re-written using Blazor and .NET 10.
 * Most client side QLM components now use .NET 10.
-* If you use PayPal integration, you must update the IPN URL
+* If you use PayPal integration, you must update the IPN URL (details below)
+* All ecommerce integrations should use the new License Server URL.
 * If you are hosting your own License Server, before upgrading to this version, you MUST ensure that the QLM database login user has the db\_securityadmin role. You can use the following command to add it (change qlm\_user as needed): EXEC sp\_addrolemember N'db\_securityadmin', N'qlm\_user'
+* Instructions to redirect the old URL to the new URL is provided below.
 
 
 
@@ -66,7 +68,7 @@ If you installed QLM by running the QlmLicenseServerSetup.exe, when you run the 
 * QLM Portal: http://localhost/Qlm/QlmPortalNetCore/QlmPortal
 * QLM Customer Portal: http://localhost/QlmCustomerPortalNetCore/qlm-portal-app
 
-You should always back up your database and site before upgrading. To back up your site, simply make a copy of your QLMLicense Server folders. To back up your database, perform a SQL Server back up of the database.
+You should always back up your database and site before upgrading. To back up your site, simply make a copy of your QLM License Server folders. To back up your database, perform a SQL Server back up of the database.
 
 After the server is installed, you must perform a DB Schema upgrade:
 
@@ -101,7 +103,27 @@ After the server is installed, you must perform a DB Schema upgrade:
 
 <figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
+#### Redirection from old URL to new URL
 
+If you are upgrading from QLM v19 or earlier to QLM v20, you can configure the old license server to redirect to the v20 License Server by adding some entries QlmLicenseServer\web.config.
+
+In order to perform the redirect, you must first install the URL Rewrite module which is available [here](https://www.iis.net/downloads/microsoft/url-rewrite).
+
+You must then update the QlmLicenseServer\web.config (note that the syste.webserver section exists already so you should just add the relevant url rewrite section)
+
+```xml
+<system.webServer>
+	<!-- Rewrite Rules to redirect to .net core -->
+	<rewrite>
+		<rules>
+			<rule name="Rewrite ASMX to Core API" stopProcessing="true">
+				<match url="^qlmservice\.asmx(.*)$" ignoreCase="true" />
+				<action type="Rewrite" url="/Qlm/QlmLicenseServerNetCore/api/WebService{R:1}" appendQueryString="true" />
+			</rule>
+		</rules>
+	</rewrite>
+</system.webServer>
+```
 
 #### Source Code
 
