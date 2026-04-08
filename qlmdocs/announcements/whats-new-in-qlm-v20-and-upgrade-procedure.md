@@ -81,23 +81,23 @@ After the server is installed, you must perform a DB Schema upgrade:
 **QLM License Server Upgrade**
 
 1. Launch the QLM Management Console
-2. Go to the Manage Keys tab, click Sites then click Copy and set the name of the v20 License Server
+2. Go to the Manage Keys tab, click Sites, select your site, then click Copy and set the name of the v20 License Server
 3. In the Primary Site field, set the URL to (replace localhost with the name of your server/domain): http://localhost/Qlm/QlmLicenseServerNetCore/api/v1/QlmApi
-4. Go to the Deployment tab and set the information associated with your License Server
+4. Go to the Deployment tab and set the information associated with your License Server (see screenshot below)
 5. Click "Update Config Files"
 6. Copy all the files located in %Public%\Public Documents\Quick License Manager\DeployToServer\ to your server, under the c:\inetpub\wwwroot\Qlm
-7. Create the following Application Pools
+7. On your server, in IIS, create the following Application Pools
    1. QlmLicenseServerNetCore
    2. QlmCustomerSiteNetCore
    3. QlmPortalNetCore
    4. QlmCustomerPortalNetCore
 8. In IIS, expand the Default Web Site node and locate the QLM virtual directory
-9. Right mouse click QlmLicenseServerNetCore and select Convert to Application. When prompted to Add the Application, set the Application Pool to QlmLicenseServerNetCode
+9. Right mouse click QlmLicenseServerNetCore and select Convert to Application. When prompted to Add the Application, set the Application Pool to QlmLicenseServerNetCore
 10. Right mouse click QlmCustomerSiteNetCore and select Convert to Application. When prompted to Add the Application, set the Application Pool to QlmCustomerSiteNetCore
-11. Right mouse click QlmPortalNetCoreand select Convert to Application. When prompted to Add the Application, set the Application Pool to QlmPortalNetCore
+11. Right mouse click QlmPortalNetCore and select Convert to Application. When prompted to Add the Application, set the Application Pool to QlmPortalNetCore
 12. Right mouse click QlmCustomerPortalNetCore and select Convert to Application. When prompted to Add the Application, set the Application Pool to QlmCustomerPortalNetCore
-13. Right mouse click QlmCustomerSiteNetCore/qlm-portal-api and select Convert to Application. When prompted to Add the Application, set the Application Pool to QlmCustomerPortalNetCore
-14. Right mouse click QlmCustomerSiteNetCore/qlm-portal-app and select Convert to Application. When prompted to Add the Application, set the Application Pool to QlmCustomerPortalNetCore
+13. Right mouse click QlmCustomerPortalNetCore /qlm-portal-api and select Convert to Application. When prompted to Add the Application, set the Application Pool to QlmCustomerPortalNetCore
+14. Right mouse click QlmCustomerPortalNetCore /qlm-portal-app and select Convert to Application. When prompted to Add the Application, set the Application Pool to QlmCustomerPortalNetCore
 15. Once the License Server is updated, start the QLM Management Console, go to Sites and click on Upgrade Database Schema.
 
 <figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
@@ -132,7 +132,7 @@ The URL to the QLM PayPal integration has changed from:&#x20;
 
 To:&#x20;
 
-[http://localhost/Qlm/QlmLicenseServerNetCore/api/v1/PayPalIpn/notify](http://localhost/Qlm/QlmLicenseServerNetCore/api/v1/PayPalIpn/notify)
+[http://localhost/Qlm/QlmLicenseServerNetCore/api/PayPalIpn/notify](http://localhost/Qlm/QlmLicenseServerNetCore/api/v1/PayPalIpn/notify)
 
 #### Source Code
 
