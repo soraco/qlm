@@ -14,6 +14,7 @@ QLM v20 is planned for release on April 12, 2026.  **The documentation below is 
   * If you are hosting your own License Server, before upgrading to this version, you MUST ensure that the QLM database login user has the db\_securityadmin role. You can use the following command to add it (change qlm\_user as needed): EXEC sp\_addrolemember N'db\_securityadmin', N'qlm\_user'
   * Instructions to redirect the old URL to the new URL is provided below.
   * The procedure to integrate with Azure has changed. Please check the latest documentation.
+  * QLM Authentication now uses the new Microsoft Identity framework instead of ASP.NET Membership
 * Client Side
   * Most client side QLM components now use .NET 10.
   * The QLM License Wizard XML settings file must be updated to reflect the new URL.
@@ -35,18 +36,6 @@ QLM v20 is planned for release on April 12, 2026.  **The documentation below is 
 ### Documentation
 
 The QLM Documentation has moved to: [https://docs.soraco.co](https://docs.soraco.co)
-
-### QLM Enterprise New Features
-
-* List new QLM ENT Features
-
-### QLM Customer Site New Features
-
-* List QlmCustomerSite features
-
-### QLM Professional New Features
-
-* List new QLM ENT Features
 
 ### Upgrade Procedure
 
