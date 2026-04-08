@@ -25,12 +25,12 @@ QLM v20 is planned for release on April 12, 2026.  **The documentation below is 
 
 ### New Requirements
 
-* The minimum requirement for .NET 4 is .NET 4.62.
 * The QLM Management Console now requires .NET 10 (requires Windows 10 or higher).
 * The QLM Management Console and the QLM Portal now reference DevExpress 25.2.5.
 * New License Server requirements:
-  * You must install the .NET 10 Hosting Bundle 10.0.5 or greater
-  * You must install Microsoft OLE DB Driver for SQL Server v19
+  * You must install the [.NET 10 Hosting Bundle ](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)10.0.5 or greater
+  * You must install [Microsoft OLE DB Driver for SQL Server v19](https://learn.microsoft.com/en-us/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver17)
+  * You must install [Visual C++ Redistributables for x86 and x64 (for Visual Studio 2017)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 
 ### Documentation
 
