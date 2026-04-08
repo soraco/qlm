@@ -52,8 +52,8 @@
 [online-activation-with-basic-authentication-user-password.md](../fundamental-concepts/how-does-online-activation-work/online-activation-with-basic-authentication-user-password.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/p5iYFZ8Sf1ndj6jzheis" %}
+[Broken link](/broken/pages/p5iYFZ8Sf1ndj6jzheis)
 {% endcontent-ref %}
 
 {% content-ref url="../fundamental-concepts/qlm-license-models.md" %}
@@ -172,8 +172,8 @@
 [fastspring-hmac-validation.md](../3rd-party-integration/fastspring/fastspring-hmac-validation.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/tVO4y4BEAUAUVgMDirTe" %}
+[Broken link](/broken/pages/tVO4y4BEAUAUVgMDirTe)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-invoke-a-qlm-http-method-that-requires-strict-authentication.md" %}
@@ -400,12 +400,12 @@
 [how-to-configure-the-qlm-self-help-web-page.md](how-to-configure-the-qlm-self-help-web-page.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/57o2L4FKfB3TywsteFcQ" %}
+[Broken link](/broken/pages/57o2L4FKfB3TywsteFcQ)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/57o2L4FKfB3TywsteFcQ" %}
+[Broken link](/broken/pages/57o2L4FKfB3TywsteFcQ)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-create-a-trial-key-from-within-your-application.md" %}
@@ -420,8 +420,8 @@
 [tool-to-delete-registered-license-keys-on-a-system.md](tool-to-delete-registered-license-keys-on-a-system.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/u5M1ZF7WVOrDmXEkYBP2" %}
+[Broken link](/broken/pages/u5M1ZF7WVOrDmXEkYBP2)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-get-the-list-of-activated-computers.md" %}
@@ -552,8 +552,8 @@
 [how-to-extend-the-expiry-date-for-a-customer.md](how-to-extend-the-expiry-date-for-a-customer.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/km2rQpiP0ZIqruCTB8IY" %}
+[Broken link](/broken/pages/km2rQpiP0ZIqruCTB8IY)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-migrate-my-products-and-settings-to-another-machine.md" %}

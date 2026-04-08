@@ -26,13 +26,11 @@ For example, your message could read:\
 `Thank you for your recent purchase of %ProductName% %MajorVersion%.%MinorVersion%.`\
 `Your license key is: %ActivationKey%.`\
 `Regards,`\
-`Tom`\
-
+`Tom`<br>
 
 ### ![](<../../../.gitbook/assets/image (16).png>)Templates&#x20;
 
-Templates allow you to create common email content that can be readily used when sending manual or automated emails to your customers. Automated emails can be configured from the Scheduled Tasks option.\
-
+Templates allow you to create common email content that can be readily used when sending manual or automated emails to your customers. Automated emails can be configured from the Scheduled Tasks option.<br>
 
 ![](<../../../.gitbook/assets/image (17).png>)Aggregated Emails
 

@@ -1,4 +1,4 @@
-# How to generate a trial key from your web site
+# Generate a trial key from your web site
 
 ## **QLM Customer Site**
 
@@ -86,8 +86,7 @@ The following Variables can be used in the appropriate fields:&#x20;
 &#x20;  %ProductName%\
 &#x20;  %MajorVersion%\
 &#x20;  %MinorVersion%\
-\
-
+<br>
 
 To simplify the management of these arguments, we recommend using the **is\_args** argument as described in this [article](https://support.soraco.co/hc/en-us/articles/211568803-How-to-hide-the-URL-arguments-of-the-QlmRegistrationForm-aspx-or-QlmRegistration-asmx-pages). Note that is\_args can be used for non-customer-specific data such as the product ID, major version, minor version, email template, etc. Customer-specific data such as full name, email, company, and phone must be passed as URL arguments.
 
@@ -119,4 +118,4 @@ The following settings can only be set by modifying the web.config file:
 
 You can customize the behavior and some UI elements of the QLM Customer Site by setting [Server Properties](https://support.soraco.co/hc/en-us/articles/207920563#CustomerSite).
 
-![](https://support.soraco.co/hc/article\_attachments/18847559085844)
+![](https://support.soraco.co/hc/article_attachments/18847559085844)

@@ -1,7 +1,7 @@
-# 👩🔬 Customer Contributions
+# 👩‍🔬 Customer Contributions
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="/broken/pages/LQZIo4T5MmU72VfssYVP" %}
+[Broken link](/broken/pages/LQZIo4T5MmU72VfssYVP)
 {% endcontent-ref %}
 
 {% content-ref url="qlm-pro-.net-control-sample-in-vb.net.md" %}

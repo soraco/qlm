@@ -4,8 +4,7 @@ A QLM license key embeds information about your product such as the product ID, 
 
 To add a product, click on the Add button and enter the product information.
 
-The full set of properties is divided into four tabs, _Product Information_, _Latest Version_, _Keys,_ and _Vendor_.\
-
+The full set of properties is divided into four tabs, _Product Information_, _Latest Version_, _Keys,_ and _Vendor_.<br>
 
 ### Product Information
 
@@ -57,4 +56,4 @@ It is recommended to create a new product version when updating the encryption k
 
 For more details about updating encryption keys, refer to this [article](../../../how-to/how-to-release-a-new-version-of-your-product-with-new-encryption-keys.md).
 
-\
+<br>

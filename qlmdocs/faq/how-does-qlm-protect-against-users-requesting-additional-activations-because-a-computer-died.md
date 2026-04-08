@@ -25,8 +25,7 @@ where:
 * is\_cpid specifies the unique computer identifier
 * is\_cpname specifies the computer name
 * is\_qlmversion specifies the version of the QLM engine\
-  \
-
+  <br>
 
 When your application is launched, connect to the page above to display license information to your end user. In addition to providing licensing information to the user, this page will detect illegal computers and log them in the database. The QlmCustomerSite portal can be found in the DeployToServer folder. The deployment procedure for this portal is identical to the one for the QLM web service. If you have installed the QLM web service using the setup program qlmwebsvcsetup.exe, then the QlmCustomerSite is already deployed on your server.
 
@@ -36,4 +35,4 @@ Note that QLM does not prevent users from running your application if an illegal
 
 &#x20;
 
-![](https://support.soraco.co/hc/article\_attachments/360020807251/mceclip0.png)
+![](https://support.soraco.co/hc/article_attachments/360020807251/mceclip0.png)

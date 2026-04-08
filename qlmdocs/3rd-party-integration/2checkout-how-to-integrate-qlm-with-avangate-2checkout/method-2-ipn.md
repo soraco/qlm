@@ -95,8 +95,7 @@ The steps described above will flag the order as fulfilled as soon as payment is
 
 To wait for conformation from QLM in order to flag the order as fulfilled you must configure the 2Checkout [IDN Response ](https://verifone.cloud/docs/2checkout/API-Integration/Webhooks/API-Message-Services/Instant-Delivery-Notification-%28IDN%29)feature as follows :
 
-* For each product definition in 2Checkout, set the Fulfillment option to "Fulfillment made by you".  Do not check the option "Start subscription after fulfillment". If you do so, 2checkout does not send expiry date information to QLM and hence the license keys will not be created properly (see screenshot below).\
-
+* For each product definition in 2Checkout, set the Fulfillment option to "Fulfillment made by you".  Do not check the option "Start subscription after fulfillment". If you do so, 2checkout does not send expiry date information to QLM and hence the license keys will not be created properly (see screenshot below).<br>
 * When creating the QLM custom server property, add the following argument to each property that is configured to receive an IDN response: \&is\_sendresponse=true
 
 <figure><img src="../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>

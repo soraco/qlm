@@ -26,4 +26,4 @@ To avoid having to contact each one of your customers and provide them with thei
 * In the new version of your application that uses QLM, when your application starts up, look up your old license key and call QlmLicense.GetActivationKeyFromLegacyKey (as of QLM 11.1.18306.1) or QlmLicense.GetActivationKeyFromOrderID or QlmLicense.GetActivationKeyFromUserData to retrieve the new QLM Activation Key
 * Once you have retrieved the key, call QlmLicense.ActivateLicense to activate the license. If activation is successful, call QlmLicense.StoreKeys to store the new keys on the end user system.
 
-{% file src="../.gitbook/assets/QlmImport.zip" %}
+{% file src="../.gitbook/assets/QlmImport (2).zip" %}

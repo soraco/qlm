@@ -87,8 +87,7 @@ Additionally, you can customize the email template to use when sending an email 
 &#x20;
 
 The email template can contain any PayPal variable such as %payer\_email% or %ProductName%. When your cart includes multiple items, each item will be listed in the email as defined in the %ItemTemplate% section. The %ItemTemplate% section starts with an %ItemTemplate% tag and ends with a corresponding tag. All lines in between the 2 tags are repeated for each item in the cart.\
-\
-
+<br>
 
 QLM 9.0.16228.1+ includes 4 Paypal specific templates: Paypal.NewOrder, Paypal.NewSubscription, PayPal.RenewSubscription and Paypal.CancelSubscription.
 
@@ -114,7 +113,7 @@ Now in the Paypal button configuration, set the Item ID or Subscription ID to IT
 
 Once you have completed the customization above, you can use the Paypal IPN simulator to test that the ordering process is working as expected.\
 \
-The Paypal IPN simulator is located here: [https://developer.paypal.com/webapps/developer/applications/ipn\_simulator](https://developer.paypal.com/webapps/developer/applications/ipn\_simulator)\
+The Paypal IPN simulator is located here: [https://developer.paypal.com/webapps/developer/applications/ipn\_simulator](https://developer.paypal.com/webapps/developer/applications/ipn_simulator)\
 \
 In the IPN simulator, set the following fields:
 

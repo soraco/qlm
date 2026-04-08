@@ -70,8 +70,7 @@ To transfer the definition of your product to another machine:\
 C:\Users\\\[your user name]\AppData\Roaming\Interactive Studios\Quick License Manager
 
 After installing QLM on the new system, copy the backed-up files file to the new system in the appropriate folder as described above.\
-\
-
+<br>
 
 ### QLM Express Users 4.x or 5.1 <a href="#h_01hbdvpw4m9chjeb5wev33wybp" id="h_01hbdvpw4m9chjeb5wev33wybp"></a>
 

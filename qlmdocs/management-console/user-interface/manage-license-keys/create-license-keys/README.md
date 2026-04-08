@@ -1,7 +1,6 @@
 # Create License Keys
 
-The Create button creates an activation key. Activation keys can also be created via the QLM API and more typically via QLM's integration with eCommerce providers. For more information about how to automatically create activation keys during the purchasing process, read the eCommerce Providers section in the QLM Professional help.\
-
+The Create button creates an activation key. Activation keys can also be created via the QLM API and more typically via QLM's integration with eCommerce providers. For more information about how to automatically create activation keys during the purchasing process, read the eCommerce Providers section in the QLM Professional help.<br>
 
 * **Product**: The product associated with the license key.
 * **Number of keys**: The number of license keys to generate.

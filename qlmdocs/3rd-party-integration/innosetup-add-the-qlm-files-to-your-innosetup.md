@@ -4,8 +4,7 @@
 
 \[Files]\
 Source: "C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\\.net 4.0\QlmLicenseLib.dll"; DestDir: "{app}"\
-Source: "C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\\.net 4.0\QlmControls.dll"; DestDir: "{app}"\
-
+Source: "C:\Program Files\Soraco\QuickLicenseMgr\Redistrib\\.net 4.0\QlmControls.dll"; DestDir: "{app}"<br>
 
 **For .NET 2.0 apps**
 

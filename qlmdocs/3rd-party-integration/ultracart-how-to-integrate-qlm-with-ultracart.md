@@ -30,8 +30,7 @@ To have UltraCart invoke QLM during an order, do the following:\
 **From Manage Keys-> License Management tab**
 
 * Select **Tools ->** **eCommerce Providers**
-* Locate the UltraCart item and enter the following values:\
-
+* Locate the UltraCart item and enter the following values:<br>
   * Enabled: \[X]
   * Password: _**Shared Secret** entered in UltraCart Activation Code section_
 

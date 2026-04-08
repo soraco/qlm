@@ -51,8 +51,7 @@ To integrate FastSpring with QLM, perform the following in the FastSpring Contro
 * Optionally, add an is\_user and is\_pwd parameters to enforce authentication. The user and password can be specified from the QLM Application, under Manager Keys / Commerce Providers.
 
 With the steps above completed, place a test order by clicking on the FastSpring Control Panel Home page, then Store Testing. Once your test order is completed, an activation key will be created in the QLM database along with the corresponding customer and order information.\
-\
-
+<br>
 
 ### FastSpring Setup for Maintenance Plan
 
