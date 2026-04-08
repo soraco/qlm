@@ -6,15 +6,17 @@ QLM v20 is planned for release on April 12, 2026.  **The documentation below is 
 
 ### Important Changes in v20 <a href="#h_01h95qq4d75t05j62drs5q0gz6" id="h_01h95qq4d75t05j62drs5q0gz6"></a>
 
-* The QLM License server, and all related server components, have been upgraded from .NET Framework 4.6 to .NET Core 10. This is a major change that impacts the URLs to communicate with the License Server. If you are hosting your License Server, please check the upgrade instructions below.
-* The QLM Portal has been completely re-written using Blazor and .NET 10.
-* Most client side QLM components now use .NET 10.
-* If you use PayPal integration, you must update the IPN URL (details below)
-* All ecommerce integrations should use the new License Server URL.
-* If you are hosting your own License Server, before upgrading to this version, you MUST ensure that the QLM database login user has the db\_securityadmin role. You can use the following command to add it (change qlm\_user as needed): EXEC sp\_addrolemember N'db\_securityadmin', N'qlm\_user'
-* Instructions to redirect the old URL to the new URL is provided below.
-
-
+* License Server;
+  * The QLM License server, and all related server components, have been upgraded from .NET Framework 4.6 to .NET Core 10. This is a major change that impacts the URLs to communicate with the License Server. If you are hosting your License Server, please check the upgrade instructions below.
+  * The QLM Portal has been completely re-written using Blazor and .NET 10.
+  * If you use PayPal integration, you must update the IPN URL (details below)
+  * All ecommerce integrations should use the new License Server URL.
+  * If you are hosting your own License Server, before upgrading to this version, you MUST ensure that the QLM database login user has the db\_securityadmin role. You can use the following command to add it (change qlm\_user as needed): EXEC sp\_addrolemember N'db\_securityadmin', N'qlm\_user'
+  * Instructions to redirect the old URL to the new URL is provided below.
+  * The procedure to integrate with Azure has changed. Please check the latest documentation.
+* Client Side
+  * Most client side QLM components now use .NET 10.
+  * The QLM License Wizard XML settings file must be updated to reflect the new URL.
 
 ### .NET Support
 
@@ -26,6 +28,9 @@ QLM v20 is planned for release on April 12, 2026.  **The documentation below is 
 * The minimum requirement for .NET 4 is .NET 4.62.
 * The QLM Management Console now requires .NET 10 (requires Windows 10 or higher).
 * The QLM Management Console and the QLM Portal now reference DevExpress 25.2.5.
+* New License Server requirements:
+  * You must install the .NET 10 Hosting Bundle 10.0.5 or greater
+  * You must install Microsoft OLE DB Driver for SQL Server v19
 
 ### Documentation
 
@@ -37,7 +42,7 @@ The QLM Documentation has moved to: [https://docs.soraco.co](https://docs.soraco
 
 ### QLM Customer Site New Features
 
-* List QlmCustomer Site features
+* List QlmCustomerSite features
 
 ### QLM Professional New Features
 
@@ -118,6 +123,16 @@ You must then update the QlmLicenseServer\web.config (note that the syste.webser
 	</rewrite>
 </system.webServer>
 ```
+
+#### PayPal Integration
+
+The URL to the QLM PayPal integration has changed from:&#x20;
+
+[http://localhost/Qlm/QlmLicenseServer/qlmpaypalipn.aspx<br>](http://localhost/Qlm/QlmLicenseServer/qlmpaypalipn.aspx)
+
+To:&#x20;
+
+[http://localhost/Qlm/QlmLicenseServerNetCore/api/v1/PayPalIpn/notify](http://localhost/Qlm/QlmLicenseServerNetCore/api/v1/PayPalIpn/notify)
 
 #### Source Code
 
