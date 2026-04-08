@@ -92,7 +92,7 @@ After the server is installed, you must perform a DB Schema upgrade:
    2. QlmCustomerSiteNetCore
    3. QlmPortalNetCore
    4. QlmCustomerPortalNetCore
-8. In IIS, expand the Default Web Site node and locate the Qlm virtual directory
+8. In IIS, expand the Default Web Site node and locate the QLM virtual directory
 9. Right mouse click QlmLicenseServerNetCore and select Convert to Application. When prompted to Add the Application, set the Application Pool to QlmLicenseServerNetCode
 10. Right mouse click QlmCustomerSiteNetCore and select Convert to Application. When prompted to Add the Application, set the Application Pool to QlmCustomerSiteNetCore
 11. Right mouse click QlmPortalNetCoreand select Convert to Application. When prompted to Add the Application, set the Application Pool to QlmPortalNetCore
