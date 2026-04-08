@@ -64,7 +64,7 @@ Next, you will create a QLM Custom Server property that maps your 2Checkout prod
 * To send a different email message for a subscription renewal, add the following argument to the server property: \&is\_emailtemplate\_renew=\<Renewal Email Template> (replace the email template name as needed).
 * Click Ok
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Place a test order
 

@@ -108,7 +108,7 @@ If you are upgrading from QLM v19 or earlier to QLM v20, you can configure the o
 
 In order to perform the redirect, you must first install the URL Rewrite module which is available [here](https://www.iis.net/downloads/microsoft/url-rewrite).
 
-You must then update the QlmLicenseServer\web.config (note that the syste.webserver section exists already so you should just add the relevant url rewrite section)
+You must then update the QlmLicenseServer\web.config (note that the syste.webserver section exists already so you should just add the relevant URL Rewrite section)
 
 ```xml
 <system.webServer>
@@ -123,6 +123,10 @@ You must then update the QlmLicenseServer\web.config (note that the syste.webser
 	</rewrite>
 </system.webServer>
 ```
+
+**Important**: when redirecting from an old License server to a v20 license server, the old license server and the v20 license server must use the same Application Pool.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### PayPal Integration
 
