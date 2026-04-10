@@ -78,21 +78,62 @@ The QLM v20 License Server can be installed side-by-side with the QLM v19 or ear
 
 #### Automated Upgrade
 
-If you installed QLM by running the QlmLicenseServerSetup.exe, when you run the latest QlmLicenseServerSetup.exe, the new QLM v20 License Server will be installed side-by-side  with the previous version. The new URLs after the installation of the QLM v20 License Server are (replace localhost with the name of your server/domain)
+If you originally installed QLM using **QlmLicenseServerSetup.exe**, running the latest version of **QlmLicenseServerSetup.exe** will automatically install QLM v20 License Server side‑by‑side with your existing QLM v1x installation.
 
-* QLM License Server: http://localhost/Qlm/QlmLicenseServerNetCore/api/v1/QlmApi
-* QLM Self Help: http://localhost/Qlm/QlmCustomerSiteNetCore
-* QLM Portal: http://localhost/Qlm/QlmPortalNetCore/QlmPortal
-* QLM Customer Portal: http://localhost/QlmCustomerPortalNetCore/qlm-portal-app
+This allows you to upgrade safely without disrupting your current environment.
 
-You should always back up your database and site before upgrading. To back up your site, simply make a copy of your QLM License Server folders. To back up your database, perform a SQL Server back up of the database.
+#### New URLs After Installation
 
-After the server is installed, you must perform a DB Schema upgrade:
+After the QLM v20 License Server is installed, the following URLs will be available\
+(replace `localhost` with your server name or domain):
 
-* Launch the QLM Management Console
-* Go to the Manage Keys tab
-* Click Sites and select your site
-* Click Upgrade DB Schema
+* QLM License Server
+
+```html
+http://localhost/Qlm/QlmLicenseServerNetCore/api/v1/QlmApi
+```
+
+* QLM Self Help
+
+```html
+http://localhost/Qlm/QlmCustomerSiteNetCore
+```
+
+* QLM Portal
+
+```html
+http://localhost/Qlm/QlmPortalNetCore/QlmPortal
+```
+
+* QLM Customer Portal:
+
+```html
+http://localhost/QlmCustomerPortalNetCore/qlm-portal-app
+```
+
+#### Backup Before Upgrading (Strongly Recommended)
+
+Before running the upgrade, **always back up both your QLM site and database**:
+
+* **Site backup**\
+  Make a copy of all existing **QLM License Server folders**.
+* **Database backup**\
+  Perform a standard **SQL Server backup** of the QLM database.
+
+These backups allow you to restore your environment quickly if necessary.
+
+***
+
+#### Required Post‑Installation Step: Database Schema Upgrade
+
+Once the QLM v20 server components are installed, you **must upgrade the database schema**:
+
+1. Launch the **QLM Management Console**
+2. Go to the **Manage Keys** tab
+3. Click **Sites** and select your site
+4. Click **Upgrade DB Schema**
+
+
 
 #### Manual Upgrade
 
