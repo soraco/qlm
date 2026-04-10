@@ -167,7 +167,7 @@ If you are upgrading from QLM v19 or earlier to QLM v20, you can configure the o
 
 In order to perform the redirect, you must first install the URL Rewrite module which is available [here](https://www.iis.net/downloads/microsoft/url-rewrite).
 
-You must then update the QlmLicenseServer\web.config (note that the syste.webserver section exists already so you should just add the relevant URL Rewrite section)
+You must then update the QlmLicenseServer\web.config (note that the system.webserver section exists already so you should just add the relevant URL Rewrite section)
 
 ```xml
 <system.webServer>
