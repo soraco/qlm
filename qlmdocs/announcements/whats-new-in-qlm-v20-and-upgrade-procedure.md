@@ -16,18 +16,37 @@ QLM v20 is an investment in the future of the platform—focused on modernizatio
 
 ### Important Changes in v20 <a href="#h_01h95qq4d75t05j62drs5q0gz6" id="h_01h95qq4d75t05j62drs5q0gz6"></a>
 
-* License Server;
-  * The QLM License server, and all related server components, have been upgraded from .NET Framework 4.6 to .NET Core 10. This is a major change that impacts the URLs to communicate with the License Server. If you are hosting your License Server, please check the upgrade instructions below.
-  * The QLM Portal has been completely re-written using Blazor and .NET 10.
-  * If you use PayPal integration, you must update the IPN URL (details below)
-  * All ecommerce integrations should use the new License Server URL.
-  * If you are hosting your own License Server, before upgrading to this version, you MUST ensure that the QLM database login user has the db\_securityadmin role. You can use the following command to add it (change qlm\_user as needed): EXEC sp\_addrolemember N'db\_securityadmin', N'qlm\_user'
-  * Instructions to redirect the old URL to the new URL is provided below.
-  * The procedure to integrate with Azure has changed. Please check the latest documentation.
-  * QLM Authentication now uses the new Microsoft Identity framework instead of ASP.NET Membership
-* Client Side
-  * Most client side QLM components now use .NET 10.
-  * The QLM License Wizard XML settings file must be updated to reflect the new URL.
+#### License Server
+
+* The QLM License Server and all related server components have been upgraded from .NET Framework 4.6 to .NET 10. This is a significant architectural change that affects the License Server URLs used for communication.
+  * If you host your own License Server, review the upgrade instructions carefully before upgrading.
+  * All integrations must be updated to use the new License Server URL.
+* The QLM Portal has been completely rewritten using Blazor and .NET 10, delivering improved performance, maintainability, and user experience.
+* **PayPal integration**\
+  If you are using PayPal, you **must update the IPN URL** to point to the new License Server endpoint (details provided below).
+* **E‑commerce integrations**\
+  All e‑commerce integrations must be updated to use the **new License Server URL**.
+* **Database security requirement (hosted License Server only)**\
+  Before upgrading, the QLM database login **must** have the `db_securityadmin` role.\
+  You can grant this role using the following command (replace `qlm_user` as needed):
+
+```sql
+    SQLEXEC sp_addrolemember N'db_securityadmin', N'qlm_user'
+```
+
+
+
+* **URL redirection**\
+  Instructions for redirecting the old License Server URL to the new URL are provided below and should be implemented to ensure backward compatibility.
+* **Azure integration**\
+  The procedure to integrate QLM with Azure has changed. Please refer to the latest documentation before upgrading.
+* **Authentication framework**\
+  QLM authentication now uses the **Microsoft Identity framework**, replacing **ASP.NET Membership**.
+
+#### Client Side
+
+* Most client side QLM components now use .NET 10.
+* The QLM License Wizard XML settings file must be updated to reflect the new URL.
 
 ### .NET Support
 
