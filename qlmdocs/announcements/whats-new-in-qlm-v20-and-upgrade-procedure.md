@@ -4,6 +4,16 @@ QLM v20 is planned for release on April 12, 2026.  **The documentation below is 
 
 -> [Latest Version Release Notes](https://soraco.co/products/qlm/ReleaseNotes.html)
 
+Quick License Manager (QLM) v20 is a **foundational release** focused on modernizing the core architecture of the product to ensure long‑term stability, performance, and future innovation.
+
+While QLM v20 does not introduce a large set of new end‑user features, it represents a **major technological leap**. All QLM server components have been fully migrated from **.NET Framework 4.x to .NET 10**. This was a significant engineering effort that positions QLM on a modern, fully supported platform and enables us to evolve the product using the latest Microsoft technologies for years to come.
+
+In addition, the **QLM Portal has been completely rewritten** using modern frameworks (**Blazor and DevExpress**). This rewrite delivers improved usability, a cleaner user experience, and better overall performance, while laying the groundwork for future enhancements.
+
+As with every major release, **backward compatibility is fully maintained**. Existing customers can upgrade with confidence, and QLM v20 server components can be installed **side‑by‑side with QLM v1x server components**, allowing for a smooth and controlled transition.
+
+QLM v20 is an investment in the future of the platform—focused on modernization today so we can deliver faster innovation tomorrow.
+
 ### Important Changes in v20 <a href="#h_01h95qq4d75t05j62drs5q0gz6" id="h_01h95qq4d75t05j62drs5q0gz6"></a>
 
 * License Server;
