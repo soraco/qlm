@@ -42,6 +42,9 @@ QLM v20 is an investment in the future of the platform—focused on modernizatio
   The procedure to integrate QLM with Azure has changed. Please refer to the latest documentation before upgrading.
 * **Authentication framework**\
   QLM authentication now uses the **Microsoft Identity framework**, replacing **ASP.NET Membership**.
+*   **Disaster Recovery Site**
+
+    Effective immediately, when hosting your License Server with Soraco, the DR site will only host the License Server component. The QLM Self Help, QLM Portal and QLM Customer Portal will not be available on the DR site.
 
 #### Client Side
 
