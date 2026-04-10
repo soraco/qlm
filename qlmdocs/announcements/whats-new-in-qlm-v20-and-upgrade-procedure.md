@@ -72,17 +72,17 @@ To upgrade to QLM v20, you must first install the QLM Management Console on your
 
 If we are hosting your QLM License Server, contact us to upgrade the License Server. If you are hosting your own License Server, you can upgrade the License Server as described in the next sections.
 
-#### License Server Changes
+**License Server Changes**
 
 The QLM v20 License Server can be installed side-by-side with the QLM v19 or earlier License Server.
 
-#### Automated Upgrade
+**Automated Upgrade**
 
 If you originally installed QLM using **QlmLicenseServerSetup.exe**, running the latest version of **QlmLicenseServerSetup.exe** will automatically install QLM v20 License Server side‑by‑side with your existing QLM v1x installation.
 
 This allows you to upgrade safely without disrupting your current environment.
 
-#### New URLs After Installation
+**New URLs After Installation**
 
 After the QLM v20 License Server is installed, the following URLs will be available\
 (replace `localhost` with your server name or domain):
@@ -111,7 +111,7 @@ http://localhost/Qlm/QlmPortalNetCore/QlmPortal
 http://localhost/QlmCustomerPortalNetCore/qlm-portal-app
 ```
 
-#### Backup Before Upgrading (Strongly Recommended)
+**Backup Before Upgrading (Strongly Recommended)**
 
 Before running the upgrade, **always back up both your QLM site and database**:
 
@@ -124,7 +124,7 @@ These backups allow you to restore your environment quickly if necessary.
 
 ***
 
-#### Required Post‑Installation Step: Database Schema Upgrade
+**Required Post‑Installation Step: Database Schema Upgrade**
 
 Once the QLM v20 server components are installed, you **must upgrade the database schema**:
 
@@ -132,8 +132,6 @@ Once the QLM v20 server components are installed, you **must upgrade the databas
 2. Go to the **Manage Keys** tab
 3. Click **Sites** and select your site
 4. Click **Upgrade DB Schema**
-
-
 
 #### Manual Upgrade
 
@@ -145,13 +143,15 @@ Once the QLM v20 server components are installed, you **must upgrade the databas
 4. Go to the Deployment tab and set the information associated with your License Server (see screenshot below)
 5. Click "Update Config Files"
 6. Copy all the files located in %Public%\Public Documents\Quick License Manager\DeployToServer\ to your server, under the c:\inetpub\wwwroot\Qlm
-7. On your server, in IIS, create the following Application Pools
-   1. QlmLicenseServerNetCore
+7. On your server, in IIS, create the Application Pools below. When creating the Application Pool, select the option: No Managed Code.
+   1. QlmLicenseServerNetCore (only required if you do no want to redirect from your QLM v1x License Server to the QLM v20 License Server)
    2. QlmCustomerSiteNetCore
    3. QlmPortalNetCore
    4. QlmCustomerPortalNetCore
 8. In IIS, expand the Default Web Site node and locate the QLM virtual directory
-9. Right mouse click QlmLicenseServerNetCore and select Convert to Application. When prompted to Add the Application, set the Application Pool to QlmLicenseServerNetCore
+9. Right mouse click QlmLicenseServerNetCore and select Convert to Application. When prompted to Add the Application, you have 2 options:
+   1. If you want to redirect your QLM v1x customers to QLM v20, set the same Application Pool as the one currently used for QLM v1x.
+   2. If you do not want to redirect, set the Application Pool to QlmLicenseServerNetCore.
 10. Right mouse click QlmCustomerSiteNetCore and select Convert to Application. When prompted to Add the Application, set the Application Pool to QlmCustomerSiteNetCore
 11. Right mouse click QlmPortalNetCore and select Convert to Application. When prompted to Add the Application, set the Application Pool to QlmPortalNetCore
 12. Right mouse click QlmCustomerPortalNetCore and select Convert to Application. When prompted to Add the Application, set the Application Pool to QlmCustomerPortalNetCore
