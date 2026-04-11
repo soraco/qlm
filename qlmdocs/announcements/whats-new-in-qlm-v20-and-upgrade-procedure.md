@@ -22,7 +22,7 @@ QLM v20 is an investment in the future of the platform—focused on modernizatio
   * If you host your own License Server, review the upgrade instructions carefully before upgrading.
   * All integrations must be updated to use the new License Server URL.
 * The QLM Portal has been completely rewritten using DevExpress/Blazor and .NET 10, delivering improved performance, maintainability, and user experience.
-* The QLM Agent service now uses .NET 10. After installing QLM v20, you will need to reconfigure the credentials of the user account running the QLM Agent service.
+* The QLM Agent Windows Service now uses .NET 10. After installing QLM v20, you will need to reconfigure the credentials of the user account running the QLM Agent Windows Service.
 * **PayPal integration**\
   If you are using PayPal, you **must update the IPN URL** to point to the new License Server endpoint (details provided below).
 * **E‑commerce integrations**\
