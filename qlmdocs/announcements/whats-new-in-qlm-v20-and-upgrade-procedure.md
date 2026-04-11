@@ -167,11 +167,11 @@ Once the QLM v20 server components are installed, you **must upgrade the databas
 
 #### Redirection from old URL to new URL
 
-If you are upgrading from QLM v19 or earlier to QLM v20, you can configure the old license server to redirect to the v20 License Server by adding some entries QlmLicenseServer\web.config.
+If you are upgrading from QLM v19 or earlier to QLM v20, you can configure the old license server to redirect to the v20 License Server by adding some entries to the QlmLicenseServer\web.config file.
 
 In order to perform the redirect, you must first install the URL Rewrite module which is available [here](https://www.iis.net/downloads/microsoft/url-rewrite).
 
-You must then update the QlmLicenseServer\web.config (note that the system.webserver section exists already so you should just add the relevant URL Rewrite section)
+You must then update the legacy QlmLicenseServer\web.config as follows (note that the system.webserver section exists already so you should just add the relevant URL Rewrite section):
 
 ```xml
 <system.webServer>
