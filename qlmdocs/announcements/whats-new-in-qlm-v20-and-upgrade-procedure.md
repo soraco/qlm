@@ -1,6 +1,6 @@
 # What's new in QLM v20 and upgrade procedure
 
-QLM v20 is planned for release on April 12, 2026.  **The documentation below is in progress.**
+QLM v20 was released on April 12, 2026.&#x20;
 
 -> [Latest Version Release Notes](https://soraco.co/products/qlm/ReleaseNotes.html)
 
@@ -43,9 +43,9 @@ QLM v20 is an investment in the future of the platform—focused on modernizatio
   The procedure to integrate QLM with Azure has changed. Please refer to the latest documentation before upgrading.
 * **Authentication framework**\
   QLM authentication now uses the **Microsoft Identity framework**, replacing **ASP.NET Membership**.
-*   **Disaster Recovery Site**
-
-    Effective immediately, when hosting your License Server with Soraco, the DR site will only host the License Server component. The QLM Self Help, QLM Portal and QLM Customer Portal will not be available on the DR site.
+* **Disaster Recovery Site**
+  * Effective immediately, when hosting your License Server with Soraco, the DR site will only host the License Server component. The QLM Self Help, QLM Portal and QLM Customer Portal will not be available on the DR site.
+  * The qlmredirect.xml must be updated with new entries for the QLM v20 License Server. See detailed instructions below.
 
 #### Client Side
 
@@ -200,6 +200,21 @@ The URL to the QLM PayPal integration has changed from:&#x20;
 To:&#x20;
 
 [http://localhost/Qlm/QlmLicenseServerNetCore/api/PayPalIpn/notify](http://localhost/Qlm/QlmLicenseServerNetCore/api/v1/PayPalIpn/notify)
+
+#### Disaster Reovery Redirection
+
+The qlmredirect.xml that is used by the QLM Disaster Recovery framework needs to be updated to add new entries for the QLM v20 License Server as per the example below:
+
+```xml
+<QlmRedirection>
+<activeUrl>https://qlm4.net/qlmdemo/qlmlicenseserver/qlmservice.asmx</activeUrl>
+<drUrl>https://qlmdr4.net/qlmdemo/qlmlicenseserver/qlmservice.asmx</drUrl>
+<activeNetCoreUrl>https://qlm4.net/qlmdemo/QlmLicenseServerNetCore/api/v1/QlmApi</activeNetCoreUrl>
+<drNetCoreUrl>https://qlmdr4.net/qlmdemo/QlmLicenseServerNetCore/api/v1/QlmApi</drNetCoreUrl>
+</QlmRedirection>
+```
+
+
 
 #### Source Code
 
