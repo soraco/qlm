@@ -19,8 +19,16 @@ QLM v20 is an investment in the future of the platform—focused on modernizatio
 #### License Server
 
 * The QLM License Server and all related server components have been upgraded from .NET Framework 4.6 to .NET 10. This is a significant architectural change that affects the License Server URLs used for communication.
-  * If you host your own License Server, review the upgrade instructions carefully before upgrading.
-  * All integrations must be updated to use the new License Server URL.
+* **New QLM License Server URL**
+  *   The main URL to the QLM License server has changed from:
+
+      * `http://localhost/Qlm/QlmLicenseServer/qlmservice.asmx`
+
+      to
+
+      * `http://localhost/Qlm/QlmLicenseServerNetCore/api/v1/QlmApi`
+* Instructions for redirecting the old License Server URL to the new URL are provided below and should be implemented to ensure backward compatibility.  If you host your own License Server, review the upgrade instructions carefully before upgrading.
+* All integrations must be updated to use the new License Server URL.
 * The QLM Portal has been completely rewritten using DevExpress/Blazor and .NET 10, delivering improved performance, maintainability, and user experience.
 * The QLM Agent Windows Service now uses .NET 10. After installing QLM v20, you will need to reconfigure the credentials of the user account running the QLM Agent Windows Service.
 * **PayPal integration**\
@@ -37,8 +45,6 @@ QLM v20 is an investment in the future of the platform—focused on modernizatio
 
 
 
-* **URL redirection**\
-  Instructions for redirecting the old License Server URL to the new URL are provided below and should be implemented to ensure backward compatibility.
 * **Azure integration**\
   The procedure to integrate QLM with Azure has changed. Please refer to the latest documentation before upgrading.
 * **Authentication framework**\
