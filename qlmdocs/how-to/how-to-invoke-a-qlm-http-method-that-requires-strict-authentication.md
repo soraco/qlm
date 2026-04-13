@@ -25,7 +25,7 @@ To configure these settings:
   * Set an API Key (like a password, specify a string of characters)
   * Click Ok
 
-In your application, you must dynamically computer the hash and add it to the header of the request as per the instructions below:
+In your application, you must dynamically compute the hash and add it to the header of the request as per the instructions below:
 
 * Compute a SHA256 hash of the URL you are invoking, including all arguments, the timestamp value., and the authentication version. Example: http://localhost:55555/qlmservice.asmx/RetrieveActivationKeyHttp?is\_orderid=1234\&is\_userdata1=99999\&is\_user=ralph\&is\_pwd=123456\&is\_format=json\&X-Qlm-Timestamp:2023-10-30 23:59:00\&X-Qlm-Authentication-Version=2
 * Add the value of the hash in a custom header called X-Qlm-Authentication
@@ -92,9 +92,9 @@ There are many online tools that you can use an online tool to test your hash va
 
 For example, you can use this [tool](https://www.freeformatter.com/hmac-generator.html) as shown below:
 
-* Copy/paste your URL in the tool: [http://localhost:55555/qlmservice.asmx/RetrieveActivationKeyHttp?is\_orderid=1234\&is\_userdata1=99999\&is\_user=ralph\&is\_pwd=123456\&is\_format=json](http://localhost:55555/qlmservice.asmx/RetrieveActivationKeyHttp?is\_orderid=1234\&is\_userdata1=99999\&is\_user=ralph\&is\_pwd=123456\&is\_format=json)
+* Copy/paste your URL in the tool: [http://localhost:55555/qlmservice.asmx/RetrieveActivationKeyHttp?is\_orderid=1234\&is\_userdata1=99999\&is\_user=ralph\&is\_pwd=123456\&is\_format=json](http://localhost:55555/qlmservice.asmx/RetrieveActivationKeyHttp?is_orderid=1234\&is_userdata1=99999\&is_user=ralph\&is_pwd=123456\&is_format=json)
 * Enter the API key (from Manage Keys / 3rd party extensions) in the Secret Key field
 * Select SHA 256
 * Click Computer HMAC
 
-![mceclip0.png](https://support.soraco.co/hc/article\_attachments/360062256891)
+![mceclip0.png](https://support.soraco.co/hc/article_attachments/360062256891)
