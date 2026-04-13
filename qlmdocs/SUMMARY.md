@@ -566,6 +566,7 @@
   * [Failed to decrypt data message](faq/failed-to-decrypt-data-message.md)
   * [Error: The private key is not base64-encoded.](faq/error-the-private-key-is-not-base64-encoded..md)
   * [Could not load the file or assembly 'DevExpress.XtraWizard.v10.2](faq/could-not-load-the-file-or-assembly-devexpress.xtrawizard.v10.2.md)
+  * [QLM Agent Service not installed](troubleshooting/qlm-agent-service-not-installed.md)
 * [🅱️ Blog](blog/README.md)
   * [Providing full source code – the comforting myth](blog/providing-full-source-code-the-comforting-myth.md)
   * [Iterative Releases](blog/iterative-releases.md)
