@@ -12,4 +12,4 @@ In some conditions, the QLM setup will fail to install the QLM Agent Service. Th
 ```
 {% endcode %}
 
-{% file src="../.gitbook/assets/QlmInstallAgentSvc.ps1" %}
+{% file src="../.gitbook/assets/QlmInstallAgentSvc (1).ps1" %}
