@@ -8,7 +8,7 @@ In some conditions, the QLM setup will fail to install the QLM Agent Service. Th
 
 {% code overflow="wrap" %}
 ```ps1
-.\QlmInstallAgentSvc.ps1 -ServiceName QlmAgentSvc -ExePath "C:\Program Files\Soraco\QuickLicenseMgr\QlmAgentSvc\QlmAgentSvc.exe" -DisplayName "Quick License Manager Agent" -Description "Quick License Manger Agent Service" -StartType Automatic
+.\QlmInstallAgentSvc.ps1 -ServiceName "Quick License Manager Agent" -ExePath "C:\Program Files\Soraco\QuickLicenseMgr\QlmAgentSvc\QlmAgentSvc.exe" -DisplayName "Quick License Manager Agent" -Description "Quick License Manger Agent Service" -StartType Automatic
 ```
 {% endcode %}
 
