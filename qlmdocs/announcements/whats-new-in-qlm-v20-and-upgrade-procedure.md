@@ -60,7 +60,7 @@ QLM v20 is an investment in the future of the platform—focused on modernizatio
 
 ### .NET Support
 
-* The QlmLicenseLib.dll is now available for .NET4, .NET6, NET7, .NET8, .NET9 and .NET 10.
+* The QlmLicenseLib.dll is now available for .NET4, .NET6, NET7, .NET8, .NET9, and .NET 10.
 * The QlmControls.dll is now available for .NET4, .NET6-Windows, .NET7-Windows, .NET8-Windows, .NET9-Windows, and .NET10-Windows.
 
 ### New Requirements
