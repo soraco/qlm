@@ -4,6 +4,10 @@
 [whats-new-in-qlm-v19-and-upgrade-procedure.md](whats-new-in-qlm-v19-and-upgrade-procedure.md)
 {% endcontent-ref %}
 
+{% content-ref url="whats-new-in-qlm-v19-and-upgrade-procedure.md" %}
+[whats-new-in-qlm-v19-and-upgrade-procedure.md](whats-new-in-qlm-v19-and-upgrade-procedure.md)
+{% endcontent-ref %}
+
 {% content-ref url="whats-new-in-qlm-v18-and-upgrade-procedure.md" %}
 [whats-new-in-qlm-v18-and-upgrade-procedure.md](whats-new-in-qlm-v18-and-upgrade-procedure.md)
 {% endcontent-ref %}
