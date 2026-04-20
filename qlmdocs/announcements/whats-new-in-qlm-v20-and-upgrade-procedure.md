@@ -1,6 +1,6 @@
 # What's new in QLM v20 and upgrade procedure
 
-QLM v20 was released on April 12, 2026.&#x20;
+QLM v20 was released on April 12, 2026.
 
 -> [Latest Version Release Notes](https://soraco.co/products/qlm/ReleaseNotes.html)
 
@@ -207,7 +207,7 @@ To:&#x20;
 
 [http://localhost/Qlm/QlmLicenseServerNetCore/api/PayPalIpn/notify](http://localhost/Qlm/QlmLicenseServerNetCore/api/v1/PayPalIpn/notify)
 
-#### Disaster Reovery Redirection
+#### Disaster Recovery Redirection
 
 The qlmredirect.xml that is used by the QLM Disaster Recovery framework needs to be updated to add new entries for the QLM v20 License Server as per the example below:
 
@@ -226,5 +226,5 @@ The qlmredirect.xml that is used by the QLM Disaster Recovery framework needs to
 
 To upgrade your source code to QLM v20:
 
-* If you are upgrading from QLMv9 or earlier and if you are using the QLM License Wizard, be it the .NET Control or the standalone executable, you will need to customize the look & feel of the control and regenerate the settings XML file. Note that as of QLM v9, only one settings file is required. The UI Settings XML file is no longer required since all settings are stored in a single file.
-* If you have implemented floating licenses, it is recommended that you review the new QLM Enterprise [sample ](https://docs.soraco.co/docs/step-by-step-guides/how-to-support-floating-and-node-locked-licences-in-the-same-app)and follow the same approach as the new sample.
+* If you are using the QLM License Wizard, you must regenerate the XML Settings file and use the new URL when configuring the wizard.
+* You must update your project to reference to QLM v20 binaries.
