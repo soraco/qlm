@@ -129,20 +129,20 @@ Change the default Communication and Admin Encryption Keys. If you do not, any o
 
 ### Configuring the QlmCustomerSite <a href="#h_01hfsapynsyqj4se173avq2pwr" id="h_01hfsapynsyqj4se173avq2pwr"></a>
 
-The QlmCustomerSite must be configured as an IIS Application. It can share the same Application Pool as the QLM License Server. You should deploy the QlmCustomerSite folder alongside the QlmLicenseServer folder. You should never create the QlmCustomerSite folder as a subfolder of the QlmLicenseServer folder.
+The QlmCustomerSite must be configured as an IIS Application. It cannot share the same Application Pool as the QLM License Server so you need to create a new application pool such as QlmCustomerSiteNetCore. You should deploy the QlmCustomerSiteNetCore folder alongside the QlmLicenseServerNetCore folder. You should never create the QlmCustomerSiteNetCore folder as a subfolder of the QlmLicenseServerNetCore folder.
 
-### Important QlmCustomerSite settings <a href="#h_01hfsapynt2x75prpzkng255ry" id="h_01hfsapynt2x75prpzkng255ry"></a>
+### Important QlmCustomerSiteNetCore settings <a href="#h_01hfsapynt2x75prpzkng255ry" id="h_01hfsapynt2x75prpzkng255ry"></a>
 
 * Database connection string (refer to the Configure the Database section in the Help)
 * Default QLM Engine Version (defaultQlmVersion).
 * SQL Syntax(sqlsyntax). Select "sql" (without the double quotes).
 * Communication Encryption Key (communicationEncryptionKey). The communication encryption key is used to encrypt data transferred between QLM and the QLM Web service. This key is like a password that protects your data. You should use a value that is hard to guess and at least 8 characters long.
 * Admin Encryption Key (adminEncryptionKey). The admin encryption key is used to encrypt data transferred between QLM and the QLM Web service. This key is like a password that protects your data. You should use a value that is hard to guess and at least 8 characters long.
-* webServiceUrl: this is the URL to your QLM License Server. Example: [https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx](https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx)
+* webServiceUrl: this is the URL to your QLM License Server. Example: [https://mycompany.net/qlm/QlmLicenseServerNetCore/api/v1/QlmApi](https://mycompany.net/qlm/QlmLicenseServerNetCore/api/v1/QlmApi)
 
 ### Configure the QlmPortal <a href="#h_01hfsapyntrdqytcn7cptnbftf" id="h_01hfsapyntrdqytcn7cptnbftf"></a>
 
-The QlmPortal must be configured as an IIS Application. It can share the same Application Pool as the QLM License Server. You should deploy the QlmPortal folder alongside the QlmLicenseServer folder. You should never create the QlmPortal folder as a subfolder of the QlmLicenseServer folder.
+The QlmPortal must be configured as an IIS Application. It cannot share the same Application Pool as the QLM License Server. You should deploy the QlmPortalNetCore folder alongside the QlmLicenseServerNetCore folder. You should never create the QlmPortalNetCore folder as a subfolder of the QlmLicenseServerNetCore folder.
 
 ### Important QlmPortal settings <a href="#h_01hfsapyntgkmxa65exss33sa0" id="h_01hfsapyntgkmxa65exss33sa0"></a>
 
@@ -151,7 +151,7 @@ The QlmPortal must be configured as an IIS Application. It can share the same Ap
 * SQL Syntax(sqlsyntax). Select "sql"  (without the double quotes).
 * Communication Encryption Key (communicationEncryptionKey). The communication encryption key is used to encrypt data transferred between QLM and the QLM Web service. This key is like a password that protects your data. You should use a value that is hard to guess and at least 8 characters long.
 * Admin Encryption Key (adminEncryptionKey). The admin encryption key is used to encrypt data transferred between QLM and the QLM Web service. This key is like a password that protects your data. You should use a value that is hard to guess and at least 8 characters long.
-* webServiceUrl: this is the URL to your QLM License Server. Example: [https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx](https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx)
+* webServiceUrl: this is the URL to your QLM License Server. Example: [https://mycompany.net/qlm/QlmLicenseServerNetCore/api/v1/QlmApi](https://mycompany.net/qlm/QlmLicenseServerNetCore/api/v1/QlmApi)
 
 ### Configure the QlmCustomerPortal <a href="#h_01hfsapynvhktepa4vxyrzkbne" id="h_01hfsapynvhktepa4vxyrzkbne"></a>
 
@@ -160,21 +160,21 @@ The QlmCustomerPortal consists of 2 services that must be configured as an IIS A
 * qlm-portal-api
 * qlm-portal-app
 
-Both services can share the same Application Pool as the QLM License Server. You should deploy the QlmCustomerPortal folder alongside the QlmLicenseServer folder. You should never create the QlmCustomerPortal folder as a subfolder of the QlmLicenseServer folder.
+Both services cannot share the same Application Pool as the QLM License Server. You should deploy the QlmCustomerPortalNetCore folder alongside the QlmLicenseServerNetCore folder. You should never create the QlmCustomerPortalNetCore folder as a subfolder of the QlmLicenseServerNetCore folder.
 
-#### QlmCustomerPortal/qlm-portal-app Configuration <a href="#h_01hfsapynv9yty5wcy2t4v33d3" id="h_01hfsapynv9yty5wcy2t4v33d3"></a>
+#### QlmCustomerPortalNetCore/qlm-portal-api Configuration <a href="#h_01hfsapynv9yty5wcy2t4v33d3" id="h_01hfsapynv9yty5wcy2t4v33d3"></a>
 
-Customize the following settings in the web.config file located in the QlmCustomerPortal/qlm-portal-app folder based on your needs:
+Customize the following settings in the appsettings.json file located in the QlmCustomerPortal/qlm-portal-api folder based on your needs:
 
 * Database connection string (refer to the Configure the Database section in the Help)
 * Default QLM Engine Version (defaultQlmVersion).
 * SQL Syntax(sqlsyntax). Select "sql" (without the double quotes).
 * Communication Encryption Key (communicationEncryptionKey). The communication encryption key is used to encrypt data transferred between QLM and the QLM Web service. This key is like a password that protects your data. You should use a value that is hard to guess and at least 8 characters long.
 * Admin Encryption Key (adminEncryptionKey). The admin encryption key is used to encrypt data transferred between QLM and the QLM Web service. This key is like a password that protects your data. You should use a value that is hard to guess and at least 8 characters long.
-* webServiceUrl: this is the URL to your QLM License Server. Example: [https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx](https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmxx)
-* AllowedOrigins should be set to your primary domain. For example, if the URL to the qlm-portal-app is: [https://qlm3.net/company/qlm-portal-app](https://qlm3.net.com/company/qlm-portal-app,) set AllowedOrigins to [https://qlm3.net](https://qlm3.net.com/)
+* webServiceUrl: this is the URL to your QLM License Server. Example: [https://mycompany.net/qlm/QlmLicenseServerNetCore/api/v1/QlmApi](https://mycompany.net/qlm/QlmLicenseServerNetCore/api/v1/QlmApi)
+* AllowedOrigins should be set to your primary domain. For example, if the URL to the qlm-portal-app is: [https://mycompany.net/Qlm/QlmCustomerPortalNetCore/qlm-portal-app  <br>](https://mycompany.net/Qlm/QlmCustomerPortalNetCore/qlm-portal-app)set AllowedOrigins to [https://mycompany.net](https://mycompany.net/company/qlm-portal-app)
 
-#### QlmCustomerPortal/qlm-portal-api Configuration <a href="#h_01hfsapynv8z7rjnqcemd2hgvf" id="h_01hfsapynv8z7rjnqcemd2hgvf"></a>
+#### QlmCustomerPortal/qlm-portal-app Configuration <a href="#h_01hfsapynv8z7rjnqcemd2hgvf" id="h_01hfsapynv8z7rjnqcemd2hgvf"></a>
 
 To configure 3rd party authentication, you need to acquire Client IDs as described [here](https://support.soraco.co/hc/en-us/articles/360049459532).
 
@@ -183,9 +183,9 @@ With a text editor, open the QlmCustomerPortal/qlm-portal-app/assets/appsettings
 * Set the googleLoginKey field to your Google ClientID&#x20;
 * Set the facebookLoginKey field to your Facebook App ID.
 * Set the azureAuth / clientId field to the Azzure App ClientID
-* Set the apiEndpoint to the URL of the QLM Customer Portal API site and append /api to the URL. Example: [https://qlm3.net/qlmdemo/qlmcustomerportal/qlm-portal-api/api](https://qlm3.net/qlmdemo/qlmcustomerportal/qlm-portal-api/api)
+* Set the apiEndpoint to the URL of the QLM Customer Portal API site and append /api to the URL. Example: [https://mycompany.net/Qlm/QlmCustomerPortalNetCore/qlm-portal-api/api](https://mycompany.net/Qlm/QlmCustomerPortalNetCore/qlm-portal-api/api)
 
 With a text editor, open the QlmCustomerPortal/qlm-portal-app/index.html file:
 
 * Locate the \<base href=""> entry
-* Set the value of href to the path of your qlm-portal-app virtual directory. For example, if the URL to the qlm-portal-app is: [https://qlm3.net/company/qlm-portal-app,](https://qlm3.net/company/qlm-portal-app,) set href to "/company/qlm-portal-app"
+* Set the value of href to the path of your qlm-portal-app virtual directory. For example, if the URL to the qlm-portal-app is: [https://mycompany.net/Qlm/QlmCustomerPortalNetCore/qlm-portal-app  <br>](https://mycompany.net/Qlm/QlmCustomerPortalNetCore/qlm-portal-app)[,](https://qlm3.net/company/qlm-portal-app,) set href to "/company/qlm-portal-app/"
