@@ -20,9 +20,10 @@ The QLM License Server must be installed in the cloud so that it is accessible t
 The system requirements for the QLM License Server are:
 
 * Windows 2012 R2 server or higher.
-* .NET 10 or higher
+* [.NET 10 Hosting Bundle ](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)10.0.5 or greater
 * Microsoft SQL Server Database (any edition including the free SQL Server Express)
-* Full Trust for .NET assemblies.
+* [Microsoft OLE DB Driver for SQL Server v19](https://learn.microsoft.com/en-us/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver17)
+* [Visual C++ Redistributables for x86 and x64 (for Visual Studio 2017)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 
 _Before installing the QLM License Server, make sure the above components are installed on your system. To install IIS and enable ASP.NET on your Windows Server, read this_ [_article_](https://technet.microsoft.com/en-us/library/hh831475\(v=ws.11\).aspx)_._
 
