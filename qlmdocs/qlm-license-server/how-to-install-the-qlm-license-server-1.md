@@ -1,4 +1,4 @@
-# How to install the QLM License Server v20
+# How to install the QLM License Server v19-
 
 ## Overview <a href="#h_01hfsaqpkvh4bjettw218g7seh" id="h_01hfsaqpkvh4bjettw218g7seh"></a>
 
@@ -38,9 +38,7 @@ To install the QLM License Server:
 
 * Locate the QlmLicenseServerSetup.exe setup program in the QLM installation folder. Typically this file is located under:
 
-QLM v20 and higher: %Public%\Documents\Quick License Manager\DeployToServerNetCore
-
-QLM v8 and higher: %Public%\Documents\Quick License Manager\DeployToServer
+QLM v8 and higher: %Public%\Documents\Quick License Manager\DeployToServerQLM v8 and higher: %Public%\Documents\Quick License Manager\DeployToServer
 
 QLM v7: C:\Program Files\Soraco\QuickLicenseMgr\DeployToServer
 
@@ -57,10 +55,10 @@ To configure the QLM Management Console to connect to your QLM License Server:
 * Click Sites
 * Click Add to add a new site
 * Specify a site name
-* In the Primary site field, enter the URL to the License Server: For example: [https://mycompany.net/qlm/QlmLicenseServerNetCore/api/v1/QlmApi](https://mycompany.net/qlm/QlmLicenseServerNetCore/api/v1/QlmApi)
+* In the Primary site field, enter the URL to the License Server: For example: [https://mycompany.net/qlm/qlmlicenseserver/qlmservice.asmx](https://mycompany.net/qlm/qlmlicenseserver/qlmservice.asmx)
 * Set the Database Engine to SQL Server
 * Go to the Encryption Keys tab, then click New for CommunicationEncryptionKey and AdminEncryptionKey
-* On the server where you installed the QLM License Server, edit each appsettings.json file and update the value of the CommunicationEncryptionKey and AdminEncryptionKey to the values created above (do not remove the curly braces).
+* On the server where you installed the QLM License Server, edit each web.config file and update the value of the CommunicationEncryptionKey and AdminEncryptionKey to the values created above (do not remove the curly braces).
 * Go back to the QLM Management Console / Manage Keys / Sites  / General tab and click the Test button
 * If you get an error saying that no products were found, click the **Upload products to License Server** button.
 * Then click on Test again to confirm that all tests pass.
@@ -71,18 +69,19 @@ To configure the QLM Management Console to connect to your QLM License Server:
 
 QLM Professional and Enterprise store license keys as well as customer-related information in a database on the License Server.
 
-* Use the tools provided by your ISP to create a database called qlm\_db. Alternatively, you can execute the sql.createdb.sql script located in:
-  * &#x20;%Public%\Documents\Quick License Manager\DeployToServer\QlmLicenseServerNetCore\Db.
+* Use the tools provided by your ISP to create a database called qlm\_db. Alternatively, you can execute the sql2005.createdb.sql script located in:
+  * QLM v7: C:\Program Files\Soraco\QuickLicenseMgr\DeployToServer\QlmWebService\Db.
+  * QLM v8+: %Public%\Documents\Quick License Manager\DeployToServer\QlmLicenseServer\Db.
   * You may need to modify the path of the database in the script above.
-* Execute the script sql.createusers.sql. You may want to modify the password. If you modify the password, update the password in the connectionStrings section of the web.config file.
-* Execute the script sql.createtables.sql to create all the QLM tables
-* Execute the script sql.aspnetnetcore.sql
+* Execute the script sql2005.createusers.sql. You may want to modify the password. If you modify the password, update the password in the connectionStrings section of the web.config file.
+* Execute the script sql2005.createtables.sql to create all the QLM tables
+* Execute the script sql2005.aspnet.sql
 
 ### Configuring the web service <a href="#h_01hfsapynsjkqgx1k3txt8qdq8" id="h_01hfsapynsjkqgx1k3txt8qdq8"></a>
 
-* At your ISP, create a new virtual directory called QlmLicenseServerNetCore&#x20;
+* At your ISP, create a new virtual directory called QlmLicenseServer and enable ASP.NET 4.0 for this virtual directory.
 * Create an Application Pool and associate the virtual directory above to the Application Pool.
-* Ensure the Application Pool is configured for No Managed Code
+* Ensure the Application Pool is configured for .NET 4.0
 
 ### Configuring the QLM Management Console <a href="#id-01hfsaw2cbata0g1dzabe99w2d" id="id-01hfsaw2cbata0g1dzabe99w2d"></a>
 
@@ -91,7 +90,7 @@ QLM Professional and Enterprise store license keys as well as customer-related i
 * Click Sites
 * Click Add to add a new site
 * Specify a site name
-* In the Primary site field, enter the URL to the License Server: For example: [https://mycompany.net/qlm/QlmLicenseServerNetCore/api/v1/QlmApi](https://mycompany.net/qlm/QlmLicenseServerNetCore/api/v1/QlmApi)
+* In the Primary site field, enter the URL to the License Server: For example: [https://mycompany.net/qlm/qlmlicenseserver/qlmservice.asmx](https://mycompany.net/qlm/qlmlicenseserver/qlmservice.asmx)
 * Set the Database Engine to SQL Server
 * Go to the Encryption Keys tab, then click New for CommunicationEncryptionKey and AdminEncryptionKey
 * If you want to configure the QLM Customer Portal to support 3rd party authentication, go to the Authentication tab and set the Client ID of each provider as described in the Authentication Configuration section of this [article](https://support.soraco.co/hc/en-us/articles/360049459532).
@@ -104,14 +103,14 @@ QLM Professional and Enterprise store license keys as well as customer-related i
   * Set the URL to the QLM Customer Portal App
 * Click **Update config files**
 * Click Ok
-* Upload all the files in the DeployToServer\QlmLicenseServerNetCore folder and subfolders to the virtual directory created above (preserve the directory structure).
+* Upload all the files in the DeployToServer\QlmLicenseServer folder and subfolders to the virtual directory created above (preserve the directory structure).
 * Go back to the QLM Management Console / Manage Keys / Sites  / General tab and click the Test button
 * If you get an error saying that no products were found, click the **Upload products to License Server** button.
 * Then click on Test again to confirm that all tests pass.
 
 ### Important QLM License Server settings <a href="#h_01hfsapynsfq7crhtgv14knwkb" id="h_01hfsapynsfq7crhtgv14knwkb"></a>
 
-The following settings located in the License Server's appsettings.json file are critical.
+The following settings located in the License Server's web.config file are critical.
 
 * Database connection string (refer to the Configure the Database section in the Help)
 * Default QLM Engine Version (defaultQlmVersion).
