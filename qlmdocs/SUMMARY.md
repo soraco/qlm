@@ -435,6 +435,7 @@
   * [How to bind a license to a computer](how-to/how-to-bind-a-license-to-a-computer.md)
   * [Automated License Deactivation](how-to/automated-license-deactivation.md)
   * [How to check enabled features of ILicenseInfo](how-to/how-to-check-enabled-features-of-ilicenseinfo.md)
+  * [How to change the location where license information is stored](how-to/how-to-change-the-location-where-license-information-is-stored.md)
 * [❔ FAQ](faq/README.md)
   * [How do I change the license binding to a different identifier?](faq/how-do-i-change-the-license-binding-to-a-different-identifier.md)
   * [How to reserve licenses for a list of users](faq/how-to-reserve-licenses-for-a-list-of-users.md)
