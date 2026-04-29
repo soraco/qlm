@@ -10,7 +10,7 @@ While QLM v20 does not introduce a large set of new end‑user features, it repr
 
 In addition, the **QLM Portal has been completely rewritten** using modern frameworks (**Blazor and DevExpress**). This rewrite delivers improved usability, a cleaner user experience, and better overall performance, while laying the groundwork for future enhancements.
 
-As with every major release, **backward compatibility is fully maintained**. Existing customers can upgrade with confidence, and QLM v20 server components can be installed **side‑by‑side with QLM v1x server components**, allowing for a smooth and controlled transition.
+As with every major release, **backward compatibility is fully maintained**. Existing customers can upgrade with confidence, and QLM v20 server components can be installed **side‑by‑side with QLM v1x server components**, allowing for a smooth and controlled transition. _However, all new server features added following this release will only be available when using the new URLs. Clients connecting to the old URLs will not have access to new features._
 
 QLM v20 is an investment in the future of the platform—focused on modernization today so we can deliver faster innovation tomorrow.
 
