@@ -27,7 +27,7 @@ QLM is now integrated with ecommerce provider Paymotion.
 
 Added support for subscription products.
 
-### [Azure AppService intergration](../qlm-license-server/qlm-v12+-azure-integration.md)
+### [Azure AppService intergration](../qlm-license-server/qlm-v20+-azure-integration.md)
 
 QLM v12 can now be configured as an Azure App Service instead of a Classic Cloud Service. The integration process has been simplified and no longer requires the use of Visual Studio to build the Azure packages. &#x20;
 

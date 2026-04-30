@@ -1,12 +1,10 @@
-# QLM v19- Azure Integration
+# QLM v20+ Azure Integration
 
 The QLM License Server can be hosted on a Windows Azure portal. The procedure outlined in this section will show you how to build a QLM Azure deployment package, how to create the database on the Azure Portal and finally how to connect the QLM Management Console to the Azure-hosted QLM License Server.
 
 ### 1. Database Creation
 
 To create the QLM database on the Azure portal:
-
-<table data-header-hidden><thead><tr><th></th><th data-hidden></th></tr></thead><tbody><tr><td>b4969be408c94f8fa2e3caebadf5b612</td><td></td></tr></tbody></table>
 
 <figure><img src="../.gitbook/assets/Azure-CreateDB.png" alt=""><figcaption></figcaption></figure>
 
@@ -36,58 +34,64 @@ Now that the database is created, we need to create a user account, tables and s
 
 ### &#x20;
 
-### Create the QlmLicense Server App Service
+### Create the QlmLicense ServerNetCore App Service
 
 * Click App Services in the Azure Portal
 * Click "Create app service"
 * Select "Web App"
 * Click Create
-* Set the App Name to: QlmLicenseServer (or any name of your choice)
 * Select your subscription
 * Select a Resource Group or create a new one
-* Set the Publish property to: Code
-* Set the Runtime Stack to: ASP.NET V4.8
+* Set the Name to: QlmLicenseServerNetCore (or any name of your choice)
+* Set "Publish" to "Code"
+* Set the Runtime stack to ".NET 10"
 * Set the OS to: Windows
 * Set a Region of your choice
 * Select the App Service plan
-* Click Create
+* Click Next until you get to the "Monitor + secure" page
+* Set Enable Application Insights to False
+* Click Review + Create
 * Click App Services to view the newly created App Service
-* Locate and note the URL to access the App Service in Azure. The URL will look like: [https://qlmlicenseserver.azurewebsites.net](https://qlmlicenseserver.azurewebsites.net/)
+* Locate and note the URL to access the App Service in Azure. The URL will look like: qlmlicenseservernetcore-fud3ceecgzfqa6a9.canadacentral-01.azurewebsites.net
 
-![mceclip0.png](https://support.soraco.co/hc/article_attachments/360033553931/mceclip0.png)
+<figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
 
-### Create the QlmCustomerSite App Service
+### Create the QlmCustomerSiteNetCore App Service
 
 * Click App Services in the Azure Portal
 * Click "Create app service"
 * Select "Web App"
 * Click Create
 * Select your subscription and resource group
-* Set the App Name to: QlmCustomerSite
+* Set the App Name to: QlmCustomerSiteNetCore
 * Set the Publish property to: Code
-* Set the Runtime Stack to: ASP.NET V4.8
+* Set the Runtime Stack to: NET 10
 * Set the OS to: Windows
 * Set a Region of your choice
 * Select the App Service plan
+* Click Next until you get to the "Monitor + secure" page
+* Set Enable Application Insights to False
 * Click Create
 * Click App Services to view the newly created App Service
 
-### Create the QlmPortal App Service
+### Create the QlmPortalNetCore App Service
 
 * Click App Services in the Azure Portal
 * Click "Create app service"
 * Select "Web App"
 * Click Create
 * Select your subscription and resource group
-* Set the App Name to: QlmPortal
+* Set the App Name to: QlmPortalNetCore
 * Set the Publish property to: Code
-* Set the Runtime Stack to: ASP.NET V4.8
+* Set the Runtime Stack to: NET 10
 * Set the OS to: Windows
 * Select the App Service plan
+* Click Next until you get to the "Monitor + secure" page
+* Set Enable Application Insights to False
 * Click Create
 * Click App Services to view the newly created App Service
 
-### Create the QlmCustomerPortal API Service
+### Create the QlmCustomerPortalNetCore API Service
 
 * Click App Services in the Azure Portal
 * Click "Create app service"
@@ -96,14 +100,16 @@ Now that the database is created, we need to create a user account, tables and s
 * Select your subscription and resource group
 * Set the App Name to: qlm-portal-api
 * Set the Publish property to: Code
-* Set the Runtime Stack to: ASP.NET V4.8
+* Set the Runtime Stack to: NET 10
 * Set the OS to: Windows
 * Select the App Service plan
+* Click Next until you get to the "Monitor + secure" page
+* Set Enable Application Insights to False
 * Click Create
 * Click App Services to view the newly created App Service
 * Locate and note the URL to access the App Service in Azure. The URL will look like: [https://qlm-portal=api.azurewebsites.net](https://qlmlicenseserver.azurewebsites.net/)
 
-### Create the QlmCustomerPortal APP Service
+### Create the QlmCustomerPortalNetCore APP Service
 
 * Click App Services in the Azure Portal
 * Click "Create app service"
@@ -112,9 +118,11 @@ Now that the database is created, we need to create a user account, tables and s
 * Select your subscription and resource group
 * Set the App Name to: qlm-portal-app
 * Set the Publish property to: Code
-* Set the Runtime Stack to: ASP.NET V4.8
+* Set the Runtime Stack to: NET 10
 * Set the OS to: Windows
 * Select the App Service plan
+* Click Next until you get to the "Monitor + secure" page
+* Set Enable Application Insights to False
 * Click Create
 * Click App Services to view the newly created App Service
 * Locate and note the URL to access the App Service in Azure. The URL will look like: [https://qlm-portal=api.azurewebsites.net](https://qlmlicenseserver.azurewebsites.net/)
@@ -125,12 +133,12 @@ Now that all App Services have been created, you need to create and deploy the Q
 
 #### Create the App Packages
 
-* Launch the QLM Management Console (v12+)
+* Launch the QLM Management Console&#x20;
 * Go to the Manage Keys tab
 * Click Sites
 * Click Add to add a new site
 * Specify a site name
-* In the Primary site field, enter the URL to the License Server: For example: [https://qlmlicenseserver.azurewebsites.net/qlmservice.asmx](https://qlmlicenseserver.azurewebsites.net/qlmservice.asmx)
+* In the Primary site field, enter the URL to the License Server: For example: [https://qlmlicenseservernetcore-fud3ceecgzfqa6a9.canadacentral-01.azurewebsites.net/api/v1/QlmApi](https://qlmlicenseservernetcore-fud3ceecgzfqa6a9.canadacentral-01.azurewebsites.net/api/v1/QlmApi)
 * Set the Database Engine to SQL Server
 * Go to the Encryption Keys tab, then click New for CommunicationEncryptionKey and AdminEncryptionKey
 * If you want to configure the QLM Customer Portal to support 3rd party authentication, go to the Authentication tab and set the Client ID of each provider as described in the Authentication Configuration section of this [article](https://support.soraco.co/hc/en-us/articles/360049459532).
@@ -146,104 +154,62 @@ Now that all App Services have been created, you need to create and deploy the Q
 * Click "Create Azure Package"
 * 4 zip files will be created. You will upload these zip files to your server in the next step.
 
-![mceclip1.png](https://support.soraco.co/hc/article_attachments/360033553971/mceclip1.png)
+<figure><img src="../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/QlmAzureDeployment.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
 
 #### Deploy the QLM License Server Package
 
-* Go to the Azure Portal and click the QLM License Server App Service.
-* In the right-hand panel, locate the Development Tools section and click Advanced Tools
-* Click Go
-* Click Debug Console / CMD
-* Click **site** then **wwwroot** to go to the **wwwroot** folder
-* Locate the QlmLicenseServer.zip file in %Public%\Quick License Manager\DeployToAzure
-* Drag QlmLicenseServer.zip onto the grid where files are listed and drop it on the right-hand side of the grid where it says **Drag here to upload and unzip**.
-* Once the deployment is completed, you can access the QLM License Server at the following URL: [https://qlmlicenseserver.azurewebsites.net](https://qlmlicenseserver.azurewebsites.net/)/qlmservice.asmx
+* Go to the Azure Portal and click the QlmLicenseServerNetCore App Service.
+* In the left-hand panel, locate the Deployment node, expand it and select Deployment Center.
+* Click the Source drop down and select "Publish files"
+* Locate the QlmLicenseServerNetCore.zip file in %Public%\Quick License Manager\DeployToAzure and select it
+* Click Save
+* Once the deployment is completed, you can access the QLM License Server at the following URL:  [https://qlmlicenseservernetcore1-fud3ceecgzfqa6a9.canadacentral-01.azurewebsites.net/api/v1/QlmApi](https://qlmlicenseservernetcore1-fud3ceecgzfqa6a9.canadacentral-01.azurewebsites.net/api/v1/QlmApi)
 * In the QLM Sites editor, go to the General tab
-* Set the Primary Site value to: [https://qlmlicenseserver.azurewebsites.net/qlmservice.asmx](https://qlmlicenseserver.azurewebsites.net/qlmservice.asmx)
+* Set the Primary Site value to: [https://qlmlicenseservernetcore1-fud3ceecgzfqa6a9.canadacentral-01.azurewebsites.net/api/v1/QlmApi](https://qlmlicenseservernetcore1-fud3ceecgzfqa6a9.canadacentral-01.azurewebsites.net/api/v1/QlmApi)
 * Click the Test button to verify the connection to the server.
 * If this is a new installation of the server, click "Upload your products to the License Server".
-
-![mceclip3.png](https://support.soraco.co/hc/article_attachments/360033554592/mceclip3.png)
 
 #### Deploy the QlmCustomerSite App Service
 
 * Go to the Azure Portal and click the QLM Customer Site App Service.
-* In the right-hand panel, locate the Development Tools section and click Advanced Tools
-* Click Go
-* Click Debug Console / CMD
-* Click **site** then **wwwroot** to go to the **wwwroot** folder
-* Locate the QlmCustomerSite.zip file in %Public%\Quick License Manager\DeployToAzure
-* Drag QlmCustomerSite.zip onto the grid where files are listed and drop it on the right-hand side of the grid where it says **Drag here to upload and unzip**.
+* In the left-hand panel, locate the Deployment node, expand it and select Deployment Center.
+* Click the Source drop down and select "Publish files"
+* Locate the QlmCustomerSiteNetCore.zip file in %Public%\Quick License Manager\DeployToAzure and select it
+* Click Save
 * Once the deployment is completed, you can access the QLM License Server at the following URL:[https://qlmcustomersite.azurewebsites.net](https://qlmcustomersite.azurewebsites.net/)
 
 #### Deploy the QlmPortal App Service
 
 * Go to the Azure Portal and click the QLM Customer Site App Service.
-* In the right-hand panel, locate the Development Tools section and click Advanced Tools
-* Click Go
-* Click Debug Console / CMD
-* Click **site** then **wwwroot** to go to the **wwwroot** folder
-* Locate the QlmPortal.zip file in %Public%\Quick License Manager\DeployToAzure
-* Drag QlmPortal.zip onto the grid where files are listed and drop it on the right-hand side of the grid where it says **Drag here to upload and unzip**.
-* Once the deployment is completed, you can access the QLM Portal at the following URL: [https://qlmportal.azurewebsites.net/qlmportal.aspx](https://qlmportal.azurewebsites.net/qlmportal.aspx)
-
-Is it recommended to set the Default Document of the QLM Portal to QlmPortal.aspx as follows:
-
-* In the Azure QLM Portal panel, locate the Settings section and click Application Settings
-* Locate the Default Documents section
-* Click Add new document
-* Enter QlmPortal.aspx
+* In the left-hand panel, locate the Deployment node, expand it and select Deployment Center.
+* Click the Source drop down and select "Publish files"
+* Locate the QlmPortalNetCore.zip file in %Public%\Quick License Manager\DeployToAzure and select it
 * Click Save
-
-&#x20;
-
-![](https://support.soraco.co/hc/article_attachments/360023092531/mceclip9.png)
-
-#### &#x20;
+* Once the deployment is completed, you can access the QLM Portal at the following URL: [https://qlmportal.azurewebsites.net/qlmportal.aspx](https://qlmportal.azurewebsites.net/qlmportal.aspx)
 
 #### Deploy the QlmCustomerPortal API Service
 
 * Go to the Azure Portal and click the QlmCustomerPortalAPi App Service.
-* In the right-hand panel, locate the Development Tools section and click Advanced Tools
-* Click Go
-* Click Debug Console / CMD
-* Click **site** then **wwwroot** to go to the **wwwroot** folder
-* Locate the QlmCustomerPortalApi.zip file in %Public%\Quick License Manager\DeployToAzure
-* Drag QlmCustomerPortalApi.zip onto the grid where files are listed and drop it on the right-hand side of the grid where it says **Drag here to upload and unzip**.
+* In the left-hand panel, locate the Deployment node, expand it and select Deployment Center.
+* Click the Source drop down and select "Publish files"
+* Locate the QlmCustomerPortalApiNetCore.zip file in %Public%\Quick License Manager\DeployToAzure and select it
+* Click Save
 * Once the deployment is completed, you can access the QLM Portal API at the following URL: [https://qlm-portal-api.azurewebsites.net](https://qlmportal.azurewebsites.net/qlmportal.aspx)
 
 #### Deploy the QlmCustomerPortalApp Service
 
 * Go to the Azure Portal and click the QlmCustomerPortalApp App Service.
-* In the right-hand panel, locate the Development Tools section and click Advanced Tools
-* Click Go
-* Click Debug Console / CMD
-* Click **site** then **wwwroot** to go to the **wwwroot** folder
-* Locate the QlmCustomerPortalApp.zip file in %Public%\Quick License Manager\DeployToAzure
-* Drag QlmCustomerPortalApp.zip onto the grid where files are listed and drop it on the right-hand side of the grid where it says **Drag here to upload and unzip**.
-* Drag and Drop QlmCustomerPortalApp.zip in the browser explorer area.
+* In the left-hand panel, locate the Deployment node, expand it and select Deployment Center.
+* Click the Source drop down and select "Publish files"
+* Locate the QlmCustomerPortalAppNetCore.zip file in %Public%\Quick License Manager\DeployToAzure and select it
+* Click Save
 * Once the deployment is completed, you can access the QLM Portal API at the following URL: [https://qlm-portal-app.azurewebsites.net](https://qlmportal.azurewebsites.net/qlmportal.aspx)
 
-Is it recommended to set the Default Document of the QLM Customer Portal App to index.html as follows:
 
-* In the Azure QLM Customer Portal App panel, locate the Settings section and click Application Settings
-* Locate the Default Documents section
-* Click Add new document
-* Enter index.html
-* Click Save
 
-#### Upgrading your QLM License Server to a newer version
+#### Upgrading your QLM License Server from v20.x to v20.y
 
 To upgrade your QLM License Server to a new version, install the latest version of the QLM Management Console on your workstation and repeat the steps starting from the "Deploy packages to your App Services" section of this article.
 
-**Important**: Before upgrading the QLM Portal, you must delete all the files in the QLM Portal's bin folder on Azure.
-
-#### Troubleshooting
-
-1. If you get a connection error as shown below, try changing the SQL Administrator password to a more complex password that contains lower case, upper case, digits and special characters. Example: Coraso2313!2313!
-
-![mceclip0.png](https://support.soraco.co/hc/article_attachments/4407398909844/mceclip0.png)
-
-* [QLM v12+ Azure Integration – Soraco Technologies.pdf](https://support.soraco.co/hc/en-us/article_attachments/11056029767572)1 MB [Download](https://support.soraco.co/hc/en-us/article_attachments/11056029767572)

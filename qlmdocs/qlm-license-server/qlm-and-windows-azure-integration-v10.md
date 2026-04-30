@@ -22,6 +22,19 @@ To create the QLM database on the Azure portal:
 | <ul><li>Use the default Collation</li></ul>                                        |                                                                                 |
 | <ul><li>Click <strong>Create</strong></li></ul>                                    |                                                                                 |
 
+| <ul><li>Go to the Windows Azure Portal.</li></ul>                                  |
+| ---------------------------------------------------------------------------------- |
+| <ul><li>Select <strong>SQL Databases.</strong></li></ul>                           |
+| <ul><li>Click on the <strong>Add.</strong></li></ul>                               |
+| <ul><li>Set the database name to: <strong>qlm</strong></li></ul>                   |
+| <ul><li>Pick the Subscription, and Resource Group server of your choice.</li></ul> |
+| <ul><li>Set the <strong>Select Source</strong> field to "Blank database"</li></ul> |
+| <ul><li>Select an existing Server or create a New Server</li></ul>                 |
+| <ul><li>Select whether you want to use a SQL Elastic pool</li></ul>                |
+| <ul><li>Select a Pricing tier</li></ul>                                            |
+| <ul><li>Use the default Collation</li></ul>                                        |
+| <ul><li>Click <strong>Create</strong></li></ul>                                    |
+
 ### 2. Server settings
 
 If you selected to create a new SQL database server on the previous step, you need to configure a user account on the SQL Server.
@@ -34,6 +47,14 @@ If you selected to create a new SQL database server on the previous step, you ne
 | <ul><li>Select a Location</li></ul>                                                                |                                                                                 |
 | <ul><li>Click Select</li></ul>                                                                     |                                                                                 |
 
+| <ul><li>In the Server name field, enter a name of your choice. Example: qlm-server</li></ul>       |
+| -------------------------------------------------------------------------------------------------- |
+| <ul><li>In the Server admin login field, enter a name of your choice. Example: qlm_admin</li></ul> |
+| <ul><li>In the password and confirm password fields, enter a new password</li></ul>                |
+| <ul><li>Select a Location</li></ul>                                                                |
+| <ul><li>Click Select</li></ul>                                                                     |
+|                                                                                                    |
+
 ### 3. Configure the database
 
 Now that the database is created, we need to create the tables and stored procedures. Follow the steps below:
@@ -41,6 +62,9 @@ Now that the database is created, we need to create the tables and stored proced
 | 430a97f101a34f18934d2bc5d94a0a73                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | ![](https://support.soraco.co/hc/article_attachments/115010843066/mceclip2.png) |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
 | <ul><li>Click on the QLM database in the list</li><li>Click Tools</li><li>Click Query Editor</li><li>Click login and enter your credentials</li><li>Click Open Query and select: %Public%\Documents\Quick License Manager\DeployToAzure\Db\qlm.createtables.sql</li><li>Click on Run to execute the query</li><li>Repeat these two steps for the following files, in the exact order listed here: InstallCommon.sql, InstallRoles.sql, InstallPersonalization.sql, InstallProfile.sql, InstallMembership.sql</li></ul> |                                                                                 |
+
+| <ul><li>Click on the QLM database in the list</li><li>Click Tools</li><li>Click Query Editor</li><li>Click login and enter your credentials</li><li>Click Open Query and select: %Public%\Documents\Quick License Manager\DeployToAzure\Db\qlm.createtables.sql</li><li>Click on Run to execute the query</li><li>Repeat these two steps for the following files, in the exact order listed here: InstallCommon.sql, InstallRoles.sql, InstallPersonalization.sql, InstallProfile.sql, InstallMembership.sql</li></ul> |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ### 4. Creating the QLM package
 
@@ -68,6 +92,29 @@ To deploy the QLM License Server to Windows Azure, you must create an Azure pack
 | <ul><li>Set the Service Configuration to <strong>Cloud</strong> and Build Configuration to <strong>Release</strong> then click on Package</li></ul>                                                                                                                                                               |                                                                                                                                                                |
 | <ul><li>The following 2 files will be created in the QlmAzure\QlmAzure\bin\Release\app.publish folder: QlmAzure.cspkg and ServiceConfiguration.Cloud.cscfg files</li></ul>                                                                                                                                        |                                                                                                                                                                |
 
+| <ul><li>The next steps involve building the package using Visual Studio 2017/2015. You will need to first install the <a href="https://azure.microsoft.com/en-ca/downloads/">Azure SDK for .NET</a>.</li></ul> |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <ul><li>Open and Build the QlmAzure solution located in the %Public%\Documents\Quick License Manager\DeployToAzure\ folder using Visual Studio 2017/2015</li></ul>                                             |
+| <ul><li>Right mouse click on the QlmAzure project and select "Package"</li></ul>                                                                                                                               |
+| <ul><li>Set the Service Configuration to <strong>Cloud</strong> and Build Configuration to <strong>Release</strong> then click on Package</li></ul>                                                            |
+| <ul><li>The following 2 files will be created in the QlmAzure\QlmAzure\bin\Release\app.publish folder: QlmAzure.cspkg and ServiceConfiguration.Cloud.cscfg files</li></ul>                                     |
+
+| <ul><li>Launch the QLM Management Console and go to the Manage Keys tab</li></ul>                                                                                                                                                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <ul><li>Click on the Sites button in the toolbar, then click on Add</li></ul>                                                                                                                                                                                                                                     |
+| <ul><li>Enter a name for your Azure site, say QlmAzure, and click OK.</li></ul>                                                                                                                                                                                                                                   |
+| <ul><li>In the Primary Site field, enter (you can replace 'myqlm' with any value of your choice): http://myqlm.cloudapp.net/qlmlicenseserver/QlmService.asmx</li></ul>                                                                                                                                            |
+| <ul><li>If you replaced 'myqlm' with any other value, note that you will need to use the same value later on in this procedure.</li></ul>                                                                                                                                                                         |
+| <ul><li>Set the Database Engine to: SQL Server</li></ul>                                                                                                                                                                                                                                                          |
+| <ul><li>Click on the Encryption Keys tab, then click New for both fields to generate a CommunicationEncryptionKey and an AdminEncryptionKey</li></ul>                                                                                                                                                             |
+| <ul><li>Click on the Database Connection tab and enter all the fields on this tab</li></ul>                                                                                                                                                                                                                       |
+| <ul><li>Server Hostname or IP: to get this value, select your database in Azure, and click on the Overview tab.</li><li>Click Show database connection strings</li><li>In the ADO.NET tab, copy the value of the Server entry. The value typically looks like: tcp:qlm-server.database.windows.net,1433</li></ul> |
+| <ul><li>Database Name: qlm or any other name you have entered earlier in the process</li></ul>                                                                                                                                                                                                                    |
+| <ul><li>User Name: name of the sql admin user you specified earlier in the process</li></ul>                                                                                                                                                                                                                      |
+| <ul><li>User Password: password of the sql admin user you specified earlier in the process</li></ul>                                                                                                                                                                                                              |
+| <ul><li>Click on Update config files</li></ul>                                                                                                                                                                                                                                                                    |
+| <ul><li>Do not click OK -- leave the Sites editor open.</li></ul>                                                                                                                                                                                                                                                 |
+
 ### 5. Cloud Service
 
 To deploy the QLM Cloud Service to the Azure portal:
@@ -94,6 +141,29 @@ To deploy the QLM Cloud Service to the Azure portal:
 | <ul><li>Now go back to the QLM Management Console, Manage Keys / Sites which you left open earlier.</li></ul>                                                       |                                                                                   |
 | <ul><li>On the General tab, set the Primary Site to: &#x3C;siteUrl>/qlmlicenseserver/qlmservice.asmx</li></ul>                                                      |                                                                                   |
 | <ul><li>Click the <strong>Test</strong> button next to the primary site URL and confirm that all tests have passed.</li></ul>                                       |                                                                                   |
+
+| <ul><li>Once the package is created, click on service that was created and go to the OverView tab. Take note of the <strong>Site Url</strong></li></ul> |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <ul><li>Now go back to the QLM Management Console, Manage Keys / Sites which you left open earlier.</li></ul>                                           |
+| <ul><li>On the General tab, set the Primary Site to: &#x3C;siteUrl>/qlmlicenseserver/qlmservice.asmx</li></ul>                                          |
+| <ul><li>Click the <strong>Test</strong> button next to the primary site URL and confirm that all tests have passed.</li></ul>                           |
+
+| <ul><li>Go to the Windows Azure Portal.</li></ul>                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <ul><li>Select <strong>Cloud Services (classic)</strong></li></ul>                                                                                                  |
+| <ul><li>Click <strong>Add</strong>.</li></ul>                                                                                                                       |
+| <ul><li>Set the DNS name to any value of your choice that matches the value you set earlier on Sites page: <strong>myqlm</strong></li></ul>                         |
+| <ul><li>Set the Subscription, Resource Group and Location  to any value of your choice.</li></ul>                                                                   |
+| <ul><li>Click on <strong>Package / Select a Package.</strong></li></ul>                                                                                             |
+| <ul><li>Enter a Deployment label of your choice</li></ul>                                                                                                           |
+| <ul><li>Set the Package/configuration location to <strong>from local.</strong></li></ul>                                                                            |
+| <ul><li>Select a Storage account</li></ul>                                                                                                                          |
+| <ul><li>In the Package (.cspkg) field, select the file QlmAzure.cspkg that was generated earlier from the Visual Studio solution.</li></ul>                         |
+| <ul><li>In the Configuration (.cscfg) field, select the file ServiceConfiguration.Cloud.cscfg that was generated earlier from the Visual Studio solution.</li></ul> |
+| <ul><li>Select the Environment  of your choice</li></ul>                                                                                                            |
+| <ul><li>Check <strong>Start deployment</strong>.</li></ul>                                                                                                          |
+| <ul><li>Click <strong>OK.</strong></li></ul>                                                                                                                        |
+| <ul><li>Click <strong>Create.</strong></li></ul>                                                                                                                    |
 
 This completes the configuration of the Azure site.
 

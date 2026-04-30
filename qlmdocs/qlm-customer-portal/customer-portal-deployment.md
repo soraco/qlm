@@ -134,4 +134,4 @@ Instructions for manually deploying the QLM License Server components, including
 
 #### Azure App Service Installation
 
-Instructions for deploying the QLM License Server components, including the QLM Customer Portal, can be found [here](../qlm-license-server/qlm-v12+-azure-integration.md).
+Instructions for deploying the QLM License Server components, including the QLM Customer Portal, can be found [here](../qlm-license-server/qlm-v20+-azure-integration.md).
