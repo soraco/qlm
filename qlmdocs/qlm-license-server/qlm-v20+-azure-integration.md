@@ -4,17 +4,17 @@ The QLM License Server can be hosted on a Windows Azure portal. The procedure ou
 
 ### 1. Database Creation
 
-To create the QLM database on the Azure portal:
+To create the QLM database on the Azure portal, go to the Azure SQL node and click Create / SQL Database:
 
-<figure><img src="../.gitbook/assets/Azure-CreateDB.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Server settings
 
 If you selected to create a new SQL database server in the previous step, you need to configure a user account on the SQL Server.
 
-<table data-header-hidden><thead><tr><th></th><th data-hidden></th></tr></thead><tbody><tr><td>82f1152e39794694a774bde6f7d22b37</td><td></td></tr></tbody></table>
-
-<figure><img src="../.gitbook/assets/Azure-CreateDBServer.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
 
 ### Networking
 
@@ -24,15 +24,13 @@ If you selected to create a new SQL database server in the previous step, you ne
 * **Set the Connection Policy to Default**
 * Set the "Minimum TLS Version" to 1.0. This is required as the default OLEDB drivers that are available on Azure App Services do not currently support TLS 1.2 and there does not seem to be a way to update these drivers.
 
-<figure><img src="../.gitbook/assets/Azure-Networking.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
 
 ### Configure the database
 
 Now that the database is created, we need to create a user account, tables and stored procedures. Follow the steps below:
 
-<table data-header-hidden><thead><tr><th></th><th data-hidden></th></tr></thead><tbody><tr><td><ul><li><p>Create the tables and DB user account</p><ul><li>In SSMS, click Connect</li><li>Set the Server Name to the URL of your server. Example:  qlmserver1.database.windows.net </li><li>Set the Login name to: qlm_admin</li><li>Enter your password: &#x3C;password></li><li>Click the Options button</li><li>Set the "Connect to database" to: qlm_db</li><li>Click Connect</li><li>Right-mouse click the server in SSMS and select New Query</li><li>Click Open Query and select: %Public%\Documents\Quick License Manager\DeployToAzure\Db\qlm.createtables.sql</li><li>Click on Execute to run the query</li><li>Repeat these two steps for the following sql script file: sql.aspnetcore.sql</li><li>Repeat these two steps for the following sql script file: qlm.createuser.sql</li><li>Right-mouse click the server in SSMS and select Disconnect</li></ul></li></ul><p><img src="../.gitbook/assets/image (41).png" alt="" data-size="original"><img src="../.gitbook/assets/image (44).png" alt=""></p></td><td></td></tr><tr><td></td><td></td></tr><tr><td><p></p><ul><li><p>Validate the previous steps:</p><ul><li>In SSMS, click Connect</li><li>Set the Server Name to the URL of your server. Example:  qlmserver1.database.windows.net </li><li>Set the Login name to: qlm_user</li><li>Enter your password: &#x3C;password></li><li>Click the Options button</li><li>Set the "Connect to database" to: qlm_db</li><li>Click Connect</li><li>Expand the database tables node and verify that the tables were created</li></ul></li></ul></td><td></td></tr><tr><td></td><td></td></tr></tbody></table>
-
-### &#x20;
+<table data-header-hidden><thead><tr><th></th><th data-hidden></th></tr></thead><tbody><tr><td><ul><li><p>Create the tables and DB user account</p><ul><li>In SSMS, click Connect</li><li>Set the Server Name to the URL of your server. Example:  qlmserver1.database.windows.net </li><li>Set the Login name to: qlmadmin</li><li>Enter your password: &#x3C;password></li><li>Click the Options button</li><li>Set the "Connect to database" to: qlmdb1 (or any name that you selected)</li><li>Click Connect</li><li>Right-mouse click the QLM database node and select New Query</li><li>Click Open Query and select: %Public%\Documents\Quick License Manager\DeployToAzure\Db\qlm.createtables.sql</li><li>Click on Execute to run the query</li><li>Repeat these two steps for the following sql script file: sql.aspnetcore.sql</li><li>Repeat these two steps for the following sql script file: qlm.createuser.sql</li><li>Right-mouse click the server in SSMS and select Disconnect</li></ul></li></ul><div><figure><img src="../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure></div></td><td></td></tr><tr><td><p></p><ul><li><p>Validate the previous steps:</p><ul><li>In SSMS, click Connect</li><li>Set the Server Name to the URL of your server. Example:  qlmdbserver1.database.windows.net </li><li>Set the Login name to: qlmadmin</li><li>Enter your password: &#x3C;password></li><li>Click the Options button</li><li>Set the "Connect to database" to: qlmdb1</li><li>Click Connect</li><li>Expand the database tables node and verify that the tables were created</li></ul></li></ul></td><td></td></tr></tbody></table>
 
 ### Create the QlmLicense ServerNetCore App Service
 
