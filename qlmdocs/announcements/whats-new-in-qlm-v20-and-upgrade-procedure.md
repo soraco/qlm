@@ -46,7 +46,7 @@ QLM v20 is an investment in the future of the platform—focused on modernizatio
 
 
 * **Azure integration**\
-  The procedure to integrate QLM with Azure has changed. Please refer to the latest documentation before upgrading. If you are upgrading a v19 installation, we recommend that you install the v20 App Services in parallel with the existing v19 App Services.
+  The procedure to integrate QLM with Azure has changed. Please refer to the latest documentation before upgrading. If you are upgrading a v19 installation, we recommend that you install the v20 App Services in parallel with the existing v19 App Services. If you do not perform a parallel installation, you will need to either update all existing clients to connect to the new URL or set up a redirect from the v19 License Server to the v20 License Server.
 * **Authentication framework**\
   QLM authentication now uses the **Microsoft Identity framework**, replacing **ASP.NET Membership**.
 * **Disaster Recovery Site**
