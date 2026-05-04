@@ -24,7 +24,7 @@ If you selected to create a new SQL database server in the previous step, you ne
 * **Set the Connection Policy to Default**
 * Set the "Minimum TLS Version" to 1.0. This is required as the default OLEDB drivers that are available on Azure App Services do not currently support TLS 1.2 and there does not seem to be a way to update these drivers.
 
-<figure><img src="../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
 
 ### Configure the database
 
