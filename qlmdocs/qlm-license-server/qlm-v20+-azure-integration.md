@@ -50,6 +50,9 @@ Now that the database is created, we need to create a user account, tables and s
 * Set Enable Application Insights to False
 * Click Review + Create
 * Click App Services to view the newly created App Service
+* Expand the Settings section and select Configuration
+* Set the Platform to 64 Bit
+* Click Appy
 * Locate and note the URL to access the App Service in Azure. The URL will look like: qlmlicenseservernetcore-fud3ceecgzfqa6a9.canadacentral-01.azurewebsites.net
 
 <figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
@@ -71,6 +74,9 @@ Now that the database is created, we need to create a user account, tables and s
 * Set Enable Application Insights to False
 * Click Create
 * Click App Services to view the newly created App Service
+* Expand the Settings section and select Configuration
+* Set the Platform to 64 Bit
+* Click Apply
 
 ### Create the QlmPortalNetCore App Service
 
@@ -88,6 +94,9 @@ Now that the database is created, we need to create a user account, tables and s
 * Set Enable Application Insights to False
 * Click Create
 * Click App Services to view the newly created App Service
+* Expand the Settings section and select Configuration
+* Set the Platform to 64 Bit
+* Click Apply
 
 ### Create the QlmCustomerPortalNetCore API Service
 
@@ -105,6 +114,9 @@ Now that the database is created, we need to create a user account, tables and s
 * Set Enable Application Insights to False
 * Click Create
 * Click App Services to view the newly created App Service
+* Expand the Settings section and select Configuration
+* Set the Platform to 64 Bit
+* Click Apply
 * Locate and note the URL to access the App Service in Azure. The URL will look like: [https://qlm-portal=api.azurewebsites.net](https://qlmlicenseserver.azurewebsites.net/)
 
 ### Create the QlmCustomerPortalNetCore APP Service
