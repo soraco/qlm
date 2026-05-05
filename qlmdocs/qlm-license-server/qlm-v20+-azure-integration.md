@@ -32,7 +32,7 @@ Now that the database is created, we need to create a user account, tables and s
 
 <table data-header-hidden><thead><tr><th></th><th data-hidden></th></tr></thead><tbody><tr><td><ul><li><p>Create the tables and DB user account</p><ul><li>In SSMS, click Connect</li><li>Set the Server Name to the URL of your server. Example:  qlmserver1.database.windows.net </li><li>Set the Login name to: qlmadmin</li><li>Enter your password: &#x3C;password></li><li>Click the Options button</li><li>Set the "Connect to database" to: qlmdb1 (or any name that you selected)</li><li>Click Connect</li><li>Right-mouse click the QLM database node and select New Query</li><li>Click Open Query and select: %Public%\Documents\Quick License Manager\DeployToAzure\Db\qlm.createtables.sql</li><li>Click on Execute to run the query</li><li>Repeat these two steps for the following sql script file: sql.aspnetcore.sql</li><li>Repeat these two steps for the following sql script file: qlm.createuser.sql</li><li>Right-mouse click the server in SSMS and select Disconnect</li></ul></li></ul><div><figure><img src="../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure></div></td><td></td></tr><tr><td><p></p><ul><li><p>Validate the previous steps:</p><ul><li>In SSMS, click Connect</li><li>Set the Server Name to the URL of your server. Example:  qlmdbserver1.database.windows.net </li><li>Set the Login name to: qlmadmin</li><li>Enter your password: &#x3C;password></li><li>Click the Options button</li><li>Set the "Connect to database" to: qlmdb1</li><li>Click Connect</li><li>Expand the database tables node and verify that the tables were created</li></ul></li></ul></td><td></td></tr></tbody></table>
 
-### Create the QlmLicense ServerNetCore App Service
+### Create the QlmLicenseServerNetCore App Service
 
 * Click App Services in the Azure Portal
 * Click "Create app service"
@@ -96,6 +96,7 @@ Now that the database is created, we need to create a user account, tables and s
 * Click App Services to view the newly created App Service
 * Expand the Settings section and select Configuration
 * Set the Platform to 64 Bit
+* Check the "Web sockets" option
 * Click Apply
 
 ### Create the QlmCustomerPortalNetCore API Service
