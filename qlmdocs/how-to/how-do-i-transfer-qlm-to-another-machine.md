@@ -24,7 +24,7 @@ Make sure you NEVER  "**upload products** to the License Server" from the new sy
 * Edit the %appdata%\Soraco\Quick License Manager\profiles.xml file in a text editor (_this step is not needed if you're running the latest version of QLM)_
   * Locate the entries productsFile, queriesFile and emailTemplatesFolder
   * If the path is hardcoded for a specific user, update the path based on the new system's path
-  * For example, if your user account on the old system was called "tom" if you see a path that looks like: "c:\users\tom\AppData\Roaming\Soraco\Quick License Manager\\..." and your new user account is "tommy", you should update the path to be "c:\users\tommy\AppData\Roaming\Soraco\Quick License Manager\\..."
+  * For example, if your user account on the old system was called "tom", you would see a path that looks like: "c:\users\tom\AppData\Roaming\Soraco\Quick License Manager\\...". If your new user account is "tommy", you should update the path to be "c:\users\tommy\AppData\Roaming\Soraco\Quick License Manager\\..."
 * Install QLM on the new system
 * Launch QLM&#x20;
 * Step through the QLM License Wizard to activate your license
