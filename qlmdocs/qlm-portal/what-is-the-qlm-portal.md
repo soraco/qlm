@@ -4,7 +4,7 @@
 
 Managing your license keys and customers is typically performed by using the **QLM Management Console** which is a Windows-based desktop application. The QLM Management Console communicates with the QLM License server to retrieve and update license keys.
 
-The **QLM Portal** is an add-on to QLM that needs to be [purchased](https://soraco.co/product/qlm-portal-sub/) separately. It provides a web-based interface for managing license keys. For more details about the licensing terms of the QLM Portal, [click here.](https://support.soraco.co/hc/en-us/articles/203059944-QLM-Portal-Licensing-Terms)&#x20;
+The **QLM Portal** is an add-on to QLM that needs to be [purchased](https://soraco.co/product/qlm-portal-sub/) separately. It provides a web-based interface for managing license keys. For more details about the licensing terms of the QLM Portal, [click here.](https://docs.soraco.co/docs/qlm-portal/qlm-portal-licensing-terms)&#x20;
 
 The QLM Portal provides access to the most common operations an administrator or a reseller is likely to need when managing customers' license keys. It does not include all the features available in the QLM Management Console (the desktop application that is included with a QLM Pro or Enterprise license). For more details about the differences between the Portal and the QLM Management Console, [click here](https://docs.soraco.co/docs/qlm-portal/qlm-management-console-v-s-qlm-portal).
 
