@@ -14,7 +14,7 @@ If you create a new product in the evaluation version of Quick License Manager, 
 
 If you need to test with your product, you must install the QLM License Server on your system.
 
-The setup program to install the QLM License Server can be found here: %Public%\Public Documents\Quick License Manager\DeployToServer\QlmLicenseServerSetup.exe
+The setup program to install the QLM License Server can be found here: %Public%\Public Documents\Quick License Manager\DeployToServer\QlmLicenseServerSetupNetCore.exe
 
 [Read instructions ](../qlm-license-server/how-to-install-the-qlm-license-server.md)for installing the License Server.
 
@@ -62,4 +62,8 @@ URL to the DEMO QLM Customer Site: [https://qlm4.net/qlmdemo/QlmCustomerSiteNetC
 The [QLM Customer Portal ](qlm-demo-license-server.md#qlm-customer-portal)is a portal that allows your customers to view all the license keys associated with their organization and manage them.
 
 URL to the DEMO QLM Customer Portal: [https://qlm4.net/qlmdemo/QlmCustomerPortalNetCore/qlm-portal-app](https://qlm4.net/qlmdemo/QlmCustomerPortalNetCore/qlm-portal-app)
+
+User Name: qlmdemo
+
+Password: Qlmweb30!
 
