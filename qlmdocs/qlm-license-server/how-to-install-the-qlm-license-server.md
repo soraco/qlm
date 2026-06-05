@@ -11,7 +11,7 @@ The License Server is a web service with a SQL Server database that enables the 
 * Analytics
 * and much more
 
-![Quick License Manager Components](https://soraco.co/wp-content/uploads/2015/06/QLM-Components-e1494513789301.jpg)
+<img src="https://soraco.co/wp-content/uploads/2015/06/QLM-Components-e1494513789301.jpg" alt="Quick License Manager Components" height="506" width="720">
 
 &#x20;
 
@@ -37,16 +37,12 @@ If you are hosting your own website,  then the procedure **\[1]** below is recom
 
 To install the QLM License Server:
 
-* Locate the QlmLicenseServerSetup.exe setup program in the QLM installation folder. Typically this file is located under:
-
-QLM v20 and higher: %Public%\Documents\Quick License Manager\DeployToServerNetCore
-
-QLM v8 and higher: %Public%\Documents\Quick License Manager\DeployToServer
-
-QLM v7: C:\Program Files\Soraco\QuickLicenseMgr\DeployToServer
-
-* Copy QlmLicenseServerSetup.exe to your server
-* Execute QlmLicenseServerSetup.exe on the server
+* Locate the setup program in the QLM installation folder. Typically this file is located under:
+  * QLM v20 and higher: %Public%\Documents\Quick License Manager\DeployToServer\QlmLicenseServerSetupNetCore.exe
+  * QLM v8 and higher: %Public%\Documents\Quick License Manager\DeployToServer\QlmLicenseServerSetup.exe
+  * QLM v7: C:\Program Files\Soraco\QuickLicenseMgr\DeployToServer\QlmLicenseServerSetup.exe
+* Copy the setup file to your server
+* Execute the setup on the server
 * Follow the onscreen instructions.
 
 ### QLM Management Console Configuration <a href="#h_01hfsapynsp1s2fxt4hz9fph48" id="h_01hfsapynsp1s2fxt4hz9fph48"></a>
