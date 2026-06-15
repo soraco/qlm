@@ -28,6 +28,7 @@ QLM v20 is an investment in the future of the platform—focused on modernizatio
 
       * `http://localhost/Qlm/QlmLicenseServerNetCore/api/v1/QlmApi`
 * Instructions for redirecting the old License Server URL to the new URL are provided below and should be implemented to ensure backward compatibility.  If you host your own License Server, review the upgrade instructions carefully before upgrading. Note that any client that still uses the old URL which redirects to the new URL will only be able to access APIs and features available in the previous version. New features and APIs introduced in QLM v20+ are only available when using the new URL.
+* You should update your code to use the new URL.&#x20;
 * All integrations must be updated to use the new License Server URL.
 * The QLM Portal has been completely rewritten using DevExpress/Blazor and .NET 10, delivering improved performance, maintainability, and user experience.
 * The QLM Agent Windows Service now uses .NET 10. After installing QLM v20, you will need to reconfigure the credentials of the user account running the QLM Agent Windows Service.
