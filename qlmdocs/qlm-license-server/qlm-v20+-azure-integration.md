@@ -159,7 +159,8 @@ Now that all App Services have been created, you need to create and deploy the Q
     * In the ADO.NET tab, copy the value of the Server entry. The value typically looks like: tcp:qlm-server.database.windows.net,1433
   * Database Name: qlm or any other name you have entered earlier in the process when you created the database
   * User Name: name of the sql user created earlier (qlm\_user)\
-    User Password: password of the sql user created earlier&#x20;
+    User Password: password of the SQL user created earlier&#x20;
+  * Set the URL to the QLM Customer Site (as per the App Service created earlier)
   * Set the URL to the QLM Customer Portal API (as per the App Service created earlier)
   * Set the URL to the QLM Customer Portal App (as per the App Service created earlier)
 * Click "Create Azure Package"
