@@ -156,6 +156,7 @@
     * [How to implement Cloud Floating Licenses (v16 or earlier)](floating-licenses/cloud-floating-licenses/how-to-implement-cloud-based-floating-licenses.md)
     * [Cloud-based floating licenses and multiple application instances](floating-licenses/cloud-floating-licenses/cloud-based-floating-licenses-and-multiple-application-instances.md)
     * [Cloud-based floating licenses - Check-out for offline usage](floating-licenses/cloud-floating-licenses/cloud-based-floating-licenses-check-out-for-offline-usage.md)
+    * [Cloud License Reclamation](floating-licenses/cloud-floating-licenses/cloud-license-reclamation.md)
     * [How to implement cloud-based floating licenses for cross-platform applications](floating-licenses/cloud-floating-licenses/how-to-implement-cloud-based-floating-licenses-for-cross-platform-applications.md)
   * [On-premise Floating Licenses](floating-licenses/on-premise-floating-licenses/README.md)
     * [Implement Floating Licenses](floating-licenses/on-premise-floating-licenses/implement-floating-licenses.md)
