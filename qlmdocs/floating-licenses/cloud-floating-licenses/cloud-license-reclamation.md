@@ -67,3 +67,7 @@ To enable license reclamation:
 * Set the timer frequency in minutes
 
 Note that the [QLM Agent Service ](../../how-to/qlm-agent-service.md)must be running on your workstation.
+
+### Important Note
+
+If you have upgraded from a previous version of QLM, you should wait 24 hours following the upgrade before enabling license reclamation. If you do not, licenses that are still active will be reclaimed.
