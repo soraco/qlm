@@ -14,8 +14,6 @@ You can control how often this validation occurs by setting the `QlmCloudFloatin
 
 Each time a client validates a license with the server, the **Last Accessed Date** of the license is updated (available starting with QLM v20.x).
 
-***
-
 ### License Reclamation
 
 License Reclamation relies on the **Last Accessed Date** to determine whether a license is still actively in use.
@@ -26,8 +24,6 @@ As long as your application remains open, it continues to send heartbeat signals
 * The system goes to sleep
 * The device goes offline
 * The application crashes
-
-***
 
 ### Inactivity Threshold
 
@@ -40,7 +36,9 @@ You can configure the inactivity window using the **Inactivity Threshold** setti
 
 This setting defines how long a license can remain inactive before being reclaimed.
 
-***
+### Offline Licenses
+
+If a license was checked-out for offline usage, the reclamation process&#x20;
 
 ### Reclamation Timer Frequency
 
@@ -51,8 +49,6 @@ This interval is known as the **Reclamation Timer Frequency**, and can be config
 * **QLM Management Console → Manage Keys → Options → Cloud Licenses**
 
 > **Note:** For Soraco-hosted license servers, the minimum allowed value for this interval is **6 hours**.
-
-***
 
 ### Configuration
 

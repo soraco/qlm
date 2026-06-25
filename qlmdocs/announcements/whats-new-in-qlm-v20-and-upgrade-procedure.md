@@ -59,6 +59,10 @@ QLM v20 is an investment in the future of the platform—focused on modernizatio
 * Most client side QLM components now use .NET 10.
 * The QLM License Wizard XML settings file must be updated to reflect the new URL.
 
+### QLM Agent Service
+
+The QLM Agent Service now supports cloud license [reclamation ](../floating-licenses/cloud-floating-licenses/cloud-license-reclamation.md)of inactive licenses.
+
 ### .NET Support
 
 * The QlmLicenseLib.dll is now available for .NET4, .NET6, NET7, .NET8, .NET9, and .NET 10.
