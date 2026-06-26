@@ -12,7 +12,7 @@ You can control how often this validation occurs by setting the `QlmCloudFloatin
 
 > **Note:** For Soraco-hosted license servers, the minimum allowed validation interval is **3 hours**.
 
-Each time a client validates a license with the server, the **Last Accessed Date** of the license is updated (available starting with QLM _v20.0.26177.4]_).
+Each time a client validates a license with the server, the **Last Accessed Date** of the license is updated (requries QLM _v20.0.26177.4_).
 
 ### License Reclamation
 
@@ -27,7 +27,7 @@ As long as your application remains open, it continues to send heartbeat signals
 
 ### Inactivity Threshold
 
-During the reclamation process, the server compares the **Last Accessed Date** with the current date and time to decide whether a license should be reclaimed.
+During the reclamation process, the server compares the **Last Accessed Date** with the current date  to decide whether a license is deemed inactive.
 
 You can configure the inactivity window using the **Inactivity Threshold** setting:
 
@@ -46,26 +46,25 @@ The reclamation can be triggered automatically via the QLM Agent service or manu
 
 When enabled, the QLM Agent Service  contacts the server at regular intervals and performs the reclamation process.&#x20;
 
-To manually trigger the reclamation process, go to **QLM Management Console → Manage Keys → Options → Cloud Licenses** and click 'Relcaim inactive licenses now".
+To manually trigger the reclamation process, go to **QLM Management Console → Manage Keys → Options → Cloud Licenses** and click 'Reclaim inactive licenses now".
 
 ### Configuration
 
-To enable license reclamation:
+To enable automatic license reclamation:
 
 * Launch the QLM Management Console
 * Go to the Manage Keys tab and select Options
 * Go to the Cloud Licenses tab
-* Select "Enable floating license reclamation"
 * Select your License Server
 * Set the Inactivity threshold in minutes
 
 > **Note:** For Soraco-hosted license servers, the minimum allowed value is 3 **hours**.
 
-* Set the timer frequency in minutes
+* Set the Reclamation timer frequency in minutes
 
 > **Note:** For Soraco-hosted license servers, the minimum allowed value is **6 hours**.
 
-
+* Select "Enable the QLM Agent to automatically reclaim licenses"
 
 Note that the [QLM Agent Service ](../../how-to/qlm-agent-service.md)must be running on your workstation.
 
