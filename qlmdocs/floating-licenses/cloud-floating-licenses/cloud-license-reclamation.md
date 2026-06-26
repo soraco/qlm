@@ -44,11 +44,7 @@ If a license was checked-out for offline usage, the reclamation process honors t
 
 The reclamation can be triggered automatically via the QLM Agent service or manually.
 
-When enabled, the **QLM Agent Service** contacts the server at regular intervals and performs the reclamation process. This interval can be configured at:
-
-* **QLM Management Console → Manage Keys → Options → Cloud Licenses**
-
-> **Note:** For Soraco-hosted license servers, the minimum allowed value for this interval is **6 hours**.
+When enabled, the QLM Agent Service  contacts the server at regular intervals and performs the reclamation process.&#x20;
 
 To manually trigger the reclamation process, go to **QLM Management Console → Manage Keys → Options → Cloud Licenses** and click 'Relcaim inactive licenses now".
 
@@ -62,7 +58,14 @@ To enable license reclamation:
 * Select "Enable floating license reclamation"
 * Select your License Server
 * Set the Inactivity threshold in minutes
+
+> **Note:** For Soraco-hosted license servers, the minimum allowed value is 3 **hours**.
+
 * Set the timer frequency in minutes
+
+> **Note:** For Soraco-hosted license servers, the minimum allowed value is **6 hours**.
+
+
 
 Note that the [QLM Agent Service ](../../how-to/qlm-agent-service.md)must be running on your workstation.
 
