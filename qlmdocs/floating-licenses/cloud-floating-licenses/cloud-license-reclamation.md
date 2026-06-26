@@ -58,11 +58,11 @@ To enable automatic license reclamation:
 * Select your License Server
 * Set the Inactivity threshold in minutes
 
-> **Note:** For Soraco-hosted license servers, the minimum allowed value is 3 **hours**.
+> **Note:** For Soraco-hosted license servers, the minimum allowed value is 3 **½ hours (210 minutes)**.
 
 * Set the Reclamation timer frequency in minutes
 
-> **Note:** For Soraco-hosted license servers, the minimum allowed value is **6 hours**.
+> **Note:** For Soraco-hosted license servers, the minimum allowed value is **6 hours (360 minutes)**.
 
 * Select "Enable the QLM Agent to automatically reclaim licenses"
 
