@@ -2,7 +2,7 @@
 
 ### Overview
 
-_\[The Reclamation service described below is available as of QLM v20.0.26177.4]_
+_\[The Reclamation service described below is available as of QLM v20.0.26177.5]_
 
 When using **QLM Cloud Licenses**, your QLM-protected application includes a built-in timer (via the `QlmCloudFloatingLicenseHelper` class) that periodically contacts the server to verify whether the license is still checked out.
 
@@ -12,7 +12,7 @@ You can control how often this validation occurs by setting the `QlmCloudFloatin
 
 > **Note:** For Soraco-hosted license servers, the minimum allowed validation interval is **3 hours**.
 
-Each time a client validates a license with the server, the **Last Accessed Date** of the license is updated (requries QLM _v20.0.26177.4_).
+Each time a client validates a license with the server, the **Last Accessed Date** of the license is updated (requries QLM _v20.0.26177.5_).
 
 ### License Reclamation
 
