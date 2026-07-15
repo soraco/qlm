@@ -37,7 +37,7 @@ In your application, you must dynamically compute the hash and add it to the hea
 
 {% code overflow="wrap" %}
 ```csharp
-string url = "";
+string url = "http://localhost:55555/qlmservice.asmx/RetrieveActivationKeyHttp?is_orderid=1234&is_userdata1=99999&is_user=ralph&is_pwd=123456&is_format=json&X-Qlm-Timestamp:2023-10-30 23:59:00&X-Qlm-Authentication-Version=2";
 
 string apiKey = "123456";
 int authenticationVersion = 2;
@@ -88,7 +88,7 @@ http://localhost:55555/qlmservice.asmx/RetrieveActivationKeyHttp?is_orderid=1234
 
 #### **Testing your hash value**
 
-There are many online tools that you can use an online tool to test your hash value.
+There are many online tools that you can use to test your hash value.
 
 For example, you can use this [tool](https://www.freeformatter.com/hmac-generator.html) as shown below:
 
