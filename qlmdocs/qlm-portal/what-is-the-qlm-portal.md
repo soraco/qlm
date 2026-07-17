@@ -43,7 +43,7 @@ Operations that can be controlled by the QLM Portal:
 
 &#x20;You can view a demo of the new QLM Portal on the page below:
 
-[https://qlm4.net/qlmdemo/QlmPortalNetCore/QlmPortal](https://qlm4.net/qlmdemo/QlmPortal/QlmPortal.aspx)
+[https://qlm4.net/qlmdemo/QlmPortalNetCore/QlmPortal](https://qlm4.net/qlmdemo/QlmPortalNetCore/QlmPortal)
 
 User: qlmdemo\
 Password: Qlmweb30!
