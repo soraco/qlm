@@ -34,12 +34,27 @@ To parse the data returned in dataSet, check this [article](https://support.sora
 
 ### C# Example
 
-```csharp
-ILicenseInfo li = license.GetLicenseInfo (webServiceUrl, "A2GM0-50K00-PYU3F-784HH-1U1V5T", 
-                                           false, out dataSet out response);
+{% tabs %}
+{% tab title="C#" %}
+<pre class="language-csharp"><code class="lang-csharp"><strong>ILicenseInfo li = license.GetLicenseInfo (webServiceUrl, "A2GM0-50K00-PYU3F-784HH-1U1V5T", 
+</strong>                                           false, out dataSet out response);
 if (li != null)
 {
     int numLicenses = li.NumLicenses;
     int availableLicenses = li.AvailableLicenses;
 }
+</code></pre>
+{% endtab %}
+
+{% tab title="VBA" %}
+```vb
+Dim ds As String
+Dim response As String
+Dim licenseInfo As Object
+    
+Set licenseInfo = lv.LicenseObject.GetLicenseInfo("", lv.ActivationKey, False, ds, response)
+    
+MsgBox ("Order Date: " & licenseInfo.OrderDate)
 ```
+{% endtab %}
+{% endtabs %}
