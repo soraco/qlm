@@ -2,7 +2,7 @@
 
 When users upgrade their system to Windows 10, they are presented with 3 options as shown below:
 
-![](https://support.soraco.co/hc/en-us/article\_attachments/202541713/UpgradetoWin10.png)
+<img src="https://support.soraco.co/hc/en-us/article_attachments/202541713/UpgradetoWin10.png" alt="" height="427" width="546">
 
 &#x20;
 

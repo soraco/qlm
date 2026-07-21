@@ -12,11 +12,11 @@ In order to add the QLM .NET User Controls to your Visual Studio Toolbox, follow
 * Launch the QLM Management Console
 * Click the QLM icon in the top left-hand corner and select Options
 
-![](https://support.soraco.co/hc/article\_attachments/115017860426/mceclip0.png)
+<img src="https://support.soraco.co/hc/article_attachments/115017860426/mceclip0.png" alt="" height="161" width="507">
 
 * On the General tab, click the Repair button and wait a few minutes
 
-![](https://support.soraco.co/hc/article\_attachments/115004870483/mceclip1.png)
+![](https://support.soraco.co/hc/article_attachments/115004870483/mceclip1.png)
 
 &#x20;
 
@@ -32,4 +32,4 @@ In order to add the QLM .NET User Controls to your Visual Studio Toolbox, follow
 * Click Ok
 * You should see 4 QLM controls in the QLM tab. We recommend that you use the QlmWizardControl or the QLMActivationControl. QlmWebBasicActivationControl is an older version that is kept for backward compatibility. QlmExpressLicenseValidationControl should be used by QLM Express customers
 
-![](https://support.soraco.co/hc/article\_attachments/115004908946/mceclip2.png)
+![](https://support.soraco.co/hc/article_attachments/115004908946/mceclip2.png)

@@ -4,7 +4,7 @@
 
 QLM v17 was released on March 3, 2023. Note that our major releases are not loaded with a massive amount of new features. Features are added gradually throughout the year and released when they are ready. To learn more about our release process, [click here](https://docs.soraco.co/docs/blog/iterative-releases).
 
-\-> [Latest Version Release Notes](https://soraco.co/products/qlm/ReleaseNotes.html)
+-> [Latest Version Release Notes](https://soraco.co/products/qlm/ReleaseNotes.html)
 
 ### Important Changes in v17 <a href="#h_01h95qq4d75t05j62drs5q0gz6" id="h_01h95qq4d75t05j62drs5q0gz6"></a>
 
@@ -24,11 +24,11 @@ QLM v17 was released on March 3, 2023. Note that our major releases are not load
 
 * UserData can now be viewed and edited in JSON format.
 
-![](https://soraco.co/wp-content/uploads/2023/02/json.png)
+<img src="https://soraco.co/wp-content/uploads/2023/02/json.png" alt="" height="392" width="467">
 
 * Bulk Editing of License Keys
 
-![](https://soraco.co/wp-content/uploads/2023/03/image.png)
+<img src="https://soraco.co/wp-content/uploads/2023/03/image.png" alt="" height="520" width="473">
 
 ### Email Integration
 

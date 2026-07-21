@@ -127,7 +127,7 @@ If the end-user is not connected to the internet, you will need to send the cust
   * Click Ok
   * A license file should be generated in the location selected above. Send this file to your customer and ask them to save it in the folder that your application expects.
 
-![](https://support.soraco.co/hc/article_attachments/115016902426/mceclip1.png)
+<img src="https://support.soraco.co/hc/article_attachments/115016902426/mceclip1.png" alt="" height="461" width="510">
 
 As of QLM v11.0.18147.1, your customer can also generate the Product Properties file or a complete license file (for cross-platform apps) from the QLM Offline Activation page:
 
@@ -139,7 +139,7 @@ As of QLM v11.0.18147.1, your customer can also generate the Product Properties 
 * Click Activate
 * A Product Properties file or a license file will be generated and downloaded to the end-user system. Ask the customer to save this file in the folder where your application expects it.
 
-![](https://support.soraco.co/hc/article_attachments/115016901546/mceclip0.png)
+<img src="https://support.soraco.co/hc/article_attachments/115016901546/mceclip0.png" alt="" height="419" width="661">
 
 &#x20;
 

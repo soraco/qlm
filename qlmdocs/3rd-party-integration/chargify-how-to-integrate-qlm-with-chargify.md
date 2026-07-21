@@ -28,7 +28,7 @@ When a subscription is cancelled:
 * Click the **Config** menu then select **Settings**
 * In the **Settings** panel, click **WebHooks**
 * Click **Add New Endpoint**
-* Enter the following URL (update the URL to point to your own QLM License Server): [https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/QlmWebHookHandler?is\_vendor=chargify](https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/QlmWebHookHandler?is\_vendor=chargify)
+* Enter the following URL (update the URL to point to your own QLM License Server): [https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/QlmWebHookHandler?is\_vendor=chargify](https://qlm3.net/qlmdemo/qlmLicenseServer/qlmservice.asmx/QlmWebHookHandler?is_vendor=chargify)
 * Check the following Webhook Subscriptions:
   * Payment Success
   * Signup Success < NO
@@ -37,7 +37,7 @@ When a subscription is cancelled:
   * Component Allocation Change
 * Click **Save**
 
-![](https://support.soraco.co/hc/article\_attachments/360010176212/mceclip0.png)
+<img src="https://support.soraco.co/hc/article_attachments/360010176212/mceclip0.png" alt="" height="594" width="820">
 
 ### &#x20;**Product Configuration**
 
@@ -59,7 +59,7 @@ When a subscription is cancelled:
 * Set the Shared Key to your Chargify SharedKey (from [Edit Current Site](https://help.chargify.com/my-account/password-shared-secret.html)).
 * Click Ok
 
-![](https://support.soraco.co/hc/article\_attachments/360010173192/mceclip1.png)
+![](https://support.soraco.co/hc/article_attachments/360010173192/mceclip1.png)
 
 ### **Mapping the Chargify product to a QLM Product**
 
@@ -75,7 +75,7 @@ To map your Chargify product to a QLM product, you must create a server property
 * For more information about the supported arguments, refer to this [article](https://support.soraco.co/hc/en-us/articles/207606653-GetActivationKeyWithExpiryDate).
 * Click Ok
 
-![](https://support.soraco.co/hc/article\_attachments/360010206671/mceclip2.png)
+![](https://support.soraco.co/hc/article_attachments/360010206671/mceclip2.png)
 
 ### **Testing a purchase**
 

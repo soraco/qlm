@@ -4,7 +4,7 @@
 
 **GDPR**
 
-General Data Protection Regulation ([GDPR](https://en.wikipedia.org/wiki/General\_Data\_Protection\_Regulation)) is a regulation in EU law on data protection and privacy for all individuals within the European Union. It takes effect on May 25, 2018.
+General Data Protection Regulation ([GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation)) is a regulation in EU law on data protection and privacy for all individuals within the European Union. It takes effect on May 25, 2018.
 
 QLM v11 provides the tools you need to request and track privacy policy consent from your customers. Here are the GDPR-related changes in QLM v11:
 
@@ -31,9 +31,9 @@ Activation by authorization code is currently ideal for single activation keys s
 
 &#x20;
 
-| ![](https://support.soraco.co/hc/article\_attachments/360001127246/mceclip8.png) | ![](https://support.soraco.co/hc/article\_attachments/360001127266/mceclip9.png) | ![](https://support.soraco.co/hc/article\_attachments/360001127226/mceclip3.png) |
-| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| ![](https://support.soraco.co/hc/article\_attachments/360001127923/mceclip6.png) | ![](https://support.soraco.co/hc/article\_attachments/360001127943/mceclip7.png) |                                                                                  |
+| ![](https://support.soraco.co/hc/article_attachments/360001127246/mceclip8.png) | ![](https://support.soraco.co/hc/article_attachments/360001127266/mceclip9.png) | ![](https://support.soraco.co/hc/article_attachments/360001127226/mceclip3.png) |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| ![](https://support.soraco.co/hc/article_attachments/360001127923/mceclip6.png) | ![](https://support.soraco.co/hc/article_attachments/360001127943/mceclip7.png) |                                                                                 |
 
 **License Server Gateway**
 
@@ -43,7 +43,7 @@ The License Server gateway is ideal in scenarios where your customers' workstati
 
 &#x20;
 
-![](https://support.soraco.co/hc/article\_attachments/360001137106/mceclip0.png)
+<img src="https://support.soraco.co/hc/article_attachments/360001137106/mceclip0.png" alt="" height="317" width="893">
 
 **Miscellaneous updates**
 

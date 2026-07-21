@@ -6,7 +6,7 @@ Under some specific conditions, the .NET 40 installation could fail with the fol
 
 &#x20;
 
-![](https://support.soraco.co/hc/en-us/article\_attachments/202535393/DotNet4InstallError-01.png)
+![](https://support.soraco.co/hc/en-us/article_attachments/202535393/DotNet4InstallError-01.png)
 
 &#x20;
 
@@ -16,4 +16,4 @@ To resolve this issue, you must install Microsoft .NET 4.0 from the Microsoft Wi
 * Click Check for Updates
 * Locate the .NET 4.0 or 4.5 Framework as shown below and install it.
 
-![](https://support.soraco.co/hc/en-us/article\_attachments/202535483/DotNet4InstallError-02.png)
+<img src="https://support.soraco.co/hc/en-us/article_attachments/202535483/DotNet4InstallError-02.png" alt="" height="243" width="631">

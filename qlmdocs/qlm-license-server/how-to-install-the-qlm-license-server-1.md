@@ -11,7 +11,7 @@ The License Server is a web service with a SQL Server database that enables the 
 * Analytics
 * and much more
 
-![Quick License Manager Components](https://soraco.co/wp-content/uploads/2015/06/QLM-Components-e1494513789301.jpg)
+<img src="https://soraco.co/wp-content/uploads/2015/06/QLM-Components-e1494513789301.jpg" alt="Quick License Manager Components" height="506" width="720">
 
 &#x20;
 

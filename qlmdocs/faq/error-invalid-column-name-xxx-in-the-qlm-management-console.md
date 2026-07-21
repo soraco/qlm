@@ -14,7 +14,7 @@ To determine the version of the QLM Management Console:
 * Go to the Get Started tab
 * Locate the "QLM Version Information" tile and note your version
 
-![](https://support.soraco.co/hc/article\_attachments/360000697563/mceclip1.png)
+<img src="https://support.soraco.co/hc/article_attachments/360000697563/mceclip1.png" alt="" height="505" width="731">
 
 To determine the version of the QLM License Server:
 
@@ -25,7 +25,7 @@ To determine the version of the QLM License Server:
 * The first result returned by the test includes the version of the QLM License Server
 * Locate the "QLM Version Information" tile and note your version
 
-![](https://support.soraco.co/hc/article\_attachments/360000704566/mceclip0.png)
+<img src="https://support.soraco.co/hc/article_attachments/360000704566/mceclip0.png" alt="" height="358" width="743">
 
 If the 2 versions are identical, proceed to the next step. If they are not, upgrade your system so that both versions are identical.
 
@@ -43,4 +43,4 @@ To upgrade the DB schema of the License Server:
 * Click the "Upgrade DB Schema " button
 * Verify that all the results returned when upgrading the schema are successful.
 
-![](https://support.soraco.co/hc/article\_attachments/360000697663/mceclip2.png)
+<img src="https://support.soraco.co/hc/article_attachments/360000697663/mceclip2.png" alt="" height="759" width="768">

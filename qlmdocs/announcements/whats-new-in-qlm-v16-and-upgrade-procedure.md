@@ -57,7 +57,7 @@ The QLM NuGet packages have been updated to support in a single NuGet package th
 * New API GetUniqueCombinedSystemIdentifier that combines system identifiers.
 * Added support for binding a license to a Docker Container. For more information, [click here](../how-to/how-to-bind-a-license-to-a-docker-container.md).
 
-![Docker Container](https://soraco.co/wp-content/uploads/2022/05/DockerContainer.png)
+<img src="https://soraco.co/wp-content/uploads/2022/05/DockerContainer.png" alt="Docker Container" height="383" width="383">
 
 ### License Server
 

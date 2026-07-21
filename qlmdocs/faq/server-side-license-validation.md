@@ -24,4 +24,4 @@ The properties mentioned above can be set programmatically or from the Protect Y
 
 &#x20;
 
-![](https://support.soraco.co/hc/article\_attachments/360024128692/mceclip0.png)
+<img src="https://support.soraco.co/hc/article_attachments/360024128692/mceclip0.png" alt="" height="871" width="1031">

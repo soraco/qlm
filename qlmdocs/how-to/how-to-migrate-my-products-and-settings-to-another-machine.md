@@ -43,7 +43,7 @@ Make sure you NEVER  "**upload products** to the License Server" from the new sy
 
 Note that as per our [EULA](http://soraco.co/products/qlm/QlmLicense.pdf) you are limited to transferring a license 4 times per year. The relevant section in the EULA is included below.
 
-![](https://support.soraco.co/attachments/token/aUcubhviFxr0dtJwAdCzkG8A6/?name=inline-1029670197.png)
+<img src="https://support.soraco.co/attachments/token/aUcubhviFxr0dtJwAdCzkG8A6/?name=inline-1029670197.png" alt="" height="160">
 
 &#x20;
 

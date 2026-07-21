@@ -197,7 +197,7 @@ Is it recommended to set the Default Document of the QLM Portal to QlmPortal.asp
 
 &#x20;
 
-![](https://support.soraco.co/hc/article_attachments/360023092531/mceclip9.png)
+<img src="https://support.soraco.co/hc/article_attachments/360023092531/mceclip9.png" alt="" height="584" width="996">
 
 #### &#x20;
 

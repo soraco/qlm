@@ -22,4 +22,4 @@ If you customized the settings of the QLM License Wizard in the Protect Your App
 * Right mouse click the property name&#x20;
 * Click Reset
 
-![](https://support.soraco.co/hc/article\_attachments/360010091131/mceclip0.png)
+<img src="https://support.soraco.co/hc/article_attachments/360010091131/mceclip0.png" alt="" height="646" width="957">

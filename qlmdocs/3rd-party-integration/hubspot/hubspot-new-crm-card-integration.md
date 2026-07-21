@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # HubSpot New CRM Card Integration
 
 This guide explains how to create, configure, and enable the **QLM CRM Card** in HubSpot using a HubSpot Project and the HubSpot CLI.
