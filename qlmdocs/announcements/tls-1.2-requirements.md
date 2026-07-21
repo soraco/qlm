@@ -6,7 +6,7 @@ The Soraco QLM License Server used to activate your QLM licenses will soon requi
 
 Additionally, if your own License Server is hosted by Soraco Technologies, we will also enforce this requirement and reject connections from clients that do not support TLS 1.2 or higher.
 
-This update was originally scheduled for June 2025 but was postponed to January 1, 2026 to give customers more time to update their applications. It was subsequently delayed again in January. We now expect to enforce TLS 1.2 in the coming months.
+This update was originally scheduled for June 2025 but was postponed to January 1, 2026 to give customers more time to update their applications. It was subsequently delayed again in January. We now have scheduled this update to occur on Oct 2, 2026.
 
 This can impact you at two levels:
 
