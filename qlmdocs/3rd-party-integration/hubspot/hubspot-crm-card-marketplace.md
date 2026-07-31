@@ -1,3 +1,7 @@
+---
+metaLinks: {}
+---
+
 # HubSpot New CRM Card - Marketplace (Available Soon)
 
 _The QLM HubSpot App is an add-on that must be purchased separately._&#x20;
@@ -34,7 +38,7 @@ The QLM HubSpot App allows you to view license information associated with a cus
 
 <figure><img src="../../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
 
-7. Once you click Manage locations, a right sidebar will appear where you can either click customize and follow the instructions in [Step 2](hubspot-new-crm-card-marketplace-available-soon.md#step-2-add-the-qlm-crm-card-to-your-contact-layout). Or you can select the QLM CRM Card checkbox an click save which will do the same (note it will add the CRM card to the bottom of you contacts right sidebar). If you clicked customize, skip to [Step 2.6](hubspot-new-crm-card-marketplace-available-soon.md#step-2-add-the-qlm-crm-card-to-your-contact-layout). If you clicked the checkbox and saved you can skip to [Step 3](hubspot-new-crm-card-marketplace-available-soon.md#step-3-verify-the-card-is-visible).
+7. Once you click Manage locations, a right sidebar will appear where you can either click customize and follow the instructions in [Step 2](hubspot-crm-card-marketplace.md#step-2-add-the-qlm-crm-card-to-your-contact-layout). Or you can select the QLM CRM Card checkbox an click save which will do the same (note it will add the CRM card to the bottom of you contacts right sidebar). If you clicked customize, skip to [Step 2.6](hubspot-crm-card-marketplace.md#step-2-add-the-qlm-crm-card-to-your-contact-layout). If you clicked the checkbox and saved you can skip to [Step 3](hubspot-crm-card-marketplace.md#step-3-verify-the-card-is-visible).
 
 <figure><img src="../../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
 
