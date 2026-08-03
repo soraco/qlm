@@ -108,6 +108,10 @@ After the QLM v20 License Server is installed, the following URLs will be availa
 http://localhost/Qlm/QlmLicenseServerNetCore/api/v1/QlmApi
 ```
 
+{% hint style="info" %}
+_Note that unlike previous versions of QLM, the URL above will return 404 if invoked as is. If you want to test the URL, you can add PingHttp at the end of the URL. Example: http://localhost/Qlm/QlmLicenseServerNetCore/api/v1/QlmApi/PingHttp_
+{% endhint %}
+
 * QLM Self Help
 
 ```html
