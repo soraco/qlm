@@ -555,6 +555,7 @@
   * [How to hide sensitive information from a third-party developer](faq/how-to-hide-sensitive-information-from-a-third-party-developer.md)
   * [How to update the ClientVersion / ApplicationVersion](faq/how-to-update-the-clientversion-applicationversion.md)
   * [How to change the name of your product](faq/how-to-change-the-name-of-your-product.md)
+  * [Hosting Excel files on a network share](faq/hosting-excel-files-on-a-network-share.md)
 * [⁉️ Troubleshooting](troubleshooting/README.md)
   * [Diagnosing network connectivity issues with the QLM License Server](troubleshooting/diagnosing-network-connectivity-issues-with-the-qlm-license-server.md)
   * [Tool to test network connectivity](troubleshooting/tool-to-test-network-connectivity.md)
