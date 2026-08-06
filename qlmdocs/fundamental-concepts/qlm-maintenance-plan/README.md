@@ -31,7 +31,7 @@ The first step in enabling the maintenance plan feature is to define a QLM versi
 
 &#x20;
 
-![mceclip0.png](https://support.soraco.co/hc/article\_attachments/4415007282324/mceclip0.png)
+![mceclip0.png](https://support.soraco.co/hc/article_attachments/4415007282324/mceclip0.png)
 
 #### To set the maintenance plan during the ordering process
 
@@ -55,7 +55,7 @@ For an existing activation key, click on Manage Keys / Licenses / Edit then spec
 
 #### Maintenance Plan Email Notification
 
-To remind customers to renew the maintenance plan, you can schedule a task that will send your customers a reminder email prior to the expiry of the maintenance plan. For more details, check this [article](../email-framework/email-notifications/how-to-automatically-email-customers-when-the-subscription-is-about-to-expire-using-scheduled-tasks.md).
+To remind customers to renew the maintenance plan, you can schedule a task that will send your customers a reminder email prior to the expiry of the maintenance plan. For more details, check this [article](../../email-framework/email-notifications/how-to-automatically-email-customers-when-the-subscription-is-about-to-expire-using-scheduled-tasks.md).
 
 #### Place an order to renew a maintenance plan
 

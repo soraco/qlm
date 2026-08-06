@@ -24,4 +24,4 @@ Finally, to upgrade the version of a product, you should **NEVER** modify the ve
 
 If you are using QLM Pro, you can also use the Maintenance Plan feature to allow customers with a license key of an older version of your product to activate a newer version of your product.
 
-For more details about the Maintenance Plan feature, [click here](../faq/qlm-maintenance-plan.md).
+For more details about the Maintenance Plan feature, [click here](../fundamental-concepts/qlm-maintenance-plan/).
