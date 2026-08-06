@@ -1,12 +1,12 @@
-# Use Cases
+# Product and Application Versions
 
 ## Understanding QLM Product Versions vs. Application Versions
 
-When implementing a maintenance plan in Quick License Manager (QLM), it is important to understand that **your application version and your QLM product version do not have to match**. The QLM product version exists primarily for **licensing and upgrade entitlement management**, not to mirror every version of your application. [\[docs.soraco.co\]](https://docs.soraco.co/docs/fundamental-concepts/qlm-maintenance-plan)
+When implementing a maintenance plan in Quick License Manager (QLM), it is important to understand that **your application version and your QLM product version do not have to match**. The QLM product version exists primarily for **licensing and upgrade entitlement management**, not to mirror every version of your application.&#x20;
 
 ### QLM Product Versions Are Used for Licensing
 
-In QLM, product versions are used to determine whether a customer is entitled to activate and run a specific version of your software. When a maintenance plan is enabled, QLM verifies that the customer's maintenance entitlement covers the version they are attempting to use. [\[docs.soraco.co\]](https://docs.soraco.co/docs/fundamental-concepts/qlm-maintenance-plan)
+In QLM, product versions are used to determine whether a customer is entitled to activate and run a specific version of your software. When a maintenance plan is enabled, QLM verifies that the customer's maintenance entitlement covers the version they are attempting to use.&#x20;
 
 The version definitions in QLM are therefore a business and licensing decision rather than a reflection of your application's exact version numbering scheme.
 
@@ -37,7 +37,7 @@ In this scenario:
 * Application versions 2.0, 2.1, and 2.2 all map to **QLM Product 2.0**
 * Application version 3.0 maps to **QLM Product 3.0**
 
-This approach simplifies license management while still allowing you to control access to major releases. QLM's maintenance plan framework only requires you to create the versions that you want to use for entitlement decisions. In fact, if you only need to control upgrades between major releases, there is no need to create minor versions in QLM. [\[docs.soraco.co\]](https://docs.soraco.co/docs/fundamental-concepts/qlm-maintenance-plan)
+This approach simplifies license management while still allowing you to control access to major releases. QLM's maintenance plan framework only requires you to create the versions that you want to use for entitlement decisions. In fact, if you only need to control upgrades between major releases, there is no need to create minor versions in QLM.
 
 ### Controlling Upgrades by Minor Version
 
@@ -62,9 +62,9 @@ QLM product versions are created and managed from the **QLM Management Console**
 3. Click **New**
 4. Select **Create a new version of an existing product**
 5. Choose the product to version
-6. Update the product information and release date as needed [\[docs.soraco.co\]](https://docs.soraco.co/docs/fundamental-concepts/qlm-maintenance-plan)
+6. Update the product information and release date as needed&#x20;
 
-The release date associated with each QLM product version is used by the maintenance plan framework to determine whether a customer's maintenance entitlement covers that version. [\[docs.soraco.co\]](https://docs.soraco.co/docs/fundamental-concepts/qlm-maintenance-plan)
+The release date associated with each QLM product version is used by the maintenance plan framework to determine whether a customer's maintenance entitlement covers that version.&#x20;
 
 ### Best Practice
 

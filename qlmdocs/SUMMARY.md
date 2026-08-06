@@ -46,7 +46,7 @@
     * [Deactivation Verification Code for Offline Deactivation](faq/deactivation-verification-code-for-offline-deactivation.md)
   * [QLM Timer](fundamental-concepts/qlm-timer.md)
   * [Maintenance Plan](fundamental-concepts/qlm-maintenance-plan/README.md)
-    * [Use Cases](fundamental-concepts/qlm-maintenance-plan/use-cases.md)
+    * [Product and Application Versions](fundamental-concepts/qlm-maintenance-plan/product-and-application-versions.md)
   * [How to implement software subscription](faq/how-to-implement-software-subscription.md)
   * [Subscription workflow when integrated with an eCommerce Provider](how-to/subscription-workflow-when-integrated-with-an-ecommerce-provider.md)
   * [Check for Updates](faq/how-does-the-check-for-updates-feature-work.md)
