@@ -266,7 +266,7 @@
     * [Fastspring HMAC validation](3rd-party-integration/fastspring/fastspring-hmac-validation.md)
   * [Gravity Forms Integration](3rd-party-integration/gravity-forms-integration.md)
   * [HubSpot](3rd-party-integration/hubspot/README.md)
-    * [HubSpot New CRM Card - Marketplace (Available Soon)](3rd-party-integration/hubspot/hubspot-crm-card-marketplace.md)
+    * [HubSpot New CRM Card - Marketplace](3rd-party-integration/hubspot/hubspot-crm-card-marketplace.md)
     * [HubSpot Legacy CRM Card Integration](3rd-party-integration/hubspot/qlm-hubspot-integration.md)
     * [HubSpot Integration - Contact Creation](3rd-party-integration/hubspot/hubspot-integration-contact-creation.md)
     * [HubSpot Integration - Deal Creation](3rd-party-integration/hubspot/hubspot-integration-deal-creation.md)
