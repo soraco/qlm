@@ -2,9 +2,9 @@
 metaLinks: {}
 ---
 
-# HubSpot New CRM Card - Marketplace (Available Soon)
+# HubSpot New CRM Card - Marketplace
 
-_The QLM HubSpot App is an add-on that must be purchased separately._&#x20;
+_The QLM HubSpot App requires QLM v20 and is sold separately as an add-on._
 
 The QLM HubSpot App allows you to view license information associated with a customer directly from within HubSpot as a CRM Card.
 
