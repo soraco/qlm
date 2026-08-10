@@ -1,4 +1,4 @@
-# How to restrict trial requests
+# Restrict trial requests
 
 The QLM Trial Registration Form allows your customers to request a trial by registering on your website.
 
@@ -10,7 +10,7 @@ Additionally, users can try to fool the system by using different allowed email 
 
 The following server properties allow you to control who can request a trial:
 
-<table data-header-hidden><thead><tr><th width="169.33333333333331"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Category</strong></td><td><strong>Name</strong></td><td><strong>Description</strong></td></tr><tr><td>options</td><td>bannedEmailProviders</td><td>Any email that matches the list of banned email providers is denied.</td></tr><tr><td>customerSite</td><td>allowGenericEmailProviders</td><td>Determines if generic email providers (such as hotmail, gmail) can request license keys. You can customize the list of generic email providers from the server property options/genericEmailProviders.</td></tr><tr><td>customerSite</td><td>disposableEmailDetectorUrl</td><td>Configure a custom URL to detect disposable email accounts and reject them. We currently support disposable.debounce.io.</td></tr><tr><td>customerSite</td><td>preventMultipleRegistrationsPerDomain</td><td>Prevent a user from requesting a trial license key if another user from the same domain has already requested a trial.</td></tr><tr><td>customerSite</td><td>preventRegistrationsIfCustomer</td><td>Prevent a user from requesting a trial license key if another user from the same domain has already purchased this product. This property does not impact customers that use generic Email Providers.</td></tr><tr><td>security</td><td>blockRegistrationByIPAddress</td><td>Allows blocking customers from requesting a trial based on their IP address</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="169.33333333333331"></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Category</strong></td><td><strong>Name</strong></td><td><strong>Description</strong></td></tr><tr><td>options</td><td>bannedEmailProviders</td><td>Any email that matches the list of banned email providers is denied.</td></tr><tr><td>customerSite</td><td>allowGenericEmailProviders</td><td>Determines if generic email providers (such as hotmail, gmail) can request license keys. You can customize the list of generic email providers from the server property options/genericEmailProviders.</td></tr><tr><td>customerSite</td><td>disposableEmailDetectorUrl</td><td>Configure a custom URL to detect disposable email accounts and reject them. We currently support disposable.debounce.io.</td></tr><tr><td>customerSite</td><td>preventMultipleRegistrationsPerDomain</td><td>Prevent a user from requesting a trial license key if another user from the same domain has already requested a trial.</td></tr><tr><td>customerSite</td><td>preventRegistrationsIfCustomer</td><td>Prevent a user from requesting a trial license key if another user from the same domain has already purchased this product. This property does not impact customers that use generic Email Providers.</td></tr><tr><td>customerSite</td><td>preventRegistrationFromExistingIPAddress</td><td>Checks if the IP address of the user matches an IP address of an existing customer. If a match is found, the request is rejected.</td></tr><tr><td>security</td><td>blockRegistrationByIPAddress</td><td>Allows blocking customers from requesting a trial based on their IP address</td></tr></tbody></table>
 
 &#x20;
 
@@ -40,7 +40,7 @@ It is recommended to disable the ability to work offline during a trial. To do s
 
 You can also configure the QLM License Wizard to prevent offline activation of trial licenses by setting the QlmAllowOfflineActivationOfTrialLicense to false. This feature is only available with QLM Engine Version 6.0.00+.
 
-![](https://support.soraco.co/hc/article\_attachments/15044879431188)
+![](https://support.soraco.co/hc/article_attachments/15044879431188)
 
 #### QLM License  <a href="#h_01heahqe3gedhnreyreb3s19y5" id="h_01heahqe3gedhnreyreb3s19y5"></a>
 
@@ -63,4 +63,4 @@ license.Version = "6.0.00";
 ```
 {% endcode %}
 
-![](https://support.soraco.co/hc/article\_attachments/15044979734164)
+![](https://support.soraco.co/hc/article_attachments/15044979734164)
