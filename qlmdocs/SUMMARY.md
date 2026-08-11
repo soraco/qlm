@@ -99,6 +99,7 @@
   * [How to configure defaults when creating an Activation Key](faq/how-to-configure-defaults-when-creating-an-activation-key.md)
   * [Where is the QLM help?](faq/where-is-the-qlm-help.md)
   * [How to create a customer report showing their licenses and activations](management-console/how-to-create-a-customer-report-showing-their-licenses-and-activations.md)
+  * [Pro vs Enterprise Features](management-console/pro-vs-enterprise-features.md)
   * [QLM Management Console - Client Side Event Logging](faq/qlm-management-console-client-side-event-logging.md)
 * [🧙‍♂️ License Wizard](license-wizard/README.md)
   * [Online Activation using the QLM License Wizard Standalone Application](faq/online-activation-using-the-qlm-license-wizard-standalone-application.md)
