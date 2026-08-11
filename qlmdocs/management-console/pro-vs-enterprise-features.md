@@ -1,6 +1,6 @@
 # Pro vs Enterprise Features
 
-The following QLM Management Console features are only accessible to QLM Enterprise users:
+The following is an overview of the QLM Management Console features that are only accessible to QLM Enterprise users. This list is not exhaustive.
 
 | Feature                                                                                                                            | Description                                                                                                                                                                  |
 | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
