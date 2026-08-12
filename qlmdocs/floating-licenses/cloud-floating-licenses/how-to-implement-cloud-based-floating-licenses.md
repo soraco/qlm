@@ -1,4 +1,4 @@
-# How to implement cloud-based floating licenses
+# How to implement Cloud Floating Licenses (v16 or earlier)
 
 Edition: QLM Pro
 
@@ -43,7 +43,7 @@ To implement CBFL in your application, you must perform the regular license key 
 * When the application starts up after the license is validated, check out the license
 * When the application exits, check-in the license
 
-The QLMProFloatingLicense sample can be used as a reference to add floating license support to your application. The sample is located in the following folder: %Public%\Documents\Quick License Manager\Samples\qlmpro\Windows\DotNet\C#\QlmProFloatingLicense
+The QlmCloudFloatingLicense sample can be used as a reference to add floating license support to your application. The sample is located in the following folder: %Public%\Documents\Quick License Manager\Samples\qlmpro\Windows\DotNet\C#\QlmCloudFloatingLicense
 
 In the sample, the Checkout/Checkin functionality is implemented in a new class called FloatingLicenseValidator which is a descendant of the LicenseValidator class.
 
@@ -58,7 +58,7 @@ To create an Activation Key for a cloud-based floating license:
 * Set any other property as needed.
 * Click OK
 
-![mceclip0.png](https://support.soraco.co/hc/article\_attachments/4644230225940)
+![mceclip0.png](https://support.soraco.co/hc/article_attachments/4644230225940)
 
 ### Limitations <a href="#h_01hcg5ga82yb522mscxf2aryp7" id="h_01hcg5ga82yb522mscxf2aryp7"></a>
 

@@ -19,7 +19,7 @@ The general steps to accomplish this are:
 * Note the **Feature Set** and **Feature ID** of this new feature. Example: Feature Set=3 and Feature ID=64
 * Save your product and make sure it gets uploaded to the server
 
-![mceclip0.png](https://support.soraco.co/hc/article\_attachments/4408158103060/mceclip0.png)
+![mceclip0.png](https://support.soraco.co/hc/article_attachments/4408158103060/mceclip0.png)
 
 ### Configure the QLM License Wizard
 
@@ -31,13 +31,13 @@ The general steps to accomplish this are:
 * Click Next and Save your customizations
 * Update your application with the newly generated files
 
-![mceclip1.png](https://support.soraco.co/hc/article\_attachments/4408158145172/mceclip1.png)
+![mceclip1.png](https://support.soraco.co/hc/article_attachments/4408158145172/mceclip1.png)
 
 ### License Key Creation
 
 When creating a license key for a customer, enable or disable the CLOUD\_FLOATING\_LICENSE feature as required.
 
-![mceclip2.png](https://support.soraco.co/hc/article\_attachments/4408165800596/mceclip2.png)
+![mceclip2.png](https://support.soraco.co/hc/article_attachments/4408165800596/mceclip2.png)
 
 &#x20;
 
@@ -45,4 +45,4 @@ When creating a license key for a customer, enable or disable the CLOUD\_FLOATIN
 
 At the application level, after the license is validated, call [IsFeaturedEnabledEx ](../../api-reference/.net-api/qlmlicense/client-side-methods/isfeatureenabledex-1.md)to determine if the CLOUD\_FLOATING\_LICENSE  feature is enabled. If it is, you must check-out the license at application startup and check it back in when the application exits.
 
-The sample %Public%\Documents\Quick License Manager\Samples\qlmpro\Windows\DotNet\C#\QlmProFloatingLicense should be used as a reference for implementing this model.
+The sample %Public%\Documents\Quick License Manager\Samples\qlmpro\Windows\DotNet\C#\QlmCloudFloatingLicense should be used as a reference for implementing this model.

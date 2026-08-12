@@ -26,7 +26,7 @@ You can find samples that demonstrate this capability in the folders below:
 
 | Language | Folder                                                                                            |
 | -------- | ------------------------------------------------------------------------------------------------- |
-| C#       | %Public%\Documents\Quick License Manager\Samples\qlmpro\Windows\DotNet\C#\QlmProFloatingLicense   |
+| C#       | %Public%\Documents\Quick License Manager\Samples\qlmpro\Windows\DotNet\C#\QlmCloudFloatingLicense |
 | Delphi   | %Public%\Documents\Quick License Manager\Samples\qlmpro\Windows\Delphi\CloudFloatingLicenseSample |
 | VC++     | %Public%\Documents\Quick License Manager\Samples\qlmpro\Windows\C++\QlmCloudFloatingLicenseSample |
 
