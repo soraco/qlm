@@ -50,3 +50,7 @@ license.EnableDRSite = true;\
 license.RedirectorUrl = "httlp://soraco.co/qlmredirect.xml";
 
 Note that after failing to a DR site, new data will be written to the DR site. When your primary site is online again, you may want to replicate all the data on the DR site to the Primary Site. This can be done from the Backup / Restore tab. Note that QLM does not merge data when restoring. All data is overwritten from the backup. Exercise extreme caution when performing restores. It is highly recommended that you perform your own database backup before restoring data to the QLM database.
+
+{% hint style="info" %}
+If Soraco is hosting your license server, you must create the qlmredirect.xml on your own site.
+{% endhint %}
