@@ -1,16 +1,18 @@
 # How to configure the QLM to send emails from the server
 
-The QLM Portal, the QLM License Server, the QlmCustomerSite and QLM License Wizard can send emails via SMTP. These emails are sent from the License Server.
+The QLM Portal, the QLM License Server, the QlmCustomerSite and QLM License Wizard can send emails to your customers for various notifications. These emails are sent from the License Server.
 
-\
-To configure the SMTP settings of the License Server, follow the steps below:
+The server can send emails using one of the following methods:
 
-* From the QLM Management Console, go to the Manage Keys tab
-* Click Sites and select your site
-* Go to the Server Properties tab
-* Expand the smtp section and set the all fields as requried
-* Click Ok
+* SMTP
+* Microsoft Graph API
+* Gmail API
 
-**Troubleshooting**:
+To configure which method the server should use to send emails, set the Server Property "options/emailProvider" to: Smtp | Microsoft Graph API |Gmail API
 
-In case emails are not sent, it is likely that your SMTP settings are not correct. You can test your SMTP settings by following the steps described in this [article](https://support.soraco.co/hc/en-us/articles/206684353-How-to-use-SMTP-to-send-emails).
+Once you select the required method, you must configure the mail settings for that method as show below:
+
+* [How to configure the server to send emails using SMTP](../email-framework/configuration/how-to-configure-qlm-to-send-mail-using-smtp.md)
+* [How to configure the server to send emails using the Microsoft Graph API](../email-framework/configuration/sending-emails-using-the-microsoft-graph-api.md)
+* [How to configure the server to send emails using the Gmail API](../email-framework/configuration/sending-emails-using-the-gmail-api/)
+
