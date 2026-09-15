@@ -911,6 +911,7 @@
     * [GetActivationKey](api-reference/http-methods/getactivationkey.md)
     * [GetActivationKeyWithExpiryDate](api-reference/http-methods/getactivationkeywithexpirydate.md)
     * [GetLatestVersionHttp](api-reference/http-methods/getlatestversionhttp.md)
+    * [GetLicensesHttp](api-reference/http-methods/getlicenseshttp.md)
     * [PingHttp](api-reference/http-methods/pinghttp.md)
     * [ReleaseLicenseHttp](api-reference/http-methods/releaselicensehttp.md)
     * [RenewMaintenancePlan](api-reference/http-methods/renewmaintenanceplan.md)
