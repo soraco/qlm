@@ -40,6 +40,6 @@ The `enableGetLicensesHttp` server property must be set to `true`, otherwise the
 
 The request must be authenticated with a valid `is_user` / `is_pwd`. Calling this method without password protection results in an authentication error.&#x20;
 
-If `getLicensesHttpRequiresStrictAuthentication` is enabled (or strict authentication is enforced for `GetLicensesHttp`), a valid authentication token must also be supplied.&#x20;
+If [strict authentication](../../how-to/how-to-invoke-a-qlm-http-method-that-requires-strict-authentication.md) is enforced for `GetLicensesHttp`, a valid authentication token must also be supplied.&#x20;
 
 Use `is_batchsize` and `is_offset` together to page through large result sets.
