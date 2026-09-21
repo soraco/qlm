@@ -10,7 +10,11 @@ While QLM v20 does not introduce a large set of new end‑user features, it repr
 
 In addition, the **QLM Portal has been completely rewritten** using modern frameworks (**Blazor and DevExpress**). This rewrite delivers improved usability, a cleaner user experience, and better overall performance, while laying the groundwork for future enhancements.
 
-As with every major release, **backward compatibility is fully maintained**. Existing customers can upgrade with confidence, and QLM v20 server components can be installed **side‑by‑side with QLM v1x server components**, allowing for a smooth and controlled transition. _However, all new server features added following this release will only be available when using the new URLs. Clients connecting to the old URLs will not have access to new features._
+As with every major release, **backward compatibility is fully maintained**. Due to the upgrade from ASP.NET 4.x to ASP.NET Core using .NET 10, the URLs to the License Server components had to change. For Soraco hosted license server, we configure an automatic redirect from the old URL to the new one in order to ensure that all your existing clients using the ASP.NET 4.x URL to the License Server continue to operate without changes. For self-hosted license servers, follow the instructions below to setup a redirect.
+
+{% hint style="info" %}
+_Note that all new server features added following this release will only be available when using the new URLs. Clients connecting to the old URLs will not have access to new features._
+{% endhint %}
 
 QLM v20 is an investment in the future of the platform—focused on modernization today so we can deliver faster innovation tomorrow.
 
