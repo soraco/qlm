@@ -79,7 +79,11 @@ After running these commands, reboot the computer.
 
 Modify your application and explicitly add the following line of code to your application (C#) to enable support for TLS 1.2:
 
+{% code overflow="wrap" %}
+```csharp
 ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+```
+{% endcode %}
 
 #### How to test your application
 
