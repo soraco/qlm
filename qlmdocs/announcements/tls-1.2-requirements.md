@@ -34,7 +34,7 @@ Upgrade to the latest version of QLM (if you did not purchase a maintenance plan
 Update your computer's registry to enable support for TLS 1.2.  To create the registry entries, you can run the following command in a Windows Command Prompt running with Administrative Privileges (Run As Administrator):
 
 {% code overflow="wrap" %}
-```reg
+```batch
 reg add "HKLM\SOFTWARE\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG_DWORD /d 1 /f
 reg add "HKLM\SOFTWARE\Wow6432Node\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG_DWORD /d 1 /f
 reg add "HKLM\SOFTWARE\Microsoft.NETFramework\v4.0.30319" /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f
@@ -65,7 +65,7 @@ Upgrade to the latest version of QLM (if you did not purchase a maintenance plan
 You can modify the registry on the customer's computer to add support for TLS 1.2. To create the registry entries, you can run the following command in a Windows Command Prompt running with Administrative Privileges (Run As Administrator):
 
 {% code overflow="wrap" %}
-```reg
+```batch
 reg add "HKLM\SOFTWARE\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG_DWORD /d 1 /f
 reg add "HKLM\SOFTWARE\Wow6432Node\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG_DWORD /d 1 /f
 reg add "HKLM\SOFTWARE\Microsoft.NETFramework\v4.0.30319" /v SystemDefaultTlsVersions /t REG_DWORD /d 1 /f
