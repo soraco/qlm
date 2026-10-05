@@ -15,10 +15,23 @@ This can impact you at two levels:
 
 ### QLM Management Console
 
-* If you are using QLM < 6.2 , connection to the QLM License Server will fail. You will need to upgrade to a more recent version of QLM (if you did not purchase a maintenance plan, you will need to purchase a subscription to the latest version of QLM).
-* If you are using QLM ≥ 6.2 and < 11.1.18192.2, the QLM Management Console will fail to connect to the QLM License Server. Your options are:
-  * Upgrade to the latest version of QLM (if you did not purchase a maintenance plan, you will need to purchase a subscription to the latest version of QLM).
-  * Update your computer's registry to enable support for TLS 1.2.  To create the registry entries, you can run the following command in a Windows Command Prompt running with Administrative Privileges (Run As Administrator):
+If you are using QLM ≥ 11.1.18192.2, you are not impacted by this change.
+
+#### QLM < 6.2
+
+If you are using QLM < 6.2 , connection to the QLM License Server will fail. You will need to upgrade to a more recent version of QLM (if you did not purchase a maintenance plan, you will need to purchase a subscription to the latest version of QLM).
+
+#### QLM ≥ 6.2 and < 11.1.18192.2
+
+If you are using QLM ≥ 6.2 and < 11.1.18192.2, the QLM Management Console will fail to connect to the QLM License Server. Your options are:
+
+**Option 1**
+
+Upgrade to the latest version of QLM (if you did not purchase a maintenance plan, you will need to purchase a subscription to the latest version of QLM).
+
+**Option 2**
+
+Update your computer's registry to enable support for TLS 1.2.  To create the registry entries, you can run the following command in a Windows Command Prompt running with Administrative Privileges (Run As Administrator):
 
 {% code overflow="wrap" %}
 ```reg
@@ -29,10 +42,7 @@ reg add "HKLM\SOFTWARE\Wow6432Node\Microsoft.NETFramework\v4.0.30319" /v SystemD
 ```
 {% endcode %}
 
-
-
-* Reboot the computer
-* If you are using QLM ≥ 11.1.18192.2, you are not impacted by this change.
+After running these commands, reboot the computer.
 
 ### Your application
 
