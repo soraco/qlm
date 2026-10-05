@@ -21,6 +21,8 @@ This can impact you at two levels:
   * Update your computer's registry to enable support for TLS 1.2.  To create the registry entries, you can run the following command in a Windows Command Prompt running with Administrative Privileges (Run As Administrator):
     * reg add "HKLM\SOFTWARE\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG\_DWORD /d 1 /f
     * reg add "HKLM\SOFTWARE\Wow6432Node\Microsoft.NETFramework\v4.0.30319" /v SchUseStrongCrypto /t REG\_DWORD /d 1 /f
+    * reg add "HKLM\SOFTWARE\Microsoft.NETFramework\v4.0.30319" /v SystemDefaultTlsVersions /t REG\_DWORD /d 1 /f
+    * reg add "HKLM\SOFTWARE\Wow6432Node\Microsoft.NETFramework\v4.0.30319" /v SystemDefaultTlsVersions /t REG\_DWORD /d 1 /f
     * Reboot the computer
 * If you are using QLM ≥ 11.1.18192.2, you are not impacted by this change.
 
