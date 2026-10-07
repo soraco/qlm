@@ -46,7 +46,7 @@ After running these commands, reboot the computer.
 
 ### Your application
 
-To identify which version of QLM your application uses, check the version of QlmLicenseLib.dll that is deployed with your application. If your application was built using QLM ≥ 11.1.18192.2, you are not impacted by this change.&#x20;
+To identify which version of QLM your application uses, check the version of QlmLicenseLib.dll that is deployed with your application. If your application was built using QLM ≥ 11.1.18192.2 and references the .NET 4 version of the QLM DLLs, you are not impacted by this change. However, if your application references the .NET 2 version of the QLM DLLs, you will need to update your application to reference the .NET 4 of the QLM DLLs since .NET 2 does not support TLS 1.2.
 
 #### QLM < 6.2
 
