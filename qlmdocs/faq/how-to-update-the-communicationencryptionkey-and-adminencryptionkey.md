@@ -8,6 +8,32 @@ When you install the QLM License Server on your system, the CEK and AEK values a
 
 To change these values, follow the steps below.
 
+### QLM v20
+
+**A. Generate new values for CEK and AEK**
+
+* Go to Manage Keys / Sites and select your site
+* Go to the Encryption Keys tab
+* Click Unmask for both fields
+* Click New for both fields to generate 2 new keys
+* Click Ok
+
+**B. Change the appsettings.json files**
+
+* On the server where you installed the QLM License Server
+* Edit the appsettings.json file of the QlmLicenseServerNetCore
+* Replace all occurences of the communicationEncryptionKey and adminEncryptionKey with the values created above.
+* Repeat the same steps for the appsettings.json file of QlmCustomerSiteNetCore, QlmPortalNetCore, and QlmCustomerPortalNetCore/qlm-portal-api
+
+**C. Update your protected application**
+
+* In the Protect Your App wizard, step through the wizard again.
+* On the "Customize the look and feel page", locate the QlmCommunicationEncryptionKey property and update it based on the new value.
+* Complete the wizard to regenerate the files required by your application and update your app with the new files.
+* Review your code and update any occurrence of QlmLicense.CommunicationEncryptionKey and QlmLicense.AdminEncryptionKey to match the new values.
+
+### QLM v19 and earlier
+
 **A. Generate new values for CEK and AEK**
 
 * Go to Manage Keys / Sites and select your site
