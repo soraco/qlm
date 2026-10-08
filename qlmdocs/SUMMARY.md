@@ -510,6 +510,7 @@
   * [How to prevent a user from running multiple instances of your app](faq/how-to-prevent-a-user-from-running-multiple-instances-of-your-app.md)
   * [Could not find product x.y](faq/could-not-find-product-x.y.md)
   * [How to update the CommunicationEncryptionKey and AdminEncryptionKey](faq/how-to-update-the-communicationencryptionkey-and-adminencryptionkey.md)
+  * [How to update the password of the DB user](faq/how-to-update-the-password-of-the-db-user.md)
   * [Distinguish between a trial and a subscription](faq/distinguish-between-a-trial-and-a-subscription.md)
   * [How to get the activated computers for a given activation key](faq/how-to-get-the-activated-computers-for-a-given-activation-key.md)
   * [Why is the license not stored (or deleted) at the machine level even if the user is an Administrator](faq/why-is-the-license-not-stored-or-deleted-at-the-machine-level-even-if-the-user-is-an-administrator.md)

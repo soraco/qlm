@@ -6,6 +6,10 @@ This encryption mechanism relies on 2 encryption keys: the CommunicationEncrypti
 
 When you install the QLM License Server on your system, the CEK and AEK values are set to some default values. Before you go live, it is highly recommended that you change the default values to prevent unauthorized access to your License Server.
 
+{% hint style="info" %}
+You should also change the default password of the DB user. To do so, change the password in SQL Server Management Studio and then update the ConnectionStrings/DefaultConnection in the appsettings.json of each service. For more details, [click here](how-to-update-the-password-of-the-db-user.md).
+{% endhint %}
+
 To change these values, follow the steps below.
 
 ### QLM v20
