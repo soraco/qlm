@@ -28,6 +28,9 @@ To allow an application such as QLM to send emails via MGA, you must create an A
 * Set "Supported account types" to: Accounts in any organizational unit and personal Microsoft accounts
 * Click Register
 * Copy the value of the "Application (client) ID" and "Directory (tenant) ID" for later use
+
+<figure><img src="../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
+
 * In the left-hand panel, click "Certificates and Secrets"
 * Click "New Client Secret"
 * Set the Description to: QLM-Email
