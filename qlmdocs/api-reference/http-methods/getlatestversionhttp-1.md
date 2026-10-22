@@ -2,7 +2,7 @@
 description: Available as of v20.0.26295.1
 ---
 
-# GetLatesteligibleVersionHttp
+# GetLatestEligibleVersionHttp
 
 ### Description
 
@@ -14,7 +14,7 @@ To invoke this method via a URL, append this function's name to the URL of the Q
 
 {% code overflow="wrap" %}
 ```http
-https://yourserver/yourvirtualdirectory/QlmLicenseServerNetCore/api/v1/QlmApi/GetLatesteligibleVersionHttp?is_avkey=[activation key]&is_pckey=[computer key]&is_productid=[product id]&is_majorversion=[major version]&is_minorversion=[minor version]
+https://yourserver/yourvirtualdirectory/QlmLicenseServerNetCore/api/v1/QlmApi/GetLatestEligibleVersionHttp?is_avkey=[activation key]&is_pckey=[computer key]&is_productid=[product id]&is_majorversion=[major version]&is_minorversion=[minor version]
 ```
 {% endcode %}
 
