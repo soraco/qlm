@@ -23,32 +23,32 @@ To invoke this method via a URL, append this function's name to the URL of the Q
 
 {% code overflow="wrap" %}
 ```http
-https://yourserver/yourvirtualdirectory/qlmservice.asmx/UpdateLicenseHttp?is_avkey=<activationKey>&is_productid=<productID>&is_majorversion=<majorVersion>&is_minorversion=<minorVersion>&is_vendor=<ecommerce-provider>&is_features=<features>&is_expduration=<duration>&is_expdate=<date>&is_pp=<product_properties>&is_userdata1=abc
+https://yourserver/yourvirtualdirectory/QlmLicenseServerNetCore/api/v1/QlmApi/UpdateLicenseHttp?is_avkey=<activationKey>&is_productid=<productID>&is_majorversion=<majorVersion>&is_minorversion=<minorVersion>&is_vendor=<ecommerce-provider>&is_features=<features>&is_expduration=<duration>&is_expdate=<date>&is_pp=<product_properties>&is_userdata1=abc
 ```
 {% endcode %}
 
 ### Arguments
 
-| Parameter        | Description                                                                                                                                                                                                       |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| is\_affiliateid  | ID of the affiliate to set                                                                                                                                                                                        |
-| is\_avkey        | the current activation key                                                                                                                                                                                        |
-| is\_expdate      | date at which the license will expire                                                                                                                                                                             |
-| is\_expduration  | expiry duration of the license key                                                                                                                                                                                |
-| is\_features     | semi-comma separated list of feature sets and their corresponding values. Example: is\_features=0:3;1:1. This means that in feature set 0, features 1 + 2 are enabled and in feature set 1, feature 1 is enabled. |
-| is\_licensemodel | trial \| subscription \| permanent                                                                                                                                                                                |
-| is\_productid    | ID of the product                                                                                                                                                                                                 |
-| is\_majorversion | new major version of the product                                                                                                                                                                                  |
-| is\_maxreleasecount | value of the MaxReleaseCount property                                                                                                                                                                          |
-| is\_maxreleaseperiod | value of the MaxReleasePeriodInDays property                                                                                                                                                                  |
-| is\_minorversion | new minor version of the product                                                                                                                                                                                  |
-| is\_pp           | product properties to set                                                                                                                                                                                         |
-| is\_pwd          | password as defined in the eCommerce Providers section in QLM (Manage Keys / Tools / 3rd Party Extensions or Manage Keys / Tools / eCommerce Providers)                                                           |
-| is\_quantity     | number of activations                                                                                                                                                                                             |
-| is\_qlmversion   | QLM engine version                                                                                                                                                                                                |
-| is\_revoke       | flag to revoke a license                                                                                                                                                                                          |
-| is\_user         | username as defined in the eCommerce Providers section in QLM (Manage Keys / Tools / 3rd Party Extensions or Manage Keys / Tools / eCommerce Providers)                                                           |
-| is\_vendor       | One of the supported vendors                                                                                                                                                                                      |
+| Parameter            | Description                                                                                                                                                                                                       |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| is\_affiliateid      | ID of the affiliate to set                                                                                                                                                                                        |
+| is\_avkey            | the current activation key                                                                                                                                                                                        |
+| is\_expdate          | date at which the license will expire                                                                                                                                                                             |
+| is\_expduration      | expiry duration of the license key                                                                                                                                                                                |
+| is\_features         | semi-comma separated list of feature sets and their corresponding values. Example: is\_features=0:3;1:1. This means that in feature set 0, features 1 + 2 are enabled and in feature set 1, feature 1 is enabled. |
+| is\_licensemodel     | trial \| subscription \| permanent                                                                                                                                                                                |
+| is\_productid        | ID of the product                                                                                                                                                                                                 |
+| is\_majorversion     | new major version of the product                                                                                                                                                                                  |
+| is\_maxreleasecount  | value of the MaxReleaseCount property                                                                                                                                                                             |
+| is\_maxreleaseperiod | value of the MaxReleasePeriodInDays property                                                                                                                                                                      |
+| is\_minorversion     | new minor version of the product                                                                                                                                                                                  |
+| is\_pp               | product properties to set                                                                                                                                                                                         |
+| is\_pwd              | password as defined in the eCommerce Providers section in QLM (Manage Keys / Tools / 3rd Party Extensions or Manage Keys / Tools / eCommerce Providers)                                                           |
+| is\_quantity         | number of activations                                                                                                                                                                                             |
+| is\_qlmversion       | QLM engine version                                                                                                                                                                                                |
+| is\_revoke           | flag to revoke a license                                                                                                                                                                                          |
+| is\_user             | username as defined in the eCommerce Providers section in QLM (Manage Keys / Tools / 3rd Party Extensions or Manage Keys / Tools / eCommerce Providers)                                                           |
+| is\_vendor           | One of the supported vendors                                                                                                                                                                                      |
 
 ### Remarks
 

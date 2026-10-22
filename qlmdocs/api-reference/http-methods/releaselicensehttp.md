@@ -8,7 +8,7 @@ To invoke this method via a URL, append this function's name to the URL of the Q
 
 {% code overflow="wrap" %}
 ```http
-https://yourserver/yourvirtualdirectory/qlmservice.asmx/ReleaseLicenseHttp?is_avkey=[activationKey]&is_pcid=[computer ID]&is_vendor=[eCommerce provider]
+https://yourserver/yourvirtualdirectory/QlmLicenseServerNetCore/api/v1/QlmApi/ReleaseLicenseHttp?is_avkey=[activationKey]&is_pcid=[computer ID]&is_vendor=[eCommerce provider]
 ```
 {% endcode %}
 

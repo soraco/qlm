@@ -8,7 +8,7 @@ To invoke this method via a URL, append this function's name to the URL of the Q
 
 {% code overflow="wrap" %}
 ```http
-https://yourserver/yourvirtualdirectory/qlmservice.asmx/AnalyticsUpdateInstallHttp?is_installid =[Install ID]&is_osversion=Windows 7&...
+https://yourserver/yourvirtualdirectory/QlmLicenseServerNetCore/api/v1/QlmApi/AnalyticsUpdateInstallHttp?is_installid =[Install ID]&is_osversion=Windows 7&...
 ```
 {% endcode %}
 

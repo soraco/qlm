@@ -8,7 +8,7 @@ To invoke this method via a URL, append this function's name to the URL of the Q
 
 {% code overflow="wrap" fullWidth="false" %}
 ```http
-https://yourserver/yourvirtualdirectory/qlmservice.asmx/ActivateKey?is_avkey=[activationkey]&is_pcid=[computer identifier]&is_productid=[productID]&is_majorversion=[majorVersion]&is_minorversion=[minorVersion]&is_vendor=[vendorname]
+https://yourserver/yourvirtualdirectory/QlmLicenseServerNetCore/api/v1/QlmApi/ActivateKey?is_avkey=[activationkey]&is_pcid=[computer identifier]&is_productid=[productID]&is_majorversion=[majorVersion]&is_minorversion=[minorVersion]&is_vendor=[vendorname]
 ```
 {% endcode %}
 

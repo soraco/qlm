@@ -8,7 +8,7 @@ To invoke this method via a URL, append this function's name to the URL of the Q
 
 {% code overflow="wrap" %}
 ```http
-httpa://yourserver/yourvirtualdirectory/qlmservice.asmx/GetLatestVersionHttp?is_productid=[product id]&is_majorversion=[major version]&is_minorversion=[minor version]
+https://yourserver/yourvirtualdirectory/QlmLicenseServerNetCore/api/v1/QlmApi/GetLatestVersionHttp?is_productid=[product id]&is_majorversion=[major version]&is_minorversion=[minor version]
 ```
 {% endcode %}
 

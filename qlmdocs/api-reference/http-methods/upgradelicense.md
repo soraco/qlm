@@ -15,7 +15,7 @@ To invoke this method via a URL, append this function's name to the URL of the Q
 
 {% code overflow="wrap" %}
 ```http
-https://yourserver/yourvirtualdirectory/qlmservice.asmx/UpgradeLicense?is_avkey=<activationKey>&is_productid=<productID>&is_majorversion=<majorVersion>&is_minorversion=<minorVersion>&is_vendor=digibuy&is_features=<features>&is_expduration=<duration>&is_expdate=<date>
+https://yourserver/yourvirtualdirectory/QlmLicenseServerNetCore/api/v1/QlmApi/UpgradeLicense?is_avkey=<activationKey>&is_productid=<productID>&is_majorversion=<majorVersion>&is_minorversion=<minorVersion>&is_vendor=digibuy&is_features=<features>&is_expduration=<duration>&is_expdate=<date>
 ```
 {% endcode %}
 

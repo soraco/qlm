@@ -8,7 +8,7 @@ To invoke this method via a URL, append this function's name to the URL of the Q
 
 {% code overflow="wrap" %}
 ```http
-https://yourserver/yourvirtualdirectory/qlmservice.asmx/UpdateUserInformation?is_vendor=digibuy&is_user=user_name&is_pwd=user_pwd
+https://yourserver/yourvirtualdirectory/QlmLicenseServerNetCore/api/v1/QlmApi/UpdateUserInformation?is_vendor=digibuy&is_user=user_name&is_pwd=user_pwd
 ```
 {% endcode %}
 

@@ -10,7 +10,7 @@ To invoke this method via a URL, append this function's name to the URL of the Q
 
 {% code overflow="wrap" %}
 ```http
-https://yourserver/yourvirtualdirectory/qlmservice.asmx/RequestAuthorizationCodeForActivationHttp?is_email=[email address]&is_pcid=[computer ID]&is_productid=[product id]&is_majorversion=[major version]&is_minorverson=[minor version]
+https://yourserver/yourvirtualdirectory/QlmLicenseServerNetCore/api/v1/QlmApi/RequestAuthorizationCodeForActivationHttp?is_email=[email address]&is_pcid=[computer ID]&is_productid=[product id]&is_majorversion=[major version]&is_minorverson=[minor version]
 ```
 {% endcode %}
 

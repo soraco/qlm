@@ -8,7 +8,7 @@ To invoke this method via a URL, append this function's name to the URL of the Q
 
 {% code overflow="wrap" %}
 ```http
-https://yourserver/yourvirtualdirectory/qlmservice.asmx/UpdatePrivacyConsentHttp?is_avkey=ABCD-EFGH-IJKL&is_email=customer@company.com&is_consent=1
+https://yourserver/yourvirtualdirectory/QlmLicenseServerNetCore/api/v1/QlmApi/UpdatePrivacyConsentHttp?is_avkey=ABCD-EFGH-IJKL&is_email=customer@company.com&is_consent=1
 ```
 {% endcode %}
 

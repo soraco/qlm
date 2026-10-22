@@ -12,7 +12,7 @@ To invoke this method via a URL, append this function's name to the URL of the Q
 
 {% code overflow="wrap" %}
 ```http
-https://yourserver/yourvirtualdirectory/qlmservice.asmx/GetActivationKeyWithExpiryDate?is_productid=[productID]&is_majorversion=[majorVersion]&is_minorversion=[minorVersion]&is_vendor=[vendor]&is_expduration=[duration]&is_expdate=[date]
+https://yourserver/yourvirtualdirectory/QlmLicenseServerNetCore/api/v1/QlmApi/GetActivationKeyWithExpiryDate?is_productid=[productID]&is_majorversion=[majorVersion]&is_minorversion=[minorVersion]&is_vendor=[vendor]&is_expduration=[duration]&is_expdate=[date]
 ```
 {% endcode %}
 
