@@ -13,7 +13,7 @@ The benefits of using our hosted QLM License Server are:
 * Daily replication to a Disaster Recovery Site
 * Maintenance and upgrades performed by us
 * Data recovery in case of data loss
-* SSL Encryption (SSL3, TLS, TLS 1.1, TLS 1.2)
+* SSL Encryption
 * Firewall Protection at ISP level and server level
 * Regular Windows Security Updates
 * Downtime Monitoring via watchdog service
