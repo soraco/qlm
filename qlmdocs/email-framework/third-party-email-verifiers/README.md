@@ -7,3 +7,4 @@ The supported email verifiers are:
 * [Debounce.io](https://debounce.io/)
 * [Zerobounce.net](https://www.zerobounce.net/)
 * [Verifymail.io](https://verifymail.io/)
+* Clearbounce.net

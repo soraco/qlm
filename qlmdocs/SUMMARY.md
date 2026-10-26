@@ -150,6 +150,7 @@
     * [Debounce.io](email-framework/third-party-email-verifiers/debounce.io.md)
     * [Zero Bounce](email-framework/third-party-email-verifiers/zero-bounce.md)
     * [Verify Mail](email-framework/third-party-email-verifiers/verify-mail.md)
+    * [Clearbounce](email-framework/third-party-email-verifiers/clearbounce.md)
   * [How to exclude customers from email notifications](email-framework/how-to-exclude-customers-from-email-notifications.md)
 * [☁️ Floating Licenses](floating-licenses/README.md)
   * [Cloud Floating Licenses](floating-licenses/cloud-floating-licenses/README.md)
