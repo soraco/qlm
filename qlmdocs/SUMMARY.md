@@ -912,7 +912,7 @@
     * [GetActivationKey](api-reference/http-methods/getactivationkey.md)
     * [GetActivationKeyWithExpiryDate](api-reference/http-methods/getactivationkeywithexpirydate.md)
     * [GetLatestVersionHttp](api-reference/http-methods/getlatestversionhttp.md)
-    * [GetLatestEligibleVersionHttp](api-reference/http-methods/getlatestversionhttp-1.md)
+    * [GetLatestEligibleVersionHttp](api-reference/http-methods/getlatesteligibleversionhttp.md)
     * [GetActivationLogHttp](api-reference/http-methods/getactivationloghttp.md)
     * [GetLicensesHttp](api-reference/http-methods/getlicenseshttp.md)
     * [PingHttp](api-reference/http-methods/pinghttp.md)
