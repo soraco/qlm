@@ -1,12 +1,16 @@
-# How to release a new version of your product with new encryption keys
+# Encryption Key Rotation
 
 ### Overview <a href="#h_01hf2pjx9rv44ny5pj741sgx71" id="h_01hf2pjx9rv44ny5pj741sgx71"></a>
 
-Changing the encryption keys used to encrypt your license keys and license files is a good practice for an enhanced security of your application. This article describes the process to follow for changing encryption keys.
+The encryption keys associated with a QLM product are used to protect license keys and digitally sign license files.
 
-It is recommended to never change encryption keys for a product version that you've already created license keys for. Instead, you should always create a new version of an existing product and change the encryption keys in the new product.
+Replacing these keys is a significant change because it affects how licenses are generated and validated. In general, encryption keys should only be replaced when there is a specific business, security, or compliance requirement to do so, such as a suspected key compromise, an accidental disclosure of the private keys, or a corporate key management policy.
+
+When new encryption keys are required, QLM provides a migration path that preserves compatibility with licenses issued using previous keys. To achieve this, create a new version of the product and generate new encryption keys for that version rather than modifying the keys of an existing product version
 
 For example, assume you've released a product called "My Product 1.0". Instead of changing the encryptions keys of "My Product 1.0", you should create a new version of the product in QLM, say "My Product 1.1" and create new encryption keys for "My Product 1.1".
+
+This article describes the process to follow for changing encryption keys.
 
 ### Product Configuration <a href="#h_01hf2pj0wzen4vn53xgbzqyney" id="h_01hf2pj0wzen4vn53xgbzqyney"></a>
 
