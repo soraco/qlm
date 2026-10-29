@@ -24,8 +24,8 @@
 [how-to-implement-cloud-floating-licenses-cfl-in-qlm-v17+.md](../floating-licenses/cloud-floating-licenses/how-to-implement-cloud-floating-licenses-cfl-in-qlm-v17+.md)
 {% endcontent-ref %}
 
-{% content-ref url="encryption-key-rotation.md" %}
-[encryption-key-rotation.md](encryption-key-rotation.md)
+{% content-ref url="encryption-keys-rotation.md" %}
+[encryption-keys-rotation.md](encryption-keys-rotation.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to-add-license-file-validation.md" %}

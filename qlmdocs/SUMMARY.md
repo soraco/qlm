@@ -340,7 +340,7 @@
   * [How to upgrade QLM to a new version](how-to/how-to-upgrade-qlm-to-a-new-version.md)
   * [How to read product properties from a license file](how-to/how-to-read-product-properties-from-a-license-file.md)
   * [How to bind a license to a USB key (dongle)](how-to/how-to-bind-a-license-to-a-usb-key-dongle.md)
-  * [Encryption Key Rotation](how-to/encryption-key-rotation.md)
+  * [Encryption Keys Rotation](how-to/encryption-keys-rotation.md)
   * [How to add license file validation](how-to/how-to-add-license-file-validation.md)
   * [How to allow specific customers to work offline indefinitely](how-to/how-to-allow-specific-customers-to-work-offline-indefinitely.md)
   * [How to use GetDataSetEx to retrieve customer information](how-to/how-to-use-getdatasetex-to-retrieve-customer-information.md)
