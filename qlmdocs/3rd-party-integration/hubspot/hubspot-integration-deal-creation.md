@@ -39,7 +39,7 @@ To configure QLM with the API Key created above:
 * Check Enabled to enable the extension
 * Set the API Key value to the token created above and click OK
 
-![mceclip1.png](https://support.soraco.co/hc/article\_attachments/16922340960660)
+![mceclip1.png](https://support.soraco.co/hc/article_attachments/16922340960660)
 
 ### Custom Properties
 
@@ -49,26 +49,29 @@ Next, you must create Custom Properties in HubSpot.
 * Under "Data Management", click Properties
 * In the next step we will create 3 properties:
   * Click "Create Property"
+    * Click "Edit more options"
+    * Set the Property label to "product\_name"
     * Set the Object type to "Deal"
     * Set the Group to "Deal Information"
-    * Set the Label to "product\_name"
+    * Click Field Type in the left hand panel
     * Set the Field type to Single-line text
-    * Click Next
     * Click Create
   * Click "Create Property"
+    * Click "Edit more options"
+    * Set the Property label to "activation\_key"
     * Set the Object type to "Deal"
     * Set the Group to "Deal Information"
-    * Set the Label to "activation\_key"
+    * Click Field Type in the left hand panel
     * Set the Field type to Single-line text
-    * Click Next
-    * Click Create
   * Click "Create Property"
+    * Click "Edit more options"
+    * Set the Property label to "license\_model"
     * Set the Object type to "Deal"
     * Set the Group to "Deal Information"
-    * Set the Label to "license\_model"
+    * Click Field Type in the left hand panel
     * Set the Field type to "Dropdown select"
-    * Click "Add an option"
     * Set the Label to _none_ and the Internal Value to _0._
+    * Click "Add an option"
     * Set the Label to _permanent_ and the Internal Value to _1_.
     * Set the Label to _trial_ and the Internal Value to _2_.
     * Set the Label to _subscription_ and the Internal Value to _3_.
@@ -76,11 +79,11 @@ Next, you must create Custom Properties in HubSpot.
     * Click Create
   * Finally, we need to add the properties to the View
     * Select any existing Deal
-    * In the left hand panel, click "View all properties"
-    * Expand the "Deal information" section
-    * Locate the product\_name entry and click the "Add to your view" button
-    * Locate the activation\_key entry and click the "Add to your view" button
-    * Locate the license\_model entry and click the "Add to your view" button
+    * In the left hand panel, click "Actions/Customize properties"
+    * Click Add Properties
+    * Locate the product\_name entry and select it
+    * Locate the activation\_key entry and select it
+    * Locate the license\_model entry and select it
 
 ### Enable Deal Creation
 
