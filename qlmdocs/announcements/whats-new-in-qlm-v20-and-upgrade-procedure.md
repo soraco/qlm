@@ -80,6 +80,7 @@ The QLM Agent Service now supports cloud license [reclamation ](../floating-lice
   * You must install the [.NET 10 Hosting Bundle ](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)10.0.5 or greater
   * You must install [Microsoft OLE DB Driver for SQL Server v19](https://learn.microsoft.com/en-us/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver17)
   * You must install [Visual C++ Redistributables for x86 and x64 (for Visual Studio 2017)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+  * [WebSocket Protocol ](../qlm-license-server/how-to-install-the-qlm-license-server.md#websocket)must be enabled (required for the QLM Portal)
 
 ### Documentation
 
