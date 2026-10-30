@@ -24,6 +24,7 @@ The system requirements for the QLM License Server are:
 * Microsoft SQL Server Database (any edition including the free SQL Server Express)
 * [Microsoft OLE DB Driver for SQL Server v19](https://learn.microsoft.com/en-us/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver17)
 * [Visual C++ Redistributables for x86 and x64 (for Visual Studio 2017)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+* [WebSocket Protocol ](how-to-install-the-qlm-license-server.md)must be enabled (required for the QLM Portal)
 
 _Before installing the QLM License Server, make sure the above components are installed on your system. To install IIS and enable ASP.NET on your Windows Server, read this_ [_article_](https://technet.microsoft.com/en-us/library/hh831475\(v=ws.11\).aspx)_._
 
@@ -186,3 +187,39 @@ With a text editor, open the QlmCustomerPortal/qlm-portal-app/index.html file:
 
 * Locate the \<base href=""> entry
 * Set the value of href to the path of your qlm-portal-app virtual directory. For example, if the URL to the qlm-portal-app is: [https://mycompany.net/Qlm/QlmCustomerPortalNetCore/qlm-portal-app  <br>](https://mycompany.net/Qlm/QlmCustomerPortalNetCore/qlm-portal-app)[,](https://qlm3.net/company/qlm-portal-app,) set href to "/company/qlm-portal-app/"
+
+### How to enable the WebSocket Protocol <a href="#websocket" id="websocket"></a>
+
+The WebSocket protocol must be enable when using the QLM Portal.
+
+To enable it on Windows Server:
+
+* Launch the Server Manager
+* Click Manage / Add Roles and Features
+* Select "Role-based or feature-based installation"
+* Select your server
+* Expand Web Server IIS
+* Expand Web Server
+* Expand Application Development
+* Check "WebSocket Protocol"
+* Click Next and complete the wizard
+
+<figure><img src="../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
+
+To enable it on Windows 11:
+
+* Launch the Control Panel
+* Click Programs
+* Click "Turns Windows features on or off"
+* Expand Internet Information Services
+* Expand "World Wide Web Services
+* Expand Application Development Features
+* Check "WebSocket Protocol"
+* Click OK
+
+<figure><img src="../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
