@@ -43,50 +43,9 @@ To configure QLM with the API Key created above:
 * Check Enabled to enable the extension
 * Set the API Key value to the Token created above and click OK
 
-![mceclip1.png](https://support.soraco.co/hc/article\_attachments/4414293245204)
+![mceclip1.png](https://support.soraco.co/hc/article_attachments/4414293245204)
 
 &#x20;
-
-### Custom Properties
-
-Next, you must create Custom Properties in HubSpot.
-
-* Click the settings (gear) icon on the top toolbar
-* Under "Data Management", click Properties
-* In the next step we will create 3 properties:
-  * Click "Create Property"
-    * Set the Object type to "Deal"
-    * Set the Group to "Deal Information"
-    * Set the Label to "product\_name"
-    * Set the Field type to Single-line text
-    * Click Next
-    * Click Create
-  * Click "Create Property"
-    * Set the Object type to "Deal"
-    * Set the Group to "Deal Information"
-    * Set the Label to "activation\_key"
-    * Set the Field type to Single-line text
-    * Click Next
-    * Click Create
-  * Click "Create Property"
-    * Set the Object type to "Deal"
-    * Set the Group to "Deal Information"
-    * Set the Label to "license\_model"
-    * Set the Field type to "Dropdown select"
-    * Click "Add an option"
-    * Set the Label to _none_ and the Internal Value to _0._
-    * Set the Label to _permanent_ and the Internal Value to _1_.
-    * Set the Label to _trial_ and the Internal Value to _2_.
-    * Set the Label to _subscription_ and the Internal Value to _3_.
-    * Click Next
-    * Click Create
-  * Finally, we need to add the properties to the View
-    * Select any existing Deal
-    * In the left hand panel, click "View all properties"
-    * Expand the "Deal information" section
-    * Locate the product\_name entry and click the "Add to your view" button
-    * Locate the activation\_key entry and click the "Add to your view" button
-    * Locate the license\_model entry and click the "Add to your view" button
 
 ### Enable Contact Creation
 

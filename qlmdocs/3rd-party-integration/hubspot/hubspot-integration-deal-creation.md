@@ -63,6 +63,7 @@ Next, you must create Custom Properties in HubSpot.
     * Set the Group to "Deal Information"
     * Click Field Type in the left hand panel
     * Set the Field type to Single-line text
+    * Click Create
   * Click "Create Property"
     * Click "Edit more options"
     * Set the Property label to "license\_model"
@@ -75,7 +76,6 @@ Next, you must create Custom Properties in HubSpot.
     * Set the Label to _permanent_ and the Internal Value to _1_.
     * Set the Label to _trial_ and the Internal Value to _2_.
     * Set the Label to _subscription_ and the Internal Value to _3_.
-    * Click Next
     * Click Create
   * Finally, we need to add the properties to the View
     * Select any existing Deal
