@@ -24,7 +24,7 @@ The system requirements for the QLM License Server are:
 * Microsoft SQL Server Database (any edition including the free SQL Server Express)
 * [Microsoft OLE DB Driver for SQL Server v19](https://learn.microsoft.com/en-us/sql/connect/oledb/download-oledb-driver-for-sql-server?view=sql-server-ver17)
 * [Visual C++ Redistributables for x86 and x64 (for Visual Studio 2017)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
-* [WebSocket Protocol ](how-to-install-the-qlm-license-server.md)must be enabled (required for the QLM Portal)
+* [WebSocket Protocol ](how-to-install-the-qlm-license-server.md#websocket)must be enabled (required for the QLM Portal)
 
 _Before installing the QLM License Server, make sure the above components are installed on your system. To install IIS and enable ASP.NET on your Windows Server, read this_ [_article_](https://technet.microsoft.com/en-us/library/hh831475\(v=ws.11\).aspx)_._
 
