@@ -86,11 +86,40 @@ If the card appears but no licensing information is displayed, complete the acti
 
 ***
 
+### Step 4: Create an API Key
+
+In order for QLM to communicate with HubSpot you need to create an API Key as described below.
+
+1. Click the settings (gear) icon in the top toolbar
+2. In the Integrations section, click Service Keys
+3. Click "Create service key"
+4. Set the name to QLM or any name of your choice
+5. Set the scope to:
+   1. crm.objects.contacts.read
+   2. crm.objects.contacts.write
+   3. crm.objects.deals.read
+   4. crm.objects.deals.write
+6. Click Create
+7. Take note of the Service Key that was created. You will need it later on.
+
+***
+
 ### Activating the QLM CRM Card
 
 For security and data isolation purposes, the QLM CRM Card will not display license data until your HubSpot account has been registered in the QLM system. It should look like the following before properly registered:
 
 <figure><img src="../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
+
+#### Configuring QLM
+
+1. Launch the QLM Management Console
+2. Go to the Manage Keys tab and click 3rd Party Extensions
+3. Click HubSpot&#x20;
+   1. Check "Enabled"
+   2. Set a User name of your choice
+   3. Set a Password of your choice
+   4. Set the API Key to the "Service Key" created above
+   5. Set the Shared Key to value of your choice
 
 #### Contact QLM Support
 
@@ -98,11 +127,14 @@ Email our support team at support@soraco.co and provide the following informatio
 
 * Your **HubSpot Portal ID**
 * Your **License Server URL**
+* **Your QLM HubSpot settings (from 3rd party extensions):**
+  * User name
+  * Password
+  * Shared Key&#x20;
 
-Example:
+Your HubSpot Portal ID is displayed when clicking your account on the top right corner.
 
-Plain TextHubSpot Portal ID: 12345678\
-License Server URL: https://licenses.yourcompany.com
+<figure><img src="../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
 
 Once this information has been received, our team will add your organization to the QLM database and enable communication between HubSpot and your QLM License Server.
 
@@ -110,7 +142,7 @@ Once this information has been received, our team will add your organization to 
 
 ### Confirming Activation
 
-After QLM support has completed the setup:
+After the QLM support team has completed the setup:
 
 1. Open a Contact record in HubSpot.
 2. Locate the **QLM CRM Card** in the right sidebar.
