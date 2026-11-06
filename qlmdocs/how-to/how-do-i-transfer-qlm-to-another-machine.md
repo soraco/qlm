@@ -19,7 +19,10 @@ Make sure you NEVER  "**upload products** to the License Server" from the new sy
 * Uninstall QLM from the current system in order to deactivate the license
 * Make a backup of the following folder, **including subfolders**, on the old system:
   * %appdata%\Soraco\Quick License Manager
-  * %localappdata%\Soraco\_Technologies\_Inc\IsQuickLicenseMgr\*\_StrongName\_\<xxx>\w.x.y.z\user.config
+  * For QLMv20+:
+    * %localappdata%\Soraco\Quick License Manager
+  * For QLM < v20
+    * %localappdata%\Soraco\_Technologies\_Inc\IsQuickLicenseMgr\*\_StrongName\_\<xxx>\w.x.y.z\user.config
 * Copy the backed-up files from the old system to the corresponding location on the new system.
 * Edit the %appdata%\Soraco\Quick License Manager\profiles.xml file in a text editor (_this step is not needed if you're running the latest version of QLM)_
   * Locate the entries productsFile, queriesFile and emailTemplatesFolder
@@ -29,8 +32,12 @@ Make sure you NEVER  "**upload products** to the License Server" from the new sy
 * Launch QLM&#x20;
 * Step through the QLM License Wizard to activate your license
 * Close QLM
-* On the new system, go to the following folder in Windows Explorer: %localappdata%\Soraco\_Technologies\_Inc\IsQuickLicenseMgr\*\_StrongName\_\<xxx>\w.x.y.z
-* Copy the backed-up user.config file to the folder above.
+* For QLM v20+:
+  * On the new system, go to the following folder in Windows Explorer : %localappdata%\Soraco\Quick License Manager
+  * Copy the backed-up qlmsettings.json file to the folder above.
+* For QLM < v20:
+  * On the new system, go to the following folder in Windows Explorer: %localappdata%\Soraco\_Technologies\_Inc\IsQuickLicenseMgr\*\_StrongName\_\<xxx>\w.x.y.z
+  * Copy the backed-up user.config file to the folder above.
 
 #### If the computer on which QLM is already installed is not operational: <a href="#h_01hbdw68ntqefjnr8nhq9bgdkm" id="h_01hbdw68ntqefjnr8nhq9bgdkm"></a>
 
