@@ -5,7 +5,7 @@ The QLM License Server is an ASP.NET web service. The requirements on the server
 QLM v20 or higher
 
 * Windows 2012 R2 server or higher.
-* .NET 10.0.5 or higher
+* .NET 10.0.14 or higher
 * SQL Server database  (any edition including SQL Express).
 * Full Trust for .NET assemblies.
 
