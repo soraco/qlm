@@ -15,7 +15,7 @@ To customize the Logo on the QlmCustomerSite edit the following server propertie
 
 #### Title Customization
 
-To customize the Logo on the QlmCustomerSite edit the following server properties:
+To customize the Title on the QlmCustomerSite edit the following server properties:
 
 * **customerSiteTitle**.
 * **customerSiteAlignment** to one of the following: Left, Center, Right.
