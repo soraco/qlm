@@ -81,9 +81,9 @@ where
 * is\_licensemodel = permanent | trial | subscription&#x20;
 * is\_send\_mail: instructs QLM to send an email after processing the order
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Subscription Products
 
@@ -138,9 +138,9 @@ Once Stripe Checkout is enabled, enter **your** web site domain name in the Doma
 * In the Checkout snippet generator window, update the Success URL and Cancel URL to point to valid URLs
 * Copy the generated code and save it in a file on your desktop then publish it to your web site
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Testing an order
 

@@ -312,8 +312,8 @@
 [how-to-renew-the-maintenance-plan-for-an-offline-customer.md](how-to-renew-the-maintenance-plan-for-an-offline-customer.md)
 {% endcontent-ref %}
 
-{% content-ref url="customize-and-localize-the-content-of-the-qlmcustomersite-pages.md" %}
-[customize-and-localize-the-content-of-the-qlmcustomersite-pages.md](customize-and-localize-the-content-of-the-qlmcustomersite-pages.md)
+{% content-ref url="../self-help-customer-site/customization-and-localization/customize-and-localize-the-content-of-the-qlmcustomersite-pages.md" %}
+[customize-and-localize-the-content-of-the-qlmcustomersite-pages.md](../self-help-customer-site/customization-and-localization/customize-and-localize-the-content-of-the-qlmcustomersite-pages.md)
 {% endcontent-ref %}
 
 {% content-ref url="qlm-webhooks.md" %}

@@ -1,6 +1,6 @@
 # Protect your application
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 QLM provides several approaches to protect your application. The Protect your application wizard generates a helper class to include in your application as well as 2 configuration files that specify the properties of the QLM License Wizard Control. The QLM License Wizard Control is a license registration form to capture a license key and activate it.\
 \
