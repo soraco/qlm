@@ -28,6 +28,12 @@ To customize the theme of the QlmCustomerSite set the server property **customer
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
+To modify an existing theme, navigate to:
+
+`%Public%\Documents\Quick License Manager\DeployToServer\QlmCustomerSiteNetCore\Pages\wwwroot\themes`
+
+The theme styles are defined in the `theme-<color>.css` files located in this folder. Open the appropriate CSS file and make the desired changes.
+
 #### Page Customization
 
 To hide any of the pages Activate a License, Deactivate a License, Get License Information and/or Email License Keys, set the following server properties: **showActivateLink, showDeactivateLink, showEmailLicenseKeysLink, showGetLicenseInformationLink.**
