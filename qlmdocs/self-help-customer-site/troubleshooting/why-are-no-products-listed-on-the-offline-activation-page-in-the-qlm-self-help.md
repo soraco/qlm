@@ -2,7 +2,7 @@
 
 #### Common Reasons
 
-There are many reasons why your products might not be listed in the QLM Offline Activation web page (QlmWebActivation.aspx). Below are a few of the most common reasons:
+There are many reasons why your products might not be listed in the QLM Offline Activation web page (QlmWebActivation). Below are a few of the most common reasons:
 
 * For each product that you define, you must specify whether the product should be displayed on the Offline Activation web page. To do so:
   * Go to the "Define Products" tab in the QLM Management Console

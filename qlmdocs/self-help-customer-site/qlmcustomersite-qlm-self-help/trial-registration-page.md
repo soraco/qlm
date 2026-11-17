@@ -1,8 +1,8 @@
 # Trial Registration Page
 
-### QlmRegistrationForm.aspx <a href="#h_01hdm5wzxvz1d9dgmr8r9rzh3c" id="h_01hdm5wzxvz1d9dgmr8r9rzh3c"></a>
+### QlmRegistrationForm <a href="#h_01hdm5wzxvz1d9dgmr8r9rzh3c" id="h_01hdm5wzxvz1d9dgmr8r9rzh3c"></a>
 
-QlmRegistrationForm.aspx is a registration form that collects user information, generates a trial key for a given product and emails it to the user.
+QlmRegistrationForm is a registration form that collects user information, generates a trial key for a given product and emails it to the user.
 
 Refer to this [article](https://support.soraco.co/hc/en-us/articles/211568803-How-to-hide-the-URL-arguments-of-the-QlmRegistrationForm-aspx-or-QlmRegistration-asmx-pages) for instructions to hide the URL arguments.
 
@@ -12,7 +12,7 @@ Example:
 
 {% code overflow="wrap" %}
 ```
-https://qlm3.net/qlmdemo/QlmCustomerSite/qlmregistrationform.aspx?is_productid=1&is_majorversion=1&is_minorversion=0&is_expduration=10
+https://qlm4.net/qlmdemo/QlmCustomerSiteNetCore/qlmregistrationform?is_productid=1&is_majorversion=1&is_minorversion=0&is_expduration=10
 ```
 {% endcode %}
 

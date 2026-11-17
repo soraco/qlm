@@ -1,8 +1,8 @@
 # Offline Activation Page
 
-### QlmWebActivation.aspx <a href="#h_01hdm5wzxvf2md75hcefx65wp3" id="h_01hdm5wzxvf2md75hcefx65wp3"></a>
+### QlmWebActivation <a href="#h_01hdm5wzxvf2md75hcefx65wp3" id="h_01hdm5wzxvf2md75hcefx65wp3"></a>
 
-**QlmWebActivation.aspx** is a web page that allows a user to enter an activation key and a computer ID for the purpose of generating a Computer Key. This is useful when a customer's system does not have an internet connection and they would like to perform an offline activation. The customer would:
+**QlmWebActivation** is a web page that allows a user to enter an activation key and a computer ID for the purpose of generating a Computer Key. This is useful when a customer's system does not have an internet connection and they would like to perform an offline activation. The customer would:
 
 * Go to a computer that has internet access
 * Enter the Activation Key and ComputerID
@@ -23,12 +23,12 @@
 
 Example of generating a computer key:
 
-https://qlm3.net/qlmdemo/qlmcustomersite/QlmWebActivation.aspx?is\_avkey=AXK80-60R00-GHJ3S-I862Y-1I1UR-AQDV2\&is\_pcid=123
+https://qlm4.net/qlmdemo/qlmcustomersitenetcore/QlmWebActivation?is\_avkey=AXK80-60R00-GHJ3S-I862Y-1I1UR-AQDV2\&is\_pcid=123
 
 Example of generating a digitally signed Product Properties file:
 
-https://qlm3.net/qlmdemo/qlmcustomersite/QlmWebActivation.aspx?is\_avkey=AXK80-60R00-GHJ3S-I862Y-1I1UR-AQDV2\&is\_pcid=123\&is\_pp=1
+https://qlm4.net/qlmdemo/qlmcustomersitenetcore/QlmWebActivation?is\_avkey=AXK80-60R00-GHJ3S-I862Y-1I1UR-AQDV2\&is\_pcid=123\&is\_pp=1
 
 Example of generating a digitally signed license file (cross-platform apps):
 
-https://qlm3.net/qlmdemo/qlmcustomersite/QlmWebActivation.aspx?is\_avkey=AXK80-60R00-GHJ3S-I862Y-1I1UR-AQDV2\&is\_pcid=123\&is\_file=1
+https://qlm4.net/qlmdemo/qlmcustomersitenetcore/QlmWebActivation?is\_avkey=AXK80-60R00-GHJ3S-I862Y-1I1UR-AQDV2\&is\_pcid=123\&is\_file=1

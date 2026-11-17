@@ -1,8 +1,8 @@
 # Deactivate License Page
 
-### QlmReleaseLicense.aspx <a href="#h_01hdm5wzxv8q8mxzw1y5w2xffp" id="h_01hdm5wzxv8q8mxzw1y5w2xffp"></a>
+### QlmReleaseLicense <a href="#h_01hdm5wzxv8q8mxzw1y5w2xffp" id="h_01hdm5wzxv8q8mxzw1y5w2xffp"></a>
 
-**QlmReleaseLicense.aspx** is a web page that your users can fill out to deactivate a license from a given computer. You can launch this page with or without any arguments. If you provide arguments, the corresponding fields in the form will auto-populate with the provided values.
+**QlmReleaseLicense** is a web page that your users can fill out to deactivate a license from a given computer. You can launch this page with or without any arguments. If you provide arguments, the corresponding fields in the form will auto-populate with the provided values.
 
 If you enable the [Server Property](https://support.soraco.co/hc/en-us/articles/207920563-Server-Properties) showDeactivationVerificationCode, a customer will need to enter a Deactivation Verification Code (DVC) to deactivate a license. If you are using the QLM License Wizard, the wizard will display the DVC when an offline user tries to deactivate a license. You can also use [CreateDeactivationCode](https://support.soraco.co/hc/en-us/articles/360031442411-QlmLicense-CreateDeactivationCode) API to create a DVC.
 
@@ -19,4 +19,4 @@ The
 
 Example:&#x20;
 
-https://qlm3.net/qlmdemo/qlmcustomersite/ QlmReleaseLicense.aspx ?is\_avkey=AXK80-60R00-GHJ3S-I862Y-1I1UR-AQDV2\&is\_pcid=123
+https://qlm4.net/qlmdemo/qlmcustomersitenetcore/QlmReleaseLicense?is\_avkey=AXK80-60R00-GHJ3S-I862Y-1I1UR-AQDV2\&is\_pcid=123

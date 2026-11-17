@@ -2,12 +2,12 @@
 
 The QlmCustomerSite portal (QLM Self Help) offers several web pages that you may want to expose to your customers:
 
-* [QlmWebActivation.aspx](offline-activation-page.md)
-* [QlmReleaseLicense.aspx](deactivate-license-page.md)
-* [QlmRegistrationForm.aspx](trial-registration-page.md)
-* [QlmRegistration.asmx](trial-registration-method.md)
-* [QlmLicenseInfo.aspx](license-information-page.md)
-* [QlmEmailLicense.aspx](email-licenses-page.md)
+* [QlmWebActivation](offline-activation-page.md)
+* [QlmReleaseLicense](deactivate-license-page.md)
+* [QlmRegistrationForm](trial-registration-page.md)
+* [QlmRegistration](trial-registration-method.md)
+* [QlmLicenseInfo](license-information-page.md)
+* [QlmEmailLicense](email-licenses-page.md)
 
 ***
 

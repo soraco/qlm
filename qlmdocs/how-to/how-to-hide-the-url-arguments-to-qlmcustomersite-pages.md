@@ -1,4 +1,4 @@
-# How to hide the URL arguments to QlmCustomerSite pages
+# Hide the URL arguments to QlmCustomerSite pages
 
 QlmCustomerSite pages are typically invoked from a page on your website or a 3rd party tool. This implies that an end-user could potentially view the source of this page and extract the URL arguments you use to invoke the page. Additionally, some 3rd party tools impose a limit on the length of the arguments.&#x20;
 
@@ -26,13 +26,13 @@ To create a custom server variable that encapsulates these arguments:&#x20;
 
 **How to use your Server Variable**&#x20;
 
-When invoking the QlmRegistrationForm.aspx or QlmRegistration.asmx, instead of passing along all the explicit arguments, you would pass the name of the variable specified above as the value of the is\_args variable.
+When invoking the QlmRegistrationForm or QlmRegistration, instead of passing along all the explicit arguments, you would pass the name of the variable specified above as the value of the is\_args variable.
 
 Example 1:
 
 {% code overflow="wrap" %}
 ```http
-https://qlm3.net/qlmdemo/QlmCustomerSite/qlmregistrationform.aspx?is_args=demo_order
+https://qlm4.net/qlmdemo/QlmCustomerSiteNetCore/qlmregistrationform?is_args=demo_order
 ```
 {% endcode %}
 
@@ -40,7 +40,7 @@ Example 2:
 
 {% code overflow="wrap" %}
 ```http
-https://qlm3.net/qlmdemo/QlmCustomerSite/qlmregistration.asmx/Register?is_args=demo_order
+https://qlm4.net/qlmdemo/QlmCustomerSiteNetCore/qlmregistration/Register?is_args=demo_order
 ```
 {% endcode %}
 

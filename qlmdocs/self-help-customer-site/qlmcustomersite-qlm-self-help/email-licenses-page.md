@@ -1,12 +1,12 @@
 # Email Licenses Page
 
-### QlmEmailLicense.aspx <a href="#h_01hdm5wzxwjx9013g6kdbfmd80" id="h_01hdm5wzxwjx9013g6kdbfmd80"></a>
+### QlmEmailLicense <a href="#h_01hdm5wzxwjx9013g6kdbfmd80" id="h_01hdm5wzxwjx9013g6kdbfmd80"></a>
 
-**QlmEmailLicense.aspx** is a web page that allows a user to enter their email address to receive an email with all license keys registered to that email address. This is useful for customers who forget their license keys. The page supports the following optional argument:
+**QlmEmailLicense** is a web page that allows a user to enter their email address to receive an email with all license keys registered to that email address. This is useful for customers who forget their license keys. The page supports the following optional argument:
 
 * is\_email: Email address (optional)
 
-Example: [https://qlm3.net/qlmdemo/qlmcustomersite/QlmEmailLicense.aspx?is\_email=tom@tom.com](https://qlm3.net/qlmdemo/qlmcustomersite/QlmEmailLicense.aspx?is\_email=tom@tom.com)
+Example: [https://qlm4.net/qlmdemo/qlmcustomersitenetcore/QlmEmailLicense?is\_email=tom@tom.com](https://qlm3.net/qlmdemo/qlmcustomersite/QlmEmailLicense.aspx?is_email=tom@tom.com)
 
 The content of the email that is sent to the customer is configurable by setting the [Server Property ](https://support.soraco.co/hc/en-us/articles/207920563)customerSite/emailTemplateRequestKeys.&#x20;
 
@@ -18,13 +18,13 @@ Additionally, the QLM License Server must be configured with an SMTP Server as d
 
 &#x20;
 
-Additionally, the QlmEmailLicense.aspx page makes use of Google's reCAPTCHA service. This is highly recommended to avoid spam and abuse.
+Additionally, the QlmEmailLicense page makes use of Google's reCAPTCHA service. This is highly recommended to avoid spam and abuse.
 
 In order to use Google's reCAPTCHA service, you must register your site with Google. You can find detailed instructions on [Google's site](https://developers.google.com/recaptcha/docs/display).
 
-Once you have registered with Google and received your API key pair (Site Key and Secret Key), you must enter these keys in the QlmEmailLicense.aspx file as follows:
+Once you have registered with Google and received your API key pair (Site Key and Secret Key), you must enter these keys in the QlmEmailLicense file as follows:
 
-* Open QlmEmailLicense.aspx with a text editor of your choice
+* Open QlmEmailLicense with a text editor of your choice
 * Locate the PublicKey and PrivateKey entries
 * Set the PublicKey to your Site Key
 * Set the PrivateKey to your Secret Key
@@ -34,7 +34,7 @@ Once you have registered with Google and received your API key pair (Site Key an
 
 If you do not wish to use Google reCAPTCHA:
 
-* Open the QlmEmailLicense.aspx file with a text editor of your choice
+* Open the QlmEmailLicense file with a text editor of your choice
 * Locate the \<!-- Google reCAPTCHA -- START --> comment
 * Delete or comment out all the code until the \<!-- Google reCAPTCHA -- END --> comment
 * Save the file

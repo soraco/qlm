@@ -73,7 +73,7 @@ https://qlm4.net/qlmdemo/QlmCustomerSiteNetCore/qlmregistrationform?is\_productn
 
 {% code overflow="wrap" %}
 ```http
-https://qlm3.net/qlmdemo/QlmCustomerSiteNetCore/qlmregistration/Register?is_productname=My Product&is_productid=1&is_majorversion=1&is_minorversion=0&is_expduration=10&is_emailfrom=support@soraco.co&is_emailsubject=Your Download of %ProductName%&is_confirmationmessage=Your License information was emailed to: %Email%&is_fullname=Tom Brad&is_email=tom.brad@soraco.co&is_company=Soraco&is_phone=123-123-1234&is_emailtemplate=MyEmailTemplate 
+https://qlm4.net/qlmdemo/QlmCustomerSiteNetCore/qlmregistration/Register?is_productname=My Product&is_productid=1&is_majorversion=1&is_minorversion=0&is_expduration=10&is_emailfrom=support@soraco.co&is_emailsubject=Your Download of %ProductName%&is_confirmationmessage=Your License information was emailed to: %Email%&is_fullname=Tom Brad&is_email=tom.brad@soraco.co&is_company=Soraco&is_phone=123-123-1234&is_emailtemplate=MyEmailTemplate 
 ```
 {% endcode %}
 
@@ -94,7 +94,7 @@ To simplify the management of these arguments, we recommend using the **is\_args
 
 {% code overflow="wrap" %}
 ```http
-https://qlm3.net/qlmdemo/QlmCustomerSiteNetCore/qlmregistration/Register?is_args=demo_order&is_fullname=Tom Brad&is_email=tom.brad@soraco.co&is_company=Soraco&is_phone=123-123-1234
+https://qlm4.net/qlmdemo/QlmCustomerSiteNetCore/qlmregistration/Register?is_args=demo_order&is_fullname=Tom Brad&is_email=tom.brad@soraco.co&is_company=Soraco&is_phone=123-123-1234
 ```
 {% endcode %}
 

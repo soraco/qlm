@@ -1,8 +1,8 @@
 # Trial Registration Method
 
-### QlmRegistration.asmx  <a href="#h_01hdm5wzxvd26qzx28grcvv5dk" id="h_01hdm5wzxvd26qzx28grcvv5dk"></a>
+### QlmRegistration  <a href="#h_01hdm5wzxvd26qzx28grcvv5dk" id="h_01hdm5wzxvd26qzx28grcvv5dk"></a>
 
-QlmRegistration.asmx is a web service method that takes user information from the command line, generates a trial key for a given product and emails it to the user.
+QlmRegistration is a web service method that takes user information from the command line, generates a trial key for a given product and emails it to the user.
 
 Refer to this [article](https://support.soraco.co/hc/en-us/articles/211568803-How-to-hide-the-URL-arguments-of-the-QlmRegistrationForm-aspx-or-QlmRegistration-asmx-pages) for instructions to hide the URL arguments.
 
@@ -12,7 +12,7 @@ Example:
 
 {% code overflow="wrap" %}
 ```
-https://qlm3.net/qlmdemo/QlmCustomerSite/qlmregistration.asmx/Register?is_productid=1&is_majorversion=1&is_minorversion=0&is_expduration=10
+https://qlm4.net/qlmdemo/QlmCustomerSiteNetCore/qlmregistration/Register?is_productid=1&is_majorversion=1&is_minorversion=0&is_expduration=10
 ```
 {% endcode %}
 
@@ -44,7 +44,7 @@ https://qlm3.net/qlmdemo/QlmCustomerSite/qlmregistration.asmx/Register?is_produc
 
 Contact information can be sent as URL arguments or as part of the POST data. When integrating with a third party, the web.config file _thirdPartyRegistrationFields_ setting defines the mapping between the incoming fields and the QLM fields. To enable third-party integration such as MailChimp, you must set the useThirdPartyRegistrationFields setting to true in the web.config file.
 
-When invoking the QlmRegistration.asmx directly from your own site, you can use the following arguments in the URL to specify the customer's contact information:
+When invoking the QlmRegistration directly from your own site, you can use the following arguments in the URL to specify the customer's contact information:
 
 <table data-full-width="false"><thead><tr><th width="304">URL Argument</th><th>Description</th></tr></thead><tbody><tr><td><strong>Contact Information</strong></td><td></td></tr><tr><td>is_address1</td><td>Address 1 field (requires QLM 19.1.25322.2)</td></tr><tr><td>is_address2</td><td>Address 2 field (requires QLM 19.1.25322.2)</td></tr><tr><td>is_city</td><td>City field (requires QLM 19.1.25322.2)</td></tr><tr><td>is_company</td><td>Company name of the customer.</td></tr><tr><td>is_country</td><td>Country of the customer.</td></tr><tr><td>is_email</td><td>Email of the customer</td></tr><tr><td>is_fullname</td><td>Full name of the customer.</td></tr><tr><td>is_phone</td><td>Telephone number of the customer.</td></tr><tr><td>is_state</td><td>State field (requires QLM 19.1.25322.2)</td></tr><tr><td>is_zip</td><td>Zip Code field (requires QLM 19.1.25322.2)</td></tr><tr><td><strong>Additonal Properties</strong></td><td></td></tr><tr><td>is_confirmationmessage</td><td>The message that is displayed to the user upon successful registration. Variables are allowed.</td></tr><tr><td>is_emailtemplate</td><td>Name of the email template to use when sending an email to the customer. Email templates can be created from the QLM Management Console / Manage Keys / Email Templates.</td></tr><tr><td>is_sendmail</td><td>By default, an email will be sent to the customer with the content of the is_emailtemplate. Set the is_sendmail argument to false to instruct QLM to not send an email.</td></tr></tbody></table>
 
