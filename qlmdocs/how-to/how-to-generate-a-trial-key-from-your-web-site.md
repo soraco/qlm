@@ -4,13 +4,13 @@
 
 The QLM Customer site is a collection of web pages that you can integrate into your site to automate some processes and provide self-help to your customers.
 
-QlmRegistrationForm.aspx is a registration form that collects user information and generates a trial key for a given product.
+QlmRegistrationForm is a registration form that collects user information and generates a trial key for a given product.
 
-QlmRegistration.asmx is a service that can automatically generate a trial key and email it to the customer without presenting a form. This is useful when you already have a form to capture contact information and you just need to create a trial key.
+QlmRegistration is a service that can automatically generate a trial key and email it to the customer without presenting a form. This is useful when you already have a form to capture contact information and you just need to create a trial key.
 
-The QLM Customer Site is deployed alongside the QLM License Server in the QlmCustomerSite folder. If you deploy the QLM Web Service manually, you must deploy the QlmCustomerSite (in the DeployToServer folder) and configure the QlmCustomerSite as an IIS Application.
+The QLM Customer Site is deployed alongside the QLM License Server in the QlmCustomerSiteNetCore folder. If you deploy the QLM License Server manually, you must deploy the QlmCustomerSiteNetCore (in the DeployToServer folder) and configure the QlmCustomerSiteNetCore as an IIS Application.
 
-### QlmRegistrationForm.aspx supported arguments
+### QlmRegistrationForm supported arguments
 
 | **ARGUMENT**            | **DESCRIPTION**                                                                                                                                                                                    | **Type** |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
@@ -37,9 +37,9 @@ The QLM Customer Site is deployed alongside the QLM License Server in the QlmCus
 &#x20; \
 **Example**: &#x20;
 
-https://qlm3.net/qlmdemo/QlmCustomerSite/qlmregistrationform.aspx?is\_productname=My Product\&is\_productid=1\&is\_majorversion=1\&is\_minorversion=0\&is\_expduration=10\&is\_emailfrom=support@soraco.co\&is\_emailsubject=Your Download of %ProductName%\&is\_confirmationmessage=Your License information was emailed to: %Email%\&is\_emailtemplate=MyEmailTemplate
+https://qlm4.net/qlmdemo/QlmCustomerSiteNetCore/qlmregistrationform?is\_productname=My Product\&is\_productid=1\&is\_majorversion=1\&is\_minorversion=0\&is\_expduration=10\&is\_emailfrom=support@soraco.co\&is\_emailsubject=Your Download of %ProductName%\&is\_confirmationmessage=Your License information was emailed to: %Email%\&is\_emailtemplate=MyEmailTemplate
 
-### QlmRegistration.asmx supported arguments
+### QlmRegistration supported arguments
 
 | **ARGUMENT**            | **DESCRIPTION**                                                                                                                                                                                    | **Type** |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
@@ -73,7 +73,7 @@ https://qlm3.net/qlmdemo/QlmCustomerSite/qlmregistrationform.aspx?is\_productnam
 
 {% code overflow="wrap" %}
 ```http
-https://qlm3.net/qlmdemo/QlmCustomerSite/qlmregistration.asmx/Register?is_productname=My Product&is_productid=1&is_majorversion=1&is_minorversion=0&is_expduration=10&is_emailfrom=support@soraco.co&is_emailsubject=Your Download of %ProductName%&is_confirmationmessage=Your License information was emailed to: %Email%&is_fullname=Tom Brad&is_email=tom.brad@soraco.co&is_company=Soraco&is_phone=123-123-1234&is_emailtemplate=MyEmailTemplate 
+https://qlm3.net/qlmdemo/QlmCustomerSiteNetCore/qlmregistration/Register?is_productname=My Product&is_productid=1&is_majorversion=1&is_minorversion=0&is_expduration=10&is_emailfrom=support@soraco.co&is_emailsubject=Your Download of %ProductName%&is_confirmationmessage=Your License information was emailed to: %Email%&is_fullname=Tom Brad&is_email=tom.brad@soraco.co&is_company=Soraco&is_phone=123-123-1234&is_emailtemplate=MyEmailTemplate 
 ```
 {% endcode %}
 
@@ -94,7 +94,7 @@ To simplify the management of these arguments, we recommend using the **is\_args
 
 {% code overflow="wrap" %}
 ```http
-https://qlm3.net/qlmdemo/QlmCustomerSite/qlmregistration.asmx/Register?is_args=demo_order&is_fullname=Tom Brad&is_email=tom.brad@soraco.co&is_company=Soraco&is_phone=123-123-1234
+https://qlm3.net/qlmdemo/QlmCustomerSiteNetCore/qlmregistration/Register?is_args=demo_order&is_fullname=Tom Brad&is_email=tom.brad@soraco.co&is_company=Soraco&is_phone=123-123-1234
 ```
 {% endcode %}
 
